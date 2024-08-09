@@ -32,7 +32,8 @@ jobs:
     - name: Unzip Artifact
       run: |
         #unzip artifact.zip -d ./
-        tar -xvf artifact.tar.gz -C ./
+        #tar -xvf artifact.tar.gz -C ./
+        ls
 
     - name: Commit and Push Changes
       run: |
