@@ -27,6 +27,7 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }} # token with actions:read permissions on target repo
         repository: Cats-Team/AdRules
         run-id: ${{ steps.get_run_id.outputs.run_id }}
+        path: artifact.tar
 
     - name: Unzip Artifact
       run: |
