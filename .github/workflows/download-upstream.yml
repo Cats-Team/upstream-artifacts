@@ -13,22 +13,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Get Latest Artifact URL
-      run: |
-        latest_artifact_url=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        https://api.github.com/repos/Cats-Team/AdRules/actions/artifacts \
-        | jq -r '.artifacts | sort_by(.created_at) | last | .archive_download_url')
-        echo $latest_artifact_url > artifact_url.txt
-
-    - name: Download Latest Artifact
-      run: |
-        curl -L -o artifact.zip -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        $(cat artifact_url.txt)
-        rm artifact_url.txt
+    - uses: actions/download-artifact@v4
+      with:
+        name: archive.tar.gz
+        github-token: ${{ secrets.GITHUB_TOKEN }} # token with actions:read permissions on target repo
+        repository: Cats-Team/AdRules
 
     - name: Unzip Artifact
       run: |
-        unzip artifact.zip -d ./
+        #unzip artifact.zip -d ./
         tar -xvf artifact.tar -C ./
 
     - name: Commit and Push Changes
