@@ -1,0 +1,39 @@
+name: Download and Unzip Artifact
+
+on:
+  schedule:
+    - cron: '30 8 * * *'
+  push:
+
+jobs:
+  download_and_unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Get Latest Artifact URL
+      run: |
+        latest_artifact_url=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        https://api.github.com/repos/Cats-Team/AdRules/actions/artifacts \
+        | jq -r '.artifacts | sort_by(.created_at) | last | .archive_download_url')
+        echo $latest_artifact_url > artifact_url.txt
+
+    - name: Download Latest Artifact
+      run: |
+        curl -L -o artifact.zip -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        $(cat artifact_url.txt)
+
+    - name: Unzip Artifact
+      run: unzip artifact.zip -d ./
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m "Add latest artifact"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
