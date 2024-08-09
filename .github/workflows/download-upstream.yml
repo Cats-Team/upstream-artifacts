@@ -27,12 +27,12 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }} # token with actions:read permissions on target repo
         repository: Cats-Team/AdRules
         run-id: ${{ steps.get_run_id.outputs.run_id }}
-        path: artifact.tar
+        #path: artifact.tar
 
     - name: Unzip Artifact
       run: |
         #unzip artifact.zip -d ./
-        tar -xvf artifact.tar -C ./
+        tar -xvf artifact.tar.gz -C ./
 
     - name: Commit and Push Changes
       run: |
