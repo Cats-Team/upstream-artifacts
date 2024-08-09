@@ -13,11 +13,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Get latest run ID
+      id: get_run_id
+      run: |
+        latest_run_id=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        https://api.github.com/repos/Cats-Team/AdRules/actions/workflows/autoupdate.yml/runs | jq '.workflow_runs[0].id')
+        echo "Latest run ID: $latest_run_id"
+        echo "::set-output name=run_id::$latest_run_id"
+
     - uses: actions/download-artifact@v4
       with:
         name: archive.tar.gz
         github-token: ${{ secrets.GITHUB_TOKEN }} # token with actions:read permissions on target repo
         repository: Cats-Team/AdRules
+        run-id: ${{ steps.get_run_id.outputs.run_id }}
 
     - name: Unzip Artifact
       run: |
