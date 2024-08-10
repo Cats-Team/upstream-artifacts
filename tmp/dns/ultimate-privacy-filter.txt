@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202408090903
+! Version: 202408092103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 09 Aug 2024 09:03 UTC
+! Last modified: 09 Aug 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -253,6 +253,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||pixel-*.convertagain.net^
 ||app.kuvio.io^
 ||data.media-lab.ai^
 ||kapetracking.com^
@@ -40479,6 +40480,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||fresnel-events.vimeocdn.com^
+||evt.ilovepdf.com^
 ||beacon.adelphic.com^
 ||pixels.spotify.com^
 ||ylog.huya.com^
@@ -76322,6 +76325,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||vimeo.com/ablincoln/fatal_attraction?type=pageview
+||a.sejda.com/api/event
+||chess.com/service/user-activity/chesscom.user_activity
 ||playeur.com/plbio/api/event
 ||myspace.com/beacon/
 ||cm.nordpass.com/tracy$xmlhttprequest
