@@ -1,9 +1,9 @@
-! Checksum: KySkdOr3B9Yo67YMC8qQvg
-! Diff-Path: ../patches/4/4-s-1723239427-3600.patch
+! Checksum: dGMHhTgwMuvnUltmMHqOow
+! Diff-Path: ../patches/4/4-s-1723271826-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.4.55
-! TimeUpdated: 2024-08-09T21:33:00+00:00
+! Version: 2.1.4.58
+! TimeUpdated: 2024-08-10T06:32:53+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9062,7 +9062,6 @@ europapress.es##.boton-social
 lavanguardia.com##.story-leaf-social-btns
 ain.ua##.widget-like
 zelenograd.ru,amp.vesti.ru##.soc-btn
-||addthis.com^$domain=avgle.com
 yenicaggazetesi.com.tr,bolgegundem.com##.sh
 klerk.ru##.actions__share
 slice.ca###corusVideo_socialAndExpand > #corusVideo_socialTools
@@ -10124,7 +10123,7 @@ chernozem.info##.button_more
 dailymail.co.uk##.mol-img > noscript+div[class^="container-"]
 dailymail.co.uk##.shareComment > :not([class="copyCommentLink"])
 ||syndication.twimg.com/widgets/$third-party,domain=gazetadaily.ru
-woman.donga.com,workingnews.blog117.fc2.com,vector.co.jp,gazetadaily.ru##.socialbox
+woman.donga.com,workingnews117.com,vector.co.jp,gazetadaily.ru##.socialbox
 altapress.ru##.b-social_like_box
 morgenweb.de##li[title][onclick^="javascript:mmShare"]
 morgenweb.de##.nfy-sticky-icon-more
@@ -14938,8 +14937,6 @@ jobs.bostonscientific.com#@#.socialbutton:not(.dropdown-menu.pull-right)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19990
 @@||smartvsphone.it/wp-content/plugins/ultimate-social-media-plus/css/sfsi-style.css
 @@||smartvsphone.it/wp-content/plugins/ultimate-social-media-plus/images/icons_theme/flat/flat_
-! avgle.com - fake video after a while
-@@||addthis.com/js/300/addthis_widget.js$domain=avgle.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19498
 neoseeker.com#@#.social_share
 ! https://github.com/AdguardTeam/AdguardFilters/issues/18411

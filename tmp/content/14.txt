@@ -1,9 +1,9 @@
-! Checksum: XG4Pr00ZKVy/+x0GcwCWjQ
-! Diff-Path: ../patches/14/14-s-1723239424-3600.patch
+! Checksum: kKeLrN47xemw4RnqE8v68w
+! Diff-Path: ../patches/14/14-s-1723268204-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.4.76
-! TimeUpdated: 2024-08-09T21:33:26+00:00
+! Version: 2.2.4.78
+! TimeUpdated: 2024-08-10T05:33:12+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -43574,8 +43574,6 @@ w3cschool.cn##body > .widget-body[data-type] > .widget-main
 ! zoon.ru - annoying animated banner
 zoon.ru##.box-banner
 zoon.ru#?#.ss-contents > div.box-padding:has(> a.box-banner)
-! top page banner
-avgle.com##.alert-success
 ! https://github.com/AdguardTeam/AdguardFilters/issues/97714
 reuters.com#%#//scriptlet("prevent-addEventListener", "scroll", "#sticky-video")
 reuters.com#%#//scriptlet("set-constant", "Object.prototype.enable_floating", "false")
@@ -46766,8 +46764,6 @@ yoyaku.cityheaven.net##.banner_bar
 ! https://github.com/AdguardTeam/AdguardFilters/issues/98753
 wixsite.com#$##WIX_ADS { display: none !important; }
 wixsite.com#$##site-root { top: 0 !important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/98764
-avgle.com###avyc
 ! https://github.com/AdguardTeam/AdguardFilters/issues/98567
 ||myjcom.jp/special/common/tvguide/banner/
 ! self-promo banners
@@ -47712,6 +47708,7 @@ theguardian.com##.contributions__adblock
 !
 ! SECTION: Self-promo - Regular rules
 !
+world-tt.com##.column_pin.mobile_width100
 world-tt.com##.plusCounteiner
 ||hachiraw.net/01.png
 2gis.ru#?#div[style="justify-content:flex-end"] button:has(> div:contains(Ваши друзья на карте))
@@ -52452,6 +52449,7 @@ baynews.blog.jp,xresolutionx.livedoor.blog,kimamamatome.doorblog.jp,fgochaldeas.
 ! specify subdomain or use unique and safe selector; for blog.livedoor.jp make your rule as specific as possible or use $path
 !
 workingnews117.com##.free_area
+workingnews117.com##div[class^="im_headerad"]
 [$path=/sekaiminzoku]blog.livedoor.jp##.main-column-inner > div[style^="width:720px;height:"][style*="border-bottom-style:groove"]
 [$path=/sekaiminzoku]blog.livedoor.jp##.article-body-more > div[style="margin:0px;padding:0px;"]
 blog.livedoor.jp##div[style^="width:"][style*="height:"][style*="overflow:auto;background-color:"][style$="scrollbar-arrow-color:#000;scrollbar-base-color:#ccc;border-top-style:groove;border-left-style:outset;border-bottom-style:groove"]
@@ -53374,7 +53372,6 @@ vtubernews.jp##.rss-sub
 kidanlog.com##.rss-flexbox
 kitimama-matome.net##.article-outer-2 > div.article-header
 kijosoku.com##.column-inner-2 > div[style^="border-style:dotted;border-color:#00BFFF;"]
-workingnews.blog117.fc2.com##div[class^="im_headerad"]
 pokemon-matome.net#$##content11 { padding-top:0 !important; }
 pokemon-matome.net#$##wrap-main { padding-top:0 !important; }
 pokemon-matome.net##div[class^="basehtml"]
