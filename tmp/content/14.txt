@@ -1,9 +1,9 @@
-! Checksum: kKeLrN47xemw4RnqE8v68w
-! Diff-Path: ../patches/14/14-s-1723268204-3600.patch
+! Checksum: dVo6L8x2LhaeyjrmxZlotw
+! Diff-Path: ../patches/14/14-s-1723390631-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.4.78
-! TimeUpdated: 2024-08-10T05:33:12+00:00
+! Version: 2.2.4.82
+! TimeUpdated: 2024-08-11T15:33:12+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2447,6 +2447,9 @@ consent-pref.trustarc.com#%#//scriptlet('trusted-click-element', 'div[aria-label
 !
 ! onetrust cookies
 communityfibre.co.uk,foto-erhardt.com,foto-erhardt.de,seriouseats.com,fotogena.de,gqmagazine.fr,rossmann.pl,reuters.com,foto-erhardt.fr,ryobitools.eu,oe24.at,player.pl,vandenborre.be,metacritic.com,crfashionbook.com,comicbook.com,metabomb.net,eurogamer.it,vod.pl,observatornews.ro,channel5.com,popsugar.co.uk,grajteraz.pl,turn-on.de,start.gg,gry.pl,nu.nl,milwaukeetool.eu,usmagazine.com,digitalfoundry.net,redbull.com,roastmarket.de,olx.pl,jetztspielen.ws,1001spiele.de,mcdelivery.de,wowbiz.ro,ikonpass.com,eurogamer.es,eurogamer.de,games.miamiherald.com,tvn.pl,olympics.com,1001spiele.at,kralmuzik.com.tr,ntv.com.tr,ntvspor.net,eurogamer.it,rtlnieuws.nl,boomerang-tv.pl,yourdictionary.com,cnbc.com,cbsnews.com,gamespot.com,msn.com,tvn24.pl#%#//scriptlet('trusted-click-element', 'button#onetrust-accept-btn-handler')
+!
+! German netID
+stern.de#%#//scriptlet('trusted-click-element', '#decline-nid-consent')
 !
 ! NOTE: Popular rules end ⬆️
 ! !SECTION: Cookies - Popular rules
@@ -21249,6 +21252,7 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! Do not forget about '!#safari_cb_affinity' section for exclusions:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#general
 !
+@@||pokemonsleep.club^$script,~third-party
 ||static.themoscowtimes.com/vendor/adblocker/adblocker.js
 kipflix.space###adblocker-popup-container
 ecosia.org##section[data-test-id="ad-block-notice"]
@@ -21294,6 +21298,8 @@ jsfiddle.net##body > #modal-body.unblockRequest
 jsfiddle.net#%#//scriptlet('set-constant', '_bsa', 'emptyObj')
 rutube.ru##.notification-container-module__infoNotifications
 watson.de#$##adBlockerTest { display: block !important; }
+watson.ch#$##adBlockerDetection { display: block !important; }
+watson.ch,watson.de###nps-watson-adblocker
 raenonx.cc#%#(()=>{const e={apply:async(e,t,a)=>{if(a[0]&&a[0]?.match(/adsbygoogle|doubleclick|googlesyndication|static\.cloudflareinsights\.com\/beacon\.min\.js/)){const e=(e="{}",t="",a="opaque")=>{const n=new Response(e,{statusText:"OK"}),o=String((s=50800,r=50900,Math.floor(Math.random()*(r-s+1)+s)));var s,r;return n.headers.set("Content-Length",o),Object.defineProperties(n,{type:{value:a},status:{value:0},statusText:{value:""},url:{value:""}}),Promise.resolve(n)};return e("{}",a[0])}return Reflect.apply(e,t,a)}};window.fetch=new Proxy(window.fetch,e)})();
 myfxbook.com#%#//scriptlet('prevent-setTimeout', 'detectLoadedAdsContainer')
 iphoned.nl##.adblock-detect
@@ -24614,7 +24620,7 @@ nordpass.com#$#.sale-sticky-offset--grey { padding-top: 0 !important; }
 nordpass.com#$#.sale-sticky-offset--grey header.HeaderV2 { top: 0 !important; }
 crownawards.com,bonjovi.com,contourdesign.com,softwarekeep.com##.needsclick[style*="top: 0px; width: 100%; height: 100%"]
 singletrackworld.com##.um-notices-wrap
-keiji.vbest.jp###popupArea
+lanscope.jp,keiji.vbest.jp###popupArea
 keiji.vbest.jp###l-footer__contact
 app.notta.ai##.container___2-k00
 downloaddevtools.com##.alert-warning
@@ -25430,7 +25436,7 @@ zoom.earth##.instagram
 valledeelda.com##.guiacomercial_pasando
 meijutt.tv##.widget-weixin
 varianty.lviv.ua###donate-popup
-rfc-partners.co.jp,jp-news.mercari.com,magazine.steadyjapan.com##.bfb_imgBanner
+vr-pro.jp,rfc-partners.co.jp,jp-news.mercari.com,magazine.steadyjapan.com##.bfb_imgBanner
 atasunoptik.com.tr##div[id^="nmg-incentive-"]
 haertle.de#$#div[aria-labelledby="cob-modal-campaign-label"] { display: none !important; }
 haertle.de#$#.modal-backdrop { display: none !important; }
@@ -47708,6 +47714,7 @@ theguardian.com##.contributions__adblock
 !
 ! SECTION: Self-promo - Regular rules
 !
+||common.blogimg.jp/stf/common/banner/ldshopping_001.jpg
 world-tt.com##.column_pin.mobile_width100
 world-tt.com##.plusCounteiner
 ||hachiraw.net/01.png
