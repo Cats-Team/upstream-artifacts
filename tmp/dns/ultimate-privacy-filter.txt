@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202408152103
+! Version: 202408162103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 15 Aug 2024 21:03 UTC
+! Last modified: 16 Aug 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -253,6 +253,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||fndrsp.net^
+||positional.ai^
+||positional-bucket.com^
+||collector-pxebumdlwe.px-cloud.net^
+||collector-pxebumdlwe.px-cdn.net^
 ||s2s.adjust.com^
 ||view.adjust.com^
 ||engagements.appsflyer.com^
@@ -39527,6 +39532,12 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||stats.browsertrix.com^
+||sgmnt.beacons.ai^
+||track.lc.quark.cn^
+||nsclick.baidu.com^
+||ipgeolocation.abstractapi.com^
+||trace.mjyx.com^
 ||event-router.chime.com^
 ||t3.cdnpure.com^
 ||counter.wikiwiki.jp^
@@ -79095,7 +79106,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 ||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=~olx.*|~banki.ru|~bigc.co.th|~sonos.com
 ||google-analytics.com/ga.js$script,redirect=google-analytics-ga,domain=~daj.jp
 ||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk|~gizmodo.jp
 .demdex.net/id^$redirect=nooptext,important
 ||omtrdc.net/id^$redirect=nooptext,important
 ||nd.demdex.net/event?d_mid=$redirect=nooptext,important,domain=9now.com.au
@@ -79106,6 +79117,14 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||api-iam.intercom.io/messenger/web/ping|
+||pubsub.googleapis.com/*/projects/mailfoogae/topics/events
+||s.yimg.com/ss/analytics-*.js
+||baidu.com/*/mwb2.gif?
+||pan.baidu.com/api/analytics?
+||apps.bazaarvoice.com/apps/vendors/bv-ui-core_logger*.js
+||mangakoma.net/ajax/manga/view
+||cdn-public.liftoffintl.io/app2web-sdk/sdk.js
 ||onlinepngtools.com/api/v1/stats/$ping
 ||onlinepngtools.com/images/examples-onlinepngtools/single-opaque-pixel.png
 ||statics.liberation.fr/newsite/js/cmp/gtm.js

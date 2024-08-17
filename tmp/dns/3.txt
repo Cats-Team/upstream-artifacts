@@ -1,9 +1,9 @@
-! Checksum: k7WtIF+eFr1tGIt/AAw4Ow
-! Diff-Path: ../patches/3/3-s-1723757796-3600.patch
+! Checksum: KaK4LHpESLqiCjQD2kGG3A
+! Diff-Path: ../patches/3/3-s-1723833384-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.73.51
-! TimeUpdated: 2024-08-15T21:32:30+00:00
+! Version: 2.0.73.60
+! TimeUpdated: 2024-08-16T18:32:17+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -604,6 +604,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||fndrsp.net^
+||positional.ai^
+||positional-bucket.com^
 ||collector-pxebumdlwe.px-cloud.net^
 ||collector-pxebumdlwe.px-cdn.net^
 ||s2s.adjust.com^
@@ -40106,6 +40109,12 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||stats.browsertrix.com^
+||sgmnt.beacons.ai^
+||track.lc.quark.cn^
+||nsclick.baidu.com^
+||ipgeolocation.abstractapi.com^
+||trace.mjyx.com^
 ||event-router.chime.com^
 ||t3.cdnpure.com^
 ||counter.wikiwiki.jp^
@@ -79788,7 +79797,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 ||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt
 ! fix https://golf.com/news/tour-confidential-match-play-concession-augusta-womens-am/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/152328
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk|~gizmodo.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/152079
 !||staff-start.com/js/track/
 !
@@ -79808,6 +79817,14 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 !
+||api-iam.intercom.io/messenger/web/ping|
+||pubsub.googleapis.com/*/projects/mailfoogae/topics/events
+||s.yimg.com/ss/analytics-*.js
+||baidu.com/*/mwb2.gif?
+||pan.baidu.com/api/analytics?
+||apps.bazaarvoice.com/apps/vendors/bv-ui-core_logger*.js
+||mangakoma.net/ajax/manga/view
+||cdn-public.liftoffintl.io/app2web-sdk/sdk.js
 ||onlinepngtools.com/api/v1/stats/$ping
 ||onlinepngtools.com/images/examples-onlinepngtools/single-opaque-pixel.png
 ||statics.liberation.fr/newsite/js/cmp/gtm.js
