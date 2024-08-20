@@ -1,9 +1,9 @@
-! Checksum: yGf9u8dj8lWbdQcIwS9+BA
-! Diff-Path: ../patches/11/11-s-1723819095-3600.patch
+! Checksum: G1SmWBxtcNKKHy8PVyrFUg
+! Diff-Path: ../patches/11/11-s-1724089014-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.53.68
-! TimeUpdated: 2024-08-16T14:33:30+00:00
+! Version: 2.0.53.71
+! TimeUpdated: 2024-08-19T17:33:05+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1386,6 +1386,9 @@ sasisa.ru#%#AG_onLoad(function() { window.Umobi = function() {}; });
 !-------CSS---------
 !-------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186750
+depor.com#$#.st-sidebar__container { margin-top: 0 !important; }
+depor.com#$#.header-full { margin-top: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183388
 tss-tv.co.jp#$#.hns_wrap { min-height: 0 !important; }
 tss-tv.co.jp#$#.tss_spbtmnavi { bottom: 0 !important; }
@@ -2737,7 +2740,7 @@ blocktrends.com.br##.popup-rolagem
 russian.rt.com##.column > .column__content > div.column__row:has(> div[data-bid])
 sport24.ru###adfox_Sport24_branding
 ortacizgi.com##div.display:has(> div.post-ad-title)
-mynet.com##.body-banner-block
+mynet.com##.body-banner-block:not(#style_important)
 article.auone.jp##.appeal__text-lower
 news.livedoor.com###BrowsiVideo
 meiobit.com##.ad-container-discrete
@@ -4381,6 +4384,9 @@ m.sabah.com.tr##.adv-content
 jagran.com##.shadow-remove
 m.focus.de##.cls_hor_prnt
 okwave.jp##aside[class*="adfunnel_special_box_amp"]
+sp.okwave.jp##.adfunnel_special_box
+sp.okwave.jp##.ad_list_bottom
+sp.okwave.jp##.ad_qa_detail_bottom
 sp.okwave.jp##.adfunnel_special_box_bottom
 sp.okwave.jp##.adfunnel_special_box_under
 sp.okwave.jp##div[style="min-height:428px;"]

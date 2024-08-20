@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: z0ZBsSqsOZnptwuM8WAJhw
-! Version: 202408182351
+! Checksum: m+fJXuiWHKSL7mBbyA94AA
+! Version: 202408192351
 ! Title: EasyPrivacy
-! Last modified: 18 Aug 2024 23:51 UTC
+! Last modified: 19 Aug 2024 23:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7504,6 +7504,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ariane.abtasty.com^
 ||arkoselabs.com/metrics/
 ||asayer.io/tracker.js
+||assets.apollo.io/micro/website-tracker/
 ||assets.moneymade.io/js/fp.min.js
 ||assets.yumpu.com/release/*/tracking.js
 ||assistant.watson.appdomain.cloud/analytics/
@@ -8037,6 +8038,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||event-service.letslinc.com^
 ||event-stream.spot.im^
 ||event.api.drift.com^
+||event.collector.scopely.io^
 ||event.instiengage.com^
 ||event.syndigo.cloud^
 ||event.webcollage.net^
@@ -8045,6 +8047,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||eventgateway.soundcloud.com^
 ||eventlog.chatlead.com^
 ||eventlog.inspsearchapi.com^
+||events-endpoint.pointandplace.com^
 ||events.air.tv^
 ||events.api.secureserver.net^
 ||events.attentivemobile.com^
@@ -8055,6 +8058,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||events.devcycle.com^
 ||events.elev.io^
 ||events.flagship.io^
+||events.getmodemagic.com^
 ||events.getsitectrl.com^
 ||events.jotform.com^
 ||events.launchdarkly.com^$third-party
@@ -8278,6 +8282,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||hellobar.com/ping?
 ||helloextend.com/tracking
 ||helloretail.com/serve/collect/
+||helpshift.com/events/
 ||heraldandtimeslabs.com/sugar.js
 ||heroku.com/?callback=getip$third-party
 ||heyday.io/idx/
@@ -8409,6 +8414,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||kalstats.kaltura.com^
 ||kbb.com/partner/$third-party
 ||kelkoogroup.net/st?
+||kimonix.com/analytics/
 ||kiwari.com^*/impressions.asp?
 ||kiwi.mdldb.net^
 ||kiwisizing.com/api/log
@@ -8698,6 +8704,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||nude.hu/html/track.js
 ||nvidia.partners/telemetry/
 ||o.aolcdn.com/js/mg1.js
+||observe-nexus.pointandplace.com^
 ||observer.ip-label.net^
 ||ocmail1.in/rtw/$image
 ||oct8ne.com/Visitor/
@@ -8930,6 +8937,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rakanto.com/cx_collector/
 ||ramp.purch.com^
 ||rampjs-cdn.system1.com^
+||rapidspike.com/performance/
+||rapidspike.com/static/js/timingpcg.min.js
 ||raygun.io/events?
 ||rbl.ms/res/users/tracking/
 ||reach-id.orbit.tm-awx.com^
@@ -50345,6 +50354,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 @@||board-game.co.uk/cdn-cgi/zaraz/s.js$script,~third-party
 @@||bookmate.com^*/impressions?$~third-party,xmlhttprequest
 @@||bostonglobe.com/login/js/lib/AppMeasurement.js$~third-party
+@@||browser-intake-datadoghq.com^$domain=pluto.tv
 @@||c.lytics.io/api/tag/$script,domain=time.com
 @@||c.paypal.com/da/r/fb.js$script
 @@||c.webtrends-optimize.com/acs/$image,script,domain=tvlicensing.co.uk
@@ -50627,6 +50637,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 @@||trackonomics.net/client/$script,domain=popsugar.com
 @@||travel-assets.com/platform-analytics-prime/$domain=chase.com
 @@||tunein.com/api/v1/comscore$~third-party
+@@||unpkg.com/@adobe/magento-storefront-event-collector@$domain=osprey.com
 @@||userapi.com^*.gif?extra=$image,domain=vk.com
 @@||usplastic.com/js/hawk.js
 @@||uwufufu.com/_nuxt/mixpanel.$~third-party
