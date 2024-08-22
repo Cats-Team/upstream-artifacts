@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202408202103
+! Version: 202408220100
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Aug 2024 21:03 UTC
+! Last modified: 22 Aug 2024 01:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -36700,6 +36700,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.floris.amsterdam^$third-party
+||suchanalytik.hideandsec.sh^
+||tealium.cbsnews.com^
 ||ninja.data.olxcdn.com^
 ||ocular.mydealz.de^
 ||tiq.espritshop.pl^
@@ -70509,6 +70512,8 @@ zzb.1897pentagram.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/modules/kixelltag/views/js/kst-$script
+/modules/opartstat/*
 /wpm/strict/app/web-pixel
 /openrtb2/auction
 /gciaf/prod/*-GCIAF-STANDARD
@@ -71069,6 +71074,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||roomvo.com/services/event/
 ||a.poki-cdn.com/t2.js
 ||up.clickiocdn.com/*/log/$image
 ||letgo.com/chunks/modern/*-FingerPrintWrapper.*.js
@@ -71398,8 +71404,6 @@ wanchan.jp##.recommend_header + div[style^="aspect-ratio:"]
 /AppMeasurement_Module_ActivityMap.min.js$domain=petco.com
 ||ancestrycdn.com/webui-unifiedtracking/
 ||csp.godaddy.com/eventbus
-||att.com/scripts/ssaf_universal_client/prod/ssaf-uc.js
-||att.com/scripts/ssaf_universal_client/prod/ssaf-uc.js$script,redirect-rule=noopjs
 ||webapi.wral.com/api/analytics/
 ||api.wral.com/witness/v1/measurement
 ||organiccdn.io/assets/sdk/monitor.unit-sdk.js
@@ -76740,6 +76744,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||apps.bazaarvoice.com/apps/vendors/bv-ui-core_logger@*_bv_chunk.js$domain=lenovo.com
 @@||tags.bkrtx.com/js/bk-coretag.js$domain=miclaro.com.hn
 @@||googletagmanager.com/gtm.js$domain=mall.heiwa.jp
 @@||googletagmanager.com/gtag/js$domain=mall.heiwa.jp
