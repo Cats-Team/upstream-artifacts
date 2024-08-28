@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: UKwpAVMP2kW1fJ4xMPkpWw
-! Version: 202408262351
+! Checksum: buAiW5Mtnyga214XlT9eyA
+! Version: 202408280441
 ! Title: EasyPrivacy
-! Last modified: 26 Aug 2024 23:51 UTC
+! Last modified: 28 Aug 2024 04:41 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4730,6 +4730,7 @@ omni.soundestlink.com$image
 ||loginfra.com^$third-party
 ||logmatic.io^$third-party
 ||lognormal.net^$third-party
+||logr-ingest.com^$third-party
 ||logrocket.com^$third-party
 ||logrocket.io^$third-party
 ||logz.io^$third-party
@@ -7320,6 +7321,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ampproject.org/preconnect.gif
 ||ams-pageview-public.s3.amazonaws.com^
 ||analyse.bcovery.com^
+||analytic-client.chickgoddess.com^
+||analytic-client.panowars.com^
 ||analytic.rollout.io^
 ||analytic.xingcloud.com^$third-party
 ||analyticcdn.globalmailer.com^
@@ -8185,6 +8188,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||g.msn.com^
 ||g2insights-cdn.azureedge.net^
 ||ga-beacon.appspot.com^
+||ga.chickgoddess.com/gs_api/stats/
 ||ga.webdigi.co.uk^
 ||gaijin.net/tag?
 ||gamedistribution.com/event?
@@ -8667,6 +8671,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mzbcdn.net/mngr/mtm.js
 ||nastydollars.com/trk/
 ||native-ads-events-api.c4s-rd.services^
+||navattic.com/api/events/
 ||naver.net/wcslog.js
 ||navlink.com/__utmala.js
 ||nbcudigitaladops.com/hosted/housepix.gif
@@ -11367,6 +11372,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||collect.alipay.com^
 ||collect.asics.com^
 ||collect.banggood.com^
+||collect.deel.com^
 ||collect.hollisterco.com^
 ||collect.klove.com^
 ||collect.reagroupdata.com.au^
@@ -11829,6 +11835,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||kohls.com/test_rum_nv?
 ||komoot.*/api/t/event
 ||kompass.com/logAdvertisements
+||kour.io/api/track
 ||kroger.com/clickstream/
 ||kudoslabs.gg/track/
 ||l.usaa.com/e/v1/
@@ -12206,6 +12213,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sa.uswitch.com^
 ||saa.insideedition.com^
 ||samsung.com/us/web/internal/logger
+||sapi.tremendous.com^
 ||sapphire-api.target.com^
 ||sciencechannel.com/events/
 ||scloud.online/stat/
@@ -49332,6 +49340,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||analytics.cnblogs.com^
 ||analytics.oceanengine.com^
 ||analytics.shop.hisense.com^
+||analytics.yicai.com^
 ||api.ea3w.com/hits.js
 ||apilog-web.acfun.cn^
 ||apiwmda.58.com.cn^
@@ -49344,6 +49353,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||banana.le.com^
 ||bc.qunar.com^
 ||beacon.qq.com^
+||channel-analysis-js.gmw.cn^
 ||cherry.le.com^
 ||clewm.net/public/cli_analytics.js$domain=cli.im
 ||click.gamersky.com^
@@ -49517,6 +49527,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||titan24.com/scripts/stats.js
 ||tj.img4399.com^
 ||tongji.mafengwo.cn^
+||tongji.techweb.com.cn^
 ||tongji.xinmin.cn^
 ||tongji2.vip.duba.net/__infoc.gif?
 ||top.baidu.com/js/nsclick.js
@@ -50998,10 +51009,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 @@||justmyshop.com/gate/criteo/product-id.js$~third-party
 @@||k-img.com/script/analytics/s_code.js$script,domain=kakaku.com
 @@||karte.io/libs/tracker.$domain=zf1.tohoku-epco.co.jp|zozo.jp
+@@||l.logly.co.jp/lift$script,domain=sponichi.co.jp
 @@||line-scdn.net^*/torimochi.js$script,domain=demae-can.com
 @@||linksynergy.com/minified_logic.js$xmlhttprequest
 @@||log000.goo.ne.jp/gcgw.js$domain=nttxstore.jp
-@@||logly.co.jp/recommend/img.benesse-cms.jp/$image,domain=benesse.ne.jp
+@@||logly.co.jp/recommend/$image,domain=benesse.ne.jp|sponichi.co.jp
 @@||nakanohito.jp^*/bi.js$domain=kenko-tokina.co.jp|myna.go.jp
 @@||nittsu.com/Tracking/Scripts/Tracking/track.js
 @@||platform.twitter.com/oct.js$domain=ncsoft.jp
