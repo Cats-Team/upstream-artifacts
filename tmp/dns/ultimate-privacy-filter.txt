@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202408280304
+! Version: 202408290303
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 28 Aug 2024 03:04 UTC
+! Last modified: 29 Aug 2024 03:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -36166,6 +36166,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||sapi.tremendous.com^
 ||services.haaretz.com^
 ||track.hydro.online^
 ||analytics.raenonx.cc^
@@ -69068,6 +69069,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||zoyaporn.com/js/jquery.iframetracker.js
+||vanilla.futurecdn.net/*/media/shared/js/slide-analytics.*.js
+||runtime.fivem.net/counts.json
+||sight.ewp.gg/track/
+||data.riotgames.com/collector/*/events
 ||tvsyd.dk/js/pscript.js
 ||s.gaming.tools/api/event|
 ||promos.investing.com/*/digibox.gif?
@@ -74760,6 +74766,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||api-iam.intercom.io/messenger/web/ping$domain=support.anthropic.com
 @@||l.logly.co.jp/lift$script,domain=sponichi.co.jp
 @@||logly.co.jp/recommend/$image,domain=sponichi.co.jp
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=sfd.pl
