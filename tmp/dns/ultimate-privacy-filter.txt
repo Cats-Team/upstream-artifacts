@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202408290303
+! Version: 202408300303
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 29 Aug 2024 03:03 UTC
+! Last modified: 30 Aug 2024 03:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -36166,6 +36166,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||collector.superwall.me^
+||tracker.grupanya.com^
 ||sapi.tremendous.com^
 ||services.haaretz.com^
 ||track.hydro.online^
@@ -38703,6 +38705,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||yourblocksite.com^
 ||collection-endpoint-prod.herokuapp.com^
 ||collection-endpoint-staging.herokuapp.com^
+||essential-apps-analytics.herokuapp.com^
 ||d10vy5gom1ed53.cloudfront.net^
 ||um-public-panel-prod.s3.amazonaws.com^
 10002.connector-qa1.marketingcloudqaapis.com$image
@@ -69069,6 +69072,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||static.quiq-cdn.com/chat-ui/plugin-google-analytics-*.js
+||rtings.com/api/event|
+||ingesteer.services-prod.nsvcs.net/rum_collection|
 ||zoyaporn.com/js/jquery.iframetracker.js
 ||vanilla.futurecdn.net/*/media/shared/js/slide-analytics.*.js
 ||runtime.fivem.net/counts.json
@@ -74067,6 +74073,8 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||analysis.vesync.com^
+||log16-normal-useast5.tiktokv.us^
 ||insights.zennioptical.com^
 ||proxy.telemetry.us-ashburn-1.oci.oraclecloud.com^
 ||sf16-telemetry-proxy-oci.tiktokcdn-us.com^
@@ -74766,6 +74774,9 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||cdn.cxense.com/cx.cce.js$domain=i-voce.jp
+@@||cdn.cxense.com/cx.js$domain=i-voce.jp
+@@||api.cxense.com/public/widget/data?json=$domain=i-voce.jp
 @@||api-iam.intercom.io/messenger/web/ping$domain=support.anthropic.com
 @@||l.logly.co.jp/lift$script,domain=sponichi.co.jp
 @@||logly.co.jp/recommend/$image,domain=sponichi.co.jp
