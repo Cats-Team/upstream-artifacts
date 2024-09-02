@@ -1,9 +1,9 @@
-! Checksum: pP4y3HizgsMuB6DKaUjjGQ
-! Diff-Path: ../patches/11/11-s-1725125834-3600.patch
+! Checksum: Xv1B9wmoNubvCl8kc1y4Vg
+! Diff-Path: ../patches/11/11-s-1725183396-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.54.3
-! TimeUpdated: 2024-08-31T17:33:21+00:00
+! Version: 2.0.54.5
+! TimeUpdated: 2024-09-01T09:32:49+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1048,8 +1048,8 @@ nan-net.jp,nan-net.com#%#//scriptlet('remove-node-text', 'script', 'adblock')
 nan-net.jp,nan-net.com###adblock_guide_mask
 nan-net.jp,nan-net.com##.adblock_guide_box
 ! nazology.net,nijimen.net anti-adb
-nazology.net,nijimen.net#%#//scriptlet('prevent-setTimeout', 'adBoxEl')
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=nazology.net|nijimen.net
+nazology.kusuguru.co.jp,nijimen.net#%#//scriptlet('prevent-setTimeout', 'adBoxEl')
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=nazology.kusuguru.co.jp|nijimen.net
 ! Rules for AdFender to block injected ads when AdGuard DNS is active
 ! https://github.com/AdguardTeam/AdguardFilters/issues/127712
 erozine.jp#%#//scriptlet("set-constant", "mobiles", "")
@@ -2571,7 +2571,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
-||ddd-smart.net/*.php
+zozovideo.com##div[style^="position: absolute; width:"][style$=" top: 0px; left: 0px;"]
 ||4gamer.net/css/pr/SP_topjack.css
 4gamer.net##.SP_JACK
 4gamer.net##.timeline_satellite_middle
