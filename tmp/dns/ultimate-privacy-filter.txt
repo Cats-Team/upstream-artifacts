@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409022105
+! Version: 202409032103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 02 Sep 2024 21:05 UTC
+! Last modified: 03 Sep 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -69058,6 +69058,7 @@ zzb.1897pentagram.com$image
 ||plausible.io/api/event
 /umami.js
 /zhugeio.js
+/loader-wp/static/loader.min.js?
 &l=dataLayer&cx=c
 ?v=2&tid=G-$~third-party
 ://sgtm.*.js?id=GTM-
@@ -69545,6 +69546,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+2gis.*#%#//scriptlet('set-local-storage-item', '/_ym/', '$remove$')
 ||tags.stepstone.com/utag/*/prod/utag.js
 ||static.posta.com.tr/scripts/tracking/dailymotion-event.min.js
 ||afkgaming.com/scooby/api/v1/log/event|
@@ -75260,6 +75262,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||cdn.clerk.io/clerk.js$domain=garmont.com
 @@||cdn.cxense.com/cx.cce.js$domain=i-voce.jp
 @@||cdn.cxense.com/cx.js$domain=i-voce.jp
 @@||api.cxense.com/public/widget/data?json=$domain=i-voce.jp
@@ -76381,7 +76384,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 @@||tag.aticdn.net/*/smarttag.js$domain=rte.ie
 @@||cdn.blueconic.net/salemmediagroup.js$domain=biblestudytools.com
 @@||cdn.trackjs.com/releases/current/tracker.js$domain=express.com
-@@||cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$domain=moretvtime.com
 @@||googletagmanager.com/gtm.js$domain=beterbed.nl
 @@||dw.cbsi.com/anonc.js$domain=cbs.com
 @@||googletagmanager.com/gtag/js$domain=nbc.com
