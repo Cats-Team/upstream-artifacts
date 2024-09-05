@@ -1,9 +1,9 @@
-! Checksum: DH+RShOiOPPJmOkVBJJfnQ
-! Diff-Path: ../patches/3/3-s-1725370671-3600.patch
+! Checksum: B41By8dcan/TrCMww35hFQ
+! Diff-Path: ../patches/3/3-s-1725475044-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.74.35
-! TimeUpdated: 2024-09-03T13:32:50+00:00
+! Version: 2.0.74.41
+! TimeUpdated: 2024-09-04T18:32:30+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -604,6 +604,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||joinmassive.com^$third-party
+||cdnweb2analytics.com^
+||notix.io^
+||pub.pixels.ai^
+||data.tm-awx.com^
 ||eu-1-id5-sync.com^
 ||octotracking.com^
 ||cartx.cloud^
@@ -1278,7 +1283,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||cl*.k5a.io^$third-party
 ||analytics.superstructure.ai^
 ||cdn.raekdata.com^
-||felix.data.tm-awx.com^
 ||imzahrwl.xyz^
 ||gae.karte.io^
 ||script.anura.io^
@@ -70230,6 +70234,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/152328
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk|~gizmodo.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/152079
+! aglint-disable-next-line no-excluded-rules
 !||staff-start.com/js/track/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187274
 ! Breaks search on shopping.yahoo.co.jp
@@ -70251,6 +70256,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 !
+||nexon.com/nxlog-collect/
 2gis.*#%#//scriptlet('set-local-storage-item', '/_ym/', '$remove$')
 ||tags.stepstone.com/utag/*/prod/utag.js
 ||static.posta.com.tr/scripts/tracking/dailymotion-event.min.js
@@ -71034,7 +71040,6 @@ gmx.com##div[data-mod-name="taboolateasers"]
 ||api.cian.ru/ebc-analytics/
 ||c-rings.net^$script,third-party
 ||go.techtarget.com/clicktrack-r/
-ero-anime.net###top_area_under
 ||api.earthly.dev/analytics|
 ||earthly.dev/blog/assets/js/analytics.js
 ||clck.yandex.ru/counter/
@@ -73630,7 +73635,6 @@ gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-te
 gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
 blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward(3)
 jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward(2)
-ero-anime.net#?##side_col #index_side_widget:has(.ninja-recommend-block)
 minnyuu.jp#?#div[class$="BlockBase"] > div > div > div.plugin-freearea > div.ninja-recommend-block:upward(4)
 doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp#?#.plugin-memo > div.side > div.ninja-recommend-block:upward(2)
 blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block:upward(2)
@@ -76965,6 +76969,13 @@ inapps.appsflyersdk.com^
 !
 ! For platforms which do not support $redirect rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/187876
+@@||cdn.clerk.io/clerk.js$domain=industrivarer.no
+! Rule $referrerpolicy is required for apps, becasue source of "cdn.clerk.io/clerk.js" is not detected
+!+ PLATFORM(windows, mac, android)
+||industrivarer.no^$referrerpolicy=origin
+! https://github.com/AdguardTeam/AdguardFilters/issues/187569
+@@||cdn.livechatinc.com/tracking.js$domain=bitdefender.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187827
 @@||cdn.clerk.io/clerk.js$domain=garmont.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187278
@@ -79177,7 +79188,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 ||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com,redirect=googletagservices-gpt,important
 @@||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/44731
-@@||cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$domain=nfmovies.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/44656
 @@||cleverbridge.com/*/cleveranalytics.js^$domain=secure.ccleaner.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/44538

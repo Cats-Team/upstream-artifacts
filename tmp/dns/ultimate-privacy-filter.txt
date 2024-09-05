@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409032103
+! Version: 202409042103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 03 Sep 2024 21:03 UTC
+! Last modified: 04 Sep 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -253,6 +253,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||joinmassive.com^$third-party
+||cdnweb2analytics.com^
+||notix.io^
+||pub.pixels.ai^
+||data.tm-awx.com^
 ||eu-1-id5-sync.com^
 ||octotracking.com^
 ||cartx.cloud^
@@ -927,7 +932,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||cl*.k5a.io^$third-party
 ||analytics.superstructure.ai^
 ||cdn.raekdata.com^
-||felix.data.tm-awx.com^
 ||imzahrwl.xyz^
 ||gae.karte.io^
 ||script.anura.io^
@@ -69546,6 +69550,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||nexon.com/nxlog-collect/
 2gis.*#%#//scriptlet('set-local-storage-item', '/_ym/', '$remove$')
 ||tags.stepstone.com/utag/*/prod/utag.js
 ||static.posta.com.tr/scripts/tracking/dailymotion-event.min.js
@@ -70327,7 +70332,6 @@ gmx.com##div[data-mod-name="taboolateasers"]
 ||api.cian.ru/ebc-analytics/
 ||c-rings.net^$script,third-party
 ||go.techtarget.com/clicktrack-r/
-ero-anime.net###top_area_under
 ||api.earthly.dev/analytics|
 ||earthly.dev/blog/assets/js/analytics.js
 ||clck.yandex.ru/counter/
@@ -72918,7 +72922,6 @@ gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-te
 gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
 blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward()
 jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward()
-ero-anime.net#?##side_col #index_side_widget:has(.ninja-recommend-block)
 minnyuu.jp#?#div[class$="BlockBase"] > div > div > div.plugin-freearea > div.ninja-recommend-block:upward()
 doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp#?#.plugin-memo > div.side > div.ninja-recommend-block:upward()
 blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block:upward()
@@ -75262,6 +75265,8 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||cdn.clerk.io/clerk.js$domain=industrivarer.no
+@@||cdn.livechatinc.com/tracking.js$domain=bitdefender.com
 @@||cdn.clerk.io/clerk.js$domain=garmont.com
 @@||cdn.cxense.com/cx.cce.js$domain=i-voce.jp
 @@||cdn.cxense.com/cx.js$domain=i-voce.jp
@@ -76429,7 +76434,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 @@||embeddedanalytics.com/updateeakpi.html$domain=brocardi.it
 ||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com,redirect=googletagservices-gpt,important
 @@||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com
-@@||cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$domain=nfmovies.com
 @@||cleverbridge.com/*/cleveranalytics.js^$domain=secure.ccleaner.com
 @@||d81mfvml8p5ml.cloudfront.net/n8hnletr.js$domain=countryattire.com
 @@||googletagmanager.com/gtm.js^$domain=countryattire.com
