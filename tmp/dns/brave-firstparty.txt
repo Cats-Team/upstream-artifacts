@@ -780,6 +780,7 @@ grubhub.com,dashboard.razorpay.com,joinhoney.com#@##credential_picker_container
 ##[data-test="vf-es-ad-wrapper"]
 ##[data-testid="ad_testID"]
 ##[data-testid="prism-ad-wrapper"]
+##[id^="ad-wrap-"]
 ##[id^="div-gpt-ad"]
 ##display-ads
 ##div[data-content="Advertisement"]
@@ -945,6 +946,7 @@ grubhub.com,dashboard.razorpay.com,joinhoney.com#@##credential_picker_container
 ###taboola-ad
 ###taboola-adverts
 ###taboola-below
+###taboola-below-article
 ###taboola-below-article-1
 ###taboola-below-article-thumbnails-express
 ###taboola-below-article-thumbnails-v2
@@ -1048,6 +1050,7 @@ grubhub.com,dashboard.razorpay.com,joinhoney.com#@##credential_picker_container
 ###gpt-poster
 ##.gnt_flp
 ##.gnt_rr_xpst
+##.gnt_em_vp_c[data-g-s="vp_dk"]
 ##.gnt_rr_xst
 ##.gnt_tb.gnt_tbb
 ##.gnt_tbr.gnt_tb
@@ -1416,6 +1419,20 @@ softonic.com##.sam-slot
 ! business-standard.com
 business-standard.com##.advertisement-bg
 business-standard.com##div[id^="between_article_content_"]
+! timeanddate.com
+timeanddate.com,timeanddate.no,timeanddate.de###ad1
+timeanddate.com,timeanddate.no,timeanddate.de###anw
+! securityweek.com
+securityweek.com##.sw-home-ads
+securityweek.com##.pum-overlay[data-popmake*="popup-ad"]
+securityweek.com##.pum-open-overlay:style(overflow: auto !important;)
+! boundingintocomics.com
+boundingintocomics.com,themix.net##.tpd-banner-mobile
+boundingintocomics.com,themix.net##.container.header-container__main
+boundingintocomics.com,themix.net##.banner-spacer-top
+boundingintocomics.com,themix.net##.header:style(top: 0px !important;)
+boundingintocomics.com,themix.net##h1:style(margin-top:20px !important;)
+boundingintocomics.com,themix.net##main[role="main"]:style(margin-top:30px !important;)
 ! foodnetwork.com
 foodnetwork.com###leaderboard-wrap
 ! greencarreports.com
@@ -3170,3 +3187,74 @@ stripes.com###MidPageAd
 ||zoominfo.com/osx7m0dx/init.js
 ! Prevents cookie messages from launching
 ||cv-library.co.uk/cdn-cgi/zaraz/
+!! Japanese first-party
+! nicovideo.jp
+||ads.nicovideo.jp^$script,xmlhttprequest
+nicovideo.jp##.Ads728x90WebPcFooter
+nicovideo.jp##.Ads
+! jin115.com
+##.google-2ad
+jin115.com##.dix_ad_n
+jin115.com###sponsered
+jin115.com##div[style="width:728px; height:90px;"]
+jin115.com##div.sidewrapper:has(div.ad-center)
+jin115.com###side_left
+! yahoo.co.jp
+||yjtag.yahoo.co.jp^
+yahoo.co.jp##iframe[id$="_ad_frame"]
+news.yahoo.co.jp###yjnFixableArea > div > div.jOKwHf
+news.yahoo.co.jp###contentsWrap > div.YOUcY + div.cyaYcX:has(> div.jOKwHf:only-child > div[id^="yads_"])
+news.yahoo.co.jp###yjnFooter.kBXsbI:style(margin-bottom: 0 !important;)
+news.yahoo.co.jp##.newsFeed_list > li > div[id^="ad"]
+yahoo.co.jp###lrec
+! asahi.com
+asahi.com###HometopAd
+asahi.com##.AdMod
+asahi.com##div[x-component-name="AsahiDynamicInclude"][x-component-data]
+asahi.com##[x-component-name="Naka9OutBrain"]
+asahi.com##.Ad
+asahi.com##.andNativead
+asahi.com##.p_infeed_list_wrapper
+asahi.com##.l-aside > div[class] > div[class]:has(> div.Section > div.Pr)
+asahi.com##.ArticleRectangleAd
+asahi.com###DfpPrInfo1
+asahi.com##.p-topBanner
+asahi.com##.fk8F1
+asahi.com##.PrTextList
+asahi.com##.TJcqi
+asahi.com##.list-ad
+asahi.com##.list-adL
+! yomiuri.co.jp
+yomiuri.co.jp##.p-ad-dfp-banner
+yomiuri.co.jp###ad_dfp_premiumrec
+yomiuri.co.jp##.ads_inview
+yomiuri.co.jp##.p-ad-thumbnail-txt
+yomiuri.co.jp##.p-ad-dfp-middle-rec
+yomiuri.co.jp##.p-headline__ads
+yomiuri.co.jp##.p-selection__ads
+! itmedia.co.jp
+itmedia.co.jp##div[id*="Rectangle"]
+itmedia.co.jp##div[id$="InFeedNative"]
+itmedia.co.jp##div[id$="BrandText"]
+itmedia.co.jp###TopBox
+itmedia.co.jp###SuperBanner
+itmedia.co.jp###SideLink
+itmedia.co.jp###OwnedAd
+itmedia.co.jp###TextAd
+itmedia.co.jp###SpvLink
+! nlab.itmedia.co.jp
+nlab.itmedia.co.jp##div[id^="logly-lift-"]
+nlab.itmedia.co.jp###globalHeader:style(min-height: 0 !important; margin: 0 !important;)
+itmedia.co.jp##.gad
+itmedia.co.jp##div[style^="font-family:Gill Sans;"][style*="font-size:12px;"][style*="line-height:12px;"]
+! digiday.jp
+digiday.jp##.advertisement
+digiday.jp##.ad_height
+! ascii.jp
+ascii.jp##.pickwrap
+ascii.jp##.ad
+ascii.jp##.ad_gam
+! Japanese first-party (exception rules)
+! https://github.com/AdguardTeam/AdguardFilters/issues/150552
+@@||ads.nicovideo.jp/assets/js/ads2.js$domain=com.nicovideo.jp
+
