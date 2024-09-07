@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409060303
+! Version: 202409062103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 06 Sep 2024 03:03 UTC
+! Last modified: 06 Sep 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -221,7 +221,12 @@ apteka.ru#%#window.yaCounter14913877={ reachGoal: function() {} };
 accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback&&a.hitCallback();}
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
-://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
+#%#//scriptlet('no-protected-audience')
+/.*/$permissions=join-ad-interest-group=()
+/.*/$permissions=run-ad-auction=()
+/.*/$permissions=browsing-topics=()
+/.*/$permissions=private-state-token-issuance=()
+/.*/$permissions=private-state-token-redemption=()
 elcomercio.es#$##engagement-top { display: none !important; }
 elcomercio.es#$#body { overflow: auto !important; }
 ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
@@ -35496,6 +35501,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||log.bloodppressure.info^
+||log.pdfreaders.net^
 ||track2.tprg.ru^
 ||metrics.camsoda.com^
 ||to.torrentfreak.com^
@@ -69556,6 +69563,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||ieq-systems.de/includes/piwikQ.js
+||player.ivideosmart.com/ivsplayer/*/moat-tracker.js
 ||nexon.com/nxlog-collect/
 2gis.*#%#//scriptlet('set-local-storage-item', '/_ym/', '$remove$')
 ||tags.stepstone.com/utag/*/prod/utag.js
@@ -75271,6 +75280,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtm.js?id=GTM-WMQ82P6$domain=excite.co.jp
 @@||api.sprig.com/sdk/$domain=paypal.com
 @@||cdn.clerk.io/clerk.js$domain=industrivarer.no
 @@||cdn.livechatinc.com/tracking.js$domain=bitdefender.com
