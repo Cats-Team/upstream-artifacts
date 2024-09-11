@@ -1,9 +1,9 @@
-! Checksum: +bePNjaefzXiB+t7nw5+Lg
-! Diff-Path: ../patches/4/4-s-1725885504-3600.patch
+! Checksum: iLs6XSqdDcwxbpwvwUNBiA
+! Diff-Path: ../patches/4/4-s-1725986391-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.5.61
-! TimeUpdated: 2024-09-09T12:33:27+00:00
+! Version: 2.1.5.67
+! TimeUpdated: 2024-09-10T16:34:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -746,6 +746,9 @@ mantan-web.jp,fufukokan.af-original.com,myoji-yurai.net,connpass.com,journals.as
 ! #%#//scriptlet('hide-in-shadow-dom', 'button[data-testid="ShareBtn"]')
 israelnationalnews.com,lifehacker.com,cgmagonline.com,gizmodo.com,gamerevolution.com,metro.co.uk,thurrott.com,stereogum.com,ign.com,newsweek.com,dailymail.co.uk,comingsoon.net,timesofisrael.com,nypost.com,9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co#%#//scriptlet('hide-in-shadow-dom', 'button[data-testid="ShareBtn"]')
 !
+audiobookbay.*#?##rsidebar li:has(> h2:contains(Share It))
+shows.acast.com##.ant-row > div.ant-col:has(> div > ul > li#share-icon-facebook)
+ddos-guard.net##.detail-post__socials
 scaler.com##div[class^="shareButton_share"]
 makerworld.com##.portal-css-vxcmzt
 gamemakers.jp##.l-article-header-follow-sns
@@ -1395,7 +1398,6 @@ lahelu.com##button:has(> svg > path[d^="M5.5 15a3.51"])
 femina.fr##.SocialBlock--inArticle
 ivi.ru##.userControls__item_share
 caminteresse.fr##.articleSocials
-navita.co.jp##.c-sns-share__outer
 sovsport.ru##[class^="news-by-id_header"] > div:has(div[class^="share-"])
 allabout.co.jp##div[data-tracking-zone="modules-common-snsLink"]
 leagueoflegends.com##div[class^="ArticleFooter-module--social"]
@@ -1772,7 +1774,7 @@ fineartamerica.com###socialDivLeft
 slovenskenovice.si##.article__metadata--share
 indiaforums.com##.socialMediaShareLinks
 okbizcs.okwave.jp,mognavi.jp##.social_block
-engadget.com##.caas-native-share-btn
+finance.yahoo.com,engadget.com##.caas-native-share-btn
 lematin.ch##button[data-testid="ButtonShare"]
 news.tvb.com##.SocialIconContainer
 nhk.or.jp##body .module--share
@@ -2722,7 +2724,7 @@ zasvetfoto.com##.ya_shring_block
 smulderstextiel.nl##.productdetail-socialmedia
 rte.ie,pridesource.com##.tweets
 zbporn.com##.js-view-share
-txxxporn.tube##.stat-item-share
+txxx.com,txxxporn.tube##.stat-item-share
 yuru-mbti.com##.share-wrapper + div.caution
 wnl.tv##.c-block__share
 rtlnieuws.nl##.article-content__social
@@ -3683,6 +3685,7 @@ motherless.com##li[data-toggle="media-share-container"]
 worldsex.com##.pp-social-bar
 live.fc2.com##.m-view-share
 pornx.to,xhvid.com,xhamster20.desi,xhmoon5.com,xhwide1.com,48idol.*,xhtab2.com,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,xhamsterpremium.com##.share-control
+xhdate.world,xhtab4.com,xhbranch5.com,galleryxh.site,xhbig.com,xhaccess.com,xhofficial.com,seexh.com,taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.video-actions > li.video-actions__item:has(> button > i.reply + span)
 sport.tvp.pl##.news-socials
 sport.tvp.pl##.news-tags__social
 plus.nhk.jp##.stream_panel--info--header > div.stream_panel--actions > button
@@ -4565,8 +4568,6 @@ onsen.nifty.com##.shareToFriends
 store.steampowered.com##a[onclick^="ShowShareDialog();"]
 app-liv.jp##.topics-social
 azlyrics.biz##.smicon
-dizipal1001.com,dizipal5.cloud,dizipal9.cloud,dizipal10.cloud,dizipal11.cloud,dizipal12.cloud,dizipal14.cloud##button[onclick^="window.open ('https://www.facebook.com/sharer.php"]
-dizipal1001.com,dizipal5.cloud,dizipal9.cloud,dizipal10.cloud,dizipal11.cloud,dizipal12.cloud,dizipal14.cloud##button[onclick^="javascript:window.open('https://twitter.com/intent/tweet?"]
 excnn.com##.sexy-bookmarks
 livehindustan.com##.shre-innr
 slowturk.com.tr##.desc-share-group
@@ -4752,7 +4753,7 @@ direct.money.pl##.author-social-list
 autokult.pl##a[data-event-action="share"]
 ||kuroutoshikou.com/resource_k/img/h_snsarea_01.png
 inphic.com,warnerbrosanimationstore.com##.detail_share
-manetatsu.com,roundup-gamers.jp,onepiece-film.jp##.arti-sharing-wrapper
+rbbtoday.com,manetatsu.com,roundup-gamers.jp,onepiece-film.jp##.arti-sharing-wrapper
 ostin.com##.o-product__share
 kalerkantho.com##.news-article-share > span
 baskagazete.com,bursadabugun.com##a[onclick^="RE.share("]
@@ -6432,8 +6433,6 @@ washingtonpost.com##div[data-qa="utility-bar"] > div[data-sc-c="tooltip"]
 samfw.com##[id^="btn-share"]
 watchserieshd.tv,watchmovie.movie##.video-socialshare-container
 mahoako-anime.com,ensemble-stars.jp,zom100.com,notepm.jp,mushikaburihime.com,kuronoshokanshi.com,anime.cf-vanguard.com,hanabichan.com,popipa-movie.bang-dream.com,kumo-anime.com,jojo-portal.com,cssreference.io##.footer-share
-dizipal700.com,dizipal701.com,dizipal702.com,dizipal703.com,dizipal704.com,dizipal705.com,dizipal706.com,dizipal707.com,dizipal708.com,dizipal709.com,dizipal710.com,dizipal711.com,dizipal712.com,dizipal713.com,dizipal714.com,dizipal715.com,dizipal716.com,dizipal717.com,dizipal718.com,dizipal719.com,dizipal720.com,dizipal721.com,dizipal722.com,dizipal723.com,dizipal724.com,dizipal725.com,dizipal726.com,dizipal727.com,dizipal728.com,dizipal729.com,dizipal730.com,dizipal731.com,dizipal732.com,dizipal733.com,dizipal734.com,dizipal735.com,dizipal736.com,dizipal737.com,dizipal738.com,dizipal739.com,dizipal740.com,dizipal741.com,dizipal742.com,dizipal743.com,dizipal744.com,dizipal745.com,dizipal746.com,dizipal747.com,dizipal748.com,dizipal749.com,dizipal750.com,dizipal751.com,dizipal752.com,dizipal753.com,dizipal754.com,dizipal755.com,dizipal756.com,dizipal757.com,dizipal758.com,dizipal759.com,dizipal760.com,dizipal761.com,dizipal762.com,dizipal763.com,dizipal764.com,dizipal765.com,dizipal766.com,dizipal767.com,dizipal768.com,dizipal769.com,dizipal770.com,dizipal771.com,dizipal772.com,dizipal773.com,dizipal774.com,dizipal775.com,dizipal776.com,dizipal777.com,dizipal778.com,dizipal779.com,dizipal780.com,dizipal781.com,dizipal782.com,dizipal783.com,dizipal784.com,dizipal785.com,dizipal786.com,dizipal787.com,dizipal788.com,dizipal789.com,dizipal790.com,dizipal791.com,dizipal792.com,dizipal793.com,dizipal794.com,dizipal795.com,dizipal796.com,dizipal797.com,dizipal798.com,dizipal799.com,dizipal800.com,dizipal801.com,dizipal802.com,dizipal803.com,dizipal804.com,dizipal805.com,dizipal806.com,dizipal807.com,dizipal808.com,dizipal809.com,dizipal810.com,dizipal811.com,dizipal812.com,dizipal813.com,dizipal814.com,dizipal815.com,dizipal816.com,dizipal817.com,dizipal818.com,dizipal819.com,dizipal820.com,dizipal821.com,dizipal822.com,dizipal823.com,dizipal824.com,dizipal825.com,dizipal826.com,dizipal827.com,dizipal828.com,dizipal829.com,dizipal830.com,dizipal831.com,dizipal832.com,dizipal833.com,dizipal834.com,dizipal835.com,dizipal836.com,dizipal837.com,dizipal838.com,dizipal839.com,dizipal840.com,dizipal841.com,dizipal842.com,dizipal843.com,dizipal844.com,dizipal845.com,dizipal846.com,dizipal847.com,dizipal848.com,dizipal849.com,dizipal850.com##button[onclick^="window.open ('http://www.facebook.com/sharer.php?"]
-dizipal700.com,dizipal701.com,dizipal702.com,dizipal703.com,dizipal704.com,dizipal705.com,dizipal706.com,dizipal707.com,dizipal708.com,dizipal709.com,dizipal710.com,dizipal711.com,dizipal712.com,dizipal713.com,dizipal714.com,dizipal715.com,dizipal716.com,dizipal717.com,dizipal718.com,dizipal719.com,dizipal720.com,dizipal721.com,dizipal722.com,dizipal723.com,dizipal724.com,dizipal725.com,dizipal726.com,dizipal727.com,dizipal728.com,dizipal729.com,dizipal730.com,dizipal731.com,dizipal732.com,dizipal733.com,dizipal734.com,dizipal735.com,dizipal736.com,dizipal737.com,dizipal738.com,dizipal739.com,dizipal740.com,dizipal741.com,dizipal742.com,dizipal743.com,dizipal744.com,dizipal745.com,dizipal746.com,dizipal747.com,dizipal748.com,dizipal749.com,dizipal750.com,dizipal751.com,dizipal752.com,dizipal753.com,dizipal754.com,dizipal755.com,dizipal756.com,dizipal757.com,dizipal758.com,dizipal759.com,dizipal760.com,dizipal761.com,dizipal762.com,dizipal763.com,dizipal764.com,dizipal765.com,dizipal766.com,dizipal767.com,dizipal768.com,dizipal769.com,dizipal770.com,dizipal771.com,dizipal772.com,dizipal773.com,dizipal774.com,dizipal775.com,dizipal776.com,dizipal777.com,dizipal778.com,dizipal779.com,dizipal780.com,dizipal781.com,dizipal782.com,dizipal783.com,dizipal784.com,dizipal785.com,dizipal786.com,dizipal787.com,dizipal788.com,dizipal789.com,dizipal790.com,dizipal791.com,dizipal792.com,dizipal793.com,dizipal794.com,dizipal795.com,dizipal796.com,dizipal797.com,dizipal798.com,dizipal799.com,dizipal800.com,dizipal801.com,dizipal802.com,dizipal803.com,dizipal804.com,dizipal805.com,dizipal806.com,dizipal807.com,dizipal808.com,dizipal809.com,dizipal810.com,dizipal811.com,dizipal812.com,dizipal813.com,dizipal814.com,dizipal815.com,dizipal816.com,dizipal817.com,dizipal818.com,dizipal819.com,dizipal820.com,dizipal821.com,dizipal822.com,dizipal823.com,dizipal824.com,dizipal825.com,dizipal826.com,dizipal827.com,dizipal828.com,dizipal829.com,dizipal830.com,dizipal831.com,dizipal832.com,dizipal833.com,dizipal834.com,dizipal835.com,dizipal836.com,dizipal837.com,dizipal838.com,dizipal839.com,dizipal840.com,dizipal841.com,dizipal842.com,dizipal843.com,dizipal844.com,dizipal845.com,dizipal846.com,dizipal847.com,dizipal848.com,dizipal849.com,dizipal850.com##button[onclick^="javascript:window.open('https://twitter.com/intent/tweet?"]
 voyeurex.com,miomio.guru,9tsu.info,9tsu.me,koravidstream.com##.open-share-toolbar
 crowdin.com##.share-cell
 lybrate.com###shareBtnLeft
@@ -12552,6 +12551,8 @@ auto.ru#?#.Review__footer-col:has(> div.ReviewShare)
 !
 ! Rambler
 !
+!+ NOT_OPTIMIZED
+navita.co.jp##.c-sns-share__outer
 !+ NOT_OPTIMIZED
 rosbalt.ru,oilcapital.ru,inkazan.ru##button[class^="MobileShareButton"]
 !+ NOT_OPTIMIZED
