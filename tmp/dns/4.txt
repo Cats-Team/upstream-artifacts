@@ -1,9 +1,9 @@
-! Checksum: qbIzANEOgM82KiU7aqPvmA
-! Diff-Path: ../patches/4/4-s-1726310278-3600.patch
+! Checksum: 0cIZJOm/Eo7la3pzLq77Jg
+! Diff-Path: ../patches/4/4-s-1726493821-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.5.80
-! TimeUpdated: 2024-09-14T10:32:49+00:00
+! Version: 2.1.5.86
+! TimeUpdated: 2024-09-16T13:32:47+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -720,7 +720,7 @@ zukkamoku.com,zisalog.com,howto-gadget.com,livefortoday.jp,marushin-magazine.com
 ! ##.sns-btns
 home-tv.co.jp,topics.smt.docomo.ne.jp,shinailbo.co.kr,video.tv-tokyo.co.jp,media.rakuten-sec.net,yoshidakenkou.net##.sns-btns
 ! ##.sns-box
-direct.sanwa.co.jp,happymail.co.jp,videor.co.jp,hbol.jp,myethicalchoice.com,kumanichi.com,dragonquest.jp,news.biglobe.ne.jp,oceans.tokyo.jp,realkitchen-interior.com,joshi-spa.jp,nikkan-spa.jp,persol-tech-s.co.jp,smashlog.games##.sns-box
+cf-room.com,direct.sanwa.co.jp,happymail.co.jp,videor.co.jp,hbol.jp,myethicalchoice.com,kumanichi.com,dragonquest.jp,news.biglobe.ne.jp,oceans.tokyo.jp,realkitchen-interior.com,joshi-spa.jp,nikkan-spa.jp,persol-tech-s.co.jp,smashlog.games##.sns-box
 ! ###social
 prdesse.com,torano-maki.net,daijisen.jp,html-css-javascript.com,premiumleech.eu,energydrinkmania.net,bakusai.com,gundam40th.net,onlinetyping.org,classicreload.com,do-know.com,derivative-calculator.net,navigaweb.net,namet.com.tr,kakoysegodnyaprazdnik.ru,gals.com###social
 ! ##.social__share
@@ -746,6 +746,12 @@ mantan-web.jp,fufukokan.af-original.com,myoji-yurai.net,connpass.com,journals.as
 ! #%#//scriptlet('hide-in-shadow-dom', 'button[data-testid="ShareBtn"]')
 israelnationalnews.com,lifehacker.com,cgmagonline.com,gizmodo.com,gamerevolution.com,metro.co.uk,thurrott.com,stereogum.com,ign.com,newsweek.com,dailymail.co.uk,comingsoon.net,timesofisrael.com,nypost.com,9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co#%#//scriptlet('hide-in-shadow-dom', 'button[data-testid="ShareBtn"]')
 !
+basketball-zine.com##.auth-box .sns-box
+pantip.com##.pt-social-share
+vernaruto.tv##.sidebar > .widget:has(> .share)
+vernaruto.tv##.anime-cover > .general-content:has(> .share)
+nmas.com.mx##div[class*="SocialShareButtons"]
+ascii.jp##.social__text--twitter
 kyivindependent.com###dare-to-ukraine-top-banner
 go2senkyo.com##.m_article_detail_contents > div[style]:has(> a[href^="https://lin.ee"])
 baq.kz##.bolesu
@@ -775,7 +781,7 @@ cyprus-mail.com##social-share-links
 smithsonianmag.com##.longform_share
 ecartelera.com##.isoc
 cdn.vuukle.com##span[class="dropdown-toggle"]
-fuqster.com,bigtitbitches.com##div[title="Share this Video"]
+maturexy.com,fuqster.com,bigtitbitches.com##div[title="Share this Video"]
 fotosklad.ru##span[class^="Share_"]
 s.minkabu.jp##.md_article_text > div.tar:has(> div > div.share-button)
 bitwarden.com##div[class^="css"] > div[class^="css"]:has(> a[target="_blank"][aria-label="Twitter"])
@@ -3700,8 +3706,6 @@ pcradio.ru##.soc-share-mobile
 roote.ekispert.net##.link_area > .link_quarter > a:not(.btn_teiki)
 dictionary.goo.ne.jp##.right_side_sns
 postupi.online##.bg-nd__social-btn
-note.linemusic.jp,note-kirinbrewery.kirin.co.jp,note.com##.o-magazineFloatingSidebar__share
-note.linemusic.jp,note-kirinbrewery.kirin.co.jp,note.com##.o-magazineFloatingSidebar__socials
 goboo.com##div[class^="slide-share_"]
 ||cdn.smule.com/assets/community/billing/share-$image
 echo-online.de##.vrm-socialShare
@@ -3737,7 +3741,6 @@ tripmydream.com##.mediaShareWithFriends__icons
 appledaily.com.tw##.tw-social
 flixhd.cc,sflix.se##.dtc-share
 ichigoproduction.com##.socialList__wrap
-note.com,note.zochang.com##.o-noteContentHeader__share
 i-iro.com##.link-share
 arknights-anime.jp###home > div[class="md:flex justify-center items-center text-center"][anim-start]
 raaga.com##.n-player-right > div.n-plylist-but + div.n-plyer-right-icon
@@ -4095,7 +4098,6 @@ freaksstore.com##.share-sns-section
 wakudoki.ne.jp###productSNS
 m.timesofindia.com##.mob-share-button
 cecile.co.jp##.sp-sharearea
-note.com##.m-shareSheet
 github.com##.readme-sharing
 quiz.community.fmworld.net,nsp.ru##app-share
 love-character.com,doujinhibiki.net##.sharBox
@@ -6378,7 +6380,7 @@ mapsofworld.com##.social_icon
 navbharattimes.indiatimes.com##.wdt_social_share > .social-cell:not(.comments)
 edh.tw##.line-friend
 edh.tw##.linefriend_article
-tudn.com,play.google.com,linktr.ee,tunecore.co.jp,trybotics.com##button[aria-label="Share"]
+lasestrellas.tv,tudn.com,play.google.com,linktr.ee,tunecore.co.jp,trybotics.com##button[aria-label="Share"]
 maersk.com##.p-section__article__meta__share
 bt.com,tebernuskirecci.com.tr##.share-tags
 10web.io##.blog_share_bottom
@@ -9839,7 +9841,6 @@ haller-kreisblatt.de###modul-artikel-empfehlen > [class="clearfix"]
 haller-kreisblatt.de##footer > .article-detail-like
 ign.com,delo.ua##.sharer
 ||graph.facebook.com/?ids=*&fields=*share_count
-pelispedia.tv##.botones-soc
 m.volksstimme.de##ul.ph-sb > li.ph-sb-i:not([class="ph-sb-i"])
 bo.de##.share-inner-wrp > li:not(.print)
 duden.de##.contextual-links > a[href="#duden-share"]
@@ -12705,9 +12706,11 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ! wix.com websites
 ##div[id^="post-social-actions_"]
 ! note.* sites - popular in Japan
+##.o-actionControl__item.relative:nth-child(2)
+##.o-magazineFloatingSidebar__share
+##.o-magazineFloatingSidebar__socials
+##.m-shareSheet
 ##.a-icon--share.o-actionControl__item--socialMobile
-##.o-actionControl__item--social
-##.o-noteContentHeader__share
 ##.p-article__articleWrapper ~ div.p-article__share
 ! hide share button in youtube player
 ##.ytp-share-button
