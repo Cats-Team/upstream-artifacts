@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409172103
+! Version: 202409182103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 17 Sep 2024 21:03 UTC
+! Last modified: 18 Sep 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -35523,6 +35523,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics-api.sconto.cz^
+||log-ana.h3z.jp^
 ||ivstat.indavideo.hu^
 ||stat.indidata.com^
 ||plausible.paimon.moe^
@@ -71773,6 +71775,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+arstechnica.com###story-recommendations
+||assets.rfdcontent.com/*/analytics/
 ||sprinklr.com/api/livechat/prompt/browse/event|
 ||assets.thdstatic.com/analytics/core/*/appMeasure$domain=homedepot.com
 ||canarytokens.com/*/*/*.$all
@@ -76345,6 +76349,9 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||clarity.ms^$cookie=MUID
+||clarity.ms^$cookie=CLID
+||clarity.ms^$cookie=ANON
 ||homerun.co.uk^$cookie=_fingerPrint
 ||cyberghostvpn.com^$cookie=cg_campaign
 ||cyberghostvpn.com^$cookie=cg_clickid
@@ -77509,6 +77516,9 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtm.js$domain=playactivate.com
+@@||online.rshb.ru/rshb-mbfl/lib/snowplow/
+@@||online.rshb.ru/rshb-mbfl/plugins/
 ||hm.baidu.com/hm.js$script,redirect=noopjs,domain=qpp.caq.org.cn
 @@||canarytokens.com/nest/$domain=canarytokens.com
 @@||carsales.com.au/afx_prid/$domain=carsales.com.au
