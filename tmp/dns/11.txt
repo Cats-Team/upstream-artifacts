@@ -1,9 +1,9 @@
-! Checksum: CQDOR8mDQhXj0mcPbned2Q
-! Diff-Path: ../patches/11/11-s-1726677434-3600.patch
+! Checksum: xvCdfdU2DbQit/WvZwNYxA
+! Diff-Path: ../patches/11/11-s-1726767474-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.54.67
-! TimeUpdated: 2024-09-18T16:33:08+00:00
+! Version: 2.0.54.72
+! TimeUpdated: 2024-09-19T17:34:00+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -219,6 +219,7 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||ads-router-noneu.truecaller.com^
 ||umphek.com^
 ||ahoy-internal-ads-hv.b-cdn.net^
 ||ad.iwhop.cn^
@@ -2578,6 +2579,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+news.cnyes.com##.section-aside-wrapper ~ div:has(> div[id^="div-gpt-"])
+ettoday.net##body a[href^="https://ad.ettoday.net/"]
+wutheringwaves.gamerstand.net##.execphpwidget:has(> div.adspace)
+wutheringwaves.gamerstand.net##.execphpwidget:has(> dl > dd > span[style] > a[href^="https://get.mobu.jp/"])
 blog.livedoor.com##body > a[onclick]
 gamekillerapp.com###foot-banner
 gamekillerapp.com##.foot-banner-station
@@ -4582,10 +4587,6 @@ twiman.net##.mx-auto[style="max-width:623px;"]
 finders.me##.__ad-sp
 mag.app-liv.jp##.bnr-infeed
 mag.app-liv.jp##.ad-area-adsense-display
-news.merumo.ne.jp##aside[style="min-height: 250px;"]
-news.merumo.ne.jp##.c-single > aside[style="min-height: 100px;"]
-news.merumo.ne.jp##.c-section__body.u-mt-4 > ul > li > aside[style="min-height: 24vw;"]
-news.merumo.ne.jp##div[id^="gpt_unit_"]
 sotokabe.net###footer_sticky_menu
 eromon.net##.promoTopSpace
 productreview.com.au##div[class^="before-filters-ad_"]
@@ -5512,7 +5513,7 @@ scmp.com##.section-content-bottom__ad-container
 web.de,gmx.*##.base-page__ad
 youmath.it###contenuto > #T[style="text-align: center;"]:empty
 hd21.com##.mercantile_title
-m.infox.ru,pulsgdanska.pl,afisha.ru,daily.co.jp,m.pornerbros.com,m.mynet.com,m.porntube.com##.adv
+ebalka.link,m.infox.ru,pulsgdanska.pl,afisha.ru,daily.co.jp,m.pornerbros.com,m.mynet.com,m.porntube.com##.adv
 areamobile.de##.footerBanner
 areamobile.de,www-musixmatch-com.cdn.ampproject.org##.topBanner
 www-musixmatch-com.cdn.ampproject.org##.bottomBanner
@@ -7316,7 +7317,6 @@ yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.
 ! Yandex.News
 yandex.ru#?#body[class*="news_phone"] div.news-container > span > div > div.unit:has(> div.turbo-advert__item)
 ! Yandex.Market
-market.yandex.*##div[id="/content/header/headerPromo"]
 !
 ! END: Yandex
 !
@@ -7552,6 +7552,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ||graph.facebook.com^$app=com.booking
 !
 ! Blocking Facebook mobile ads
+||graph.facebook.com^$app=com.hb.dialer.free
 ||graph.facebook.com^$app=com.banglalink.toffee
 ||graph.facebook.com^$app=com.dubox.drive
 ||graph.facebook.com^$app=com.movieshubinpire.android

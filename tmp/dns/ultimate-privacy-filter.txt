@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409182103
+! Version: 202409200303
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 18 Sep 2024 21:03 UTC
+! Last modified: 20 Sep 2024 03:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -336,7 +336,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||tjk-njk.com^
 ||reitingi.lv^$third-party
 ||tracker.insurads.com^
-||cdn.pubnub.com^
 ||ziwelatum.com^
 ||houston.advgo.net^
 ||merchant-center-analytics.goog^
@@ -35523,6 +35522,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analitik.pendik.bel.tr^
 ||analytics-api.sconto.cz^
 ||log-ana.h3z.jp^
 ||ivstat.indavideo.hu^
@@ -71775,6 +71775,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||javedit.com/e/public/ViewClick/
+onefootball.com##section[class^="XpaTaboolaPlaceholder_"]
 arstechnica.com###story-recommendations
 ||assets.rfdcontent.com/*/analytics/
 ||sprinklr.com/api/livechat/prompt/browse/event|
@@ -77551,7 +77553,6 @@ inapps.appsflyersdk.com^
 mustar.meitetsu.co.jp#$#body[style="opacity: 0;"] { opacity: 1 !important; }
 @@||cdn.sophi.io/assets/demeter/*/stable/*.js$domain=nationalpost.com
 @@||mailingtechnology.com/tracking/tracking_$~third-party
-@@||cdn.pubnub.com/pubnub-3.14.5.min.js$domain=my.pltw.org
 @@||googletagmanager.com/gtm.js$domain=empireonline.com
 @@||googletagmanager.com/gtm.js$domain=communityfibre.co.uk
 @@||watchdirty.to/player/stats.php
