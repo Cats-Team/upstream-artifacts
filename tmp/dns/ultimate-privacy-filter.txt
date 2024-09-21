@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409200303
+! Version: 202409210304
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Sep 2024 03:03 UTC
+! Last modified: 21 Sep 2024 03:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -223,11 +223,11 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
-/.*/$permissions=join-ad-interest-group=()
-/.*/$permissions=run-ad-auction=()
-/.*/$permissions=browsing-topics=()
-/.*/$permissions=private-state-token-issuance=()
-/.*/$permissions=private-state-token-redemption=()
+/.*/$permissions=join-ad-interest-group=(),document
+/.*/$permissions=run-ad-auction=(),document
+/.*/$permissions=browsing-topics=(),document
+/.*/$permissions=private-state-token-issuance=(),document
+/.*/$permissions=private-state-token-redemption=(),document
 elcomercio.es#$##engagement-top { display: none !important; }
 elcomercio.es#$#body { overflow: auto !important; }
 ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
@@ -259,6 +259,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||google-analytics.bi.owox.com^
 ||api.sail-personalize.com^$third-party
 ||events.baselime.io^
 ||trackdesk.com^$third-party
@@ -35522,6 +35523,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||msite.baidu.com^
 ||analitik.pendik.bel.tr^
 ||analytics-api.sconto.cz^
 ||log-ana.h3z.jp^
@@ -71775,6 +71777,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||api.qub.ca/anonymous-id/lib
+||api.qub.ca/collector-service/
 ||javedit.com/e/public/ViewClick/
 onefootball.com##section[class^="XpaTaboolaPlaceholder_"]
 arstechnica.com###story-recommendations

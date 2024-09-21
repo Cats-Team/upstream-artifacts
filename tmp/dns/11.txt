@@ -1,9 +1,9 @@
-! Checksum: xvCdfdU2DbQit/WvZwNYxA
-! Diff-Path: ../patches/11/11-s-1726767474-3600.patch
+! Checksum: CVp9cVKCh40PVyixcXveTA
+! Diff-Path: ../patches/11/11-s-1726857403-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.54.72
-! TimeUpdated: 2024-09-19T17:34:00+00:00
+! Version: 2.0.54.75
+! TimeUpdated: 2024-09-20T18:33:04+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1880,6 +1880,8 @@ motherless.com$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 @@||api.apptentive.com^$app=de.mcdonalds.mcdonaldsinfoapp
 @@||customer.iad-03.braze.com^$app=de.burgerking.kingfinder
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/189134
+@@||s-ad.rmp.rakuten.co.jp^$app=jp.co.rakuten.pay
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186071
 @@||imasdk.googleapis.com^$app=com.dubox.drive
 ! https://github.com/AdguardTeam/AdguardFilters/issues/182993
@@ -2579,6 +2581,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+garticphone.com###__next > div[class^="jsx-"][class$=" side"]
+news.walla.co.il##aside[style$="background-color: rgb(245, 245, 245);"]
+gulte.com#$##awt_popup_landing { display: none !important; }
+gulte.com#$#body { overflow: auto !important; }
 news.cnyes.com##.section-aside-wrapper ~ div:has(> div[id^="div-gpt-"])
 ettoday.net##body a[href^="https://ad.ettoday.net/"]
 wutheringwaves.gamerstand.net##.execphpwidget:has(> div.adspace)

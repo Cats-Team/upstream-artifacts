@@ -1,9 +1,9 @@
-! Checksum: 8gn1A9GMGJ0nDF9co4KfNA
-! Diff-Path: ../patches/4/4-s-1726763856-3600.patch
+! Checksum: oiEju0Gwkyodes03LhcaZw
+! Diff-Path: ../patches/4/4-s-1726857405-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.5.96
-! TimeUpdated: 2024-09-19T16:32:46+00:00
+! Version: 2.1.6.2
+! TimeUpdated: 2024-09-20T18:32:46+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -748,6 +748,9 @@ onefootball.com,ign.com,israelnationalnews.com,lifehacker.com,cgmagonline.com,gi
 ! #%#//scriptlet('remove-in-shadow-dom', 'div[data-spot-im-class="vote-links"] + span[class$="index__dot"]')
 onefootball.com,ign.com,israelnationalnews.com,lifehacker.com,cgmagonline.com,gizmodo.com,gamerevolution.com,metro.co.uk,thurrott.com,stereogum.com,ign.com,newsweek.com,dailymail.co.uk,comingsoon.net,timesofisrael.com,nypost.com,9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co#%#//scriptlet('remove-in-shadow-dom', 'div[data-spot-im-class="vote-links"] + span[class$="index__dot"]')
 !
+esports.bcnretail.com##.news__sns
+bushikaku.net##.cms-social-button
+watchguard.com##.addtoany
 pokemon.co.jp##.p-global-sns
 playmods.net##.common-convenient-share
 wowkorea.jp##.news-detail__sns
@@ -795,7 +798,7 @@ cyprus-mail.com##social-share-links
 smithsonianmag.com##.longform_share
 ecartelera.com##.isoc
 cdn.vuukle.com##span[class="dropdown-toggle"]
-maturexy.com,fuqster.com,bigtitbitches.com##div[title="Share this Video"]
+public-porno.com,maturexy.com,fuqster.com,bigtitbitches.com##div[title="Share this Video"]
 fotosklad.ru##span[class^="Share_"]
 s.minkabu.jp##.md_article_text > div.tar:has(> div > div.share-button)
 bitwarden.com##div[class^="css"] > div[class^="css"]:has(> a[target="_blank"][aria-label="Twitter"])
@@ -2701,7 +2704,7 @@ sodapdf.com##.share-rows
 haber61.net##.share-area div.dropdown
 ridl.io##.socials > li[class$="_Share"]
 ici.tou.tv##button[title*="Partager"]
-wnl.tv##.c-share-article
+game8.co,wnl.tv##.c-share-article
 opendemocracy.net##.sidebar--share-article
 chintai.net##.single__sns
 adjust.com##.s-social-sharing
@@ -8072,7 +8075,7 @@ viajenaviagem.com##li[id^="compartilhar-"]
 gsminfo.com.ua,tek.id##.post-sharing
 bild.de,jetzt.de##.sharingbar
 vimeo.com##.share_social_icons
-cyberdaily.au,vidup.io##.social-media-container
+gamingbolt.com,cyberdaily.au,vidup.io##.social-media-container
 m.cnnindonesia.com##.share_detail
 newcomment.detik.com##span[class^="comment__cmt_share"]
 actual.today,moneytimes.com.br##.single__share
@@ -10926,7 +10929,7 @@ lookatme.ru##.post-additions > .hype
 coco01.net,cocomy.net##.post-bottom
 fishki.net,timeallnews.ru##.post-face
 distractify.com##.post-header_sharing-counter
-thenextweb.com##.post-share
+monetory.io,thenextweb.com##.post-share
 mustget.ru,engadget.com##.post-share-count
 vviruslove.com,yeniulke.net##.post-sharing-bd
 thedroidguy.com##.post-soc-count
