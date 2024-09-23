@@ -1395,11 +1395,6 @@ userupload.*##ins.adsbygoogle
 userupload.*##.ads
 ||tgwidget.com^$3p
 
-! https://github.com/uBlockOrigin/uAssets/issues/5674
-get.getpczone.com,rahim-soft.com,uploadrar.*###commonId > a[target="_blank"]
-||canoestallowrootsabre.com^
-||pixeltrey.com^
-
 ! https://github.com/reek/anti-adblock-killer/issues/3723
 wetter.com##+js(acs, $, lobster)
 at.wetter.com##+js(aopw, openLity)
@@ -3397,11 +3392,6 @@ lequipe.fr##+js(nostif, start, 0)
 ! https://github.com/uBlockOrigin/uAssets/issues/1767
 ?zoneId=*&sponsor$frame
 
-! https://github.com/uBlockOrigin/uAssets/issues/6585
-! https://github.com/uBlockOrigin/uAssets/issues/14423
-fcportables.com##+js(set, adsClasses, undefined)
-fcportables.com##+js(set, gsecs, 0)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/1774
 porntube.com##.relatedContainer
 porntube.com##.col-md-3:has(> iframe[src^="/external"])
@@ -4784,32 +4774,23 @@ naughtymachinima.com##.col-md-8 > a[href][target="_blank"]
 uploadbank.com###container > div[style="width:970px; height:200px;"]
 uploadbank.com##+js(set, console.clear, noopFunc)
 @@||uploadbank.com^$ghide
-!uploadbank.com##+js(nowoif)
+uploadbank.com##+js(nowoif, !uploadbank, 10, obj)
 uploadbank.com###iframeCore____
 ||uploadbank.com/js/abcode.js
-||yousaidthewallow.info^$popup
+@@||dcbbwymp1bhlf.cloudfront.net^$script,domain=uploadbank.com
+uploadbank.com##+js(set, Object.prototype.run, undefined)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2652
 ! https://github.com/uBlockOrigin/uAssets/issues/2742
 filecrypt.*##+js(acs, decodeURIComponent, replace)
 filecrypt.*##+js(acs, parseInt, open)
-filecrypt.*##+js(aopr, __pop_debugX)
 filecrypt.*##+js(set, isAdblock, false)
 ||filecrypt.*^$popunder
 @@||cutcaptcha.com/captcha/*$script,domain=filecrypt.cc|filecrypt.co
 filecrypt.*##div:has(> [href*=".html"])
-filecrypt.*###jvb
-filecrypt.*##li:has-text(100% Anonym)
-filecrypt.*##.bums
-filecrypt.*##.support
-filecrypt.*##[src^="https://filecrypt.cc/images/"]
-filecrypt.*##[src^="../../../images/"]
-filecrypt.*##[href^="/xux/"]
-filecrypt.*##div[class] > i[style*="background:url"][onclick*="openLink"]
 filecrypt.*##+js(ra, onclick, button[id][onclick*=".html"])
-filecrypt.*##div[class] > i[style][onclick]
-filecrypt.*##button[id]:has-text(/High-speed/i)
 sharer.pw###overlay
+filecrypt.co###jh34[onmousedown^="var lsj = this;loc.href="]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2655
 ! https://github.com/uBlockOrigin/uAssets/issues/3262
