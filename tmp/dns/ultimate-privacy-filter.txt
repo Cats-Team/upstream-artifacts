@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409240303
+! Version: 202409242103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 24 Sep 2024 03:03 UTC
+! Last modified: 24 Sep 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -258,6 +258,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||adtrace.ai^$third-party
 ||mato.clanto.cloud^
 ||matomo.clanto.cloud^
 ||client-log.karte.io^
@@ -68047,7 +68048,7 @@ _social_tracking.js^
 _tracking.php?b=
 /aegis-sdk/*$script
 /tnc.js?h=
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org
 ||mc.yandex.ru/metrika/tag.js$script,redirect=metrika-yandex-tag,domain=~id.x5.ru|~aiondb.ru
 ||mc.yandex.ru/metrika/watch.js$script,redirect=metrika-yandex-watch
@@ -68066,6 +68067,13 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||shopch.jp/com/js/analytics.js
+||cdn.shopify.com/extensions/*/tiktok-pixel-for-adtrace-*/tiktok-pixel.js
+||services.meteored.com/web/usr/v1/check/
+||logbase.io/metrics
+||google.com/pagead/1p-conversion/
+||change.org/*/xhr/b/s/beacon
+||px-cloud.net/api/v2/collector
 ||market-click2.yandex.ru/safeclick/json|
 ||static.cdn-cian.ru/frontend/frontend-sdk/system-logger/global-system-logger*.js
 ||tetori-colorme.com/share/js/tracking.js
@@ -72461,6 +72469,22 @@ $cookie=_pcid
 $cookie=_parsely_visitor
 $cookie=_parsely_session
 $cookie=utag_main
+$cookie=utag_main__pn
+$cookie=utag_main__prevpage
+$cookie=utag_main__se
+$cookie=utag_main__sn
+$cookie=utag_main__ss
+$cookie=utag_main__st
+$cookie=utag_main_dc_event
+$cookie=utag_main_dc_visit
+$cookie=utag_main_g_sync_ran
+$cookie=utag_main_hhid
+$cookie=utag_main_hpid
+$cookie=utag_main_program_id
+$cookie=utag_main_ses_id
+$cookie=utag_main_trial_duration
+$cookie=utag_main_v_id
+$cookie=utag_main_vapi_domain
 $cookie=TAPID
 $cookie=audit
 $cookie=khaos
@@ -72648,6 +72672,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||hulu.com^$cookie=metrics_tracker_session_manager
 ||clarity.ms^$cookie=MUID
 ||clarity.ms^$cookie=CLID
 ||clarity.ms^$cookie=ANON
