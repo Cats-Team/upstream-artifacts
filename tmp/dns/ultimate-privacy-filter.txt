@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409252103
+! Version: 202409262103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 25 Sep 2024 21:03 UTC
+! Last modified: 26 Sep 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -36189,6 +36189,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||counter.best-hit.tv^
+||analytics-op.streak.ninja^
+||track.streak.ninja^
+||panorama.wixapps.net^
 ||msite.baidu.com^
 ||analitik.pendik.bel.tr^
 ||analytics-api.sconto.cz^
@@ -68067,6 +68071,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||receptions.smart-bdash.com/receptions/action/click
+||kojima.net/excludes/KPC/js/kjm_gtm.js
+||korewaeroi.com/fukugan_$subdocument
 ||shopch.jp/com/js/analytics.js
 ||cdn.shopify.com/extensions/*/tiktok-pixel-for-adtrace-*/tiktok-pixel.js
 ||services.meteored.com/web/usr/v1/check/
@@ -68816,7 +68823,6 @@ president.jp##.recommend
 ||carmazoon24-pu01.ihre-webseite.it/js/logger
 ||tracemyip.org/vLg/lgUrl.php
 ||minorasu.basf.co.jp/shared/scripts/vendor/google-analysis/
-||minkou.jp/js/tracking.js
 ||cdn.aimtell.com/trackpush/trackpush.min.js
 ||researchgate.net/track/
 ||pc.assets-cosme.net/js/ga.js
