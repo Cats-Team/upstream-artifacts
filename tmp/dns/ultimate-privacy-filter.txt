@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409262103
+! Version: 202409272103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 26 Sep 2024 21:03 UTC
+! Last modified: 27 Sep 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -258,6 +258,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||brwsrfrm.com^
 ||adtrace.ai^$third-party
 ||mato.clanto.cloud^
 ||matomo.clanto.cloud^
@@ -36189,6 +36190,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||l.ouest-france.fr^
+||ana.3751chat.com^
+||ana.chat.shalove.net^
+||ana.luvul.net^
+||ana.skypemeet.net^
 ||counter.best-hit.tv^
 ||analytics-op.streak.ninja^
 ||track.streak.ninja^
@@ -67507,6 +67513,7 @@ zm9pab9vsubwvu2o.opendialogueapproach.co.uk$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/wp-content/plugins/wp-rocket/assets/js/lcp-beacon.
 /modules/kixelltag/views/js/kst-$script
 /modules/opartstat/*
 /wpm/strict/app/web-pixel
@@ -68071,6 +68078,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||anilibria.top/api/v1/ads/
+||baitoru.com/*/adobe_send_tracking.js
+||charmmy-api.line.me/api/*/bars/tracking
 ||receptions.smart-bdash.com/receptions/action/click
 ||kojima.net/excludes/KPC/js/kjm_gtm.js
 ||korewaeroi.com/fukugan_$subdocument
@@ -73848,6 +73858,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||cdn.clerk.io/clerk.js$domain=panzerglass.com
 @@||googletagmanager.com/gtm.js$domain=playactivate.com
 @@||online.rshb.ru/rshb-mbfl/lib/snowplow/
 @@||online.rshb.ru/rshb-mbfl/plugins/
