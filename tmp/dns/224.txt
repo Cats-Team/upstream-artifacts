@@ -1,9 +1,9 @@
-! Checksum: 79U2YLdQDMpC2mQcjhuThQ
-! Diff-Path: ../patches/224/224-s-1727437053-3600.patch
+! Checksum: dqAtpBQiAxN+CYVxw9A8eA
+! Diff-Path: ../patches/224/224-s-1727570208-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.22.77
-! TimeUpdated: 2024-09-27T11:33:31+00:00
+! Version: 2.1.22.83
+! TimeUpdated: 2024-09-29T00:33:25+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4324,6 +4324,7 @@ newduba.cn###jq_youxi
 ##.couplet_9cb0d
 ##.coupletad
 ##.ctm_ad
+##.pggf > .ng-star-inserted
 ##.cui-pt-item[data-qhb]
 ##.d_banner_inner
 ##.dabc > .ng-star-inserted
@@ -4708,6 +4709,7 @@ newduba.cn###jq_youxi
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"]
 ##div#ad_id
+###kp-mid-sport.fed-back-whits
 ##a[href*="bjty"] > img[src*="imgsrc.baidu.com"]
 ##.ads_topBanner
 ##div#xinxi
@@ -4782,6 +4784,25 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||ayebsc.xyz^
+||enokouv.icu^
+||cdszgg.xyz^
+||yzldy.info^
+||teryt111.fun^
+||itqwesk.icu^
+||heryt111.fun^
+||cfdvd779.fun^
+||dajs001.shop^
+||kfocken.icu^
+||qeeocy.xyz^
+||dopklb.xyz^
+||reryt111.fun^
+||x0or8.icu^
+||ridirre.com^
+||vdfvdf33q.fun^
+||luyarvx.icu^
+||omgnqu.xyz^
+||pwrgcxaj.icu^
 ||denjpl.xyz^
 ||wsgayq.xyz^
 ||cvujac.xyz^
@@ -12269,8 +12290,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||pixfs.net/module/fullPage/dist/ad-full-page-enter-fly.
 ||pixfs.net/module/fullPage/dist/ad-full-page.
 ||pjtime.com/js/show_ad
-||pki.net.cn/public/*/plugins/
-||pki.net.cn/public/1/assets/js/custom/tt.
+||szaction.cc/public/*/plugins/
+||szaction.cc/public/1/assets/js/custom/tt.
 ||pkvs.com/public/300/
 ||pkvs.com/public/as.js
 ||play6111.com/js/
