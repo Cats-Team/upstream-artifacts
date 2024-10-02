@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202409302103
+! Version: 202410012103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 30 Sep 2024 21:03 UTC
+! Last modified: 01 Oct 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -258,6 +258,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||covatic.io^
+||cdn.gpmdata.ru^$third-party
 ||petametrics.com^
 ||ultraimpression.jp^
 ||brwsrfrm.com^
@@ -34913,6 +34915,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||atom.warnermedia.com^
+||zion.api.cnn.io^
+||t.blog.livedoor.jp^
 ||l.ouest-france.fr^
 ||ana.3751chat.com^
 ||ana.chat.shalove.net^
@@ -76548,7 +76553,7 @@ _social_tracking.js^
 _tracking.php?b=
 /aegis-sdk/*$script
 /tnc.js?h=
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org
 ||mc.yandex.ru/metrika/tag.js$script,redirect=metrika-yandex-tag,domain=~id.x5.ru|~aiondb.ru
 ||mc.yandex.ru/metrika/watch.js$script,redirect=metrika-yandex-watch
@@ -76567,6 +76572,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||qvc.jp/*/adobeanalytics.min.*.js
 ||masutabe.info/js/access.js
 ||statics.impresa.pt/js/analytics/
 ||tanweb.net/wordpress/?rest_route=/sng/v1/page-count
@@ -79324,7 +79330,6 @@ continentseven.com##.gaoop
 ||practicequiz.com/responsive/js/ga.js
 ||omt.shinobi.jp/pv^
 ||omt.shinobi.jp/tsumugi?location=
-||t.blog.livedoor.jp/u.js
 ||youku.com/compvlog?
 ||tinypass.com^*/track?
 ||e-kuzbass.ru/rank$third-party
@@ -82351,6 +82356,8 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+||googletagmanager.com/gtag/js$script,redirect=googletagmanager-gtm,domain=ncsoft.jp
+@@||googletagmanager.com/gtm.js$domain=wowma.jp
 @@||js.datadome.co/tags.js$domain=monster.ca
 @@||google-analytics.com/mp/collect?$domain=startse.com
 @@||cdn.clerk.io/clerk.js$domain=panzerglass.com
@@ -82809,7 +82816,6 @@ goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
 @@||data-*.rtl.de/iomm/latest/bootstrap/stub.js$domain=rtl.de
 @@||googletagmanager.com/gtm.js$domain=rtl.de
 ||login.eki-net.com^$badfilter
-@@||googletagmanager.com/gtm.js$domain=www.nicovideo.jp
 @@||googletagmanager.com/gtm.js$domain=rocketnews24.com
 @@||google-analytics.com/analytics.js$domain=artage.io
 @@||googletagmanager.com/gtm.js$domain=zozo.jp
@@ -83290,7 +83296,7 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 @@||mc.yandex.ru/watch/$xmlhttprequest,domain=mtstv.mts.ru
 @@||assets.adobedtm.com/*/satelliteLib-*.js$domain=docs.nvidia.com
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=store.line.me
-@@||st.top100.ru/top100/top100.js$domain=rambler.ru|m.gazeta.ru
+@@||st.top100.ru/top100/top100.js$domain=rambler.ru|m.gazeta.ru|motor.ru
 @@||media.kaspersky.com/tracking/omniture/s_code_single_suite.js
 @@||google-analytics.com/analytics.js$domain=glamour.de
 @@||google-analytics.com/gtm/js$domain=glamour.de
