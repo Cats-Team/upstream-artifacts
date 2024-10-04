@@ -1,14 +1,11 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202410022103
+! Version: 202410032102
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 02 Oct 2024 21:03 UTC
+! Last modified: 03 Oct 2024 21:02 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
 ! License: https://adblockultimate.net/filters
-
-
-
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
 #%#var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
@@ -158,7 +155,7 @@ app.tirelocator.ca#%#//scriptlet("set-constant", "googleAnalyticsEnhancedTrackPa
 mirrormedia.mg#%#//scriptlet("set-constant", "dataLayer", "emptyArr")
 edeka.de#%#//scriptlet('prevent-addEventListener', 'bugfix', 'fix')
 edeka.de#%#(()=>{window.tC={event:{track(){}}}})();
-edeka.de#%#//scriptlet('prevent-element-src-loading', 'script','tc_DigitalesMarketing')
+edeka.de#%#//scriptlet('prevent-element-src-loading', 'script', 'tc_DigitalesMarketing')
 bulletin.sntba.com#%#//scriptlet("set-constant", "returnCitySN", "emptyObj")
 ta.alamo.com#%#(()=>{window.CQ_Analytics={SegmentMgr:{loadSegments(){}},ClientContextUtils:{init(){}}}})();
 nine.com.au#%#(()=>{window.tracking={setConfig(){},trackPage(){},trackVideoAutoFail(){}}})();
@@ -235,7 +232,7 @@ elcomercio.es#$#body { overflow: auto !important; }
 ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
 infoseek.co.jp#$#.co-Widget[style="min-height: 6000px;"] { min-height: auto !important; }
 adseek.site#$##primary { display: block !important; }
-biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
+biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ##div[data-testid="prism-taboola"]
 ##.ninja-recommend-block
 ##img[src^="//counter.ukr.net/"]
@@ -34918,6 +34915,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||eventrecorder.cm.bloomberg.com^
+||heatmap-events-collector.instapage.com^
 ||atom.warnermedia.com^
 ||zion.api.cnn.io^
 ||t.blog.livedoor.jp^
@@ -76575,6 +76574,15 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||api.actagtracker.jp/tag|
+||shop.post.japanpost.jp/js/analytics_cookie.js
+||static.rtrp.jp/static/js/googletagmanager.*.js
+||radar.cloudflare.com/api/analytics
+||assets.bwbx.io/s3/foundation/event-recorder-client/1.0/event-recorder-client.min.js
+||api.weglot.com/pageviews?api_key
+||makeship.com/_vercel/insights/script.js
+||makeship.com/ingest/static/recorder-v2.js
+||makeship.com/ingest/*?compression=
 ||hellomagazine.com/_vercel/*insights/*.js
 ||qvc.jp/*/adobeanalytics.min.*.js
 ||masutabe.info/js/access.js
@@ -76656,7 +76664,7 @@ arstechnica.com###story-recommendations
 ||blitz.gg/js/feature-ads/
 ||blitz.gg/js/feature-ads-outstream/
 ||blitz.gg/js/feature-ads-profile-video/
-nanjpride.blog.jp##div[class^="article-outer"] > div.recommend:has(> div.ninja-recommend-block)
+nanjpride.blog.jp#?#div[class^="article-outer"] > div.recommend:has(> div.ninja-recommend-block)
 ||blogparts.blogmura.com/pts/pvcount.gif?chid=
 ||app.snov.io/back/track-first-visit
 ||microsoft.com/etc.clientlibs/microsoft/clientlibs/exp-analytics/
@@ -76721,7 +76729,7 @@ idle-girl.com###custom_html-74
 ||flow.1passwordservices.com/api/v1/event
 ||api6.surfshark.com/v1/server/user|
 ||hide.me/api/event|
-natuero-dougakan.com##.side-menu:has(script[src="//accaii.com/natuero/script.js"])
+natuero-dougakan.com#?#.side-menu:has(script[src="//accaii.com/natuero/script.js"])
 ||turbovpn.com/api/mms/analytics/v1/events|
 ||cdn.amplitude.com/libs/analytics-browser-*-min.js
 ||cdp.ems.onet.pl/*/me?domain=
@@ -76786,7 +76794,7 @@ spoki.lv##.popular.piano
 usnews.com###null-recommendations-widget
 ||p1.parsely.com/plogger/
 ||files.metropoles.com/static/comscore.js
-tousatu-ch.net##.widget_custom_html:has(> div.textwidget > div[style^="width: 100%;"] > div.ninja-recommend-block)
+tousatu-ch.net#?#.widget_custom_html:has(> div.textwidget > div[style^="width: 100%;"] > div.ninja-recommend-block)
 ||mx.eneba.com/lib.min.js
 ||cp.eltiempo.es/stats
 ||api.job*.ch/public/statistic/teaser/hit
@@ -76932,7 +76940,7 @@ erostopics.net###custom_html-137
 erostopics.net###related-box
 ||cdn.dzen.ru/pingx
 ||suggest.sso.dzen.ru/clck/$image
-manisteenews.com##div:has(> img[src^="https://cdn-channels-pixel.ex.co/"])
+manisteenews.com#?#div:has(> img[src^="https://cdn-channels-pixel.ex.co/"])
 ||cdn.rvohealth.com/preamp/api/*/decisions|
 ||api.cgyx.tv:66/tj/tongji.js
 ||checkoutshopper-live.adyen.com/checkoutshopper/images/analytics.png?
@@ -76941,8 +76949,8 @@ manisteenews.com##div:has(> img[src^="https://cdn-channels-pixel.ex.co/"])
 ||sr.de/sr/static/js/optout-tracking.js
 ||collector.xh*/?log=
 petyado.com##center > div > table.font12 + table[width="1200"]:not([class])
-petyado.com##center > div > table[width="1200"]:has(> tbody > tr > td[height="310"] > script)
-petyado.com##table[width="795"]:has(td > script[src^="https://s1.aspservice.jp"])
+petyado.com#?#center > div > table[width="1200"]:has(> tbody > tr > td[height="310"] > script)
+petyado.com#?#table[width="795"]:has(td > script[src^="https://s1.aspservice.jp"])
 petyado.com##td[width="800"][align="right"][valign="top"]
 ||browserapi.manomano.*/sp-tracking/impressions
 ||vc.ru/analytics-event
@@ -76953,7 +76961,7 @@ xn--r8jwklh769h2mc880dk1o431a.com##.underbox
 ||api.auchan.fr/tracking/
 ||activity-flow.vtex.com/af/af.js
 ||api.audio.com/analytics/event
-nekochan.jp###main > aside:has(> div.OUTBRAIN)
+nekochan.jp#?##main > aside:has(> div.OUTBRAIN)
 wanchan.jp##.recommend_header
 wanchan.jp##.recommend_header + div[style^="aspect-ratio:"]
 ||production-bq-lambda-stack.production.yummly.com/event
@@ -78059,7 +78067,7 @@ park.ajinomoto.co.jp##.bottomMenu
 ||squid.gazeta.pl/bdtrck/
 ||d1q7pknmpq2wkm.cloudfront.net/js/my.fanplayr.com/
 ||bridge-ashiato.appspot.com/beacon/
-newsdig.tbs.co.jp#?#.l-contents-wrap > div[v-scope^="Recommend"]:upward(1)
+newsdig.tbs.co.jp#?#.l-contents-wrap > div[v-scope^="Recommend"]:upward()
 ||flixcar.com/*/tracking/
 ||kraken.com/js/sift.min.js
 ||instagram.com/ajax/bz
@@ -79270,8 +79278,8 @@ levashove.ru##.footer-four > section#custom_html-5
 ||blogheim.at/ranking
 ||watch32hd.org/tracking
 ||watch32hd.org/adblock
-ferra.ru##div[data-widget="plista_widget_belowArticle_desktop_nocss"]+div[class^="_"] > svg
-ferra.ru##div[data-widget="plista_widget_webApp_mobile_nocss"]+div[class^="_"] > svg
+ferra.ru##div[data-widget="plista_widget_belowArticle_desktop_nocss"] + div[class^="_"] > svg
+ferra.ru##div[data-widget="plista_widget_webApp_mobile_nocss"] + div[class^="_"] > svg
 ||static-cl.xhcdn.com/js/track.min.js
 ||tagm.tchibo.de/ai.aspx
 ||onesignal.com/webPushAnalytics
@@ -79812,7 +79820,7 @@ utorrent.games,borfilm.com,hronika.info##.count
 ||d.mobilebanner.ru/p.gif
 ||stats.pcsg-server.de/js/
 ||russian.rt.com/nbc/|
-animeyt.tv##.ed-item > ul#filtro-letra-nuevo+div.bloque.bloque__descargas-centro.ed-container
+animeyt.tv##.ed-item > ul#filtro-letra-nuevo + div.bloque.bloque__descargas-centro.ed-container
 ||cdn.taboola.com/libtrc/animeyttv/loader.js
 ||koronapay.com/*/metrika_rus.js
 ||t.lolalytics.com/?a=
@@ -79993,26 +80001,26 @@ jbpress.ismedia.jp#?#div.--wid:has(> div#taboola-below-article-thumbnails-bottom
 mdpr.jp#?#.p-articleList__heading:has(+ div#taboola-below-article-thumbnails-desktop)
 gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-teasers)
 gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
-blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward(3)
-jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward(2)
-minnyuu.jp#?#div[class$="BlockBase"] > div > div > div.plugin-freearea > div.ninja-recommend-block:upward(4)
-doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp#?#.plugin-memo > div.side > div.ninja-recommend-block:upward(2)
-blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block:upward(2)
-nukeruerodouga.com#?##main-right > div.right_area > div.ninja-recommend-block:upward(2)
+blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward()
+jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward()
+minnyuu.jp#?#div[class$="BlockBase"] > div > div > div.plugin-freearea > div.ninja-recommend-block:upward()
+doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp#?#.plugin-memo > div.side > div.ninja-recommend-block:upward()
+blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block:upward()
+nukeruerodouga.com#?##main-right > div.right_area > div.ninja-recommend-block:upward()
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> div[ub-in-page])
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> script:contains(window.usabilla))
 hinatasoku.blog.jp#?#.right-container > div.sidewrapper:has(> div.side > a[href="http://www.ziyu.net/"])
 aatyu.livedoor.blog#?#.article > div.plugin-memo:has(> div.side > div.ninja-recommend-block)
-cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward(1)
-livedoor.biz,ldblog.jp#?#.plugin-memo > div.side > a[href$="ziyu.net/"]:upward(2)
-blog.fc2.com#?#div[class$="_outline"] > div > div.plugin-counter:upward(2)
-jisin.jp#?##main-articles > section.post-group > div[data-gmoad]:upward(1)
+cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward()
+livedoor.biz,ldblog.jp#?#.plugin-memo > div.side > a[href$="ziyu.net/"]:upward()
+blog.fc2.com#?#div[class$="_outline"] > div > div.plugin-counter:upward()
+jisin.jp#?##main-articles > section.post-group > div[data-gmoad]:upward()
 screenov.eu#?#.container > div.box:has(> a[href^="https://www.liveinternet.ru/click"])
 infokam.su#?#aside > section.bot-post:has(> center > a[href^="https://www.liveinternet.ru/"])
 valetudo.ru#?#.v_left > div.moduletable:has(script[src^="https://www.googletagmanager.com/"])
-blog.fc2.com#?#.side-menu > div.sidebar-style > script[src^="//counter1.fc2.com/"]:upward(2)
-qiita.com#?#div[class^="css"] > div > div[id^="logly-"]:upward(2)
-m.crank-in.net#?#div[id^="_popIn_trend_ranking"]:upward(1)
+blog.fc2.com#?#.side-menu > div.sidebar-style > script[src^="//counter1.fc2.com/"]:upward()
+qiita.com#?#div[class^="css"] > div > div[id^="logly-"]:upward()
+m.crank-in.net#?#div[id^="_popIn_trend_ranking"]:upward()
 business.nikkei.com#?#.l-content_footer.recommendesInfomation:contains(あなたにオススメ)
 unews.pro#?##banner > div.RightColumn:has(> a[href^="//www.liveinternet.ru/"])
 fatcatslim.ru#?#.sidebar > div.widget:has(> div > a[href$="liveinternet.ru/click"])
@@ -81598,6 +81606,7 @@ $cookie=ev_sid,domain=ideal.es|elcorreo.com
 ||analytics-sprint.qoqa.com^
 ||analytics.qoqa.ch^
 ||analytics.qoqa.com^
+-attr.appsflyersdk.com
 register.appsflyersdk.com^
 conversions.appsflyersdk.com^
 gcdsdk.appsflyersdk.com^
