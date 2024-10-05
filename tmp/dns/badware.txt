@@ -3394,6 +3394,8 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||usmusk.net^$doc
 ! https://github.com/uBlockOrigin/uAssets/issues/25492
 ||foundations-x2024.*^$doc,to=foundations-x2024.*
+||foundations-x2024.cloud^$doc
+||foundations-x2024.sbs^$doc
 
 ||arbitragebot.team^$all
 ||arbitrageinstruction.media^$all
@@ -5593,8 +5595,8 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 crimsonav.com,ngsingleissues.nationalgeographic.com##+js(acs, atob, new Function(atob()
 ||cdnstatics.net^$all
 ! Group Bobry
-/^https:\/\/[a-z]{7,}\.[a-z]{3,}\/get\/\?s=[a-zA-Z0-9]+=*$/$script,3p,to=~edu|~gov,header=speculation-rules:"/cdn-cgi/speculation"
-/^https:\/\/[a-z]{7,}\.[a-z]{3,}\/img\/$/$script,3p,to=~edu|~gov,header=speculation-rules:"/cdn-cgi/speculation"
+/^https:\/\/[a-z]{7,}\.[a-z]{3,}\/get\/\?s=[a-zA-Z0-9]+=*$/$script,3p,match-case,to=~edu|~gov,header=speculation-rules:"/cdn-cgi/speculation"
+/^https:\/\/[a-z]{7,}\.[a-z]{3,}\/img\/$/$script,3p,match-case,to=~edu|~gov,header=speculation-rules:"/cdn-cgi/speculation"
 ||quantunnquest.com^$all
 ||analytisgroup.com^$all
 ||analytisweb.com^$all
@@ -5635,7 +5637,7 @@ energiasolare100.it,lundracing.com,red17.co.uk,workplace-products.co.uk##^div[on
 energiasolare100.it,lundracing.com,red17.co.uk,workplace-products.co.uk##+js(trusted-replace-argument, String.prototype.includes, 0, undefined, condition, /^checkout$/)
 !#endif
 ! Group Surki
-/^wss:\/\/[^\/]+\.[a-z]{2,}\/(?:common|ws)\?source=http[^&]+$/$websocket,3p,to=~edu|~gov
+/^wss:\/\/[^\/]+\.[a-z]{2,}\/(?:common|ws)\?source=http[^&]+$/$websocket,3p,match-case,to=~edu|~gov
 ||accept.bar^$all
 ||amocha.xyz^$all
 ||cdn-webstats.com^$all
@@ -5664,3 +5666,6 @@ adrissa.com.co,americansoda.co.uk,casteloforte.com.br,centerfabril.com.br,forque
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25507
 ||last-blink.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/25519
+||orcaslicer.net^$doc
