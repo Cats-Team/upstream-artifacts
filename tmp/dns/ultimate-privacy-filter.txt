@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202410072103
+! Version: 202410082103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 07 Oct 2024 21:03 UTC
+! Last modified: 08 Oct 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -258,6 +258,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||pa-cd.com^$third-party
 ||covatic.io^
 ||cdn.gpmdata.ru^$third-party
 ||petametrics.com^
@@ -30702,6 +30703,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||b.ranking.apis.sankei-digital.co.jp^
 ||is-log.furunavi.jp^
 ||eventrecorder.cm.bloomberg.com^
 ||heatmap-events-collector.instapage.com^
@@ -61312,6 +61314,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||wealthfront.com/event
+||wealthfront.com/track_next?p=
+||gg.asuracomic.net/api/views/collect
+||probance.jp/webtrax/public/probance_tracker.js
 /firebase-analytics.js$domain=furunavi.jp
 ||static.site24x7rum.jp/beacon/
 ||api.actagtracker.jp/tag|
@@ -64605,7 +64611,7 @@ computerbild.de##.articleAdditional > .mehrthema
 ||dmx.sync.yume.com/tracker/
 m.lenta.ru##.b-footer_counters
 ||openculture.com/wp-admin/admin-ajax.php*^action=rxn_
-||googletagservices.com/tag/js/gpt.js$domain=sinoptik.ua|gutefrage.net|dt.ua|ngs.ru|unian.net|easybib.com|bohenon.com|linuxtopia.org|newsroom.kh.ua|hclips.com|noticierodigital.com|northumberlandgazette.co.uk|mywebtimes.com|watchuseek.com|telekritika.ua|fontanka.ru|vesti.ua|bhub.com.ua|guhoyas.com|rst.ua|hh.ru|buhgalter.com.ua|unocero.com|autonews.com|metropoles.com|okezone.com|m.yeniakit.com.tr|kanalukraina.tv|day.az|knuddels.de
+||googletagservices.com/tag/js/gpt.js$domain=sinoptik.ua|gutefrage.net|dt.ua|ngs.ru|unian.net|easybib.com|bohenon.com|linuxtopia.org|newsroom.kh.ua|hclips.com|noticierodigital.com|northumberlandgazette.co.uk|mywebtimes.com|watchuseek.com|telekritika.ua|fontanka.ru|bhub.com.ua|guhoyas.com|rst.ua|hh.ru|buhgalter.com.ua|unocero.com|autonews.com|metropoles.com|okezone.com|m.yeniakit.com.tr|kanalukraina.tv|day.az|knuddels.de
 ||imagecrest.com/asset/view/stats.php
 ||success.trendmicro.com/jslibrary/*/NetworkTracking.js
 ||fonts.net/t/trackingCode.js
