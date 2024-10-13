@@ -663,6 +663,8 @@ clickorlando.com##+js(set-cookie, bitmovin_analytics_uuid, OK)
 ! https://www.1und1.de/
 1und1.de##+js(cookie-remover, /optimizelyEndUserId|s_fid|sc_tcr|s_cc/)
 1und1.de##+js(set-local-storage-item, /optimizely_data|tealium_timing/, $remove$)
+! Sending tracking cookies
+imgur.com##+js(set, Object.prototype.has_opted_out_tracking, trueFunc)
 
 ! Query parameter stripping
 ! Google ads/analytics
@@ -1065,6 +1067,11 @@ forum.blu-ray.com##+js(ra, onclick|oncontextmenu|onmouseover, a[href][onclick*="
 
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/3206#issuecomment-2403795984
 ||podtrac.com^*redirect.mp3/$urlskip=/\/redirect\.mp3\/(.*?\.mp3\b)/ +https
+! https://github.com/uBlockOrigin/uBlock-issues/issues/3206#issuecomment-2406674420
+||pdst.fm/e/$urlskip=/\/e\/([^?]+)/ +https
+||chtbl.com/track/$urlskip=/\/track\/\w+\/([^?]+)/ +https
+||mgln.ai/e/$urlskip=/\/e\/\w+\/([^?]+)/ +https
+||pdrl.fm^$urlskip=/pdrl\.fm\/\w+\/([^?]+)/ +https
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25609
 ||gog.com/productcard/users/activity/log
