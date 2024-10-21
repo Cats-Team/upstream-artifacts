@@ -1,9 +1,9 @@
-! Checksum: 2dkWxPBAmw+sX2uLRTPiIQ
-! Diff-Path: ../patches/224/224-s-1729395411-3600.patch
+! Checksum: GVQak7md0/WP0RTsB2UgqA
+! Diff-Path: ../patches/224/224-s-1729467373-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.24.18
-! TimeUpdated: 2024-10-20T03:33:27+00:00
+! Version: 2.1.24.22
+! TimeUpdated: 2024-10-20T23:32:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -418,9 +418,6 @@ btvsports.click#@##googleAD2
 ! https://github.com/AdguardTeam/AdguardFilters/issues/151451
 @@/adview_*_ads_300x250.js$domain=itbaoku.cn
 itbaoku.cn#%#//scriptlet('set-constant', 'killads', 'true')
-! https://github.com/AdguardTeam/AdguardFilters/issues/151435
-vpslog.net#%#(()=>{(function(d){window.addEventListener("error",function(a){if(a.srcElement&&a.srcElement.src){const b=new RegExp(d);if(b.test(a.srcElement.src)){if("function"==typeof a.srcElement.onload)return void(a.srcElement.onerror=a.srcElement.onload);a.srcElement.onerror=function(){}}}},!0)})("placementName")})();
-/?placementName=$script,redirect=noopjs,domain=vpslog.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/148933
 xbeibeix.com#@#.google-ad
 xbeibeix.com#%#//scriptlet('prevent-setTimeout', '/\.height\(\) == 0|adsbygoogle/')
@@ -4852,6 +4849,7 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||gpowow.xyz^
 ||lalabaos1020.top^
 ||mdqikg.xyz^
 ||sv2fo.icu^
@@ -4861,6 +4859,8 @@ newduba.cn###jq_youxi
 ||syshwc.xyz^
 ||ouresdk.top^
 ||atorks.xyz^
+||99jinpin.com^
+||luresdl.top^
 ##a[href*=".asd257642.com:"]
 ##a[href*=".bjty7.vip"]
 ##a[href*=".hg63222.com"]
@@ -13702,6 +13702,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 szxx.com.cn###A0
+siguyy.tv##[style^="position: fixed;"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 yahoo.com###ACT_crazy
