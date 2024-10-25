@@ -1,9 +1,9 @@
-! Checksum: TfWabX6+Hd15h9Q6cR1WGg
-! Diff-Path: ../patches/224/224-s-1729726602-3600.patch
+! Checksum: 7Hxi67BKFQZQm3LgiTX/Gg
+! Diff-Path: ../patches/224/224-s-1729791462-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.24.45
-! TimeUpdated: 2024-10-23T23:32:57+00:00
+! Version: 2.1.24.50
+! TimeUpdated: 2024-10-24T17:34:01+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1126,6 +1126,8 @@ $script,third-party,denyallow=vixcloud.co|cdn.plyr.io|authkong.com|rsc.cdn77.org
 !
 !
 !
+18comic.vip##.container > div[style^="padding:"]:has(> [data-group="content_page"])
+18comic.vip##.tab-content + .row:has(> div[class] > div[class] > .group-notice)
 huaren.live##.action-ad
 huaren.live#%#//scriptlet('trusted-replace-node-text', 'script', 'ConFig', 'let ConFig', 'var ConFig')
 huaren.live#%#//scriptlet('set-constant', 'ConFig.config.ads', 'emptyObj')
@@ -4869,6 +4871,12 @@ newduba.cn###jq_youxi
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
 ||moqdy.icu^
+||ohkfmi.xyz^
+||lgkocdi.icu^
+||gjnbf.com^
+||qdjsiyt.icu^
+||huoxun.wang^
+||macos.space^
 ||rdxqbp.xyz^
 ||sksbgm.xyz^
 ||enkvum.xyz^
@@ -13751,8 +13759,10 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.com/images/a_d_
 ||zztongyun.com/static/js/sh.
 ||zzz4.com/JS_AD/
+.sinaimg.cn/large/008qC0LFgy1hutqvck5ufj30qe02i74t.
 ||zzzyk.com/js/
 szxx.com.cn###A0
+mydrivers.com###track-link
 eastmoney.com##div[style^="position: fixed; z-index: 100000; top:"]
 mydrivers.com##.i1vbApifa5
 mydrivers.com##.HSsRgYjfNn

@@ -1,7 +1,7 @@
 ! Title: Ultimate Privacy Filter
-! Version: 202410240303
+! Version: 202410242103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 24 Oct 2024 03:03 UTC
+! Last modified: 24 Oct 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -258,6 +258,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analytics.wikitide.net^
 ||shgcdn3.com^
 ||rmonitor.qq.com^
 ||api.revenuads.com^
@@ -94998,6 +94999,8 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtm.js$domain=online.ysroad.co.jp
+@@||karte.io^$domain=online.ysroad.co.jp
 @@||cdn.kaizenplatform.net^$script,domain=navi.onamae.com
 @@||walmart.com/px/*/captcha
 @@||biv.gazeta.pl/resources/emailLoginPage__front/$domain=oauth.gazeta.pl
