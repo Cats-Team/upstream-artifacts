@@ -2984,9 +2984,9 @@ xfreehd.com##.nvheader > span:has-text(Advertisement)
 *$frame,redirect-rule=noopframe,domain=xfreehd.com
 xfreehd.com##.ad-body:remove()
 !#if cap_html_filtering
-xfreehd.com##^script:has-text(/nativeads|navigator\.brave/)
+xfreehd.com##^script:has-text(/nativeads|navigator\.brave|goodDay/)
 !#else
-xfreehd.com##+js(rmnt, script, /nativeads|navigator\.brave/)
+xfreehd.com##+js(rmnt, script, /nativeads|navigator\.brave|goodDay/)
 !#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1550
@@ -8507,6 +8507,9 @@ duden.de##.tabloid__side-column
 ||duden.de/aab/assets/js/
 ! https://github.com/uBlockOrigin/uAssets/issues/17950
 duden.de##body:style(margin-top: 0px !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/25788
+@@||duden.de^$ghide
+duden.de##+js(no-fetch-if, googlesyndication)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/bhr1sj/adblocker_detected/
 faresgame.com##+js(aopr, adBlockDetected)
