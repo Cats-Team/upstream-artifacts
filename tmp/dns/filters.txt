@@ -2977,18 +2977,6 @@ mejortorrent.*,mejortorrento.*,mejortorrents.*,mejortorrents1.*,mejortorrentt.*#
 mejortorrento.*,mejortorrents.*,mejortorrents1.*,mejortorrentt.*##iframe[src^="publi"]
 ||mejortorrent.*/bannner
 
-! https://github.com/uBlockOrigin/uAssets/issues/1549
-! https://www.reddit.com/r/uBlockOrigin/comments/x289uk
-*$popunder,domain=xfreehd.com,3p
-xfreehd.com##.nvheader > span:has-text(Advertisement)
-*$frame,redirect-rule=noopframe,domain=xfreehd.com
-xfreehd.com##.ad-body:remove()
-!#if cap_html_filtering
-xfreehd.com##^script:has-text(/nativeads|navigator\.brave|goodDay/)
-!#else
-xfreehd.com##+js(rmnt, script, /nativeads|navigator\.brave|goodDay/)
-!#endif
-
 ! https://github.com/uBlockOrigin/uAssets/issues/1550
 ! https://forums.lanik.us/viewtopic.php?f=62&t=42535
 ||downloadfullfree.com^$xhr,redirect=nooptext
@@ -3172,7 +3160,9 @@ focus.de##.clearfix.branding > .surftipp:has-text(Anzeige)
 focus.de##[href^="https://www.cyberport.de"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1644
+! https://github.com/uBlockOrigin/uAssets/issues/25812
 @@||ariva.de^$ghide
+*$script,domain=ariva.de,redirect-rule=noopjs
 ||ariva.de/js/fcm-sw.js$script,1p
 ariva.de##.werb_textlink
 ariva.de###iqd_mainAd
