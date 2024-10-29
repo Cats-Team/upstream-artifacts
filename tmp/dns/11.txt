@@ -1,9 +1,9 @@
-! Checksum: lWe4rLD0Dy0forRk2PeUgg
-! Diff-Path: ../patches/11/11-s-1729860028-3600.patch
+! Checksum: cpc9ytqJ97qrY6WdqnLTmw
+! Diff-Path: ../patches/11/11-s-1730122686-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.55.60
-! TimeUpdated: 2024-10-25T12:36:07+00:00
+! Version: 2.0.55.64
+! TimeUpdated: 2024-10-28T13:33:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2590,6 +2590,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+zestolu.cz,osobnosti.cz##div[class^="mobile-"]
+kakijun.jp##.gaddiv
+forvo.com###fixed-banner-container
 syurabahazard.com##div[id^="articleAd"]
 basketballbbs.com##.widget:has(> div[class] > div[id^="rss"] .ninja-recommend-block)
 novosti-n.org##.kama-inline-ads
@@ -7439,6 +7442,7 @@ dzen.ru##div[class^="dzen-mobile__bannerMain-"]
 ! Dzen News
 dzen.ru##div[class*="news"] > div[class*="_banner_"]
 ! Dzen feed
+dzen.ru##article:has(> div.dzen-mobile--card-rtb__ad-yp)
 dzen.ru#?#.feed-item article:matches-attr("/data[a-z-]+/"="/^card-[a-zA-Z]{3,}/")
 dzen.ru##.zenad-card-rtb
 [$path=/media]dzen.ru##div[class^="article-render-mobile"][class$="type_yandex-direct"]
