@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: WwYuWxigiCIhaRuwrV7SZg
-! Version: 202410312351
+! Checksum: 94jtACwrginMSShnyQsStA
+! Version: 202411012351
 ! Title: EasyPrivacy
-! Last modified: 31 Oct 2024 23:51 UTC
+! Last modified: 01 Nov 2024 23:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1683,6 +1683,7 @@
 /pixel.cgi?
 /pixel.fingerprint.
 /pixel.gif?
+/pixel.modern.js
 /pixel.track
 /pixel/email/*$image
 /pixel/nvrwe?
@@ -2852,6 +2853,7 @@ _WebVitalsReporter_
 %2Fevent.gif%3F
 %2Fo.gif&
 %2Fopen.aspx%3F
+%2Frw%2Fbeacon_
 &mi_ecmp=$image
 -track-email-open?
 .acemlna.com/lt.php?$image
@@ -3061,6 +3063,7 @@ _WebVitalsReporter_
 /px/track?
 /redir.inxmail-commerce.com/r/*$image
 /rover.ebay.com/roveropen/*
+/rw/beacon_
 /sendmail.backerupdate.com/t/*
 /shoutout.wix.com/*$image
 /sli.*/imp?$image
@@ -37149,6 +37152,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ! ||medlemskap.fagforbundet.no^
 ! ||go.oracle.com^
 ! ||info.medtronicdiabetes.com^
+! ||info.mouser.com^
 !
 ||10stepswp.advancedtech.com^
 ||1stparty.equifax.co.uk^
@@ -39846,7 +39850,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||info.metronetbusiness.com^
 ||info.metronetinc.com^
 ||info.mkt.global.dnp.co.jp^
-||info.mouser.com^
 ||info.multiburo.com^
 ||info.natera.com^
 ||info.neg.co.jp^
@@ -50769,6 +50772,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 @@||onenote.com^*/aria-web-telemetry
 @@||online-metrix.net/fp/tags.js$domain=donorschoose.org
 @@||onlinebanking.usbank.com/TUX/public/libs/adobe/appmeasurement.js$script,~third-party
+@@||openfpcdn.io/botd/v1$script,domain=collinsdictionary.com
 @@||optimove.net^$domain=app.touchnote.com
 @@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||outbrain.com/outbrain.js$domain=cnn.com

@@ -1,9 +1,9 @@
-! Checksum: dvH1M45vMaL4tXb88EpWKw
-! Diff-Path: ../patches/3/3-s-1730396234-3600.patch
+! Checksum: SVfIsw0unlwjwjJzBCT6Bg
+! Diff-Path: ../patches/3/3-s-1730486195-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.76.12
-! TimeUpdated: 2024-10-31T17:32:40+00:00
+! Version: 2.0.76.15
+! TimeUpdated: 2024-11-01T18:32:34+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -617,6 +617,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||datafa.st^$third-party
 ||new-access802.net^
 ||majime-site-rk.com^
 ||yonemoku.rdy.jp^
@@ -33568,6 +33569,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||montelena.gmarket.co.kr^
 ||stats.hitwebcloud.de^
 ||amplitude.bandlab.com^
 ||amplitude-experiment.bandlab.com^
@@ -91559,8 +91561,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||akamai.net/*/chartbeat.js
 ||aksam.com.tr/analytic
 ||alawar.com/gcounter_alawar.js
-||amazon.com/1/batch/1/OP/
-||amazon.com/1/batch/1/OE/
 ||amazon.com*/ReportEvent?
 ||amazon.com*/record-impressions?
 ||amazon.com*/recordevent.html?
@@ -92064,6 +92064,9 @@ link.gmapp*.net$image
 ! it's problematic that due to how Gmail proxy work, these domains aren't even exposed on the network level
 ! fortunately, extensions can see them (Gmail puts the real URL in the location.hash part of the src)
 !
+! https://github.com/easylist/easylist/issues/20623
+mpse.jp/*/rw/beacon_$image
+mpse.jp%2F*%2Frw%2Fbeacon_$image
 ! Zendesk
 surveys.zendesk.com/subscription/watermark.gif$image
 surveys.zendesk.com%2Fsubscription%2Fwatermark.gif$image
