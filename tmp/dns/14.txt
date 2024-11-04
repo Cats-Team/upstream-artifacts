@@ -1,9 +1,9 @@
-! Checksum: qb6X2nQlbiZKuGNfk3C0zw
-! Diff-Path: ../patches/14/14-s-1730565454-3600.patch
+! Checksum: z6ZVBiBSN9yRU+c4jfFF8g
+! Diff-Path: ../patches/14/14-s-1730637455-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.12.63
-! TimeUpdated: 2024-11-02T16:33:30+00:00
+! Version: 2.2.12.65
+! TimeUpdated: 2024-11-03T12:33:29+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2492,6 +2492,7 @@ cmp.focus.de#%#//scriptlet('trusted-click-element', '.sp_choice_type_9[title*="Z
 !
 ! NOTE: Regular rules
 !
+nu.nl###pg-shadow-root-host
 zvuk.com##div[class^="AcceptCookiePolicy_cookie"]
 grizly.cz##.fancybox-container
 herodevs.com##.fs-consent_component
@@ -33140,6 +33141,7 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 !
 ! SECTION: Subscriptions - Regular rules
 !
+perplexity.ai##.fixed.bottom-md:has(> div[class*="borderMainDark"])
 vnexpress.net###box_register_mail
 newsletter.pragmaticengineer.com##div[class*=" _subscribeDialog_"] + div[class^="_background_"]
 newsletter.pragmaticengineer.com##div[class*=" _subscribeDialog_"]
@@ -51618,7 +51620,7 @@ theverge.com#$#.mt-80 { margin-top: 50px !important; }
 theverge.com#$#.md\:mb-40 { margin-bottom: 20px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/159669
 ! https://github.com/AdguardTeam/AdguardFilters/issues/148098
-hegra.cam,migration.cam,reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,tech-review.me,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me,reviewstation.me#$#.downloadbtn { display: block !important; }
+regenzi.site,hegra.cam,migration.cam,reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,tech-review.me,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me,reviewstation.me#$#.downloadbtn { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/146297
 oneslidephotography.com,apasih.my.id,financekami.com#$##wpsafe-wait1 { display: none !important; }
 oneslidephotography.com,apasih.my.id,financekami.com#$##wpsafe-generate { display: block !important; }
