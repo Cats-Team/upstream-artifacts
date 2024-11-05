@@ -2,8 +2,9 @@ name: Download and Unzip Artifact
 
 on:
   schedule:
-    - cron: '30 8 * * *'
+    - cron: '0 4/* * * *'
   push:
+  workflow_dispatch:
 
 jobs:
   download_and_unzip:
