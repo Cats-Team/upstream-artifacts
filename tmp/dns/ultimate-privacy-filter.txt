@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202411050303
+! Version: 202411052103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 05 Nov 2024 03:03 UTC
+! Last modified: 05 Nov 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -260,6 +260,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||useraction.de^
 ||analytically.net^$third-party
 ||datafa.st^$third-party
 ||new-access802.net^
@@ -35670,7 +35671,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||dadi.technology^
 ||daq0d0aotgq0f.cloudfront.net^
 ||data-collector.wefi.com^
-||data.mimikama.at^
 ||data.mob.com^
 ||datacollect*.abtasty.com^
 ||dbfukofby5ycr.cloudfront.net^
@@ -89955,6 +89955,7 @@ zelda.paperlesspost.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/performance_tracking.min.js
 /attpro/a?
 /api/bfb_write_log
 /master-amg-plugin/assets/js/page-view-ga.js
@@ -90525,6 +90526,13 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||aktion.kurier.de/umfrage/anlvi/setIframeParent
+||cdn.thenewsbox.net/m/impression
+||dynamic.infranken.de/delivery/info/
+||dynamic.infranken.de/delivery/consent.php
+||netzwelt.de/log
+||account.golem.de/ping
+||forocoches.com/image/nada.gif
 ||lightboxcdn.com/*/digibox.gif?c=
 ||chatgpt.com/ces/v1/t
 ||marketplace.visualstudio.com/_apis/customerintelligence/Events
@@ -91258,7 +91266,7 @@ lto.de##img[src^="https://ssl-wolterskluwer.met.vgwort.de/"]
 ||worldhistory.org/analytics/pageview.js
 ||g.newtimes.com/pd.js
 ||newtimes.com/analytics?
-||computerbase.de/nlyt
+||computerbase.de/nly
 ||rec1.smt.docomo.ne.jp/bcn_access_log/
 ||kccsrecommend.site/torimochi_log/
 ||www-direct.motorcycle.com/eventStream
@@ -95663,6 +95671,7 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mob2.healthtrackergroup.com^
 ||insights-categorizer-noneu.truecaller.com^
 ||event-dot-learning-piano.appspot.com^
 ||log.cleanertoolboxonline.live^
