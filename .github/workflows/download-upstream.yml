@@ -35,6 +35,9 @@ jobs:
         #unzip artifact.zip -d ./
         tar -xvf archive.tar.gz -C ./
         
+    - name: Generate uptime.txt
+      run: |
+        echo $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') > uptime.txt
 
     - name: Commit and Push Changes
       run: |
