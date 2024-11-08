@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: xib6VC1CrFERcw2iKcVs3w
-! Diff-Path: ../patches/224/224-s-1731022631-3600.patch
+! Checksum: ob6yOpehWyiiZ80+fnCC9Q
+! Diff-Path: ../patches/224/224-s-1731062328-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.25.44
-! TimeUpdated: 2024-11-07T23:33:36+00:00
+! Version: 2.1.25.48
+! TimeUpdated: 2024-11-08T10:34:39+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4889,6 +4889,11 @@ newduba.cn###jq_youxi
 ||dhukul.com^
 ||reisyxy.icu^
 ||yrarhzuq.xyz^
+||sugilip.cn^
+||trpyceq.cn^
+||6gute.icu^
+||q2usj.icu^
+||pheqae.com^
 ||tyaduqq.icu^
 ||gftefmt.icu^
 ||ygoibya.icu^
@@ -19577,6 +19582,8 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,lspdfrcn.com,moa.tw,moe48.com,numberempire.com,playok.com,reh.tw,shenfendaquan.com,vaptcha.com#@#ins.adsbygoogle
 android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,lspdfrcn.com,moa.tw,moe48.com,numberempire.com,playok.com,reh.tw,shenfendaquan.com,vaptcha.com#@#ins.adsbygoogle[data-ad-slot]
 @@.adserver.$domain=litv.tv
+@@||unpkg.com^$script,domain=happymh.com
+@@||cloudflare.com^$script,domain=happymh.com
 @@||am730.com.hk^$generichide
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
