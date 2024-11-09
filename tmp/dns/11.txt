@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: t7LRQZ/Jj76ZYAld/aU6cg
-! Diff-Path: ../patches/11/11-s-1731062325-3600.patch
+! Checksum: 7eyNRzdIl53n9YrjSDJ24Q
+! Diff-Path: ../patches/11/11-s-1731094655-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.55.94
-! TimeUpdated: 2024-11-08T10:34:15+00:00
+! Version: 2.0.55.97
+! TimeUpdated: 2024-11-08T19:33:20+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1894,6 +1894,8 @@ motherless.com$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 @@||api.apptentive.com^$app=de.mcdonalds.mcdonaldsinfoapp
 @@||customer.iad-03.braze.com^$app=de.burgerking.kingfinder
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/192121
+@@||imasdk.googleapis.com^$app=mobi.zona
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190962
 @@||imasdk.googleapis.com^$app=mnn.Android
 ! https://github.com/AdguardTeam/AdguardFilters/issues/189134
@@ -2598,6 +2600,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+book18.fans##div[style^="width: 300px; height: 250px;"]
+xjav.tube##.video__wrapper > div.wrapper:has(> article div[style="width: 156px; height: 130px;"])
+bm.best-hit.tv##iframe[style^="width:320px;height:100px;"]
 tporn.xxx##.video__und
 tporn.xxx###header_ban
 pornomira.net##center[style="margin-bottom: 20px; min-height:250px"]
@@ -3670,7 +3675,7 @@ m.cafef.vn##div[id^="adm-slot-"]
 amp.dantri.com.vn##div[id^="xds-"]
 outdoorlife.com#?##empire-unit-footer-close-btn
 outdoorlife.com#?#div[id^="empire-unit-sticky_footer__mobile"]
-aniporn.com##.header__item
+xjav.tube,aniporn.com##.header__item
 esquire.com#?#section > div[class*="css"]:has(> div.ad-container)
 amateurphotographer.com##.post-content-ad
 themanual.com##body .dtads-mobile
