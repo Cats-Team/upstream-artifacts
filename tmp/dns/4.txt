@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: RbqRWVXdPpupfzAUFL0+iA
-! Diff-Path: ../patches/4/4-s-1731400656-3600.patch
+! Checksum: jC3MSkq4XWiCpyfcFrSUzw
+! Diff-Path: ../patches/4/4-s-1731425973-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.7.52
-! TimeUpdated: 2024-11-12T08:33:04+00:00
+! Version: 2.1.7.54
+! TimeUpdated: 2024-11-12T15:34:15+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -744,6 +744,7 @@ pcmag.com,onefootball.com,ign.com,israelnationalnews.com,lifehacker.com,cgmagonl
 !
 ! NOTE: Specific rules
 !
+fastcompany.com##main > ul:has(> li > a[href^="https://www.facebook.com/sharer.php"])
 openlibrary.org##.share-modal-link
 quotidianodipuglia.it##.share_bar_wrapper
 prmira.ru##.flex-col.top-\[70px\]
@@ -9747,7 +9748,7 @@ eurogamer.net,metabomb.net##.like-and-subscribe
 multiup.eu##a[href^="https://flattr.com"]
 ||html-online.com/like.html
 history.com##.player__info > .c022
-motorauthority.com,thesdeshop.com,smartlog.jp,timeextension.com,twpkinfo.com,nobelprize.org,nextgov.com,mcpedl.com,purposegames.com,pushsquare.com,purexbox.com,tothenew.com,jewishjournal.com,vg247.com,nintendolife.com,aetv.com,history.com##.share-this
+screenshot.rocks,motorauthority.com,thesdeshop.com,smartlog.jp,timeextension.com,twpkinfo.com,nobelprize.org,nextgov.com,mcpedl.com,purposegames.com,pushsquare.com,purexbox.com,tothenew.com,jewishjournal.com,vg247.com,nintendolife.com,aetv.com,history.com##.share-this
 tothenew.com##.sharethis-text
 chefkoch.de##.recipe-share-btn
 ozon.ru##div[data-widget="sharingButton"]
