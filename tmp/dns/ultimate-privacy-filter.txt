@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202411122103
+! Version: 202411132103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Nov 2024 21:03 UTC
+! Last modified: 13 Nov 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -146,12 +146,6 @@ embed.rtl.hu#%#//scriptlet('set-constant', 'gemiusStream.event', 'noopFunc')
 reuters.com#%#//scriptlet('set-local-storage-item', 'ajs_anonymous_id', 'null')
 m.dcinside.com,upload.dcinside.com#%#//scriptlet('set-cookie-reload', '_ga', 'OK')
 cbssports.com#%#(()=>{window.admiral=function(d,a,b){if("function"==typeof b)try{b({})}catch(a){}}})();
-6play.fr#%#//scriptlet('set-local-storage-item', 'gdprTracking', 'false')
-6play.fr#%#//scriptlet('set-local-storage-item', 'gdprPersonalization', 'false')
-6play.fr#%#//scriptlet('set-local-storage-item', 'gdprAdTargeting', 'false')
-6play.fr#%#//scriptlet('set-local-storage-item', 'gdprMultiDeviceMatching', 'false')
-6play.fr#%#//scriptlet('set-local-storage-item', 'gdprUserHasInteracted', '0')
-6play.fr#%#//scriptlet('set-local-storage-item', 'localDeviceId', '0')
 imdb.com#%#//scriptlet("set-constant", "doWithAds", "noopFunc")
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
 revv.co.in#%#(()=>{window.google_optimize={get(){}}})();
@@ -263,6 +257,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||p7cloud.net^
 ||kobel.services^
 ||useraction.de^
 ||analytically.net^$third-party
@@ -35768,6 +35763,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||mst.rnd.de^
 ||cza.crazygames.com^
 ||event-dot-procolor-backend.appspot.com^
 ||prod.event.mwm-asset-manager.mwmwebapis.com^
@@ -91542,6 +91538,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||facebook.com/async/wbloks/log/
+||tds.net/api/*/sendEvents/
 ||amazon.com/shoppingaids/logimpression?
 ||poco.de/api/tracking
 ||api.transcy.io/api/statistic/
@@ -91952,7 +91950,6 @@ tv2.no##.article-recommended
 ||stats.mopo.de/cntcc
 ||assets.rndtech.de/web-vitals/
 ||mst.*.de/g/collect
-||silo47.p7cloud.net/p.png
 ||taz.de/count/
 ||pt.dwcdn.net/*/datawrapper.gif
 ||service.webgoto.net/*?wAnalytics
@@ -96697,6 +96694,7 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||sonar*.xy.fbcdn.net^
 ||mob2.healthtrackergroup.com^
 ||insights-categorizer-noneu.truecaller.com^
 ||event-dot-learning-piano.appspot.com^
@@ -97433,6 +97431,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtm.js$domain=hobbystock.jp
 @@||birdflock.unipus.cn/ufe/third/sensorsdata/*/sensorsdata.min.js$domain=ucloud.unipus.cn
 @@||ks-bueromoebel.shop/*/google-analytics.*.js
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=dailystar.co.uk
@@ -97897,7 +97896,6 @@ goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
 @@||google-analytics.com/analytics.js$domain=artage.io
 @@||googletagmanager.com/gtm.js$domain=zozo.jp
 @@||karte.io/libs/tracker.$domain=zozo.jp
-@@||partner-api.sddan.com/api/*/segment-$domain=6play.fr
 @@||go2stream.net/stream/live/track/view/Tracking.php$domain=go2stream.net
 @@||googletagmanager.com/gtm.js$domain=makitani.net
 @@||googletagmanager.com/gtm.js$domain=youpouch.com
