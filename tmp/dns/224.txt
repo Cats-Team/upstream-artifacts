@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: p/4c+AfVzOGrf09RxqsdcQ
-! Diff-Path: ../patches/224/224-s-1731724675-3600.patch
+! Checksum: 9MKfWsyUi7+P68NeD11dNg
+! Diff-Path: ../patches/224/224-s-1731800235-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.25.97
-! TimeUpdated: 2024-11-16T02:34:03+00:00
+! Version: 2.1.26.2
+! TimeUpdated: 2024-11-16T23:33:54+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1130,6 +1130,7 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+||m.ddyueshu.cc/*/$script
 ||a.d/adblo_ck.jpg
 health.tvbs.com.tw##.h-\[280px\]
 jr31.xyz##body > div.wp > div.wp > a[rel="nofollow"] > img
@@ -1139,6 +1140,7 @@ vip.diaoyu18.com##.container > a[target="_blank"]
 vip.diaoyu18.com##.huadong > div[style="text-align: center;margin-bottom: 10px;"]
 m.mobile01.com##.u-gapNextV--lg.u-height280
 damon624.pixnet.net##.article-content-inner > p:has(> span > a[href] > ins.adsbygoogle)
+18comic.vip##.container > div.row:has(> div[class^="col-"] > div[data-show])
 18comic.vip##.container > div[style^="padding:"]:has(> [data-group="content_page"])
 18comic.vip##.tab-content + .row:has(> div[class] > div[class] > .group-notice)
 huaren.live##.action-ad
@@ -2955,6 +2957,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ! ! temporary
 ! https://github.com/AdguardTeam/AdguardBrowserExtension/issues/3031
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/192739
+@@||m.ddyueshu.cc/*common
 ! Disable a rule which may unblocks trackers requests
 @@||translate.googleapis.com/element/$badfilter
 ! https://github.com/AdguardTeam/AdguardFilters/issues/189929
@@ -4846,6 +4850,7 @@ newduba.cn###jq_youxi
 ##dl#listwoBox
 ##img#GGADIMG
 ##img#adv1
+##A[onclick^="diensfeifwejwdsfwemio"]
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
 ##img[data-src*=".alicdn.com/img/ibank/"][src="/static/images/loadingerror.gif"]
 ##img[onclick*=".qq.com/doc/"]
@@ -4896,9 +4901,15 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||mlgowell.org^
+||ge189.com^
+||usgowell.com^
+||usgowell.org^
+||wweisie.top^
 ||qphkuua.icu^
 ||ngxzkaxf.icu^
 ||qgg7e.icu^
+||eweisiw.top^
 ||uaqdgrfr.icu^
 ||gzfsqrc.icu^
 ||kweisid.top^
