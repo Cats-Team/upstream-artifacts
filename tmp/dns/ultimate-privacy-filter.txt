@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202411192103
+! Version: 202411202103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Nov 2024 21:03 UTC
+! Last modified: 20 Nov 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -374,7 +374,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||adtrack.adleadevent.com^
 ||metrics-fe-na1.hubspot.com^
 ||pixel.mintigo.com^
-||au1.qualtrics.com^
 ||siteintercept.qualtrics.com^
 ||dmp.one^$third-party
 ||dmp-ai.ru^$third-party
@@ -42415,6 +42414,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||au1.qualtrics.com^$third-party
 ||stats.amur.life^
 ||pixel.smartnews.com^
 ||pixel.dev.smartnews.com^
@@ -42970,6 +42970,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||mcs-sg.tiktok.com^
 ||mssdk.bytedance.com^
 ||mssdk-sg.tiktok.com^
+||mssdk-*.tiktokw.us^
 ||mssdk-sg.byteoversea.com^
 ||tracker.smartseminar.jp^
 ||tracker.shanon-services.com^
@@ -98040,10 +98041,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||uploadfox.net/events/
+||coopmobile.ch/analytics/at.js
 ||edge.curalate.com/api/v1/metrics/
 ||tiktok.com/web/report^
 ||run.app/analytics/|
-||events.split.io/api/testImpressions/
 ||zed.dev/api/send_page_event|
 ||bunkr.*/js/last_visit.js
 ||translate.googleapis.com/element/log?
@@ -103207,6 +103209,7 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||caerulus.io^
 ||log.heartratepros.com^
 ||hw-sh-pcdn-*.biliapi.net^
 ||ali-bj-pcdn-*.biliapi.net^
@@ -103903,7 +103906,6 @@ inapps.appsflyersdk.com^
 ||yadro.ru^
 ||ymtracking.com^
 ||zdbb.net^
-||log-boot.tiktokv.com^
 ||log*-normal-*.tiktokv.us^
 ||sf16-telemetry-proxy-oci.tiktokcdn-us.com^
 ||mon*-platform-*.tiktokv.com^
