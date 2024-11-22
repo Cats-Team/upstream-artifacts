@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: ZheEu3A3b1irdXgV9ctX+Q
-! Diff-Path: ../patches/4/4-s-1732117252-3600.patch
+! Checksum: GKdmFo0Ba5Lp4eiOh57mzw
+! Diff-Path: ../patches/4/4-s-1732217874-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.7.77
-! TimeUpdated: 2024-11-20T15:35:47+00:00
+! Version: 2.1.7.82
+! TimeUpdated: 2024-11-21T19:33:42+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -737,6 +737,8 @@ pcmag.com,onefootball.com,ign.com,israelnationalnews.com,lifehacker.com,cgmagonl
 !
 ! NOTE: Specific rules
 !
+t24.su##article > b:contains(Поделиться:)
+newsletter.pragmaticengineer.com##.pencraft > div.post-ufi > a[role="button"][aria-label="View share options"]
 github.blog##.flex-items-center > ul:has(> li > span:contains(Share:))
 pragmaticengineer.com##.pencraft > span:has(> a > div > svg.lucide-share)
 pragmaticengineer.com##.pencraft > button:has(> svg.lucide-share)
@@ -3098,7 +3100,7 @@ rionegro.com.ar##.headersticky__social
 iphone-mania.jp##.socal_button_big_tokusetsu
 front.wemakeprice.com##.desc_snsarea > .tooltip
 cronica.com.ar##.tapas-share
-diariodecuyo.com.ar##.redes
+eldestapeweb.com,diariodecuyo.com.ar##.redes
 jutarnji.hr##.item_social_share
 lee.hpplus.jp##.sns-buttons-wrap
 sports.kz##.news_read_share
@@ -3647,7 +3649,7 @@ the-steppe.com##.article-end
 auto-motor-i-sport.pl,menshealth.pl,motocykl-online.pl,womenshealth.pl##div[class$="-community-docked"]
 nieuwsblad.be##div[data-testid="article-share"]
 cybersport.ru##div[class^="share_"]
-kijonotakuhaibin.com##.social-buttom-bigsize
+kijyomita.com,kijonotakuhaibin.com##.social-buttom-bigsize
 tiktok.com##div[class*="DivShareActions"]
 tiktok.com##div[class*="DivShareActions"] + div[data-e2e="challenge-more"]
 scoopwhoop.com##.articleSocialBtns
@@ -5498,7 +5500,7 @@ sanspo.com##button[aria-describedby^="ttip_LINE"]
 sanspo.com##button[aria-describedby^="ttip_はてなに追加"]
 tp-link.com##.tp-blog-share
 nintendo.com##.topics-snsBts
-lemurov.net,testim.io,newzit.com##div[class^="share"]
+pokemontcgpocket.com,lemurov.net,testim.io,newzit.com##div[class^="share"]
 upwork.com##.social-links-wrap-refresh
 tupaki.com,thelogicalindian.com##.ind-social-wrapper
 jpost.com##.article-subline-share
