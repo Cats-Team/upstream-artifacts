@@ -85,9 +85,9 @@ meineorte.com,osthessen-news.de,techadvisor.com,focus.de##+js(nostif, .call(null
 kicker.de##+js(set, ov.advertising.tisoomi.loadScript, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/22096
 !#if cap_html_filtering
-alpin.de,boersennews.de,chefkoch.de,chip.de,clever-tanken.de,desired.de,donnerwetter.de,fanfiktion.de,focus.de,formel1.de,frustfrei-lernen.de,gewinnspiele.tv,giga.de,gut-erklaert.de,kino.de,messen.de,nickles.de,nordbayern.de,spielfilm.de,teltarif.de,unsere-helden.com,weltfussball.at,watson.de,moviepilot.de,mactechnews.de,sport1.de##^script:has-text(DisplayAcceptableAdIfAdblocked)
+alpin.de,boersennews.de,chefkoch.de,chip.de,clever-tanken.de,desired.de,donnerwetter.de,fanfiktion.de,focus.de,formel1.de,frustfrei-lernen.de,gewinnspiele.tv,giga.de,gut-erklaert.de,kino.de,messen.de,nickles.de,nordbayern.de,spielfilm.de,teltarif.de,unsere-helden.com,weltfussball.at,watson.de,moviepilot.de,mactechnews.de,sport1.de,welt.de##^script:has-text(DisplayAcceptableAdIfAdblocked)
 !#else
-alpin.de,boersennews.de,chefkoch.de,chip.de,clever-tanken.de,desired.de,donnerwetter.de,fanfiktion.de,focus.de,formel1.de,frustfrei-lernen.de,gewinnspiele.tv,giga.de,gut-erklaert.de,kino.de,messen.de,nickles.de,nordbayern.de,spielfilm.de,teltarif.de,unsere-helden.com,weltfussball.at,watson.de,moviepilot.de,mactechnews.de,sport1.de##+js(rmnt, script, DisplayAcceptableAdIfAdblocked)
+alpin.de,boersennews.de,chefkoch.de,chip.de,clever-tanken.de,desired.de,donnerwetter.de,fanfiktion.de,focus.de,formel1.de,frustfrei-lernen.de,gewinnspiele.tv,giga.de,gut-erklaert.de,kino.de,messen.de,nickles.de,nordbayern.de,spielfilm.de,teltarif.de,unsere-helden.com,weltfussball.at,watson.de,moviepilot.de,mactechnews.de,sport1.de,welt.de##+js(rmnt, script, DisplayAcceptableAdIfAdblocked)
 !#endif
 ||giga.de/special/gutscheine/*.png$script,1p
 ||kino.de/mages/*.png$script,1p
@@ -131,7 +131,7 @@ boerse-online.de##.center_top_bar
 wetter.de##.outbrain-ad-slot
 ||iframe.chefkoch.de/amp/online-food-trade/rewe/$frame
 mathebibel.de###banner-bottom
-/\.de\/[a-z]{10,18}\.js$/$script,1p,strict1p,match-case,domain=www.capital.de|www.essen-und-trinken.de|www.geo.de|www.eltern.de
+/\.de\/[a-z]{10,18}\.js$/$script,1p,strict1p,match-case,domain=capital.de|essen-und-trinken.de|geo.de|eltern.de
 ! https://github.com/uBlockOrigin/uAssets/issues/12360 VRM anti adblock
 ! https://github.com/uBlockOrigin/uAssets/issues/6541#issuecomment-1093665401
 ! https://github.com/uBlockOrigin/uAssets/issues/12962
@@ -5153,7 +5153,7 @@ chicoer.com##+js(set, CnnXt.Event.fire, noopFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3096
 visionias.net##+js(aeld, load, 2000)
-*.gif$domain=www.visionias.net,image
+*.gif$domain=visionias.net,image
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3102
 tennisactu.net##+js(acs, document.getElementById, ads)
