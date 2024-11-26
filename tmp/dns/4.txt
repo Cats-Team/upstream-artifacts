@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: tACih+M0u9ORcJALqTnteg
-! Diff-Path: ../patches/4/4-s-1732538437-3600.patch
+! Checksum: ilysCHiDtIBOiro9xin+WQ
+! Diff-Path: ../patches/4/4-s-1732603115-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.7.91
-! TimeUpdated: 2024-11-25T12:35:24+00:00
+! Version: 2.1.7.93
+! TimeUpdated: 2024-11-26T06:33:45+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -737,6 +737,8 @@ pcmag.com,onefootball.com,ign.com,israelnationalnews.com,lifehacker.com,cgmagonl
 !
 ! NOTE: Specific rules
 !
+usermag.co##a[aria-label="View share options"]
+usermag.co##.available-content > .pencraft:has(> div[class]:only-child > button > .lucide-share)
 t-fashion.jp##.is-pl65-pc > div.is-ta-c.is-bdt
 devblogs.microsoft.com##.social-panel > .d-flex:has(> .evo-dropdown-menu > button[data-bi-id="post_page_sidebar_left_social_share"])
 atarita.com##.td-is-sticky > .wpb_wrapper > .tdm_block_inline_text:has(+ .tdb_single_post_share)
@@ -3456,7 +3458,7 @@ wired.co.uk,wired.jp##.content-header__social-share
 markezine.jp##.c-article_sns_listitem:not(.-push)
 slamdunk.ru##a[data-role="shareComment"]
 kofella.net##.kofsoc
-realmadryt.pl,tea.ru##.share-more
+apkpure.net,realmadryt.pl,tea.ru##.share-more
 erecipe.woman.excite.co.jp##.postsns
 similarweb.com##.data-we-share
 aliradar.com##button[data-ga-p_item-share]
