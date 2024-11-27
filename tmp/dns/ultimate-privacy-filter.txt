@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202411260303
+! Version: 202411262103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 26 Nov 2024 03:03 UTC
+! Last modified: 26 Nov 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -108976,6 +108976,14 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||primevideo.com/gp/video/acquisition/utilities/monitoring|
+||amazon.*/cdp/usage/ClientsideImpression?
+||amazon.*/cdp/insights/reportEvent/
+||a2z.com/metric-batch
+||amazon.*/1/remote-weblab-triggers
+||tubitv.com/oz/videos/fallback-metrics?
+||tubitv.com/oz/log?
+||tubitv.com/*sendBeacon=
 ||uts-front.line-apps.com/event-web
 ||doclasse.com/b/d/tracklib.js
 ||sa.torbox.app/append|
@@ -109555,8 +109563,6 @@ thehindu.com###sectiondivicymi
 ||fap.bar/a.js
 ||cue.search.naver.com/api/*/log/
 ||roadster.com/roadster_dealer_analytics
-://coomer.su/$xmlhttprequest,method=patch|post
-://kemono.su/$xmlhttprequest,method=patch|post
 -config.sensic.net/3pc.html
 -config.sensic.net/s2s-web.js
 -config.sensic.net/sui.js
@@ -113899,7 +113905,7 @@ $cookie=ahoy_visitor,domain=instacart.ca|instacart.com
 ||championat.com^$cookie=adtech_uid
 ||championat.com^$cookie=top100_id
 ||championat.com^$cookie=rchainid
-$cookie=ruid,domain=afisha.ru|eda.ru
+$cookie=ruid,domain=afisha.ru|eda.ru|rambler.ru
 ||afisha.ru^$cookie=_afuid
 ||afisha.ru^$cookie=_eggDeviceUUID
 ||afisha.ru^$cookie=_egguid
@@ -114158,6 +114164,7 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||events.bsky.app^
 ||caerulus.io^
 ||log.heartratepros.com^
 ||hw-sh-pcdn-*.biliapi.net^
@@ -115080,14 +115087,6 @@ pdfextra.com#%#//scriptlet('trusted-set-cookie', 'ms::pdf-extra-web::pushtkn', '
 @@||endesaclientes.com/*/ruxitagentjs_*.js$domain=endesaclientes.com
 @@||tag.aticdn.net/piano-analytics.js$domain=choisirleservicepublic.gouv.fr
 @@||cdn.tagcommander.com^$domain=secure.galerieslafayette.com
-@@/^https:\/\/coomer\.su\/api\/v1\/(?:fansly|onlyfans)\/user\/[-.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
-@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/creator\/(?:fansly|onlyfans)\/[-.0-9A-Z_a-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
-@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/post\/(?:fansly|onlyfans)\/[-.0-9A-Z_a-z]+\/\d+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
-@@/^https:\/\/kemono\.su\/api\/v1\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/user\/[-.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
-@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/creator\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[-.0-9A-Z_a-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
-@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/post\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[-.0-9A-Z_a-z]+\/[0-9A-Za-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
-@@||coomer.su/.well-known/ddos-guard/mark/|
-@@||kemono.su/.well-known/ddos-guard/mark/|
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics,domain=ilsecoloxix.it
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics,domain=gelocal.it
 abema.tv#%#//scriptlet('remove-node-text', 'script', 'NREUM')
