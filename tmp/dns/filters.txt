@@ -246,12 +246,6 @@ vaughn.live##.vs_v9_stream_content_abvs
 vaughn.live##.vs_v9_header_menu_abvs
 vaughn.live##div[id$="-ad"][id^="vs_v9_"]
 
-! https://github.com/uBlockOrigin/uAssets/issues/35
-||g9g.eu^*fa.js$script,redirect=fuckadblock.js-3.2.0
-||8s8.eu^*fa.js$script,redirect=fuckadblock.js-3.2.0
-||sprzedaz2.oczarjk.pl/img/ads/banner.gif$image,redirect=1x1.gif,domain=im9.eu
-g9g.eu##+js(aopr, adBlockDetected)
-
 ! Computers seizing thanks to these moronic scripts leading to system-wide out
 ! of memory condition
 ! https://github.com/gorhill/uBlock/issues/1449
@@ -398,10 +392,6 @@ indiatoday.in,intoday.in##.adblockcontainer:style(display: block !important)
 ! https://github.com/uBlockOrigin/uAssets/issues/102#issuecomment-239625264
 ||zedo.com^$script,important,domain=indiatoday.in|intoday.in
 ||googlesyndication.com^$script,important,domain=indiatoday.in|intoday.in
-
-! https://forums.lanik.us/viewtopic.php?f=62&t=32109
-ndtv.com###ndtv-message-users
-ndtv.com###ins_videodetail:style(display: block !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/98
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion###stream_pagelet div[id^="hyperfeed_story_id_"]:has(a.uiStreamSponsoredLink)
@@ -629,9 +619,6 @@ spiele.bild.de##div[id^="ad-landingpage-"]
 spiele.bild.de##div[id^="ad-gamepage-"]
 spiele.bild.de##.ad-vertical-box
 ||servedby.adbility-media.com^$3p
-||partners2.das-onlinespiel.de^$3p
-! https://github.com/uBlockOrigin/uAssets/issues/26265
-@@||partners2.das-onlinespiel.de/client.js^$script,3p,domain=spiele.connect.de|spiele.spiegel.de
 ! https://github.com/uBlockOrigin/uAssets/issues/9615
 bild.de##.main-nav .utilities > li:style(margin-left:-0.5px !important)
 
@@ -6673,6 +6660,7 @@ youku.com##+js(nano-stb, , ,0)
 celebjihad.com##+js(aopr, dataPopUnder)
 ||celebjihad.live^$3p
 ||leojmp.com^
+celebjihad.com##.theme_article.sidebar_increase:style(height:0px !important)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4303
 ! https://github.com/easylist/easylist/issues/6200
