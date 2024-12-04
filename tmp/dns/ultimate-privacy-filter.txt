@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202412022103
+! Version: 202412032103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 02 Dec 2024 21:03 UTC
+! Last modified: 03 Dec 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -43288,6 +43288,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||f-log-*.grammarly.io^
+||femetrics.grammarly.io^
+||media-stat.mail.ru^
 ||telemetry.tradingview.com^
 ||analytics.shorthand.com^
 ||gh.fanatical.com^
@@ -107553,6 +107556,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||httpstatus.io/analytics/api/send
 ||account.protonvpn.com/api/data/v1/metrics
 ||dutchie.com/telemetry|
 ||lucida.su/api/event
@@ -107749,7 +107753,6 @@ nanjpride.blog.jp#?#div[class^="article-outer"] > div.recommend:has(> div.ninja-
 ||microsoft.com/etc.clientlibs/microsoft/clientlibs/exp-analytics/
 ||cdn.mrkhub.com/sks/js/sks_track.js
 ||edit-document.com/click-event/
-||httpstatus.io/analytics/script.js
 ||memonotepad.com/js/modules/google-analytics-bundle.js
 ||support.microsoft.com/*/ms.analytics-web-*.min.js
 ||affine.pro/*/track-link.*.js
@@ -108271,7 +108274,6 @@ unn.com.ua##.b-footer-counters
 ||selenagomez.com/*/umg-analytics/
 ||amazonaws.com/umg-analytics/
 ||getadblock.com/js/log.js
-||bamgrid.com/analytics/
 ||bing.com/api/shopping/v1/telemetry
 ||prisma.io/gastats.js
 ||cdn-databox.jobrapido.com/jtag.umd.js
@@ -113503,6 +113505,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtm.js$domain=flets.com
 @@||d.line-scdn.net/*/torimochi.js/*/torimochi.js$domain=pointclub.line.me
 @@||v144.philanthropy.com/DG/DEFAULT/rest/rpc/
 @@||b.karte.io/event$domain=rentio.jp
