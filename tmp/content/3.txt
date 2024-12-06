@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: uupz1rEeacGLvMXZCsrIrw
-! Diff-Path: ../patches/3/3-s-1733333970-3600.patch
+! Checksum: fPUCt6tasFzzAz7JmYE7AQ
+! Diff-Path: ../patches/3/3-s-1733438364-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.77.32
-! TimeUpdated: 2024-12-04T17:34:21+00:00
+! Version: 2.0.77.35
+! TimeUpdated: 2024-12-05T22:34:35+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -43863,6 +43863,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||trk.joinrs.com^
+||atom-qa.warnermedia.com^
 ||tralut.chatpdf.com^
 ||tracking.leadspark.io^
 ||f-log-*.grammarly.io^
@@ -108263,6 +108265,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||titanprod.narvar.com/*/track|
+||adultswim-vodlive.cdn.turner.com/csm/analytics
 ||homemate.co.jp/common/js/beacon/real_estate_detail.js
 ||homemate.co.jp/for/beacon_info/
 ||api.novakidschool.com/api/*/metrics|
@@ -117072,7 +117076,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 @@||ia.hit.interia.pl/*/date?$domain=interia.pl|pomponik.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/67051
 @@||stat.sputnik.ru/cnt.js$domain=krskstate.ru
-! https://github.com/AdguardTeam/AdguardFilters/issues/67068
 ! https://github.com/AdguardTeam/AdguardFilters/issues/67110
 ! https://github.com/AdguardTeam/AdguardFilters/issues/66715
 @@||googletagmanager.com/gtm.js$domain=linline-clinic.ru
