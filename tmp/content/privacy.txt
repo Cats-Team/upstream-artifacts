@@ -783,6 +783,7 @@ threads.net##+js(json-prune, require.0.3.0.__bbox.define.[].2.is_linkshim_suppor
 bing.com##+js(href-sanitizer, a[href^="/rebates/welcome?url=http"], ?url)
 ||bing.com/ck/a*^u=a1aHR0c$doc,urlskip=/[?&]u=a1(aHR0c[^&#]+)/ -base64 +https
 ||bing.com/rebates/welcome?url=http$doc,urlskip=?url
+||bing.com/alink/link?url=http$doc,urlskip=?url
 
 ! https://www.avforums.com/threads/philips-oled908-remote.2478922/
 ||ds1.nl/redirect/*^dai_url=http$doc,urlskip=?dai_url
@@ -818,6 +819,7 @@ bing.com##+js(href-sanitizer, a[href^="/rebates/welcome?url=http"], ?url)
 ||slickdeals.net/i.php?*&u2=http$doc,urlskip=?u2
 ||amazon.com/gp/redirect.html?*&location=http$doc,urlskip=?location
 ||link.sylikes.com/*^url=http$doc,urlskip=?url
+||sofi.com/atr/p/v1/a?u=http$doc,urlskip=?u
 
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/775#discussioncomment-10120835
 ||justwatch.com/a?*^r=http$doc,urlskip=?r
@@ -1443,6 +1445,9 @@ bentasker.co.uk##+js(no-xhr-if, method:POST url:pfanalytics.bentasker.co.uk)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26299
 ||substack.com/api/v1/firehose/batch
+
+! https://github.com/uBlockOrigin/uAssets/issues/22792
+||nakedanalytics.net^
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
