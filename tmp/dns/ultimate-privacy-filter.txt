@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202412092103
+! Version: 202412102103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 09 Dec 2024 21:03 UTC
+! Last modified: 10 Dec 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -2324,7 +2324,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||clickalyzer.com^$third-party
 ||clickclick.net^$third-party
 ||clickdensity.com^$third-party
-||clickdimensions.com^$third-party
 ||clickening.com^$third-party
 ||clickforensics.com^$third-party
 ||clicki.cn^$third-party
@@ -43289,6 +43288,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||event.newsbreak.com^
+||pixel-static.spotify.com^
+||pixel-config.reddit.com^
 ||tracker.curama.jp^
 ||beacons.digital.disneyadvertising.com^
 ||telegraph.prd.api.discomax.com^
@@ -107565,6 +107567,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||miniso.com.tr/*/sendEventV2|
 ||assets.papegames.com/libs/monitor.js
 ||apm.infoldgames.com/v1/log/sendtlog
 ||cdn.jsdelivr.net/npm/@snowplow/javascript-tracker@*/dist/sp.min.js
@@ -111647,6 +111650,7 @@ link.gmapp*.net$image
 ||rum-static.pingdom.net/*-*.js$script,redirect=noopjs,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
+elink.clickdimensions.com$image
 mpse.jp/*/rw/beacon_$image
 mpse.jp%2F*%2Frw%2Fbeacon_$image
 surveys.zendesk.com/subscription/watermark.gif$image
@@ -112755,6 +112759,8 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+-ulogl*.kwai-pro.com^
+||ulog*.kwaipros.com^
 ||snowplow-collector.
 ||logs-ingress.svc.vinted.com^
 ||analytics.baliusuperapp.xyz^
@@ -113528,6 +113534,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtm.js$domain=almamedia.fi
 @@||googletagmanager.com/gtm.js$domain=shop-apotheke.com
 @@||googletagmanager.com/gtm.js$domain=flets.com
 @@||d.line-scdn.net/*/torimochi.js/*/torimochi.js$domain=pointclub.line.me
