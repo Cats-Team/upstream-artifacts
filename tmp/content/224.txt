@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: iRj8HLhAX2Gyd7PgRidkgg
-! Diff-Path: ../patches/224/224-s-1734046684-3600.patch
+! Checksum: Vyfrd2Gf2R0GtwfB4aaZcw
+! Diff-Path: ../patches/224/224-s-1734115105-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.27.66
-! TimeUpdated: 2024-12-12T23:34:39+00:00
+! Version: 2.1.27.74
+! TimeUpdated: 2024-12-13T18:35:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -87,6 +87,7 @@
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||b10.justacdn.net^
 ||wkzw.me^
 ||dhkqqe.top^
 ||yruadj.top^
@@ -1141,6 +1142,7 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+hanime1.me##.search-rows-wrapper > .content-padding-new > .row > .multiple-link-wrapper:has(> a[href*=".labsda.com"])
 ||*.top^$domain=ltswu.org
 ctinews.com##.ad-min-space
 ctinews.com###taboola-slot
@@ -4913,6 +4915,7 @@ newduba.cn###jq_youxi
 ##style + .vdgdo
 ##.tg-m.tg-site
 ##.tg-pc.tg-site
+##body[ontouchstart] > .wrap > div[id^="content_"][style="display: block;"]
 ##body[ontouchstart] > div[id^="content_"][style="display: block;"]
 ##.relative > div > img[sizes="100vh"][width="0"]
 ##a[href^="/archives/"] > .post-card > .blog-background[style*="gif;base64"]
@@ -4939,6 +4942,11 @@ newduba.cn###jq_youxi
 ||owsrgljb.icu^
 ||ziqniduy.com^
 ||dddstew6cw8.fun^
+||ctimiyf.top^
+||8et.icu^
+||treimphens.com^
+||zr3.icu^
+||htimiyu.top^
 ||neldatsy.com^
 ||yqlzccxn.icu^
 ||bjimtyv.top^
