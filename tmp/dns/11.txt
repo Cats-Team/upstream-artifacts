@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: DHyffRF6GEc9mWXRgN9A9w
-! Diff-Path: ../patches/11/11-s-1734125866-3600.patch
+! Checksum: AEx66zm2P84M0jl52fE9Vg
+! Diff-Path: ../patches/11/11-s-1734295108-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.56.68
-! TimeUpdated: 2024-12-13T21:33:48+00:00
+! Version: 2.0.56.70
+! TimeUpdated: 2024-12-15T20:34:23+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2605,7 +2605,7 @@ kyun2-girls.com,hapiee.com,2ch-c.net,4p.de,www-cbc-ca.cdn.ampproject.org,m.gebor
 ! ##.Ad
 chip.de,gamesworld.de,fnn.jp##.Ad
 ! ##body .banner
-m.price.com.hk,otakuma.net,nikkan-gendai.com,ranking.goo.ne.jp,m.hellporno.com,topics.smt.docomo.ne.jp,rank-king.jp,kun.uz,m.lenta.ru,m.aydin24haber.com,m.xcum.com,m.alphaporno.com,m.yourlust.com,m.3movs.com,m.sexu.com##body .banner
+genxy-net.com,m.price.com.hk,otakuma.net,nikkan-gendai.com,ranking.goo.ne.jp,m.hellporno.com,topics.smt.docomo.ne.jp,rank-king.jp,kun.uz,m.lenta.ru,m.aydin24haber.com,m.xcum.com,m.alphaporno.com,m.yourlust.com,m.3movs.com,m.sexu.com##body .banner
 !
 ! TODO: Replace by class rule when https://github.com/AdguardTeam/FiltersCompiler/issues/221 is resolved.
 sp.manga.nicovideo.jp##div[style^="--ads-width:"]
@@ -2658,7 +2658,7 @@ fortune.com###__next > div[class*=" "].sc-3f90509f-0:not(.overlay)
 sekai-hub.com##.frame.sd.appear
 unian.net##div[style^="height: 280px;"]
 natalie.mu##.NA_article_tagad
-m.winfuture.de##.button_box.red[target="_blank"]
+m.winfuture.de##.button_box[target="_blank"]
 jprime.jp##.ad-inread
 m.economictimes.com##div[id^="taboola-"]
 m.economictimes.com##.taboolaAd
