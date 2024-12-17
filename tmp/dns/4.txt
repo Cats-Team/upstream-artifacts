@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: HMuOkQcWW8w1wk/n7xIngw
-! Diff-Path: ../patches/4/4-s-1734356534-3600.patch
+! Checksum: JasCC/yMYUwQvQYehvKcHQ
+! Diff-Path: ../patches/4/4-s-1734363619-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.8.59
-! TimeUpdated: 2024-12-16T13:36:46+00:00
+! Version: 2.1.8.61
+! TimeUpdated: 2024-12-16T15:35:12+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -737,6 +737,7 @@ mashable.com,pcmag.com,onefootball.com,ign.com,israelnationalnews.com,lifehacker
 !
 ! NOTE: Specific rules
 !
+fishki.net##.popover-wrap:has(button[aria-label="Поделиться"])
 epam.com##.search-result__share-button-holder
 minecraft-turkiye.com##.blockMessage:has(> div.shareButtons)
 mdpr.jp##.p-articleShareList
@@ -2381,7 +2382,7 @@ customlife-media.jp##[class^="sns-panel"]
 nist.gov##.nist-social__wrapper
 tokyocheapo.com##.social-actions
 comic-fuz.com##div[class^="Sns_buttons__"]
-store.nissin.com##.ProductMeta__ShareButtons
+andor-online.com,store.nissin.com##.ProductMeta__ShareButtons
 kai-you.net##.m-information-share
 respeecher.com##.hs_cos_wrapper_social_follow_module
 onedio.com##.layout__main > div.flex > div.mt-2.relative
@@ -6024,7 +6025,6 @@ ftc.gov##.block-sharetext
 codelearn.io##.cl-icon-share-alt
 livelaw.in##.social_share_before_image
 tip-berlin.de##.share-buttons__toggle
-animet.tv##.main span[mattooltip="Share"]
 movieweb.com##.article-header-social-item
 livehindustan.com##.artcl-shre
 baristainstitute.com##.social-media-share-links > span.header
@@ -13664,7 +13664,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ##.share-icons-box
 ##.share-icons-sticky-box
 ##.share-icons-wrap
-~pan.baidu.com##.share-list
+##.share-list
 ##.share-on-facebook
 ##.share-on-twitter
 ##.share-panel
@@ -14577,6 +14577,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/194729
+pan.baidu.com#@#.share-list
 ! https://github.com/AdguardTeam/AdguardFilters/issues/194382
 astrobiology.com#@#.article-line
 ! https://github.com/AdguardTeam/AdguardFilters/issues/191682
