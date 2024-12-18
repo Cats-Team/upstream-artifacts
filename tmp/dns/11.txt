@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: +1iigpeRd5f96EEv6aNQkA
-! Diff-Path: ../patches/11/11-s-1734385114-3600.patch
+! Checksum: WWc7TqDCI2WZpSRKuCQfCg
+! Diff-Path: ../patches/11/11-s-1734471493-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.56.73
-! TimeUpdated: 2024-12-16T21:34:44+00:00
+! Version: 2.0.56.75
+! TimeUpdated: 2024-12-17T21:34:21+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1403,6 +1403,7 @@ youjizz.com#%#AG_defineProperty('config.ads.mobilePopunder', {value: false});
 !-------CSS---------
 !-------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/194769
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193605
 pulzo.com#$#.container-headband-new { margin-top: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/192421
@@ -2612,6 +2613,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+futuro.cl##.ad-mob
+c5n.com##.free-banner-wrapper
+c5n.com##div[id^="b_square_"]
 m.sports.ru##.columns__main-column > div.news-layout__frame:has(> div.ad-slot)
 disgustingmen.com##.show-mobile-dsa
 independent.co.uk###main > div[class^="sc-"]:has(> .taboola)
