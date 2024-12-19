@@ -4013,6 +4013,11 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 /\.codeanyapp\.com\/.+\/(?:3dsece?|infospage|paiement)\.php\b/$doc,match-case,to=codeanyapp.com|~amendes.gouv.fr
 ||codeanyapp.com/pr/rue/$doc,to=~amendes.gouv.fr
 
+! id.me
+||internal-checker.com^$all,to=~id.me
+! https://www.virustotal.com/gui/url/f60f6428c1a06204a7d721da7a65d1ae350f341d996bc47d8a2aab7371d172a7
+||banque-online.com^$all,to=~id.me
+
 ! bank
 ||chamsocthekhachhang-$doc,to=~edu|~gov|~edu.vn|~gov.vn
 ||uudaikhachhangthe-$doc,to=~edu|~gov|~edu.vn|~gov.vn
@@ -4336,8 +4341,8 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ||royal-glade-286f.kdsj.workers.dev^$doc
 ! https://www.virustotal.com/gui/url/ebc994d35635bdfa408c42209bb66ca8de3180dfe60c1c90386ca5bb2bd0c5cd
 ! https://www.virustotal.com/gui/url/4ed3b862ff18fb1a61b8ecf76583c1f07aa3bb8625fe9bbc4df3dd44a4a14e45
+! https://github.com/uBlockOrigin/uAssets/issues/26518
 /\.(?:boats|cfd)\/contract\/\d{14,19}\b/$doc,match-case,to=boats|cfd|~facebook.com
-||business-center-$doc
 ! https://www.virustotal.com/gui/url/1e529619b288de241d6f1b356b31aa62d615dee6678f0dd42ca6ce77ea277cac
 ||meta.com-case*.com/help/contact/$doc
 ! https://www.virustotal.com/gui/url/a7fd00beea3a206574a55ebcc91d1c0c73330e31c5a38d602d6f82e14d646bff
@@ -5033,7 +5038,6 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||vangphutai.com^$all,to=~vangphutai.vn
 ||autoscurt24.de^$all,to=~autoscout24.de
 ||hk668.cc^$all,to=~yahoo.com
-||internal-checker.com^$all,to=~id.me
 ||dc.tensgpt.com^$all,to=~discord.com
 ||mol-finance.top^$all,to=~mol.co.jp
 ||carrefour-enbacktoschool4.pages.dev^$all,to=~carrefour.com
