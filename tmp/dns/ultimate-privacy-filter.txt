@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202412190302
+! Version: 202412192103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Dec 2024 03:02 UTC
+! Last modified: 19 Dec 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -107653,6 +107653,12 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||cms.static.btv.bg/microsites/btvnovinite/js/ga360.js
+||btvnovinite.bg/js/bg/shared/js/bweb.js
+||btvnovinite.bg/js/bg/shared/js/bweb-gpt.js
+||azure.com/api/metric|
+||azure.com*/api/Telemetry|
+||azure.com/api/extensiontelemetry|
 ||vid.media.cm/m.js
 ||voicendata.com/static/js/*_gtag_publisher.js
 ||esports-world.jp/js/banner.event.js
@@ -112389,6 +112395,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||fanatical.com^$cookie=affiliate_source
 ||titulky.com^$cookie=adbwshown
 ||titulky.com^$cookie=udid
 ||titulky.com^$cookie=sid
@@ -113853,8 +113860,11 @@ alternativeto.net#%#//scriptlet('prevent-element-src-loading', 'script', 'double
 @@||xfinity.com/stream/js/api/fingerprint.js$domain=xfinity.com
 @@||rfksrv.com/rfk$domain=spirithalloween.com
 @@||convertexperiments.com^$domain=skratchlabs.com
-reuters.com#%#//scriptlet('set-constant', 'analytics', 'undefined')
-||cdn.segment.com^$script,redirect=noopjs,important,domain=reuters.com
+@@||cdn.segment.com/v1/projects/*/settings$domain=reuters.com
+@@||cdn.segment.com/analytics-next/bundles/ajs-destination.bundle.*.js$domain=reuters.com
+@@||cdn.segment.com/analytics-next/bundles/schemaFilter.bundle.*.js$domain=reuters.com
+@@||cdn.segment.com/next-integrations/actions/*.js$domain=reuters.com
+@@||cdn.segment.com/analytics.js/$domain=reuters.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=tf1info.fr
 @@||static.vocstatic.com^$script,stylesheet,domain=ideal.es
 @@||googletagmanager.com/gtag/js$domain=sportdeutschland.tv
@@ -114110,7 +114120,6 @@ goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
 @@||content.gap.com/fp/tags.js$domain=oldnavy.gap.com
 @@||meituan.com^$cookie=device_uuid
 @@||googletagmanager.com/gtm.js$domain=konami.com
-@@||cdn.segment.com/analytics.js/$domain=reuters.com
 @@||cdn.optimizely.com/datafiles/*.json$domain=hm.com
 @@||scdn.cxense.com/cx.js$domain=nippon.com
 @@||api.cxense.com/public/widget/$domain=nippon.com
