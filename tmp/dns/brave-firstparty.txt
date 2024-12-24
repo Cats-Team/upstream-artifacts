@@ -20,6 +20,7 @@
 /webads.
 /adcgi?
 /aclib.js$script,1p
+-contrib-ads.$~stylesheet
 ! Various uBO 1p network items. (START)
 /adc-ads-lib|$script
 ! https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2024.txt#L767
@@ -2449,6 +2450,8 @@ outkick.com##.g1-advertisement
 barstoolsports.com##.htl-ad__container
 ! spotim comment ad (huffpost.com/barstoolsports.com)
 ##div[class^="ads__index__adWrapper-"]
+! aipebel.com
+aipebel.com##.popSc
 ! syfy.com
 syfy.com##.zergnet-widget__header
 ! metro.co.uk

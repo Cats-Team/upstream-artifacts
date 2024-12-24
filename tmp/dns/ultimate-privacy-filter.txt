@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202412222103
+! Version: 202412232103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 22 Dec 2024 21:03 UTC
+! Last modified: 23 Dec 2024 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -253,6 +253,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||stats2.indianpornempire.com^
 ||bt.dns-finder.com^
 ||btloader.com^
 ||glamipixel.com^
@@ -107683,6 +107684,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 ||cms.static.btv.bg/microsites/btvnovinite/js/ga360.js
 ||btvnovinite.bg/js/bg/shared/js/bweb.js
 ||btvnovinite.bg/js/bg/shared/js/bweb-gpt.js
+||azure.com/api/clientlog|
 ||azure.com/api/metric|
 ||azure.com*/api/Telemetry|
 ||azure.com/api/extensiontelemetry|
@@ -113663,6 +113665,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||moneypartners.co.jp/web/*/fingerprint.js$~third-party
 @@||googletagmanager.com/gtm.js$domain=almamedia.fi
 @@||googletagmanager.com/gtm.js$domain=shop-apotheke.com
 @@||googletagmanager.com/gtm.js$domain=flets.com
