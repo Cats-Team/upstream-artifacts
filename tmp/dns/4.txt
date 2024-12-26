@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: vCJzyQpPpvAMTFb4UYFqUQ
-! Diff-Path: ../patches/4/4-s-1735018684-3600.patch
+! Checksum: 1W1s6EwAIacnBVKYDt3ehg
+! Diff-Path: ../patches/4/4-s-1735159128-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.8.81
-! TimeUpdated: 2024-12-24T05:33:28+00:00
+! Version: 2.1.8.85
+! TimeUpdated: 2024-12-25T20:34:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -737,6 +737,7 @@ mashable.com,pcmag.com,onefootball.com,ign.com,israelnationalnews.com,lifehacker
 !
 ! NOTE: Specific rules
 !
+enamae.net##.footer_social_box
 ipaidia.gr##.sharebtns
 evima.gr##.evimasocial-box
 abendzeitung-muenchen.de##span[data-fcms-toggledisplay-togglecontainer^="teilenContainer"]
@@ -4038,7 +4039,7 @@ ekathimerini.com##.social-article
 sii.org.pl,redsquirrel87.altervista.org##.shareon
 player.vimeo.com##button[data-share-button]
 novynarnia.com##.home-widget.facebook
-google.*##.app-imagery-mode div[jsaction="modal.backgroundClick"] > div.pane-open div.k9Fsie > button > div
+google.*##.app-imagery-mode div[jsaction="modal.backgroundClick"] > div[jsan] div.k9Fsie > button > div
 blog-transit.yahoo.co.jp##.snsMod
 odnaminyta.com,sensatsiya.com##.ss-shr
 openrice.com##span[data-href="#share"]
@@ -4667,7 +4668,7 @@ nli-research.co.jp##.sns_btn_area
 mapfan.com##mf-share-button
 makerstown.cookpad.com##div[data-react-class="Share/ShareButton"]
 allnightnippon.com##.news_detail_sns
-family.co.jp,ecodb.net,mens-hairstyle.jp,nict.go.jp##.sns_link
+anapnet.com,family.co.jp,ecodb.net,mens-hairstyle.jp,nict.go.jp##.sns_link
 macked.app,thelocal.*##.action-share
 beauty.hotpepper.jp##div[class="cFix mT20 mB75"]
 news.google.com##div[class] > div[class] + div[class] > span[jscontroller] > div[role="button"][aria-label]
@@ -5877,7 +5878,7 @@ portugues.com.br##.artigo > a[data-share]
 blog.academyart.edu##.post-content + div.post-after
 shoneekapoor.com##.admania_singleshare
 quad9.net##.base-share-buttons
-siniy-ekran.ru##.socs
+comments.ua,siniy-ekran.ru##.socs
 opencritic.com##app-game-overview-social
 letoile.ru##.b-shareshow
 taxtax.hatenablog.jp##.tooltip-quote-tweet
@@ -9347,7 +9348,7 @@ last.fm##.share-features
 dhgate.com##ul.shareon
 skor.sozcu.com.tr##.news-footer > .share
 thesurfersview.com##.itp-share-tw
-ansa.it,1kr.ua,101xp.com,mavikadin.com##.news-social
+ansa.it,1kr.ua,101xp.com##.news-social
 galaxy.gala100.net##a[data-socialsider]
 quena.id,hops.id,talksport.com,kompas.com##.social--article
 rimowa.com,www-ndtv-com.cdn.ampproject.org,ndtv.com##.story__social
@@ -10255,7 +10256,7 @@ flooxer.com##.shareVideo
 giphy.com##._30TivBhtfM2RTCPxVIcvvT
 m-oe24-at.cdn.ampproject.org##.headlineBlockAd
 mobil.krone.at##.c_hxcms_social_buttons
-0101.co.jp,itsfoss.com,palermotoday.it,agrigentonotizie.it,anconatoday.it,arezzonotizie.it,avellinotoday.it,baritoday.it,bolognatoday.it,bresciatoday.it,brindisireport.it,casertanews.it,cataniatoday.it,cesenatoday.it,chietitoday.it,ferraratoday.it,firenzetoday.it,foggiatoday.it,forlitoday.it,frosinonetoday.it,genovatoday.it,ilpescara.it,ilpiacenza.it,latinatoday.it,lecceprima.it,leccotoday.it,livornotoday.it,messinatoday.it,milanotoday.it,modenatoday.it,monzatoday.it,napolitoday.it,novaratoday.it,padovaoggi.it,parmatoday.it,perugiatoday.it,pisatoday.it,pordenonetoday.it,quicomo.it,ravennatoday.it,reggiotoday.it,riminitoday.it,romatoday.it,salernotoday.it,sondriotoday.it,ternitoday.it,torinotoday.it,trentotoday.it,trevisotoday.it,triesteprima.it,udinetoday.it,veneziatoday.it,veronasera.it,vicenzatoday.it,viterbotoday.it,chubu.ac.jp,pressgazette.co.uk,techmonitor.ai,sauna-ikitai.com,today.it,lovelive-anime.jp,crazyraccoon.jp,uazmi.net,animatetimes.com,coconala.com,thenextweb.com,mart-magazine.com,shingeki.tv,game8.jp,power-technology.com,custom-cursor.com,rockinon.com,anime-86.com,sao-p.net,robihachi.jp,vivy-portal.com,boredteachers.com,newstatesman.com,telegraf.com.ua,especiais.g1.globo.com,citylab.com,m-kurier-at.cdn.ampproject.org##.c-share
+game8.co,0101.co.jp,itsfoss.com,palermotoday.it,agrigentonotizie.it,anconatoday.it,arezzonotizie.it,avellinotoday.it,baritoday.it,bolognatoday.it,bresciatoday.it,brindisireport.it,casertanews.it,cataniatoday.it,cesenatoday.it,chietitoday.it,ferraratoday.it,firenzetoday.it,foggiatoday.it,forlitoday.it,frosinonetoday.it,genovatoday.it,ilpescara.it,ilpiacenza.it,latinatoday.it,lecceprima.it,leccotoday.it,livornotoday.it,messinatoday.it,milanotoday.it,modenatoday.it,monzatoday.it,napolitoday.it,novaratoday.it,padovaoggi.it,parmatoday.it,perugiatoday.it,pisatoday.it,pordenonetoday.it,quicomo.it,ravennatoday.it,reggiotoday.it,riminitoday.it,romatoday.it,salernotoday.it,sondriotoday.it,ternitoday.it,torinotoday.it,trentotoday.it,trevisotoday.it,triesteprima.it,udinetoday.it,veneziatoday.it,veronasera.it,vicenzatoday.it,viterbotoday.it,chubu.ac.jp,pressgazette.co.uk,techmonitor.ai,sauna-ikitai.com,today.it,lovelive-anime.jp,crazyraccoon.jp,uazmi.net,animatetimes.com,coconala.com,thenextweb.com,mart-magazine.com,shingeki.tv,game8.jp,power-technology.com,custom-cursor.com,rockinon.com,anime-86.com,sao-p.net,robihachi.jp,vivy-portal.com,boredteachers.com,newstatesman.com,telegraf.com.ua,especiais.g1.globo.com,citylab.com,m-kurier-at.cdn.ampproject.org##.c-share
 bemad.es,cuatro.com,divinity.es,eltiempohoy.es,energytv.es,factoriadeficcion.com,mtmad.es,telecinco.es##.article__shared_bar-1i8D
 movies07.co##.bw_sharetom
 javhole.com##.sosyal_buton

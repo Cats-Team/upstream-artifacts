@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: dcG79nX8UJo2T9ZSLh1Ejg
-! Diff-Path: ../patches/11/11-s-1735051289-3600.patch
+! Checksum: e2yqnrpjexdbV81uRG1i9A
+! Diff-Path: ../patches/11/11-s-1735159126-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.56.89
-! TimeUpdated: 2024-12-24T14:36:02+00:00
+! Version: 2.0.56.95
+! TimeUpdated: 2024-12-25T20:34:45+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2610,6 +2610,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+yahoo.com##div[style="height: 250px; width: 300px;"]
+yahoo.com##div[class^="col-fullbleed mb-4 bg-marshmallow pb-5 "]
+books.j-cast.com##div[id^="sp_books\.j-cast_kiji_"][style^="min-width: 300px"]
+xs798621.xsrv.jp##.ad_min_box
 btvnovinite.bg##div[class^="megaboard-"]
 btvnovinite.bg##div[class$="gpt--megaboard"]
 btvnovinite.bg##.listing-banner
@@ -3325,7 +3329,7 @@ wuxiabee.com##.chapter-content > p + div[class]:has(> div[id] > script)
 okbizcs.okwave.jp##.box_ad_rectangle_btm
 okbizcs.okwave.jp##.box_ad_rectangle_detail
 m.sports.ru##.navigation-left-banner
-thepopverse.com###sticky_leaderboard
+purexbox.com,thepopverse.com###sticky_leaderboard
 pixiv.net##.ad-mobile-anchor
 webtekno.com##div.visible-mobile[style*="min-height"]
 webtekno.com##body .sticky-ad-container-mobile
@@ -4355,7 +4359,7 @@ daretoku-eromanga.info###container > div.widget_text.side_col:not(:last-child)
 hbooks.club##div[style^="width:"][style*="height:"][style*="margin:"][style$=";overflow:hidden;"]
 hdzog.com##.video-page__content > div[class]:first-child > div[class]
 daretoku-eromanga.info##.osusumeba
-tgrthaber.com,turkiyegazetesi.com.tr,mavikadin.com##.footer-sticky-ad
+tgrthaber.com,turkiyegazetesi.com.tr##.footer-sticky-ad
 tennisworldusa.org##.text_box > center[style*="margin:15px 0 15px;"]
 honeshabri.hatenablog.com###my-footer > p[style^="text-align:center; font-size:"]
 aucview.aucfan.com###itembeltRakuten

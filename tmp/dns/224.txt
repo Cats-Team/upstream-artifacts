@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: cpdMmFX25qldiCWWDv1mAA
-! Diff-Path: ../patches/224/224-s-1735083426-3600.patch
+! Checksum: X6FxGdFutdFgiOZ3xOKMZQ
+! Diff-Path: ../patches/224/224-s-1735159128-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.28.46
-! TimeUpdated: 2024-12-24T23:33:32+00:00
+! Version: 2.1.28.53
+! TimeUpdated: 2024-12-25T20:35:09+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1148,6 +1148,9 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+||hybase.com/images/hysq99.png
+buzzorange.com##.adGeek-grey-ad-container
+buzzorange.com##div[data-id="7c6b7b2"]
 ||xbqg6.com/*.php
 ||johojima.com/wp-content/uploads/*/bnr_*.jpg
 ||johojima.com/wp-content/uploads/*/cropped-johojima_fabicon-*.jpg
@@ -2778,7 +2781,7 @@ javdove.com##.dn_fix_bottom
 javdove.com##.recommend-link
 wmsj.pw##[class^="asb-"]
 ||336t.com/img/boss/*.gif$domain=wmsj.pw
-sportsplanetmag.com##.adshow
+g-mh.org,godamh.com,manhuafree.com,sportsplanetmag.com##.adshow
 ||tt1069.com/bbs/page20_top.php
 csdn.net##li[data-type="ad"]
 csdn.net###footerRightAds
@@ -4958,6 +4961,12 @@ newduba.cn###jq_youxi
 ||cupfox.app^$third-party
 ||vriesziy.com^
 ||rwdjrn.icu^
+||twilmii.top^
+||r4u.icu^
+||bpxxgkoj.icu^
+||gmso12251oka.top^
+||6cs.icu^
+||uwilmit.top^
 ||beenedsl.com^
 ||tghrfv.icu^
 ||wwilmie.top^
@@ -13300,6 +13309,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||element-plus.org/images/sponsors/
 ||httpcn.com^*950-120
 85po.com##.asside-link
+appinn.com###sidebar > .widget_block > a
+jnhulz5yys.shop,wuwuplus.shop##.small-icon-container
 52asus.com###AsusMall-contain
 mydrivers.com##div[style="margin: auto;width: 800px;padding: 10px 0;"]
 bing.com#?#.b_algo:-abp-has(.ad_esltitle)
