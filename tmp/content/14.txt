@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: /qrz4F7uQDDCYpLI41tC8w
-! Diff-Path: ../patches/14/14-s-1735418316-3600.patch
+! Checksum: w5grRTp0BcrJWZlkSOWbOA
+! Diff-Path: ../patches/14/14-s-1735436248-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.17.64
-! TimeUpdated: 2024-12-28T20:34:57+00:00
+! Version: 2.2.17.66
+! TimeUpdated: 2024-12-29T01:33:36+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9141,6 +9141,7 @@ caseking.de###cookie_consent_modal
 autostadt.de###cookies-setting
 icecat.biz##div[class^="src-containers-cookie-notice-"]
 bonami.ro#?#body > div.rcic:has(a[href="https://www.bonami.ro/i/politica-de-utilizare-cookie-uri"])
+orange.es#$#html { overflow: visible !important; }
 partenamut.be,orange.es#$#body { overflow: visible !important; }
 partenamut.be,orange.es#$##__tealiumGDPRecModal { display: none !important; }
 ofenkieker.de##[data-borlabs-cookie-wrap]
@@ -25088,6 +25089,7 @@ api.flocktory.com
 !
 ! SECTION: Popups - Regular rules
 !
+r34.app#%#//scriptlet('set-local-storage-item', 'statistics-appOpenedCount', '0')
 yucne.com#%#//scriptlet('prevent-setTimeout', 'showed_system_notice')
 whois.com###offer_bar
 usamart.shop##.umr_bnr_fixed
@@ -49767,6 +49769,7 @@ book.oricon.co.jp##a[href^="https://apay-up-banner.com?merchantId="] > img
 !
 ! SECTION: Self-promo - Regular rules
 !
+r34.app##figure.-mx-1.mt-4:has(> a[href*="&utm_"])
 klerk.ru##.advertising-text-block
 klerk.ru##.w-full > section:has(> ul > li > a[href^="/learn/event/"])
 dzen.ru##div[class*="__bannerContainer-"]
