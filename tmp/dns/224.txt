@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: OcDUG9wCVHCpQK5+6UnQvw
-! Diff-Path: ../patches/224/224-s-1735613055-3600.patch
+! Checksum: 2HDpkAd+NpO3deJ2s/178g
+! Diff-Path: ../patches/224/224-s-1735659812-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.28.93
-! TimeUpdated: 2024-12-31T02:40:41+00:00
+! Version: 2.1.28.99
+! TimeUpdated: 2024-12-31T15:40:02+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4981,6 +4981,12 @@ newduba.cn###jq_youxi
 ||vopzhl.icu^
 ||ltvutlyu.icu^
 ||eclimiw.top^
+||sh5.icu^
+||craivrals.com^
+||okpp12311.xyz^
+||nxcm.cc^
+||nh7.icu^
+||wclimie.top^
 ||xamniksq.com^
 ||pytexb.icu^
 ||xbfebqya.icu^
@@ -13375,6 +13381,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||httpcn.com^*950-120
 ||aatv.app/sport/sport.js
 85po.com##.asside-link
+163.com##.hp_textlink1_ad
+163.com##.post_columnad_top
 ip138.com###banana
 appinn.com###sidebar > .widget_block > a
 jnhulz5yys.shop,wuwuplus.shop##.small-icon-container
