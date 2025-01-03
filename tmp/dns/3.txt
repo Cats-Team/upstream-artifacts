@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: 9hadSdqvQexmyIsyWvgY4A
-! Diff-Path: ../patches/3/3-s-1735742971-3600.patch
+! Checksum: XgDAq9R0Bf2bVtYx1Nh1RQ
+! Diff-Path: ../patches/3/3-s-1735843485-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.78.19
-! TimeUpdated: 2025-01-01T14:38:44+00:00
+! Version: 2.0.78.21
+! TimeUpdated: 2025-01-02T18:39:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -47046,6 +47046,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||collector.abc.net.au^
 ||smetrics.kawai-juku.ac.jp^
 ||stat.pravdafrance.com^
 ||telemetry.dzen.ru^
@@ -117881,7 +117882,6 @@ $app=com.miui.analytics
 ||r.browser.miui.com^
 ||tracking.miui.com^
 ||data.mistat.intl.xiaomi.com^
-||register.xmpush.xiaomi.com^
 ||storeconfig.mistat.intl.xiaomi.com^
 ||api.ad.intl.xiaomi.com^
 ||sdkconfig.ad.intl.xiaomi.com^
