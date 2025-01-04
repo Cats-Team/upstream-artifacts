@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: N+wbEeK2MKvJJp8aScR1Nw
-! Diff-Path: ../patches/4/4-s-1735854263-3600.patch
+! Checksum: v6fUGpbU8M4g2VtS3Yd++Q
+! Diff-Path: ../patches/4/4-s-1735940651-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.9.11
-! TimeUpdated: 2025-01-02T21:39:49+00:00
+! Version: 2.1.9.19
+! TimeUpdated: 2025-01-03T21:39:49+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -737,6 +737,11 @@ mashable.com,pcmag.com,onefootball.com,ign.com,israelnationalnews.com,lifehacker
 !
 ! NOTE: Specific rules
 !
+newindianexpress.com##div[class^="text-story-m_share"]
+homemate.co.jp##.m_bnr_contact_box_btm
+liferbc.ru##.bottom-panel-container > div.bottom-panel-item:has(> span[class^="ra-icon-share-"])
+smartlog.jp###btn-clipboard
+cna.com.tw##.line-ad
 indianexpress.com##.share-article-btn
 trendle.jp##share-popup
 all-episodesfun.com##article > div.s-l.plb
@@ -2636,7 +2641,7 @@ match-apps.jp##ul[class^="snsBox"]
 p-jinriki.com###soc_box
 youtube.com##button[title="Facebook"]
 newsarmenia.am##.mediaPageSocialButtons
-eurosport.tvn24.pl##.share-button
+metro.co.uk,eurosport.tvn24.pl##.share-button
 sofabold.dk##.socialRightMenu
 internet-technologies.ru##.panel-id-share
 xinhuanet.com##.yjfxImg
@@ -4715,7 +4720,7 @@ pc.co.il###navbarSharing
 pc.co.il##button[data-target^="#pc_sharing-"]
 transparency.org##.js-highlight-tooltip
 stopcor.org,ukrinform.*##.youtube
-fintolk.pro,e-earphone.blog,koneta.nifty.com##.wp-embed-share
+dnevno.hr,fintolk.pro,e-earphone.blog,koneta.nifty.com##.wp-embed-share
 sanabo.com,beauty.biglobe.ne.jp###sns_btn
 beauty.biglobe.ne.jp##.NewsSns
 radiotalk.jp##.share-modules
@@ -5237,7 +5242,7 @@ kaktutzhit.by##.scrolling-social
 moebel-kraft.de##.socialMediaSharing
 mysmartprice.com##.page-info__shr
 rudaw.net##.article-main__share-cont
-pciconcursos.com.br,kaago.com,kakaku.com##.sharelink
+entrackr.com,pciconcursos.com.br,kaago.com,kakaku.com##.sharelink
 blogto.com##.article-lead-round-controls
 todai.kawai-juku.ac.jp##.snsShareBox
 israelnationalnews.com##.stripe-social-webshare
@@ -6312,7 +6317,7 @@ education.24tv.ua##.share-news-block
 wikidiff.com##.rb-buttons
 haaretz.com##button[data-test="redditButton"]
 haaretz.com##button[title^="Share in"]
-aksam.com.tr,anicobin.ldblog.jp,elconsolto.com,enechange.co.jp,timesofisrael.com,pauta.cl,bt.com,vnexpress.net,besniekspres.com,kralmuzik.com.tr,veritas-a.com,sex.com,interior-heart.com,hdfilmifullizle.com,h-n-h.jp,discours.io,twicomi.com,cnbctv18.com,ksl.com##.social
+animego.ong,history-lordfilm.ru,aksam.com.tr,anicobin.ldblog.jp,elconsolto.com,enechange.co.jp,timesofisrael.com,pauta.cl,bt.com,vnexpress.net,besniekspres.com,kralmuzik.com.tr,veritas-a.com,sex.com,interior-heart.com,hdfilmifullizle.com,h-n-h.jp,discours.io,twicomi.com,cnbctv18.com,ksl.com##.social
 bulurum.com###socialBox
 queer.pl##a[href^="https://twitter.com/home?"]
 corrieredellosport.it##div[class^="SocialColumn_"]
@@ -14112,6 +14117,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ||mailget.net^$third-party
 ||my.hellobar.com^$third-party
 !
+quins.us###youtubeFollowStepModal
 movieshd.watch#%#//scriptlet('set-cookie', 'show_share', 'true')
 flicksbar.mom###tgWrapper
 flicksbar.mom###TopAdMb
