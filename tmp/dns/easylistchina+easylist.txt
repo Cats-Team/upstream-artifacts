@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
 [Adblock Plus 2.0]
-! Checksum: qpiYBgawk17GrUfaX45thA
-! Version: 202501082351
+! Checksum: gg32GXrhGExD8qnxZNtsFA
+! Version: 202501091111
 ! Title: EasyList China+EasyList
-! Last modified: 08 Jan 2025 23:51 UTC
+! Last modified: 09 Jan 2025 11:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -1741,10 +1741,13 @@ newduba.cn###jq_youxi
 ||ztlkngyj.icu^
 ||xxaks01080sspao.xyz^
 ||xxaks01081sspao.xyz^
+||xxaks01091sspao.xyz^
 ||tu6.icu^
 ||xukanvyl.com^
 ||nyjelh.icu^
 ||blbtibqk.icu^
+||chumealq.com^
+||o8s.icu^
 ||wf7.icu^
 ||jfrrnf.icu^
 ||e50.icu^
@@ -15371,6 +15374,7 @@ android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.t
 @@.adserver.$domain=litv.tv
 @@||googleads.g.doubleclick.net^$domain=wandhi.com
 @@||am730.com.hk^$generichide
+@@||mvcat.com^$generichide
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
@@ -17431,6 +17435,7 @@ _rony.js$script,third-party
 /\.[a-z]weisi[a-z].top\//$script,third-party
 /\.[a-z]dyurli[a-z].top\//$script,third-party
 .okpp1*.xyz/$script,third-party
+.xxaks*sspao.xyz/$script,third-party
 .okpp0*.xyz/$script,third-party
 !
 $script,subdocument,~third-party,websocket,xmlhttprequest,domain=m.6666xsw.com|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com
@@ -17849,7 +17854,6 @@ fqsousou.com,kengso.com#@#.user-share
 !
 !-----------------------General advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_general_block.txt ***
--ad-300x600-
 -ad-458x80.
 -ad-manager/$~stylesheet
 -ad-sidebar.
@@ -17875,7 +17879,6 @@ fqsousou.com,kengso.com#@#.user-share
 -right-ad.
 -sidebar-ad.
 -sponsor-ad.
--sticky-ad-
 -top-ads.
 -web-advert-$image
 -Web-Advert.
@@ -17897,8 +17900,8 @@ fqsousou.com,kengso.com#@#.user-share
 .cfm?ad=
 .cgi?ad=
 .ch/adv/
-.click/cuid/?
-.click/rf/
+.click/cuid/?$third-party
+.click/rf/$third-party
 .clkads.
 .club/js/popunder.js
 .cn/sc/*?n=$script,third-party
@@ -17936,7 +17939,6 @@ fqsousou.com,kengso.com#@#.user-share
 .lazyload-ad.
 .lol/js/pub.min.js$third-party
 .lol/sw.js$third-party
-.mx/ads/
 .my/ads/
 .nativeads.
 .net/ad2/$~xmlhttprequest
@@ -17958,10 +17960,10 @@ fqsousou.com,kengso.com#@#.user-share
 .popunder.js
 .pw/ads/
 .ru/ads/
-.shop/gd/
+.shop/gd/$third-party
 .shop/tsk/$third-party
-.top/cuid/?
-.top/gd/*?md=
+.top/cuid/?$third-party
+.top/gd/*?md=$third-party
 /?abt_opts=1&
 /?fp=*&poru=$subdocument
 /?view=ad
@@ -18184,6 +18186,7 @@ fqsousou.com,kengso.com#@#.user-share
 /amazon-associates-link-$~stylesheet
 /amp-ad-$script
 /amp-connatix-$script
+/amp-sticky-ad-$script
 /amp4ads-host-v0.js$script
 /ane-popup-1/ane-popup.js$script
 /ane-popup-banner.js$script
@@ -18692,7 +18695,6 @@ _ad_choices.
 _ad_header.
 _ad_image_
 _ad_layer_
-_ad_leaderboard.
 _ad_right.
 _ad_side.
 _ad_sidebar_
@@ -18711,7 +18713,6 @@ _ads.cgi
 _ads.cms?
 _ads.php?
 _ads_updater-
-_adscommon.
 _adserve.
 _adskin.
 _adskin_
@@ -18753,8 +18754,6 @@ _rightad_
 _sidead.
 _sidebar_ad.
 _sidebar_ad_
-_skinad.
-_small_ad.
 _square_ad.
 _sticky_ad.
 _StickyAd.
@@ -59760,6 +59759,7 @@ browsershots.org#@#.advert_area
 ||vrcvuqtijiwgemi.com^
 ||vrgvugostlyhewo.info^
 ||vrime.xyz^
+||vrizead.com^
 ||vroomedbedroll.shop^
 ||vrplynsfcr.xyz^
 ||vrtzads.com^
@@ -71268,6 +71268,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||s.radioreference.com/sm/$image
 ||s.yimg.com/zh/mrr/$image,domain=mail.yahoo.com
 ||saabsunited.com/wp-content/uploads/*banner
+||samba.org/banners/$image
 ||sasinator.realestate.com.au^
 ||sat-universe.com/wos2.png
 ||sat-universe.com/wos3.gif
@@ -81678,6 +81679,7 @@ redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youp
 @@||ienohikari.net/ad/img/$~third-party
 @@||img.rakudaclub.com/adv/$~third-party
 @@||infotop.jp/html/ad/$image,~third-party
+@@||intelyvale.com.mx/ads/images/$domain=valesdegasolina.mx
 @@||jmedj.co.jp/files/$image,~third-party
 @@||jobs.bg/front_job_search.php$~third-party
 @@||js.assemblyexchange.com/videojs-skip-$domain=worldstar.com
