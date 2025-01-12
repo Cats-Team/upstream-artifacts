@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: d7fpEQcspRUj1F9+OxYEKw
-! Diff-Path: ../patches/224/224-s-1736520324-3600.patch
+! Checksum: 7v1YmcGewJH2qFE15WoQXg
+! Diff-Path: ../patches/224/224-s-1736613853-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.29.72
-! TimeUpdated: 2025-01-10T14:41:20+00:00
+! Version: 2.1.29.77
+! TimeUpdated: 2025-01-11T16:40:13+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4975,6 +4975,12 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||riscats.com^
+||jebrhb.icu^
+||bc4.fun^
+||rvxsvwqf.icu^
+||vdhf042.fun^
+||tridroin.com^
 ||hdjthzg.cn^
 ||pxhuiben.com^
 ||oliver.pub^
@@ -12987,6 +12993,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||aatv.app/sport/sport.js
 ||dangbei.net/2022/dbhezi.
 85po.com##.asside-link
+cnbeta.com.tw##.cb-help
+cnbeta.com.tw##.meta > .fr
 333ood.com###appBox
 333ood.com##div[style$="display: block;"]
 baidu.com##.tieba-pause-ad-container
