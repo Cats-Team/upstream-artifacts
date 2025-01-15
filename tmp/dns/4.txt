@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: kJJTTuPINScMfo91AnfukA
-! Diff-Path: ../patches/4/4-s-1736804688-3600.patch
+! Checksum: ddkIztGVGWaVkJ8yaFnIjA
+! Diff-Path: ../patches/4/4-s-1736876748-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.9.61
-! TimeUpdated: 2025-01-13T21:40:33+00:00
+! Version: 2.1.9.67
+! TimeUpdated: 2025-01-14T17:41:02+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -737,6 +737,12 @@ mashable.com,pcmag.com,onefootball.com,ign.com,israelnationalnews.com,lifehacker
 !
 ! NOTE: Specific rules
 !
+trustpilot.com##button[name="share-review"]
+aquaclara.co.jp##.snsArea-subttl
+themirror.com##.header__nav__share--active
+cnnturk.com##.social-share-list> .share-item:not(.three-dots)
+foxnews.com##header > div.article-meta:has(> div.article-social:only-child)
+criticker.com##.news_share
 standard.co.uk##article > div > div > div:has(> div > a[href^="https://www.facebook.com/sharer/"])
 fastcompany.com##main ul[class^="gap-"]:has(li.border-r > button#Share_button_link)
 dotcom-tools.com##.report-generation > div.report-generation__holder + dm-button
@@ -10162,7 +10168,8 @@ noizz.hu,noizz.de##.contentShareButtons
 noizz.hu,noizz.de##.floatingShareButtonContainer
 np-coburg.de##.artikelFooter-social > [data-fcms-target="whatsApp"]
 ||mangafox.la/fb.html
-media-polesye.com,lyrical-nonsense.com,samsungsvc.co.kr,eclipse.imperialsaga.jp,store.steampowered.com,dogatch.jp,myfxbook.com,videacesky.cz###shareBtn
+media-polesye.com,lyrical-nonsense.com,samsungsvc.co.kr,eclipse.imperialsaga.jp,dogatch.jp,myfxbook.com,videacesky.cz###shareBtn
+store.steampowered.com#?##shareBtn
 dni.ru##.sotial
 autoblog.com###global-share-right
 luzernerzeitung.ch##.socialszwei > ul > li > a[href="javascript:"]
