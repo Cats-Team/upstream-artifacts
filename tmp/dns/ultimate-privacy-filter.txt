@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202501142103
+! Version: 202501152103
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 14 Jan 2025 21:03 UTC
+! Last modified: 15 Jan 2025 21:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -256,6 +256,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||log-auth.zztfly.com^
 ||adsave.co^$third-party
 ||analytics.bitchute.com^
 ||actiontracking.jp^$third-party
@@ -47501,6 +47502,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||s.c-ctrip.com^
+||ma-adx.ctrip.com^
+||logs.mezmo.com^
 ||acr-*-prd.samsungcloud.tv^
 ||publictelemetry.tophat.com^
 ||dynatrace.att.com^
@@ -122681,6 +122685,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /zhugeio.js
 &l=dataLayer&cx=c
 /cdn-cgi/rum?
+/wp-content/plugins/pixelyoursite/*
 /xhr/api/v2/collector
 /eclytics/*
 /app.php/ads/*
@@ -123172,6 +123177,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+||theautopian.com/content/plugins/jzl-core/core/tags/js/events.js
+||myanimelist.net/static/logging.html
+||eu.klarnaevt.com^$ping
+||luisaviaroma.com/dynamic/log
+||syteapi.com/et?*name=
 ||france24.com/bon.jour?
 ||api.data.pt.mcclatchy.com/events
 themirror.com##reach-topbox
@@ -125285,7 +125295,7 @@ fategrandorder.info##.sidebar_acr.side_inline
 ||hector.baidu.com/static/h.gif?
 ||twowheeler.policybazaar.com/js/GTMgoogleAnalytics.js
 ||re-doing.com/st-manager/pv-monitor/impression/track?
-||ahentai.top/counter.php
+||caitlin.top/counter.php
 ||cdn.jsdelivr.net/npm/@adshield/
 ||gizmodo.com/x-kinja-static/assets/*/trackers.
 ||cdn.sift.com/s.js
@@ -127950,6 +127960,9 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||vulture.com^$cookie=first-nymcid
+||vulture.com^$cookie=nymcid
+||vulture.com^$cookie=nyma
 ||infox.sg^$cookie
 ||fanatical.com^$cookie=affiliate_source
 ||titulky.com^$cookie=adbwshown
@@ -128411,6 +128424,8 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||tp2p.kg.qq.com^
+||twns.p2ptun.qq.com^
 ||nstool.netease.com^
 ||data.kuiniuca.com^
 ||clientlogsf.music.163.com^
@@ -129206,6 +129221,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||google-analytics.com/debug/$domain=10bye.com
 @@||api-iam.intercom.io/messenger/web/ping$domain=help.kobo.com
 @@://analytics.google.com/analytics/$domain=analytics.google.com
 @@||cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js$domain=store.lining.com
