@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202501182103
+! Version: 202501192104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 18 Jan 2025 21:03 UTC
+! Last modified: 19 Jan 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -244,7 +244,6 @@ adseek.site#$##primary { display: block !important; }
 ||xlog.snssdk.com^
 ||log.snssdk.com^
 ||sygrip.info^$third-party
-||flippback.com^
 ||log-auth.zztfly.com^
 ||adsave.co^$third-party
 ||analytics.bitchute.com^
@@ -47492,6 +47491,8 @@ adseek.site#$##primary { display: block !important; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||frontend-logger.flippback.com^
+||analytics.nike.com^
 ||hikari.jiocinema.com^
 ||s.c-ctrip.com^
 ||ma-adx.ctrip.com^
@@ -123170,6 +123171,12 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
+nike.com#%#//scriptlet('set-local-storage-item', 'pi_pageview_count', '$remove$')
+nike.com#%#//scriptlet('set-local-storage-item', 'pi_visit_count', '$remove$')
+nike.com#%#//scriptlet('set-local-storage-item', 'pi_visit_track', '$remove$')
+nike.com#%#//scriptlet('set-local-storage-item', 'pulse_insights_udid', '$remove$')
+||nike.com/assets/measure/data-capture/mc.js
+||nike.com/static/analytics-client/public/analytics-client.min.js
 ||discord.com/api/track
 ||s.search.naver.com/n/scrolllog/
 ||cisco.com/c/dam/cdc/t/
