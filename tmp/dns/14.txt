@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: xtKAuao3sHdFUM/WikGPQg
-! Diff-Path: ../patches/14/14-s-1737654424-3600.patch
+! Checksum: ZlIijYyqlU+Jct+IBrGseg
+! Diff-Path: ../patches/14/14-s-1737711924-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.20.6
-! TimeUpdated: 2025-01-23T17:43:00+00:00
+! Version: 2.2.20.10
+! TimeUpdated: 2025-01-24T09:40:49+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -11619,7 +11619,7 @@ pracuj.pl###kansas-header > div[data-test="section-cookies-prompt"]
 kuehne.com.tr##.kue-cookie-notification
 karaca.com.tr##.cerezbilgi
 tryeting.jp,yourdictionary.com##.GDPR
-cetas.com.tr,warmhaus.com.tr##.cookie-description
+kuraraynoritake.jp,cetas.com.tr,warmhaus.com.tr##.cookie-description
 thinkwithgoogle.com##.global-toast
 fidusinfosec.com##.popup_cookies
 weleda.de##.mod-cookiebar
@@ -25202,6 +25202,7 @@ api.flocktory.com
 !
 ! SECTION: Popups - Regular rules
 !
+appbrain.com##.floating-footer-content
 fortinet.com#$##pf-modal { display: none !important; }
 fortinet.com#$#body { overflow: auto !important; }
 deadline.com##.pmc-breaking-news
@@ -33429,6 +33430,7 @@ starhit.ru,championat.com##.push-popup
 gadgets.ndtv.com,gadgets360.com###__notify
 gazetevatan.com###divPnot
 milliyet.com.tr###pushNotification
+eleman.net###pushnotification
 ||otr-online.ru/__banner.php?location=sp_notify_prompt
 ura.news###push_notifications
 tsn.ua##.push-message
@@ -33706,6 +33708,7 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 !
 ! SECTION: Subscriptions - Regular rules
 !
+westword.com###fdn-sm-NewsletterSignupWidgetSlideIn
 journal.tinkoff.ru##div[class^="_banner_"]
 tass.ru##div[class^="ReadTass_"]
 tass.ru#$#div[class^="DesktopNavPanel_wrapper__"] { width: min-content !important; }
@@ -41298,6 +41301,7 @@ turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,rabota.by,temp-
 !
 !
 !
+appbrain.com###pwa-install
 desport.ru##div[class^="PopupAppDesktop_"]
 donanimhaber.com##span[class^="open-with-app-"]
 iko-yo.net##.card--icon-text--app-link
@@ -48271,6 +48275,9 @@ habr.com#?#section.tm-block_spacing-around:has(> header > div > h2:contains(Бл
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/196637
+v.youku.com###kui_dashboard_vip-layer_vipLayer
+v.youku.com##.fee-wrap-new
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196778
 digitalkamera.de###SidebarOptionalWrap > .widget-injection-points
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196126
@@ -52580,6 +52587,8 @@ eiga.com##.header-pure-banner
 !##############################
 ! SECTION: Tweaks - CSS
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/196638
+appbrain.com##body > div[style="height:145px"]:empty
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196709
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196698
 journaldesfemmes.fr,journaldunet.com#$#.cp_videopremium { position: static !important; }
@@ -54666,9 +54675,9 @@ ezms.link,comeinsidebox.com$$style[wildcard="user-select:*none"][max-length="500
 beginerboy.blogspot.com$$script[tag-content="typeof document.onselectstart"]
 quotev.com$$style[tag-content="#res_area ::selection"][max-length="250"]
 quotev.com$$script[tag-content="document.body.ondragstart=function"][max-length="150"]
-turkstar.in$$script[id="wpcp_disable_selection"]
-turkstar.in$$script[id="wpcp_disable_Right_Click"]
-turkstar.in$$style[tag-content=".unselectable"][max-length="350"]
+fujiisouta.xyz,turkstar.in$$script[id="wpcp_disable_selection"]
+fujiisouta.xyz,turkstar.in$$script[id="wpcp_disable_Right_Click"]
+fujiisouta.xyz,turkstar.in$$style[tag-content=".unselectable"][max-length="350"]
 openssource.biz$$script[tag-content="document.onkeypress = function"][max-length="2000"]
 twgreatdaily.com$$script[tag-content="indexOf|css|fn|this|attr|unselectable|console|empty|copy|contextmenu"]
 ! NOTE: Context menu (mixed rules) end ⬆️
