@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: nIUShwUBepCD0OER/8nQow
-! Diff-Path: ../patches/4/4-s-1738086212-3600.patch
+! Checksum: kmidePWFdO2PiFXIWM19ZA
+! Diff-Path: ../patches/4/4-s-1738147488-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.10.19
-! TimeUpdated: 2025-01-28T17:38:46+00:00
+! Version: 2.1.10.21
+! TimeUpdated: 2025-01-29T10:39:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -678,6 +678,8 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+meikogijuku.jp##.sns-title
+medicaldoc.jp##.share_section
 comfycozygaming.com##.single-share-box-container
 uwaterloo.ca##.uw-site-share--button__share
 oracle.com##.rc25social
@@ -2464,7 +2466,7 @@ herz-fuer-tiere.de##.sharing--hint
 security.tencent.com##.mod-share-dropdown
 citydog.by,citydog.io##.contentBlockShare
 neg.by##.article-menu__share
-sippo.asahi.com##.share-sticky
+festival-life.com,sippo.asahi.com##.share-sticky
 asahi.com##.SnsUtilityArea
 vost.com.ua###shareButtWrapp
 russianfood.com##noindex > div#memo
