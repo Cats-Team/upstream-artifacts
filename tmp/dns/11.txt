@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: CzyddyZzrTEyYTg1O8DCRg
-! Diff-Path: ../patches/11/11-s-1738583300-3600.patch
+! Checksum: BV88VfCRvWm7UfcPUi2Euw
+! Diff-Path: ../patches/11/11-s-1738611790-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.57.95
-! TimeUpdated: 2025-02-03T11:42:35+00:00
+! Version: 2.0.57.98
+! TimeUpdated: 2025-02-03T19:38:35+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1844,6 +1844,12 @@ motherless.com$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 @@||api.apptentive.com^$app=de.mcdonalds.mcdonaldsinfoapp
 @@||customer.iad-03.braze.com^$app=de.burgerking.kingfinder
 !
+! Yandex ads in mobile apps
+! Fixing blocking of carsharing.yandex.net by `$network` rule
+@@77.88.21.73$network,app=ru.yandex.rasp
+! Fixing blocking *.rasp.yandex.net `$network` rule
+@@77.88.21.122$network,app=ru.yandex.rasp
+!
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/195788
 @@||imasdk.googleapis.com^$app=com.espn.score_center
@@ -2166,6 +2172,7 @@ motherless.com$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/197717
 ! https://github.com/AdguardTeam/AdguardFilters/issues/192392
 ! https://github.com/AdguardTeam/AdguardFilters/issues/188534
 milk-key.com#@#.header-ads-area
@@ -2553,6 +2560,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+diez.hn##div[id^="r89-mobile-rectangle-mid-fotogalerias-"]
+kurashinista.jp###sp_column_header_ad
 eegg.fun##iframe[id^="rlad_"][src^="/ad_html/"]
 fujingaho.jp##section[data-vars-block-curation] > div[class*=" "]:has(> #gpt-ad-vertical-top)
 puntodebreak.com##.summary-ad
@@ -8138,6 +8147,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ||app.adjust.com^$app=com.easybrain.nonogram|ru.pikabu.android|com.maroieqrwlk.unpin|com.touchtao.soccerkinggoogle|com.mobirix.zumaking2|com.mobirix.swipebrick2|com.mobirix.mahjongking2|com.mobirix.hit7.casino.slots|com.mobirix.gmm|com.mobirix.fishingchampionship|com.mobirix.airhockey|com.mobirix.abmon|com.mobirix.MultiplyWar
 !
 ! Yandex ads in mobile apps
+! Be careful when applying `$network` rules to Yandex apps - check if nothing is broken (see @@ rules)
 ! BUG: https://github.com/AdguardTeam/CoreLibs/issues/1951
 ! Don't add more than 200 apps per rule
 ! TODO: merge app lists of the same rules after fixing
