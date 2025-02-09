@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: p3twiNu0xCzRG+OAAo8RRw
-! Diff-Path: ../patches/224/224-s-1738975343-3600.patch
+! Checksum: EYGMBHZ0XTvfhHw8Tl/tFg
+! Diff-Path: ../patches/224/224-s-1739014967-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.31.20
-! TimeUpdated: 2025-02-08T00:38:40+00:00
+! Version: 2.1.31.23
+! TimeUpdated: 2025-02-08T11:39:12+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4943,6 +4943,11 @@ newduba.cn###jq_youxi
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
 ||vjzqfh.icu^
+||8ff0.cn^
+||tdinmai.top^
+||ddc888.com^
+||draktash.com^
+||bildrat.com^
 ||xtdvvp.icu^
 ||vbllxaaj.icu^
 ||apk02070oo.xyz^
@@ -20848,6 +20853,8 @@ _rony.js$script,third-party
 /\.[a-z]dyurli[a-z].top\//$script,third-party
 /\.[a-z]domsi[a-z].top\//$script,third-party
 .okpp1*.xyz/$script,third-party
+.cn/TA390hz2.js$script,third-party
+.cn/by389.js$script,third-party
 .fun/TA390hz2.js
 .fun/by389.js
 .pw/TA390hz2.js

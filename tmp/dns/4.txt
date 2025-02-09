@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 6EMJzFRNmJB+vFqwl59K8g
-! Diff-Path: ../patches/4/4-s-1738943060-3600.patch
+! Checksum: FjNSb2wVb03OgirF5fPDTQ
+! Diff-Path: ../patches/4/4-s-1739025787-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.10.70
-! TimeUpdated: 2025-02-07T15:39:23+00:00
+! Version: 2.1.10.72
+! TimeUpdated: 2025-02-08T14:38:04+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -678,6 +678,7 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+gendai.media##div.mt-8 > section:has(> div > ul > li > button.react-share__ShareButton)
 shazam.com#$#div[data-test-id$="_shareButton"] { visibility: hidden !important; }
 atorus.ru###block-share
 glowonline.jp##.snsArea03
@@ -1982,7 +1983,6 @@ lasvegasweekly.com##.sharingTitle
 ilmeteo.it##.social-share-nofixed
 korona.by##div[class^="Share__Component"]
 cyberagent.co.jp##.featuresDetail_detailShareItem
-gendai.media#?#.wrap-w > div.articleBottomArea:has(> div.articleShareIcons)
 telex.hu##a[class*="share-network"]
 telex.hu##.top-shr
 broadwayworld.com###foxsocial
@@ -3061,7 +3061,6 @@ ysklog.net##article .yarpp-related-website
 m.timesofindia.com##.floatingwhatsapp
 instamod.net##.gmr-share
 fullxcinema1.com##button[data-tab-id="video-share"]
-gendai.media##.sns-shares-simple
 windows101tricks.com##.elementor-widget-uael-social-share
 st-andrews.ac.uk##.article-header__meta-share
 surfsnow.jp##.snsBlock
@@ -9253,7 +9252,6 @@ mail.ru##.sharelist
 4gamer.net##.socialbookmark
 4gamer.net##div[id^="SOCIALBOOKMARK"]
 sbbit.jp##.ar-sns_list
-gendai.media##.socialButtonArea
 xural.com##.sidebar_widget > .widget_fbw_id
 idmanxeber.az##.penci-widget__facebook_page
 yahoo.co.jp##.yjnSnsBtn
@@ -11818,8 +11816,6 @@ meiwasuisan.com##body > div.toTheEdge:has(> ul.sns-buttons)
 cloudbase.gg#?#.kt-inside-inner-col > p[class^="kt-adv-heading_"]:contains(Share)
 githubnext.com#?#.text-xs:contains(Share)
 asianpinay.to#?#.textwidget > p:contains(Share)
-gendai.media##.articleShareIcons
-gendai.media##div > div.head-line:contains(SHARE)
 lisani.jp#?#.detail__wrap > p.parts__title__tertiary:contains(SHARE)
 intellishift.zoom.us#?##webinar_register_container > div.form-group:has(> div.controls > span > a.share-ico)
 booksprivilege.com#?##sidebar > div.side_widget:has(> div.textwidget > a.twitter-timeline)
@@ -12458,9 +12454,7 @@ singleclickapps.com#?#.nav-list > li.nav-header:contains(/\sUs on\s/)
 geo.de#?#.sidebar-teasergroup:has(> .sidebar-headline:contains(Facebook))
 computerologia.ru#?#.widget-area > div[class] > aside.widget:has(> div.textwidget > div[id="vk_groups"])
 joxi.ru#?#.dropdown-container > div.content:has(> h4.heading-stunner:contains(Поделиться))
-doramasmp4.com#?#.card-footer > div.d-flex > a[role="button"]:has(> i.fa-share-alt)
 android-example.ru#?#.sidebar-content > div.widget:has(> h3.group > span:contains(Мы вконтакте))
-economics-prorok.com#?##sidebar > ul#widgetlist > li.widget:has(> p:contains(Подписаться))
 filesupload.org#?#.pageSectionMainInternal > div[id="pageHeader"]:has(> h2:contains(share))
 filesupload.org#?#.pageSectionMainInternal > div[id="pageHeader"]:has(> h2:contains(share)) + div > table:has(td.share-file-table-header)
 okko.tv#?##root div[class] + section[class] > div > div > div:has(> div[class] > span:contains(Поделиться))
