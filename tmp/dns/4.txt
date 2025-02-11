@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: kYf5pi66ZtwyrmXtOxwAwA
-! Diff-Path: ../patches/4/4-s-1739108566-3600.patch
+! Checksum: WWHTcOCKbHBgx/E2aoZZVg
+! Diff-Path: ../patches/4/4-s-1739205851-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.10.73
-! TimeUpdated: 2025-02-09T13:38:05+00:00
+! Version: 2.1.10.78
+! TimeUpdated: 2025-02-10T16:38:02+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -678,8 +678,13 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+gulfnews.com##.story-container > div:not(.story-wrapper) > div > span[class]:has(> span > a[href^="https://www.facebook.com/sharer.php?"])
+labirint.ru##.social_shares__container
+computerra.ru##.single-post__footer
+boxingnewsonline.net##.profile-share_wrapper
 gendai.media##div.mt-8 > section:has(> div > ul > li > button.react-share__ShareButton)
 shazam.com#$#div[data-test-id$="_shareButton"] { visibility: hidden !important; }
+dissapore.com##._social-share
 atorus.ru###block-share
 glowonline.jp##.snsArea03
 yirmidort.tv##center:has(> div > div[id^="div-gpt-ad"])
@@ -5478,7 +5483,7 @@ forbes.ru##.LvhTk
 forbes.ru##._1CyCK._3k9hP._11xDc
 forbes.ru##._1AEvq._2CZpD
 spice.eplus.jp##.btn-page-bottom.pull-left
-spice.eplus.jp##.article-side-share
+seventeen-web.jp,spice.eplus.jp##.article-side-share
 spice.eplus.jp##.facebook-main-area
 wizy.jp##.reposns
 wizy.jp###pcshare
@@ -6193,7 +6198,7 @@ woodmac.com##.nav-actions > .inline-block
 electronicdesign.com##.ebm-share-list > li.ebm-share-item:not([class*="printer-icon"]):not([class*="email-icon"])
 carolinacountry.com##.element-joomlamodule
 elprocus.com##.single-sharing
-mi-mollet.com,more.hpplus.jp,ar-mag.jp,wgntv.com##.article-footer-share
+seventeen-web.jp,mi-mollet.com,more.hpplus.jp,ar-mag.jp,wgntv.com##.article-footer-share
 psneolog.com##.ps4-twitter
 blog.orange.es##.s-post__share
 end-harem-anime.com##.twTimelineWrap
