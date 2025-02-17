@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: w6G+BPa+d2XgcRJa/IKk5w
-! Diff-Path: ../patches/224/224-s-1739716977-3600.patch
+! Checksum: gAiDf21g82SFNEWXvSg20A
+! Diff-Path: ../patches/224/224-s-1739800263-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.31.63
-! TimeUpdated: 2025-02-16T14:38:58+00:00
+! Version: 2.1.31.69
+! TimeUpdated: 2025-02-17T13:38:53+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1111,6 +1111,13 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+91porna.com#%#//scriptlet('remove-attr', 'data-ads_url', '[data-ads_url]')
+91porna.com##div[class^="aspect-"]:has(> div > .swiper-backface-hidden)
+91porna.com##.video-items > li:has(> a.checkNum)
+ibbs.pro#$#body { overflow: auto !important; padding-right: 0 !important; }
+ibbs.pro#$#.modal-backdrop { display: none !important; }
+ibbs.pro#$##adsModal { display: none !important; }
+ibbs.pro#$#div.mt-2:has( > ins) { display: none !important; }
 91porna.com##.dx-banner-item
 115cdn.com##a[href="https://vip.115.com/"] > img
 115cdn.com##.feature-float
@@ -1183,6 +1190,7 @@ m.mobile01.com##.u-gapNextV--lg.u-height280
 damon624.pixnet.net##.article-content-inner > p:has(> span > a[href] > ins.adsbygoogle)
 18comic.vip##.container > div[style^="padding:"]:has(> [data-group="content_page"])
 18comic.vip##.tab-content + .row:has(> div[class] > div[class] > .group-notice)
+||static.huaren.live/ads/
 huaren.live##.action-ad
 huaren.live#%#//scriptlet('trusted-replace-node-text', 'script', 'ConFig', 'let ConFig', 'var ConFig')
 huaren.live#%#//scriptlet('set-constant', 'ConFig.config.ads', 'emptyObj')
@@ -4946,6 +4954,12 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||aegzoils.com^
+||bxzlfr.icu^
+||shudi8.com^
+||nzpvpp.icu^
+||wn6y.cn^
+||evreiks.com^
 ||vudqth.icu^
 ||grarnuns.com^
 ||hwtadf.icu^
@@ -8220,6 +8234,7 @@ newduba.cn###jq_youxi
 ||zwzdjb.xyz^
 ||zxqiwe.cn^
 ||zyfnbl.xyz^
+||caomeixz7.xyz^
 ||imageshh.com^
 ||999xx333kk.com^
 ||666bb777ww.com^
@@ -8802,7 +8817,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||360buyimg.com/ddimg/jfs/t1/27218/8/19964/31194/636a1930E1de2ae78/e3ff134116579b95.jpg
 ||360buyimg.com/jzt/temp/js/
 ||360buyimg.com^$domain=chdbits.co|qianggou5.com
-||360doc.com^*.html?t=
+||360doc.com/ad/
 ||360kan.com/special/
 ||360kan.com/v1/block?blockid=544&
 ||36img.com/ad/
