@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: zeo4jPddX9v89qPHqiB+Rw
-! Diff-Path: ../patches/4/4-s-1739900629-3600.patch
+! Checksum: LZQ5QO6odwpeHkD82nUzPA
+! Diff-Path: ../patches/4/4-s-1740001302-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.11.21
-! TimeUpdated: 2025-02-18T17:38:43+00:00
+! Version: 2.1.11.26
+! TimeUpdated: 2025-02-19T21:37:19+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -678,6 +678,9 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+microsoft.com##div[data-bi-an="social-share"]
+meetup.com##.flex:has(> ul > li > button > div#share-facebook-in-GroupHome)
+discogs.com##.side__gnpk > .wrapper_Ixres
 akomnews.com##.quick_menu > li:not(:has(> div > i.font_icon))
 screenrant.com###sharingButtonPopup
 dota2.ru##a[href^="//t.me/share/"]
@@ -5957,7 +5960,7 @@ diarionecochea.com,motifyublog.com##.widget_a2a_follow_widget
 dyktanda.pl##.app > aside.widget-container > .widget-button
 doktornakanoblog.com###st-page > .sns
 pokemon.jp##.listSns
-guide.line.me,books.rakuten.co.jp,united-arrows.co.jp###snsShare
+lixil.co.jp,guide.line.me,books.rakuten.co.jp,united-arrows.co.jp###snsShare
 noripon.blog##.sns-btn__title
 russianemirates.com##.socialink_block
 proceso.com.mx,elesquiu.com##.inner-share-bar
@@ -8226,7 +8229,7 @@ kp.ua##.sb-subscribe
 evernote.com##.social-overlay-open
 ngs24.ru,e1.ru##div.central-column-container > div[class] > div[class] > div[class] > div[itemprop="aggregateRating"] + div[class]
 sxyprn.com,sxyprn.net##.sharing_toolbox
-video.matchtv.ru,rotana.net,pladform.ru##.vjs-share-control
+abcnews.go.com,video.matchtv.ru,rotana.net,pladform.ru##.vjs-share-control
 cumberlink.com,journalstar.com##.social-share-links
 prezo.jp,gazeta.ru##.column-share
 sirabee.com,smart-flash.jp,amp-pcwelt-de.cdn.ampproject.org##.socialButton:not(.feedback)
