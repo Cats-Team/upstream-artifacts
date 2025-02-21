@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: E+jGvjril64tBJ5vFUT9jw
-! Diff-Path: ../patches/224/224-s-1740008564-3600.patch
+! Checksum: 7o56IQ2joPAVYRpxxs6lGA
+! Diff-Path: ../patches/224/224-s-1740094906-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.31.84
-! TimeUpdated: 2025-02-19T23:38:38+00:00
+! Version: 2.1.31.90
+! TimeUpdated: 2025-02-20T23:37:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1120,6 +1120,7 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+fuliba2025.net##a[href^="https://www.kezyw.com/"] > img
 91porna.com#%#//scriptlet('remove-attr', 'data-ads_url', '[data-ads_url]')
 91porna.com##div[class^="aspect-"]:has(> div > .swiper-backface-hidden)
 91porna.com##.video-items > li:has(> a.checkNum)
@@ -4963,9 +4964,18 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||fttxhcua.icu^
+||crazodsxx.com^
+||kcinvdd.top^
 ||stildell.com^
 ||dtntnl.icu^
 ||hvddxj.icu^
+||ssydquy.top^
+||qgaxkkv.top^
+||sg7.pw^
+||jcinvda.top^
+||dbdophuz.icu^
+||qogrux.com^
 ||dhannaq.com^
 ||xqrydt.icu^
 ||rsohvot.xyz^
@@ -20554,6 +20564,8 @@ _rony.js$script,third-party
 .okpp0*.xyz/$script,third-party
 .fun/nd389.js
 .fun/In390hG2.js
+.pw/nd389.js
+.pw/In390hG2.js
 .com:1*/static/lbsite/*/*.js?v=$script,third-party
 .com:2*/static/lbsite/*/*.js?v=$script,third-party
 .com:3*/static/lbsite/*/*.js?v=$script,third-party
