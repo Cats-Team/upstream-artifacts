@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: Kef5ZMoqDY4Esv0GFwbBuQ
-! Diff-Path: ../patches/224/224-s-1741563740-3600.patch
+! Checksum: t938L92L2udsxBY+TGKUfA
+! Diff-Path: ../patches/224/224-s-1741650061-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.32.80
-! TimeUpdated: 2025-03-09T23:38:07+00:00
+! Version: 2.1.32.84
+! TimeUpdated: 2025-03-10T23:37:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4977,6 +4977,10 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||dtjcvd.icu^
+||vragridsn.com^
+||tpkv.cn^
+||jhrulp.icu^
 ||qtbo.cn^
 ||hnhmxj.icu^
 ||fbphnn.icu^
@@ -4988,6 +4992,8 @@ newduba.cn###jq_youxi
 ||fqnhjt.icu^
 ||lelczf.icu^
 ||shelluiqy.com^
+||ejti.cn^
+||pgyfzyv.top^
 ||thustilpn.com^
 ||nrgv.cn^
 ||hltpdd.icu^
@@ -12744,6 +12750,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||i8tq.com/adImg/
 ||csgola.com/Public/img/lala/1.jpg
 ||adasset.flixfiend.top^
+6parknews.com##.ad-view
 appinn.com#?#.featured-section > .test:-abp-has(>.post-img>a[href^="http"]:not([href*="appinn."]))
 mydrivers.com##.baidu_left
 weather.com.cn##.guanggao
