@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
 [Adblock Plus 1.1]
-! Checksum: YY17AVNDXDux785W1/ehyg
-! Version: 202503112351
+! Checksum: ePaKFgwAw7i9fm6mCA8NsA
+! Version: 202503122341
 ! Title: EasyPrivacy
-! Last modified: 11 Mar 2025 23:51 UTC
+! Last modified: 12 Mar 2025 23:41 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -640,7 +640,7 @@
 /collector/v1/event
 /collector?report=
 /collectsysteminfo?
-/com.snowplowanalytics.snowplow/*
+/com.snowplowanalytics.snowplow/*$domain=~7plus.com.au
 /com_joomlawatch/img.php
 /common/analytics.js
 /common/ga.js
@@ -1351,7 +1351,7 @@
 /log?documentUrl=
 /Log?entry=
 /log?event=
-/log?format=
+/log?format=$domain=~meet.google.com
 /log?id=
 /log?kc=
 /log?method=
@@ -2652,7 +2652,7 @@
 /wps-visitor-counter/styles/js/custom.js
 /wpstatistics/v1/hit?
 /wrapper/metrics/v1/custom-metrics?
-/WRb.js
+/WRb.js^
 /wreport.js
 /writelog.js
 /wstat.pl
@@ -7517,6 +7517,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.ynap.biz^
 ||analytics.yola.net^
 ||analytics.yolacdn.net^
+||analytics.yollamedia.com^
 ||analytics.ziftsolutions.com^
 ||analytics1.vdo.ai^
 ||analyticsehnwe.servicebus.windows.net^
@@ -51011,6 +51012,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 @@||simpleanalyticsexternal.com^$script,domain=inleo.io
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com
 @@||snap.licdn.com/li.lms-analytics/insight.min.js$domain=msci.com
+@@||snowplow.swm.digital^$domain=7plus.com.au
 @@||sohotheatre.com^*/PageView.js$~third-party
 @@||solr.sas.com/query/$xmlhttprequest,domain=jmp.com
 @@||sophos.com^*/tracking/gainjectmin.js$script,domain=community.sophos.com
