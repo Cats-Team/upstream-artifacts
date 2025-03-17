@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: RbEULFwEApbJLINiZXaNbQ
-! Diff-Path: ../patches/4/4-s-1742128630-3600.patch
+! Checksum: 9ir64ABbn8pHIUzyO2Xi3w
+! Diff-Path: ../patches/4/4-s-1742218654-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.12.23
-! TimeUpdated: 2025-03-16T12:31:44+00:00
+! Version: 2.1.12.29
+! TimeUpdated: 2025-03-17T13:31:47+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -678,6 +678,10 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+ipliroforia.gr##article .social-icons-list
+dfrlab.org##.gta-article-header--share
+dfrlab.org#?#.gta-article-header--label:contains(/^Share this story$/)
+digit.in##.social_icon > span
 auto.ru##div[class^="PostHeading__actionBar"] > div.HoveredTooltip__trigger:has(> button[class*="ShareButton"])
 transfaze.com##.dropdown:has(> button + div > #sharebuttons)
 tuoitre.vn##.detailsocialboot
@@ -5773,7 +5777,7 @@ nevnov.ru##.social-share_block
 topics.smt.docomo.ne.jp##.m-social-button-list
 rumaysho.com##.latest-tweets-widget
 ten-sura-m.bn-ent.net,ytv.co.jp,thehikaku.net##.footer_sns
-tv-asahi.co.jp,ark-pc.co.jp###social-button
+developers.googleblog.com,tv-asahi.co.jp,ark-pc.co.jp###social-button
 dekiru.net##div[class^="module-"][class$="-share"]
 kakakumag.com##div[class^="article-sns-"]
 wroclawskisport.pl###fblbx
@@ -6527,7 +6531,7 @@ education.24tv.ua##.share-news-block
 wikidiff.com##.rb-buttons
 haaretz.com##button[data-test="redditButton"]
 haaretz.com##button[title^="Share in"]
-animego.ong,history-lordfilm.ru,aksam.com.tr,anicobin.ldblog.jp,elconsolto.com,enechange.co.jp,timesofisrael.com,pauta.cl,bt.com,vnexpress.net,besniekspres.com,kralmuzik.com.tr,veritas-a.com,sex.com,interior-heart.com,h-n-h.jp,discours.io,twicomi.com,cnbctv18.com,ksl.com##.social
+internshipguide.jp,animego.ong,history-lordfilm.ru,aksam.com.tr,anicobin.ldblog.jp,elconsolto.com,enechange.co.jp,timesofisrael.com,pauta.cl,bt.com,vnexpress.net,besniekspres.com,kralmuzik.com.tr,veritas-a.com,sex.com,interior-heart.com,h-n-h.jp,discours.io,twicomi.com,cnbctv18.com,ksl.com##.social
 bulurum.com###socialBox
 queer.pl##a[href^="https://twitter.com/home?"]
 corrieredellosport.it##div[class^="SocialColumn_"]
@@ -8185,7 +8189,7 @@ sadalskij.livejournal.com##.b-sharethis-livejournal
 ifeng.com##div[class^="share_box-"]
 androidmakaleniz.blogspot.com##.ikonz-social
 7news.com.au##button[class^="gtm-"][class*="-share-button"][class*="StyledButton"]
-anime-sharing.com,onemileatatime.com,keeplinks.org,h1g.jp,qiita.com,real.discount,m.vesty.co.il,happiness.com,animeflv.net,republika.id,zfile.in.ua,cj3z.com,bookmix.ru,meleklermekani.com,sukabumiupdate.com##.fa-share-alt
+anime-jl.com,anime-sharing.com,onemileatatime.com,keeplinks.org,h1g.jp,qiita.com,real.discount,m.vesty.co.il,happiness.com,animeflv.net,republika.id,zfile.in.ua,cj3z.com,bookmix.ru,meleklermekani.com,sukabumiupdate.com##.fa-share-alt
 serokell.io,sukabumiupdate.com##.share-popup
 cmjornal.pt##.social_stick > li > a[href]:not(.save)
 delivembed.cc##.controls-top-right
@@ -12858,7 +12862,7 @@ ygosu.com###sns_bar
 gorodkirov.ru,navigator-kirov.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru##div[class^="article-social_"]
 !
 ! cuty.io
-cutyion.com,jixo.online,exe-urls.com,cuty.me,evernia.site,gamco.online,olkuj.com,ijvam.com,mrgec.com,emxaw.com,cety.app,cutnet.net,cutado.com,cutlink.net##.share-icons-container
+exnion.com,cutyion.com,jixo.online,exe-urls.com,cuty.me,evernia.site,gamco.online,olkuj.com,ijvam.com,mrgec.com,emxaw.com,cety.app,cutnet.net,cutado.com,cutlink.net##.share-icons-container
 !
 ! Hearst Television Inc
 4029tv.com,98online.com,abc-7.com,hearst.com,kcci.com,kcra.com,ketv.com,kmbc.com,koat.com,koco.com,ksbw.com,mor-tv.com,mynbc5.com,nbc-2.com,wapt.com,wbal.com,wbaltv.com,wcvb.com,wdsu.com,wesh.com,wgal.com,wisn.com,wjcl.com,wlky.com,wlwt.com,wmtw.com,wmur.com,wpbf.com,wptz.com,wtae.com,wvtm13.com,wxii12.com,wyff4.com##.article-social
@@ -14819,6 +14823,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/200926
+developer.mozilla.org#@#.share
 ! https://github.com/AdguardTeam/AdguardFilters/issues/200030
 drive.weixin.qq.com#@#.shareWrapper
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198684
