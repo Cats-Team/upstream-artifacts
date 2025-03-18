@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: PkCN5t0t0rUcv6N8pa+UQQ
-! Diff-Path: ../patches/224/224-s-1742215078-3600.patch
+! Checksum: pD7y83RCINKHXCd5p6NBog
+! Diff-Path: ../patches/224/224-s-1742251026-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.33.19
-! TimeUpdated: 2025-03-17T12:32:40+00:00
+! Version: 2.1.33.23
+! TimeUpdated: 2025-03-17T22:32:37+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1133,6 +1133,7 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+3dmgame.com#$#body > div.content { margin-top: 0 !important; }
 finance.eastmoney.com###ContentBody > p[style="text-align:center;"]:has(> a[href^="https://acttg.eastmoney.com/pub/"])
 xn--p3tv7h.com###floating-image-container
 ||xn--p3tv7h.com/imgs/Uxuan2.jpg
@@ -3044,6 +3045,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ! ! temporary
 ! https://github.com/AdguardTeam/AdguardBrowserExtension/issues/3031
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/200865
+video4k.cc#@#a[href*="/?aff="][target="_blank"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/197816
 linovelib.com#@#.ads_box
 ! https://github.com/AdguardTeam/AdguardFilters/issues/194197
@@ -5012,6 +5015,8 @@ newduba.cn###jq_youxi
 ||chorninsm.com^
 ||phuustikd.com^
 ||togmoxwnw.com^
+||rdoq.cn^
+||srootshare.com^
 ||uoqc.cn^
 ||xaiqrania.com^
 ||jipxzz.icu^
