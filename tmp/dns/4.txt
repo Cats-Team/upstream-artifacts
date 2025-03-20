@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: +WUaLuoj9Ldg4iBrHRCE5A
-! Diff-Path: ../patches/4/4-s-1742315850-3600.patch
+! Checksum: Xs6ZQKHt7FRPyuf+ZjXKLg
+! Diff-Path: ../patches/4/4-s-1742427419-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.12.39
-! TimeUpdated: 2025-03-18T16:31:51+00:00
+! Version: 2.1.12.48
+! TimeUpdated: 2025-03-19T23:31:46+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -678,6 +678,16 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+semafor.com##div[class=""] > div[class^="css-"]:has(a[aria-label^="Share with"])
+hatarako.net##div[class^="SnsButton"]
+jo-katsu.com##.single-sns-box
+career-ch.com##.banner_add_LINE
+hobbyhall.fi###product-share
+lebonlogiciel.com##.box-network
+musee-pla.com##.wrap_share_btn
+shopstaff.jp##.mb-8.mt-6
+news.northeastern.edu##.author-sidebar__share
+store.tenga.co.jp##.c-product_info__share
 osce.org##.pane-social-sharing
 design-ac.net#?#.template-description-container > button.ant-btn:has(> span:contains(シェア))
 whatsnew.libreoffice.org##header > div > ul.nav:has(> li > a[href*="share"])
@@ -8121,7 +8131,7 @@ rmf24.pl##.flBox > ul > li.wykop
 krytykapolityczna.pl##.essb-like
 rottentomatoes.com###social-tools-widget
 niusdiario.es##.article__shared_bar_article-Pkjv
-lenta.ua##.new-social
+indiatimes.com,lenta.ua##.new-social
 the74million.org,klymenko-time.com,sekurak.pl##.single_share
 kartal24.com##.a-header > .qpr.cf > li[class]:not(.c-open)
 niezalezna.pl###articleBody > center > a[href][onclick^="fbshare"]
@@ -8197,7 +8207,7 @@ sadalskij.livejournal.com##.b-sharethis-livejournal
 ifeng.com##div[class^="share_box-"]
 androidmakaleniz.blogspot.com##.ikonz-social
 7news.com.au##button[class^="gtm-"][class*="-share-button"][class*="StyledButton"]
-anime-jl.com,anime-sharing.com,onemileatatime.com,keeplinks.org,h1g.jp,qiita.com,real.discount,m.vesty.co.il,happiness.com,animeflv.net,republika.id,zfile.in.ua,cj3z.com,bookmix.ru,meleklermekani.com,sukabumiupdate.com##.fa-share-alt
+hentaijl.com,anime-jl.com,anime-sharing.com,onemileatatime.com,keeplinks.org,h1g.jp,qiita.com,real.discount,m.vesty.co.il,happiness.com,animeflv.net,republika.id,zfile.in.ua,cj3z.com,bookmix.ru,meleklermekani.com,sukabumiupdate.com##.fa-share-alt
 serokell.io,sukabumiupdate.com##.share-popup
 cmjornal.pt##.social_stick > li > a[href]:not(.save)
 delivembed.cc##.controls-top-right
@@ -14327,6 +14337,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ||mailget.net^$third-party
 ||my.hellobar.com^$third-party
 !
+jo-katsu.com###CampusCtaBanner
 quins.us###youtubeFollowStepModal
 movieshd.watch#%#//scriptlet('set-cookie', 'show_share', 'true')
 flicksbar.mom###tgWrapper
