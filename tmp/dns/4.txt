@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: Xs6ZQKHt7FRPyuf+ZjXKLg
-! Diff-Path: ../patches/4/4-s-1742427419-3600.patch
+! Checksum: XXDdYQnd4x5V68RwqXASEw
+! Diff-Path: ../patches/4/4-s-1742503044-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.12.48
-! TimeUpdated: 2025-03-19T23:31:46+00:00
+! Version: 2.1.12.56
+! TimeUpdated: 2025-03-20T20:31:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -586,8 +586,8 @@ m.timesofindia.com$$div[class="w100p fl text-center pdTop_2"]
 !-------------------
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196405
 ! Generic fix for openweb Comments widget, share button is inside "ShadowRoot"
-!+ PLATFORM(windows, mac, android)
 ||static-cdn.spot.im/production/conversation/tags/*/styles.css$replace=/(Menu__menuButtonWrapper--.*})/\$1 button[data-testid="ShareBtn"]\, div[data-spot-im-class="vote-links"] + span[class\\$="index__dot"] { display: none !important; }/
+||static-cdn.spot.im/production/social/tags/*/conversation/styles.css$replace=/(Menu__menuButtonWrapper--.*})/\$1 button[data-testid="ShareBtn"]\, div[data-spot-im-class="vote-links"] + span[class\\$="index__dot"] { display: none !important; }/
 !
 ||mp.lura.live/player/prod/v*/*/anvhtml5.css$replace=/(\.anv-splash-share \{)/\$1 display: none !important;/
 !-------------------------------------------------------------------------------!
@@ -678,7 +678,13 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
-semafor.com##div[class=""] > div[class^="css-"]:has(a[aria-label^="Share with"])
+tvinsider.com##.story-metadata > ul.social-icons
+vecherka-spb.ru##section > div[class^="_container_"]:has(> div[class^="_blockIcons_"])
+dramago.in##.wrap-content > div.text-center:has(> div.textwidget a[href="https://www.facebook.com/groups/dramago.in"])
+mistral.ai##aside > div:has(> div.flex > a[href^="https://www.facebook.com/sharer/"])
+asianetnews.com##.socialIcons
+asianetnews.com#$#.articlepublish { min-height: 0 !important; }
+semafor.com##div[class=""] > div[class^="css-"]:has(> a[aria-label^="Share with"])
 hatarako.net##div[class^="SnsButton"]
 jo-katsu.com##.single-sns-box
 career-ch.com##.banner_add_LINE
@@ -8948,7 +8954,7 @@ businessinsider.com,mustget.ru##.share-toggle
 mustget.ru##.sticky-sidebar .widget_boombox_social
 cinemablend.com##.share-toggle > div.contents
 ntv.com.tr,digi24.ro##.social-link
-autonews.ru,rbc.ru,sportrbc.ru##.article__header__share-block
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##.article__header__share-block
 rbc.ru##.article__header__counter-block > .article__header__after
 rtl.be##.vpl_SharingBut
 rtl.be##.w-content-details-article-extra-sharing
@@ -14337,6 +14343,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ||mailget.net^$third-party
 ||my.hellobar.com^$third-party
 !
+agenziaentrate.gov.it#%#//scriptlet('set-cookie', 'first-visit-entrate', 'false')
 jo-katsu.com###CampusCtaBanner
 quins.us###youtubeFollowStepModal
 movieshd.watch#%#//scriptlet('set-cookie', 'show_share', 'true')
@@ -14842,6 +14849,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/201252
+pressherald.com#@#.share-text
 ! https://x.com/nio_ug/status/1901251853746426122
 ensemble-stars-welcome-2025-diagnosis.belugacpn.jp#@#a[href^="https://x.com/intent/tweet?"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/200926
