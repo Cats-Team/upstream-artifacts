@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: tbet7wnPtwNIGwxoaBWIQg
-! Diff-Path: ../patches/4/4-s-1742888234-3600.patch
+! Checksum: Dkw4N7jNbF2pxafowhN7bA
+! Diff-Path: ../patches/4/4-s-1742920673-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.12.62
-! TimeUpdated: 2025-03-25T07:31:51+00:00
+! Version: 2.1.12.65
+! TimeUpdated: 2025-03-25T16:31:59+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,8 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+imf.org##button[onclick="toggleSharePopup();"]
+srbijasport.net##.res-action-share
 qaynarinfo.az##.nw_socials
 xeberle.com##.momizat-posts:has(> div.widget-head:contains(FACEBOOK))
 vencon.ua##.show-share-dialog-btn
@@ -691,6 +693,7 @@ hatarako.net##div[class^="SnsButton"]
 jo-katsu.com##.single-sns-box
 career-ch.com##.banner_add_LINE
 hobbyhall.fi###product-share
+baku.ws##.social-media-banner
 lebonlogiciel.com##.box-network
 musee-pla.com##.wrap_share_btn
 shopstaff.jp##.mb-8.mt-6
