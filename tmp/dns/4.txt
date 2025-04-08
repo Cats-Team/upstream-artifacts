@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: x6NkCt+SFuIrlptdgBP82w
-! Diff-Path: ../patches/4/4-s-1744089088-3600.patch
+! Checksum: 6S5of2aYDWX6FluAKygTxg
+! Diff-Path: ../patches/4/4-s-1744107081-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.13.12
-! TimeUpdated: 2025-04-08T05:07:18+00:00
+! Version: 2.1.13.15
+! TimeUpdated: 2025-04-08T10:07:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,9 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+sigmatv.com##.sliding_share_btns
+patakis.gr##.book__share
+idos.cz##.share-button--fb
 maziyabacity.com,audee-membership.jp##.MuiBox-root:has(> .react-share__ShareButton)
 redheadsound.studio#?#.col-side > div.side-block > div.side-block__title:has( > p:contains(МЫ ВКОНТАКТЕ))
 app.nimbusweb.me##.nns-toggle-share
@@ -13252,7 +13255,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ##a[href^="http://www.twitter.com/intent/tweet?"]
 ##a[href^="http://twitter.com/intent/tweet/?"]
 !
-##.MuiSvgIcon-root[data-testid^="Share"]
+##.MuiSvgIcon-fontSizeSmall[data-testid^="Share"]
 ##.fbsmallshare
 ##.cmg-share-bar
 ##a[aria-label="View share options"]
@@ -14908,6 +14911,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/202295
+idos.cz#@#.share-button
 ! https://github.com/AdguardTeam/AdguardFilters/issues/202259
 monsterhunter.com#@#.sns_list
 monsterhunter.com#@#a[href^="https://lin.ee/"]
