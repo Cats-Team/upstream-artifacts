@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt
 [Adblock Plus 2.0]
-! Checksum: EQTF2aUqQ/yj+Hn1j8EASA
-! Version: 202504091151
+! Checksum: ojP2FqcQx3pNXwsGSWUQbw
+! Version: 202504091751
 ! Title: Fanboy's Annoyance List
-! Last modified: 09 Apr 2025 11:51 UTC
+! Last modified: 09 Apr 2025 17:51 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -22707,7 +22707,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ##.c-cookie-popunder
 ##.c-cookie-warning
 ##.c-cookie-warning-panel
-##.c-cookie-wrapper
 ##.c-cookieAccept
 ##.c-cookieBanner
 ##.c-cookieBanner--overlay
@@ -29336,7 +29335,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ##section#accept-cookie-container
 ##section#tracking-consent-dialog
 ##section.Cookie-notice
-##section.c-cookie
 ##section.c-cookieconsent
 ##section.c-cookies
 ##section.cookie-alert
@@ -29397,8 +29395,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ! cuny.jobs/southerncompany-engineer.jobs/tradesmen.jobs
 ##div.cookie-consent--visible
 ##section.cookie-consent--visible
-! asfromania.ro
-###cp-dialog.cp-wrapper
 ! onyx-healthcare.com
 ##.active.GDPR
 ! lippes.com
@@ -40291,7 +40287,7 @@ laportecontemporaine.shop,meesterslijpers.nl###ism-consent-box
 !! .cookie-alert
 cdek.ru,elektrikstore.hu,pushwoosh.com,salon24.pl,shoei-helmets.com,tipik.hu##.cookie-alert
 !! .amgdprjs-bar-template
-ctt.de,landyschemist.com##.amgdprjs-bar-template
+ctt.de,ironmaxx.de,landyschemist.com##.amgdprjs-bar-template
 !! .cookie-notification
 e-recharge.net,iahsap.com,jobs.tuwien.ac.at,leitor.net,mangalivre.net,netshoes.com.br,prostokvashino.ru##.cookie-notification
 !! .cookie-alert-show
@@ -40730,7 +40726,7 @@ bookbeat.at,bookbeat.be,bookbeat.ch,bookbeat.co.uk,bookbeat.com,bookbeat.de,book
 !! .top-0.fixed
 beepbeep.ie,chplatan.pl,matchpint.com.au,tylko.com##.top-0.fixed
 !! .cookie-policy
-box.co.uk,communitycouncils.scot,dcvelocity.com,drtuber.com,ecargo.com,gq.co.za,hepsiemlak.com,ipon.hu,localcouncillor.scot,naruto-tube.org,pnas.org,schouw.dk,silmid.com,tentonhammer.com,wizzair.com##.cookie-policy
+box.co.uk,communitycouncils.scot,dcvelocity.com,drtuber.com,ecargo.com,gq.co.za,hepsiemlak.com,ipon.hu,localcouncillor.scot,naruto-tube.org,pnas.org,schouw.dk,selsiuz.com,silmid.com,tentonhammer.com,wizzair.com##.cookie-policy
 !! .modal-cookie-policy (no scroll fix needed)
 handandstone.com##.modal-cookie-policy
 !! #sliding-popup
@@ -45706,7 +45702,8 @@ mobilier-mirjan24.ro###window_overlay
 bancatransilvania.ro##.bannerWrapper
 k-mart.ro##.ckPolicyGomag
 mailagent.ro##.cookie_modal
-asfromania.ro##.cp-overlay
+asfromania.ro,primariacraiova.ro##.cp-overlay
+asfromania.ro,primariacraiova.ro##.cp-wrapper
 bestkids.ro##.gdprPolicy
 dulcisevents.ro##.header-notice
 dict.com##.lck-wrapper
@@ -48028,3 +48025,10 @@ autotip.auto.cz#@##didomi-notice
 autotip.auto.cz#@#.didomi-notice-banner
 autotip.auto.cz#@#body:not(.didomi-popup-open) #didomi-host
 autotip.auto.cz#@#iframe[name="googlefcPresent"]
+! FD-7567
+@@||autobild.lt/wp-content/plugins/cookie-notice/*/front.min.*?$domain=autobild.lt
+autobild.lt#@##cookie-notice
+autobild.lt#@#.cn-position-bottom
+autobild.lt#@#.cookie-notice-container
+autobild.lt#@#div.cookie-notice-visible
+autobild.lt#@#.footer-container ~ div[class*="cookie-notice"]
