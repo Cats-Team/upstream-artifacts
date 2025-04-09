@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: eYhO2oDhyJ+SKuVxXKfSLg
-! Diff-Path: ../patches/11/11-s-1744143089-3600.patch
+! Checksum: Lc3127l1WTOTTxGNfKe2lA
+! Diff-Path: ../patches/11/11-s-1744193583-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.59.70
-! TimeUpdated: 2025-04-08T20:07:34+00:00
+! Version: 2.0.59.72
+! TimeUpdated: 2025-04-09T10:09:00+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2600,6 +2600,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+zetsurin-teacher.xyz###glkab
 koreatimes.co.kr##div[class^="Detail_ad-container_"]
 pleasureme.jp##.mobile-footer-menu-buttons
 rat.xxx##.box-mobile
@@ -4933,6 +4934,7 @@ m.sabah.com.tr##.adv-content
 ||s.mycar-life.com/amp-side-special01.html
 jagran.com##.shadow-remove
 m.focus.de##.cls_hor_prnt
+okwave.jp##.adfunnel.ad_list_bottom
 okwave.jp##aside[class^="adfunnel ad_qa_"]
 okwave.jp##.qa_detail > div[style="min-height: 250px;"]
 okwave.jp##aside[class*="adfunnel_special_box_amp"]

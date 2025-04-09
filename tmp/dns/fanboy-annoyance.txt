@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt
 [Adblock Plus 2.0]
-! Checksum: bY/URP7dBE+TO2qMENmd2g
-! Version: 202504090551
+! Checksum: EQTF2aUqQ/yj+Hn1j8EASA
+! Version: 202504091151
 ! Title: Fanboy's Annoyance List
-! Last modified: 09 Apr 2025 05:51 UTC
+! Last modified: 09 Apr 2025 11:51 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -27386,7 +27386,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ##.o2x-cookiebar-wrapper
 ##.o7cookie-info-prompt-wrap
 ##.oCookie
-##.o_cookies_discrete
 ##.oaveacookieconsent
 ##.oax-cookie-msg
 ##.ob-cookies
@@ -34978,6 +34977,7 @@ wethegeek.com##.sec-subscribe
 sainsburysmagazine.co.uk##.section--blue.section
 backstage.com##.section--newsletter
 mygenefood.com##.section--optin
+theideasletter.org##.section--subscribe
 usrtk.org##.section-callout-newsletter
 crowdsupply.com##.section-email-signup
 247wallst.com##.section-email-sub
@@ -48021,3 +48021,10 @@ autobild.pluska.sk,awin.com#@##onetrust-consent-sdk
 @@/wrapperMessagingWithoutDetection.js|$script,domain=autoexpress.co.uk
 ! FD-7571
 @@/sdk.privacy-center.$script,domain=autoplus.fr
+! FD-7575
+@@||cdn.cpex.cz/cmp/v*/cpex-cmp.min.js$domain=autotip.auto.cz
+@@||sdk.privacy-center.org/*/loader.js?$domain=autotip.auto.cz
+autotip.auto.cz#@##didomi-notice
+autotip.auto.cz#@#.didomi-notice-banner
+autotip.auto.cz#@#body:not(.didomi-popup-open) #didomi-host
+autotip.auto.cz#@#iframe[name="googlefcPresent"]
