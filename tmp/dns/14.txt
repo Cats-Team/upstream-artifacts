@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: lWYMmAUP/RCIhJe5lIGT7w
-! Diff-Path: ../patches/14/14-s-1744312231-3600.patch
+! Checksum: 86AvqXX28Rm+D0UfL60piA
+! Diff-Path: ../patches/14/14-s-1744369819-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.27.4
-! TimeUpdated: 2025-04-10T19:06:41+00:00
+! Version: 2.2.27.9
+! TimeUpdated: 2025-04-11T11:06:44+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -6957,7 +6957,7 @@ sundrug-online.com,fujiya-avic.co.jp,peachjohn.co.jp,magi.camp,fumo-shop.com,nis
 gazeteoksijen.com##.gdpr-warning
 privacysavvy.com##.ps-cookiebar
 realtor.ca###TOUMessageCtrl
-12neuwagen.de,12gebrauchtwagen.de,autoplenum.de,leasingmarkt.de,autoscout24.*###as24-cmp-popup
+autotrader.nl,12neuwagen.de,12gebrauchtwagen.de,autoplenum.de,leasingmarkt.de,autoscout24.*###as24-cmp-popup
 lilysilk.com##.privacywrap
 miljayega.com##.cookie_bot
 thedrum.com##.td__nav__cookieNotice
@@ -13459,7 +13459,7 @@ ilanversen.com###cookiesusage
 uysisguvenligi.com.tr,makrosepetim.com,agenturfilmgesichter.de,agentur-filmgesichter.de###cookietoast
 nanodatex.pl###cookis-box
 theathletesfoot.com###cpolicy
-programegratuitepc.com,thepresetsroom.com,krupp-krankenhaus.de,encoreungateau.com###ct-ultimate-gdpr-cookie-popup
+thepresetsroom.com,krupp-krankenhaus.de,encoreungateau.com###ct-ultimate-gdpr-cookie-popup
 adwokat-obrebski.pl##.ct-ultimate-gdpr-cookie-fullPanel-overlay
 pri.org###cta_prompt_bottom
 antoineonline.com###ctl00_overlay
@@ -16973,6 +16973,7 @@ sylabus.uj.edu.pl#@##cookieconsent
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198859
 @@||sdk.privacy-center.org^$domain=abc.es
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198833
+!+ NOT_OPTIMIZED
 @@||consent.cookiebot.com/uc.js$domain=vcg.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198583
 @@||sdk.privacy-center.org^$domain=bienpublic.com|lejsl.com
@@ -25659,6 +25660,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+ej.alc.co.jp##body > #text-banner
 donaldjtrump.com##.popup
 saisoncard.co.jp#$##modal-overlay:has(.form-area-content__img > [src$="/marketing01.jpg"]) { display: none !important; }
 saisoncard.co.jp#$#body[style="overflow-y: hidden;"] { overflow-y: auto !important; }
@@ -49275,6 +49277,11 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+vbr.ru##.best-offers-body
+vbr.ru##.org-subcat-menu
+hepsiburada.com##.container > div > section:has(> a[data-hbus*="bannerDetails"])
+ej.alc.co.jp##.sub > .side-ad1
+eikaiwa.dmm.com##div[data-banner]
 mediafire.com##.DlBtnUltraUpsell
 terabox.app##.seo-banner-box
 puck.news###h-join-puck
@@ -50734,7 +50741,6 @@ oricon.co.jp#?#.block-recommend-list > div.gameScrollArea:upward(1)
 monitor.firefox.com##.vpn-banner
 tripadvisor.com##footer ~ div[class^="Su"][style="bottom: 284px;"]
 tokyo-np.co.jp##.koudoku_annai
-hepsiburada.com##div[id^="sponProduct"]
 live.kufu.co.jp##.ad_list_block
 thesource.com###custom_html-8
 yomiuri.co.jp##div[style="height:150px;text-align:center; margin-bottom: 16px;"]
