@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: dPjQUuMwZ8+6G79p8rl3Yg
-! Diff-Path: ../patches/4/4-s-1744783968-3600.patch
+! Checksum: tBzL9I50kiLl+bu/H1sI4g
+! Diff-Path: ../patches/4/4-s-1744819918-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.13.43
-! TimeUpdated: 2025-04-16T06:08:46+00:00
+! Version: 2.1.13.46
+! TimeUpdated: 2025-04-16T16:07:56+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,10 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+lsm.lv##.social-icons-block
+gamefile.news##span > a.pencraft:has(> div.pencraft > svg.lucide-share)
+economist.com##button:has(> svg[data-testid="share-solid"])
+videocardz.com##.shareon > a
 rus.postimees.ee##.mari
 ilpost.it##div[class^="_share_"]
 fontstruct.com##.fs-sharing-bar
