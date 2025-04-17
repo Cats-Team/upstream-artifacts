@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: hXCDheAaQIHVamLXkkkdGw
-! Diff-Path: ../patches/14/14-s-1744819916-3600.patch
+! Checksum: +1zHpSts0n/0azivRdjNaQ
+! Diff-Path: ../patches/14/14-s-1744845065-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.27.50
-! TimeUpdated: 2025-04-16T16:08:18+00:00
+! Version: 2.2.27.52
+! TimeUpdated: 2025-04-16T23:07:07+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2506,6 +2506,7 @@ scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfilme.de,pk.edu.pl
 !
 ! NOTE: Regular rules
 !
+popularmechanics.com##div[data-floating-ui-portal]:has(div[aria-label="Privacy Disclosure"])
 opentext.com###gtm-alert
 lealternative.net###my-disclaimer-banner
 fantasi.one#?##app > div.outline:has(> button:contains(Akzeptieren))
@@ -49342,6 +49343,7 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+uchi.ru##article[class^="RecommendationCard"]
 rus.postimees.ee##.article__piano-block
 wired.jp##.body__inner-container > div[class^="GenericCalloutWrapper"]:has(> aside > p > a[href="https://wired.jp/membership/about/"])
 santaretail.by##.gif_banner
@@ -53894,9 +53896,9 @@ chip.de#$#.Button--Download { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183581 - copy/right text
 ||i38.ru/templates/teleinform/js/cprgt.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183012
-dizok.com,9sblog.com,newselab.com,glowandglamcorner.com,dadinthemaking.com,listofthis.com,beautifulfashionnailart.com,crewbase.net,batmanfactor.com#%#//scriptlet('remove-attr', 'disabled', 'button')
-dizok.com,9sblog.com,newselab.com,glowandglamcorner.com,dadinthemaking.com,listofthis.com,beautifulfashionnailart.com,crewbase.net,batmanfactor.com#$#.text-center > div[id][style^="display:"] { display: block !important; }
-dizok.com,9sblog.com,newselab.com,glowandglamcorner.com,dadinthemaking.com,listofthis.com,beautifulfashionnailart.com,crewbase.net,batmanfactor.com#$#form[id][style^="display:"] { display: block !important; }
+nidbdcheck.com,dizok.com,9sblog.com,newselab.com,glowandglamcorner.com,dadinthemaking.com,listofthis.com,beautifulfashionnailart.com,crewbase.net,batmanfactor.com#%#//scriptlet('remove-attr', 'disabled', 'button')
+nidbdcheck.com,dizok.com,9sblog.com,newselab.com,glowandglamcorner.com,dadinthemaking.com,listofthis.com,beautifulfashionnailart.com,crewbase.net,batmanfactor.com#$#.text-center > div[id][style^="display:"] { display: block !important; }
+nidbdcheck.com,dizok.com,9sblog.com,newselab.com,glowandglamcorner.com,dadinthemaking.com,listofthis.com,beautifulfashionnailart.com,crewbase.net,batmanfactor.com#$#form[id][style^="display:"] { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/179738 (left-over)
 forbes.com##.for-you__component:empty
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177560

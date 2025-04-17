@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
 [Adblock Plus 1.1]
-! Checksum: /RLF6eCjRyNbZ+FAQsH9mg
-! Version: 202504161751
+! Checksum: NZT6HBZ9Q+pRJcSBJEJLxg
+! Version: 202504170001
 ! Title: EasyPrivacy
-! Last modified: 16 Apr 2025 17:51 UTC
+! Last modified: 17 Apr 2025 00:01 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -17,6 +17,7 @@
 &&sub19=undefined&sub20=undefined
 &action=js_stats
 &ev=PageView&
+&event_name=view_item_list&
 &EventType=DataDealImpression&
 &EventType=Impression&
 &hitType=pageview&
@@ -1495,6 +1496,7 @@
 /ms-widgets/tracking-cookies/*
 /ms.analytics-web-3.min.js
 /mtc.js
+/mtifonttracker.js
 /mtiFontTrackingCode.js
 /mtracking.gif?
 /mtvi_reporting.js
@@ -2223,6 +2225,7 @@
 /tagAnalyticscnil.php
 /tagCNIL.js
 /tagcommander/prd/*
+/tagging?env=
 /tagmanager/event?
 /tagmanager/pptm.js
 /tags.js?org_id=
@@ -2342,6 +2345,7 @@
 /tracker.ga.
 /tracker.gif?
 /tracker/?key=
+/tracker/base_wp/*
 /tracker/event?
 /tracker/imp?
 /tracker_async.js
@@ -10631,6 +10635,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||adult-trade.nl/lo/track.php
 ||amazonaws.com/prod/v1/track$domain=ixxi.com
 ||analytics.belgacom.be^
+||analytics.hatech.dev^
 ||apm.tnet.nl^
 ||bbvms.com/zone/js/zonestats.js
 ||bol.com/click/
@@ -50363,6 +50368,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||businessinsider.nl^*/tr.php
 ||c.vrt.be^
 ||coolblue.nl/monitoring/
+||e428.tio.nl^
 ||events.reclamefolder.nl^
 ||expert.nl/daix.js
 ||fd.nl/pixel/
@@ -50377,6 +50383,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||marktplaats.nl/metrics/
 ||marktplaats.nl/px/
 ||metrics.nu.nl^
+||metrics.pazzox.be^
 ||njam.tv/tracking/
 ||npo-data.nl/tag/v3/npotag.js
 ||npo-data.nl/tags/tag.min.js
@@ -50391,6 +50398,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||rtl.nl/system/track/
 ||sanoma.nl/pixel/
 ||sat.sanoma.fi^
+||sliponline.nl/tracker/
+||sst.babypark.nl^
 ||statistiek.rijksoverheid.nl^
 ||stats.fd.nl^
 ||t.ad.nl^$image
@@ -50402,6 +50411,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||t.hln.be^$image
 ||t.pzc.nl^$image
 ||t.tubantia.nl^$image
+||tagging.sliponline.nl^
 ||tijd.be/fb/?
 ||tijd.be/fb2?
 ||tijd.be/track/
@@ -50410,6 +50420,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||tracking.voordeeluitjes.nl^
 ||tvgids.nl/collect
 ||tweakers.nl/track/
+||two.tio.nl^
 ||txrx.bol.com^
 ||u299.libelle-lekker.be^
 ||vinted.nl/relay/events
