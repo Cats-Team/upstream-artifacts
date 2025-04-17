@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: zb911Lu439eRzy1VKx8Rgw
-! Diff-Path: ../patches/4/4-s-1744845068-3600.patch
+! Checksum: X8+M932rM/4CX8Wn+AtVwg
+! Diff-Path: ../patches/4/4-s-1744881103-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.13.48
-! TimeUpdated: 2025-04-16T23:06:42+00:00
+! Version: 2.1.13.50
+! TimeUpdated: 2025-04-17T09:07:20+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,8 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+istories.media##div[class^="PhotoCard-module--ShareLink"]
+terappin.com##.blog-share-buttons
 boosty.to##div[class^="PostFooter-scss--module_share"]
 lsm.lv##.social-icons-block
 gamefile.news##span > a.pencraft:has(> div.pencraft > svg.lucide-share)
@@ -7487,7 +7489,7 @@ odessa.dozor.ua##.j-tab-soc
 ||averin.pro/widget.php
 salon24.pl##.article__socials > a[onclick*="ShareThis(this)"]
 drugs.com##.ddc-social-share
-viber.com##.post-social-share
+ulusal.com.tr,viber.com##.post-social-share
 drugs.com##a[data-ga-category="social"]
 china-review.com.ua##div[class="butn  pull-left"]
 edumap.az,emlakkulisi.com,mundoconectado.com.br,haberofisi.com.tr##.share-items
