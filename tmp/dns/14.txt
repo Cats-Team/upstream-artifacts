@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: nrIDUEh10LCwhIEL4xmhKw
-! Diff-Path: ../patches/14/14-s-1745266332-3600.patch
+! Checksum: d/6F0pLTqzE2oxPW5z3MmQ
+! Diff-Path: ../patches/14/14-s-1745292342-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.27.96
-! TimeUpdated: 2025-04-21T20:08:11+00:00
+! Version: 2.2.27.98
+! TimeUpdated: 2025-04-22T03:22:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2506,6 +2506,7 @@ scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfilme.de,pk.edu.pl
 !
 ! NOTE: Regular rules
 !
+dailyrevs.com#%#//scriptlet('set-session-storage-item', 'acceptCookies', 'true')
 3dzip.org##.bs-wrap-gdpr-law
 sbercity.ru##div[class^="TheCookiesInformer"]
 dws.com#%#//scriptlet('trusted-click-element', '#consent_prompt_footer > button#consent_prompt_reject')
@@ -42332,6 +42333,8 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+nyuka-now.com##.content.postCta
+treccani.it##.css-uwijew
 media.wear.jp##main > .flex > section:has(> ul > li > a[href^="https://app.adjust.com"])
 alfafile.net##a[href="https://play.google.com/store/apps/details?id=net.alfafile"]
 ||alfafile.net/img/buttons/googleplay.png
