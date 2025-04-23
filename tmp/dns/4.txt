@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: UTNxoPOM6YVW4qZ99D7SQg
-! Diff-Path: ../patches/4/4-s-1745403108-3600.patch
+! Checksum: tmv+3BjcnRBi6Qwf9jcceg
+! Diff-Path: ../patches/4/4-s-1745424782-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.13.70
-! TimeUpdated: 2025-04-23T10:07:30+00:00
+! Version: 2.1.13.73
+! TimeUpdated: 2025-04-23T16:08:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,7 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+blic.rs##button[data-cy="share-button"]
 dns-shop.ru##.share-popover__list > li.share-popover__list-link:not(.share-popover__list-link-copy)
 liberoquotidiano.it###dropdown-trigger
 genius.com##div[class^="ShareButtons__Root"]
@@ -7736,7 +7737,7 @@ odnaminyta.com##.wpb_wrapper > div.td-fix-index > h4
 pekarstas.com##div[class^="share-block"]
 ||gazeta-misto.te.ua/wp-content/themes/CherryFramework/*/remodal
 gazeta-misto.te.ua##.remodal
-sport.sky.it,uc.od.ua,odessa.dozor.ua,traffic.od.ua##.j-social-share
+tg24.sky.it,sport.sky.it,uc.od.ua,odessa.dozor.ua,traffic.od.ua##.j-social-share
 abdullahkigili.com,sadanlar.com.tr,shop.elitcikolata.com.tr,karspor.com.tr,sismikmarket.com,abakuskitap.com,troyestore.com,edifier.com,ambalajstore.com,telefonparcasi.com##.product-social
 lookcam.it,lookcam.fr,lookcam.ru,lookcam.com,lookcam.pl##.livecam_share
 abema.tv##.com-m-media-SNSShare__container
@@ -14962,6 +14963,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/203854
+ufret.jp#@#a[href^="https://twitter.com/intent/tweet?"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/202625
 ! https://github.com/AdguardTeam/AdguardFilters/issues/202295
 idos.cz#@#.share-button
