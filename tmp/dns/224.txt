@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: s4Hq1FqXoifFITXHFfaqCA
-! Diff-Path: ../patches/224/224-s-1745493033-3600.patch
+! Checksum: 2JJ4WbYB+fZCvb3ngnHSlA
+! Diff-Path: ../patches/224/224-s-1745514671-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.35.53
-! TimeUpdated: 2025-04-24T11:06:45+00:00
+! Version: 2.1.35.57
+! TimeUpdated: 2025-04-24T17:06:58+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -325,6 +325,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
 !
+||fc.3dmgame.com^
 ||xmm.wxc.cc^
 ||srtb.msn.cn^
 ||ad.hot-mob.com^
@@ -5129,6 +5130,9 @@ newduba.cn###jq_youxi
 ||uucnwtt.top^
 ||twcnmti.top^
 ||918000.xyz^
+||vtbe.cn^
+||qtthehnor.com^
+||qighodetfg.com^
 ||leirerspfz.com^
 ||ifje.cn^
 ||ngjcvn.top^
@@ -20751,6 +20755,7 @@ yydstxt*.com/js/cdn.
 ||xiguasuwu.com/static/m.
 ||biqgg.com/n.
 ||biqgg.com/w.
+||fd80s.com/static/m.
 /static/2biqu/twgdh.js
 .cc/js/dj1*.js
 .cc/js/dj2*.js
