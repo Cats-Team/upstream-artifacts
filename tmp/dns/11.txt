@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: dNPEVpJruOfIIDHHuh4K4A
-! Diff-Path: ../patches/11/11-s-1745890740-3600.patch
+! Checksum: 1NRKfnFkbGaUkk++073L2Q
+! Diff-Path: ../patches/11/11-s-1745921529-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.60.21
-! TimeUpdated: 2025-04-29T01:35:07+00:00
+! Version: 2.0.60.24
+! TimeUpdated: 2025-04-29T10:08:06+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -161,6 +161,7 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||maticooads.com^
 ||ad*.zonaplus.tv^
 ||apishow.babybus.com^
 ||apppromoteapi.babybus.com^
@@ -2611,6 +2612,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+jjgirls.me##div[class]:has(> ins[data-zoneid])
 m.666biquge.com##body > div[style^="height:"]
 republicworld.com##.bannerWidth
 republicworld.com##section.w-full:has(.adWidget) + div[style^="margin-bottom:"]
@@ -3411,7 +3413,6 @@ haber7.com###makroo-sticky-adunit
 apps.jeurissen.co##html > body .cja-pagewrapper .cja-landing__content > div.cja-sqrimage
 apps.jeurissen.co##html > body .cja-maincontent .cja-btmimage
 trthaber.com##.mobile-masthead-ads-container
-ntv.com.tr##.mobile-mpu-area
 nan-net.com##.bottom_menu:has(> div[style]:only-child > div[style]:only-child > iframe[id^="bottomad"]:only-child)
 chineseconverter.com##body .mobile-ad
 radiotimes.com##.ad-placement
@@ -7971,6 +7972,8 @@ livejournal.com##.mdspost-aside__item--banner
 ! END: Livejournal.com
 !
 !
+!+ NOT_OPTIMIZED
+ntv.com.tr##.mobile-mpu-area
 !+ NOT_OPTIMIZED
 lepoint.fr###WRAP_TOP_POS
 !+ NOT_OPTIMIZED

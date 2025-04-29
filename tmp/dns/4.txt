@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 7qaYYqDlOr9p5Uu0pxNkFA
-! Diff-Path: ../patches/4/4-s-1745846760-3600.patch
+! Checksum: 6jARzqgcKpSBlfy66MW1UQ
+! Diff-Path: ../patches/4/4-s-1745917984-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.13.90
-! TimeUpdated: 2025-04-28T13:21:15+00:00
+! Version: 2.1.13.92
+! TimeUpdated: 2025-04-29T09:08:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,7 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+map.naver.com##.type_share
 royalcanin.com##div[data-qa="social-share"]
 postnews.ru#?#div[class*=" styles_animate__"] > a:contains(поделиться)
 theweek.in##.article-share-mobile
@@ -6681,7 +6682,7 @@ education.24tv.ua##.share-news-block
 wikidiff.com##.rb-buttons
 haaretz.com##button[data-test="redditButton"]
 haaretz.com##button[title^="Share in"]
-internshipguide.jp,animego.ong,history-lordfilm.ru,aksam.com.tr,anicobin.ldblog.jp,elconsolto.com,enechange.co.jp,timesofisrael.com,pauta.cl,bt.com,vnexpress.net,besniekspres.com,kralmuzik.com.tr,veritas-a.com,sex.com,interior-heart.com,h-n-h.jp,discours.io,twicomi.com,cnbctv18.com,ksl.com##.social
+ntv.com.tr,internshipguide.jp,animego.ong,history-lordfilm.ru,aksam.com.tr,anicobin.ldblog.jp,elconsolto.com,enechange.co.jp,timesofisrael.com,pauta.cl,bt.com,vnexpress.net,besniekspres.com,kralmuzik.com.tr,veritas-a.com,sex.com,interior-heart.com,h-n-h.jp,discours.io,twicomi.com,cnbctv18.com,ksl.com##.social
 bulurum.com###socialBox
 queer.pl##a[href^="https://twitter.com/home?"]
 corrieredellosport.it##div[class^="SocialColumn_"]
