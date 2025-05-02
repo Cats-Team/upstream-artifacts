@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 0uGIDgwJw3QRaNev4GrCHw
-! Diff-Path: ../patches/4/4-s-1746123194-3600.patch
+! Checksum: mWLgaaOEP4M9AwuwYwLFpQ
+! Diff-Path: ../patches/4/4-s-1746180700-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.14.4
-! TimeUpdated: 2025-05-01T18:08:47+00:00
+! Version: 2.1.14.7
+! TimeUpdated: 2025-05-02T10:07:11+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -865,7 +865,7 @@ holyart.it###sfp_page_plugin_widget-2
 financial-field.com##.bnr-line-
 spot.uz##a[data-target="share-dropdown"]
 azertag.az##.app-news-share
-news.un.org##.minimal-share
+hrw.org,news.un.org##.minimal-share
 diyetkolik.com##div[id$="share-column"]
 wpcalc.com###wpcalc-share-buttons
 eventbrite.ca##li.actions-panel__item--share[data-heap-id="Listing - Hero - Share - Click"]
@@ -1178,7 +1178,7 @@ urgente.bo##a[href=""] > i.icon-urgente-twitter
 urgente.bo##a[href=""] > i.icon-urgente-facebook
 autoplus.fr###text-42
 getcomics.org##.post-footer-shr
-is.fi##.share-menu__button
+aamulehti.fi,is.fi##.share-menu__button
 enamae.net##.footer_social_box
 ipaidia.gr##.sharebtns
 evima.gr##.evimasocial-box
@@ -2722,7 +2722,7 @@ englishprime.ua##.post-social-list
 petri.com##div[data-petri-widget="share"]
 cafef.vn##.sharemxh
 practicum.yandex.ru###share-block-title
-blog.talosintelligence.com##.social-media-wrapper
+blog.simplecast.com,blog.talosintelligence.com##.social-media-wrapper
 icy-veins.com,wowma.jp##button[class^="ShareButton_"]
 ||s.ipaddress.com/shariff/shariff.complete.js
 neoseeker.com##.social-button-container
@@ -11632,7 +11632,7 @@ radyo.trt.net.tr##.social-icons-small
 acura.com##.social-icons:not(.last)
 theatlantic.com##.social-kit__item
 rzn.info,skidkaonline.ru##.social-like
-estore.ua,kyssfm.com,denofgeek.com,newsroom.pinterest.com,espreso.tv,twicomi.com,gap.co.jp,beautyhack.ru,rlsnet.ru,culture.pl,transfermarkt.de,pclab.pl,yeniakit.com.tr,calciomercato.it,ikinciyeni.com,outlookindia.com,dailymail.co.uk##.social-links
+estore.ua,kyssfm.com,denofgeek.com,newsroom.pinterest.com,espreso.tv,twicomi.com,gap.co.jp,beautyhack.ru,rlsnet.ru,culture.pl,transfermarkt.de,yeniakit.com.tr,calciomercato.it,ikinciyeni.com,outlookindia.com,dailymail.co.uk##.social-links
 xrite.com,pchela.news,mrsgreenapple.com,siecledigital.fr,riotgames.com,vk.sportsbull.jp,alfalfalfa.com,kto-chto-gde.ru,prozoro.net.ua,focus.ua,skysports.com,vice.com,sovsport.ru##.social-list
 idnes.cz##.social-list-bubble
 imhonet.ru##.social-net
