@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
 [Adblock Plus 1.1]
-! Checksum: 63RVsLtoYq7GuFfkbSLI2A
-! Version: 202505030551
+! Checksum: 3IPTK0j/RUqSy1DgbA5kTQ
+! Version: 202505031151
 ! Title: EasyPrivacy
-! Last modified: 03 May 2025 05:51 UTC
+! Last modified: 03 May 2025 11:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -350,6 +350,7 @@
 /api/track?guid
 /api/trk?
 /api/v1/EndpointTracker
+/api/v1/firehose/batch
 /api/v1/firehose?_
 /api/v1/metrics
 /api/v1/reportData/*
@@ -7199,6 +7200,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bumlam.com^$third-party
 ||checkru.net^$third-party
 ||cityua.net^$third-party
+||click.ru^$third-party
 ||clubcollector.com^$third-party
 ||cnstats.ru^$third-party
 ||comagic.ru^$third-party
@@ -13043,6 +13045,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||trackr.vivenu.com^
 ||tradingview-widget.com/static/bundles/embed/snowplow-embed-widget-tracker.$script
 ||tradingview.com/ping
+||traveloka.com/api/v1/tvlk/events
 ||trck.coomeet.com^
 ||trckng.dainese.com^
 ||trcksplt.miro.com^
@@ -51801,7 +51804,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 !! browser.sentry-cdn.com
 @@||browser.sentry-cdn.com^$domain=acustica-audio.com|alphaxiv.org|dic.pixiv.net|doconcall.com.my|eco-clobber.co.uk|fundhero.io|marshmallow-qa.com|menshealth.com|ocado.com|podcasty.seznam.cz|roomster.com|shop.dns-net.de|spacemarket.com|timesprime.com|vivareal.com.br|womenshealthmag.com
 !! ||assets.adobedtm.com/extensions/*/AppMeasurement.min.js
-@@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=nbc.com|subwy.com|tatamotors.com|usanetwork.com
+@@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=identity.healthsafe-id.com|nbc.com|subwy.com|tatamotors.com|usanetwork.com
 !! ||assets.adobedtm.com/extensions/*/AppMeasurement* (general)
 ||assets.adobedtm.com/extensions/*/AppMeasurement$script,domain=medscape.com
 !! adobedtm.com^*/satelliteLib-
