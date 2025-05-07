@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: 2G81QdSWN4FBlt4l7Sg//Q
-! Diff-Path: ../patches/14/14-s-1746581964-3600.patch
+! Checksum: pHDlVqkLPKBJIS7+9Nnn3w
+! Diff-Path: ../patches/14/14-s-1746616271-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.29.44
-! TimeUpdated: 2025-05-07T01:35:21+00:00
+! Version: 2.2.29.49
+! TimeUpdated: 2025-05-07T11:07:01+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2507,6 +2507,10 @@ scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfilme.de,pk.edu.pl
 !
 ! NOTE: Regular rules
 !
+m24.ru##.b-cookies-window
+bristol.ru##.cookie-popover
+motostacja.com##div[x-data*="consentModal"]
+rkf.online##.cookie-modal
 aliexpress.ru##div[class^="SnowPrivacyPolicyBanner_"]
 ||default.beam-emea.prd.api.max.com/legal/*/consentExperience?
 lio-trafic-occitanie.fr##.cdk-overlay-container > div.cdk-overlay-backdrop-showing
@@ -2588,7 +2592,7 @@ namesilo.com#%#//scriptlet('trusted-set-cookie', 'cookies-consent', 'necessary%3
 cofra.it##div[class][style^="position:"]:has(> div.CookieConsent)
 x-kom.de#%#//scriptlet('trusted-click-element', '.pr-cookie-notice-actions > button#btn-cookie-allow', '!cookie:pr-cookie-consent-id', '1500')
 vprok.ru##.fo-cookies-policy
-116.ru,14.ru,161.ru,164.ru,173.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru##.wrapper_cw4px
+116.ru,14.ru,161.ru,164.ru,173.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#%#//scriptlet('set-local-storage-item', 'UMP_CONSENT_NOTIFICATION', 'true')
 ongeo.pl###cookie-banner-overlay
 geoportal-krajowy.pl#$#body { overflow-y: auto !important; }
 geoportal-krajowy.pl#$##cookie-consent { display: none !important; }
@@ -5339,7 +5343,7 @@ moneycontrol.com#$#body { overflow: auto !important; }
 secrid.com#%#//scriptlet('set-cookie', 'cookies', 'true')
 vente-unique.*,kauf-unique.at,kauf-unique.de###vu_consent
 maklerinmuenster.de,garten-bienen.at###privacyCtrl
-console-way.com,blachotrapez.eu,sklep-mietus.pl##.TsConsentWrapper
+golddrop.eu,console-way.com,blachotrapez.eu,sklep-mietus.pl##.TsConsentWrapper
 helmuzeum.pl,brandvital.eu,leclerc.pl###lmk_cookiebaner_container
 zeebiz.com##.cookieScreenOverlay
 ilmattino.it,leggo.it#$#html { overflow: auto !important; }
@@ -5754,7 +5758,7 @@ tango.me#?##root > div:has(> span:contains(uses cookies))
 kox-direct.de###wsModalAgreementPrivacy
 autodesk.*###adsk-gdpr-footer-wrapper
 shop.elsevier.com#?##__next > div[class*=" "] > div[style]:has(> div > div > p[class] > a[href="https://www.elsevier.com/legal/cookienotice"])
-jrt.co.jp,fbc.jp,fct.co.jp,teny.co.jp,fmf.co.jp###gdpr_c
+rkc-kochi.co.jp,jrt.co.jp,fbc.jp,fct.co.jp,teny.co.jp,fmf.co.jp###gdpr_c
 ||service-cmp.com/config?js$domain=megogo.net
 vessoft.com##div[id^="cookie_ok_"]
 ||tokyometro.jp/library/common/js/jquery.cookie.js
@@ -14267,7 +14271,7 @@ arcanagis.pl##.cookie__consent
 pcloud.link,pcloud.com##.cookie_consent_holder
 karnaval.com##.cookie_message_container
 nutella.com##.cookie_msg
-spessart-klinik.de,hipenpal.com,scouter.de##.cookienotice
+vedur.is,spessart-klinik.de,hipenpal.com,scouter.de##.cookienotice
 neuca.pl,aptekarski.com,swiatzdrowia.pl,komandacard.ru,mitele.es,mrfdev.com##.cookies-consent
 discountreactor.com,promkod.ru##.cookies-mass
 ufi.org,xmind.app,linex.ru,xmind.net,moiglaza.ru##.cookies-prompt
@@ -21381,7 +21385,7 @@ mail.yandex.*#%#//scriptlet('json-prune', 'seatbid rtb')
 !
 ! Yandex.Search
 ! Main page under the search bar
-ya.ru##.body__content > aside.content__informers-bg + div[style]:has(> style)
+ya.ru##aside[class="informers3"] ~ div[class][style]:has(> div > div[style] > div[style^="background-image"] ~ a[target="_blank"])
 ! the ad is on the right side, which is mostly non-reproducible
 [$path=/search]ya.ru,yandex.*#%#//scriptlet('remove-node-text', 'script', '/^window\.Ya.*pcodeParams.*renderTo/')
 !
@@ -23080,6 +23084,7 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! Do not forget about '!#safari_cb_affinity' section for exclusions:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#general
 !
+elektroda.de,elektroda.com,elektroda.pl#%#//scriptlet('prevent-setTimeout', 'adBlockElement')
 apps.dirittopratico.it##div[class^="apprise"]
 ||cdn.snigelweb.com/adengine/civitai.com/loader.js$domain=civitai.com,redirect=noopjs
 civitai.com##div[id][class*="box-content"]:empty
@@ -25791,6 +25796,8 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+bristol.ru##.SmartCaptcha-Overlay
+bristol.ru##.SmartCaptcha-Shield_position_bottom
 imdb.com#%#//scriptlet('set-local-storage-item', 'videopage_autoplay_policy_tooltip_dismissed', 'true')
 snapedit.app###modal-landscape
 web-design.academy#$#.popup-webinar { display: none !important; }
@@ -34480,6 +34487,8 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+ren.tv##div[class*="socialButtonsWrapper_"]
+gogov.ru##.main-post-subscribe
 news18.com##.follow_google_news
 podpisnie.ru##.main-sbs-box
 100biografiy.ru##.webnavoz_notificationbox
@@ -36918,7 +36927,7 @@ app.getbeamer.com##div.notificationsPrompt
 rustica.fr#?##insidedroite > div.mb-3:has(> form.inscription-nl)
 businessinsider.com,insider.com##.homepage-newsletter-module
 ground.news#?#body div.react-responsive-modal-overlay:has(> div.react-responsive-modal-modal > div.relative > div[class^="gap-"] > a#LSF-popup-cta-fathersDay23)
-dw.com##.content-area .render-container:has(> .dw-widget > [src$="/61300799"][src^="/webapi/iframes/widget/"])
+dw.com##.content-area .render-container:has(> .dw-widget > [src^="/webapi/iframes/widget/"])
 my1035.com,xlcountry.com,kyssfm.com#?#section.bottom-components > div.modals:has(div.newsletter-overlay)
 fanday.net##.g-news-link
 zmina.info##.article_controls > a.subcribe
@@ -42498,6 +42507,8 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+bristol.ru##.first-order-modal
+raycast.com##div[class^="GlobalBanner"]
 m.imdb.com##.imdb-header__app-button
 doordash.com##a[data-testid="openAppButton"]
 doordash.com##div[class]:has(> div[data-testid="appDownload"]:first-child + button[data-testid="appDownloadButton"]:last-child)
@@ -49614,6 +49625,10 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+bristol.ru##.corporative-banner
+koreatimes.co.kr##div[class^="MyTimesBanner_wrap"]
+koreatimes.co.kr##section[class^="MyTimes_my-times"]
+koreatimes.co.kr##div[class^="BannerArea"]
 flaticon.com###banner-craft
 flaticon.com##.detail__download-confirmation
 123pan.com#%#//scriptlet('remove-attr', 'style', '.appdiv > div.webbody[style^="background-image:"]')
@@ -54701,6 +54716,10 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 ! SECTION: Tweaks - JS
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/204557
+datanodes.to#%#//scriptlet('adjust-setTimeout', '/downloadForm|seconds--/', '*', '0.001')
+! https://github.com/AdguardTeam/AdguardFilters/issues/204724
+romsfun.me#%#//scriptlet('adjust-setTimeout', 'download', '*', '0.001')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204546
 megaup.net#%#//scriptlet('adjust-setInterval', '/display\(\)|btnDownload/', '*', '0.001')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204332

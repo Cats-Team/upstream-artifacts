@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: HjuEgSV/hv50914HJf2YvQ
-! Diff-Path: ../patches/4/4-s-1746581966-3600.patch
+! Checksum: KMPAYOF7bzJrYOx9lbQiBQ
+! Diff-Path: ../patches/4/4-s-1746616274-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.14.24
-! TimeUpdated: 2025-05-07T01:35:02+00:00
+! Version: 2.1.14.29
+! TimeUpdated: 2025-05-07T11:06:35+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,7 +676,11 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+9to5linux.com##article > div[class^="9to5-linux-social bm-social-top"]
+facebook.com##._8_qt
+mash.ru##div[class^="styles_share_"]
 otakuusamagazine.com###geekmag-go-to-share
+otakuusamagazine.com###geekmag-share-buttons
 fuwanovel.moe##.single-post-share
 litres.ru##div[aria-modal][aria-label="Поделиться"] > div[class^="Modal_content__header"] > h3
 litres.ru##div[aria-modal][aria-label="Поделиться"] div[class^="Sharing_social-title_"]
@@ -1688,7 +1692,6 @@ ameba.jp##section[class^="ChoiceArticleShare_"]
 tv-asahi.co.jp###open-share-modal-btn
 vook.vc##.note-share-sns
 vook.vc##.note-header-info-share-sns
-klerk.ru,blog.domclick.ru##button[aria-label="Поделиться"]
 interactive.libsyn.com##.container > div.alert:has(ul.social-list)
 jpost.com#%#//scriptlet('remove-in-shadow-dom', 'span[class^="Menu__menuButtonContainer"]')
 jpost.com#%#//scriptlet('remove-in-shadow-dom', 'div[class*="VoteButtons"] + span[class$="index__dot"]')
@@ -2771,7 +2774,6 @@ appbu.jp##.share-box-bottom
 newscientist.com##.ArticleHeader__SocialWrapper
 fakazahiphop.com###block-8
 ibahia.com##.ib-shareFlutuante
-haberturk.com##.widget-share
 snopes.com##.social_total
 ||m.mimint.co.kr/img/btn_sns.png
 shueisha.co.jp##.cover__share
@@ -5549,7 +5551,7 @@ girlstyle.com,thecatcity.com,urbanlifehk.com##.desktop-sidebar__block--fb
 dlsite.com##.link_share
 mixdrop.*##.s-wrapper
 asahi.com##.following-sns
-wink.ru##button[aria-label="Поделиться"]
+shot-news.ru,klerk.ru,blog.domclick.ru,wink.ru##button[aria-label="Поделиться"]
 livejapan.com##.--color-sociel
 cosmo.ru##.test-result__share
 internet-technologies.ru##.field-id-share
@@ -9050,7 +9052,7 @@ mforos.com,miarroba.com###miarrobaShareBox
 mforos.com##.tb_facebook_button
 miarroba.com##.fbconnect
 businessinsider.com##.flipboard
-kinsta.com,bombardir.ru##.widget-share
+redis.io,haberturk.com,kinsta.com,bombardir.ru##.widget-share
 dayoga.ru##.bottom-social-bar
 dayoga.ru##.footer-social-groups
 zycie.pl,technosova.ru,u.today##.share__social
@@ -11562,7 +11564,7 @@ uber.com,hackr.io,last.fm##.share-footer
 furfur.me,wonderzine.com##.share-images
 economist.com##.share-inline-footer-reddit
 40407.com,golem.de,musescore.com,skidkaonline.ru##.share-item:not(.comments)
-bigbangnews.com##.share-me
+romaniatv.net,bigbangnews.com##.share-me
 vulture.com##.share-mini
 grammarly.com##.share-more-wrap
 css-tricks.com##.share-on-link
@@ -15003,6 +15005,9 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/204699
+rkf.online#%#//scriptlet('set-constant', 'Ya', 'emptyObj')
+rkf.online#%#//scriptlet('set-constant', 'Ya.share2', 'noopFunc')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204664
 @@||scotusblog.com/_static/??/wp-content/themes/*/public/assets/app.css,/wp-content/plugins/add-to-any/addtoany.min.css
 ! https://github.com/AdguardTeam/AdguardFilters/issues/203945
