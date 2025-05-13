@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: ZbqKhaFESqtwg7cbJ/Q9gg
-! Diff-Path: ../patches/4/4-s-1747127556-3600.patch
+! Checksum: 32n34C/qbwWc51iIwL1bLw
+! Diff-Path: ../patches/4/4-s-1747149136-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.14.46
-! TimeUpdated: 2025-05-13T09:07:42+00:00
+! Version: 2.1.14.50
+! TimeUpdated: 2025-05-13T15:06:55+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,7 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+matadorbettv50.com,joybet114.cam,betmoneytv80.live,bahisnowtv297.com##.nk-post-share > div[style^="margin-left:"]
 dot.asahi.com##.article-share-list
 bookplus.nikkei.com##.shareModalOpenButton
 russkiymir.ru##.ul_socials_2
@@ -6447,7 +6448,7 @@ elpais.com##a[id^="PlayerSharevideo_"]
 elpais.com##[id^="btn_share_otros_"]
 expres.online##.pull-right > div.social
 konhaber.com,belge.com.tr##.sosyalMedya
-wiadomoscikosmetyczne.pl,halowies.pl,tygodnik-rolniczy.pl,tsum.ru##.item__share
+hnonline.sk,wiadomoscikosmetyczne.pl,halowies.pl,tygodnik-rolniczy.pl,tsum.ru##.item__share
 english.newstracklive.com##.socail-share
 pussyspace.*##.socialShare
 brandastic.com##.blog-banner-container
@@ -11711,7 +11712,7 @@ m.focus.de##.social_sticky
 gamer.ru##.social_vk
 m.timesofindia.com##.socialcont
 wn.de##.socialmedia_article_linkbox
-diez.hn,footboom.com,bashinform.ru,archive.vanityfair.com,tubefilter.com,101.ru,glavcom.ua,javhdx.tv##body .socials
+12punto.com.tr,diez.hn,footboom.com,bashinform.ru,archive.vanityfair.com,tubefilter.com,101.ru,glavcom.ua,javhdx.tv##body .socials
 igate.com.ua,kommersant.ru##.socials-link
 familyhandyman.com##.socialshare
 f1comp.ru##.socikonki
@@ -11979,7 +11980,6 @@ forum.eset.com,forums.laptopvideo2go.com,hackintosh.zone##ul[data-controller="co
 ||s.hurriyet.com.tr/static/scripts/socialApi/scripts/sosyal.widget
 ||s1.softpedia-static.com/base_img/tweetn.png
 ||satsis.ru/img/share.js
-||seasonvar.ru/js/b_script.js
 ||share.baidu.com^$third-party
 ||sletat.ru/Services/SletatCounter.ashx
 ||sol-online.ru/art/
