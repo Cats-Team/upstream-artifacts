@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: yWzmgNeoPw18R9cVnTvi2g
-! Diff-Path: ../patches/11/11-s-1747149132-3600.patch
+! Checksum: 6j+PHTIoktPyeidFxvs67w
+! Diff-Path: ../patches/11/11-s-1747199500-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.60.69
-! TimeUpdated: 2025-05-13T15:07:14+00:00
+! Version: 2.0.60.72
+! TimeUpdated: 2025-05-14T05:07:31+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2619,6 +2619,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+babesource.tv#$#.block-player { padding-top: 0 !important; }
+op.gg##div[style^="display:"]:has(> div[data-id="mobile_banner"])
+op.gg##div[style^="display:"]:has(> div[data-id="mpu"])
+lifunas.com##aside.ad.pb20
 tupaki.com##.navbar-right:has(> div#header_ad_1)
 wap.xuanyge.org###strl > b
 sponichi.co.jp#$#footer > div[style]:has(> div > iframe#iframe_mediachat_1) { margin-bottom: 30px !important; }
@@ -4821,7 +4825,7 @@ news.milli.az##.quiz-holder > div[style^="margin: 15px"] > .hidden-lg
 carview.yahoo.co.jp##.posNM
 glosbe.com###tb__cont__2
 wz.de##aside[data-portal-id="banner"]
-hentaizap.com,hentairox.com,imhentai.xxx,hentaifox.com,hentaiera.com##.bblocktop
+hentaienvy.com,hentaizap.com,hentairox.com,imhentai.xxx,hentaifox.com,hentaiera.com##.bblocktop
 topics.smt.docomo.ne.jp##.ad_middle05
 fc1adult.com##div[style="height: 500px; overflow: hidden; margin-bottom: 20px;"]
 cojicaji.jp##.dfp-cci-rectangle-wrapper
