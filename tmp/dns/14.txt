@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: FlZitPAGOt1XdZMwQmnSYg
-! Diff-Path: ../patches/14/14-s-1747249855-3600.patch
+! Checksum: PKCNB5dVkRc+dX/zMo+cNw
+! Diff-Path: ../patches/14/14-s-1747285900-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.30.35
-! TimeUpdated: 2025-05-14T19:06:51+00:00
+! Version: 2.2.30.40
+! TimeUpdated: 2025-05-15T05:07:44+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2507,6 +2507,11 @@ scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfilme.de,pk.edu.pl
 !
 ! NOTE: Regular rules
 !
+x-kom.de#%#//scriptlet('trusted-set-cookie', 'pr-cookie-consent', '[%22necessary%22]')
+healf.com###cc-main
+healf.com#%#//scriptlet('set-local-storage-item', 'cookie-banner-accepted', 'true')
+healf.com#%#//scriptlet('trusted-set-local-storage-item', 'cookie-banner-preferences', '{"necessary":true,"performance":false,"functional":true,"targeting":false}')
+monkeytype.com#%#//scriptlet('trusted-set-local-storage-item', 'acceptedCookies', '{"security":true,"analytics":false,"sentry":false}')
 vide-greniers.org#%#//scriptlet('trusted-click-element', '.cmp-msg-accept, #accept-btn')
 tutu.ru##div[data-ti="disclaimer_wrapper"]
 helse-bergen.no,helseplattformen.no##div[class*="cookieconsent-banner"]
@@ -3788,7 +3793,7 @@ ccaa.com.br###banner-footer-lgpd
 suspilne.media##.cookies-popup-suspilne
 drweb.ru#%#//scriptlet('trusted-set-cookie', 'SwIt_msg_cookies', '%22accepted%22')
 retouch4.me##div[class*="CookieConsentBanner"]
-developers.oxylabs.io,docs.edgeimpulse.com,opencollective.com,help.quantower.com,docs.nexthink.com##div[data-testid="cookies-dialog"]
+docs.usetrmnl.com,developers.oxylabs.io,docs.edgeimpulse.com,opencollective.com,help.quantower.com,docs.nexthink.com##div[data-testid="cookies-dialog"]
 canva.com##body > div[style^="z-index:"]:has(p > span > a[href*="cookie"])
 super.ru#%#//scriptlet('set-cookie', '_super_privacy_accepted', 'true')
 mixcloud.com##div[class*="CookieWarning__"]
@@ -5135,8 +5140,8 @@ bandwerk.com,goelds.de#$?##gdpr-blocking-page-overlay { display: none !important
 bandwerk.com,goelds.de#$#.cc-scrolling-disabled { overflow: auto !important; }
 flowwow.com##.el-card.notification
 tjmt.jus.br###tjmtCookies-banner
-mcdonalds.pl#$#.cookies { display: none !important; }
-mcdonalds.pl#$#html > body:not(#style_important) { overflow: auto !important; position: static !important; }
+niedziela.pl,mcdonalds.pl#$#.cookies { display: none !important; }
+niedziela.pl,mcdonalds.pl#$#html > body:not(#style_important) { overflow: auto !important; position: static !important; }
 ionmobile.es###cookie_box ~ div.modal-backdrop
 pixivision.net#%#//scriptlet('set-cookie-reload', 'privacy_policy_agreement', '6')
 dockyard.hu###cookie_accept_container
@@ -13868,7 +13873,7 @@ tekzen.com.tr##.ins-content-wrapper > .ins-notification-content:not(.boostKeyfra
 reverb.com##.intl-settings-nag
 mediaexpert.pl#$#.is-cookies { display: none !important; }
 mediaexpert.pl#$#body.is-bodyScrollDisabled { overflow: visible !important; }
-kross.eu,electro.pl,ccc.eu##.is-cookies
+terra.com.br,kross.eu,electro.pl,ccc.eu##.is-cookies
 akg-images.com,tetrisfriends.com##.iziToast-wrapper
 sierratradingpost.com##.js-acceptCookieDiv
 duckduckgo.com##.js-badge-cookie-msg
@@ -21791,6 +21796,7 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#@#.Sid
 !
 ! NOTE: Add without $third-party, so apps are blocking them too
 !
+||bawdybalance.com^
 ||digithalo.com^
 ||shinypond.com^
 ||bahamashello.com^
@@ -34574,6 +34580,11 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+niedziela.pl##article > .p-half:has(> p > a.btn[href="/wsparcie"])
+niedziela.pl##.px-main > .p-half:has(> p > a.btn[href="https://www.niedziela.pl/newsletter"])
+niedziela.pl##.modal-backdrop
+niedziela.pl###exitIntentModal
+niedziela.pl###entranceModal
 stlpr.org##iframe[src^="https://app.e2ma.net/app2/audience/signup/"]
 sourcegraph.com##.sidebar2_menu-bottom > div.sidebar2_card:has(> div.w-embed > div.hbspt-form)
 flatheadbeacon.com##.beacon-footer-newsletter-wrapper
@@ -42631,6 +42642,8 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+10minutesemail.net##main.tm-drax-content > div[style^="display:"]
+temporary-mail.net###mobile-app-banner
 terabox.com##.video-btn-download
 scheels.com#?#.font-bold:contains(Download Our App)
 scheels.com##a[href*="/app"]
