@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 3PSfMquXXaWRaM7S3wWwwA
-! Diff-Path: ../patches/4/4-s-1747296854-3600.patch
+! Checksum: HV4CkUz5M2JUpZU6R0YXqg
+! Diff-Path: ../patches/4/4-s-1747390309-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.14.59
-! TimeUpdated: 2025-05-15T08:09:25+00:00
+! Version: 2.1.14.63
+! TimeUpdated: 2025-05-16T10:07:31+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -676,6 +676,12 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+jacionline.org###article_tools_share
+wibes.ru##div[data-headlessui-state]:has(> div > button svg > path[d^="m14.554"])
+wibes.ru##div[data-headlessui-state]:has(> div > button > span:contains(Поделиться))
+hrw.org##.hrw-share
+sonhaber.eu##.social-buttons:has(> a[title*="Paylaş"])
+sonhaber.eu##div > p:has(> em > strong > a[href*="www.instagram.com/"])
 freiepresse.de##div[data-controller="share_button"]
 stlpr.org##.ArtP-actions
 soundcloud.com##.sc-button-share
@@ -10914,7 +10920,7 @@ developer.samsung.com##a[id^="rs_send_"]
 garten.de##h2.pane-title:first-of-type
 androidcentral.com,crackberry.com,imore.com,teslacentral.com,vrheads.com,windowscentral.com##.mn_mbn_share
 donanimhaber.com##.lnk-paylas.google
-enterprisezine.jp,astv.ru,dp.ru,metanit.com,gorod48.ru##.socialBlock
+studying.jp,enterprisezine.jp,astv.ru,dp.ru,metanit.com,gorod48.ru##.socialBlock
 paperpaper.*##.r-likes-wrapper
 uip.me##.post-share > div.show
 gamesofdesire.com###addthis_sharing_toolbox
