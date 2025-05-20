@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: FMKsEejxpX2SlgZiWH5FWg
-! Diff-Path: ../patches/11/11-s-1747714423-3600.patch
+! Checksum: Ps8hKzznpNi+h7joMQ3UCQ
+! Diff-Path: ../patches/11/11-s-1747735922-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.60.88
-! TimeUpdated: 2025-05-20T04:09:14+00:00
+! Version: 2.0.60.90
+! TimeUpdated: 2025-05-20T10:07:43+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -297,7 +297,7 @@
 ||stream.spongead.com^
 ||naverpa-phinf.pstatic.net^
 ||tivan.naver.com^
-||veta.naver.com^
+||veta.naver.com^$domain=~chzzk.naver.com
 ||ir-new-cdn-eu-west-*-hb.rayjump.com^
 ||leadc6.icu^
 ||pangolin16.sgsnssdk.com^
@@ -2619,6 +2619,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+milffox.com##.mobile_top_ads
+milffox.com###side_content > div.header.red
 makemytrip.com##.landingContainer > .makeFlex:has(> div[class^="adtech"])
 trakt.tv##.add-bottom
 autoevolution.com###swipebox-slider > div.slide.slide-nospin
