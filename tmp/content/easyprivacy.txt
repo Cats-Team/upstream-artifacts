@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
 [Adblock Plus 1.1]
-! Checksum: 54Xx4SuwLBlkSwlgsfIu9Q
-! Version: 202505221151
+! Checksum: N796AUETzELebaurXAMhLA
+! Version: 202505221751
 ! Title: EasyPrivacy
-! Last modified: 22 May 2025 11:51 UTC
+! Last modified: 22 May 2025 17:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2029,6 +2029,7 @@
 /server/detect.php?
 /service/track?
 /services/pixel.html?
+/services/t/l?referrer=
 /servlet/Cookie?
 /session-tracker/tracking-
 /session/preparecookies?$domain=~mirapodo.de|~mytoys.de|~yomonda.de
@@ -2076,6 +2077,7 @@
 /sitestats.gif?
 /sitetrek.js
 /skype-analytics.js
+/sLT_bEhAvIoR_aNaLySiS/*$xmlhttprequest
 /sluurpy_track.js
 /smart-pixel.min.js
 /smartpixel-1.js
@@ -2804,6 +2806,7 @@
 ://posthog.$script,domain=~posthog.com
 ://segment-api.
 ://segment-cdn.
+://stats.*/code/e.js
 ://t.targito.
 ://track.*/collect
 ://track.*/dye
@@ -6949,6 +6952,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||0stats.com^$third-party
 ||24log.it^$third-party
 ||accessi.it^$third-party
+||brevo.com^$third-party
 ||buzzoole.com^$third-party
 ||contatoreaccessi.com^$third-party
 ||cpmktg.com^$third-party
@@ -6995,6 +6999,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||webmobile.ws^$third-party
 ||websanalytic.com^$third-party
 ||whoseesyou.com^$third-party
+||yodalytics.com^$third-party
 ! Japanese
 ||accaii.com^$third-party
 ||accesstrade.net^$third-party
@@ -10466,6 +10471,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||hbx.df-srv.de^
 ||hittracker.org/count.php
 ||hittracker.org/counter.php
+||hotelstatic.com/collect
+||hotelstatic.com/perf
 ||house27.ch/counter/
 ||hyteck.de/count.js
 ||hyvyd.com/count$image,domain=mobile.de
@@ -10938,6 +10945,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||eage.it/count2.php?
 ||eventsink.api.redbee.live^
 ||evnt.iol.it^
+||fa5.dn4.it^
 ||fb_servpub-a.akamaihd.net^
 ||galada.it/omnitag/
 ||gazzettaobjects.it^*/tracking/
@@ -11249,6 +11257,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics-coletor-site.ojc.com.br^
 ||analytics-stamp.confi.com.vc^
 ||analytics.spun.com.br^
+||arena.im/v2/collect
 ||b2w.io/event/
 ||biggylabs.com.br/track-api/v2/track/site?
 ||collect.chaordicsystems.com^
@@ -50910,7 +50919,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||sst.colemanfurniture.com^
 ||stats.splinder.com^
 ||stats.stylight.it^
-||stats.suedtirolerjobs.it^
 ||t.mediaset.it^
 ||tantifilm.top^*/ping
 ||timinternet.it/timmobilestatic/img/*.gif?
