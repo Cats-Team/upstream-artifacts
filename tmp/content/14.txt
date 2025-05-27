@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: PRUS+PawpwnzPnaaCNA4uA
-! Diff-Path: ../patches/14/14-s-1748344291-3600.patch
+! Checksum: BgvxXrmcvgRYHrtoJZMabg
+! Diff-Path: ../patches/14/14-s-1748365932-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.31.50
-! TimeUpdated: 2025-05-27T11:07:03+00:00
+! Version: 2.2.31.55
+! TimeUpdated: 2025-05-27T17:07:04+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2511,6 +2511,7 @@ teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfil
 !
 ! NOTE: Regular rules
 !
+philips.pl#%#//scriptlet('set-constant', 'philips.tracking.consent.isAllowedFunctional', 'trueFunc')
 kamera-express.de##.cookie-modal-outer-container
 kamera-express.de##.advice-newsletter
 blutspendedienst.com#%#//scriptlet('trusted-click-element', '.cookiefirst-root button[data-cookiefirst-action="accept"]', '!cookie:cookiefirst-consent')
@@ -3186,8 +3187,8 @@ galaxus.de##div[class^="cookieBanner"]
 tama.com###header-gdpr
 nic.ru###inform-notification
 theprotocol.it#%#//scriptlet('trusted-click-element', 'button[data-test="button-acceptAll"]', '', '1000')
-iiyama-eshop.cz,iiyama-eshop.ro,iiyama-eshop.sk,iiyama-sklep.pl,spawtech.pl#$#.x13eucookies { display: none !important; }
-iiyama-eshop.cz,iiyama-eshop.ro,iiyama-eshop.sk,iiyama-sklep.pl,spawtech.pl#$#.x13eucookies-block:not(#style_important) { overflow: auto !important; }
+skiteam.pl,meblujdom.pl,lanto.pl,iiyama-eshop.cz,iiyama-eshop.ro,iiyama-eshop.sk,iiyama-sklep.pl,spawtech.pl#$#.x13eucookies { display: none !important; }
+skiteam.pl,meblujdom.pl,lanto.pl,iiyama-eshop.cz,iiyama-eshop.ro,iiyama-eshop.sk,iiyama-sklep.pl,spawtech.pl#$#.x13eucookies-block:not(#style_important) { overflow: auto !important; }
 infoldgames.com##div[class^="CookieTips_"]
 mightyjaxx.com##div[data-testid="modal-cookies"]
 warta.pl#$#.modal-backdrop { display: none !important; }
@@ -21846,6 +21847,8 @@ howtogeek.com#%#//scriptlet('prevent-element-src-loading', 'script', 'nebulousga
 ##body div.bOvWNQ
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204353
 ||storage.googleapis.com/ta3-ad-script/
+! Common rule [27.05.2025]
+/ModalEngage|$third-party,script
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176079
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153163
@@ -21887,6 +21890,10 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#@#.Sid
 !
 ! NOTE: Add without $third-party, so apps are blocking them too
 !
+||thefishstops.com^
+||themepicker.com^
+||cartelsalsa.com^
+||precisear.com^
 ||zipthelake.com^
 ||subseaagent.com^
 ||soilcontent.com^
@@ -25975,6 +25982,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+sleazyneasy.com###pre-block
 cityheaven.net###js-floatingbanner
 callibri.ru##callibri-popup-bg
 callibri.ru##callibri-popup-window
@@ -33413,6 +33421,7 @@ labs.google.com#@##google-hats-survey
 .name/?pus=$script,third-party
 .site/?pus=$script,third-party
 !
+||cdn.pushloop.io^$third-party
 ||d335luupugsy2.cloudfront.net^
 ||kuolkoola.com^
 ||puhyjyf.com^
@@ -34707,6 +34716,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+tecnoandroid.it###google-news-banner
 turkiyetoday.com##.signupnowMain-container
 paulaschoice.com##div[class*="SignUpModalstyles__StickyTag"]
 paulaschoice.com##div[class^="AppContentstyles"] ~ div > div[class^="Modalstyles"]:has(div[class*="SignUpModalstyles__StyledModal"])
@@ -42390,7 +42400,7 @@ eusouandroid.co##.td-ss-main-sidebar .sfm_widget_sec
 t-online.de##.teaser-cr-subscribe
 brigitte.de##.teaserNewsletter
 wunderweib.de##.teaser_html
-spravochnick.ru,ru.beincrypto.com,charter97.org,regnum.ru##.telegram-banner
+tecnoandroid.it,spravochnick.ru,ru.beincrypto.com,charter97.org,regnum.ru##.telegram-banner
 bitgid.com##.telegram-long
 yurasumy.livejournal.com##.telegram-userpromo
 gazeta.ru##.telegram_info
@@ -42577,7 +42587,7 @@ metaratings.ru,metaratings.by,metarating.com.ua,meta-ratings.kz##div[class^="Sub
 telecomasia.net,meta.reviews##.subscription
 !
 ! Google Revenue Manager
-||news.google.com/swg/js/v1/swg-basic.js$domain=ilenta.com|studentwalker.com|turkiyegazetesi.com.tr|tv3.lt|roboin.io|iha.com.tr|premierguitar.com
+||news.google.com/swg/js/v1/swg-basic.js$domain=ilenta.com|studentwalker.com|turkiyegazetesi.com.tr|tv3.lt|roboin.io|iha.com.tr|premierguitar.com|tecnoandroid.it
 !
 ! Progorod
 gorodkirov.ru,navigator-kirov.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru##div[class^="social-list-subscribe_"]
@@ -42819,6 +42829,9 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+singlecare.com##.stickyAppPromoBanner
+goodrx.com##div[data-qa="smart-banner"]
+substack.com#?#.pencraft > button:contains(/^Get (the )?app$/)
 op.gg##.items-center > div.flex:has(> div.text-center > a[href^="https://itunes.apple.com/"])
 shoebacca.com##div[id^="smsbump-form"]:has(div[aria-label="Shoebacca subscribe offer"])
 golove.ai##section[aria-label^="Notifications"] + .inset-0:has(> .w-full > .w-full #react-qrcode-logo)
@@ -43165,7 +43178,6 @@ i879.com###app-footerbnr
 millipiyangoonline.com##.freetext:has( > .tab-container a[href="/uygulamayi-indir"])
 patreon.com#%#//scriptlet('set-local-storage-item', 'desktopAppBannerDismissed', 'true')
 sodapdf.com###mac-popup
-memurlar.net##article > div[class]:has(> a[target="_app"])
 m.twitch.tv###root > div[class] > div[class]:not(.consent-banner) > div[class]:has( div[class] > a[href*="app"])
 benzinga.com###__next > div[class^="sc-"]:has(> a[href^="https://play.google.com/store/apps/details?id=com.benzinga.app"])
 gidadedektifi.com##div[class^="_slug__mobileAppAds__"]
@@ -43949,7 +43961,7 @@ inyourarea.co.uk##.post-box
 youku.com##.callEnd_fixed_box
 ali213.net##.appjctj
 steuerbot.com#?#div[class^="_"]:has(> a[href^="https://play.google.com/"] + a[href^="https://app.steuerbot.com"])
-memurlar.net#?#article > div[class="txt:center"]:has(> a[href="https://play.google.com/store/apps/details?id=net.memurlar"])
+memurlar.net##article > div[class="txt:center"]:has(> a[href="https://play.google.com/store/apps/details?id=net.memurlar"])
 shufuse.com##div[class^="footer-app-promo"]
 sofabold.dk##.AppStoreRight
 xinhuanet.com##.xwApp
@@ -46235,6 +46247,8 @@ wear.jp#%#//scriptlet('trusted-set-session-storage-item', 'status_of_app_redirec
 !
 ! Misc rules, removed during optimization. If some rules are in groups, no need to move them here
 !
+!+ NOT_OPTIMIZED
+memurlar.net##article > div[class]:has(> a[target="_app"])
 !+ NOT_OPTIMIZED
 tokyo-sports.co.jp##.leafs-app-link-container
 !+ NOT_OPTIMIZED
@@ -50003,6 +50017,9 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+jicoo.com##.css-y0rq08
+jicoo.com##.css-1bwd1ol
+jicoo.com##.css-mmowx0
 shoebacca.com##.yotpo-widget-loyalty-floater-widget
 paulaschoice.com##.ju_overlay
 paulaschoice.com##.ju_Con[data-title*="Anniversary%20Sale%20Message"]
