@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: VhqBOeeFf2aG86cxcwrEeQ
-! Diff-Path: ../patches/4/4-s-1748877136-3600.patch
+! Checksum: XkTDoEkJ48p8L2VIvzbbsg
+! Diff-Path: ../patches/4/4-s-1748898704-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.15.29
-! TimeUpdated: 2025-06-02T15:07:32+00:00
+! Version: 2.1.15.31
+! TimeUpdated: 2025-06-02T21:07:10+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -699,7 +699,7 @@ b17.ru##div[class^="menu-blue-box"] > div[style] > div[style]:has(> .like_a[oncl
 ||apis.google.com/js/plusone.js
 sport-express.ru##.se-shareblock__buttons > .react-share__ShareButton
 groovetechnology.com##.groove_technology_sharing_container
-medium.com#?#.dw.ac > button.ag.ah.ai.fh.ak.al:contains(Share)
+medium.com##div[data-popper-placement] span[tabindex] + div:not([class]) > div[class] div[class] > span + button[class]
 alarabiya.net##.bottom-nav_share
 dgl.ru##.article-stat-share
 simka.kz##div[data-widget_type="raven-social-share.default"]
@@ -10376,7 +10376,7 @@ pixiz.com##.grooves > .twitter
 doctor.ndtv.com##.soclIcnsRsd
 doctor.ndtv.com##.social-widget2
 ndtv.com##div[class^="photogallery_share"]
-computerbild.de,autobild.de##.socialmedia
+weser-kurier.de,computerbild.de,autobild.de##.socialmedia
 autobild.de##.socialmediabox > .content
 10news.com,thedenverchannel.com##.layout--share__second
 linuxuprising.com,sabishiidesu.com##.share-box

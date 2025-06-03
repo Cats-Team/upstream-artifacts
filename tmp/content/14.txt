@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: RkSyrK7G/3j/x4q/+Rf0XA
-! Diff-Path: ../patches/14/14-s-1748884394-3600.patch
+! Checksum: uZX/yR+alrV3otoMG034Qg
+! Diff-Path: ../patches/14/14-s-1748902317-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.32.17
-! TimeUpdated: 2025-06-02T17:08:18+00:00
+! Version: 2.2.32.20
+! TimeUpdated: 2025-06-02T22:07:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2509,6 +2509,8 @@ teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfil
 !
 ! NOTE: Regular rules
 !
+lkz.de#%#//scriptlet('trusted-click-element', '#nfyc-plus-layer:not(.hidden) button[onclick="UC_UI.acceptAllConsents();"]', '', '1000')
+cam4.com##footer + div[class]:has(> div > div > a[href="/legal/cookies"])
 noon.com##div[class^="CookieConsentNotice_wrapper"]
 pdf-xchange.com##.cookie-fixed-hint
 solesavy.com##.u21-privacy-banner
@@ -17092,11 +17094,14 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/206765
+@@||usercentrics.eu^$domain=lkz.de
+! https://github.com/AdguardTeam/AdguardFilters/issues/206746
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206759
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206751
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206748
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206730
-@@||delivery.consentmanager.net/delivery/cmp.php$domain=nrz.de|braunschweiger-zeitung.de|waz.de|thueringer-allgemeine.de
+@@||delivery.consentmanager.net/delivery/cmp.php$domain=nrz.de|braunschweiger-zeitung.de|waz.de|thueringer-allgemeine.de|weser-kurier.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206424
 newpharma.fr,newpharma.be,newpharma.de,newpharma.nl,newpharma.at#@#.cookie-policy:not(body):not(html)
 newpharma.fr,newpharma.be,newpharma.de,newpharma.nl,newpharma.at#@#.js-cookie-policy
@@ -50057,6 +50062,7 @@ yandex.*##.meteum-promo
 [$path=/maps]yandex.*##.business-card-title-view__actions .button._view_advertisement
 !
 ! Yandex.Music
+music.yandex.*##div[class*="NavbarDesktopAnimatedPlusBar_root___"]
 music.yandex.*##section[aria-label="Баннер"]
 music.yandex.*#%#//scriptlet('trusted-click-element', 'div[role="dialog"][class*=" PaywallModal_root__"] button[class*=" PaywallModal_closeButton__"]')
 music.yandex.*##div[class^="player-bar_miniBrickContainer"] > div[data-name="MINI_BRICK"]
@@ -50107,6 +50113,7 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+lz.de###fb_werbeform
 visualcapitalist.com###block-8
 saechsische.de###piano-home-inline-saez
 dnn.de,landeszeitung.de#$#div[class^="PianoBanner"] { display: none !important }
