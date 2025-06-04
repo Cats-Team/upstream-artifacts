@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: 3Kv3MLsDf1iXfDz0d3uU6w
-! Diff-Path: ../patches/11/11-s-1748956873-3600.patch
+! Checksum: jD7mUV52zYZxKoUw/GGBfA
+! Diff-Path: ../patches/11/11-s-1749035471-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.61.24
-! TimeUpdated: 2025-06-03T13:16:53+00:00
+! Version: 2.0.61.28
+! TimeUpdated: 2025-06-04T11:06:35+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2621,6 +2621,13 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+livehindustan.com##div[class^="StoryPage_mstheadAdMob"]
+livemint.com##.btmMenu div[id^="parentBottomNavigationButton"]:has(img[src="https://www.livemint.com/lm-img/cdp/Storefront_Images/1745998905145.png"])
+2ch-n.net##.mx-auto:has(> div.feed-links) + div.fixed.bottom-0
+hindustantimes.com#$#@media (max-width: 768px) { .storyDetailpage { margin-top: 0 !important; } }
+bm.best-hit.tv#?#div[style*="display:"]:has(> ins.adsbygoogle)
+bm.best-hit.tv#?#div[style*="display:"]:has(> script + iframe[id][style^="width:300px"])
+ntvtelugu.com##.mobile_adsCont
 hentaicity.com##._1024plus
 mobile.bravoporn.com##.spnb
 news.yahoo.com##.stream-gam-ad
