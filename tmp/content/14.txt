@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: FMEfY+XhJrg4p/KF/Uzptw
-! Diff-Path: ../patches/14/14-s-1748992265-3600.patch
+! Checksum: djYT2SZLjGks+WxuARDfDQ
+! Diff-Path: ../patches/14/14-s-1749010573-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.32.37
-! TimeUpdated: 2025-06-03T23:07:08+00:00
+! Version: 2.2.32.39
+! TimeUpdated: 2025-06-04T04:12:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2510,6 +2510,8 @@ teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfil
 !
 ! NOTE: Regular rules
 !
+aihumanizer.ai,humbot.ai#$##cc-main { display: none !important; }
+aihumanizer.ai,humbot.ai#$#.disable--interaction { overflow: auto !important; }
 vktry.com###polaris-css-lockdown-container
 fusetter.com##div[class^="CookiePopup_"]
 horeca.com#$#.modal-consent { display: none !important; }
@@ -26028,6 +26030,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+ga.de##.parkTooltip
 diverto.tv##.digiteka_visible_video_title_active
 diverto.tv##.visible_player
 saechsische.de##div.tp-modal[style*="300050"]
@@ -46948,7 +46951,9 @@ agar.io#%#//scriptlet('remove-node-text', 'style', 'var(--bottom-banner-height)'
 hwupgrade.it###live-player
 ! https://github.com/AdguardTeam/AdguardFilters/issues/173398
 123telugu.com#%#//scriptlet('trusted-click-element', '.landinghead > a[href="https://www.123telugu.com/index.php"]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/206735
 ! https://ga.de/bonn/stadt-bonn/palaestinenser-fordern-absage-von-bonner-veranstaltung_aid-107495383
+ga.de##.js-article-content > div[data-cy="article-content"]:has(#glomexdiv)
 ||player.glomex.com^$domain=ga.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/172949
 mirror.xyz##div[class]:has(> div[class]:only-child > div[class]:first-child + form:last-child > div[class]:first-child > input[name="email"])
