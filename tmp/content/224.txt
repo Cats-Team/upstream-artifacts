@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: Kg+DR+dP6Gvot9lzyHoorw
-! Diff-Path: ../patches/224/224-s-1749165087-3600.patch
+! Checksum: ZR9ygu3NYv5dyQpkogj4AA
+! Diff-Path: ../patches/224/224-s-1749186723-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.38.39
-! TimeUpdated: 2025-06-05T23:07:41+00:00
+! Version: 2.1.38.42
+! TimeUpdated: 2025-06-06T05:08:11+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5155,6 +5155,14 @@ newduba.cn###jq_youxi
 ||1qfxm8hgqd.com^
 ||yiybmi.icu^
 ||uroz44gxhx.com^
+||hgo06060uyi.com^
+||uxfa.cn^
+||geqetreadyf.com^
+||jt01151knd.com^
+||tcdvvv.top^
+||rbqv91egxy.com^
+||mzarqhufj4.com^
+||hgo06061uyi.com^
 ||uteeo5018.com^
 ||yki9xpcuc.com^
 ||hgo06050uyi.com^
@@ -17873,7 +17881,7 @@ stock87.com##a[href^="http"]:not([href*="stock87."]) > img[src*="uploadfiles/ima
 hepuwang.com##a[href^="http://ad."]
 m.nownews.com##a[href^="http://ad1.nownews.com"]
 big5.china.com.cn##a[href^="http://big5.china.com.cn/gate/big5/"]:not([href*="/science."])
-chinaz.com,mydrivers.com,oschina.net##a[href^="http://click.aliyun.com/"]
+chinaz.com,mydrivers.com,oschina.net##a[href*="click.aliyun.com"]
 52che.com##a[href^="http://count.52che.com/goto.html?"]
 ithome.com##a[href^="http://e.cn.miaozhen."]
 hc360.com##a[href^="http://e.cn.miaozhen.com/"]
@@ -20862,6 +20870,7 @@ _rony.js$script,third-party
 ^niu0*jd.top/$script,xmlhttprequest,third-party
 .bgf0*lko.com/$script,xmlhttprequest,third-party
 .jkn0*loi.com/$script,xmlhttprequest,third-party
+.hgo0*uyi.com/$script,xmlhttprequest,third-party
 .fun/nd389.js
 .fun/In390hG2.js
 .pw/nd389.js
