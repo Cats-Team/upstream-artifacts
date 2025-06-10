@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: aPvqnNnyszmtSpJfG28Q1g
-! Diff-Path: ../patches/14/14-s-1749553882-3600.patch
+! Checksum: TjxFgkyoiiWKyTVsfngw3g
+! Diff-Path: ../patches/14/14-s-1749568314-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.33.1
-! TimeUpdated: 2025-06-10T11:07:07+00:00
+! Version: 2.2.33.5
+! TimeUpdated: 2025-06-10T15:07:40+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2508,6 +2508,7 @@ teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfil
 !
 ! NOTE: Regular rules
 !
+qrcodefacil.com##.MuiGrid-root > div[class^="sc-"]:has(> div[class^="sc-"] > div[style] > div[style] > a[href="/privacy"])
 zemail.me###silktide-wrapper
 cambuy.de#$#.acris-cookie-consent { display: none !important; }
 cambuy.de#$#.cookie-popup { background-color: transparent !important; }
@@ -8428,8 +8429,8 @@ inbank.ee#$#body.modal-open { overflow: visible !important; padding-right: 0 !im
 ||coal.gamemaker.io/sites/*/theme/javascripts/cookie.umd.min.js
 claimercorner.xyz,faucetzoid.online###gath3r-optin-dialog
 brf.be###cookieDashboard
-bgasecurity.com,cool-mania.pl,forpro.pl,natterhub.com,grubytom.pl,kotas.com.br,kuchniapupila.pl,allnutrition.pl,elenovo.pl,facetaria.pl,cool-mania.de,inkbook.pl,rheumaliga.ch,medicshop.pl,cobbo.pl,pakomat.pl,rolnet.pl,petrostar.pl,atmoskop.cz,pulser.hr,jesus.de,airindia.com,lovekrakow.pl,mediccentre.pl,erzeszow.pl,musiccenter.pl#$#html.force--consent.show--consent:not(#style_important) { overflow: auto !important; }
-bgasecurity.com,cool-mania.pl,forpro.pl,natterhub.com,grubytom.pl,kotas.com.br,kuchniapupila.pl,allnutrition.pl,elenovo.pl,facetaria.pl,cool-mania.de,inkbook.pl,rheumaliga.ch,medicshop.pl,cobbo.pl,pakomat.pl,rolnet.pl,petrostar.pl,atmoskop.cz,pulser.hr,jesus.de,airindia.com,lovekrakow.pl,mediccentre.pl,giga-hamburg.de,gerth.de,erzeszow.pl,musiccenter.pl#$##cc--main { display: none !important; }
+kotasplus.com.br,bgasecurity.com,cool-mania.pl,forpro.pl,natterhub.com,grubytom.pl,kotas.com.br,kuchniapupila.pl,allnutrition.pl,elenovo.pl,facetaria.pl,cool-mania.de,inkbook.pl,rheumaliga.ch,medicshop.pl,cobbo.pl,pakomat.pl,rolnet.pl,petrostar.pl,atmoskop.cz,pulser.hr,jesus.de,airindia.com,lovekrakow.pl,mediccentre.pl,erzeszow.pl,musiccenter.pl#$#html.force--consent.show--consent:not(#style_important) { overflow: auto !important; }
+kotasplus.com.br,bgasecurity.com,cool-mania.pl,forpro.pl,natterhub.com,grubytom.pl,kotas.com.br,kuchniapupila.pl,allnutrition.pl,elenovo.pl,facetaria.pl,cool-mania.de,inkbook.pl,rheumaliga.ch,medicshop.pl,cobbo.pl,pakomat.pl,rolnet.pl,petrostar.pl,atmoskop.cz,pulser.hr,jesus.de,airindia.com,lovekrakow.pl,mediccentre.pl,giga-hamburg.de,gerth.de,erzeszow.pl,musiccenter.pl#$##cc--main { display: none !important; }
 soulkyn,musiccenter.pl.com#$#html.show--consent { overflow: auto !important; }
 soulkyn.com#$##cc-main { display: none !important; }
 hyperbook.pl,eazymut.pl###cookie-change-button
@@ -21592,8 +21593,8 @@ turbopages.org#%#//scriptlet('json-prune', '*.blockId')
 !
 ! Kinopoisk
 www.kinopoisk.ru#%#//scriptlet('set-constant', 'Object.prototype.renderToNode', 'undefined')
+www.kinopoisk.ru#%#//scriptlet('set-cookie', 'kdetect', '1')
 www.kinopoisk.ru##div[class*="-kinopoisk-media-container"][class*="media-container_height_"]
-www.kinopoisk.ru##div[class^="toaster-container"]
 www.kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
 !
 ! auto.ru
@@ -25484,6 +25485,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+faceit.com###__next__modal_root__ > div[class^="style__Holder-"]:has(> div:contains(Sign in for the full experience))
 stuff.tv#%#//scriptlet('set-cookie', 'hustle-hide-module-1', '1')
 nps.gov###touchpoints-survey
 heyrooted.com##div[id^="alia-root-"]:has(> [id^="alia-popup"])
@@ -33267,6 +33269,7 @@ macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFu
 !
 ! SECTION: Push notifications - Regular rules
 !
+||uol.com.br/mywebpush.js
 buienradar.nl#$#body { overflow: auto !important; }
 buienradar.nl#$#div[class^="onboard-"] { display: none !important; }
 ||sueddeutsche.de/szde-assets/webpush/
@@ -34157,6 +34160,9 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+jovempan.com.br##.cta-model
+filologika.gr##.article-after
+cineplex.de###CineplexMCPApplication
 autosport.com.ru##.node-text > div[style]:has(> a.zen-subscribe)
 opera.com##main > section.section-component:has(> div.container-fluid > div.sib-form)
 nymag.com##.subscription-promo-wrapper
@@ -42294,6 +42300,7 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+faceit.com##div[id^="content-grid-element"] > div[class^="styles__Holder-"]:has(> div[class^="styles__InnerHolder-"] > div[class^="styles__QRCodeAndTextHolder-"] span:contains(Scan the QR code to download app))
 iscihaber.net##.theiaStickySidebar a[href="http://iscihaber.site/app.php"]
 m.yelp.com##div[class^="overlay-color-"]:has(> div[class^="overlay-wrapper"] > a[href*="app"])
 vk.com###react_rootAnonymShortVideoStub
@@ -49481,6 +49488,7 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+citilink.ru##div[class^="app-catalog-"][class*="-StyledBannerContainer"]
 dropbox.com##.maestro-campaigns-toolkit-portal
 taxi69.com##.col-publi
 taxi69.com##a[href^="https://www.cams.taxi69.com/"] img
