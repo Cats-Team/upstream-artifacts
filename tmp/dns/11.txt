@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: uT7WLqgdjn3AiOekYLH5hw
-! Diff-Path: ../patches/11/11-s-1750083123-3600.patch
+! Checksum: YQa1uPOMFT879tYqEXT6rA
+! Diff-Path: ../patches/11/11-s-1750137113-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.61.57
-! TimeUpdated: 2025-06-16T14:07:38+00:00
+! Version: 2.0.61.59
+! TimeUpdated: 2025-06-17T05:07:49+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2572,6 +2572,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+burnbutt.com##.gallery > figure:has(.img-num > spna):not(:has(.img-num > .fa-download ~ spna))
+m.proporn.*##a[href^="https://faphouse.com/tour?"]
 ajansspor.com##.main-placeholder
 ajansspor.com##.news-placeholder
 ajansspor.com##.footer-placeholder
@@ -7308,7 +7310,7 @@ nydailynews.com##body > #r-main > div.r-yieldmo
 thenewslens.com##body > div#bottombar
 liga.net##body > div[id^="holder_320x"][style]
 m.dm5.com##div[class^="adform"]
-m.mangatown.com##div[class^="adv-"]
+m.proporn.*,m.mangatown.com##div[class^="adv-"]
 eastmoney.com##div[class^="ban"]
 mobilesyrup.com##div[class^="mobile-ads"]
 sinoptik.ua##div[class^="rozetka"]
