@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: JSGrs5IDzoP9CQTpdI7lIA
-! Diff-Path: ../patches/4/4-s-1750293074-3600.patch
+! Checksum: PcvFALXctJI8ZIQeVY1erw
+! Diff-Path: ../patches/4/4-s-1750331496-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.16.0
-! TimeUpdated: 2025-06-19T00:26:43+00:00
+! Version: 2.1.16.3
+! TimeUpdated: 2025-06-19T11:06:50+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,7 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+bz-berlin.de##a[data-track^="social.share"]
 gazetebirlik.com##.socialmedias-and-share-container
 shemale6.com##.box > div.wrap:has(> a[href="#share"])
 historyfacts.com##.ft-social-frame
@@ -10013,7 +10014,6 @@ allenwestrepublic.com##.mashsb-buttons > a:not(.secondary-shares)
 allenwestrepublic.com##.mashsb-count
 buddhism.ru###sh4
 ladbible.com##.share-controls > div > .share-controls__item:not(.share-controls__item--message):not(.share-controls__item--anchor)
-n4mo.org##.sd-sharing-enabled
 dailymail.co.uk##.article-icon-links > li.facebook
 tokyohive.com##body.single .post .social-links > li:not(:first-child)
 tokyohive.com##.overlay-social > .social-links > li:not(:first-child)
