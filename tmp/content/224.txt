@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: eb40pZ+XXxO3l+RhY0y4XQ
-! Diff-Path: ../patches/224/224-s-1750379424-3600.patch
+! Checksum: 05EppdZlUWdx4ttmB+X1ag
+! Diff-Path: ../patches/224/224-s-1750410735-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.39.31
-! TimeUpdated: 2025-06-20T00:26:32+00:00
+! Version: 2.1.39.33
+! TimeUpdated: 2025-06-20T09:08:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8369,6 +8369,7 @@ newduba.cn###jq_youxi
 ||zwlxnj.xyz^
 ||zxqiwe.cn^
 ||zyfnbl.xyz^
+||burniecrepes.com^
 ||663008888.com^
 ||xxxx68xxxx.com^
 ||cai75tp.com^
@@ -13013,6 +13014,7 @@ meijutt.*/js/pcjs/
 ||yximgs.com/bs2/adcarsku/*.gif
 ||waipian*.com/statics/recommend/
 ||taozi.icu/asfile/m/js/guding.
+||komiic.com/ads/
 zhihu.com##.Pc-word-new
 twword.com##.gadBlock
 mydrivers.com##.jdong1div_double
@@ -18620,6 +18622,7 @@ android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.t
 @@/adfile/*$domain=cidianwang.com
 @@/adimage/*$domain=scyts.com|wacom.tw
 @@/adimages/*$domain=p9.com.tw
+@@||fpyf8.com/88/tag.min.js$domain=wxredian.com
 @@/adimg/*$domain=laniqu.com
 @@/adjs_pic_$domain=168gamer.net|slit.cn
 @@/adLoader.$domain=shejiben.com

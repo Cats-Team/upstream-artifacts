@@ -478,7 +478,6 @@ ewrc-results.com##+js(aopw, adBlockEnabled)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3864
 @@||schnauzer-forum.co.uk^$ghide
-@@||emulasyonturkiye.org^$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3865
 raven-mythic.com##+js(aopw, $adframe)
@@ -7953,3 +7952,6 @@ tmnascommunity.eu##+js(set-cookie, firebox_3330, 1)
 ! ofertecatalog. ro anti right click, select, copy
 ofertecatalog.ro##+js(rmnt, script, /contextmenu|oncopy/)
 ofertecatalog.ro##+js(ra, onselectstart, , stay)
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/207736
+wiibackupmanager.co.uk##+js(no-fetch-if, adsbygoogle)
