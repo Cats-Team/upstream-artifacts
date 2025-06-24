@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: apQDYB70e83TXaThT3OKGw
-! Diff-Path: ../patches/4/4-s-1750752823-3600.patch
+! Checksum: C0F0RhdLapS56QktAfhPLg
+! Diff-Path: ../patches/4/4-s-1750781565-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.16.18
-! TimeUpdated: 2025-06-24T08:09:12+00:00
+! Version: 2.1.16.21
+! TimeUpdated: 2025-06-24T16:07:58+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,8 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+blog.hatena.ne.jp##.js-refresh-socialize-box
+auto.ru##button[class*="CatalogActionButtons__shareBtn-"]
 isekaitube.com##.entry-meta-right
 mlive.com##button[aria-label="Share this article"]
 centralasia.media##.share-aki-btns
@@ -10351,7 +10353,7 @@ blickamabend.ch##.socialNetwork-container
 dasauge.de##.bmk_xing
 page-online.de##.social_xing
 dnevnik.hr,m.glamour.de##.social-trigger
-energyfm.ru##.share_counter
+nagariknetwork.com,energyfm.ru##.share_counter
 energyfm.ru##.vk-index
 lifter.com.ua###soc-menu
 pinarsutum.com##.btn-item-facebook
