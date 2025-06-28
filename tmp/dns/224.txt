@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: RqNrXGYDMeOYV//V4udg9A
-! Diff-Path: ../patches/224/224-s-1751105528-3600.patch
+! Checksum: y3hUnIuEy/o0RTj/OMcAnA
+! Diff-Path: ../patches/224/224-s-1751119870-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.39.80
-! TimeUpdated: 2025-06-28T10:07:52+00:00
+! Version: 2.1.39.82
+! TimeUpdated: 2025-06-28T14:06:58+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -368,8 +368,6 @@ itdog.cn#%#//scriptlet('prevent-setTimeout', 'adblock_tip')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153296
 huanqiu.com#%#//scriptlet('set-constant', 'AD_SURVEY_Add_AdPos', 'noopFunc')
 huanqiu.com#%#//scriptlet('set-constant', 'AD_SURVEY_Add_AdPos_Simple', 'noopFunc')
-! https://github.com/AdguardTeam/AdguardFilters/issues/153352
-btvsports.click#@##googleAD2
 ! https://github.com/AdguardTeam/AdguardFilters/issues/151451
 @@/adview_*_ads_300x250.js$domain=itbaoku.cn
 itbaoku.cn#%#//scriptlet('set-constant', 'killads', 'true')
@@ -512,15 +510,6 @@ linetv.tw##.aspect-ratio > img.object-cover + .aspect-ratio-content + div[class^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/30495
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28209
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26753
-! https://github.com/AdguardTeam/AdguardFilters/issues/44823
-getrelax.cc#?#.nav > li.dropdown:has(> ul.dropdown-menu > li > div.mega-menu-content > div.container > div.row div.blog-grid > a[href^="https://getrelax.cc/ad"])
-getrelax.cc#?#.nav > li:has(> a[target="_blank"])
-getrelax.cc$$script[tag-content="#adisblock"][min-length="50"][max-length="200"]
-getrelax.cc#%#//scriptlet('abort-current-inline-script', '$', '#adisblock')
-getrelax.cc#$#iframe[src^="https://syndication.exosrv.com/"] { display: none!important; }
-getrelax.cc#$#iframe[src^="//adserver.juicyads.com/"] { display: none!important; }
-getrelax.cc#$?##main_content > .grid-boxes-in:has(> iframe[src^="//adserver.juicyads.com/"]) { remove: true; }
-getrelax.cc#$?##main_content > .grid-boxes-in:has(> iframe[src^="https://syndication.exosrv.com/"]) { remove: true; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24478
 @@||poedb.tw/js/adsbygoogle.js
 poedb.tw#%#//scriptlet("abort-current-inline-script", "document.getElementById", "/#myModal'\)\.modal/")
