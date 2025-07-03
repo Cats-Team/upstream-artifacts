@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: zqHK2AOdK79i1h70tEfT+Q
-! Diff-Path: ../patches/14/14-s-1751469131-3600.patch
+! Checksum: Ft1LenUoikGL7Cw6j95SYA
+! Diff-Path: ../patches/14/14-s-1751490687-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.35.29
-! TimeUpdated: 2025-07-02T15:07:56+00:00
+! Version: 2.2.35.31
+! TimeUpdated: 2025-07-02T21:07:25+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2513,6 +2513,7 @@ teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfil
 !
 ! NOTE: Regular rules
 !
+surfshark.net##.js-cookies-popup
 onfy.de#%#//scriptlet('trusted-set-cookie-reload', 'onfy_consents', 'necessary%3Dunbedingt_erforderliche_cookies%26targeting%3D%26functional%3D%26performance%3D')
 onfy.de#%#//scriptlet('trusted-set-cookie', 'onfy_consents_version', '2')
 nizima.com##footer + div.nz-bottom-0
@@ -11188,7 +11189,7 @@ japanjournals.com,builtbybel.com###easycookieinfo
 dosgamers.com##.site_cookies_message
 secure.elu24.ee,secure.postimees.ee###pm-cookie-notif
 volia.com##div[class="agreeCookie.component__cookieWrapper"]
-theunarchiver.com,pixilart.com##div[data-cookie]
+theunarchiver.com,pixilart.com,vsco.co##div[data-cookie]
 lazimbana.com##.lazim-cookie-alert
 ogretmentercihim.com###poper
 goldenline.pl#$#body{ overflow: visible !important; padding-right: 0 !important; }
