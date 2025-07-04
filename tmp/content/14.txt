@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: +iF3sbIK9YT0vZ2emZTIhQ
-! Diff-Path: ../patches/14/14-s-1751580676-3600.patch
+! Checksum: vCY26HErQukQo3LetEUHTg
+! Diff-Path: ../patches/14/14-s-1751627469-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.35.42
-! TimeUpdated: 2025-07-03T22:07:07+00:00
+! Version: 2.2.35.46
+! TimeUpdated: 2025-07-04T11:07:08+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -16957,6 +16957,7 @@ medikredyt.pl,money2money.com.pl,17bankow.com,5mindlazdrowia.pl,kazimierzdolny.p
 ! !#endif
 ! wp.pl
 pcformat.pl,medikredyt.pl,money2money.com.pl,ipolska24.pl,17bankow.com,5mindlazdrowia.pl,kazimierzdolny.pl,vpolshchi.pl,dobreprogramy.pl,essanews.com,dailywrap.ca,dailywrap.uk,money.pl,autokult.pl,komorkomania.pl,polygamia.pl,autocentrum.pl,allani.pl,homebook.pl,domodi.pl,open.fm,gadzetomania.pl,fotoblogia.pl,abczdrowie.pl,parenting.pl,kafeteria.pl,vibez.pl,wakacje.pl,extradom.pl,totalmoney.pl,superauto.pl,nerwica.com,forum.echirurgia.pl,dailywrap.net,pysznosci.pl,genialne.pl,finansowysupermarket.pl,deliciousmagazine.pl,jastrzabpost.pl,audioteka.com,easygo.pl,so-magazyn.pl,o2.pl,pudelek.pl,benchmark.pl,wp.pl#%#//scriptlet('trusted-click-element', 'div[class]:has(a[href*="holding.wp.pl"]) div[class]:only-child > button[class*=" "] + button:not([class*=" "])')
+pcformat.pl,medikredyt.pl,money2money.com.pl,ipolska24.pl,17bankow.com,5mindlazdrowia.pl,kazimierzdolny.pl,vpolshchi.pl,dobreprogramy.pl,essanews.com,dailywrap.ca,dailywrap.uk,money.pl,autokult.pl,komorkomania.pl,polygamia.pl,autocentrum.pl,allani.pl,homebook.pl,domodi.pl,open.fm,gadzetomania.pl,fotoblogia.pl,abczdrowie.pl,parenting.pl,kafeteria.pl,vibez.pl,wakacje.pl,extradom.pl,totalmoney.pl,superauto.pl,nerwica.com,forum.echirurgia.pl,dailywrap.net,pysznosci.pl,genialne.pl,finansowysupermarket.pl,deliciousmagazine.pl,jastrzabpost.pl,audioteka.com,easygo.pl,so-magazyn.pl,o2.pl,pudelek.pl,benchmark.pl,wp.pl#%#//scriptlet('trusted-click-element', 'body > div[class] > div[class] > div[class]:has(a[href*="holding.wp.pl"]) > div[class] > div[class]:only-child > button:first-child')
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193266
 ! https://github.com/AdguardTeam/AdguardFilters/issues/173053
@@ -23852,7 +23853,7 @@ rentanadviser.com##.reklamcontainer
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=te4h.ru
 ||forumnulled.com/uploads/set_resources_8/*_zozEabb204.js
 ||blink.net/iframe.html$domain=dailyprincetonian.com
-18comic.*#%#//scriptlet("set-constant", "nerverblock_callback", "noopFunc")
+18comic.org,18comic.vip#%#//scriptlet("set-constant", "nerverblock_callback", "noopFunc")
 goflix.sbs,multiup.eu,multiup.org##.content-body > .text-center:has(> a[href*="list_adblock.txt&"])
 ||cdn.iphoneincanada.ca/wp-content/themes/iphone/js/JDAB.js
 craftpip.github.io#%#//scriptlet('set-local-storage-item', 'adsok', 'true')
@@ -26022,6 +26023,12 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+aniplex.co.jp#$#.p-modal { display: none !important; }
+aniplex.co.jp#%#//scriptlet('remove-class', 'is-hacked|is-cover-anim|is-cover-pre', 'body')
+bankier.pl#$#body { overflow: auto !important; }
+bankier.pl#$##exit-break-box { display: none !important; }
+bankier.pl#%#//scriptlet('adjust-setTimeout', 'document.body.style.position', '*', '0.001')
+idealo.de###product-chat-container
 kaitori-dx.com###footBnr
 urban-media.ru#%#//scriptlet('set-cookie', 'hide_popup', 'yes')
 haberaktuel.com###android-install-banner
@@ -28076,7 +28083,7 @@ ringover.com#%#//scriptlet('set-session-storage-item', 'showEventsBanner', 'fals
 realting.com###popupOffer
 capital.com#%#//scriptlet("abort-on-property-read", "show30SecSingupPopupFlag")
 toraiz.jp###footer_bn_box
-18comic.*##.float-right-image
+18comic.org,18comic.vip##.float-right-image
 blog.getadmiral.com##.listingInner-sideBar-section
 max4u.ru#$?#.remodal-overlay:has(div[data-remodal-id="agreement"]) { display: none !important; }
 max4u.ru#$#.remodal-wrapper { display: none !important; }
@@ -42529,7 +42536,7 @@ ilfont.it##body div.popup-overlay-newsletter
 ||golem.de/microsite
 ||ipepostman.com^$third-party
 ||maclife.de/sites/all/modules/custom/tec_socialmedia/images/whatsapp/banner/
-||mailerlite.com^$third-party,domain=~howtosucceed.at|~riavrn.ru|~masterborn.com
+||mailerlite.com^$third-party,domain=~howtosucceed.at|~riavrn.ru|~masterborn.com|~hrpowermentor.com
 ||media.threatpost.com/wp-content/uploads/sites/103/2019/02/19151457/subscribe2.jpg
 ||mytoysgroup.scene7.com/is/image/myToysGroup/*_nl-anmeldung
 ||s3-*.amazonaws.com/news-networkeditorial/masthead/*/widgets/edm/index-*.html
@@ -42790,6 +42797,7 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+fashionnova.com##footer > .fixed.bottom-0:has(> .flex > a:is([href^="https://play.google.com/store/apps/"], [href^="https://apps.apple.com/"]))
 onfy.de##main > div[class^="sc-"] > section[class^="sc-"]:has(> div[class^="sc-"] > div[class^="sc-"] > ul > li > a[href^="https://app.adjust.com/"][href*="?deep_link=onfy"])
 haberaktuel.com###android-install-banner
 haberaktuel.com###windows-install-banner
@@ -49956,6 +49964,7 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+colegialasdeverdad.com##.vv-vip
 jitenon.jp##.side_shop_bnr
 jitenon.jp##.shop_bnr
 fintables.com#%#//scriptlet('prevent-setTimeout', 'Plan_Promotion_Modal')
