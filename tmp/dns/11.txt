@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: 1wl96d2LJmNd6+zziRPJIw
-! Diff-Path: ../patches/11/11-s-1751695967-3600.patch
+! Checksum: HjOwtnmG5RU1St+2OKbagw
+! Diff-Path: ../patches/11/11-s-1751832693-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.62.12
-! TimeUpdated: 2025-07-05T06:08:42+00:00
+! Version: 2.0.62.15
+! TimeUpdated: 2025-07-06T20:07:21+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2560,6 +2560,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+wetter.com##div[class*="_adSlot__"]
+wetter.com###seo-link-list ~ div[class="[ app-layout ][ mt ]"]
+wetter.com#$#body:not(.mbanner-is-fixed) #mapToolWetterAppWrap[data-fullscreen="true"] { padding-bottom: 0px !important; }
 qoly.jp##.sp_undertitle_ads
 telefonino.forumfree.it##.overlay
 morritastube.com##div[style^="min-width: 300px;"][id="300x100"]
@@ -4090,7 +4093,7 @@ timesofindia.indiatimes.com##div[id^="custom_ad_wrapper_"]
 tokyo-np.co.jp###fluct-sp-sticky-ad
 english.tupaki.com##.inside-post-ad-before
 indy100.com##.grid-advertisement
-soluzionecomputer.it##.ai-viewport-3[data-code]
+theprint.in,soluzionecomputer.it##.ai-viewport-3[data-code]
 amazon.*##div[cel_widget_id="mobile-dp-sims_SPThematicBrand_Same"]
 amazon.*##section[class*="csm-placement-id"]:not([data-cel-widget^="sobe_d_"])
 m.efuxs.com##.inglestore
@@ -4910,8 +4913,7 @@ nijimen.kusuguru.co.jp##aside[style*="max-height:280px"]
 nijimen.kusuguru.co.jp##aside[style*="max-height:336px"]
 domani.shogakukan.co.jp##div[style="display: flex; justify-content: center; align-items: center; min-height: 100px;"]
 crea.bunshun.jp###wrapper > div[style^="text-align:center ; min-height: 260px"]
-||openloadpro.com/wp-content/themes/opro/ad/
-asmr18.fans,jmty.jp,openloadpro.com,jav.direct##div[style^="width: 300px; height: 250px"]
+asmr18.fans,jmty.jp,openload.mov,jav.direct##div[style^="width: 300px; height: 250px"]
 wetter.com##body div.ad-container
 tarzanweb.jp##.bnr
 jj-jj.net##div[style="text-align:center;margin-bottom:20px;"]
