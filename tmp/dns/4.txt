@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: QN4g5d8ZLkmEJW8mfz1Q5A
-! Diff-Path: ../patches/4/4-s-1752142322-3600.patch
+! Checksum: oaxcE8B010iA8lr7cq+MTg
+! Diff-Path: ../patches/4/4-s-1752153686-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.16.94
-! TimeUpdated: 2025-07-10T10:07:25+00:00
+! Version: 2.1.16.96
+! TimeUpdated: 2025-07-10T13:16:59+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,7 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+operanewsapp.com##.horizontal-share-box
 aydinkulis.com##.mobile-share-button-container
 news.itsfoss.com##.post-date-share > button.share-toggle
 gmx.net,web.de##.content__share
@@ -15053,6 +15054,9 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! lexlege.pl - broken website, scroll doesn't work and some elements are not displayed
+lexlege.pl#%#//scriptlet('trusted-set-constant', 'gapi', '{"plusone": {}}')
+lexlege.pl#%#//scriptlet('set-constant', 'gapi.plusone.render', 'noopFunc')
 ! https://cystore.com/page/tnf6th.aspx
 cystore.com#@#a[href^="https://lin.ee/"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204919
