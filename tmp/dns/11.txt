@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: GpOlpUMxourCK0kb64VopA
-! Diff-Path: ../patches/11/11-s-1752174638-3600.patch
+! Checksum: ML9kZ70bYqJ3tHTJLqIwCw
+! Diff-Path: ../patches/11/11-s-1752232287-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.62.29
-! TimeUpdated: 2025-07-10T19:06:27+00:00
+! Version: 2.0.62.33
+! TimeUpdated: 2025-07-11T11:07:02+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2558,6 +2558,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+m.vz.ru##.jscroll-inner > div.page-section > div.container:only-child:has(> div[id^="yandex_rtb"]:first-child + script:last-child)
+kayak.com.tr#$#div[class="i4It-mod-pointers"] { display: none !important; }
+kayak.com.tr#%#//scriptlet('remove-class', 'i4It-cmp2-toaster-visible', '.i4It')
 webtekno.com##.sidebar-mosts__item__sponsor
 shimotsuke.co.jp##div[style="text-align:center;font-size:10px;color:#aaa"]
 epey.com##.tab:has(> div.cell > span.sponsormetni)
@@ -4610,7 +4613,7 @@ the-sun.com##.amp-adv-wrapper
 bookmaker-ratings.ru##.branding-top-wrapper
 washingtonpost.com##.tableAd1
 fistingplanet.com##.happy-related-videos-mobile
-villagesexvideos.com,xxxvideoindian2.com,fistingplanet.com##.happy-footer-mobile
+erotic-hentai.com,villagesexvideos.com,xxxvideoindian2.com,fistingplanet.com##.happy-footer-mobile
 coinwarz.com##div[id^="ad"]
 pornpapa.com##.mobile-device
 maximum.ru,rusradio.ru,dfm.ru##.advertising-mobile-popup-overlay

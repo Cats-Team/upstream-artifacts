@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: oaxcE8B010iA8lr7cq+MTg
-! Diff-Path: ../patches/4/4-s-1752153686-3600.patch
+! Checksum: BiXCKg8OkThBPQHBjc/vWA
+! Diff-Path: ../patches/4/4-s-1752228718-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.16.96
-! TimeUpdated: 2025-07-10T13:16:59+00:00
+! Version: 2.1.16.99
+! TimeUpdated: 2025-07-11T10:07:24+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,8 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+sportmarketing.pl##.flex.md\:items-center > div.inline-flex.items-center
+muchohentai.com###text-38
 operanewsapp.com##.horizontal-share-box
 aydinkulis.com##.mobile-share-button-container
 news.itsfoss.com##.post-date-share > button.share-toggle
@@ -2798,7 +2800,7 @@ fufukokan.af-original.com###update_twitter
 fufukokan.af-original.com##.footer_shareWrap
 3djuegos.com,3djuegos.lat,genbeta.com##.social-share-group
 businessinsider.in#?#.block > div.items-center:has(> div > button[aria-label="facebook"])
-henaojara.com###custom_html-28
+muchohentai.com,henaojara.com###custom_html-28
 maxmovie.com##.mainNewsTitle .toolBox
 obozrevatel.com##.newsFull_share
 obozrevatel.com##.newsFull_socialItems
@@ -7799,7 +7801,7 @@ peramuzesi.org.tr###paylas
 netzwelt.de##.nl-share
 netzwelt.de##ul.mfb--bl
 budzma.org##a[href="https://t.me/budzmaby"]
-aba-net.com,kazeniwa.net,jw-webmagazine.com,m.starnewskorea.com,wikitree.co.kr,proptiger.com,9post.tv,ringon.site,sxyprn.com,sxyprn.net,cc.com,motor.ru,mapsofworld.com,software.informer.com##.share_btn
+nxprime.in,aba-net.com,kazeniwa.net,jw-webmagazine.com,m.starnewskorea.com,wikitree.co.kr,proptiger.com,9post.tv,ringon.site,sxyprn.com,sxyprn.net,cc.com,motor.ru,mapsofworld.com,software.informer.com##.share_btn
 naked-science.ru##.shesht-social-sharing-block
 pleer.ru##div[itemtype] > div#comment + div[class]
 hromadske.ua##.SocialShareBlock
