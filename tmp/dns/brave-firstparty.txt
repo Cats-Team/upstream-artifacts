@@ -6,21 +6,16 @@
 /advanced-ads-$domain=~wordpress.org
 /adservice.$domain=~adservice.io|~github.com|~githubusercontent.com
 /cmbdv2.js
-/display-ad/*
 /greenoaks.gif?
 /discourse-adplugin-
-/skipad.png$image
 /legion-advertising-atlasastro/*
 /jquery.adx.js
 /porpoiseant/*
 /plugins/advanced-ads/*$domain=~wordpress.org
 /player/jw8/vast.js|$script,1p
 /assets/jwplayer-*/vast.js$script,1p
-/prebid/*$script
 /htdocs/js/admiral/init.js
-/webads.
 /www/delivery/*$script,subdocument
-/adcgi?
 ://adsrv.
 /aclib.js$script,1p
 /ad/ad_common.js$script
@@ -66,8 +61,6 @@ hnablog.com##.popSc
 !
 !
 ! Various uBO 1p network items. (END)
-! https://github.com/brave/adblock-lists/pull/1974
-/fbevents.js
 ! photopea.com (method:post) showing ads
 ! https://github.com/brave/brave-browser/issues/40619
 photopea.com##div > .bnotify.window:has-text(Are you blocking ads)
@@ -522,6 +515,8 @@ bloomberg.com##.unsupported-browser-notification-container
 ##.ad-padding
 ##.ad-flex
 ##.ad-no-notice
+##.ad-unit-label
+##.ad-unit-wrapper
 ##.ads-wrapper
 ##.ads_leaderboard
 ##.ads_inline_640
@@ -2813,6 +2808,9 @@ paulickreport.com##.s-teleaderboard-ad
 sportskeeda.com##.primis-container
 ! courthousenews.com
 courthousenews.com##.ad-banner
+! knowyourmeme.com 
+knowyourmeme.com##.rectangle-unit-wrapper
+knowyourmeme.com##.incontent-leaderboard-unit-wrapper
 ! bgr.com
 bgr.com##.bg-black
 ! mindbodygreen.com
@@ -4253,9 +4251,6 @@ eurosport.com##.reform-top-container
 .privacydatanotice.
 ||weather.com/*.medalliasurvey.
 ! stuff.co.nz
-/fusion/lucid/data/*
-||stuff.co.nz/static/adnostic/
-||stuff.co.nz/static/stuff-adfliction/
 thepress.co.nz,waikatotimes.co.nz,stuff.co.nz##.header-ads-block
 ! cnn.com
 cnn.com##.ad-feedback__modal
