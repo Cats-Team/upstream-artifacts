@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: Fp0PGVV9LnRcmx/pjQnLxA
-! Diff-Path: ../patches/14/14-s-1753438362-3600.patch
+! Checksum: qc7X4UlHCrz3cv2JjkpqYQ
+! Diff-Path: ../patches/14/14-s-1753463593-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.37.51
-! TimeUpdated: 2025-07-25T10:08:14+00:00
+! Version: 2.2.37.55
+! TimeUpdated: 2025-07-25T17:08:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2523,6 +2523,9 @@ kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-w
 !
 ! NOTE: Regular rules
 !
+v-tagile.ru###info-collect-warning
+web.lmarena.ai#%#//scriptlet('set-local-storage-item', 'd-ua', 'false')
+velobike.ru#%#//scriptlet('set-cookie', 't_cookiesConsentGiven', 'true')
 qeepl.com##div[role="dialog"][i18n="consent-dialog"]
 cnn.com##body > div[style^="background-color:"][style*="position: fixed; min-width: 100%; min-height: 100%; inset: 0px; z-index: 999999;"]:has(> div > p > a[href="/privacy"])
 terviseportaal.ee##div[data-name="card"]:has(> div[data-testid="cookie-consent"])
@@ -3727,8 +3730,8 @@ dataspin.net###div_th_cookies_informativa
 nakup.itesco.cz,samokat.ru,fingerprint.com,drbuho.com,onceupon.photo,socratesdergi.com,ati.su,librarius.pro,tesco.com##div[class^="CookieBanner"]
 3ona51.com##.cookiesAccept
 darnytsia.ua###main > div.a_aui_auj:has(> span > a[href="/cookies-policy"])
-saal-digital.de#%#//scriptlet('trusted-set-cookie', 'OptanonConsent', 'groups=C0003%3A0%2CC0004%3A0%2CC0002%3A0%2CC0001%3A1')
-saal-digital.de#%#//scriptlet('trusted-set-cookie', 'OptanonAlertBoxClosed', '$currentDate$')
+salomon.com,saal-digital.de#%#//scriptlet('trusted-set-cookie', 'OptanonConsent', 'groups=C0003%3A0%2CC0004%3A0%2CC0002%3A0%2CC0001%3A1')
+salomon.com,saal-digital.de#%#//scriptlet('trusted-set-cookie', 'OptanonAlertBoxClosed', '$currentDate$')
 schwarzmueller.com##.dp_cookie-overlay
 bauhaus.cz##.modal:has(> .modal-container > .cookie-modal)
 asicomp.cz##.reakt-susenka
@@ -13985,7 +13988,7 @@ toptanci.com,bijuteri.net,kriterdergi.com,natro.com###readed_contract_row
 armfight.eu##.coockiesfixed
 rijksmuseum.nl##.cookie-bar-mask
 dvtk.eu##.cookie-cnt
-troisdorf.de,pirmasens.de,speyer.de,skoda.com.tr##.cookie-consent-dialogue
+idar-oberstein.de,troisdorf.de,pirmasens.de,speyer.de,skoda.com.tr##.cookie-consent-dialogue
 clark.de,intergastro.de,komplett.se,komplettbedrift.no,farmasiet.no,komplett.no##.cookie-consent-overlay
 visitukraine.today,parametrixinsurance.com,docsumo.com,sdi-muenchen.de,hearing-screener.beyondhearing.org,moebel-as.de,dji.de,boesendorfer.com,finnair.com##.cookie-consent-wrapper
 clark.de##.modal__overlay
@@ -43005,6 +43008,8 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+||cdn.ekoltv.com.tr/news/44102.jpg
+ekoltv.com.tr##.banner
 energogarant.ru#%#//scriptlet('set-cookie', 'show_apps', 'true')
 sberhealth.ru###mobileAppBanner
 reso.ru##.main-mobileApps-bunner
@@ -50186,6 +50191,8 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+aulete.com.br###banner-inferior
+aulete.com.br###coluna_esquerda:has(> div#col_lista > div#banner-lateral-esquerda)
 free-proxy-list.net##.alert-fpl
 japanmetaldaily.com##.m-ad-bnr-rec
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##shreddit-async-loader[bundlename="feed_announcement"]
