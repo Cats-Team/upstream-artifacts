@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: G4SSLMHLTr5dtGMeycw0rQ
-! Diff-Path: ../patches/224/224-s-1753715547-3600.patch
+! Checksum: Aq0bdgm6w53R335VNbXFbQ
+! Diff-Path: ../patches/224/224-s-1753757811-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.41.13
-! TimeUpdated: 2025-07-28T15:08:26+00:00
+! Version: 2.1.41.15
+! TimeUpdated: 2025-07-29T02:52:44+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1094,7 +1094,7 @@ cesu.ai##div[class^="money_"]
 codernav.com##.io-widget-ad-lunbotu
 news.qq.com###content-right div[class][style*='background-image: url("https://inews.gtimg.com/newsapp_bt/']:has(img[alt^="QQ"])
 tw.news.yahoo.com##div[data-google-query-id]
-news.yahoo.com##div[id^="sda-"]
+tw.yahoo.com,news.yahoo.com##div[id^="sda-"]
 tw.news.yahoo.com##.YDC-Lead
 news.qq.com#?##content-right div[class]:has(> h1:contains(热门应用))
 ||isyd.net/images/ad1.jpg
@@ -4953,6 +4953,11 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||4xicd08qs.com^
+||oaatyq.icu^
+||sneakersq5.com^
+||xpya.cn^
+||gio07290rp.com^
 ||nhy9i8t56f.com^
 ||zrzgsdocqm.com^
 ||aai07280mu.com^
@@ -4967,6 +4972,8 @@ newduba.cn###jq_youxi
 ||qlghunil.com^
 ||aai07281mu.com^
 ||wozlx.cn^
+||r6q4mtfno.com^
+||aai07290mu.com^
 ||jxdyk65ay.com^
 ||pjcg3864p.com^
 ||gio07270rp.com^
