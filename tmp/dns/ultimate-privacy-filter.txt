@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202507290904
+! Version: 202507291504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 29 Jul 2025 09:04 UTC
+! Last modified: 29 Jul 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -108325,7 +108325,6 @@ semprotyuk.com##div[style^="margin-bottom:150px;"][style*="padding-right:2em;"]
 ||gold.contentsfeed.com/lb/sd/nw$domain=sportsseoul.com
 ||a.poki.com/observer/$script
 ||wcs.naver.com^$~script,domain=~smartstore.naver.com
-||wcs.naver.com^$~script,redirect=nooptext,domain=smartstore.naver.com
 ||tmgrup.com.tr/videojs/js/lib/streamsense.min.js
 ||news.chosun.com/svc/fb_count.html
 ||news.chosun.com/dhtm/*/collecter.js
@@ -112330,6 +112329,7 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||connect.facebook.net/*/fbevents.js$domain=smartstore.naver.com
 @@||googletagmanager.com/gtm.js$domain=jornaldocomercio.com
 @@||curos.ca/res/*/resources/scripts/lib/fingerprint.js$domain=curos.ca
 trendyol-milla.com#%#//scriptlet('set-constant', 'process', 'emptyObj')
