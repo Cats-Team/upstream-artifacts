@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: 484iq1EVy34012ECSxXpIg
-! Diff-Path: ../patches/11/11-s-1753843901-3600.patch
+! Checksum: sLY/tb1oMzX4d1hXhdb3Tg
+! Diff-Path: ../patches/11/11-s-1753866946-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.62.93
-! TimeUpdated: 2025-07-30T02:47:36+00:00
+! Version: 2.0.62.95
+! TimeUpdated: 2025-07-30T09:11:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2180,6 +2180,7 @@ motherless.com$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210010
 ! https://github.com/uBlockOrigin/uAssets/issues/28118
 my-angers.info#@#amp-auto-ads
 ! https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/249
@@ -2562,6 +2563,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+losreplicantes.com##.pub-box-text
 book18.fans##.home-h:has(> a[href^="https://stripchat.com/"])
 book18.fans##div[style="margin: -12px -11px"]
 news4wide.net###container > .free-area:has(> #lite_link)

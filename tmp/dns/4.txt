@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: jQwno9Lx7iHWBnKCqc3Tww
-! Diff-Path: ../patches/4/4-s-1753846864-3600.patch
+! Checksum: VU+subm8uGaaB8oFM9OvtQ
+! Diff-Path: ../patches/4/4-s-1753873873-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.17.68
-! TimeUpdated: 2025-07-30T03:36:33+00:00
+! Version: 2.1.17.71
+! TimeUpdated: 2025-07-30T11:06:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,11 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+ananweb.jp##div[class^="styles_postContent"] > section.border-\[\#9a9a9a\].pt-\[24px\]
+lrytas.lt##div[data-tooltip^="Dalintis per"]
+futbolred.com##.compartir-redes-sociales > ul > li[network]:not(.guardar, .comentar)
+futbolred.com##.compartir-redes-sociales-mobile > .nav-sticky-redes::before
+futbolred.com##.compartir-redes-sociales-mobile > .nav-sticky-redes > li[network]:not(.guardar, .comentar)
 yomitai.jp##.social-button-series
 jornaldocomercio.com##.whatsapp-lateral-container
 folhabv.com.br##.social-share-fixed
@@ -1724,7 +1729,7 @@ tribune.net.ph##div[class^="text-story-m_share__"]
 learningbyshipping.com,thebignewsletter.com##div[class*="_popover_"]
 cyprus-mail.com##social-share-links
 smithsonianmag.com##.longform_share
-ecartelera.com##.isoc
+ecartelera.com.mx,ecartelera.com##.isoc
 cdn.vuukle.com##span[class="dropdown-toggle"]
 public-porno.com,maturexy.com,fuqster.com,bigtitbitches.com##div[title="Share this Video"]
 fotosklad.ru##span[class^="Share_"]
@@ -3405,7 +3410,7 @@ braziljournal.com##.menusocial--column
 braziljournal.com##.menusocial--share
 youm7.com##.NEwShare_Icons_DIV > div.Les_ST_Comments
 wrestlezone.com,playstationlifestyle.net,comingsoon.net,gamerevolution.com##.xe-post-footer-share
-kindaipicks.com##.float-sns
+asm.asahi.com,kindaipicks.com##.float-sns
 securityweek.com##div[class^="zox-post-soc-"]
 ogznet.com##.widget-socials.pt-3:not(.mb-3)
 girlswalker.com##.gw-content__entry-share-button-wrap
