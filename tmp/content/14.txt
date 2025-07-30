@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: fcnSfF1f3mkeG6EMbQr9Pg
-! Diff-Path: ../patches/14/14-s-1753873870-3600.patch
+! Checksum: lxCnKr5H7/aua65619MQ0A
+! Diff-Path: ../patches/14/14-s-1753895559-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.37.98
-! TimeUpdated: 2025-07-30T11:07:05+00:00
+! Version: 2.2.38.2
+! TimeUpdated: 2025-07-30T17:08:33+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2522,6 +2522,7 @@ kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-w
 !
 ! NOTE: Regular rules
 !
+combi.de#%#//scriptlet('trusted-set-cookie-reload', 'consent', '%5B%22required%22%5D')
 check24.*#%#//scriptlet('trusted-set-cookie-reload', 'c24consent', 'f')
 101internet.ru##div[class^="Cookies_"]
 mir-telecom.ru###cookiesAgree
@@ -2990,7 +2991,7 @@ zakzak.co.jp###consent-wrapper
 education.openguessr.com##.alert:has(> span > a[href="https://openguessr.com/legal"])
 akool.com#%#//scriptlet('set-cookie-reload', 'cookie-permission', '0')
 search.fenrir-inc.com,sleipnirstart.com###agreement
-maxmo.de#%#//scriptlet('set-cookie', 'cookie-preference', '1')
+tripleaction.de,schuh-vormbrock.de,maxmo.de#%#//scriptlet('set-cookie', 'cookie-preference', '1')
 ipill.de#%#//scriptlet('trusted-click-element', 'button.accept-all-cookies')
 vercel.com###fides-overlay
 flibco.com#%#//scriptlet('trusted-set-cookie', 'cookiesjsr', '%7B%22functional%22%3Afalse%2C%22analytics%22%3Afalse%2C%22facebook_pixel%22%3Afalse%2C%22recaptcha%22%3Afalse%2C%22gtag%22%3Afalse%2C%22video%22%3Afalse%7D')
@@ -9895,8 +9896,6 @@ oberpfaelzer-seenland.de#$#html.cookieBar-Overlay-open { overflow: visible !impo
 oberpfaelzer-seenland.de#$#html.cookieBar-Overlay-open body { overflow: visible !important; }
 wilderkaiser.info##.mw-dsgvo-cookie-slidebar_01
 bumm.de,e-guest.de###nextlevelsCookieBox
-combi.de#$#body { overflow: auto !important; }
-combi.de#$#.modal--cookie-notice { display: none !important; }
 raeer.com###RaeerGoogleCookiesBox
 fashionunited.de##.MuiSnackbar-anchorOriginBottomLeft
 stoffmeile.de,stoff4you.de###dxCookieConsentContainer
@@ -12412,7 +12411,7 @@ airfrance.com.tr,airfrance.am,airfrance.be,airfrance.bf,airfrance.bg,airfrance.b
 softlist.com.ua##.cookie-notify-block
 t3n.de##.c-cookienotice
 decathlon.com.tr###container-screen
-stomatologndm.pl,rpwik.sosnowiec.pl,smolecsport.pl,automenzi.ch,nuwm.edu.ua,twinwatersgolfclub.com.au,elektrospank.com,bcspbologna.it,hadithcollection.com,playisgame.com,playway.com###sp-cookie-consent
+linuxsecurity.com,stomatologndm.pl,rpwik.sosnowiec.pl,smolecsport.pl,automenzi.ch,nuwm.edu.ua,twinwatersgolfclub.com.au,elektrospank.com,bcspbologna.it,hadithcollection.com,playisgame.com,playway.com###sp-cookie-consent
 th-deg.de,netkom.de,danbolig.dk#$#div[id^="CybotCookiebotDialog"] { display: none!important; }
 ekstrabladet.dk,th-deg.de,netkom.de,danbolig.dk#$#html { overflow: visible!important; }
 ekstrabladet.dk,th-deg.de,netkom.de,danbolig.dk#$#body { overflow: visible!important; }
@@ -12466,7 +12465,7 @@ tsn.ua##.c-notification__box
 prospera.hn###gatsby-focus-wrapper > main ~ div[width="full"]:last-child
 hartmann-shop.ru,go64.ru,arkhis.ru##.privacy-policy-cookies-informer
 10haber.net,tele1.com.tr###sa_cookie_wrapper
-ilyarm.ru,hrc.org,cardgames.io###gdpr-notice
+ohara-inc.co.jp,ilyarm.ru,hrc.org,cardgames.io###gdpr-notice
 famemma.tv,playlive.net##.paper-client-privacy-agreement
 olx.ro,olx.kz,olx.pl,olx.pt,olx.ua,olx.uz,olx.in,olx.com##div[data-testid="cookies-overlay__container"]
 olx.ro,olx.kz,olx.pl,olx.pt,olx.ua,olx.uz,olx.in,olx.com###cookiesBar
@@ -17245,6 +17244,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210395
+@@||combi.de/*/cookieconsent/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209724
 @@||lv1871.de/app/cache/borlabs-cookie
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209727
@@ -57081,6 +57082,8 @@ netizen-voice.blog.jp,ityouchannel.livedoor.blog,nanjei-baseball.blog.jp,baynews
 !
 ! NOTE: Blogroll specific rules
 !
+gundam.matome-gamers.com###st_custom_html_widget-32
+gundam.matome-gamers.com###st_custom_html_widget-33
 ||ginnga.blog.jp/blogroll*.html
 metyayaba.com##.widget:has(> div > div.rss)
 ske48matoeme.com###main > br
