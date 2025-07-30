@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202507291504
+! Version: 202507292104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 29 Jul 2025 15:04 UTC
+! Last modified: 29 Jul 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -61191,6 +61191,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||aem-kakao-collector.onkakao.net^
 ||slc.commerce.naver.com^
 ||a.klaviyo.com^
 ||nlog.shinhan.com^
@@ -61760,7 +61761,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||track.amebame.com^
 ||pks-analytics.raenonx.cc^
 ||pyxis.atp.fox^
-||collector.appconsent.io^
 ||r.sib2.gardrops.com^
 ||nst.trex.media^
 ||pixel.kodixauto.ru^
@@ -105429,6 +105429,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||collector.appconsent.io/t2.gif?a=
 dogdrip.net#%#//scriptlet('href-sanitizer', 'a[href^="/link.php?url="]', '?url')
 ||konturnovosti.com/packs/js/opm.js
 ||dzen.ru/api/v4/launcher/stats/
@@ -111389,6 +111390,12 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||gamedot.afafb.com^
+||tadata.afafb.com^
+||ecpm.afafb.com^
+||mediation-receiver.afafb.com^
+||df.afafb.com^
+||middle-defend.afafb.com^
 ||pangolin-sdk-toutiao.com^
 ||stat.tpns.sgp.tencent.com^
 ||guid.tpns.sgp.tencent.com^
