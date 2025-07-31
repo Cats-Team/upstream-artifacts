@@ -3558,7 +3558,6 @@ pcgamestorrents.org##[href*="/gameadult/"][href$=".php"]
 pcgamestorrents.com,pcgamestorrents.org##a[href^="https://pcgamestorrents."][href*="/cuskilo"]
 pcgamestorrents.com,pcgamestorrents.org##a[href][aria-label="awed"]
 igg-games.com,pcgamestorrents.org,pcgamestorrents.com##div.uk-margin-medium-top > div
-igg-games.com##[id^="post-"] > div > [href]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2458
 pornrabbit.com##+js(nowoif)
@@ -5801,11 +5800,6 @@ dozarte.com###banana
 ! https://github.com/uBlockOrigin/uAssets/issues/4415
 shush.se##+js(set, check, true)
 ||shush.se/loader/load.js$script
-
-! https://github.com/uBlockOrigin/uAssets/issues/4399
-! https://www.reddit.com/r/uBlockOrigin/comments/u72fym/dailymotion_adblock_detected/
-||s3.amazonaws.com/dmas-public/rubicon/bundle.js$script,domain=dailymotion.com
-@@||dailymotion.com^$ghide
 
 ! cinemalibero .best popups/ ads
 cinemalibero.*##+js(nowoif)
