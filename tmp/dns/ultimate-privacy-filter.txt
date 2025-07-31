@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202507310904
+! Version: 202507311504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 31 Jul 2025 09:04 UTC
+! Last modified: 31 Jul 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -61194,6 +61194,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||clog.tanshudata.com^
 ||gw.stape.fr^
 ||analytics-ipv6.tiktokw.us^
 ||aws-analytics.nmg.com.hk^
@@ -105439,6 +105440,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||tof.perfectworld.com/public/js/stat-tof-perfectworld-
+||alia-cloudflare.com/*/events
 ||fotokino.sk/catalog/view/javascript/devmanextensions_gmt/gmt-library.js
 hpplus.jp#%#//scriptlet('set-local-storage-item', 'fw_se', '$remove$')
 hpplus.jp#%#//scriptlet('set-local-storage-item', 'fw_uid', '$remove$')
