@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: fSeN501UPjjWoN9R/AQmvQ
-! Diff-Path: ../patches/14/14-s-1753938985-3600.patch
+! Checksum: l947EKSPkQb45L8EO4tT+Q
+! Diff-Path: ../patches/14/14-s-1753960267-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.38.6
-! TimeUpdated: 2025-07-31T05:12:29+00:00
+! Version: 2.2.38.10
+! TimeUpdated: 2025-07-31T11:07:13+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3113,7 +3113,7 @@ mobisystems.com##div[class*="bottom-"]:has(> div > div > div > span#consent-lear
 pngtree.com##body > div > div:has(> button[data-huejs="usescookies-accept"])
 ||cp.gutefrage.net^
 shop.tastycoffee.ru##.tc-cookies
-notebook.de,koberger-hamburg.de#%#//scriptlet('trusted-click-element', '.ccm--decline-cookies')
+easynotebooks.de,notebook.de,koberger-hamburg.de#%#//scriptlet('trusted-click-element', '.ccm--decline-cookies')
 testbericht.de#%#//scriptlet('trusted-click-element', 'button[data-role="necessary"]', '', '500')
 iol.co.za##div[role="dialog"]:has(> div > p > a[href^="/privacy-policy"])
 birimfiyat.net##.cerezMesaj
@@ -3454,7 +3454,7 @@ mic.eucast.org#%#//scriptlet('trusted-set-cookie', 'cookieconsent_status', 'dism
 myworkdayjobs.com##div[data-automation-id="legalNotice"]
 atresplayer.com#$#body { overflow: auto !important; }
 atresplayer.com#$##didomi-host { display: none !important; }
-atresplayer.com#$##didomi-host ~ div div[class^="style__StyledBackground-sc-"] { display: none !important; }
+atresplayer.com#$##didomi-host ~ div div[class^="style__StyledBackground-"] { display: none !important; }
 descifrandolaguerra.es###adam-cookie-banner
 support.wolterskluwer.ca###siCookieNoticeContainer
 justica.gov.pt##.justica-cookie_bar
@@ -7251,7 +7251,7 @@ evium.de,u-bordeaux.fr,flyingblue.fr,ppk.pzu.pl#$#html { overflow: auto !importa
 zinio.com##div[class^="CookiePolicyContainer-"]
 drogi.gddkia.gov.pl###c_popek
 systemtbsmart.pl,sklep.lak-auto.pl,waterpikpolska.pl,malachowski.pl,belement.net###poscookielaw
-nerogiardini.it,ottry.com,vutbr.cz,ujep.cz,muni.cz,sklep.kfd.pl,portaldrazeb.cz,stobklub.cz,eurotrucksimulator2.com,fio.cz,unica.esse3.cineca.it,americantrucksimulator.com,shop.bauerfitness.com,doshisha.ac.jp,milanreports.com,cheater.ninja,apetilo.com,assyst.app,turbopizza.cz,rsd.cz###cc_div
+ookbee.com,nerogiardini.it,ottry.com,vutbr.cz,ujep.cz,muni.cz,sklep.kfd.pl,portaldrazeb.cz,stobklub.cz,eurotrucksimulator2.com,fio.cz,unica.esse3.cineca.it,americantrucksimulator.com,shop.bauerfitness.com,doshisha.ac.jp,milanreports.com,cheater.ninja,apetilo.com,assyst.app,turbopizza.cz,rsd.cz###cc_div
 eberry.cz##.c-cookie-consent-bar
 newyorker.com,self.com,gq.com,vanityfair.com,vogue.com,allure.com,teenvogue.com##div[data-testid="message-banner"]
 jove.com##.css-ad08s1
@@ -13273,7 +13273,7 @@ eshopwedrop.lt###coockies_box
 streszczenia.pl,dojrzewamy.pl###cookemessagehandler
 accounts.nintendo.com###cookie-accept-modal
 sparwelt.de,asklepios.com,digi.com###cookie-acceptance
-rangitschhomes.com,rowerystylowe.pl,master-plus.com.ua,xfilesaversa.it,biosuplementacja.pl,receiveasms.com,honda.com.tr,siteplus.com,topbattery.cz,keepinguptodate.com,benq.eu##div[id^="cookie-"]
+fujimift.com,rangitschhomes.com,rowerystylowe.pl,master-plus.com.ua,xfilesaversa.it,biosuplementacja.pl,receiveasms.com,honda.com.tr,siteplus.com,topbattery.cz,keepinguptodate.com,benq.eu##div[id^="cookie-"]
 qt.io###cookie-confirm
 illust-ac.com,kymillman.com,blog.risingstack.com,blue-tomato.com###cookie-consent-box
 zoloto585.ru,sedo.com###cookie-info-wrapper
@@ -17246,6 +17246,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210452
+@@||cdn-a.ookbee.com/Shop/ookbee/file/cookieconsent.js$domain=ookbee.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210395
 @@||combi.de/*/cookieconsent/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209724
@@ -57088,6 +57090,8 @@ netizen-voice.blog.jp,ityouchannel.livedoor.blog,nanjei-baseball.blog.jp,baynews
 !
 ! NOTE: Blogroll specific rules
 !
+jumpmatome2ch.biz###custom_html-6
+jumpmatome2ch.biz##.kotei
 vsnp.net##.free-area:has(> #livedoor)
 esusokuhou.blog.jp##.blogroll_kijishita
 gundam.matome-gamers.com###st_custom_html_widget-32
