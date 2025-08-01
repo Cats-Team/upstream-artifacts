@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: WpOgqkJipDceI49v+SZ1Ew
-! Diff-Path: ../patches/14/14-s-1754025572-3600.patch
+! Checksum: 4zuegaXf1Z+96LHh8NFsBA
+! Diff-Path: ../patches/14/14-s-1754046666-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.38.19
-! TimeUpdated: 2025-08-01T05:15:44+00:00
+! Version: 2.2.38.23
+! TimeUpdated: 2025-08-01T11:07:15+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2522,6 +2522,7 @@ kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-w
 !
 ! NOTE: Regular rules
 !
+dunyakatilim.com.tr##body .footer-cookie-policy
 .co/geoconsent?$domain=geotargetly.com
 ashild.no##.cookie-shadow
 profile.tarkov.com##.bsg-ac-cookie-agreement
@@ -22085,7 +22086,7 @@ calciomercato.com,northjersey.com,azcentral.com,gazetawroclawska.pl,teamblind.co
 ! In the case when video player is broken
 247sports.com,cbssports.com#%#(()=>{window.admiral=function(d,a,b){if("function"==typeof b)try{b({})}catch(a){}}})();
 ! #%#//scriptlet('abort-on-property-write', 'admiral')
-pep.ph,dzienniklodzki.pl,smartworld.it,lifeandstylemag.com,echodnia.eu,dexerto.fr,pravda.sk,mensjournal.com,premierguitar.com#%#//scriptlet('abort-on-property-write', 'admiral')
+prydwen.gg,pep.ph,dzienniklodzki.pl,smartworld.it,lifeandstylemag.com,echodnia.eu,dexerto.fr,pravda.sk,mensjournal.com,premierguitar.com#%#//scriptlet('abort-on-property-write', 'admiral')
 ! #%#//scriptlet('prevent-addEventListener', 'error', 'admiral')
 mlive.com,nbcsports.com,cbssports.com,visualcapitalist.com,news8000.com,kxly.com,thethings.com,koamnewsnow.com,gfinityesports.com,dualshockers.com,insider-gaming.com,thenerdstash.com,pocketnow.com,ktvz.com,247sports.com,movieweb.com,realclearpolitics.com,givemesport.com,xda-developers.com,collider.com,pocket-lint.com,hotcars.com,topspeed.com,thegamer.com,makeuseof.com,screenrant.com,androidpolice.com,cbr.com#%#//scriptlet('prevent-addEventListener', 'error', 'admiral')
 ! cannot be closed (! check for embedded videos)
@@ -22149,6 +22150,7 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#@#.Sid
 !
 ! NOTE: Add without $third-party, so apps are blocking them too
 !
+||loadedhearts.com^
 ||hellounbox.com^
 ||askdriver.com^
 ||profanstee.com^
@@ -27371,7 +27373,7 @@ bizjournals.com#$##headlessui-dialog-27 { display: none !important; }
 bizjournals.com#$#html { overflow: auto !important; }
 bengo4.com##.p-lawyer-profile-foot-sheet > .js-profile-recommendation
 lapresse.ca###root-wall
-tieba.baidu.com#%#//scriptlet('prevent-setTimeout', 'o.customPassLogin()')
+tieba.baidu.com#%#//scriptlet('prevent-setTimeout', 'customPassLogin')
 blog.csdn.net##.passport-auto-tip-login-container
 jewishboston.com###nlsignup
 newsroom.activisionblizzard.com#$#.intro-popup { display: none !important; }
@@ -34860,6 +34862,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+manchestereveningnews.co.uk###whatsapp-community
 portalleodias.com##.ld-block-calling
 life.ru##div[class^="styles_bannerWrapper__"]
 life.ru##div[class^="styles_footerBlocksWrapper__"] > div[class^="styles_container__"]:has(a[title="Дзен.Новости"])
