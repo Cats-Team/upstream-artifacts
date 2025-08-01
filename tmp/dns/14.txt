@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: FqXhEYk82N85k/40Q9c0Ug
-! Diff-Path: ../patches/14/14-s-1753992751-3600.patch
+! Checksum: WpOgqkJipDceI49v+SZ1Ew
+! Diff-Path: ../patches/14/14-s-1754025572-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.38.16
-! TimeUpdated: 2025-07-31T20:08:16+00:00
+! Version: 2.2.38.19
+! TimeUpdated: 2025-08-01T05:15:44+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2522,6 +2522,10 @@ kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-w
 !
 ! NOTE: Regular rules
 !
+.co/geoconsent?$domain=geotargetly.com
+ashild.no##.cookie-shadow
+profile.tarkov.com##.bsg-ac-cookie-agreement
+gamermarkt.com###fccm_alert
 m6.fr#$#body > div#__brk ~ div:has(> aside[aria-modal] a[href^="/politique-de-confidentialite/"]) { display: none !important; }
 m6.fr#$#body[style="overflow: hidden;"] { overflow: auto !important; }
 imirante.com##.bannerLGPD
@@ -34856,6 +34860,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+portalleodias.com##.ld-block-calling
 life.ru##div[class^="styles_bannerWrapper__"]
 life.ru##div[class^="styles_footerBlocksWrapper__"] > div[class^="styles_container__"]:has(a[title="Дзен.Новости"])
 clubic.com##aside > div[id^="sidebarPos"] > form
@@ -50260,6 +50265,8 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+asmr18.fans##.home-h:has(> a:not([href^="https://asmr18.fans"]))
+ashild.no##.banner-usp
 search.yahoo.co.jp##.SearchTop__banner
 scmp.com##div[data-qa="PlusWidget-Container"]
 merkmal-biz.jp###recruitlink
