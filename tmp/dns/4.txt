@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: CApWDEm/WeD48XYP/mrhpQ
-! Diff-Path: ../patches/4/4-s-1754061121-3600.patch
+! Checksum: YAHMbnk8vRXtXms6/pXTtA
+! Diff-Path: ../patches/4/4-s-1754284981-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.17.79
-! TimeUpdated: 2025-08-01T15:07:47+00:00
+! Version: 2.1.17.81
+! TimeUpdated: 2025-08-04T05:18:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,8 @@ esquire.com,dotesports.com,mashable.com,pcmag.com,onefootball.com,ign.com,israel
 !
 ! NOTE: Specific rules
 !
+viciados.net##.elementor-widget-foxiz-social-list
+viciados.net##.elementor-section-boxed[data-id]:has(.elementor-widget-foxiz-social-follower)
 manchestereveningnews.co.uk##div[class^="ShareBar_"]
 imirante.com##.artigo__redes
 buzzfeed.com##article > .embed-action-bar:has(> div[class^="action-bar_commentsCtaWrapper_"]:empty + div[class^="post_shareTop__"])
@@ -2336,7 +2338,6 @@ adme.media#?#div:contains(/^Поделиться этой статьёй$/)
 invivo.ua##.blog__info-share
 artigercek.com##.content-tools > div.loaded
 wegym.ru##.blog-content__socials
-imdb.com#$#button.sharemenu-iconbutton { visibility: hidden !important; }
 imdb.com##div[data-testid="chart-layout-sidebar-title-container"] div:has(> button.sharemenu-iconbutton)
 imdb.com##div[data-testid="hero-subnav-bar-share-button"]
 pathee.com##div[class]:has(> h3:first-child + ul:last-child > li > a[href*="share"])
