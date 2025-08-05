@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508042106
+! Version: 202508050304
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 04 Aug 2025 21:06 UTC
+! Last modified: 05 Aug 2025 03:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -100949,6 +100949,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+disqus.com#%#//scriptlet('href-sanitizer', 'a[href*="://disq.us/url?url="]', 'text')
 7-24blog.com##body > div[style="height:480px;"]
 ||aplus.aliexpress.*/ae.pc_click.statweb_ae_click
 ||aplus.aliexpress.*/aes.1.1
@@ -105970,6 +105971,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 @@||dkb.de^$cookie=dtCookie
 @@||centrum24.pl^$cookie=dtCookie
+$cookie=adfit_sdk_id
+$cookie=daum_ad
 $cookie=classy-session-id
 $cookie=classy-user-id
 $cookie=_wp_visitor
@@ -106359,6 +106362,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||news.kbs.co.kr^$cookie=STAT_WEBLOG_TOKEN
 ||hpplus.jp^$cookie=fw_se
 ||hpplus.jp^$cookie=fw_uid
 ||idnes.cz^$cookie=adtrack-lib-criteo
