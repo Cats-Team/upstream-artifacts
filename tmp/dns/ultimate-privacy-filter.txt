@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508050304
+! Version: 202508050904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 05 Aug 2025 03:04 UTC
+! Last modified: 05 Aug 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -63641,6 +63641,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.zdassets.com^
+||analyzer*.fc2.com^
+||analytics.flexclip.com^
 ||iws2.io.naver.com^
 ||clog.tanshudata.com^
 ||gw.stape.fr^
@@ -100949,6 +100952,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||flexclip.com/templates/fujie/js/analytics.js
+kari.com#%#//scriptlet('set-local-storage-item', 'device_id', '$remove$')
+kari.com#%#//scriptlet('set-local-storage-item', 'rees46_device_id', '$remove$')
 disqus.com#%#//scriptlet('href-sanitizer', 'a[href*="://disq.us/url?url="]', 'text')
 7-24blog.com##body > div[style="height:480px;"]
 ||aplus.aliexpress.*/ae.pc_click.statweb_ae_click
@@ -100958,7 +100964,6 @@ disqus.com#%#//scriptlet('href-sanitizer', 'a[href*="://disq.us/url?url="]', 'te
 ||aplus.aliexpress.*/g.gif?logtype=
 ||digital.pumb.ua/environment|
 ||digital.pumb.ua/s1fy3/Nk/zTd/
-||assets.msn.com/bundles/*/libs_ads-utils_dist_logging_*.js
 ||assets*.msn.com/bundles/*/nativeadstemplates.*.js
 techradar.com#%#//scriptlet('href-sanitizer', 'a[href^="https://go.redirectingat.com/?id="]', '?url')
 ||secure.ace.itv.com/*/event|
@@ -106362,6 +106367,9 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||kari.com^$cookie=rees46_device_id
+||kari.com^$cookie=did
+||kari.com^$cookie=/^sid_/
 ||news.kbs.co.kr^$cookie=STAT_WEBLOG_TOKEN
 ||hpplus.jp^$cookie=fw_se
 ||hpplus.jp^$cookie=fw_uid
