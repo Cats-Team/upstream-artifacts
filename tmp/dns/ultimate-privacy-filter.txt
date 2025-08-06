@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508051504
+! Version: 202508052104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 05 Aug 2025 15:04 UTC
+! Last modified: 05 Aug 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -63642,6 +63642,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||logapi.sooplive.com^
+||log-api.sooplive.com^
 ||telemetry.proton.me^
 ||analytics.tempmail100.com^
 ||telemetry.sgp.pvp.net^
@@ -105591,6 +105593,8 @@ link.gmapp*.net$image
 .net%2Fe%2Fo%2F$image
 /CI0/0$image
 %2FCI0%2F0$image
+.salesforce.com/servlet/servlet.ImageServer$image
+.salesforce.com%2Fservlet%2Fservlet.ImageServer$image
 flask.us.nextdoor.com$image
 c.groovehq.com/*.gif$image
 c.groovehq.com%2F*.gif$image
@@ -105983,6 +105987,10 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 @@||dkb.de^$cookie=dtCookie
 @@||centrum24.pl^$cookie=dtCookie
+||outdoorsy.com^$cookie=odc-s
+||outdoorsy.com^$cookie=odc-e
+||outdoorsy.com^$cookie=odc-d
+||outdoorsy.com^$cookie=odc-aid
 $cookie=adfit_sdk_id
 $cookie=daum_ad
 $cookie=classy-session-id
@@ -107919,6 +107927,8 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||cdn.segment.com/*/settings|$xmlhttprequest,domain=outdoorsy.com
+@@||cdn.ing.de/ing-cms-ui/*/js/webtrekk-snwMKyfV.js
 @@||connect.facebook.net/*/fbevents.js$domain=smartstore.naver.com
 @@||googletagmanager.com/gtm.js$domain=jornaldocomercio.com
 @@||curos.ca/res/*/resources/scripts/lib/fingerprint.js$domain=curos.ca
