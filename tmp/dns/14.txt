@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: 6/9ISMv5wG7y6Ov3+9g7MQ
-! Diff-Path: ../patches/14/14-s-1754435474-3600.patch
+! Checksum: oxUqfEWOTvsfJ4Cx0amJNw
+! Diff-Path: ../patches/14/14-s-1754457534-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.38.60
-! TimeUpdated: 2025-08-05T23:07:21+00:00
+! Version: 2.2.38.63
+! TimeUpdated: 2025-08-06T05:14:54+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1699,6 +1699,8 @@
 !
 ! SECTION: Cookies - General URL
 !
+||cdn.sypher.eu/consent/
+||consent.sypher.eu/cnst/
 /kvkk.cookie.v2.min.js
 ||cookies.nos.nl^
 ||app.termly.io/resource-blocker/
@@ -34898,6 +34900,14 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+macitynet.it##.tdc-row:has(.tdn_block_newsletter_subscribe)
+macitynet.it##.vc_row_inner:has(a[href^="https://news.google.com/publications/"])
+macitynet.it##.tdm_block_call_to_action
+aarp.org##.uxdia-c-fullwidth-membership-promo__inner-container
+aarp.org##.mvc-inline-mbo-container
+aarp.org##.cmp-experiencefragment--Newsletter_NAW
+aarp.org###_content_experience-fragments_uxdia-folder-structure_en_next-action-widgets_membership-promo-naw_default_target_jcr_content_root_responsivegrid_experiencefragment
+seedblink.com##.card-form-newsletter-blog
 tutu.ru##div[data-kind="grid-col"] > div[class^="view__wrapper"]:has(> div[data-ti="email_subscribe"])
 rtl.be##box-newsletters
 lesoir.be###block_marketing_imu_nextgen

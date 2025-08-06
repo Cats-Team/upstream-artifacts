@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508052104
+! Version: 202508060304
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 05 Aug 2025 21:04 UTC
+! Last modified: 06 Aug 2025 03:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -298,7 +298,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||stapecdn.com^
 ||jollyoutdoorjogger.com^
 ||ob.esnlocco.com^
-||ecommerce-events.adscale.com^
+||ecommerce-events*.adscale.com^
 ||adbeacon.com^$third-party
 ||transaction-watcher-2.littledata.io^
 ||mirabelanalytics.com^
@@ -63642,6 +63642,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||wphlvzycf5.execute-api.eu-west-2.amazonaws.com^
+||mp.cwtv.com^
 ||logapi.sooplive.com^
 ||log-api.sooplive.com^
 ||telemetry.proton.me^
@@ -100317,6 +100319,7 @@ zmail.happycustomer.io$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/~partytown/proxytown
 /fingerprint/iife.min.js
 /dtr/count.php
 /js/generateStats-min.js
