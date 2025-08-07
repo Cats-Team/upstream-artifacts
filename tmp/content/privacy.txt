@@ -2093,15 +2093,16 @@ mediamarkt.de##+js(aopw, ftr__startScriptLoad)
 ! https://namethatporn.com/post/1035888-name-of-the-girl.html
 ||redir.me/?$urlskip=/\?(https?:\/\/[^&]+)/
 
-! https://github.com/uBlockOrigin/uAssets/issues/29433
-||chess.com/service/user-activity/chesscom.user_activity.v1.UserActivityHttpBridgeService/DispatchEventBatch
-
 ! https://github.com/uBlockOrigin/uAssets/issues/29442
 ||truthsocial.com/api/*/impression?
 
 ! https://github.com/uBlockOrigin/uAssets/issues/29485
 ||stw.zone-telechargement.
 ||stw.dl-protect.link^
+
+! https://gg.deals/
+||gg.deals/us/redirect/$doc,csp=scrip-src 'none'
+||gg.deals/redirections/report/
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
