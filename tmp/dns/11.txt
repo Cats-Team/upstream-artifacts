@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: hYIIMRl5Y7bIMPW/EHk6YQ
-! Diff-Path: ../patches/11/11-s-1754624467-3600.patch
+! Checksum: pRHuqYrOvp83Fr0dpGl3PQ
+! Diff-Path: ../patches/11/11-s-1754647914-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.63.18
-! TimeUpdated: 2025-08-08T03:37:04+00:00
+! Version: 2.0.63.22
+! TimeUpdated: 2025-08-08T10:07:53+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -161,6 +161,11 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||beijingzhongnanhai.com^
+||jybsb9oyss.com^
+||vniddlg.xyz^
+||tiu6ij9yqn.com^
+||drbbzzs.xyz^
 ||ads-segment-profile-noneu.truecaller.com^
 ||ad.intools.dev^
 ||mp-api.afafb.com^
@@ -2565,6 +2570,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+borsaningundemi.com##.akAds
+beauty.oricon.co.jp##.ttl-kjbox + section:has(> ul.kjbox)
 sci.rambler.ru##div[id^="rambler-info-banner"]
 sci.rambler.ru#?##summary ~ div:contains(Продолжение истории после рекламы)
 duckduckgo.com##main[data-testid="zci-products"] > nav + div > div:has( > h2 button[data-testid="ad-badge"])
@@ -8047,6 +8054,8 @@ livejournal.com##.mdspost-aside__item--banner
 ! END: Livejournal.com
 !
 !
+!+ NOT_PLATFORM(ext_android_cb)
+beauty.oricon.co.jp##.ttl-kjbox
 !+ NOT_PLATFORM(ext_ublock)
 9hentai.*#%#//scriptlet('abort-on-property-read', '_9HentaiJs.add')
 !+ NOT_OPTIMIZED
