@@ -1411,6 +1411,9 @@ $removeparam=igshid,domain=instagram.com|threads.net
 ||api.cxense.com/public/widget/data^$removeparam=experienceId
 ||api.cxense.com/public/widget/data^$removeparam=experienceActionId
 ||api.cxense.com/public/widget/data^$removeparam=trackingId
+! viously
+||sonar.viously.com^$removeparam=c
+||sonar.viously.com^$removeparam=r
 ! Exceptions
 @@||web.archive.org/*/http$removeparam
 ! https://github.com/uBlockOrigin/uAssets/issues/25350
@@ -2108,6 +2111,10 @@ mediamarkt.de##+js(aopw, ftr__startScriptLoad)
 ! https://github.com/uBlockOrigin/uAssets/issues/29551
 ||ofiii.com/library/comscore/comscore.js
 ||svc.litv.tv/api/v*/unit
+
+! https://github.com/uBlockOrigin/uAssets/issues/29561
+/js/script.outbound-links.pageview-props.tagged-events.js
+/js/script.outbound-links.pageview-props.tagged-events.manual.js
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
