@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: +j1yJcsFtwxzMil+FWePbA
-! Diff-Path: ../patches/14/14-s-1754936004-3600.patch
+! Checksum: G+5ugwlfSSR9TiOUEZ1CnQ
+! Diff-Path: ../patches/14/14-s-1754975519-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.39.23
-! TimeUpdated: 2025-08-11T18:09:20+00:00
+! Version: 2.2.39.28
+! TimeUpdated: 2025-08-12T05:08:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2525,6 +2525,10 @@ entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,g
 !
 ! NOTE: Regular rules
 !
+||eon.pl/~/media/Files/CookieWall/
+miles-and-more.com#%#//scriptlet('trusted-set-cookie', 'consent_choice', 'functional', '', '/', 'www.miles-and-more.com')
+miles-and-more.com#%#//scriptlet('trusted-set-cookie', 'consent_date', '$now$', '', '/', 'www.miles-and-more.com')
+olimp.bet###snackbar-root
 ptt.gov.tr##div[class^="style_cookieBanner"]
 hkticketing.com###policy_new
 trip.com##.ibu-cookie-banner
@@ -2907,7 +2911,7 @@ jeep.com.br##.hub-info-bar-vue:has(a[href*="/politica-de-privacidade.html"])
 ~2gis.ae,2gis.*#%#//scriptlet('trusted-set-cookie-reload', 'dg5_jur', '%7B%22ru_sng%22%3A%7B%22status%22%3A%22agree%22%7D%7D')
 2gis.ae#%#//scriptlet('trusted-set-cookie-reload', 'dg5_jur', '%7B%22uae%22%3A%7B%22status%22%3A%22agree%22%7D%7D')
 2gis.*##._4xmcmq
-33-news.ru,news-komi.ru##.notifycation
+ko44.ru,33-news.ru,news-komi.ru##.notifycation
 dekoder.org##.ph-cookie-compliance
 unimednortepaulista.com.br#%#//scriptlet('trusted-set-cookie', 'cookie_lgpd', 'Cookie+armazenado+com+sucesso.')
 msz.gov.pl#%#//scriptlet('trusted-set-cookie', 'cookiesConsent', 'all')
@@ -4913,7 +4917,7 @@ meine.aok.de#%#//scriptlet('trusted-click-element', 'aok-oc2-consent-popup-overv
 meine.aok.de#%#//scriptlet('trusted-click-element', 'aok-oc2-consent-popup-selection > .buttons >  button:first-child', '', '2000')
 kangu.com.br##.app-cookie-manager
 audio.com#%#//scriptlet('trusted-set-local-storage-item', 'cookies_policy', 'declined')
-edinos.pl,vebo.pl,dentilove.pl,otozegarki.pl###cookieModalBottom
+2cafe.pl,edinos.pl,vebo.pl,dentilove.pl,otozegarki.pl###cookieModalBottom
 openpli.org#%#//scriptlet('set-cookie', 'gdpr-accepted', 'Yes')
 wincofoods.com##mct-templater-cookie-consent
 /wp-content/plugins/wpmagus-consent-manager/assets/*$domain=altenberg.pl|alt.pl|autoprawo.pl
@@ -8172,7 +8176,7 @@ dazn.com##.w-cookie-banner
 ||laxd.com/share/js/gdpr/
 led2work.com##.waconcookiemanagement-cookiebar
 audioledcar.com###soycontrolcookies_container
-thinkit.pl,klimareporter.de##div[id^="cpnb"]
+goldbike.pl,thinkit.pl,klimareporter.de##div[id^="cpnb"]
 wedding.pl#$#.modal-open { overflow: auto !important; padding-right: 0 !important; }
 wedding.pl#$#body .modal--cookies.show { display: none !important; }
 wedding.pl#$#body .modal-backdrop.show { display: none !important; }
@@ -9308,7 +9312,7 @@ blueflag.global,lemoncode.net,records.team##.sqs-announcement-bar
 doppelherz.com#$#.cookie-inquiry-wrapper { display: none !important; }
 mensnonno.jp,epson.ru###cookie_confirm
 ||zohocdn.com/pagesense/tracking/privacy-banner-$third-party
-nfnz.cz,dagrasso.pl,businessoffashion.com,goingapp.pl,empikbilety.pl##div[class^="CookieBar_"]
+makeship.com,nfnz.cz,dagrasso.pl,businessoffashion.com,goingapp.pl,empikbilety.pl##div[class^="CookieBar_"]
 comune.novamilanese.mb.it#$#body { overflow-y: auto !important; }
 comune.novamilanese.mb.it#$#.HCookieBar-Hoverlay { display: none !important; }
 live-tracking.locusmap.app###ktCookieStatement
@@ -22294,6 +22298,7 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! Do not forget about '!#safari_cb_affinity' section for exclusions:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#general
 !
+on4t.com#@#.google-ad
 livacha.com##div[href="/p/adv-enable"]
 ||a.orbsrv.com/ad-provider.js$domain=xvideos.com,redirect=noopjs
 xvideos.com##body > div[style*="background: rgb"][style*="text-align: center"]
@@ -33585,6 +33590,12 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+cleverhiker.com#%#//scriptlet('set-cookie', 'showBannerCTA', 'true')
+ubie.app##.GenpakuFloatingDoctorConsultingLinkWebSection_floatingFooterContainerArea__W_vhQ
+needtoknow.co.uk##.elementor-section-height-default section  div.elementor-column:has(> .elementor-element-populated input[type="email"] + input[value="Sign Up"])
+quantamagazine.org##.sidebar__newsletter + .mb05.theme__accent-hover
+quantamagazine.org##.sidebar__newsletter ~ a[href*="campaign-archive2.com/home/"]
+pcmag.com##a[href="https://www.pcmag.com/newsletter_manage"]
 bitwarden.com##.bw-newsletter
 aviasales.ru##div[class^="SocialBanner_container"]
 aviasales.ru##div[class^="SubscriptionModalFloatingButton_container"]
@@ -36472,7 +36483,7 @@ donanimhaber.com##.google-news-subscribe-button
 inyourarea.co.uk###iya-email-subscription-form
 timeturk.com##.google-publicher-space
 ||assets.mailmojo.no/sdk.js$domain=forsvaretsforum.no
-geizdental.de#%#//scriptlet('set-cookie', 'newsletter', '1')
+apetogentleman.com,geizdental.de#%#//scriptlet('set-cookie', 'newsletter', '1')
 xistore.by###modalLeave
 xistore.by##.modal-backdrop
 pddmaster.ru##div[id^="obzor"]
@@ -37080,7 +37091,7 @@ amomama.fr#?#div[data-io-article-url] > p:has(> i > strong > a[href^="https://ne
 ksl.com##.newsSignup
 response.jp##.mms-content
 techymedies.com###media_image-4
-nftnow.com##.sidebar__newsletter
+quantamagazine.org,nftnow.com##.sidebar__newsletter
 yourdailypornvideos.ws#?#.column_container > aside.widget:has(> div.block-title > span:contains(FOLLOW US ON TELEGRAM GROUP))
 yourdailypornvideos.ws#?#.column_container > aside.widget:has(> div.block-title > span:contains(FOLLOW US ON TELEGRAM GROUP)) + aside.widget
 aritzia.com#%#//scriptlet('prevent-setTimeout', 'newsletter')
@@ -58231,6 +58242,7 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 !   NOTE: Donation widgets
 !   Really annoying only
 !
+theintercept.com##div[data-module="DirectAsk"]
 pbs.org##.inline-invite-type__funding
 asiatimes.com##.above-footer-widgets
 frontieresmedia.fr##.sticky.bottom-0
