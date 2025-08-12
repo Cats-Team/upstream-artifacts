@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508120304
+! Version: 202508120906
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Aug 2025 03:04 UTC
+! Last modified: 12 Aug 2025 09:06 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||consolidata.ai^
 ||analytics.google.com^$third-party
 ||log.trend.rankify.best^
 ||alexametrics.com^
@@ -61940,6 +61941,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||beehiiv-adnetwork-production.s*.amazonaws.com^
+||stats.vidalytics.com^
 ||ts-analysis.shoalter.com^
 ||targetyo.yogiyo.co.kr^
 ||wphlvzycf5.execute-api.eu-west-2.amazonaws.com^
@@ -102309,6 +102312,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||services.msgsndr.com/attribution_service/
+||moderate.cleantalk.org/*/frontend_data
+||herokuapp.com/save_utm_params
+||calendly.com/api/booking/analytics/track
 ||tag.flvcdn.net/lytag.js
 ||api-iam.intercom.io/messenger/web/ping
 ||api.honeycomb.io/*/traces
@@ -104090,6 +104097,7 @@ dealdoktor.de##img[src*="//vg09.met.vgwort.de/"]
 ||serve.albacross.com/track.js
 ||infostart.hu/js/ga.js
 ||on.aws/tracking/event
+||on.aws/track?
 ||app-bnkr.b-cdn.net/js/lv.js
 ||execute-api*.amazonaws.com/pixel-prod/
 ||images.hepsiburada.net/*/web-vitals.*.js
@@ -107745,6 +107753,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||ko44.ru^$cookie=uniqueid
 ||newneek.co^$cookie=/AMP_/
 ||newneek.co^$cookie=deviceId
 ||kari.com^$cookie=rees46_device_id
@@ -112056,6 +112065,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||fairygaze.com^
 ||fairytaleflame.com^
 ||faithrowold.com^
+||fakedisguise.com^
 ||fallaciousfifth.com^
 ||falseframe.com^
 ||falsesight.com^
@@ -112273,6 +112283,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||hikingbars.com^
 ||hilariouszinc.com^
 ||historicalbeam.com^
+||historytrade.com^
 ||hocgeese.com^
 ||hollowafterthought.com^
 ||homebizplaza.com^
@@ -112498,6 +112509,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||mimosamajor.com^
 ||mindfulgem.com^
 ||mindlessmark.com^
+||mineinvoice.com^
 ||minorcattle.com^
 ||minuteburst.com^
 ||miscreantmoon.com^
