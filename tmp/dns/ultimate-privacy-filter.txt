@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508120906
+! Version: 202508121506
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Aug 2025 09:06 UTC
+! Last modified: 12 Aug 2025 15:06 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -61941,6 +61941,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||a.wb.ru^
 ||beehiiv-adnetwork-production.s*.amazonaws.com^
 ||stats.vidalytics.com^
 ||ts-analysis.shoalter.com^
@@ -107753,6 +107754,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||unipegaso.it^$cookie=crm_multi_tracking
 ||ko44.ru^$cookie=uniqueid
 ||newneek.co^$cookie=/AMP_/
 ||newneek.co^$cookie=deviceId
@@ -108350,6 +108352,11 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||adash-emas.cn-hangzhou.aliyuncs.com^
+||dfe.mic.mob.com^
+||dutils.com^
+||openlog.tapapis.cn^
+||log.aliyuncs.com^
 ||analytics.nianticspatial.com^
 ||statistical-report.djiservice.org^
 ||qcloud-sg-datareceiver.kurogame.xyz^
