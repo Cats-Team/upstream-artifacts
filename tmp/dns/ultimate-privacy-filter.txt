@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508122104
+! Version: 202508130304
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Aug 2025 21:04 UTC
+! Last modified: 13 Aug 2025 03:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -102314,6 +102314,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||walmart.com/sp/b/s/im|
 ||services.msgsndr.com/attribution_service/
 ||moderate.cleantalk.org/*/frontend_data
 ||herokuapp.com/save_utm_params
@@ -103235,7 +103236,7 @@ joinrs.com#%#//scriptlet('set-local-storage-item', 'TRACKING_EVENTS', '$remove$'
 ||mgntrn.nl/api/event
 ||mythical.com/*/app/web-pixel-*/pixel.modern.js
 ||api.config-security.com/event
-||static.klaviyo.com/onsite/js/telemetry.
+||static.klaviyo.com/onsite/
 ||weights.gg/api/data/analytics.trackUserSession
 ||s.ensonhaber.com/assets/js/lib/esh-tag-v5.js
 ||cdn.production.townsquareblogs.com/wp-content/uploads/static/prebid/carbon/pb.js

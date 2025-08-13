@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: 9vFlaF4mMUwL/ls0h1KpTg
-! Diff-Path: ../patches/224/224-s-1755033064-3600.patch
+! Checksum: SyFKlW2DGRxmlOxscDfmyg
+! Diff-Path: ../patches/224/224-s-1755061969-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.41.77
-! TimeUpdated: 2025-08-12T21:07:15+00:00
+! Version: 2.1.41.81
+! TimeUpdated: 2025-08-13T05:09:13+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1066,6 +1066,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+||gl.ali213.net/images/jsq_gl.jpg
+/youziks\.com\/[0-9]+\.js/$domain=youziks.com,script
 *$denyallow=xpxs.net|jiasucdn.com,domain=xpxs.net,xmlhttprequest,image,script
 pttweb.cc##.mt-2 > div:has(.adswrapper) + hr.v-divider
 erciyan.com#%#//scriptlet('prevent-setTimeout', 'window.location.href')
@@ -4978,6 +4980,12 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||naarnurm.com^
+||fe4c0422j.com^
+||r0hpdbkqs.com^
+||ufeuca.icu^
+||goi08130kh.com^
+||mmoba8myv.com^
 ||dzv56b1o0y.com^
 ||otoieku.icu^
 ||wiiytwd.top^
