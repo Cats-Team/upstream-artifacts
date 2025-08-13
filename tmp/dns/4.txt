@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: RbezNINJtnumQVhEkxvMQw
-! Diff-Path: ../patches/4/4-s-1755053022-3600.patch
+! Checksum: dEItUXxFpyViDbOGxtZ7hA
+! Diff-Path: ../patches/4/4-s-1755083455-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.18.18
-! TimeUpdated: 2025-08-13T02:38:58+00:00
+! Version: 2.1.18.20
+! TimeUpdated: 2025-08-13T11:06:46+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,7 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+locationjapan.net##.single_news_sns
 muchohentai.com###custom_html-33
 gunhaber.com.tr##div[style*="50px"]:has( > div > div > a[href^="https://www.facebook.com/sharer/"])
 fikriyat.com##.social-media > ul > .facebook
@@ -2358,6 +2359,7 @@ tkj.jp###book-info-sns
 pococha.com##div[class^="news_share"]
 shop-list.com##.p-columnlp_sns
 travel.yahoo.co.jp###sns-share-buttons
+weathernews.jp##.sns-share-buttons
 projectdesign.jp##.c-list-snsBtns
 projectdesign.jp##.c-sns__links
 ohk.co.jp##.common-sharebox
@@ -6135,7 +6137,7 @@ japan.cnet.com##.leaf_sbm_button_space_note
 japan.cnet.com##.leaf_sbm_button_space_twitter
 toonippo.co.jp##.ad-billbaord
 munesada.com##.sns-bottom-frame
-nrm.jp,mtame.jp,currymeshi.com,wear.jp,banei-keiba.or.jp###sns_share
+wjsm.co.jp,nrm.jp,mtame.jp,currymeshi.com,wear.jp,banei-keiba.or.jp###sns_share
 bunshun.jp##.share_beginning_button
 pen-online.jp##.p-article__intro-sns
 logsign.com##.share-horizontal-title
