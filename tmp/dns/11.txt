@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: 2fXz4SLO+sMbcTo2FPPXUg
-! Diff-Path: ../patches/11/11-s-1755072815-3600.patch
+! Checksum: 0UfWNcPxilPdf7rzjtk1nw
+! Diff-Path: ../patches/11/11-s-1755097850-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.63.30
-! TimeUpdated: 2025-08-13T08:09:25+00:00
+! Version: 2.0.63.32
+! TimeUpdated: 2025-08-13T15:06:46+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1009,6 +1009,7 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/211147
 ! ad wall
 mdpr.jp#%#//scriptlet('trusted-set-attr', '#gn-rwd-target-hidden', 'class', 'rewareded')
 mdpr.jp#%#//scriptlet('set-session-storage-item', 'gnrwdfreq', '1')
@@ -2570,6 +2571,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+moovitapp.com#$#.header-sticky-ad-test { top: 0 !important; }
 missavtv.com##iframe[src^="https://creative.rmhfrtnd.com/"]
 igg-games.com##a[href*="?uaffer="]
 cielotv.it##main > div[type="skin"][class^="sc-"]
