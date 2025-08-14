@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508140304
+! Version: 202508140904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 14 Aug 2025 03:04 UTC
+! Last modified: 14 Aug 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -61941,6 +61941,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||clck.edadeal.ru^
+||analytics-cdn.levante-emv.com^
+||analytics-cdn.prensaiberica.es^
 ||dsp.newsbreak.com^
 ||a.wb.ru^
 ||beehiiv-adnetwork-production.s*.amazonaws.com^
@@ -107330,6 +107333,7 @@ twitter.com/scribe/ibis?t=$image
 twitter.com%2Fscribe%2Fibis%3Ft%3D$image
 adguard.info,adguard.com,adguard.app##.hello_from_adguard_tracking_protection_ext
 adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
+@@||play.history.com^$cookie=/^AMCVS?_.*AdobeOrg/
 @@||play.aetv.com^$cookie=/^AMCVS?_.*AdobeOrg/
 @@||googletagmanager.com/gtm.js$domain=oto.net
 @@||moegirl.org.cn^$cookie=/^_ga_/
@@ -109308,6 +109312,7 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||abt.nike.com^$domain=nike.com
 @@||googletagmanager.com/gtm.js?id=GTM-56WSR2$domain=victorinox.com
 @@||cdn.segment.com/*/settings|$xmlhttprequest,domain=outdoorsy.com
 @@||cdn.ing.de/ing-cms-ui/*/js/webtrekk-snwMKyfV.js
