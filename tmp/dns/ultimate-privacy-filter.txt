@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508150904
+! Version: 202508151504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 15 Aug 2025 09:04 UTC
+! Last modified: 15 Aug 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analytics-api.gemcommerce.com^
+||slgnt.eu^
+||slgnt.us^
 ||consolidata.ai^
 ||analytics.google.com^$third-party
 ||log.trend.rankify.best^
@@ -63544,6 +63547,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.cosmopolitanmag.com.tr^
 ||clck.edadeal.ru^
 ||analytics-cdn.levante-emv.com^
 ||analytics-cdn.prensaiberica.es^
@@ -64615,7 +64619,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||dsas.danawa.com^
 ||t.apkpure.net^
 ||weblog.woowa.in^
-||site-azp.slgnt.eu^
 ||pra.praxis.nl^
 ||tracker.samplicio.us^
 ||visit.xchina.pics^
@@ -65700,7 +65703,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||mms.splinternews.com^
 ||mms.syracuse.com^
 ||mms.theroot.com^
-||mobile.slgnt.eu^
 ||mobileanalytics.*.amazonaws.com^
 ||momowa.momoshop.com.tw^
 ||monitor-targeting-failures.sqrt-5041.de^
@@ -101963,6 +101965,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+://rum.collector.*/beacon.gif
 /~partytown/proxytown
 /fingerprint/iife.min.js
 /dtr/count.php
@@ -102608,6 +102611,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||solarwinds.com/ra-$script
+||data.qiota.com/api/event
+||20minutes.fr/js/piano-*.js
+||lemonde.fr/bucket/resources/front/*.pa.js
 /\/([\w\d]+\/){4,}([\w\d]){5,}$/$script,~third-party,domain=hepsiburada.com
 ||walmart.com/sp/b/s/im|
 ||services.msgsndr.com/attribution_service/
