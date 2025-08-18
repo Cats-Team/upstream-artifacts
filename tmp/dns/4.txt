@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: Jfp/iygm6te8URTaCzLkxA
-! Diff-Path: ../patches/4/4-s-1755494061-3600.patch
+! Checksum: Yj9Sm1/coLOZybWGiOOZmQ
+! Diff-Path: ../patches/4/4-s-1755515471-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.18.31
-! TimeUpdated: 2025-08-18T05:10:17+00:00
+! Version: 2.1.18.35
+! TimeUpdated: 2025-08-18T11:06:44+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,9 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+ilfattoquotidiano.it##.fqm-share-end
+ilfattoquotidiano.it##.ifq-news-meta__share
+dogrulukpayi.com##.sticky-share-menu
 gravidia.jp##.sw-SnsShare
 animalpolitico.com##div.relative > button.relative:has(> span:contains(Compartir))
 elfinanciero.com.mx##.b-share-bar
@@ -7463,13 +7466,13 @@ larende.com##div[class$="Facebook_Sayfam"]
 larende.com##div[class$="Twitter_Sayfam"]
 delfi.lt,delfi.ee##.C-article-social
 hrej.cz##.un-chip-group > a[data-share-type]
-keizai.biz,hamakei.com,akiba.keizai.biz,freeserial.cmoa.jp,shiki.jp,goobike.com,ozmall.co.jp,beauty.hotpepper.jp,ktn.co.jp,hominis.media,kikubon.jp,shibukei.com##.snsArea
+suntory.co.jp,keizai.biz,hamakei.com,akiba.keizai.biz,freeserial.cmoa.jp,shiki.jp,goobike.com,ozmall.co.jp,beauty.hotpepper.jp,ktn.co.jp,hominis.media,kikubon.jp,shibukei.com##.snsArea
 ogolosha.ua##.gallery-icon-box__share
 teleprogramma.pro##a[ref="#share"]
 zn.ua##.top_social_holder
 specials.sports.ru##.main-container__share-block
-serien.*,serienstream.to,s.to##.beSocialShare
-serien.*,serienstream.to,s.to##.ssto-share-buttons
+186.2.175.5,serien.*,serienstream.to,s.to##.beSocialShare
+186.2.175.5,serien.*,serienstream.to,s.to##.ssto-share-buttons
 bbc.co.uk##.LongArticle-share
 monclick.it##div[data-content="share-dialog"]
 mobilenet.cz##.detailButtons > a.btn--facebook
@@ -10868,7 +10871,7 @@ shayhowe.com##.toc > .share
 infoworld.com,tutsplus.com##.social-share-menu
 ukraina.ru,ria.ru##.b-sharebar
 softonic.cn,softonic.com,softonic.pl,softonic.nl##.app-list-share
-avex.jp,softonic.cn,softonic.com,softonic.pl,softonic.nl##.list-share
+tsk-net.com,avex.jp,softonic.cn,softonic.com,softonic.pl,softonic.nl##.list-share
 wired.com##.social-icons__list-item--facebook
 wired.com##.social-icons__list-item--twitter
 thegrammarexchange.infopop.cc##.h-share-icon

@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508180304
+! Version: 202508180904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 18 Aug 2025 03:04 UTC
+! Last modified: 18 Aug 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -224,6 +224,7 @@ elcomercio.es#$#body { overflow: auto !important; }
 ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
 infoseek.co.jp#$#.co-Widget[style="min-height: 6000px;"] { min-height: auto !important; }
 adseek.site#$##primary { display: block !important; }
+biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ##div[data-testid="prism-taboola"]
 ##.ninja-recommend-block
 ##img[src^="//counter.ukr.net/"]
@@ -249,6 +250,9 @@ adseek.site#$##primary { display: block !important; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||collects.lightinthebox.com^
+||rtg.rubiconredirect.com^
+||beacon.gtv-pub.com^
 ||analytics-api.gemcommerce.com^
 ||slgnt.eu^
 ||slgnt.us^
@@ -63546,6 +63550,8 @@ adseek.site#$##primary { display: block !important; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||mllog.jd.com^
+||count.shein.com^
 ||analytics.cosmopolitanmag.com.tr^
 ||clck.edadeal.ru^
 ||analytics-cdn.levante-emv.com^
@@ -101964,6 +101970,9 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+://analytics.*/hardal
+://signal.*/hardal
+://signals.*/hardal
 ://rum.collector.*/beacon.gif
 /~partytown/proxytown
 /fingerprint/iife.min.js
@@ -102604,12 +102613,19 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 ||adc.nine.com.au/?token=$redirect=nooptext,important,domain=9now.com.au
 ||googleadservices.com/pagead/conversion_async.js$redirect=noopjs,domain=ffm.to,important
 /analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.day|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|jrkyushu.co.jp|amiunique.org|edit.ing|konami.com
-||assets.adobedtm.com^$domain=rottentomatoes.com|mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com|thesaurus.com|dhc.co.jp|0101.co.jp|staples.com|rikunabi.com|directscout.recruit.co.jp|r-agent.com|sephora.com|chronicle.com|channelnewsasia.com|cnbc.com|bmw.hu|atu.de|songkick.com|worldshop.eu|t-mobile.com|philanthropy.com|otempo.com.br|webmotors.com.br|myglo.com.ua|meijer.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it
+||assets.adobedtm.com^$domain=rottentomatoes.com|mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com|thesaurus.com|dhc.co.jp|0101.co.jp|staples.com|rikunabi.com|directscout.recruit.co.jp|r-agent.com|sephora.com|chronicle.com|channelnewsasia.com|cnbc.com|bmw.hu|atu.de|songkick.com|worldshop.eu|t-mobile.com|philanthropy.com|otempo.com.br|webmotors.com.br|myglo.com.ua|meijer.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|edp24.co.uk
 /prod/dfm/fp.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/g2i.min.js$redirect=nooptext,important,domain=dailycamera.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||cactus.jd.com/behavior_report
+||h5speed.m.jd.com/event/log
+||edp24.co.uk/resources/responsive-static/vendor/adobe/
+||edp24.co.uk/resources/images/pixel/
+||edp24.co.uk/__siren/
+||scripts.rubiconredirect.com/scripts/vk_lightinthebox.js
+||gateway.shein.com/events/
 ||solarwinds.com/ra-$script
 ||data.qiota.com/api/event
 ||20minutes.fr/js/piano-*.js
@@ -102640,7 +102656,7 @@ disqus.com#%#//scriptlet('href-sanitizer', 'a[href*="://disq.us/url?url="]', 'te
 ||aplus.aliexpress.*/ae.pc_click.statweb_ae_click
 ||aplus.aliexpress.*/aes.1.1
 ||aplus.aliexpress.*/ae.pc_ctr.statweb_ae_ctr
-||aplus.aliexpress.*/Product.Exposure.Event
+||aplus.aliexpress.*/Product.*.Event
 ||aplus.aliexpress.*/g.gif?logtype=
 ||digital.pumb.ua/environment|
 ||digital.pumb.ua/s1fy3/Nk/zTd/
@@ -104811,6 +104827,7 @@ park.ajinomoto.co.jp##.bottomMenu
 ||squid.gazeta.pl/bdtrck/
 ||d1q7pknmpq2wkm.cloudfront.net/js/my.fanplayr.com/
 ||bridge-ashiato.appspot.com/beacon/
+newsdig.tbs.co.jp#?#.l-contents-wrap > div[v-scope^="Recommend"]:upward()
 ||flixcar.com/*/tracking/
 ||kraken.com/js/sift.min.js
 ||instagram.com/ajax/bz
@@ -106675,13 +106692,25 @@ jbpress.ismedia.jp#?#div.--wid:has(> div#taboola-below-article-thumbnails-bottom
 mdpr.jp#?#.p-articleList__heading:has(+ div#taboola-below-article-thumbnails-desktop)
 gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-teasers)
 gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
+blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward()
+jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward()
+minnyuu.jp#?#div[class$="BlockBase"] > div > div > div.plugin-freearea > div.ninja-recommend-block:upward()
+doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp#?#.plugin-memo > div.side > div.ninja-recommend-block:upward()
+blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block:upward()
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> div[ub-in-page])
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> script:contains(window.usabilla))
 hinatasoku.blog.jp#?#.right-container > div.sidewrapper:has(> div.side > a[href="http://www.ziyu.net/"])
 aatyu.livedoor.blog#?#.article > div.plugin-memo:has(> div.side > div.ninja-recommend-block)
+cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward()
+livedoor.biz,ldblog.jp#?#.plugin-memo > div.side > a[href$="ziyu.net/"]:upward()
+blog.fc2.com#?#div[class$="_outline"] > div > div.plugin-counter:upward()
+jisin.jp#?##main-articles > section.post-group > div[data-gmoad]:upward()
 screenov.eu#?#.container > div.box:has(> a[href^="https://www.liveinternet.ru/click"])
 infokam.su#?#aside > section.bot-post:has(> center > a[href^="https://www.liveinternet.ru/"])
 valetudo.ru#?#.v_left > div.moduletable:has(script[src^="https://www.googletagmanager.com/"])
+blog.fc2.com#?#.side-menu > div.sidebar-style > script[src^="//counter1.fc2.com/"]:upward()
+qiita.com#?#div[class^="css"] > div > div[id^="logly-"]:upward()
+m.crank-in.net#?#div[id^="_popIn_trend_ranking"]:upward()
 business.nikkei.com#?#.l-content_footer.recommendesInfomation:contains(あなたにオススメ)
 unews.pro#?##banner > div.RightColumn:has(> a[href^="//www.liveinternet.ru/"])
 fatcatslim.ru#?#.sidebar > div.widget:has(> div > a[href$="liveinternet.ru/click"])
@@ -109599,6 +109628,8 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||cdn.clerk.io/clerk.js$domain=fjellandhandel.no
+@@||api.clerk.io/v*/log/click?$domain=fjellandhandel.no
 @@||s.yimg.com/ss/analytics3.js$domain=sports.yahoo.com
 ||accueil.banque-france.fr/uti/assets/atinternet/core/smarttag.js$script,redirect=ati-smarttag
 @@||abt.nike.com^$domain=nike.com
@@ -109614,6 +109645,8 @@ trendyol-milla.com#%#//scriptlet('set-constant', 'process.env', '')
 bitdefender.com#$#body[style="opacity: 0;"] { opacity: 1 !important; }
 ||sstats.bitdefender.com^$xmlhttprequest,redirect=nooptext,~third-party,important
 @@||sstats.bitdefender.com^$~third-party
+sports.yahoo.com#%#//scriptlet('set-constant', 'rapidInstance.isModuleTracked', 'falseFunc')
+sports.yahoo.com#%#//scriptlet('set-constant', 'rapidInstance.addModulesWithViewability', 'noopFunc')
 sports.yahoo.com#%#//scriptlet('set-constant', 'YAHOO.i13n', 'emptyObj')
 sports.yahoo.com#%#//scriptlet('set-constant', 'YAHOO.i13n.Rapid', 'noopFunc')
 ||files.upscore.com/iframe/iframe_conversion_tracking.js$script,redirect=noopjs,domain=schwarzwaelder-bote.de
