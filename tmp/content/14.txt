@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: LFmXhf4e164Y2ayL4TOvCQ
-! Diff-Path: ../patches/14/14-s-1755551449-3600.patch
+! Checksum: eTZXHiKFreVzpH0EuU8nHw
+! Diff-Path: ../patches/14/14-s-1755580305-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.39.88
-! TimeUpdated: 2025-08-18T21:06:53+00:00
+! Version: 2.2.39.92
+! TimeUpdated: 2025-08-19T05:07:43+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2527,6 +2527,8 @@ entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,g
 !
 ! NOTE: Regular rules
 !
+shop.tricolor.ru##.is-dock-cookie-policy
+wellness.shionogi.co.jp,dani-allergy.jp##.js-cookie-panel
 deutscheoperberlin.de###consent-manager-bg
 check.lionic.com###js-cookie-box
 architecture-weekly.com#%#//scriptlet('trusted-set-cookie', 'hideCookieBanner', '$currentISODate$')
@@ -33641,6 +33643,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+misato-gurashi.com###follow
 downdetector.su##.sitereport > div.social
 architecture-weekly.com#%#//scriptlet('trusted-set-local-storage-item', 'pub-579466-subscribe-prompt-next-shown-at', '99999999999999')
 architecture-weekly.com#%#//scriptlet('trusted-set-local-storage-item', 'pub-579466-takeover-next-shown-at', '99999999999999')
@@ -49154,6 +49157,9 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+sokuyaku.jp##.bannerbox
+atsugi-lab.com##a[href="https://atsugi-lab.com/sponsor-partner/"] img
+log-oita.com##.dividerTop
 xv-ru.com,xvideos.com##body > div[style^="display: flex; background: rgb"]
 rallys.online##div[class^="side_box"]:not(:has(> .widget > a[target="_blank"][href^="https://lin.ee"])):not(:has(> .widget > a[target="_blank"][href*="rallys"]))
 dtf.ru#%#//scriptlet('set-local-storage-item', 'visits-count:plus-promotion', '0')
@@ -51286,7 +51292,7 @@ edureka.co##.blog-content > div.cr-group-tr-cs-carousal
 ||image.rakuten.co.jp/cyberbay/cabinet/
 pay.rakuten.co.jp###DETAIL-ad-modal-parts
 item.rakuten.co.jp###newUserBanner--a
-macpaw.com,shopping.dmkt-sp.jp##.floating-banner
+sokuyaku.jp,macpaw.com,shopping.dmkt-sp.jp##.floating-banner
 dev.classmethod.jp##.footer-banner
 tunelf.com##.article-product-block
 wionews.com##.zee-points-items
