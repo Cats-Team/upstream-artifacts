@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: /o7hRotR0aGfstxaqqh9vA
-! Diff-Path: ../patches/4/4-s-1755576808-3600.patch
+! Checksum: hjIU1G/DSX4y05uV6XWuKA
+! Diff-Path: ../patches/4/4-s-1755601855-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.18.41
-! TimeUpdated: 2025-08-19T04:08:39+00:00
+! Version: 2.1.18.43
+! TimeUpdated: 2025-08-19T11:06:42+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,7 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+e-himart.co.kr###share_sns_layer
 sokuyaku.jp##.facebookbox
 iine-tachikawa.net##.p-snsCta
 fullpokko.com##.rd-sns-box
@@ -6696,7 +6697,7 @@ calculatorsoup.com##.shareContainerLarge
 elpais.com##a[id^="PlayerSharevideo_"]
 elpais.com##[id^="btn_share_otros_"]
 expres.online##.pull-right > div.social
-konhaber.com,belge.com.tr##.sosyalMedya
+yenikonya.com.tr,konhaber.com,belge.com.tr##.sosyalMedya
 hnonline.sk,wiadomoscikosmetyczne.pl,halowies.pl,tygodnik-rolniczy.pl,tsum.ru##.item__share
 english.newstracklive.com##.socail-share
 pussyspace.*##.socialShare

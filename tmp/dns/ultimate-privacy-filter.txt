@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508190304
+! Version: 202508190904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Aug 2025 03:04 UTC
+! Last modified: 19 Aug 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||indicative.com^$third-party
 ||hm2wjuuus3.execute-api.ap-northeast-1.amazonaws.com^
 ||pop.unitedgate.co.jp^$third-party
 ||tag.eisa.mercari.com^
@@ -103059,6 +103060,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||kolayik.com/gjyo/
 ||api.quantumgraph.com/web/cm/
 ||mcdn.tubitv.com/tubitv-assets/js/braze/
 ||s.hoplon.pandora.com/ag/*/clear.js
@@ -113098,6 +113100,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||j93557g.com^
 ||jaderooster.com^
 ||jailbulb.com^
+||jamexport.com^
 ||jazzstadium.com^
 ||jazzwholesale.com^
 ||jetskiscovers.com^
