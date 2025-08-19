@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508190904
+! Version: 202508191504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Aug 2025 09:04 UTC
+! Last modified: 19 Aug 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||t.usermaven.com^
+||onetag.co.kr^
 ||indicative.com^$third-party
 ||hm2wjuuus3.execute-api.ap-northeast-1.amazonaws.com^
 ||pop.unitedgate.co.jp^$third-party
@@ -103060,6 +103062,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||e-himart.co.kr/app/api/*/display/citrusAdTrk
 ||kolayik.com/gjyo/
 ||api.quantumgraph.com/web/cm/
 ||mcdn.tubitv.com/tubitv-assets/js/braze/
@@ -109115,6 +109118,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||beacons.ads.fubo.tv^
 ||s3-ca-liveops.easybrain.com^
 ||trackers.fubo.tv^
 ||beacons-prod.fubo.tv^
