@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508191504
+! Version: 202508192104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Aug 2025 15:04 UTC
+! Last modified: 19 Aug 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||ub-analytics.com^
 ||t.usermaven.com^
 ||onetag.co.kr^
 ||indicative.com^$third-party
@@ -66530,6 +66531,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||data.ds.dumont.de^
+||sta-events.swishapps.ai^
+||pro-1w-dataaggregator.onelouder.com^
 ||mllog.jd.com^
 ||count.shein.com^
 ||analytics.cosmopolitanmag.com.tr^
@@ -103062,6 +103066,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||guc*-spclient.spotify.com/gabo-receiver-service/public/*/events
+||issuu.com/bsp/events/*/web-events
 ||e-himart.co.kr/app/api/*/display/citrusAdTrk
 ||kolayik.com/gjyo/
 ||api.quantumgraph.com/web/cm/
@@ -108123,6 +108129,9 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 @@||dkb.de^$cookie=dtCookie
 @@||centrum24.pl^$cookie=dtCookie
+$cookie=ubpv
+$cookie=ubvt
+$cookie=ubvs
 ||outdoorsy.com^$cookie=odc-s
 ||outdoorsy.com^$cookie=odc-e
 ||outdoorsy.com^$cookie=odc-d
@@ -108381,6 +108390,7 @@ $cookie=_opt_expid
 $cookie=__gpi
 $cookie=_gid
 $cookie=_ga
+$cookie=__ga_uid
 $cookie=/^_gat_tracker\d+/
 $cookie=_ga_devsite
 $cookie=/^_gat_/
@@ -108419,7 +108429,7 @@ $cookie=_cb
 $cookie=/^_chartbeat/
 $cookie=/^_v__chartbeat/
 $cookie=_cb_svref
-$cookie=/^mprtcl-v4_/
+$cookie=/^mprtcl-v4/
 $cookie=/^mprtcl-prodv4_/
 $cookie=s_ecid
 $cookie=s_sq
