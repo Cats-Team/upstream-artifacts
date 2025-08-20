@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508200304
+! Version: 202508200904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Aug 2025 03:04 UTC
+! Last modified: 20 Aug 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -103069,6 +103069,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||bhaskar.com/comscore-ajax/
 ||guc*-spclient.spotify.com/gabo-receiver-service/public/*/events
 ||issuu.com/bsp/events/*/web-events
 ||e-himart.co.kr/app/api/*/display/citrusAdTrk
@@ -110543,7 +110544,6 @@ login.coupang.com#%#//scriptlet('prevent-element-src-loading', 'script', 'app-co
 @@||richrelevance.com/rrserver/$domain=blue-tomato.com
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics,important,domain=m2o.it|deejay.it|capital.it
 ||static.chartbeat.com/js/chartbeat_brightcove_plugin.js$script,redirect=noopjs,important,domain=m2o.it|deejay.it|capital.it
-||form.info-morimoto-real.jp^$badfilter
 @@||cdn.taboola.com^$domain=asianetnews.com
 @@||trc-events.taboola.com^$domain=asianetnews.com
 @@||trc.taboola.com^$domain=asianetnews.com
@@ -110554,7 +110554,6 @@ tieba.baidu.com#%#//scriptlet('set-constant', 'passFingerPrint', 'noopFunc')
 @@||datadoghq-browser-agent.com^$script,domain=hungryroot.com
 ||bbcgoodfood.com/stitcher-assets/gpt/tag/js/gpt.js$script,redirect=noopjs
 @@||googletagmanager.com/gtm.js$domain=outkick.com
-||connect.telstrawholesale.com^$badfilter
 @@||omtrdc.net/*/mbox/json$domain=apps.pnc.com
 @@||frosmo.com/recoApi/$domain=eeva.fi|terve.fi|lily.fi|meillakotona.fi|apu.fi
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=coolermaster.com
@@ -110666,7 +110665,6 @@ goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
 @@||1gr.cz/log/score.aspx?page*url=
 @@||data-*.rtl.de/iomm/latest/bootstrap/stub.js$domain=rtl.de
 @@||googletagmanager.com/gtm.js$domain=rtl.de
-||login.eki-net.com^$badfilter
 @@||googletagmanager.com/gtm.js$domain=rocketnews24.com
 @@||google-analytics.com/analytics.js$domain=artage.io
 @@||googletagmanager.com/gtm.js$domain=zozo.jp
@@ -110709,7 +110707,6 @@ goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
 @@||googletagmanager.com/gtm.js?id=GTM-TSHZLHD$domain=cyclingnews.com
 @@||video.qq.com/getvinfo?*&otype=*&host=*&refer=htt$domain=v.qq.com
 @@||jssdkcdns.mparticle.com/js/v*/*/mparticle.js$domain=weather.com
-||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt,domain=thedailybeast.com,badfilter
 @@||blob.core.windows.net/bge/src/js/google-analytics.js$domain=secure2.bge.com
 @@||ukw.jp^*/?cbk=$script,domain=system5.jp
 @@||munchkin.marketo.net/munchkin.js$domain=telus.com
@@ -110851,8 +110848,6 @@ suki-kira.com#%#//scriptlet("remove-attr", "disabled", "button.vote-submit")
 ||b92.yahoo.co.jp/js/s_retargeting.js$script,redirect=noopjs,domain=nissan.co.jp
 ||js.adsrvr.org/up_loader.$script,redirect=noopjs,domain=nissan.co.jp
 ||yimg.jp/images/listing/tool/cv/$script,redirect=noopjs,domain=nissan.co.jp
-||lp.tfd-corp.co.jp^$badfilter
-||info.neg.co.jp^$badfilter
 @@||cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.js$script,domain=picoworkers.com
 ||new.hnair.com/hainanair/ibe/static/scripts/new/profile/fingerprint2.js$script,redirect=fingerprintjs2,important
 @@||new.hnair.com/hainanair/ibe/static/scripts/new/profile/fingerprint2.js
@@ -111419,7 +111414,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 @@||google-analytics.com/analytics.js$domain=beinsports.com
 @@||googletagmanager.com/gtm.js$domain=moniteurautomobile.be
 @@||google-analytics.com/analytics.js$domain=moniteurautomobile.be
-||ens.nzz.ch^$badfilter
 @@||track.nzz.ch/cre-*/tracking/
 @@||tags.tiqcdn.com/utag/tegna^$domain=kvue.com
 @@||marketo.com//index.php/form/
