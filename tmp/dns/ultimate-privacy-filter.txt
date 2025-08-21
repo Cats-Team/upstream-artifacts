@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508201504
+! Version: 202508202104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Aug 2025 15:04 UTC
+! Last modified: 20 Aug 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||big7.com^$third-party
+||collect.adplogger.no^
+||lwadm.com^
+||smct.co^
 ||ub-analytics.com^
 ||t.usermaven.com^
 ||onetag.co.kr^
@@ -2653,7 +2657,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||dsply.com^$third-party
 ||dti-ranker.com^$third-party
 ||dtscout.com^$third-party
-||dwin1.com^$third-party
+||dwin1.com^
 ||dwin2.com^$third-party
 ||dyntrk.com^$third-party
 ||e-kaiseki.com^$third-party
@@ -66604,6 +66608,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||ihi.flowplayer.com^
+||pixel.spotify.com^
 ||gtmserverside.eluniversal.com.mx^
 ||ym-tack.b-cdn.net^
 ||icu.newsroom.bi^
@@ -103142,6 +103148,19 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||featureflags.grubhub.com/v1/events
+||pps.rokt.com/v1/timings/events
+||sse.devcycle.com/event-stream
+||services.api.no/api/bazaar/logerror
+||channel-receive.meetbot.biz/sp/callback/user/behavior/data
+||esrtech.com/web-pixels
+||esrtech.com/api/collect
+||chata.quickcep.com/im/behavior/visitor/update
+||vkvideo.ru/al_video.php?act=track_player_events
+||spclient.wg.spotify.com/gabo-receiver-service*/v3/events/
+||spclient.wg.spotify.com/ads/
+||spclient.wg.spotify.com/ad-logic/
+-spclient.spotify.com/gabo-receiver-service*/v3/events
 ||api.fubo.tv/papi/v1/tracking
 livemint.com#%#//scriptlet('set-constant', 'dapTracker', 'emptyObj')
 livemint.com#%#//scriptlet('set-constant', 'dapTracker.track', 'noopFunc')
