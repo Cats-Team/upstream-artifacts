@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: o+A6HPLDIeILOHiVjdIbww
-! Diff-Path: ../patches/4/4-s-1755753116-3600.patch
+! Checksum: tKCruQ/0Ah3QebkGe4uNiA
+! Diff-Path: ../patches/4/4-s-1755771128-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.18.53
-! TimeUpdated: 2025-08-21T05:07:29+00:00
+! Version: 2.1.18.56
+! TimeUpdated: 2025-08-21T10:07:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,8 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+globenewswire.com##.pnr-global-social-media-sidebar-section
+ctrl.blog##.wbshare
 amarujala.com##.auw_event_share
 onlinewebfonts.com##.aaa
 font.download##button[data-bs-target="#shareModal"]
@@ -3542,7 +3544,7 @@ vecteezy.com##.ez-resource-show__details > form.button_to:has(> button[data-test
 olegcassini.com.tr##.p-bottom > div.smlIconSet
 sammobile.com#?#div[class^="col"] > div.sidebar-item:has(> div.sidebar-item__content > ul.sidebar-item__content-socials)
 ozap.com###follow-plugin
-thestar.co.uk,portsmouth.co.uk,notion.so,businessinsider.de,sports.ru,oscars.org,planeta.pl,multiplayer.it##.social-share
+filmmakinesi.de,thestar.co.uk,portsmouth.co.uk,notion.so,businessinsider.de,sports.ru,oscars.org,planeta.pl,multiplayer.it##.social-share
 ozmall.co.jp##.share__area
 fanbox.cc##div[class^="Share__Wrapper-"]
 10.com.au,10play.com.au##button.btn--social-share
@@ -5173,7 +5175,7 @@ natalie.mu##.NA_share
 ledkia.com##div.c-product-deco__share__button
 chickenramen.jp###footShare
 asainvestments.com,qualy.com.br##div[data-component="cookiebar"]
-xeiaso.net,oyungemisi.com,pornhub.com,mediafire.com###shareButton
+filmekseni.net,xeiaso.net,oyungemisi.com,pornhub.com,mediafire.com###shareButton
 honz.jp##.snstools
 detector.media##.artSocSticky
 detector.media###artSocBLK
