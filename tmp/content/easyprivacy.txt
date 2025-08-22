@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
 [Adblock Plus 1.1]
-! Checksum: TJ5zv0QYw1anfR0AfHdx1g
-! Version: 202508220001
+! Checksum: p05UbrQ/PM+sRHpU50aOcw
+! Version: 202508220551
 ! Title: EasyPrivacy
-! Last modified: 22 Aug 2025 00:01 UTC
+! Last modified: 22 Aug 2025 05:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2203,7 +2203,7 @@
 /stats/collect?
 /stats/collector.js
 /stats/event.js?
-/stats/events$xmlhttprequest
+/stats/events$xmlhttprequest,domain=~wbsc.org
 /stats/footer.js
 /stats/ga.js
 /stats/header.js
@@ -7569,6 +7569,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||adnz.co/dmp/publisher.js
 ||adnz.co/header.js
 ||adobedc.net/collector/
+||ads-tracking.beop.io^
+||ads-tracking.collectiveaudience.co^
 ||ads-trk.vidible.tv^
 ||adsmoloco.com^$third-party
 ||adsolutions.com^$third-party
@@ -8223,7 +8225,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||contentdriver.com/api/impression
 ||contently.com/xdomain/
 ||contentpass.net/stats?$third-party
-||contents-tracking.beop.io^
 ||control.cityofcairns.com^$third-party
 ||conversions.genieventures.co.uk^
 ||convertflow.co^*/visitors/
@@ -8683,6 +8684,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||harvest.graindata.com^
 ||hasbro.com/includes/js/metrics/
 ||haymarket.com/injector/deliver/
+||hb.collectiveaudience.co^
 ||hb.vhsrv.com^
 ||hcmanager.swifteq.com/hc_events/
 ||hdnux.com/HNP/stats/page_view?
@@ -9017,6 +9019,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mediaplex.com^*?mpt=
 ||meebo.com/cim/sandbox.php?
 ||merklesearch.com/merkle_track.js
+||messagebird.com/assets/fp.min.js
+||messagebird.com/metrics.js
 ||metabroadcast.com^*/log?
 ||metaffiliation.com^*^mclic=
 ||meteored.com/cmp/web/events/analytic/
@@ -9493,6 +9497,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||s.autopilotapp.com^
 ||s.axon.ai/s/pixel.js
 ||s.beop.io^
+||s.collectiveaudience.co^
 ||s.logsss.com^
 ||s.pinimg.com/ct/core.js
 ||s.srvsynd.com^
@@ -50690,6 +50695,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||l.zdnet.fr^
 ||lacentrale.fr/collect
 ||lacentrale.fr/static/fragment-sentry/lc-sentry.js
+||lacentrale.fr/static/fragment-tracking/tracking-
 ||lacoccinelle.net/tools.js
 ||laposte.fr/cdp/events?
 ||ldlc.com/V4px/js/ldlcmachine.js
