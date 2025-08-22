@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: rx0yUuCk1f4m8KCVrK3kJQ
-! Diff-Path: ../patches/14/14-s-1755861056-3600.patch
+! Checksum: bi+++ebxwQdaXNfkO7U6+g
+! Diff-Path: ../patches/14/14-s-1755879121-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.40.45
-! TimeUpdated: 2025-08-22T11:06:38+00:00
+! Version: 2.2.40.50
+! TimeUpdated: 2025-08-22T16:07:42+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2528,6 +2528,8 @@ entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,g
 !
 ! NOTE: Regular rules
 !
+finance.ozon.ru##.biscuits
+narita-airport.jp#%#//scriptlet('set-cookie', 'gdpr_accept', '1')
 esimplus.me##footer ~ div[class^="styles_wrapper__"]:has(> p > a[href*="/privacy"])
 sparks.travel##.ss-cookie-modal-container
 howtogeek.com##.content-block-regular > div[data-show-streamrentbuy-links]
@@ -2970,7 +2972,7 @@ unimedbauru.com.br###protegON-full-content-cookies
 remaker.ai##.remaker-container-footer-cookie
 helloclue.com###gatsby-focus-wrapper > section:has(> p[class*="CookieNotification"])
 longos.com##gg-cookies-consent-pop-up
-sms-activate.page,u-mama.ru,visionexpress.pl,psoriaz.life,poisknews.ru##.cookie
+msvsphere-os.ru,sms-activate.page,u-mama.ru,visionexpress.pl,psoriaz.life,poisknews.ru##.cookie
 wegmans.com##.component--cookie-banner
 vod3.pl#$#body { overflow: auto !important; }
 podarkus.ru##div[class^="style_cookies"]
@@ -30471,7 +30473,7 @@ talk.sonymobile.com##.ui-widget[aria-label="Feedback for community"]
 kickz4u.ru##.giftd-ribbon_aligner
 kickz4u.ru###thanksBannerFixed
 proball.ru##.widgets_email
-hentaienglish.com,kolejedolnoslaskie.pl##.ays-pb-modals
+unibilgi.net,hentaienglish.com,kolejedolnoslaskie.pl##.ays-pb-modals
 forum.duolingo.com##body > div.ReactModalPortal:not(:empty):has(img[src$="/images/duo_wave.svg"])
 m.timesofindia.com##.newsletter_overlay
 realadmin.ru###contactable
@@ -53955,6 +53957,9 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+banki.ru#?#div[data-test="news-all-markdown"] > p:has(> span[style] > span:contains(/^Дебетовая карта/))
+banki.ru#?#div[data-test="news-all-markdown"] > p:has(> span[style] > span:contains(/^Дебетовая карта/)) ~ p:has(> a[href="https://www.banki.ru/news/daytheme/?id=11004160"])
+banki.ru#?#div[data-test="news-all-markdown"] > p:has(> span[style] > span:contains(/^Дебетовая карта/)) ~ p:has(> a[href^="https://www.banki.ru/products/debitcards/"])
 banki.ru##div[data-test="news-all-markdown"] > p:has(> a[href^="https://www.banki.ru/broker-mortgage/"])
 banki.ru##section[class^="HypothecOffers"]
 banki.ru##span[data-name="clip_top3debit"]
@@ -56120,7 +56125,7 @@ netizen-voice.blog.jp,ityouchannel.livedoor.blog,nanjei-baseball.blog.jp,baynews
 ! NOTE: Blogroll specific rules
 !
 giants-news.com##.container_bottom_widget
-giants-news.com##.container_top_widget_content
+giants-news.com##.container_top_widget
 giants-news.com###block-18
 honwaka2ch.livedoor.biz##.column-inner-2 > div[style^="font-weight: bold;"][style$="background: rgb(173, 216, 230);"]
 honwaka2ch.livedoor.biz##.column-inner-2 > div[style^="width: 100%;"][style$="background: #fff;"]
