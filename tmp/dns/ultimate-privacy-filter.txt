@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508211504
+! Version: 202508212104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 21 Aug 2025 15:04 UTC
+! Last modified: 21 Aug 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||openinstall.io^
+||s.ssl.qhres2.com^
 ||big7.com^$third-party
 ||collect.adplogger.no^
 ||lwadm.com^
@@ -103156,6 +103158,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||assets.engoo-static.com/tracking.js
+||espncdn.com/js/omniture/tracking.js
+||espncdn.com/*/js/espn-analytics.js
 ||lumo.proton.me/api/data/v1/telemetry
 ||netflix.com/log/
 ||handler.amarujala.com/user/event
@@ -103211,7 +103216,6 @@ livemint.com#%#//scriptlet('set-constant', 'dapTracker.track', 'noopFunc')
 ||herokuapp.com/save_utm_params
 ||calendly.com/api/booking/analytics/track
 ||tag.flvcdn.net/lytag.js
-||api-iam.intercom.io/messenger/web/ping
 ||api.honeycomb.io/*/traces
 ||a-cdn.anthropic.com/analytics.js/*/analytics.min.js
 ||a-cdn.anthropic.com/next-integrations/integrations/facebook-pixel
@@ -109248,6 +109252,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||event.*.karrotmarket.com^
 ||beacons.ads.fubo.tv^
 ||s3-ca-liveops.easybrain.com^
 ||trackers.fubo.tv^
@@ -110209,6 +110214,7 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||api.cxense.com/public/widget/data$domain=krone.at
 @@||googletagmanager.com/gtm.js$domain=hepsiburada.com
 @@||cdn.clerk.io/clerk.js$domain=fjellandhandel.no
 @@||api.clerk.io/v*/log/click?$domain=fjellandhandel.no

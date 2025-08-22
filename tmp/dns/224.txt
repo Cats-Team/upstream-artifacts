@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: 8PivXDrnTt1hHJI9n0k48Q
-! Diff-Path: ../patches/224/224-s-1755793062-3600.patch
+! Checksum: CGiSWdLKjtuDGkuCUhaXXQ
+! Diff-Path: ../patches/224/224-s-1755803450-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.42.30
-! TimeUpdated: 2025-08-21T16:13:49+00:00
+! Version: 2.1.42.32
+! TimeUpdated: 2025-08-21T19:06:43+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1068,6 +1068,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+||dangbei.net/jing/dbai/$domain=kan.znds.com
+||jt5.dangbei.net/site/$domain=kan.znds.com,image
+/^https?:\/\/kan\.znds\.com\/public\/home\/images\/[0-9]+-[0-9]+\.gif\?v=/$domain=kan.znds.com
 iplark.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'localStorage')
 iplark.com##body > div:not([class]):not([style])
 ||xslca.cc/js/pf.js
@@ -2899,6 +2902,7 @@ huaren.live#%#//scriptlet('set-constant', 'ConFig.config.ads', 'emptyObj')
 ! https://user-images.githubusercontent.com/3976203/273172163-25ff30a0-c988-4ec3-9e51-cf4722a90976.jpg
 bilibili.com#?#.recommended-container_floor-aside .container > div[class$="feed-card"]:has(div[style$="56.25%;"] > div[class]:matches-css(before, content: /AdGuard/))
 ! bilibili.com#?#.bili-video-card.is-rcmd > div > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]) + .bili-video-card__info:upward(2)
+bilibili.com##.feed-card:has(> div.bili-feed-card > div > div > div.bili-video-card__no-interest + a[target="_blank"]:not([href^="https://www.bilibili.com/"]))
 ||api.bilibili.com/x/web-interface/wbi/index/top/feed/rcmd$jsonprune=\$.data.item[?(has "\$..business_info.ad_desc")]
 bilibili.com#%#//scriptlet('json-prune-fetch-response', 'data.item.[-].business_info.ad_desc', '', '/feed/rcmd')
 bilibili.com#$?#.feed-card:has(> div.bili-feed-card > div.shortcut-bg:empty ~ div.bili-video-card[style*="display: none !important;"]) { remove: true; }
