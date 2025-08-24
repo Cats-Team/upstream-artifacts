@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508240904
+! Version: 202508241504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 24 Aug 2025 09:04 UTC
+! Last modified: 24 Aug 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -66651,7 +66651,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||log-api.sooplive.com^
 ||telemetry.proton.me^
 ||analytics.tempmail100.com^
-||telemetry.sgp.pvp.net^
+||telemetry.*.pvp.net^
 ||copilot-telemetry.githubusercontent.com^
 ||metrics.kapa.ai^
 ||analytics.org.coveo.com^
@@ -107901,8 +107901,8 @@ sp.e2.theathletic.com/q/$image
 sp.e2.theathletic.com%2Fq%2F$image
 emaillabs.info.pl/open/?ot=$image
 emaillabs.info.pl%2Fopen%2F%3Fot%3D$image
-c-hh-point-jp.*.cuenote.jp/c/*.gif$image
-c-hh-point-jp.*.cuenote.jp%2Fc%2F*.gif$image
+.cuenote.jp/c/*.gif$image
+.cuenote.jp%2Fc%2F*.gif$image
 medallia.*/?*&invite-opened=yes$image
 medallia.*%2F%3F*%26invite-opened%3Dyes$image
 liens.newsletters.jeuxvideo.com/m/opening/$image
