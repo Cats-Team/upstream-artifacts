@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508241504
+! Version: 202508242104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 24 Aug 2025 15:04 UTC
+! Last modified: 24 Aug 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tagm.uneedcomms.com^
 ||openstats.co^
 ||http-inputs-notion.splunkcloud.com^
 ||sentinelpro.com^$third-party
@@ -103164,6 +103165,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/statistics_jquery.js
+||donga.com/proc/ad_history
 ||bazu.cc/api/baidu_tui.php
 ||assets.engoo-static.com/tracking.js
 ||espncdn.com/js/omniture/tracking.js
@@ -110292,7 +110295,7 @@ id.condenast.com#%#//scriptlet('set-constant', 'appInfo.snowplow.trackSelfDescri
 @@||cdn.petametrics.com^$script,domain=mechacomic.jp
 @@||query.petametrics.com^$image,xmlhttprequest,domain=mechacomic.jp
 @@||googletagmanager.com/gtm.js$domain=firsty.app
-@@||cdn.optimizely.com/datafiles/*.json$domain=pizzahut.co.uk
+@@||cdn.optimizely.com/datafiles/*.json$domain=pizzahut.*
 @@||tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js$domain=sm-unsubscribe.intlgame.com
 dragonnest.com#%#//scriptlet('trusted-replace-node-text', 'script', 'SetGAOutbound', 'gtag != null', 'false')
 @@||websearch.rakuten.co.jp/js/google-analytics.js
