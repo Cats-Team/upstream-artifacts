@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 0cd4t6OGHZuoK8Sqt3Oe3A
-! Diff-Path: ../patches/4/4-s-1756124162-3600.patch
+! Checksum: nHRlKwtGjSQcMO3ksnQ1kQ
+! Diff-Path: ../patches/4/4-s-1756159890-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.18.68
-! TimeUpdated: 2025-08-25T12:11:19+00:00
+! Version: 2.1.18.70
+! TimeUpdated: 2025-08-25T22:07:14+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7400,7 +7400,7 @@ fastcompany.com##.highlight-share-popover
 kochbar.de###footerActionbar
 mambiznes.pl##a[href^="http://www.wykop.pl/dodaj/link/?url="]
 blog.netwrix.com##.social-button-list
-bigkyiv.com.ua,musixmatch.com##.share-row
+doityourself.com,bigkyiv.com.ua,musixmatch.com##.share-row
 lvz.de,dnn.de##.pdb-share-container-item:not([data-js-share-item="font-size"])
 ostsee-zeitung.de,dnn.de##.pdb-share-block-overlay
 sn-online.de##.pdb-share-block
@@ -15181,6 +15181,10 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/211878
+id.piano.io#@#.social-wrapper
+! https://x.com/Gm66WAaWZLxs9Ku/status/1959851852473983038
+heiwa-9inday.jp#@#a[href^="https://twitter.com/intent/tweet?"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209379
 sklep.ebilet.pl#@#.share-box
 ! lexlege.pl - broken website, scroll doesn't work and some elements are not displayed
