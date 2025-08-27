@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 [Adblock Plus 3.1]
-! Checksum: lhMYJYkOoXEa0lbXC58JqA
-! Version: 202508270551
+! Checksum: H1G6d5zCOOZ9sqjzvsVBAg
+! Version: 202508271151
 ! Title: ABP filters
-! Last modified: 27 Aug 2025 05:51 UTC
+! Last modified: 27 Aug 2025 11:51 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv
 !
@@ -1700,13 +1700,13 @@ metruyenchu.com#$#abort-on-property-write window.onclick
 kajoog.org#$#abort-on-property-read adsRedirectPopups
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#$#abort-current-inline-script document.createElement optad;abort-on-property-read pushOnPageGala
 javnong.cc#$#abort-on-property-read Math.round
-viet69.lt,dualeotruyenbotd.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui13.pro,ihentai.cloud,animehay.sbs,hentaivc.net,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,phimsexhay19vn.com,phim18hdxx.com,vn5.sexviet88.xyz,demo.14412882.com,vlsexdam.net,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#$#abort-current-inline-script WebAssembly instantiate
+viet69.lt,dualeotruyeng.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui13.pro,ihentai.cloud,animehay.sbs,hentaivc.net,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,phimsexhay20vn.com,phim18hdxx.com,vn5.sexviet88.xyz,demo.14412882.com,vlsexdam.net,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#$#abort-current-inline-script WebAssembly instantiate
 motchill21.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#$#abort-on-property-read localStorage
 phimgichill.net#$#abort-current-inline-script jQuery popurl
 phimgichill.net,hh3dhay.life,tram3d.net,animevietsub.cam#$#abort-current-inline-script eval $._Eu
 p.thoctv.com#$#abort-current-inline-script document.createElement script
 motchill.ad#$#abort-current-inline-script document.addEventListener linksToOpen
-dualeotruyenbotd.com,m.blogtruyenmoi.com#$#abort-current-inline-script document.addEventListener popunder
+dualeotruyeng.com,m.blogtruyenmoi.com#$#abort-current-inline-script document.addEventListener popunder
 lxmanga.my#$#abort-current-inline-script $ PopUnder
 www.truyen35zz.com#$#abort-current-inline-script jQuery click_ads
 www.toptruyentv8.com#$#abort-current-inline-script Promise instance
@@ -1719,7 +1719,7 @@ www.nettruyenupp.com#$#abort-on-property-read sp
 phimtho.net#$#abort-current-inline-script $ p0pUpRandom
 tailieumoi.vn#$#override-property-read linkAff null
 cunghocvui.com#$#abort-current-inline-script document.addEventListener opened_window_shoppe
-truyensextv.com#$#abort-current-inline-script document.addEventListener popup
+truyensextv.com,yanhh3d.vip#$#abort-current-inline-script document.addEventListener opup
 imail.edu.vn#$#abort-current-inline-script setTimeout Aff;abort-current-inline-script setTimeout ad_block
 sexhd88.online#$#abort-current-inline-script document.addEventListener open
 www.toptruyentv8.com#$#abort-current-inline-script setTimeout open
@@ -1929,11 +1929,11 @@ bol.com##section[data-group-name^="sponsored-products"]
 bol.com#$#hide-if-matches-xpath './/span[.="Gesponsord" or .="Sponsorisé"]/parent::button[@aria-label]/ancestor::div[contains(@class,"display-header__dsa")]/ancestor::div[@data-group-name="branded-shelves"]'
 ! #RM-78
 noon.com##img[src^="ad-tag"]
-! SP & BA
-noon.com#$#hide-if-matches-xpath './/div[@class][contains(text(),"Sponsored") or contains(text(),"إعلان")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'
-noon.com#$#hide-if-matches-xpath './/div[@class][contains(text(),"Ad") or contains(text(),"مدفوع")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'
+noon.com##div[id*="adBannerModule"]
+! SP
+noon.com#$#race start; hide-if-matches-xpath './/*[local-name()="svg"][@width][@fill="none"]/*[local-name()="rect"]/ancestor::a[@class][@href]/parent::div[1]'; hide-if-matches-xpath './/div[@class][contains(text(),"Ad") or contains(text(),"مدفوع")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'; hide-if-matches-xpath './/div[@class][contains(text(),"Sponsored") or contains(text(),"إعلان")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'; hide-if-matches-xpath './/img[contains(@src,"ad-")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'; race stop;
+!BA
 noon.com#$#hide-if-matches-xpath './/span[@style][contains(text(),"Sponsored")]/ancestor::div[contains(@id,"adProductsListBanner-")][@style]/parent::div/parent::div[@id="noon-modules"]'
-noon.com#$#hide-if-matches-xpath './/img[contains(@src,"ad-")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]';
 noon.com#$#hide-if-matches-xpath './/img[contains(@src,"ads/banner-")]/parent::span/ancestor::div/parent::div[contains(@class,"Banner")]';
 ! PP
 noon.com#$#hide-if-matches-xpath './/*[.="Ad"]/ancestor::a/parent::div[@data-qa]/parent::div[contains(@class,"Recommendations_")]/ancestor::div[contains(@class,"PdpRecommendations")][1]'
