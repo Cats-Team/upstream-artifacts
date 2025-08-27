@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: yuYfF8my5CQiQxP8BV3QfA
-! Diff-Path: ../patches/14/14-s-1756246263-3600.patch
+! Checksum: OFjT1CRV68dVVZIME5xBgA
+! Diff-Path: ../patches/14/14-s-1756267948-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.40.85
-! TimeUpdated: 2025-08-26T22:06:54+00:00
+! Version: 2.2.40.89
+! TimeUpdated: 2025-08-27T04:08:16+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2532,6 +2532,11 @@ entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,g
 !
 ! NOTE: Regular rules
 !
+||assets.prod.abebookscdn.com/*/scripts/utilities/global/cookie-consent-util-
+||assets.prod.abebookscdn.com/*/scripts/utilities/global/AbeCookie-
+||assets.prod.abebookscdn.com/*/scripts/components/cookieconsentV2-
+pkgs.org###consent-notice
+sinara.ru##.popups-cookies
 quizlet.com#%#//scriptlet('trusted-click-element', 'button[aria-label="Reject All"]','','500')
 crunchyroll.com#%#//scriptlet('trusted-set-cookie', 'anonymous_consent_tos', '$now$')
 qatarairways.com#%#//scriptlet('set-cookie', 'accepted_functional', 'yes', '/', 'qatarairways.com')
@@ -15175,7 +15180,7 @@ promod.de##.content_cookies
 grandfront-osaka.jp,nobl.ru,allday.com.tr,happylook.ru,e-consystems.com,uaz.ru,nakubani.ru,eksmo.ru,papajohns.com.tr,dreamtv.com.tr,jobinfo.hu,kanald.com.tr,radyod.com,slowturk.com.tr##.cookie-accept
 plenum.de,foodspring.de,m.shop-apotheke.com##.cookie-advice
 fussball.de##.cookie-advise
-get-cp.jp,israelpost.co.il,1rus.ru,uralweb.ru,sanyglobal.com,naray.one,mcdonalds.co.id,euronabycerny.com,mangahack.com,wiadomoscihandlowe.pl,bcs-express.ru,psc-inc.co.jp,apteka24.ua,u-mama.ru,gumtree.co.za,btclod.com,a12.com,ontiva.com,dr-telemed.ru,myfasol.ru,ponyexpress.ru,litres.ru,amediateka.ru,hansa.rs,schnaeppchenfuchs.com,xsport.ua##.cookie-agreement
+re-store.ru,get-cp.jp,israelpost.co.il,1rus.ru,uralweb.ru,sanyglobal.com,naray.one,mcdonalds.co.id,euronabycerny.com,mangahack.com,wiadomoscihandlowe.pl,bcs-express.ru,psc-inc.co.jp,apteka24.ua,u-mama.ru,gumtree.co.za,btclod.com,a12.com,ontiva.com,dr-telemed.ru,myfasol.ru,ponyexpress.ru,litres.ru,amediateka.ru,hansa.rs,schnaeppchenfuchs.com,xsport.ua##.cookie-agreement
 bequiet.com,my5.tv,hearthhead.com,kabeleins.de,prosieben.de,prosiebenmaxx.de,ran.de,sat1.de,sixx.de,the-voice-of-germany.de##.cookie-banner
 crowdfox.com##.cookie-banner-info
 visitmons.be##.cookie-compliance-message
@@ -25021,6 +25026,8 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+fntv.watch#%#//scriptlet('set-local-storage-item', 'popupBlockerEnabled', 'false')
+fntv.watch#%#//scriptlet('set-local-storage-item', 'newVersion', 'true')
 trip.com##.oh-pwa
 huffpost.com##.campaign-toaster
 bookwalker.jp##.c-c-floating-coupon
@@ -33721,6 +33728,10 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+labmuffin.com##.popupally-overlay-gfcr-1
+labmuffin.com##.entry-content > .ml-subscribe-form
+labmuffin.com##.inside-right-sidebar > .widget:has(> .ml-subscribe-form)
+cinema.7xtream.com#%#//scriptlet('set-local-storage-item', 'discordPopupSeen', 'true')
 zhuanlan.zhihu.com#%#//scriptlet('trusted-click-element', '.signFlowModal .Modal-closeButton','','500')
 vremyan.ru##.ok-link
 t-online.de##div[data-testid="Stage.Companion.SubStage"]:has(> div:only-child > div:only-child > article:only-child > div:only-child > enga-newsletter-morning-briefing-companion)
@@ -40548,7 +40559,7 @@ mrbigandtall.ca###joinTheClubPopupContainer
 fosspost.org#?#.widget-area > section.widget:has(> h3.widget-title > span:contains(Newsletter))
 journaldesfemmes.fr,linternaute.com##.nl-box--right-col
 zapravdu.org###newsform
-bestforandroid.com,australiangeographic.com.au,vogueadria.com,bookdepository.com,crystalgemstoneshop.com,allthatsinteresting.com,gestion.pe,edureka.co,tubularinsights.com,rollei.de,hashicorp.com##.newsletter-section
+offidocs.com,bestforandroid.com,australiangeographic.com.au,vogueadria.com,bookdepository.com,crystalgemstoneshop.com,allthatsinteresting.com,gestion.pe,edureka.co,tubularinsights.com,rollei.de,hashicorp.com##.newsletter-section
 richads.com,eroskosmos.org##.subscribe-main
 towardsdatascience.com#?##root div:has(> h2:contains(Sign up for The Daily Pick))
 hashicorp.com##div[class^="BlogNewsletterSignup_blogNewsletterSignup"]
@@ -49280,6 +49291,10 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+watch.spencerdevs.xyz##a[href="/promo"]
+offidocs.com##.cta-button.amazon
+offidocs.com##.cta-button.ebay
+offidocs.com##.nav.level-one > li:has(> a[href$="-affiliate.php"])
 forum.golem.de###abo-clip
 rendeljkinait.hu##.bottom-ad-area
 crunchyroll.com###upsell-popup > div[class^="upsell-popup__body--"]:has(> a[href^="https://www.crunchyroll.com/premium?referrer="])

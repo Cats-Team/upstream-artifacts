@@ -2169,10 +2169,9 @@ mediamarkt.de##+js(aopw, ftr__startScriptLoad)
 ||app.gitbook.com/__session?proposed=
 ||api.gitbook.com/v1/orgs/*/insights/events
 
-! https://vnexpress.net/
+! https://vnexpress.net/new-york-khong-con-la-thanh-pho-khong-ngu-4931634.html - scroll breakage
 ||ps.vnexpress.net/ps/chk?
 ||vnexpress.net/microservice/fc^
-||vnecdn.net/vnexpress/restruct/*/eclick/
 ||static.eclick.vn^$image,redirect=1x1.gif
 
 ! carparts.com,nba.com
@@ -2201,7 +2200,8 @@ mediamarkt.de##+js(aopw, ftr__startScriptLoad)
 /js/script.outbound-links.pageview-props.tagged-events.js
 /js/script.outbound-links.pageview-props.tagged-events.manual.js
 ! https://github.com/uBlockOrigin/uAssets/issues/29789
-linklog.tiagorangel.com##+js(json-edit-fetch-request, .*, propsToMatch, /api/exchange?)
+||linklog.tiagorangel.com/api/script.js
+linklog.tiagorangel.com##+js(set, data, true)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/29578
 ||brighteon.com/api-v*/public/visit-tracking
@@ -2255,6 +2255,13 @@ linklog.tiagorangel.com##+js(json-edit-fetch-request, .*, propsToMatch, /api/exc
 
 ! https://app.labelbox.com/
 ||editor.labelbox.com/metrics
+
+! https://www.abebooks.com/
+! test on uBO first
+!#if !ext_ubol
+||assets.prod.abebookscdn.com/*/scripts/digitaldata/analytics-
+||assets.prod.abebookscdn.com/*/scripts/utilities/PixelRenderer-
+!#endif
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
