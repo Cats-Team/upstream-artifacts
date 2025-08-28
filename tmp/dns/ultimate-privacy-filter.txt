@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508272104
+! Version: 202508280304
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 27 Aug 2025 21:04 UTC
+! Last modified: 28 Aug 2025 03:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -68632,6 +68632,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||st.sooplive.co.kr^
+||collector1.sooplive.co.kr^
+||exlogcollector.sooplive.co.kr^
 ||snowflake.qq.com^
 ||d2fuc4clr7gvcn.cloudfront.net^
 ||analytics.edaily.co.kr^
@@ -110081,6 +110084,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||res.sooplive.co.kr/script/player/service-maintenance.js
+||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/aside.statistics.js
 ||api.livere.org/api/v1/clients/*/visitor
 ||ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/nilForNtm-
 ||ssl.pstatic.net/t.static.blog/mylog/versioning/NtmBaLog-
@@ -115618,6 +115623,12 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||sooplive.co.kr^$cookie=_au
+||sooplive.co.kr^$cookie=_ausa
+||sooplive.co.kr^$cookie=_ausb
+||sooplive.co.kr^$cookie=_au3rd
+||sooplive.co.kr^$cookie=AbroadChk
+||sooplive.co.kr^$cookie=AbroadVod
 $cookie=DEVICEFP,domain=mihoyo.com|hoyoverse.com
 $cookie=DEVICEFP_SEED_ID,domain=mihoyo.com|hoyoverse.com
 $cookie=DEVICEFP_SEED_TIME,domain=mihoyo.com|hoyoverse.com
@@ -116846,7 +116857,6 @@ d4?appid*type*
 ||sensors.snappea.com^
 ||analytics.snaptube.app^
 ||px.ucweb.com^
-||collector1.sooplive.co.kr^
 ||adtima-static.zadn.vn^
 ||akstat.io^
 ||chartbeat.net^
