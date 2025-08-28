@@ -1053,8 +1053,8 @@ spreaker.com##+js(href-sanitizer, body a[href^="https://spreaker.onelink.me/"][h
 ! https://www.dogdrip.net/dogdrip/648750601
 dogdrip.net##+js(href-sanitizer, body a[href^="/link.php?url=http"], ?url)
 ! https://forum.donanimhaber.com/hepsiburada-ve-firsatlari-ana-konu--150987015-1787#161998768
-||forum.donanimhaber.com/ExternalLinkRedirect?*^url=http$doc,urlskip=?url
-forum.donanimhaber.com##+js(href-sanitizer, body a[href^="/ExternalLinkRedirect?"][href*="url=http"], ?url)
+||donanimhaber.com/ExternalLinkRedirect?*^url=http$doc,urlskip=?url
+donanimhaber.com##+js(href-sanitizer, body a[href^="/ExternalLinkRedirect?"][href*="url=http"], ?url)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24675 - click tracking
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
@@ -2263,6 +2263,12 @@ linklog.tiagorangel.com##+js(set, data, true)
 !#if !ext_ubol
 ||assets.prod.abebookscdn.com/*/scripts/digitaldata/analytics-
 ||assets.prod.abebookscdn.com/*/scripts/utilities/PixelRenderer-
+!#endif
+
+! https://www.pokeos.com/
+! test on uBO first
+!#if !ext_ubol
+||umami.*/script.js|$script
 !#endif
 
 ! Merge in resource-abuse.txt
