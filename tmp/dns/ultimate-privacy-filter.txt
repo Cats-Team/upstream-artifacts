@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508280904
+! Version: 202508281504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 28 Aug 2025 09:04 UTC
+! Last modified: 28 Aug 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -250,6 +250,13 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||sync.clearnview.com^
+||ck-ie.com^
+||rtb.voltaxam.com^
+||4dex.tech^
+||dsp-service.admatic.de^
+||ssp.api.tappx.com^
+||prod.us-east-1.cxm-bcn.publisher-services.amazon.dev^
 ||sdk.mrf.io^
 ||protected-by.clarium.io^
 ||analytiwave.com^
@@ -68632,6 +68639,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||collector-pxdojv695v.protechts.net^
+||collector-pxdojv695v.px-cloud.net^
 ||st.sooplive.co.kr^
 ||collector1.sooplive.co.kr^
 ||exlogcollector.sooplive.co.kr^
@@ -110084,6 +110093,19 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||temu.com/api/adx/cm/pixel-xandr
+||capi.connatix.com/us/pixel?puid=
+||linkedin.com/autofill/track/
+||learning.linkedin.com/fizzy/admin
+||linkedin.com/public-profile/api/ingraphs/
+||linkedin.com/li/track
+||ps.azurewaf.microsoft.com/event
+||linkedin.com/apfc/collect
+||browser.events.data.microsoft.com/OneCollector/
+||microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.*.min.js
+||microsoft.com/echo/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.*.min.js
+||microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.*.min.js
+||microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.*.min.js
 ||usolie.info/bs/sm
 donanimhaber.com#%#//scriptlet('href-sanitizer', 'a[href^="/ExternalLinkRedirect?"]', '?url')
 ||res.sooplive.co.kr/script/player/service-maintenance.js
@@ -110831,7 +110853,6 @@ themirror.com##reach-topbox
 ||amazon.*/1/remote-weblab-triggers
 ||tubitv.com/oz/videos/fallback-metrics?
 ||tubitv.com/oz/log?
-||uts-front.line-apps.com/event-web
 ||doclasse.com/b/d/tracklib.js
 ||sa.torbox.app/append|
 ||ebay.com/blueberry/*/ads/identity/pixelUrls
@@ -116570,6 +116591,7 @@ d4?appid*type*
 ||iot-eu-logser.realme.com^
 ||iot-logser.realme.com^
 ||tracking.purchasely.io^
+||uts-front.line-apps.com^
 ||ts.line-apps.com^
 ||log-music-data.line-apps.com^
 ||events-api.soundcloud.com^
