@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508290904
+! Version: 202508291504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 29 Aug 2025 09:04 UTC
+! Last modified: 29 Aug 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -68639,6 +68639,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.shutterstock.com^
+||plw6buurmlxhrlkm6wy3uk7cia0mprkq.lambda-url.ap-south-1.on.aws^
 ||collector-pxdojv695v.protechts.net^
 ||collector-pxdojv695v.px-cloud.net^
 ||st.sooplive.co.kr^
@@ -110093,6 +110095,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||shutterstock.com/ja/blog/wp-content/mu-plugins/wp-parsely-
+||shutterstock.com/ja/blog/wp-content/themes/sstk/assets/js/analytics.min.js
+||shutterstock.com/ja/blog/wp-content/themes/sstk/assets/js/parsely-tracking.min.js
+||myshopify.com/api/collect
 ||bilet.com/gtmcf/
 ||api.patienten.helios-gesundheit.de/api/unleash/client/metrics
 ||coupang.com/next-api/products/reco-widget?productId=*&vendorItemId=*&itemId=
@@ -110118,7 +110124,6 @@ donanimhaber.com#%#//scriptlet('href-sanitizer', 'a[href^="/ExternalLinkRedirect
 ||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/aside.statistics.js
 ||api.livere.org/api/v1/clients/*/visitor
 ||ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/nilForNtm-
-||ssl.pstatic.net/t.static.blog/mylog/versioning/NtmBaLog-
 adultportal.jp###custom_html-12
 saiganak.com#%#//scriptlet('prevent-element-src-loading', 'script', 'clarity.ms')
 ||kebhana.com/cont/common/js/tag_hana.js
