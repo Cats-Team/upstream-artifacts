@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508281504
+! Version: 202508282104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 28 Aug 2025 15:04 UTC
+! Last modified: 28 Aug 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -110093,6 +110093,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||coupang.com/next-api/products/reco-widget?productId=*&vendorItemId=*&itemId=
+||coupangcdn.com/customjs/criteo/
+||coupangcdn.com/customjs/seo-js-sdk/
+||instagram.com/ajax/qm/?__
 ||temu.com/api/adx/cm/pixel-xandr
 ||capi.connatix.com/us/pixel?puid=
 ||linkedin.com/autofill/track/
@@ -117224,6 +117228,8 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=themirror.com
+@@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=themirror.com
 xinshuru.com#%#//scriptlet('set-constant', 'RADAR_MONITOR', 'emptyObj')
 xinshuru.com#%#//scriptlet('set-constant', 'RADAR_MONITOR.setProject', 'emptyObj', '', 'asFunction')
 xinshuru.com#%#//scriptlet('set-constant', 'Object.prototype.getTrack', 'noopFunc')
