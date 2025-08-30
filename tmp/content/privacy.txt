@@ -503,6 +503,7 @@ zhihu.com##+js(no-xhr-if, log-sdk.ksapisrv.com/rest/wd/common/log/collect method
 ! narrative.com sites
 ||narrativ.com^$domain=androidauthority.com
 ||androidauthority.com/api/locate/
+androidauthority.com##+js(remove-cookie, _ALGOLIA, when, scroll keydown)
 
 ! optimizely-sites
 ! https://github.com/uBlockOrigin/uAssets/issues/18787
@@ -1258,6 +1259,8 @@ shutterstock.com##+js(set-local-storage-item, /htjs_|stck_|statsig/, $remove$)
 !#if !ext_ubol
 ||lambda-url.*.on.aws/v1/rgstr?
 !#endif
+! https://mobalytics.gg/
+mobalytics.gg##+js(set-local-storage-item, /mixpanel/, $remove$)
 
 ! Query parameter stripping
 ! Google ads/analytics
