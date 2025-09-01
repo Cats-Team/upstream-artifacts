@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202508310904
+! Version: 202508312104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 31 Aug 2025 09:04 UTC
+! Last modified: 31 Aug 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -109444,6 +109444,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/_vercel/speed-insights/script.js
 /p/tm.js?
 ://analytics.*/hardal
 ://signal.*/hardal
@@ -110097,6 +110098,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||yupp.ai/monitoring/?o=*&p=*&r=
+||yupp.ai/api/log-event
 ||shutterstock.com/ja/blog/wp-content/mu-plugins/wp-parsely-
 ||shutterstock.com/ja/blog/wp-content/themes/sstk/assets/js/analytics.min.js
 ||shutterstock.com/ja/blog/wp-content/themes/sstk/assets/js/parsely-tracking.min.js
@@ -110122,7 +110125,6 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 ||microsoft.com/echo/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.*.min.js
 ||usolie.info/bs/sm
 donanimhaber.com#%#//scriptlet('href-sanitizer', 'a[href^="/ExternalLinkRedirect?"]', '?url')
-||res.sooplive.co.kr/script/player/service-maintenance.js
 ||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/aside.statistics.js
 ||api.livere.org/api/v1/clients/*/visitor
 ||ssl.pstatic.net/t.static.blog/mylog/versioning//common/js/nilForNtm-
