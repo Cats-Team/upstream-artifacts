@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509040904
+! Version: 202509041504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 04 Sep 2025 09:04 UTC
+! Last modified: 04 Sep 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -18,6 +18,8 @@ traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlea
 traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlearnersdictionaries.com,nosv.org,niketalk.com,motor-talk.de,aucfree.com,muragon.com,373news.com,fxstreet.*,fxstreet-id.com,fxstreet.es,easyhindityping.com,relevantmagazine.com,dictionnaire.lerobert.com,footballtransfer.ru,thatgossip.com,donbalon.com,dropgame.jp,ufret.jp,gardeningsoul.com,si.com,niice-woker.com,blogmura.com,minkou.jp,lifehacker.jp,kinmaweb.jp,reptilesmagazine.com,buzzfeednews.com,lakeshowlife.com,thefreebieguy.com,autofrage.net,computerfrage.net,cocokara-next.com,cinetrafic.fr,malaymail.com,kyoteibiyori.com,chanto.jp.net,nana-press.com,kurashiru.com,samsungmagazine.eu,jablickar.cz,dailydot.com,watchdocumentaries.com,mariowiki.com,kompasiana.com,watchdocumentaries.com,j-cast.com,bg-mania.jp,j-town.net,ap7am.com,giornalone.it,convertcase.net,gloria.hr,slobodnadalmacija.hr,loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,genshinlab.com,thestockmarketwatch.com,thephoblographer.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,lamire.jp,bamgosu.site,etnewskorea.com,gadgets360.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,carscoops.com,slobodnadalmacija.hr,flatpanelshd.com,videogamemods.com#%#//scriptlet('set-local-storage-item', '/_fa_Y2FjaGVfYWRibG9ja19jaXJjdW12ZW50X3Njb3Jl$/', '$remove$')
 spletnik.ru#%#//scriptlet('set-local-storage-item', '/^_ym/', '$remove$')
 spletnik.ru#%#//scriptlet('set-local-storage-item', 'adrcid', '$remove$')
+delta.com#%#//scriptlet('set-constant', 'TrackJS', 'emptyObj')
+delta.com#%#//scriptlet('set-constant', 'TrackJS.install', 'noopFunc')
 hoy.tv#%#(()=>{const i=function(){};window.__uid2=window.__uid2||{},window.__uid2.init=i,window.__uid2.setIdentityFromEmail=i,window.__uid2.callbacks=window.__uid2.callbacks||[],window.__uid2.callbacks.push=function(i){"function"==typeof i&&i("InitCompleted",{identity:null})}})();
 ncbi.nlm.nih.gov#%#//scriptlet('set-constant', 'ncbi.sg', 'emptyObj')
 ncbi.nlm.nih.gov#%#//scriptlet('set-constant', 'ncbi.sg.ping', 'noopFunc')
@@ -101507,6 +101509,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /com.snowplowanalytics.$domain=~snowplowanalytics.com
 .com.br/tracking.set^|
 .com.br/cliente/trackRemote^|
+/_hcms/perf
 ||t.*/v1/lst/universal-script?ph=$script
 /analytics?ver=*&visitor_id=
 /_static/deliver.js?nonce=$script,~third-party
@@ -102066,7 +102069,7 @@ _social_tracking.js^
 _tracking.php?b=
 /aegis-sdk/*$script
 /tnc.js?h=
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de
 ||mc.yandex.ru/metrika/tag.js$script,redirect=metrika-yandex-tag,domain=~id.x5.ru|~aiondb.ru
 ||mc.yandex.ru/metrika/watch.js$script,redirect=metrika-yandex-watch
@@ -102089,6 +102092,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||js.zi-scripts.com/zi-tag.js
 ||slgnt.eu/frontend/api/track
 ||teamtailor.com/pageview
 ||cdn.sphlabs.com/suid/
