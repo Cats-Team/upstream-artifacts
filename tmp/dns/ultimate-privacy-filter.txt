@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509050304
+! Version: 202509050904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 05 Sep 2025 03:04 UTC
+! Last modified: 05 Sep 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tolt.io^$third-party
 ||cloudfilt.com^$third-party
 ||highway.cablecar.sph.com.sg^
 ||i.posthog.com^
@@ -102093,6 +102094,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+epicurious.com#%#//scriptlet('set-cookie', 'FP_visitorID', '1', '/', 'epicurious.com')
+||teraboxcdn.com/general-conf/fk/dfxaf3-*.js
+||s-cdn.sportbox.ru/sites/all/libraries/design/*/js/user-tracking.global.js
+||api.gleap.io/sessions/ping
 ||popai.pro/dfxaf3-sg.js
 ||tof.perfectworld.com/public/js/stat.js
 ||js.zi-scripts.com/zi-tag.js
@@ -103875,7 +103880,7 @@ brasil247.com###taboola-mid-article-leia-mais
 ||x.kinja-static.com/assets/packaged-js/*trackers
 ||youtube-nocookie.com/youtubei/v1/log_event?
 ||youtube-nocookie.com/api/stats/qoe?
-||youtube-nocookie.com/api/stats/atr?
+||youtube-nocookie.com/api/stats/atr?ns=
 ||api.airfind.com/stats/
 ||odsyms15.com/impression?
 ||techcrunch.com/wp-json/wp/v*/tc_events
@@ -105153,7 +105158,8 @@ semprotyuk.com##div[style^="margin-bottom:150px;"][style*="padding-right:2em;"]
 ||deovr.com/api_logs/
 /js/tracking-*.js$domain=cinkciarz.pl|conotoxia.com
 ||ads-partners.coupang.com/log/
-/universal_analytics.$domain=foerde-sparkasse.de|sparkasse-hochfranken.de
+/universal_analytics.$domain=foerde-sparkasse.de|sparkasse-dachau.de|sparkasse-hochfranken.de|sparkasse-mittelfranken-sued.de
+/if/services/tdg$domain=foerde-sparkasse.de|sparkasse-dachau.de|sparkasse-hochfranken.de|sparkasse-mittelfranken-sued.de
 /AppMeasurement.js$domain=channel4.com
 /AppMeasurement_Module_ActivityMap.js$domain=channel4.com
 ||gold.contentsfeed.com/lb/sd/nw$domain=sportsseoul.com
@@ -106777,7 +106783,7 @@ dreamprogs.net##td[width="88"][height="31"]
 ||youtubekids.com/ptracking?
 ||youtube-nocookie.com/gen_204?
 ||youtube.com/youtubei/v1/log_event?
-||youtube.com/api/stats/atr?
+||youtube.com/api/stats/atr?ns=
 ||youtube.com/api/stats/delayplay?
 ||youtube.com/api/stats/ads?
 ||youtube.com/api/stats/qoe?
