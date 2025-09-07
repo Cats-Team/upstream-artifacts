@@ -83,6 +83,9 @@ e-panigiria.gr###body *:not(input):not(textarea):style(-webkit-touch-callout: de
 ! https://www.reddit.com/r/uBlockOrigin/comments/1lpy21u/animekai_anti_dev_tools/
 animekai.*,anigo.to,sflix.fi,yflix.to##+js(nostif, ||!!)
 
+! https://www.reddit.com/r/uBlockOrigin/comments/1nalnl4/rightclick_dev_tool_disable_and_redirect_to_ads/
+webnoveltranslations.com##+js(aeld, /contextmenu|copy|cut/, , elements, document)
+
 ! END: Anti copy, right-click etc.
 
 ! START: Anti-adblock
@@ -7744,3 +7747,6 @@ odysee.com##body:style(cursor: revert !important)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1n2595k/bhaskarcom_content_hidden/
 bhaskar.com##+js(aost, Array.prototype.findIndex, isWithinLimits)
+
+! https://github.com/uBlockOrigin/uAssets/issues/29349
+||embed.wcostream.com/inc/embed/index.php?file=$uritransform=/index/video-js/
