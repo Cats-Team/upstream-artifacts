@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: T5Wzt39s4ReXtMQ2wjn7IQ
-! Diff-Path: ../patches/224/224-s-1757239852-3600.patch
+! Checksum: 5vTomg5Ct9XZOcd1WTgZcw
+! Diff-Path: ../patches/224/224-s-1757286645-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.43.44
-! TimeUpdated: 2025-09-07T10:07:01+00:00
+! Version: 2.1.43.46
+! TimeUpdated: 2025-09-07T23:07:03+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -263,6 +263,10 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/212973
+helper-employer.com#%#//scriptlet('prevent-fetch', 'adsbygoogle.js')
+helper-employer.com#%#//scriptlet('prevent-element-src-loading', 'script', 'clarity.ms/tag/')
+helper-employer.com#%#//scriptlet('spoof-css', '.adsbygoogle', 'display', 'block')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209673
 slashview.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/207465
@@ -1069,6 +1073,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+helper-employer.com##div[class^="mantine-"][style^="display:"]
 /[a-z0-9]+\.[a-z0-9]+\//$denyallow=cidetxt.cc,domain=cidetxt.cc,subdocument,script
 .icu/$domain=cidetxt.cc
 cidetxt.cc#%#//scriptlet('prevent-setTimeout', 'try{e()}catch(e){if(t[e.message])return;')
@@ -5054,6 +5059,10 @@ newduba.cn###jq_youxi
 ||3x5h6x434.com^
 ||fsu1cg19c.com^
 ||joi09071pt.com^
+||eboobuv0rk.com^
+||joi09080pt.com^
+||tongueq2.top^
+||4p04u96158.com^
 ||ilgt04vkw4.com^
 ||d7fl3a3vwh.com^
 ||joi09060pt.com^
@@ -20889,7 +20898,7 @@ wss://*.*.top/$third-party
 ||bqge9.com/static/ad01.js
 ||440012.xyz/js/wapm.js
 ||116xs.com/js/backbone.js
-||38ksw.com^*/082903.
+||38ksw.com^*/0
 ||d1bz.xyz/static/book/static.
 ##.row.nav-bottom + div[style^="display: block; position: relative; width: 0px; height:"]
 ##a[href*="aHR0cHM6Ly9xc2Z2bDExLmFsYXp2LmNvbS8zNzA4Lmh0bWw="]
