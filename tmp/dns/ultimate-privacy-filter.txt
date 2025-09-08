@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509080304
+! Version: 202509080904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 08 Sep 2025 03:04 UTC
+! Last modified: 08 Sep 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||fptls.com^
+||fptls3.com^
 ||mc.yango.com^
 ||stat.khanate.pro^
 ||tolt.io^$third-party
@@ -102096,6 +102098,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||udc.yahoo.com/v*/public/*&yhlClient=rapid*&yhlClientVer=$domain=yahoo.com
+||goodcar.com/js/parts/fp.js
+goodcar.com#%#//scriptlet('set-local-storage-item', 'uw-uid', '$remove$')
 ||11st.co.kr/js/rake/RakeData.js
 epicurious.com#%#//scriptlet('set-cookie', 'FP_visitorID', '1', '/', 'epicurious.com')
 ||teraboxcdn.com/general-conf/fk/dfxaf3-*.js
@@ -109293,7 +109298,6 @@ sports.yahoo.com#%#//scriptlet('set-constant', 'YAHOO.i13n', 'emptyObj')
 sports.yahoo.com#%#//scriptlet('set-constant', 'YAHOO.i13n.Rapid', 'noopFunc')
 ||files.upscore.com/iframe/iframe_conversion_tracking.js$script,redirect=noopjs,domain=schwarzwaelder-bote.de
 @@/sxp/i/*.js$domain=linkvertise.com
-lastampa.it#%#//scriptlet('prevent-element-src-loading', 'script', 'securepubads.g.doubleclick.net/tag/js/gpt.js')
 @@||cl-*.k5a.io/*.js^$domain=tv2.no
 @@||googletagmanager.com/gtag/js?l=$domain=wps.com
 trendyol.com#%#//scriptlet('set-constant', 'process', 'emptyObj')
