@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: 49EN95qewyOp/q+GR9IDTQ
-! Diff-Path: ../patches/224/224-s-1757409121-3600.patch
+! Checksum: WZGlbx1m82efvVqhy5qKSw
+! Diff-Path: ../patches/224/224-s-1757434349-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.43.62
-! TimeUpdated: 2025-09-09T09:08:05+00:00
+! Version: 2.1.43.65
+! TimeUpdated: 2025-09-09T16:08:32+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3323,6 +3323,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 !---------------------------------------------------------------------------!
 -*-*-*-*.alpha^$script,third-party
 /7755com-*00x*.gif
+||subhd.*/kaiyad.
 /mxstatic/image/aabbc/985b74dc077d491.
 .xyz/z/*/code.js$script,third-party
 -*-*-*-*.as^$script,third-party
@@ -5063,6 +5064,7 @@ newduba.cn###jq_youxi
 ||w6xdba54n.com^
 ||joi09091pt.com^
 ||5kmqy60r7.com^
+||zvgvenibe.com^
 ||cbembusgcl.com^
 ||nio09081lt.com^
 ||nio09080lt.com^
@@ -21065,20 +21067,7 @@ wnacg.com#@#.ff-ads
 wnacg.com#@#.google-ads
 wnacg.com#@#.hlol_ad
 wnacg.com#@#.pcd_ad
-wnacg.com##a[href^="http"]:not([href*="wnacg."]) img
-wnacg.com##img[width="399"][height*="6"]
-wnacg.com##script + div > a > img
-||wnacg.*/1605524662751.gif
-||wnacg.*/1sdfdc1/
-||wnacg.*/58s/
-||wnacg.*/5eg/
-||wnacg.*/data/game/
-||wnacg.*/sd
-||wnacg.*/themes/mo/images/*.gif
-||wnacg.*/themes/weitu/images/0
-||wnacg.*/w7z/
-||wnacg.*/w8z/
-||wnacg.*/zec/
+##a[href*=".labsda.com"] > img[src^="/game/20"]
 !#W
 !#x
 !#Y

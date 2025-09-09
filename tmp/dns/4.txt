@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: O0nAzMp4uaNO1VVfwyJCxw
-! Diff-Path: ../patches/4/4-s-1757405588-3600.patch
+! Checksum: P8MfqflOd8SDeP10EFC0Pg
+! Diff-Path: ../patches/4/4-s-1757427084-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.19.21
-! TimeUpdated: 2025-09-09T08:08:51+00:00
+! Version: 2.1.19.23
+! TimeUpdated: 2025-09-09T14:06:38+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,7 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+stolicaonego.ru##.article__wrap-shared
 musica.com###avisoinferior:has(> aside > a[href^="https://www.facebook.com/sharer.php"])
 seventeen.com##main .text-under-lede ~ div[class*=" "] > div:has(div[aria-label="Share article"])
 techbook.de##section[data-type="rich-text"]:has(> .wp-block-buttons > .wp-block-button > a.wp-block-button__link[href="https://www.instagram.com/techbook.de/"])
@@ -3629,7 +3630,7 @@ make.com##div[class^="DetailsHeader_shareDrawer"]
 shop-list.com##.snsBtnArea
 rusfootball.info##.social_subs_block
 metaculus.com##.page-header__icons
-fnlondon.com,wsj.com,firstpost.com,tunecore.co.jp,radiolab.org##button[aria-label="share"]
+bbc.com,fnlondon.com,wsj.com,firstpost.com,tunecore.co.jp,radiolab.org##button[aria-label="share"]
 sofi.com##body [class*="social-share"]
 bisnis.com##.shareSocmed__wrap
 bisnis.com##div[class^="socmed"]
