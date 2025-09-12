@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: /IFXp5kQaHEkzTSf/rxi7Q
-! Diff-Path: ../patches/14/14-s-1757628644-3600.patch
+! Checksum: De/oZD8ybQU8R6TESRH2vg
+! Diff-Path: ../patches/14/14-s-1757653925-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.42.68
-! TimeUpdated: 2025-09-11T22:06:41+00:00
+! Version: 2.2.42.72
+! TimeUpdated: 2025-09-12T05:07:58+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2539,6 +2539,12 @@ accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,ae
 !
 ! NOTE: Regular rules
 !
+cleverbuy.de#$#html.no-scroll { overflow: auto !important; position: static !important; }
+cleverbuy.de#$#.modal-backdrop { display: none !important; }
+cleverbuy.de#$#.offcanvas { display: none !important; }
+rosdomofon.com##.cookies__modal
+||cdn.eurowag.com/cookies/
+windowslatest.com##.fluentform.fluentform_wrapper_4
 grepow.com##.aj-privacy-footer
 magentacloud.de#%#//scriptlet('trusted-click-element', '#promptLayerContent #rejectAll', '!cookie:CONSENTMGR')
 tver.jp#%#//scriptlet('trusted-click-element', 'div[class*="TermsModal_actions"] > button[class*="Button_primary"]')
@@ -2869,7 +2875,7 @@ laprimafit.com###ck-overlay
 olimp.bet##div[class^="root--"] > div[class^="root--"]:has(> div[class^="text--"] > a[href*="cookie-politics"])
 rencredit.ru#%#//scriptlet('set-cookie-reload', 'BITRIX_ATT_IDS', '3420')
 samoletplus.ru##div[class^="AcceptAgreement_"]
-tabnine.com,shop.hbo.com,bitwarden.com###ketch-consent-banner
+brainly.*,tabnine.com,shop.hbo.com,bitwarden.com###ketch-consent-banner
 ||static.hyundaijapan.com/hmj-fe/static/js/common/agreeCookie.js
 tumblr.com#%#//scriptlet('trusted-click-element', '.cmp__dialog button.is-primary', '!cookie:euconsent-v2-noniab')
 solaris-kemerovo.ru##.cookie-plank:not(#style_important)
@@ -8369,7 +8375,7 @@ krankenhaus.de,aknw.de#$#body { overflow: auto!important; }
 sozialversicherung.at##.consent-background-overlay
 visiontechusa.com###toast
 bmw-motorrad.de##.consentDrawer
-made.com##.show-cookie
+astralinux.ru,made.com##.show-cookie
 mubi.pl##div[aria-label="Cookie Agreement"]
 england.de###apccookies
 futuregames.se##.cookies-pwrap
@@ -17452,6 +17458,11 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/213218
+@@||rosdomofon.com/_nuxt/CookiesPopUp.$domain=rosdomofon.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/213257
+@@||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$domain=supla.fi
+@@||cdn.privacy-mgmt.com/mms/v2/get_site_data$domain=supla.fi
 ! https://github.com/AdguardTeam/AdguardFilters/issues/213157
 @@||cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js$domain=transfermarkt.com.tr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/213120
@@ -22520,16 +22531,17 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! Do not forget about '!#safari_cb_affinity' section for exclusions:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#general
 !
-howtogeek.com,pocket-lint.com,cbr.com,thegamer.com,collider.com,xda-developers.com,gamerant.com,screenrant.com,makeuseof.com,androidpolice.com,fextralife.com#$?#.adblock { remove: true; }
-howtogeek.com,pocket-lint.com,cbr.com,thegamer.com,collider.com,xda-developers.com,gamerant.com,screenrant.com,makeuseof.com,androidpolice.com,fextralife.com#$#body { overflow: auto !important; }
-howtogeek.com,pocket-lint.com,cbr.com,thegamer.com,collider.com,xda-developers.com,gamerant.com,screenrant.com,makeuseof.com,androidpolice.com,fextralife.com#%#//scriptlet('prevent-fetch', 'adsbygoogle.js')
+/promo/next/mural/*
+/promo/next/adb/*
+polygon.com,howtogeek.com,pocket-lint.com,cbr.com,thegamer.com,collider.com,xda-developers.com,gamerant.com,screenrant.com,makeuseof.com,androidpolice.com,fextralife.com#$?#.adblock { remove: true; }
+polygon.com,howtogeek.com,pocket-lint.com,cbr.com,thegamer.com,collider.com,xda-developers.com,gamerant.com,screenrant.com,makeuseof.com,androidpolice.com,fextralife.com#$#body { overflow: auto !important; }
+polygon.com,howtogeek.com,pocket-lint.com,cbr.com,thegamer.com,collider.com,xda-developers.com,gamerant.com,screenrant.com,makeuseof.com,androidpolice.com,fextralife.com#%#//scriptlet('prevent-fetch', 'adsbygoogle.js')
 e-xecutive.ru##.warning
 rutube.ru#?#div[class^="footer"] > div#notifier:has(> div.message-container-module__messageItem span.message-module__description:contains(Блокировщик рекламы))
 myesports.gg##.adblock-banner
 anizone.to##main .overflow-hidden:has(> .relative:only-child > .border-dashed)
 feedwatcher.net###wrapper > div.feed-block > div:has(> div#blocker-warning)
 workora.space###adblock-warning
-||makeuseof.com/promo/next/adb/
 idphotoland.com###msgpb
 global.novelpia.com##div[data-state="open"][style="pointer-events: auto;"]
 global.novelpia.com##div[data-state="open"][style="pointer-events: auto;"] + div[data-dismissable-layer]
@@ -25158,6 +25170,8 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+cifrus.ru##.overlay-widget
+cifrus.ru##.roulette-widget
 plusgaming.yandex.ru##div[class^="EvgenEventWrapper_EvgenEventWrapper"]
 dragonbox.de###__up_pop-INSTANCE_undefined
 dragonbox.de###up_optin
@@ -33895,6 +33909,8 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+koinbulteni.com##.telegram-single
+cifrus.ru###popover-modal2
 needtoknow.co.uk##.elementor > div.elementor-element:has(> div.e-con-inner > div[class*="newsletter"])
 banki.ru##div[data-gtm-view*="view_subscribe_news_page"]
 realestatemagazine.ca#$#html { overflow: auto !important; }
@@ -35097,7 +35113,7 @@ yonder.fr##.block-block-newsletter3
 nikkei.com#$?#.tp-modal:has(iframe[src^="https://buy-ap.piano.io/checkout/template/cacheableShow?"]) { display: none !important; }
 nikkei.com#$#.tp-backdrop { display: none !important; }
 nikkei.com#%#//scriptlet('remove-class', 'tp-modal-open', 'body')
-||buy.tinypass.com/checkout/template/cacheableShow?*offerId=fakeOfferId$domain=thelogic.co
+||buy.tinypass.com/checkout/template/cacheableShow*offerId=fakeOfferId$domain=thelogic.co|saffronwaldenreporter.co.uk
 insider-gaming.com###ig-newsletter-holder
 insider-gaming.com##main > div.flex > div.hidden > div:has(> a[href^="https://www.youtube.com/@insider_gaming?"])
 brasilparalelo.com.br###body-content > div._w-100
