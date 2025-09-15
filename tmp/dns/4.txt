@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: h/D1vlW6CubR/oNznL83xQ
-! Diff-Path: ../patches/4/4-s-1757830429-3600.patch
+! Checksum: a1Az7ve3+XZY+HQCQxECSA
+! Diff-Path: ../patches/4/4-s-1757913144-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.19.35
-! TimeUpdated: 2025-09-14T06:08:52+00:00
+! Version: 2.1.19.38
+! TimeUpdated: 2025-09-15T05:07:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -673,6 +673,9 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+star-tex.ru##.article-business__share-container
+star-tex.ru##.article-business__startex-small:has(> .article-business__startex-logo)
+tri247.com##.gb-container > .gb-container:has(> .ns-buttons.ns-no-print)
 beincrypto.com##div[class^="StickyContainer-"] > div[class^="Container-"]:has(div[class^="Socials-"])
 kayserigundem.com.tr##.lg\:justify-between > span[class="hidden lg:block"]
 usatoday.com##.nsb-email
@@ -11278,7 +11281,7 @@ allmusic.com##.allmusic-share
 emlak365.com,kamugundemi.com,medyafaresi.com,chip.com.tr,hyser.com.ua##.post-socials
 hyser.com.ua##.aside-socials
 beztabu.net##.news-sharing
-lostfilm.life,lostfilm.download,lostfilmtv5.site,lostfilm.pro,lostfilm.uno,lostfilm.today,lostfilm.tv##.social-pane
+lostfilm.download,lostfilm.life,lostfilm.download,lostfilmtv5.site,lostfilm.pro,lostfilm.uno,lostfilm.today,lostfilm.tv##.social-pane
 sabah.com.tr##.face
 vice.com##.mobile-social-tray
 imageshack.us###Actions
