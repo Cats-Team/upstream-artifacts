@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509150304
+! Version: 202509150904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 15 Sep 2025 03:04 UTC
+! Last modified: 15 Sep 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||partnerlinks.io^
 ||hlstatus.com^
 ||pixel-img.com^
 ||pixel.prb-team.com^
@@ -67579,6 +67580,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||stats.pronouns.page^
 ||ad-bls-tracking.lemino.docomo.ne.jp^
 ||bdvmetricas.banvenez.com.ve^
 ||ek-tracker.ekitan.com^
@@ -108179,6 +108181,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/script.tagged-events.js
 /_vercel/speed-insights/script.js
 /p/tm.js?
 ://analytics.*/hardal
@@ -108834,6 +108837,17 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||parchment.com/wp-content/themes/wp-parchment/assets/utm-tags.min.js
+||try.elevenlabs.io/pr/js
+||elevenlabs.io/hog/
+flo.com.tr#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
+||market.samm.com/0/sendEventV2
+ezviz.ru#%#//scriptlet('set-local-storage-item', 'userUuid', '$remove$')
+||c.sberlead.ru/clickstream.bundle.js
+||app.qualified.com/*/sentry/
+||app.qualified.com/*/visitor_events
+huntress.com#%#//scriptlet('set-local-storage-item', 'builderVisitorId', '$remove$')
+huntress.com#%#//scriptlet('set-local-storage-item', 'snowplowOutQueue_cf', '$remove$')
 notion.so#%#//scriptlet('prevent-fetch', 'http-inputs-notion.splunkcloud.com')
 ||cdn.super.com/remote-event-registry.json
 ||reservationday.com/metrics/
@@ -111973,7 +111987,7 @@ the-ans.jp##.side-reccomend
 ||at.cbsi.com/*/event?
 ||sprocket.bz/trackers/
 ||maillist-manage.com/wa/ActionLogger?
-/app/Eclog/js/cid.generate.js$domain=softland.co.kr|animegoods.co.kr|rabbits.kr
+/app/Eclog/js/cid.generate.js$domain=softland.co.kr|animegoods.co.kr|rabbits.kr|cafe24.com
 ||push.soft-com.biz/api/ui/metrics
 ||image.cauly.co.kr/script/caulytracker_async.js
 ||gate.upclick.com/btn/visitor.min.js
@@ -114301,7 +114315,7 @@ $cookie=__gads
 $cookie=logglytrackingsession
 $cookie=cfz_google-analytics_v4
 $cookie=cfzs_google-analytics_v4
-$cookie=_gcl_au,domain=~nintendo.com
+$cookie=_gcl_au,domain=~nintendo.com|~musinsa.com
 $cookie=_gcl_aw
 $cookie=_opt_awcid
 $cookie=_opt_awmid
@@ -114425,7 +114439,7 @@ $cookie=IDE
 $cookie=rbzsessionid
 $cookie=__auc
 $cookie=/^amplitude_id_/
-$cookie=_dd_s
+$cookie=_dd_s,domain=~musinsa.com
 $cookie=sophiTrackerid.a05e
 $cookie=sophiTrackerses.a05e
 $cookie=sp_tgamid.a05e
@@ -114451,6 +114465,8 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||flo.com.tr^$cookie=bunsar_visitor_id
+||huntress.com^$cookie=/^_sp_id/
 ||soundcloud.com^$cookie=sc_anonymous_id
 ||soundcloud.com^$cookie=sc_tracking_anonymous_id
 ||blog.naver.com^$cookie=BA_DEVICE
@@ -116036,6 +116052,11 @@ d4?appid*type*
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+musinsa.com#%#//scriptlet('trusted-suppress-native-method', 'CookieStore.prototype.set', '_dd_s', 'prevent', 'datadog')
+musinsa.com#%#//scriptlet('trusted-suppress-native-method', 'Date.prototype.toUTCString', 'undefined', 'abort', 'datadog')
+musinsa.com#%#//scriptlet('set-cookie', '_dd_s', '0', '/', 'musinsa.com')
+musinsa.com#%#//scriptlet('set-cookie', '_ga', '0', '/', 'musinsa.com')
+@@||huntress.com/assets/snowplow.tracker-*.js$domain=huntress.com
 @@||criteo.com/delivery/retailmedia$domain=plazavea.com.pe
 @@||s.ssl.qhres2.com/baomitu/jquery/*/jquery.min.js$domain=yasuo.360.cn
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=themirror.com
