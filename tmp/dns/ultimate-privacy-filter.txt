@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509160304
+! Version: 202509160904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 16 Sep 2025 03:04 UTC
+! Last modified: 16 Sep 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -226,7 +226,6 @@ elcomercio.es#$#body { overflow: auto !important; }
 ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
 infoseek.co.jp#$#.co-Widget[style="min-height: 6000px;"] { min-height: auto !important; }
 adseek.site#$##primary { display: block !important; }
-biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ##div[data-testid="prism-taboola"]
 ##.ninja-recommend-block
 ##img[src^="//counter.ukr.net/"]
@@ -252,6 +251,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||trck.digiteka.com^
 ||partnerlinks.io^
 ||hlstatus.com^
 ||pixel-img.com^
@@ -67824,6 +67824,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||pbc.nypost.com^
 ||stats.pronouns.page^
 ||ad-bls-tracking.lemino.docomo.ne.jp^
 ||bdvmetricas.banvenez.com.ve^
@@ -111940,6 +111941,14 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||static.gala.games/gal/fp/loader_v*.js
+gala.com#%#//scriptlet('set-local-storage-item', '_gal1', '$remove$')
+||luckyduckgames.com/global/index.php?controller=statistics
+||arte.tv/log-player/
+||static-cdn.arte.tv/static/analytics/
+||event.arte.tv/api/server-side-tracking/
+nypost.com#%#//scriptlet('set-local-storage-item', 'ow/social-browser-storage', '$remove$')
+nypost.com#%#//scriptlet('set-local-storage-item', 'SPOTIM_DEVICE_UUID_V2', '$remove$')
 ||marketplace.geniusplus.ai/*/lre-events?cid=*&wid=
 ||yqzhishen.me/Statistics/statistics.
 ||dashichang.work/Statistics/statistics.
@@ -114310,7 +114319,6 @@ park.ajinomoto.co.jp##.bottomMenu
 ||squid.gazeta.pl/bdtrck/
 ||d1q7pknmpq2wkm.cloudfront.net/js/my.fanplayr.com/
 ||bridge-ashiato.appspot.com/beacon/
-newsdig.tbs.co.jp#?#.l-contents-wrap > div[v-scope^="Recommend"]:upward()
 ||flixcar.com/*/tracking/
 ||kraken.com/js/sift.min.js
 ||instagram.com/ajax/bz
@@ -114319,7 +114327,8 @@ augsburger-allgemeine.de,nikkansports.com##div[id^="cx_"]
 ||google.com/gsi/log?
 ||drop.com/statBeacon
 ||outlook-1.cdn.office.net/owamini/*/resources/analytics-ping.js
-||rocket.ivi.ru/event/
+||rocket.ivi.ru/playback/event
+||rocket.ivi.ru/event
 ||g.ivi.ru/track
 ||duckduckgo.com/*/reportAnalytics
 ||duckduckgo.com/*/reportAnalytics$xmlhttprequest,redirect-rule=noopjson
@@ -114807,7 +114816,7 @@ fategrandorder.info##.sidebar_acr.side_inline
 ||cio.economictimes.indiatimes.com/ajax_files/etb2b_ajax_trackers.php
 ||idm.economictimes.indiatimes.com/personalisation/logdata/
 ||dash.getsitecontrol.com/api/*/events?
-||dynatrace.com^$domain=~dynatracelabs.com|~dynatrace.com
+||dynatrace.com^$domain=~dynatracelabs.com|~dynatrace.com|~dcbstatic.com
 ||postback.affiliateport.eu/track.js
 ||mlstatic.com/analytics/
 suara.com##.dailymotion-widget
@@ -116176,25 +116185,13 @@ jbpress.ismedia.jp#?#div.--wid:has(> div#taboola-below-article-thumbnails-bottom
 mdpr.jp#?#.p-articleList__heading:has(+ div#taboola-below-article-thumbnails-desktop)
 gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-teasers)
 gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
-blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward()
-jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward()
-minnyuu.jp#?#div[class$="BlockBase"] > div > div > div.plugin-freearea > div.ninja-recommend-block:upward()
-doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp#?#.plugin-memo > div.side > div.ninja-recommend-block:upward()
-blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block:upward()
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> div[ub-in-page])
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> script:contains(window.usabilla))
 hinatasoku.blog.jp#?#.right-container > div.sidewrapper:has(> div.side > a[href="http://www.ziyu.net/"])
 aatyu.livedoor.blog#?#.article > div.plugin-memo:has(> div.side > div.ninja-recommend-block)
-cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward()
-livedoor.biz,ldblog.jp#?#.plugin-memo > div.side > a[href$="ziyu.net/"]:upward()
-blog.fc2.com#?#div[class$="_outline"] > div > div.plugin-counter:upward()
-jisin.jp#?##main-articles > section.post-group > div[data-gmoad]:upward()
 screenov.eu#?#.container > div.box:has(> a[href^="https://www.liveinternet.ru/click"])
 infokam.su#?#aside > section.bot-post:has(> center > a[href^="https://www.liveinternet.ru/"])
 valetudo.ru#?#.v_left > div.moduletable:has(script[src^="https://www.googletagmanager.com/"])
-blog.fc2.com#?#.side-menu > div.sidebar-style > script[src^="//counter1.fc2.com/"]:upward()
-qiita.com#?#div[class^="css"] > div > div[id^="logly-"]:upward()
-m.crank-in.net#?#div[id^="_popIn_trend_ranking"]:upward()
 business.nikkei.com#?#.l-content_footer.recommendesInfomation:contains(あなたにオススメ)
 unews.pro#?##banner > div.RightColumn:has(> a[href^="//www.liveinternet.ru/"])
 fatcatslim.ru#?#.sidebar > div.widget:has(> div > a[href$="liveinternet.ru/click"])
@@ -117576,6 +117573,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||aviasales.$cookie=/^_sp_id/
 ||flo.com.tr^$cookie=bunsar_visitor_id
 ||huntress.com^$cookie=/^_sp_id/
 ||soundcloud.com^$cookie=sc_anonymous_id
