@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: gB9wGDZbbwPUkS6TVmJIJg
-! Diff-Path: ../patches/4/4-s-1758017534-3600.patch
+! Checksum: XYZEVxub71H3bUpZzoslrg
+! Diff-Path: ../patches/4/4-s-1758035502-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.19.49
-! TimeUpdated: 2025-09-16T10:07:44+00:00
+! Version: 2.1.19.52
+! TimeUpdated: 2025-09-16T15:07:10+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -350,6 +350,8 @@ warezcrack.net#$#.onp-sl-content > [data-lock-id^="onpLock"] { display: block!im
 0lik.ru##.onp-sl-outer-wrap
 0lik.ru$replace=/locker:{\s+timer:\s'\d\d'/locker: { timer: '1'/
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/213406
+mypikpak.com#$#main > .share { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193218
 ! Probably related to https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2757
 ! TODO: Remove this rule after the issue is fixed
@@ -673,6 +675,7 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+flamis.gr##.td-is-sticky > div.wpb_wrapper > div.vc_row:has(div.td-post-sharing)
 mezha.media##.post_social_wrapper
 webgradients.com##.index_page__social_container
 portalporn.net##.smi
@@ -1091,7 +1094,6 @@ dot.asahi.com##.article-share-list
 bookplus.nikkei.com##.shareModalOpenButton
 russkiymir.ru##.ul_socials_2
 prismmarketingco.com##.top-share-list
-gorodkirov.ru,news-komi.ru##.article-footer__wrap-social
 yle.fi###sticky-share-menu-button
 grammarly.com##div[class$="-post"] > div[class$="-container"][style^="top"]:has(> a[href*="facebook.com/dialog/share"])
 torinocronaca.it##div[id^="share_link_container_"]
@@ -13607,6 +13609,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ##a[href^="http://www.twitter.com/intent/tweet?"]
 ##a[href^="http://twitter.com/intent/tweet/?"]
 !
+##.article-footer__wrap-social
 ##.widget_facebook_likebox
 ##.col-sharing
 ##button[title="shareOnWhatsap"]
