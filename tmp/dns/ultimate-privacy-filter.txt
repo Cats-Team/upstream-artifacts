@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509162104
+! Version: 202509170304
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 16 Sep 2025 21:04 UTC
+! Last modified: 17 Sep 2025 03:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -67825,6 +67825,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.kode.co.kr^
+||xtr.tos.sktelecom.com^
+||gatag.uplus.co.kr^
 ||pbc.nypost.com^
 ||stats.pronouns.page^
 ||ad-bls-tracking.lemino.docomo.ne.jp^
@@ -111942,6 +111945,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||spotifycdn.com/cdn/js/gtm.
+||tworld.co.kr/web/service/xtractor.service.js
+||cfm.kt.com/js/integrate/kLogcode.js
+||cfm.kt.com/js/common/global/oms.js
+||cfm.kt.com/js/adobe/staticsLogcodeLaunch.js
 ||static.gala.games/gal/fp/loader_v*.js
 gala.com#%#//scriptlet('set-local-storage-item', '_gal1', '$remove$')
 ||luckyduckgames.com/global/index.php?controller=statistics
