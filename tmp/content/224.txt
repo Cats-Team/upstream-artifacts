@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: WC4I6cPPmA6Z0a0QyDotlg
-! Diff-Path: ../patches/224/224-s-1758085906-3600.patch
+! Checksum: Bde1HCpti2hzjIsJjD1Xkg
+! Diff-Path: ../patches/224/224-s-1758103923-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.44.18
-! TimeUpdated: 2025-09-17T05:07:53+00:00
+! Version: 2.1.44.20
+! TimeUpdated: 2025-09-17T10:08:10+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5080,6 +5080,7 @@ newduba.cn###jq_youxi
 ||cc1ej6d0e.com^
 ||yur09171og.com^
 ||bu2kak23b.com^
+||vgovvoinf.com^
 ||lg0lh2qfj4.com^
 ||ukew6uo7u1.com^
 ||yur09160og.com^
@@ -13293,6 +13294,8 @@ meijutt.*/js/pcjs/
 ||5dm.link/htm1/$image
 ||cdxyspa.com/js/e
 zhihu.com##.Pc-word-new
+iqiyi.com###bottom_banner_ad_bk
+iqiyi.com#?#div[class^="list_list_"]>div:-abp-has(div[class^="videolist_closeAd"])
 msn.cn##[ad]
 423down.com#?#li:-abp-has(>.info>.cat>a[rel="category tag"]:-abp-contains(推广))
 423down.com#?#li:-abp-has(>.item-thumb>.item-category:-abp-contains(推广))
