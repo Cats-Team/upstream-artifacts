@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509190304
+! Version: 202509190906
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Sep 2025 03:04 UTC
+! Last modified: 19 Sep 2025 09:06 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -126847,7 +126847,8 @@ d4?appid*type*
 musinsa.com#%#//scriptlet('trusted-suppress-native-method', 'CookieStore.prototype.set', '_dd_s', 'prevent', 'datadog')
 musinsa.com#%#//scriptlet('trusted-suppress-native-method', 'Date.prototype.toUTCString', 'undefined', 'abort', 'datadog')
 musinsa.com#%#//scriptlet('set-cookie', '_dd_s', '0', '/', 'musinsa.com')
-musinsa.com#%#//scriptlet('set-cookie', '_ga', '0', '/', 'musinsa.com')
+@@||googletagmanager.com/gtm.js$script,domain=musinsa.com
+@@||googletagmanager.com/gtag/destination$script,domain=musinsa.com
 @@||huntress.com/assets/snowplow.tracker-*.js$domain=huntress.com
 @@||criteo.com/delivery/retailmedia$domain=plazavea.com.pe
 @@||s.ssl.qhres2.com/baomitu/jquery/*/jquery.min.js$domain=yasuo.360.cn
