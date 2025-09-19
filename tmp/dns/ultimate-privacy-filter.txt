@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509190906
+! Version: 202509191504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Sep 2025 09:06 UTC
+! Last modified: 19 Sep 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -70138,6 +70138,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.luogu.me^
 ||jzq915.playmobil.com^ы
 ||analytics.kode.co.kr^
 ||xtr.tos.sktelecom.com^
@@ -119926,7 +119927,6 @@ allrecipes.com#%#//scriptlet('set-local-storage-item', '/_fpi|_duid/', '$remove$
 ||duckduckgo.com/t.js?q=
 ||data.product.lastpass.com/data/ptm.gif/
 ||sstats.adobe.com/*/collect?configId=
--public-api.hoyoverse.com/event/event_fe_info/$xmlhttprequest
 ||bhol.co.il/system/js/analytics.js
 bhol.co.il#%#//scriptlet('set-local-storage-item', 'analyticsUserId', '$remove$')
 bhol.co.il#%#//scriptlet('set-session-storage-item', 'analyticsSessionId', '$remove$')
@@ -124443,6 +124443,10 @@ gmarket.co.kr#%#//scriptlet('fingerprintjs2')
 .net%2Fe%2Fo%2F$image
 /CI0/0$image
 %2FCI0%2F0$image
+s-pt.jp/mail/info/*/img/_.gif$image
+s-pt.jp%2Fmail%2Finfo%2F*%2Fimg%2F_.gif$image
+openedlog.smart-bdash.com/opened?aid=$image
+openedlog.smart-bdash.com%2Fopened%3Faid%3D$image
 willap.jp/t?r=$image
 willap.jp%2Ft%3Fr=$image
 sg1.wizrocketmail.net/r?e=$image
@@ -125263,6 +125267,7 @@ $cookie=bf_visit
 ||soundcloud.com^$cookie=sc_tracking_anonymous_id
 ||blog.naver.com^$cookie=BA_DEVICE
 ||obi.ru^$cookie=_userGUID
+||hoyoverse.com^$cookie=_HYVUUID
 $cookie=DEVICEFP,domain=mihoyo.com|hoyoverse.com
 $cookie=DEVICEFP_SEED_ID,domain=mihoyo.com|hoyoverse.com
 $cookie=DEVICEFP_SEED_TIME,domain=mihoyo.com|hoyoverse.com
@@ -129236,6 +129241,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||boiledegglabs.com^
 ||boilingbeetle.com^
 ||boilingcredit.com^
+||boilingmadsoup.com^
 ||boldbars.com^
 ||bonuscomplex.com^
 ||bookprobe.com^
