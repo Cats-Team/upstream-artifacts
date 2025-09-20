@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: F5aiPp4G4Ch4jT3qq2mOtw
-! Diff-Path: ../patches/14/14-s-1758305624-3600.patch
+! Checksum: aa2ogH1z+xmEpbYkzA57cw
+! Diff-Path: ../patches/14/14-s-1758374043-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.43.51
-! TimeUpdated: 2025-09-19T18:09:23+00:00
+! Version: 2.2.43.54
+! TimeUpdated: 2025-09-20T13:10:10+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -24697,7 +24697,6 @@ wvgazettemail.com#@#.adSense
 @@||vizzed.com/scripts/ads.js
 @@||voldffgkdsllkjthlkjt.b-cdn.net/ads/ads.js
 @@||voyeurhit.com/js/advertising.js
-@@||vsadu.ru/js/ad.min.js
 @@||vsadu.ru^$generichide
 @@||vw-page.com/wcf/js/advertisement.js
 @@||vypocitejto.cz/advertisment.js
@@ -25246,6 +25245,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+f95zone.to##li:has(> .uix_noticeInner > .notice-content > a[href="/account/dismiss-notice?notice_id=112"])
 mein-schoener-garten.de##div[class*="dockInnerWrapperDocked"]
 tri247.com##body > div[style*="z-index:"]:has(> div[style*="cursor:"] > img[alt="Progressier logo"])
 ag.mos.ru#%#//scriptlet('set-session-storage-item', 'ag-forced-auth-modal-displayed', 'true')
@@ -42450,6 +42450,7 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+smartnews.com##section:has(> picture:first-child + div:last-child > h1:first-child + div:last-child > div:only-child > a[class^="header_download_"])
 sportsinjuryclinic.net##a[href="https://www.sportsinjuryclinic.net/sports-injury-rehabilitation-app"] > img
 vatanbilgisayar.com##.open-app-top
 idealo.de##.push-to-app-banner-wrapper
@@ -49723,6 +49724,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+||43koke89.user.webaccel.jp/images2/promptia-chatgpt.jpg$domain=qr.quel.jp
 avito.ru##.cERYi
 avito.ru##div[data-marker^="top-notification/"]
 avito.ru##.jc1Oe
