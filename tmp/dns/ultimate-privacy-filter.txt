@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509220305
+! Version: 202509220904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 22 Sep 2025 03:05 UTC
+! Last modified: 22 Sep 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -70138,6 +70138,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||stats.jiosaavn.com^
 ||js-collector.icewood.net^
 ||analytics.luogu.me^
 ||jzq915.playmobil.com^ы
@@ -119600,6 +119601,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||err.ee/api/statistics/
 ||gcpsmapi.vodafone.com/submit-events
 news.naver.com#%#//scriptlet('set-constant', 'nclk', 'noopFunc')
 zdnet.com#%#//scriptlet('href-sanitizer', '.c-articleContent p a[href^="https://cc.zdnet.com/"]', '?url')
@@ -129124,6 +129126,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||agreeabletouch.com^
 ||aheadday.com^
 ||aheadgrow.com^
+||airplanecoffee.com^
 ||ak0gsh40.com^
 ||aliasanvil.com^
 ||alikeaddition.com^
@@ -130110,6 +130113,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||niftyjelly.com^
 ||nightwound.com^
 ||nimbleplot.com^
+||nodenotify.com^
 ||nodethisweek.com^
 ||noiselessplough.com^
 ||nonchalantnerve.com^
