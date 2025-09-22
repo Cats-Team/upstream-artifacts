@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: Z6PVE/Nf+CtZEDMvKhHHbg
-! Diff-Path: ../patches/4/4-s-1758294686-3600.patch
+! Checksum: a5XRyy7DwpI2CqveXd2D4A
+! Diff-Path: ../patches/4/4-s-1758517943-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.19.66
-! TimeUpdated: 2025-09-19T15:06:56+00:00
+! Version: 2.1.19.69
+! TimeUpdated: 2025-09-22T05:07:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -675,6 +675,7 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+u-tv.ru##.popup__body:has(> .socials)
 venturebeat.com##figure > div.flex:has(> div.text-ink-contrast > button[aria-label^="Share"])
 cbssports.com##.Video-captionShare--button
 mein-schoener-garten.de##div[data-sentry-element="Flex"] > div[class^="css-"]:has(> button.chakra-button path[d^="M13.12"])
@@ -899,7 +900,7 @@ filmibeat.com##.fb-article-sharesocial
 transfermarkt.com.tr##a.db[href="https://x.com/TMtr_news"]
 matsukiyococokara-online.com##.page-bottom > .widget.block-static-block:has(.p-snsbtnlist)
 foodandwine.com,allrecipes.com##.mm-recipes-social-share__share-wrapper
-hotukdeals.com,pepper.com##button[data-t="shareBtn"]
+pepperdeals.com,pepperdeals.se,chollometro.com,preisjaeger.at,hotukdeals.com,pepper.com##button[data-t="shareBtn"]
 bballnews2for1.jp##.simple-social-icons
 bballnews2for1.jp###footer_sticky_menu
 aptoide.com##div[class^="main-header-mobile__ShareContainer-"]
@@ -3411,7 +3412,7 @@ thepcenthusiast.com##.tpce-social-wrapper
 webcomicsapp.com##.icon-share-btn
 simcong.com##.sns_share_wrap
 obrazovaka.ru##article > div.one-of
-intencelove.com,kasioda.com,delishare.jp,isa-computer.com,star.ape.jp###snsShareBottom
+comicommunity.com,intencelove.com,kasioda.com,delishare.jp,isa-computer.com,star.ape.jp###snsShareBottom
 motilaloswal.com##h1.section-title-mytag + div.icons
 motilaloswal.com##h1.section-title-mytag + div.icons ~ br
 shane.co.jp##.l_social

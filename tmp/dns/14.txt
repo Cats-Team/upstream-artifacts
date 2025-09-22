@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: Ou0qVl4LyC2pk6WTQN/abw
-! Diff-Path: ../patches/14/14-s-1758456828-3600.patch
+! Checksum: +rHKZzzKQs02e8ZzbPmTyg
+! Diff-Path: ../patches/14/14-s-1758517941-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.43.59
-! TimeUpdated: 2025-09-21T12:09:53+00:00
+! Version: 2.2.43.64
+! TimeUpdated: 2025-09-22T05:08:17+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2542,6 +2542,15 @@ accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,ae
 !
 ! NOTE: Regular rules
 !
+chollometro.com,preisjaeger.at,pepperdeals.com,pepperdeals.se#%#//scriptlet('trusted-click-element', '#app .popover-content.flex--inline button[data-t="rejectAll"]', '!cookie:cookie_policy_agreement')
+radyofenomen.com#%#//scriptlet('set-cookie-reload', 'isSiteCookieReviewed', '0')
+microbit.org#%#//scriptlet('trusted-set-cookie', 'MBCC', '%7B%22version%22%3A1%2C%22functional%22%3Afalse%2C%22analytics%22%3Afalse%7D')
+u-tv.ru##.banner-cookie-advertisement
+skyscanner.se#%#//scriptlet('trusted-click-element', '#cookieBannerContent button[data-tracking-element-id="cookie_banner_essential_only"]')
+err.ee#$#.modal { display: none !important; }
+err.ee#$#.modal-backdrop { display: none !important; }
+err.ee#$#.modal-open { overflow: auto !important; }
+worldcard.com.tr##.cookie-btn
 kant.ru##div[class^="styles_cookiesModal__"]
 rki.de#%#//scriptlet('trusted-click-element', '.rejectAll','','300')
 vodafone.de#%#//scriptlet('trusted-click-element', '#consent-banner a[aria-label="Alle ablehnen"] > button','','300')
@@ -4799,7 +4808,7 @@ serif.com##div[aria-labelledby="cookie-heading"]
 magnit.ru##.popup-unit-cookie-policy
 torggler.com##.wf-cookie-consent
 sportaustria.at##div[data-extension="consent_manager"]
-saily.com###consent-widget-container
+nordstellar.com,saily.com###consent-widget-container
 jod.jsports.co.jp##.o-app-cvArea
 deal.by##div[data-testid="backdrop"]
 deal.by###react-portal > div > div[role="presentation"]:has(footer + div > div > div > button)
@@ -5342,7 +5351,7 @@ ably.com##.ui-cookie-message
 coinbureau.com##div[class*="CookieDiv"]
 comnet.com.tr#%#//scriptlet('set-local-storage-item', 'cookieСonsent', 'true')
 joom.ru##div[class^="disclaimer___"]
-wero-wallet.eu,globalis.se,dimensione.com#%#//scriptlet('trusted-click-element', 'button#CybotCookiebotDialogBodyButtonDecline')
+steiledema.boxnow.gr,wero-wallet.eu,globalis.se,dimensione.com#%#//scriptlet('trusted-click-element', 'button#CybotCookiebotDialogBodyButtonDecline')
 thueringer-energienetze.com#%#//scriptlet('trusted-click-element', 'a#CybotCookiebotDialogBodyButtonDecline')
 thueringer-energienetze.com###CybotCookiebotDialogBodyUnderlay
 ldz.lv#$#.sliding-popup-bottom { display: none !important; }
@@ -10196,7 +10205,7 @@ kramp.com###cookiewall-modal
 easyparts.nl,easyparts-rollerteile.de#$#body { overflow: visible !important; }
 easyparts.nl,easyparts-rollerteile.de#$##div_popup_cookies { display: none !important; }
 easyparts.nl,easyparts-rollerteile.de#$##div_popup_cookies ~ #cover { display: none !important; }
-atlasvpn.com##div[class^="cookie-consent_"]
+bikemap.net,atlasvpn.com##div[class^="cookie-consent_"]
 erlus.com#$#html.uk-modal-page { overflow: visible !important; }
 dach.de##.cc-cover
 autoteiledirekt.de,autoersatzteile.de##.cookies-tooltip
@@ -16707,7 +16716,7 @@ sp.pictlink.com#%#//scriptlet('trusted-click-element', '#TEST-PRIVACY-POLICY-AGR
 outschool.com#%#//scriptlet('set-cookie', 'tracking-preferences', 'false')
 karkkainen.com#%#//scriptlet('trusted-click-element', 'button.coi-banner__accept')
 gem.cbc.ca#%#//scriptlet('set-cookie', 'gem_cookies_usage_production', '1')
-firsty.app,trade.kanga.exchange,bookingpremium.secureholiday.net#%#//scriptlet('set-local-storage-item', 'cookieConsent', 'true')
+windowsonarm.org,firsty.app,trade.kanga.exchange,bookingpremium.secureholiday.net#%#//scriptlet('set-local-storage-item', 'cookieConsent', 'true')
 ici.tou.tv#%#//scriptlet('set-cookie', 'toutv_cookies_usage_production', '1')
 fashionunited.*#%#//scriptlet('set-cookie', 'EU_COOKIE_LAW_CONSENT', 'false')
 wnl.tv#%#//scriptlet('set-cookie', 'Cookie_Category_Analytics', 'false')
@@ -17514,6 +17523,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/213755
+@@||consent.cookiebot.com/uc.js$domain=steiledema.boxnow.gr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/213703
 e-kruk.pl,pl.kruk.eu#@#.cookie-notice:not(body):not(html)
 @@||cdn.cookiehub.eu/c2/*.$domain=ro.kruk.eu
@@ -33999,6 +34010,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+creative.com#%#//scriptlet('set-cookie', 'takeover', 'true')
 altermed.ru##.side__subscribe
 venturebeat.com##.h-full > div[class^="bg-interactive-secondary"]:has(> form input[type="email"])
 venturebeat.com###vb-homepage > div.container-fluid:has(> div#newsletter)
@@ -53790,6 +53802,7 @@ felia.373news.com###ticker-area
 ! recipe.rakuten.co.jp etc. self-promo banner
 ||rakuten-static.com/1/grp/banner/js/create.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/81918
+jiosaavn.com##.o-layout > .c-banner
 jiosaavn.com##.c-player > .c-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/171351
 ! https://github.com/AdguardTeam/AdguardFilters/issues/81283
