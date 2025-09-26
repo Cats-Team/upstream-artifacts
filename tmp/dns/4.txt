@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: ee3Alt0V2KBZBE7Sodx/eQ
-! Diff-Path: ../patches/4/4-s-1758831116-3600.patch
+! Checksum: Di8cIl8tochREDVmfMCDEQ
+! Diff-Path: ../patches/4/4-s-1758863533-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.19.83
-! TimeUpdated: 2025-09-25T20:07:45+00:00
+! Version: 2.1.19.87
+! TimeUpdated: 2025-09-26T05:07:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -650,7 +650,7 @@ oppai.stream,prdesse.com,torano-maki.net,daijisen.jp,html-css-javascript.com,ene
 ! ##.social__share
 ukranews.com,everydayhealth.com,grid.id,motorplus-online.com,gridoto.com,bolasport.com,news.rambler.ru##.social__share
 ! ##.share-icons
-croxyproxy.app,natgeomedia.com,akhbarelyom.com,blogs.opera.com,hugogloss.uol.com.br,lsm.lv,paradergi.com.tr,czasfinansow.pl,attacomsian.com,meme-arsenal.com,merriam-webster.com,embed.ustudio.com,marketwatch.com,blog.1password.com##.share-icons
+iflscience.com,croxyproxy.app,natgeomedia.com,akhbarelyom.com,blogs.opera.com,hugogloss.uol.com.br,lsm.lv,paradergi.com.tr,czasfinansow.pl,attacomsian.com,meme-arsenal.com,merriam-webster.com,embed.ustudio.com,marketwatch.com,blog.1password.com##.share-icons
 ! ##.social-button
 job.career-tasu.jp,twitch.tv,full-count.jp,yasemin.com,karzusp.net,blog.karzusp.net,domesoccer.jp,the-ans.jp,trafficnews.jp,magmix.jp,basketballking.jp,autos.goo.ne.jp,ch-review.net,kuruma-news.jp,alba.co.jp,mskagency.ru,pr.goo.ne.jp,point.md,bike-news.jp,haber7.com,w.atwiki.jp,badische-zeitung.de##.social-button
 ! ##.socialList
@@ -675,6 +675,8 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+iflscience.com##.share-follow--actions
+fincult.info##.article-meta-bar__actions > .article-functionality-panel__item:has(> .icon-share)
 athlosnews.gr##.vc_column > div.wpb_wrapper:has(> div.tdb_single_post_share)
 antonovsad.ru##.sidebar-social
 antonovsad.ru##.btn-action_share
@@ -1409,7 +1411,7 @@ gov.uk##.gem-c-share-links
 rikujyokyogi.co.jp##div[class^="link_share"]
 5589.jp,jimdofree.com##.j-sharebuttons
 verdict.co.uk##.gdm-article-share
-newsweek.com##.vf-share-menu
+pcgamer.com,androidauthority.com,newsweek.com##.vf-share-menu
 economist.com##.css-z11z87 > div:has(svg[data-testid="share-solid"])
 thesun.co.uk##.article-teaser-share-button
 mirandopeliculas.com#?##sidebar > div.tsidebar:has(> h3:contains(/siguenos en facebook|siguenos en google/))
