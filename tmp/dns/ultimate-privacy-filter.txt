@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202509260304
+! Version: 202509260904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 26 Sep 2025 03:04 UTC
+! Last modified: 26 Sep 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -72947,6 +72947,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||cloudmetrics.xenforo.com^
+||api-analytics.pelikan.sk^
 ||analytics.streamingworld.xyz^
 ||stats.bouyguestelecom.fr^
 ||analytics-cdn.sport.es^
@@ -114225,6 +114227,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/v1/rgstr?k=client-
 /ezais/analytics
 /detroitchicago/reno.js
 /detroitchicago/overlandpark.js
@@ -114884,6 +114887,13 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||pusti.svc.litv.tv/puid
+||player.svc.litv.tv/pixel/
+||fino.svc.litv.tv/acs/dms.js
+||litv.tv/api/generate-device-id
+pelikan.*#%#//scriptlet('set-local-storage-item', 'PAPVisitorId', '$remove$')
+iflscience.com#%#//scriptlet('set-local-storage-item', 'SPOTIM_DEVICE_UUID_V2', '$remove$')
+bloomberg.com#%#//scriptlet('set-local-storage-item', '/statsig|youboraDeviceUUID/', '$remove$')
 ||teltarif.de/cgi-bin/jswarn
 ||sgimage.netmarble.com/js/gtm/
 ||sr-cdn.shiprocket.in/sr-promise/static/uc.js
@@ -120566,6 +120576,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+$cookie=PAPVisitorId,domain=pelikan.cz|pelikan.hu|pelikan.sk
 ||bouyguestelecom.fr^$cookie=trackerId
 ||hostadvice.com^$cookie=msvt_uid
 ||azrhymes.com^$cookie=visitor
