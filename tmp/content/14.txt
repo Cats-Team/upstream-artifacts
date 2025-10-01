@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: QYXm+oVR1hP7aG1Bgyj2Uw
-! Diff-Path: ../patches/14/14-s-1759317064-3600.patch
+! Checksum: 7oMXOgseC7xZYcDeSgxHPA
+! Diff-Path: ../patches/14/14-s-1759335173-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.44.56
-! TimeUpdated: 2025-10-01T11:06:49+00:00
+! Version: 2.2.44.60
+! TimeUpdated: 2025-10-01T16:08:49+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2543,6 +2543,8 @@ accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,ae
 !
 ! NOTE: Regular rules
 !
+cicloscorredor.com##.cookies-consent-modal
+cicloscorredor.com##.modal-backdrop
 tass.ru##div[class^="CookieAcceptanceBlock_container"]
 flexibits.com###fbp-cookies-banner
 bit-flows.com###cookieConsentWrapper
@@ -2666,7 +2668,7 @@ motorena.cz##.fworks_consent_bar
 uni.lodz.pl###om-cookie-consent
 ezviz.ru###thermsModal
 nnwszkolne.compensa.pl##div[class^="CookieBannerstyles__BannerWrapper-"]
-zaufanatrzeciastrona.pl#%#//scriptlet('trusted-click-element', '.embed-privacy-input-wrapper > input[id^="embed-privacy-store-youtube-"]', '', '1000')
+zaufanatrzeciastrona.pl#%#//scriptlet('trusted-click-element', '.embed-privacy-overlay:not([style="display: none;"]) .embed-privacy-input-wrapper > input[id^="embed-privacy-store-"][data-embed-provider]', '', '500')
 mpsv.cz#%#//scriptlet('set-cookie', 'gcc_analytics', 'denied')
 mpsv.cz#%#//scriptlet('set-cookie', 'gcc_necessary', 'allow')
 mpsv.cz#%#//scriptlet('set-cookie', 'gcc_personalization', 'denied')
@@ -3246,7 +3248,7 @@ brainstation.io##div[data-cookie-notification]
 m24.ru##.b-cookies-window
 bristol.ru##.cookie-popover
 motostacja.com##div[x-data*="consentModal"]
-mateco.*,trainerakademie-koeln.de,thqnordic.com,dotlan.net,awa7.de,gartentraum.de,gorzdrav.org,rkf.online##.cookie-modal
+stadtkirche-selb.de,mateco.*,trainerakademie-koeln.de,thqnordic.com,dotlan.net,awa7.de,gartentraum.de,gorzdrav.org,rkf.online##.cookie-modal
 aliexpress.ru##div[class^="SnowPrivacyPolicyBanner_"]
 ||default.beam-emea.prd.api.max.com/legal/*/consentExperience?
 ||default.beam-emea.prd.api.hbomax.com/legal/*/consentExperience?
@@ -34023,6 +34025,7 @@ aol.com#$#.banner-active { margin-top: 0 !important; }
 ! Genegic rules
 ! SECTION: Subscriptions - Generic
 !
+##form[aria-label="Sign up for newsletter: Daily Briefing"]
 ##.breadcrumb__google-news
 ##.footer-cta
 ##.post-end-cta-full
@@ -39966,7 +39969,6 @@ motherjones.com##.mj-house-subscription-promo-widget
 kimchimari.com##.fd-form-popup
 magazine.skyeng.ru#?#.stk-grid-col > p.stk-reset:contains(Полезные фразы для общения и особенности британской культуры два раза в неделю у вас в почте)
 zr.ru##.subscribe > div.sp-form-outer
-delmarvanow.com,phillyburbs.com,indystar.com##.gnt_m_nls
 eastasiaforum.org###eaf_subscribe_sidebar-2
 blog.irdeto.com#?#.et_pb_extra_column_sidebar > div[id^="custom_html-"] > .widgettitle:contains(Subscribe to the Blog):upward(1)
 wikijob.co.uk#?#div[class^="ResumeWidget-"]:has(> form[name="cvreview"] > input[name="email"])
@@ -49897,6 +49899,8 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+findingpass.org###nordpassPopup
+live.bilibili.com##.left-container > .flip-view:has(> div.flip-view-image-ctnr > div.p-relative > a.item-wrapper > div[data-type="liveroom_banner_show"])
 gemini.google.com##announcement-banner
 dmv-written-test.com###study-tip-banner
 dmv-written-test.com###sticky-banner
@@ -55251,6 +55255,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 ! SECTION: Tweaks - JS
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/214587
+nexusmods.com#%#//scriptlet('adjust-setInterval', 'remaining--;')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214159
 arahcloud.com#%#//scriptlet('adjust-setInterval', 'downloadTime', '*', '0.001')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/213838
