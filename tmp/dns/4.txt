@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: kJJMAM7y9qZyU7451HhyBw
-! Diff-Path: ../patches/4/4-s-1759403414-3600.patch
+! Checksum: ORBvABQuiPxIsTSIvUoi2A
+! Diff-Path: ../patches/4/4-s-1759417869-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.20.12
-! TimeUpdated: 2025-10-02T11:06:11+00:00
+! Version: 2.1.20.15
+! TimeUpdated: 2025-10-02T15:06:49+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -675,6 +675,9 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+||afyonturkeligazetesi.com/images/money/zrjb40wU9FB9.png
+afyonturkeligazetesi.com##div[x-data]:has(> ul > li > a[href^="https://www.facebook.com/sharer.php?"])
+pc-koubou.jp##.main__shareButton
 tengrinews.kz##.content_main_meta_stat_top
 tengrinews.kz##.content_main_text_share-mob
 efsyn.gr##.article__trigger-share
@@ -2955,7 +2958,7 @@ akcakocatv.com##div[class^="paylas"]
 duo.com##article .social-icons
 medias24.com##.round-share-links
 haberkibris.com###st-5
-turgutluyanki.com##.fix-socials_btm
+ensondakika.com.tr,turgutluyanki.com##.fix-socials_btm
 infoworld.com,computerworld.com,csoonline.com##.social-share-sticky-menu
 indianautosblog.com##.menu-fb a
 indy100.com,lovemeow.com##.share-media-panel
