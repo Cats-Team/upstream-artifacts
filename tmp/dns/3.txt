@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: iDNzdDdtEjer3MwxL6oWdw
-! Diff-Path: ../patches/3/3-s-1759317067-3600.patch
+! Checksum: SDzsaq3YUz6yPkV9pv8iSQ
+! Diff-Path: ../patches/3/3-s-1759378340-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.92.23
-! TimeUpdated: 2025-10-01T11:06:34+00:00
+! Version: 2.0.92.25
+! TimeUpdated: 2025-10-02T04:07:47+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -69735,6 +69735,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||orderana*.spankbang.com^
 ||upsell.alphwidget.com^
 ||4hfvbao1ea.execute-api.ap-northeast-2.amazonaws.com^
 ||static.alphwidget.com^
@@ -105799,6 +105800,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
 !
+/piano/engagement
 /v1/rgstr?k=client-
 /ezais/analytics
 /detroitchicago/reno.js
@@ -106562,6 +106564,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+inet.se#%#//scriptlet('set-local-storage-item', 'visitorInfo', '$remove$')
+inet.se#%#//scriptlet('set-local-storage-item', 'visitorId', '$remove$')
+||dubcdn.com/analytics/
+||spankbang.com/api/*/track-impression
+||spankbang.com/api/*/events
 ||whitepages.com/api/log-
 ||whitepages.com/static/dist/setupGaConfig.js
 ||whitepages.com/static/dist/amplitudeSetup.js
@@ -113112,6 +113119,11 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! superhuman.com
+||superhuman.com^$cookie=web-device
+! spankbang.com
+||spankbang.com^$cookie=ana_sid
+||spankbang.com^$cookie=ana_vid
 ! whitepages.com
 ||whitepages.com^$cookie=wp_pid
 ! jdpower.com
