@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510020304
+! Version: 202510020906
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 02 Oct 2025 03:04 UTC
+! Last modified: 02 Oct 2025 09:06 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -69172,6 +69172,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||orderana*.spankbang.com^
 ||upsell.alphwidget.com^
 ||4hfvbao1ea.execute-api.ap-northeast-2.amazonaws.com^
 ||static.alphwidget.com^
@@ -105185,6 +105186,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/piano/engagement
 /v1/rgstr?k=client-
 /ezais/analytics
 /detroitchicago/reno.js
@@ -105845,6 +105847,15 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||karte.io^$domain=delishkitchen.tv
+||delishkitchen.tv/api/access_trackers
+||tps.trovaprezzi.it/javascripts/tracking-vanilla.min.js
+||dcinside.com/_js/click_log.js
+inet.se#%#//scriptlet('set-local-storage-item', 'visitorInfo', '$remove$')
+inet.se#%#//scriptlet('set-local-storage-item', 'visitorId', '$remove$')
+||dubcdn.com/analytics/
+||spankbang.com/api/*/track-impression
+||spankbang.com/api/*/events
 ||whitepages.com/api/log-
 ||whitepages.com/static/dist/setupGaConfig.js
 ||whitepages.com/static/dist/amplitudeSetup.js
@@ -110653,7 +110664,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||ztat.net/*/webtrekk.min.js^
 ||google.com/log?$redirect=nooptext
 ||yandex.ru/clck/click|
-||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$method=post
 /clck/*$domain=yandex.*|playhop.com
 ||s1.hdslb.com/bfs/seed/jinkela/short/reporter-pb/index.js
 ||1gr.cz/log^
@@ -111555,6 +111565,12 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||agatameble.pl^$cookie=private_content_version
+||dcinside.com^$cookie=ci_c
+||dcinside.com^$cookie=csid
+||superhuman.com^$cookie=web-device
+||spankbang.com^$cookie=ana_sid
+||spankbang.com^$cookie=ana_vid
 ||whitepages.com^$cookie=wp_pid
 ||jdpower.com^$cookie=userid
 ||slideshare.net^$cookie=browser_id
