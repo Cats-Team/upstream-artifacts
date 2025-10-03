@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510030905
+! Version: 202510031504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 03 Oct 2025 09:05 UTC
+! Last modified: 03 Oct 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -69172,6 +69172,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||mon*.tiktokv.us^
+||telemetry.adobe.io^
+||fpt.commerce.adobe.com^
+||adobecorp.data.adobedc.net^
 ||log-gateway.zoom.us^
 ||orderana*.spankbang.com^
 ||upsell.alphwidget.com^
@@ -105847,6 +105851,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||tiktok.com/aweme/*/report
+||tiktok.com/api/*/web-cookie-privacy
+||tiktokcdn-us.com/obj/static-tx/slardar/*/sdk-web/plugins/common-monitors.*.js
 ||c.seznam.cz/js/rc.js
 ||karte.io^$domain=delishkitchen.tv
 ||delishkitchen.tv/api/access_trackers
@@ -112191,6 +112198,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mcs.tiktokv.us^
 ||trace.free-reels.com^
 ||event-portal.dailyinnovation.biz^
 ||api.learnings.ai^
