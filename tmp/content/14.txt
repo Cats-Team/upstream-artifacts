@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: Q43RrUaCIiIJ2rRxR1tYZg
-! Diff-Path: ../patches/14/14-s-1759612192-3600.patch
+! Checksum: +bE2vI5c/9UvvkiK9iRQkw
+! Diff-Path: ../patches/14/14-s-1759723938-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.44.89
-! TimeUpdated: 2025-10-04T21:06:09+00:00
+! Version: 2.2.44.92
+! TimeUpdated: 2025-10-06T04:08:18+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2545,6 +2545,12 @@ accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,ae
 !
 ! NOTE: Regular rules
 !
+psgaz.pl#$#body.background { overflow: auto !important; }
+psgaz.pl#$#body.background::before { display: none !important; }
+titan-army.com#$#.otCookiesNotification { display: none !important; }
+titan-army.com#$#html, body { overflow: auto !important; }
+neo24.pl##div[class^="cookiesBlockScss"]
+neo24.pl##div[class^="cookiesBlockScss"] + div div[class^="backdropScss"]
 ixbt.market###accept_cookie_policy_wrapper
 hut.de###c-cookie-banner
 spankbang.com#%#//scriptlet('trusted-click-element', '#cookie-consent button[\@click="$store.entryFlowStore.setEssentialCookies()"]')
@@ -6937,9 +6943,9 @@ opintopolku.fi#$##oph-cookie-modal-backdrop { display: none !important; }
 opintopolku.fi#$#body { overflow: auto !important; }
 tranquilidade.pt#?#body > div.overlay-wrapper:has(> div.overlay > div.component-content[role="dialog"])
 tranquilidade.pt#$#body { pointer-events: all !important; }
-grin.com,lifeline.de,rehau.com,gaggenau.com#$##cmpbox { display: none !important; }
-grin.com,lifeline.de,rehau.com,gaggenau.com#$##cmpbox2 { display: none !important; }
-grin.com,lifeline.de,rehau.com,gaggenau.com#$#body { overflow-y: auto !important; }
+empfohlen.de,grin.com,lifeline.de,rehau.com,gaggenau.com#$##cmpbox { display: none !important; }
+empfohlen.de,grin.com,lifeline.de,rehau.com,gaggenau.com#$##cmpbox2 { display: none !important; }
+empfohlen.de,grin.com,lifeline.de,rehau.com,gaggenau.com#$#body { overflow-y: auto !important; }
 cosibella.com.de,metalmarket.eu,matemundo.*###iai_cookie_wrapper
 diag.pl###cookie-agreement-window
 share-your-photo.com#$#body #cookie-consent { display: none !important; }
@@ -17621,6 +17627,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/214777
+@@||delivery.consentmanager.net/delivery/cmp.php$domain=empfohlen.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214618
 spankbang.com#@##cookie-consent
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214735
@@ -34164,6 +34172,8 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+titan-army.com#%#//scriptlet('set-session-storage-item', 'ecomsend_pp_window_normal211873', 'true')
+titan-army.com#%#//scriptlet('set-session-storage-item', 'ecomsend_pp_already_show211873', 'true')
 wowhead.com###newsletter-cta-wrapper
 lordserial.*##.vkinfo
 bartek.com.pl##.exponea-banner-backdrop
