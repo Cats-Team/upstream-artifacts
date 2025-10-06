@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: lR+RTDRF+F3eLuO5EM4QYg
-! Diff-Path: ../patches/14/14-s-1759741938-3600.patch
+! Checksum: p1E/Z5gTbqFfuKB53p166w
+! Diff-Path: ../patches/14/14-s-1759734741-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.44.96
-! TimeUpdated: 2025-10-06T09:08:21+00:00
+! Version: 2.2.44.94
+! TimeUpdated: 2025-10-06T07:08:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2545,8 +2545,6 @@ accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,ae
 !
 ! NOTE: Regular rules
 !
-||cdn.ketchjs.com/lanyard/v2/lanyard.js$domain=sfstandard.com
-wisecleaner.com##.cooke-privacy-wrap
 profitechnik.pl#$#body { overflow: auto !important; padding-right: 0 !important; }
 profitechnik.pl#$#.consents-modal { display: none !important; }
 profitechnik.pl#$#h-backdrop { display: none !important; }
@@ -3836,7 +3834,7 @@ warta.pl#$#.modal-backdrop { display: none !important; }
 warta.pl#$#body .cookies-info-modal { display: none !important; }
 warta.pl#$#.modal:has(> .cookies-policy-modal) { display: none !important; }
 warta.pl#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
-podimo.com,tryhackme.com##div[data-sentry-component="CookieConsent"]
+tryhackme.com##div[data-sentry-component="CookieConsent"]
 kaliber.pl#$#.modal-backdrop { display: none !important; }
 kaliber.pl#$#body #cookieModal { display: none !important; }
 kaliber.pl#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
@@ -3866,7 +3864,7 @@ dnb.com##.globalPrivacyControlPopupWrapper
 rwa.at#$#body.easycmp-overlay-active > * { pointer-events: auto !important; }
 vidal.fr###vidal_consent
 ||sfirmware.com/ajax/gdpr-desc
-oeamtc.at,meineschufa.de,dfbplay.tv#%#//scriptlet('trusted-click-element', '#usercentrics-root >>> button[data-testid="uc-deny-all-button"]')
+meineschufa.de,dfbplay.tv#%#//scriptlet('trusted-click-element', '#usercentrics-root >>> button[data-testid="uc-deny-all-button"]')
 fedex.com##fedex-gdpr
 foundryvtt.com###analytics-prompt
 genspark.ai##.agree_terms_dialog_background
@@ -11177,7 +11175,7 @@ ogloszenia.agro.pl,idea-invest.pl###rodoModal
 rarewaves.com,noirfonce.eu,sennheiser.com###cookie-consent-dialogBox
 serverando.de,arsmundi.de##.cookie-permission-container-big
 /wp-content/blog-plugins/wordads-classes/js/banner.bundle.js$domain=qurananswers.me
-ofixtures.co.uk,cs.opensource.google,source.chromium.org##.cdk-overlay-pane > mat-snack-bar-container
+cs.opensource.google,source.chromium.org##.cdk-overlay-pane > mat-snack-bar-container
 petcim.com##.cerezpop
 smarturl.it###consent-block
 adwokatniemcy.net###elementor-popup-modal-5533
@@ -17635,13 +17633,6 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/214936
-! https://github.com/AdguardTeam/AdguardFilters/issues/214935
-@@||bargainbirdfood.co.uk/static/*/Amasty_GdprFrontendUi/js/$domain=bargainbirdfood.co.uk|gardenbird.co.uk
-! https://github.com/AdguardTeam/AdguardFilters/issues/214934
-@@||lovegardenbirds.co.uk/static/*/Amasty_GdprFrontendUi/
-! https://github.com/uBlockOrigin/uAssets/issues/30286
-@@||usercentrics.eu^$domain=oeamtc.at
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214901
 retio.*,retio-displays.de,retio-displays.cz#@##shoper-foot ~ div.consents
 retio.*,retio-displays.de,retio-displays.cz#@#.shop_index > div.consents
@@ -22770,10 +22761,6 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! Do not forget about '!#safari_cb_affinity' section for exclusions:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#general
 !
-civitai.com##a[href="/pricing"] > img[alt*="disabling adblock"]
-civitai.com##.mantine-ScrollArea-viewport > div > .gap-3 > .gap-2:has(> a[href="/pricing"] > img[alt*="disabling adblock"])
-civitai.com#%#//scriptlet('prevent-fetch', 'server.megabrain.co')
-civitai.com#%#//scriptlet('prevent-element-src-loading', 'script', 'cdn.snigelweb.com/adengine')
 yummyani.me##div[class*="adfinity_block_"]
 antalyahurses.com,haberantalya.com,afyonturkeligazetesi.com##div[x-data^="adblockBanner"]
 neoseeker.com###right_content > div[style^="height:250px;width:290px;"]
@@ -25432,9 +25419,6 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
-100.com.tw#$#.van-overflow-hidden { overflow: auto !important; }
-100.com.tw#$#.evaluation-normal { display: none !important; }
-aspor.com.tr##.modal-closing-btn
 townwork.net#%#//scriptlet('set-cookie', 'isLightProfileBannerSerpsClosed', '1')
 instagram.com#%#//scriptlet('set-session-storage-item', 'loggedOutCTAIsShown', '1')
 okpeliz.com###telegram-bar
@@ -34199,8 +34183,6 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
-electrive.com##.newsletter-bar
-electrive.com##.site-newsletter
 experte.com,experte.de,digitale.co##.fixed.bottom-0
 titan-army.com#%#//scriptlet('set-session-storage-item', 'ecomsend_pp_window_normal211873', 'true')
 titan-army.com#%#//scriptlet('set-session-storage-item', 'ecomsend_pp_already_show211873', 'true')
@@ -34898,7 +34880,7 @@ passportnews.co.il###widget_newsletter_footer
 theverge.com###zephr-anchor > .duet--article--block-placement:has(> div[class] > a.duet--cta--button)
 vfokuse.mail.ru###article-root ~ div[class]:has(> div[class] > div[class] > div[class] > button[data-logger="PushSubscribeButton"])
 latent.space,ciw.news,noahpinion.blog,newcomer.co,blog.corkmac.app,blog.sshh.io,hardcoresoftware.learningbyshipping.com,newsguardrealitycheck.com,newsletter.techworld-with-milan.com,newsletter.pragmaticengineer.com,usermag.co,domainanalysis.io,substack.com##article > .pc-display-contents:has(> div[class*="subscribeDialog"])
-nicolasbustamante.com,blog.bytebytego.com,latent.space,secondthoughts.ai,ciw.news,chipsandcheese.com,noahpinion.blog,hardcoresoftware.learningbyshipping.com,newsguardrealitycheck.com,newsletter.pragmaticengineer.com,gamefile.news,substack.com##article > div > div.pencraft:has(> div.pencraft > div.subscribe-widget)
+latent.space,secondthoughts.ai,ciw.news,chipsandcheese.com,noahpinion.blog,hardcoresoftware.learningbyshipping.com,newsguardrealitycheck.com,newsletter.pragmaticengineer.com,gamefile.news,substack.com##article > div > div.pencraft:has(> div.pencraft > div.subscribe-widget)
 substack.com##.embedded-publication-subscribe
 chathamhouse.org##.newsletter-form.paragraph
 grazia.nl##.showheroes-unit:has(> div.newsletter)
@@ -49975,7 +49957,6 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
-hobbygames.ru##.banner
 nypost.com##.zephrModal
 faq.rakuten.net#$#c-mobilebanner { display: none !important; }
 faq.rakuten.net#$#.siteforceThemeLayoutStarter { padding-top: 0 !important; }
