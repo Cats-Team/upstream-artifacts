@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510070304
+! Version: 202510070905
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 07 Oct 2025 03:04 UTC
+! Last modified: 07 Oct 2025 09:05 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||lltrck.com^
+||contanuity.com^$third-party
+||demandscience.com^$third-party
 ||digiadglobal.com^$third-party
 ||overtracking.com^$third-party
 ||funsdata.com^
@@ -107334,6 +107337,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||navismithapis-cdn.com/js/tracking.js
+||player-api.instaread.co/api/metrics/
 ||townwork.net/api/lettice/collect/
 ||teenage.engineering/_api/mw/track/
 ||apps.consentik.com/consentik/api/impression
@@ -108955,7 +108960,6 @@ sinoptik.ua##img[src^="//counter.ukr.net/"]
 ||lasso.link/events/tracking
 ||clipkit.co/clipkit_assets/beacon-
 ||shufoo.net/plus/media/beacon
-||gacraft.jp/socket/
 ||data.taschen.com/gtm.js
 ||jsak.mmtcdn.com/*/pwa_commons/pwatracker.js
 ||t21.press/counter.php
@@ -113062,6 +113066,8 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||dmm.com^$cookie=top_dummy
+||dmm.com^$cookie=top_pv_uid
 ||agatameble.pl^$cookie=private_content_version
 ||dcinside.com^$cookie=csid
 ||superhuman.com^$cookie=web-device
