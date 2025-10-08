@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510080304
+! Version: 202510080904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 08 Oct 2025 03:04 UTC
+! Last modified: 08 Oct 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||rum.hlx.page^
 ||lltrck.com^
 ||contanuity.com^$third-party
 ||demandscience.com^$third-party
@@ -71221,6 +71222,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||p.eneba.com^
 ||cookiemon-analytics.azurewebsites.net^
 ||k203.adn.com^
 ||mon*.tiktokv.us^
@@ -107338,6 +107340,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||fashionnova.com/api/search/events
+||eneba.com/metrics/
+||sdk.nsureapi.com/sdk.js
 ||ias.r10s.jp/grp15/lib/ichiba_frame.js
 ||r.r10s.jp/com/ap/plugin/mediatrack/mediatracker_ichiba_item.js
 ||sklavenitis.gr/Scripts/Analytics/
@@ -110442,6 +110447,7 @@ techmaniachd.pl###sidebar-right-1 > #HTML6
 ||msgsndr.com/funnel/event
 ||con.arbeitsagentur.de/prod/matomo/
 ||appmifile.com^*/stat/
+||facebook.com/ajax/bz?*__req=$ping
 ||facebook.com/ajax/bz?*__comet_req=
 ||inthenews.co.kr/weblog/gtracker.
 ||squarespace.com/universal/scripts-compressed/performance-$script,third-party
@@ -113070,6 +113076,9 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||fashionnova.com^$cookie=2c.cld
+||fashionnova.com^$cookie=OptimizelyUserId
+||eneba.com^$cookie=userId
 ||dmm.com^$cookie=top_dummy
 ||dmm.com^$cookie=top_pv_uid
 ||agatameble.pl^$cookie=private_content_version
