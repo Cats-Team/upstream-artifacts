@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510100904
+! Version: 202510101504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 10 Oct 2025 09:04 UTC
+! Last modified: 10 Oct 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -107344,6 +107344,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||dbrand.com/cvg/log?
+||dbrand.com/cvg/track?
+||dbrand.com/cvg/static/pixels/
+||ctr.incrowdsports.com/v1/*/events
+||potensic.com/npublic/libs/widget/sensors/
 ||russia-tv.online/api/*/event
 ||russia-tv.online/api/*/fingerprint
 ||l.search.naver.com/n/scrolllog/*?u=*&slogs=
@@ -112235,8 +112240,6 @@ gmarket.co.kr#%#//scriptlet('fingerprintjs2')
 ||rum-static.pingdom.net/*-*.js$script,redirect=noopjs,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
-/p/rp/*?mi_u=$image
-%2Fp%2Frp%2F*%3Fmi_u%3D$image
 /tf/o/$image
 %2Ftf%2Fo%2F$image
 /via/o?h=
@@ -113720,6 +113723,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||prebid-server-canary.ifunny.co^
 ||track.taimi.com^
 ||gem-log.sloegem.com^
 ||log.oceanzz.xyz^
