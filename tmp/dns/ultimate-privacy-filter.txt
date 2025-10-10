@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510091504
+! Version: 202510092104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 09 Oct 2025 15:04 UTC
+! Last modified: 09 Oct 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -118,7 +118,6 @@ paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs.prototype.AddParamet
 kbjfree.com#%#//scriptlet('set-constant', 'plausible', 'noopFunc')
 tieba.baidu.com#%#//scriptlet('set-constant', 'passFingerPrint', 'noopFunc')
 secure1.comed.com#%#//scriptlet('set-constant', 'setupGoogleAnalytics', 'noopFunc')
-repubblica.it#%#//scriptlet('prevent-element-src-loading', 'script', 'static.chartbeat.com/js/chartbeat_brightcove_plugin.js')
 cerbahealthcare.it#%#//scriptlet('set-constant', 'pa', 'emptyObj')
 cerbahealthcare.it#%#//scriptlet('set-constant', 'pa.setConfigurations', 'noopFunc')
 lightrun.com#%#//scriptlet('set-constant', 'gtag', 'noopFunc')
@@ -71221,6 +71220,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||cdn.kmalgo.com^
+||client.smartpushedm.com^
 ||cdn.getkoala.com^
 ||p.eneba.com^
 ||cookiemon-analytics.azurewebsites.net^
@@ -107340,6 +107341,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||l.search.naver.com/n/scrolllog/*?u=*&slogs=
+||api.consumer.pt.mcclatchy.com/mia-mh/meter
 ||events-proxy.mintlify.com/decide/
 ||events-proxy.mintlify.com/e/?ip=*&ver=$xmlhttprequest,redirect=noopjson
 ||icon.zol-img.com.cn/public/bdshare/static/api/js/trans/logger.js
@@ -107655,7 +107658,6 @@ revistaoeste.com##.content-aside__taboola
 dogdrip.net#%#//scriptlet('href-sanitizer', 'a[href^="/link.php?url="]', '?url')
 ||konturnovosti.com/packs/js/opm.js
 ||dzen.ru/api/v4/launcher/stats/
-||client.smartpushedm.com/eclytics/n.gif
 ||rs.mail.ru/pixel/
 ||rs.mail.ru/ns.gif?n=
 ||rs.mail.ru/bulkstat/
@@ -107735,8 +107737,8 @@ allrecipes.com#%#//scriptlet('set-local-storage-item', '/_fpi|_duid/', '$remove$
 ||banking.dkb.de/api/metrics/$xmlhttprequest
 ||cdn.dsmcdn.com/sfx/mergen/
 ||cdn.dsmcdn.com/sfint/production/demeter-prod-*.umd.js
-||static.wertpapiere.ing.de/*/webtrekk
-||cdn.ing.de/ing-cms-ui/*/js/webtrekk
+||ing.de/*/*ebtrekk*
+||ingwb.com/*/ingwb-webtrekk
 ||derstandard.*/qpkdl/
 ||duckduckgo.com/t.js?q=
 ||data.product.lastpass.com/data/ptm.gif/
