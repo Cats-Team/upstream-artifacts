@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510121504
+! Version: 202510122104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Oct 2025 15:04 UTC
+! Last modified: 12 Oct 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -251,6 +251,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||*-sdk.rum.aliyuncs.com^
+||digitalcamp.co.kr^$third-party
 ||marathondataco.com^$third-party
 ||telecid.ru^
 ||rum.hlx.page^
@@ -71222,6 +71224,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||collector-sbanking.shb-pelib.com^
+||uac.etnews.com^
 ||fuse.ubs.com^
 ||cdn.kmalgo.com^
 ||client.smartpushedm.com^
@@ -112268,6 +112272,9 @@ gmarket.co.kr#%#//scriptlet('fingerprintjs2')
 .net%2Fe%2Fo%2F$image
 /CI0/0$image
 %2FCI0%2F0$image
+dm-sg.aliyuncs.com/trace/*/report$image
+dm-sg.aliyuncs.com%2Ftrace%2F*%2Freport$image
+tk.seasungame.com$image
 s-pt.jp/mail/info/*/img/_.gif$image
 s-pt.jp%2Fmail%2Finfo%2F*%2Fimg%2F_.gif$image
 openedlog.smart-bdash.com/opened?aid=$image
