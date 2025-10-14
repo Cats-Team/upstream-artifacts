@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 [Adblock Plus 3.1]
-! Checksum: raiBoBXsyf6VVvBPZ4qARQ
-! Version: 202510140551
+! Checksum: 86O7JIMMpwEYGGKVKi0wKg
+! Version: 202510141151
 ! Title: ABP filters
-! Last modified: 14 Oct 2025 05:51 UTC
+! Last modified: 14 Oct 2025 11:51 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv
 !
@@ -1687,7 +1687,7 @@ cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#$
 bongda365f.com#$#override-property-read isSkipAds true
 znews.vn#$#abort-on-property-read adtimaConfig
 baomoi.com#$#abort-on-property-write AdtimaRender
-achristmascarollive.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
+rileygainescenter.org#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 kenh14.vn#$#override-property-read Constants.allowAds false
 vndoc.com#$#override-property-read seconds 0
 phimvuihd.org#$#override-property-read urlAds ''
@@ -1697,7 +1697,7 @@ clipsex.cam,ww12.sexkhongchemoi.com#$#override-property-read video.adVast ''
 www.iosviet.com#$#override-property-read timer 0
 saigon24.net#$#abort-current-inline-script document.getElementById myModal
 cliphot69.pics#$#override-property-read a_vid 0
-achristmascarollive.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+rileygainescenter.org#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
 www.diendancauduong.com#$#abort-on-property-read antiAdBlockerHandler
 xem16.net,xem17.net#$#json-prune props.children.[].props.tvc
 hh2d.tv#$#abort-current-inline-script $ adblock
@@ -1762,7 +1762,9 @@ www.sieutamphim.pro#$#abort-on-property-read _$_75bd
 quatvn.love#$#abort-current-inline-script window.addEventListene localStorage
 checkscam.vn#$#abort-current-inline-script document.addEventListener open
 haysexvl.life#$#abort-current-inline-script document.addEventListener adx
-clipphot.net#¢#abort-current-inline-script document.addEventListener POP
+clipphot.net#$#abort-current-inline-script document.addEventListener POP
+audiotruyenfull.com#$#abort-current-inline-script document.addEventListener ai_run
+audiotruyenfull.com#$#abort-current-inline-script setTimeout Aff
 ! *** abp-filters-anti-cv:RM.txt ***
 ! #RM-1
 tripadvisor.com#$#hide-if-matches-xpath './/a[contains(text(),"Sponsored")][@target="_blank"]/parent::div/ancestor::div[@class][2]'
@@ -1832,13 +1834,13 @@ samsclub.com#$#hide-if-matches-xpath './/span[@class="sc-specials-label"]/follow
 samsclub.com##div[class="analytics"][data-strategy="Sponsored products"]
 ! #RM-9
 ! sl, sc
-instacart.*#$#hide-if-matches-xpath './/span[text()]/ancestor-or-self::*[@data-fp-eligible]/ancestor::div[@aria-label="Product"]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]';
+instacart.*##li:has(fp-ads-tag):not(:has(h2))
 ! ta
-instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[@aria-hidden="true"]/preceding::img[contains(@alt,"Sponsored")]/ancestor-or-self::div[@id][@class][1]';
+instacart.*##div[id][class]:has(> div:first-child > a img[alt*="Sponsored"], > div[aria-hidden="true"]:last-child)
 ! tc
-instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/ancestor::div[@id][@class="e-1hv1sre"][1]'
+instacart.*##div[id][class]:has(> a img[alt="Advertisement"]):has(li:first-of-type a div[style*="display:"] span)
 ! mc
-instacart.*#$#race start; hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/ancestor-or-self::div[@id][contains(@class,"e-1qzz7bi")][1]'; hide-if-matches-xpath '//span[text()]/preceding::div[contains(@style,"display:")]/ancestor-or-self::div[@id][contains(@class,"e-y7s1ry")][1]'; race stop;
+instacart.*##div[id][class]:has(> a > div:first-child img):has(> a div[style*="display:"] span)
 ! tp
 instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[text()="Top picks from other aisles"]/ancestor-or-self::h2/ancestor-or-self::div[@class="e-1yrpusx"]'
 instacart.*#$#abort-on-property-write window.ADBLOCK_DETECTED; abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read adblockDetected false;
