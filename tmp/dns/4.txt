@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: R00QSfMxda2o++hRygMxgg
-! Diff-Path: ../patches/4/4-s-1760433144-3600.patch
+! Checksum: r/gReLOjgB1eV7mgsRl62g
+! Diff-Path: ../patches/4/4-s-1760461886-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.20.48
-! TimeUpdated: 2025-10-14T09:08:04+00:00
+! Version: 2.1.20.52
+! TimeUpdated: 2025-10-14T17:07:05+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -674,11 +674,13 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+book.dmm.co.jp,book.dmm.com##section[class^="style_section_"]:has(> div[class^="sc-"] > div[class*="-1 "] + div[class*="-2 "] > div[class*="-0 "] > button[class*="-1 "] + span[class*="-2 "][data-size="sm"])
+downloadpirate.com##.cs-entry__metabar-share
 every.org##button[data-tname="nonprofitShareButton"]
 guru3d.com##.tab-content > article ~ h6
 guru3d.com##.tab-content > article ~ .ct-print
 guru3d.com##.tab-content > article ~ .ct-email
-book.dmm.co.jp##div[data-testid="notification-setting-block"] > div > div > div:has(> div > button[data-testid="share-line-button"])
+book.dmm.co.jp,book.dmm.com##div[data-testid="notification-setting-block"] > div > div:has(> div > div > button[data-testid="share-line-button"])
 24saatgazetesi.com##.mobile-share-button-container
 techtrenches.substack.com##.post-ufi > .post-ufi-button[href="javascript:void(0)"]
 2798731938.zigcou.com##div[class^="Post_post__"] > .-translate-x-1\/2
@@ -14841,6 +14843,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ||mailget.net^$third-party
 ||my.hellobar.com^$third-party
 !
+sai-zen-sen.jp##.iikamo-modal-dialog
 libertycity.net#%#//scriptlet('set-cookie', 'soc_fullscr', '1')
 libertycity.net#%#//scriptlet('set-cookie', 'soc_fullscr_cnt', '1')
 newizv.ru##.tg-banner_mobile

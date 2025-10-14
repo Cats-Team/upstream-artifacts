@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: F5Z6EYIgpgDbBzrXqjlXtQ
-! Diff-Path: ../patches/14/14-s-1760436723-3600.patch
+! Checksum: BUeSLBqOUFDXBMyh7OysCg
+! Diff-Path: ../patches/14/14-s-1760458337-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.45.79
-! TimeUpdated: 2025-10-14T10:08:03+00:00
+! Version: 2.2.45.84
+! TimeUpdated: 2025-10-14T16:08:14+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -25,6 +25,7 @@
 !#######################################################
 ! SECTION: Cookies - General element hiding
 !
+###awsccc-sb-ux-c
 ##.cookies-modal
 ##.wtm-cookies
 ##.cookieadmin_cookie_modal
@@ -8553,7 +8554,7 @@ bergzeit.be#$#body { position: static !important; overflow: visible !important; 
 audo.ai###bannerWrapper[style^="background-color:"]
 polskieradio.pl##.wrap-cookie-info-ext
 ||cdn.cookiecode.nl/dist/latest.js
-bada.us,bada.io##.privacy-cookie
+mercusys.com,bada.us,bada.io##.privacy-cookie
 mainichi.jp##.popuppanel4
 dazn.com##.w-cookie-banner
 ||laxd.com/share/js/gdpr/
@@ -12558,7 +12559,6 @@ commerzbank.de,billiger-telefonieren.de###uc-central-banner-modal
 podcloud.fr###rgpd-modal
 freedert.online,rtde.site,rtde.life,de.rt.com,actualidad.rt.com,rt.rs##.CookiesBanner-isReact
 ||digikey.*/-/media/Designer/EnavGDPR/JS/consent.js
-workshops.aws,repost.aws,amazonaws.com,calculator.aws,kiro.dev,aws.amazon.com###awsccc-sb-ux-c
 dafont.com###sd-cmp
 ||thestrad-gb.thestrad.com^
 birkenstock.com#$#div[class*="privacy-overlay"] { display: none!important; }
@@ -25463,6 +25463,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 !
 ! SECTION: Popups - Regular rules
 !
+sai-zen-sen.jp##.iikamo-modal-dialog
 americanexpress.com##.disruptor-banner-wrapper
 americanexpress.com###floating-nav-section
 lejournaldelamaison.fr##.viously-sticked-bottom-left
@@ -33328,6 +33329,7 @@ macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFu
 !
 ! SECTION: Push notifications - Regular rules
 !
+makeronline.com##.subscribe-notice
 tvgids.nl##.consent_manager--push
 vision360.bo###pushSubscriptionModal
 duda-cars.pl###yl__prompt
@@ -42765,6 +42767,7 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+pachikuri.jp###js-add-to-home-screen
 baitoru.com##li:has(> a[href*="adj.st"]:only-child)
 baitoru.com##li:has(> a[href^="https://spot-baitoru.go.link"]:only-child > img[src*="appdl"])
 baitoru.com##a[href^="https://spot-baitoru.go.link"] > img[src*="appdl"]
@@ -50061,6 +50064,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+vk.com,vk.ru##.apps_feedRightAppsBlock_single_app--promo
 wurstclient.net###afa-prompt
 ||banking.ing.de/app/obligo/w/r/*/resources/TeaserTracking-
 marketbeat.com##.hero-gradient
