@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: qesGex2d0Iw+jPDsz0a2xQ
-! Diff-Path: ../patches/4/4-s-1760587924-3600.patch
+! Checksum: mho1hXUX7Duu3lP+VnQ6mw
+! Diff-Path: ../patches/4/4-s-1760627504-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.20.58
-! TimeUpdated: 2025-10-16T04:07:56+00:00
+! Version: 2.1.20.61
+! TimeUpdated: 2025-10-16T15:07:14+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -674,6 +674,8 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+rotaborsa.com##div[data-toggle^="kanews-popup-share"]
+filmora.wondershare.com##.address-share > div:has(> a[data-share="facebook"])
 bunshun.jp##.aside-social-links
 vbr.ru##div[class^="ArticleShare_container"]
 hyperallergic.com##.widget:has(> ul.wp-block-jetpack-sharing-buttons)
@@ -5165,7 +5167,6 @@ dhakatribune.com##.social-shear-options-holder-outer
 assaultlily.jp##[class="sns"]
 spasemstranu.com##.ess-social-network-lists
 applion.jp##.fixed_menu
-newsweek.pl##.custom-social-share
 postnauka.ru##app-social-share-group
 hcdinamo.by##div.soc[class*="tab_"]
 ||dizimag.info/insert/i/share_
@@ -5589,7 +5590,7 @@ pc.co.il###navbarSharing
 pc.co.il##button[data-target^="#pc_sharing-"]
 transparency.org##.js-highlight-tooltip
 stopcor.org,ukrinform.*##.youtube
-dnevno.hr,fintolk.pro,e-earphone.blog,koneta.nifty.com##.wp-embed-share
+rotaborsa.com,dnevno.hr,fintolk.pro,e-earphone.blog,koneta.nifty.com##.wp-embed-share
 sanabo.com,beauty.biglobe.ne.jp###sns_btn
 beauty.biglobe.ne.jp##.NewsSns
 radiotalk.jp##.share-modules
@@ -7070,7 +7071,7 @@ nationalheraldindia.com##div[class^="styles-m__sticky-social-share_"]
 downtoearth.org.in##a[onclick^="social_open("]
 watch.impress.co.jp###amp-floating-area
 segmentfault.com##.sticky-wrap .dropdown > .dropdown-menu > a > button.react-share__ShareButton
-jolie.de,euractiv.com,business2community.com,blog.mettl.com##.sharect
+rotaborsa.com,jolie.de,euractiv.com,business2community.com,blog.mettl.com##.sharect
 cine24h.online,cine24h.net,henaojara.com##ul.ListPOpt > li > a[rel="nofollow"][onclick]
 yourhealthinmind.org##.e-inline-share
 programme-television.org##.infos_partage
@@ -13690,6 +13691,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ##a[href^="http://www.twitter.com/intent/tweet?"]
 ##a[href^="http://twitter.com/intent/tweet/?"]
 !
+##.custom-social-share
 ##.vjs-share-control
 ##button[data-share-toggle]
 ##.article-footer__wrap-social
