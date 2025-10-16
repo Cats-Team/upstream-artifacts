@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: q9fxnB0G84af0gs7KwuHvQ
-! Diff-Path: ../patches/14/14-s-1760569834-3600.patch
+! Checksum: HYb4/cipYzajFaWIShIfzw
+! Diff-Path: ../patches/14/14-s-1760602424-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.46.1
-! TimeUpdated: 2025-10-15T23:06:53+00:00
+! Version: 2.2.46.7
+! TimeUpdated: 2025-10-16T08:09:41+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2545,6 +2545,7 @@ greenit.systems,accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.
 !
 ! NOTE: Regular rules
 !
+acb.com.vn###wrapper > div[style^="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index:"]
 fos-lighting.eu#%#//scriptlet('set-cookie', 'noAds', '1')
 fos-lighting.eu#%#//scriptlet('set-cookie', 'savedCookie', '1')
 avinor.no#%#//scriptlet('trusted-click-element', '.cookie-banner--open button[data-variant="primary"] + [data-variant="primary"]', '!cookie:avi-gpdr-marketing', '500')
@@ -2943,7 +2944,7 @@ hitech-gamer.com##.modal-backdrop
 ku.de#%#//scriptlet('trusted-set-cookie', 'in2cookiemodal-selection', '[%22essential%22]')
 tsb.co.uk#%#//scriptlet('trusted-set-cookie', 'CONSENTMGR', 'consent:false%7Cts:1754870425809')
 tarnkappe.info#%#//scriptlet('trusted-click-element', 'div[data-embed-consent-provider] label, div[data-embed-consent-provider] button.is-link')
-||global.ketchcdn.com/web/v*/config/*/boot.js$domain=debrox.com|drinkag1.com|newsweek.com|loeb.com|boxingscene.com|tailscale.com|eodev.com|nosdevoirs.fr
+||global.ketchcdn.com/web/v*/config/*/boot.js$domain=debrox.com|drinkag1.com|newsweek.com|loeb.com|boxingscene.com|tailscale.com|eodev.com|nosdevoirs.fr|vultr.com
 mega.ru#%#//scriptlet('set-cookie', 'consent_cookie_settings', 'true')
 support.digitalplayground.com#%#//scriptlet('trusted-set-cookie', 'acceptedCookies', '%7B%22essential%22%3Atrue%2C%22functional%22%3Afalse%7D')
 gazobezopasnost.gazprom.ru##.message-consent
@@ -2969,7 +2970,7 @@ queerty.com,wpsecurityninja.com,screenbeam.com##.wcc-consent-container
 pro32.com###agreeCookieContainer
 sberdevices.ru#%#//scriptlet('set-cookie', '__cookie__agree', 'Y')
 clickpetroleoegas.com.br###feednews-cookie-banner
-play.aetv.com#%#//scriptlet('trusted-click-element', 'button[data-testid="tou-agree-btn"]')
+play.mylifetime.com,play.aetv.com#%#//scriptlet('trusted-click-element', 'button[data-testid="tou-agree-btn"]')
 fenerium.com#$#body { overflow: auto !important; }
 fenerium.com#$#.modal-backdrop { display: none !important; }
 motointegrator.de#%#//scriptlet('trusted-set-cookie', 'GDPR', 'R')
@@ -8944,8 +8945,8 @@ nextrp.ru##.modalAcceptCookies
 open.ru##div[data-react-class="CookiesAgreement"]
 nahodka-magazin.ru##.cookies_message_container
 taisei-techsolu.jp##.gdpr-area
-erzgebirgskreis.de##.fnn-cookiemanager
-||erzgebirgskreis.de/*/fnn_cookiemanager/*/fnn-cookiemanager.js
+erzgebirge-gedachtgemacht.de,erzgebirgskreis.de##.fnn-cookiemanager
+/fnn_cookiemanager/*/fnn-cookiemanager.js$domain=erzgebirgskreis.de|erzgebirge-gedachtgemacht.de
 sbermarket.ru##div[class^="CookiesConcent_"]
 thaiticketmajor.com##.privacy-policy-bar
 flixclassic.pl#$#.app-gdpr { display: none !important; }
@@ -34272,6 +34273,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+nypost.com##.wp-block-nyp-editor-universal-promo
 breckandfox.com#%#//scriptlet('trusted-click-element', '.needsclick button.klaviyo-close-form', '!localStorage:klaviyoOnsite=/:{"modal":{"disabledForms/')
 dreamies.de###noreg-info
 financialexpress.com##.article_follow_us
@@ -50101,6 +50103,8 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+vultr.com###gpuTopBanner
+habr.com##.header-banner-wrapper
 cybersecuritynews.com##.td-post-content > p:has(a[href="https://ethicalhacksacademy.com/pages/diamond-membership"])
 habr.com##.header-feature
 elcomercio.pe##.piano_advertisement
