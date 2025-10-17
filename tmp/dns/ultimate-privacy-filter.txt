@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510162104
+! Version: 202510170307
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 16 Oct 2025 21:04 UTC
+! Last modified: 17 Oct 2025 03:07 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -109312,6 +109312,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||heumm.com/backpg/add_visit_log.cm
+||heumm.com/js/fb_pixel.js
+||heumm.com/js/advanced_trace.js
+||heumm.com/js/site_log.js
+||api.biz.sbs.co.kr/statistics/
 ||bunshun.jp/*/analytics.js
 bunshun.jp##.recommend-articles
 ||play.*.com/vendor/$domain=play.aetv.com|play.mylifetime.com
@@ -115094,6 +115099,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||heumm.com^$cookie=FB_EXTERNAL_ID
 ||vbr.ru^$cookie=puid
 ||x.com^$cookie=guest_id_ads
 ||x.com^$cookie=guest_id_marketing
