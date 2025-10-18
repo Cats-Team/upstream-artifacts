@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510171504
+! Version: 202510172104
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 17 Oct 2025 15:04 UTC
+! Last modified: 17 Oct 2025 21:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||ping.pdst.fm^
+||api.sae.systems^
 ||analytics.metriko.app^
 ||stats.fluorescent.co^
 ||wurflcloud.com^
@@ -70950,6 +70952,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||pixel.dashfi.dev^
 ||c.quackr.io^
 ||xstat.gazeta.bo^
 ||stats.avito.ru^
@@ -109313,6 +109316,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||shop-apotheke.com/conversational-api/analytics
+||static.shop-apotheke.com/media/js/shopmonitor3.js
 ||hobbygames.ru/?route=product/product/visit
 ||heumm.com/backpg/add_visit_log.cm
 ||heumm.com/js/fb_pixel.js
