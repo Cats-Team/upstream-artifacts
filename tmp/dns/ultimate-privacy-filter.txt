@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510180304
+! Version: 202510180905
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 18 Oct 2025 03:04 UTC
+! Last modified: 18 Oct 2025 09:05 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analysis.chatglm.cn^
+||*-default-cn.rum.aliyuncs.com^
 ||ping.pdst.fm^
 ||api.sae.systems^
 ||analytics.metriko.app^
@@ -70952,6 +70954,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||user-event-log.aminer.cn^
 ||pixel.dashfi.dev^
 ||c.quackr.io^
 ||xstat.gazeta.bo^
@@ -109716,7 +109719,6 @@ gq.com#%#//scriptlet('set-local-storage-item', '/^avoinspector/', '$remove$')
 ||check24.*/misc/tracking_gif.php
 ||check24.*/gif/*/info.gif
 ||check24.*/files/give_png.php
-nhk-ondemand.jp#%#//scriptlet('abort-on-property-write', 'wd.s_c_il')
 ||kma.go.kr/kma/resources/js/UserScriptConf.js
 ||kabu-sokuhou.com/js/cpv/
 4pda.to#%#//scriptlet('remove-attr', 'data-dotrack', 'a[data-dotrack]')
