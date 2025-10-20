@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510200904
+! Version: 202510201504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Oct 2025 09:04 UTC
+! Last modified: 20 Oct 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||inetstats.org^$third-party
 ||analysis.chatglm.cn^
 ||*-default-cn.rum.aliyuncs.com^
 ||ping.pdst.fm^
@@ -273,7 +274,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||overtracking.com^$third-party
 ||funsdata.com^
 ||ahatm12od.top^
-||an.gr-wcon.com^
 ||sdkapi-prod.dfinery.ai^
 ||behavior-tracking-event-gateway.imweb.me^
 ||smind.hr^$third-party
@@ -109321,6 +109321,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||an.gr-wcon.com^$script
+||storm.mg/api/logs/
+||storm.mg/avivid.js
 ||api.thefantazy.com/web-vitals
 ||shop-apotheke.com/conversational-api/analytics
 ||static.shop-apotheke.com/media/js/shopmonitor3.js
@@ -110991,7 +110994,6 @@ sinoptik.ua##img[src^="//counter.ukr.net/"]
 ||gobankingrates.com/analytics/latest/ct.bundle.js
 ||scv-cafe.io.naver.com/jackpotlog/*/logs$xmlhttprequest,redirect=noopjson
 ||digiturk.com.tr/_Scripts/AnalyticsEvents.js
-||apps.nhk.or.jp/assets/dtm/launch-
 ||img.syosetu.org/js/c_
 ||lasso.link/events/tracking
 ||clipkit.co/clipkit_assets/beacon-

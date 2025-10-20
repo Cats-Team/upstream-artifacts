@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: Wj08CJSQS5c1NndKDfLNpQ
-! Diff-Path: ../patches/3/3-s-1760958680-3600.patch
+! Checksum: KY/w1bh115Bu+Fc0rFH62Q
+! Diff-Path: ../patches/3/3-s-1760937113-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.93.14
-! TimeUpdated: 2025-10-20T11:06:53+00:00
+! Version: 2.0.93.10
+! TimeUpdated: 2025-10-20T05:07:36+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -558,7 +558,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
-||inetstats.org^$third-party
 ||analysis.chatglm.cn^
 ||*-default-cn.rum.aliyuncs.com^
 ||ping.pdst.fm^
@@ -580,6 +579,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||overtracking.com^$third-party
 ||funsdata.com^
 ||ahatm12od.top^
+||an.gr-wcon.com^
 ||sdkapi-prod.dfinery.ai^
 ||behavior-tracking-event-gateway.imweb.me^
 ||smind.hr^$third-party
@@ -110043,9 +110043,6 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
-||an.gr-wcon.com^$script
-||storm.mg/api/logs/
-||storm.mg/avivid.js
 ||api.thefantazy.com/web-vitals
 ||shop-apotheke.com/conversational-api/analytics
 ||static.shop-apotheke.com/media/js/shopmonitor3.js
@@ -118751,10 +118748,6 @@ d4?appid*type*
 !
 !
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/215786
-@@||googletagmanager.com/gtm.js$domain=sferis.pl
-! https://github.com/AdguardTeam/AdguardFilters/issues/215834
-@@||googletagmanager.com/gtm.js$domain=tauron.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215550
 @@||play.*.com/vendor/VisitorAPI.js$domain=play.aetv.com|play.mylifetime.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/214804
