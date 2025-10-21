@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510210906
+! Version: 202510211504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 21 Oct 2025 09:06 UTC
+! Last modified: 21 Oct 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -110032,6 +110032,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||bitdefender.com/dtm/
+||bitdefender.com/cdp/
 ||fantasylandnews.com/wp-content/cache/min/*/analytics.js
 ||an.gr-wcon.com^$script
 ||storm.mg/api/logs/
@@ -117607,7 +117609,6 @@ campusfrance.org#%#//scriptlet('set-constant', 'pa.sendEvent', 'noopFunc')
 @@||polarbyte.com^$domain=cambridgeenglish.org
 larocheposay.co.kr#%#//scriptlet('set-constant', 'wptg_tagscript', 'noopFunc')
 larocheposay.co.kr#%#//scriptlet('set-constant', 'wptg_tagscript.exec', 'noopFunc')
-@@||cloud.polarbyte.com/webapps-api/api/v1/campaigns/$domain=cambridgeenglish.org
 @@||googletagmanager.com/gtm.js$domain=journaldunet.com
 @@||dpm.zebestof.com/*/tag.js^$domain=journaldunet.com
 @@||astatic.ccmbg.com/fc/js/prebid?v=$domain=journaldunet.com
@@ -117912,7 +117913,6 @@ abema.tv#%#//scriptlet('remove-node-text', 'script', 'NREUM')
 @@||googletagmanager.com/gtm.js$domain=tv-asahi.co.jp
 @@||sp0.baidu.com/*/finance.pae.baidu.com/vapi/async$domain=baidu.com
 @@||software.seek.intel.com^$document
-@@||linksynergy.com/minified_logic.js$xmlhttprequest
 @@||djtflbt20bdde.cloudfront.net^$domain=feedly.com
 @@||accaii.com^$domain=kyuusai2nd.net
 ||dl.reg.163.com^$subdocument,redirect-rule=noopframe
