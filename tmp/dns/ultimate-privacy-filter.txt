@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510210304
+! Version: 202510210906
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 21 Oct 2025 03:04 UTC
+! Last modified: 21 Oct 2025 09:06 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -69449,6 +69449,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||leo.tridge.com^
 ||haystack.wavve.com^
 ||user-event-log.aminer.cn^
 ||pixel.dashfi.dev^
@@ -109725,6 +109726,7 @@ directtrack.*.js
 /diffuser.js
 /qlitics.js
 /api/increment-pv$xmlhttprequest
+/matomo.php$ping
 /matomo.php?idsite=
 /watch.*.js?key=*&kw=*&refer=
 /pv_count.
@@ -110030,6 +110032,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||fantasylandnews.com/wp-content/cache/min/*/analytics.js
 ||an.gr-wcon.com^$script
 ||storm.mg/api/logs/
 ||storm.mg/avivid.js
