@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: QOzuwXAOyTCli+Uvq5EwIg
-! Diff-Path: ../patches/4/4-s-1760976752-3600.patch
+! Checksum: n2W162qEre4H2gcQa3JFpw
+! Diff-Path: ../patches/4/4-s-1761019958-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.20.74
-! TimeUpdated: 2025-10-20T16:08:05+00:00
+! Version: 2.1.20.76
+! TimeUpdated: 2025-10-21T04:08:13+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -674,6 +674,8 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+testsieger.de##.product-actions__share-button
+fantasylandnews.com##.wp-block-social-links
 konhaber.com##div.flex:has(> button#share-facebook)
 theoatmeal.com##.floor2:has(> a[onclick^="copyToClipboard"])
 tripadvisor.ru##button[data-automation="shareCta"]
@@ -6393,7 +6395,7 @@ bocchi.rocks,shingeki.tv,kyokousuiri.jp##.l-header__share
 marketplace.visualstudio.com##.ux-social-icons
 qiita.com##button[aria-label$="でシェア"]
 profinance.ru###customsocial
-gundam-the-origin.net##.sns-container
+itblogger-note.blogspot.com,gundam-the-origin.net##.sns-container
 yoruneko-pr.com###sns_area
 carsensor.net###sns-content-btm
 cnnbrasil.com.br##.bottom__share
