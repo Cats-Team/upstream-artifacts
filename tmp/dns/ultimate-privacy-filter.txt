@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510220304
+! Version: 202510220904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 22 Oct 2025 03:04 UTC
+! Last modified: 22 Oct 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tryzens-analytics.com^
 ||turbotargeting.io^
 ||inetstats.org^$third-party
 ||analysis.chatglm.cn^
@@ -69450,6 +69451,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||hbrcv.adobe.com^
+||hbrt.adobe.com^
 ||leo.tridge.com^
 ||haystack.wavve.com^
 ||user-event-log.aminer.cn^
@@ -70841,7 +70844,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||analytics.newscred.com^
 ||analytics.digitalpfizer.com^
 ||intg.snapchat.com^
-||p.ura.news^
 ||statsapi.tiendeo.com.tr^
 ||perf.hsforms.com^
 ||tr.www.cloudflare.com^
@@ -109367,6 +109369,8 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/home/new/v*/api/get-ip.php
+/home/new/v*/api/applogger.php
 /rum/events
 /gs/ccm/collect?
 /piano/engagement
@@ -110033,6 +110037,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||kio.ac/analytics/
+indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_did', '$remove$')
+indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_sid', '$remove$')
+||indianexpress.com/wp-content/themes/indianexpress/js/ie-events-all.js
+||embed.reddit.com/svc/shreddit/events
 ||bitdefender.com/dtm/
 ||bitdefender.com/cdp/
 ||fantasylandnews.com/wp-content/cache/min/*/analytics.js
@@ -110088,7 +110097,6 @@ novakid.*,novakidschool.com#%#//scriptlet('set-local-storage-item', 'ftr', '$rem
 ||events-proxy.mintlify.com/e/?ip=*&ver=$xmlhttprequest,redirect=noopjson
 ||icon.zol-img.com.cn/public/bdshare/static/api/js/trans/logger.js
 ||ws.cs.1worldsync.com/log?
-||fashionnova.com/api/search/events
 ||eneba.com/metrics/
 ||sdk.nsureapi.com/sdk.js
 ||ias.r10s.jp/grp15/lib/ichiba_frame.js
@@ -115827,6 +115835,8 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||indianexpress.com^$cookie=ev_did
+||indianexpress.com^$cookie=ev_sid
 ||heumm.com^$cookie=FB_EXTERNAL_ID
 ||vbr.ru^$cookie=puid
 ||x.com^$cookie=guest_id_ads

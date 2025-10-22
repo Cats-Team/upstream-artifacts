@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: Ye1LcPDzQoIkanIdL9583w
-! Diff-Path: ../patches/4/4-s-1761100857-3600.patch
+! Checksum: SsGHmsgHH1TNXY1Df/mWTg
+! Diff-Path: ../patches/4/4-s-1761124376-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.20.79
-! TimeUpdated: 2025-10-22T02:36:47+00:00
+! Version: 2.1.20.82
+! TimeUpdated: 2025-10-22T09:08:37+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -674,6 +674,9 @@ antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.io,videogamesc
 !
 ! NOTE: Specific rules
 !
+aa.com.tr##.detay-paylas > div + div.d-block
+dailydot.com##.article-footer__share
+europapress.es##.ep-share
 axios.com##div[data-vars-event-name="share_view"]
 jut-su.net##.jutsu-page__share
 media24.fr##.wpb_wrapper > div.vc_row_inner:has(> div.vc_column_inner > div[class] > div.wpb_wrapper > div.tdb_single_post_share)
@@ -5534,7 +5537,7 @@ komchadluek.net##div[class^="id__ArticleContent-"] > div[id="add-line"]
 weekly-economist.mainichi.jp##.date ~ .toolbox
 fakty.com.ua##.read-more-in-social
 gatesnotes.com,surabaya.kompas.com,thairath.co.th##.buttonShare
-tn.com.ar##.horizontal-share
+eltrecetv.com.ar,tn.com.ar##.horizontal-share
 enyenimp3indir.net##.footer-share-title
 mp3yeni.org##.sosyal-medyalar
 news.ru##.tags-single-post__share
@@ -9086,7 +9089,7 @@ m.businesstoday.in##.bt_socials
 republicworld.com###storyShareContainer
 itechfever.com##.sidebar > #custom_html-2
 itechfever.com##.sidebar > #apsc_widget-2
-ura.news,rbc.ua##.publication-social
+rbc.ua##.publication-social
 volcanodiscovery.com##iframe[data-src^="//www.facebook.com/plugins/likebox.php"]
 metro.co.uk##.nf-social
 comments.ua##.wrapper-social
@@ -11790,7 +11793,7 @@ usatoday.com##.inline-share-tools
 blog.milliyet.com.tr##.innerShare
 ft.com##.insideArticleShare
 cumhuriyet.com.tr##.instela-share-button
-aap.org,nba.com,m.ura.news,hotline.ua,shpock.com##.item-share
+aap.org,nba.com,hotline.ua,shpock.com##.item-share
 thehill.com##.item-shares
 rambler.ru##.j-social
 slashdot.org##.janrainSocialPlaceholder
