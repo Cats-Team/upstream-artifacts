@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: RwfjMSkrFgQPq1oSywQF+w
-! Diff-Path: ../patches/14/14-s-1761045037-3600.patch
+! Checksum: qP9v5zVL9CBdA4iZ9goSzg
+! Diff-Path: ../patches/14/14-s-1761070406-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.46.54
-! TimeUpdated: 2025-10-21T11:06:41+00:00
+! Version: 2.2.46.58
+! TimeUpdated: 2025-10-21T18:09:21+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2548,6 +2548,8 @@ naheland-apotheken.de,homeoftravel.de,greenit.systems,accace.pl,entrack.pl,kraem
 !
 ! NOTE: Regular rules
 !
+||verdikt-byvshei.ru/catalog/view/javascript/cookie_disclaimer.js
+airbrush.com#%#//scriptlet('trusted-set-local-storage-item', 'cookieSettings', '{"settings":{"essential":true,"analytics":false},"timestamp":99999999999999}')
 otpbank.ru##.p-cookies-notification
 e-jumbo.ro#%#//scriptlet('trusted-set-cookie', 'ConsentChecked', '{"userHasSetCookies":true,"functionalityCookies":false,"statisticCookies":false,"marketingCookies":false}')
 tshopping.thsrc.com.tw#%#//scriptlet('set-cookie', 'cookie-policy-agree', 'true')
@@ -17706,6 +17708,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/easylist/easylist/commit/56d96e6dde0cba693734ca0b640ede34b3021048
+auburndao.com#@##gdpr-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215905
 tshopping.thsrc.com.tw#@#.cookie-popup:not(body):not(html)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215748
@@ -49651,7 +49655,7 @@ yasir252.com#%#document.addEventListener('DOMContentLoaded', function(){setTimeo
 ||trimay.ru/?
 !
 !
-genpkm.com###discordWidget
+shinypkm.com,genpkm.com###discordWidget
 lenta.ru##.promo-block
 halktv.com.tr##.rel-link
 [$path=/downloads]chip.de##div[class][style^="border-radius: "]:has(> div > green-video)
