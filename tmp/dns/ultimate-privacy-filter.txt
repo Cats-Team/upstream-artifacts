@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510230304
+! Version: 202510230904
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 23 Oct 2025 03:04 UTC
+! Last modified: 23 Oct 2025 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||d2g2u2795e3fzw.cloudfront.net^
+||mobiexchange.com^$third-party
+||matomo-demo-*.amazonaws.com^
 ||tryzens-analytics.com^
 ||turbotargeting.io^
 ||inetstats.org^$third-party
@@ -69451,6 +69454,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||ins.oberpfalzmedien.de^
 ||hbrcv.adobe.com^
 ||hbrt.adobe.com^
 ||leo.tridge.com^
@@ -110038,6 +110042,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||interest.co.nz/core/modules/statistics/statistics.php
 ||media.flaticon.com/dist/js/ads.*.js
 ||kio.ac/analytics/
 indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_did', '$remove$')
@@ -111442,6 +111447,7 @@ tv2.no##.article-recommended
 ||mylocal.co.uk/api/trpc/analytics.
 ||svc.eu01.miro.com/api/stream/
 ||svc.us01.miro.com/api/stream/
+||prod-app.because-intelligence.com/observability/
 ||prod-app.because-intelligence.com/track/
 ||similarweb.com/scripts/lite-app/client/dist/tracking.min.js
 erostopics.net###custom_html-81
@@ -117479,7 +117485,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
-@@||dev.visualwebsiteoptimizer.com/j.php$domain=dominos.jp
+@@||dev.visualwebsiteoptimizer.com^$script,domain=dominos.jp
 @@||googletagmanager.com/gtm.js$domain=sferis.pl
 @@||googletagmanager.com/gtm.js$domain=tauron.pl
 @@||play.*.com/vendor/VisitorAPI.js$domain=play.aetv.com|play.mylifetime.com
