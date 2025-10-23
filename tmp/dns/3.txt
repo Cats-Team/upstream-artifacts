@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: rCmCRhpX/6HVb23DwUK37A
-! Diff-Path: ../patches/3/3-s-1761156863-3600.patch
+! Checksum: YSHIr8vlThZutvxpRL8VJw
+! Diff-Path: ../patches/3/3-s-1761196331-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.93.31
-! TimeUpdated: 2025-10-22T18:10:11+00:00
+! Version: 2.0.93.33
+! TimeUpdated: 2025-10-23T05:07:45+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -558,6 +558,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||mobiexchange.com^$third-party
+||matomo-demo-*.amazonaws.com^
 ||tryzens-analytics.com^
 ||turbotargeting.io^
 ||inetstats.org^$third-party
@@ -110760,6 +110762,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||interest.co.nz/core/modules/statistics/statistics.php
 ||media.flaticon.com/dist/js/ads.*.js
 ||kio.ac/analytics/
 indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_did', '$remove$')
@@ -119480,8 +119483,8 @@ d4?appid*type*
 !
 !
 !
-! dominos.jp blank page
-@@||dev.visualwebsiteoptimizer.com/j.php$domain=dominos.jp
+! https://github.com/easylist/easylist/pull/7880/
+@@||dev.visualwebsiteoptimizer.com^$script,domain=dominos.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215786
 @@||googletagmanager.com/gtm.js$domain=sferis.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215834
