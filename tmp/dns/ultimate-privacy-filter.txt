@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510240904
+! Version: 202510241504
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 24 Oct 2025 09:04 UTC
+! Last modified: 24 Oct 2025 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -252,6 +252,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||events.api.gamma.app^
 ||pirsch.io^$third-party
 ||d2g2u2795e3fzw.cloudfront.net^
 ||mobiexchange.com^$third-party
@@ -69455,6 +69456,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||z.cdn.protect-ad.com^
 ||sb1.mangataro.org^
 ||sgtm.yubico.com^
 ||ins.oberpfalzmedien.de^
@@ -110044,6 +110046,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||api.vortexscans.org/api/track-visit
+||api.vortexscans.org/api/analytics/updateViews
+||drive2.ru/_api/special/*/view|
 ||teknolojituru.com/api/tracking
 ||cloudfront.net/ecmtr-*.js
 ||lib.onet.pl/static/pixel/
@@ -111990,8 +111995,10 @@ nukigazo.com###text-2
 brasil247.com###taboola-mid-article-leia-mais
 ||libcdnjs.com/api/event
 ||api.snapchat.com/web/metrics
+||api-kit.snapchat.com/com.snap.camerakit.v3.Metrics^
 ||snapchat.com/web-analytics
 ||snapchat.com/report-metrics/
+||web.snapchat.com/web-blizzard/web/send^
 ||accounts.snapchat.com/accounts/static/scripts/pixel.js
 ||snap-api.arkoselabs.com/metrics/
 ||zona.plus/ajax/visit-stats
