@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510280800
+! Version: 202510281700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 28 Oct 2025 08:00 UTC
+! Last modified: 28 Oct 2025 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||c1.prmonline.ru^
 ||heidy.makeup^$third-party
 ||events.api.gamma.app^
 ||pirsch.io^$third-party
@@ -72262,6 +72263,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||data-track*.yingxiong.com^
 ||applytics.os4work.com^
 ||applytics.napps-1.com^
 ||z.cdn.protect-ad.com^
@@ -123144,6 +123146,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||weatherzone.*/*/scripts/hotjar.js
+||weatherzone.*/*/scripts/gtmHead.js
 ||coolbe.*/api/*/events
 ||app.notipack.com/pixel/
 ||monitor-frontend-collector.a.bybit-aws.com/api/*/batch/
@@ -129426,6 +129430,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||t.usermaven.com/lib.js$script,redirect=noopjs,domain=revisemsra.com
 ||log.hiapkdownload.com^
 ||experiment.pixverse.ai^
 ||capture.pixverse.ai^
