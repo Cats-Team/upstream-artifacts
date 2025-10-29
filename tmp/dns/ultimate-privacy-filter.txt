@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510290000
+! Version: 202510290900
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 29 Oct 2025 00:00 UTC
+! Last modified: 29 Oct 2025 09:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||trackingmyadsas.com^
 ||sa.openmedia.co^
 ||c1.prmonline.ru^
 ||heidy.makeup^$third-party
@@ -72264,6 +72265,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||touch.yesim.
+||uac.heraldcorp.com^
 ||applytics.my1337jog.run^
 ||data-track*.yingxiong.com^
 ||applytics.os4work.com^
@@ -123148,6 +123151,12 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||shallspark.com/athena/tracking/
+||aoneroom.com/sdk/athena-unify.js
+||api.hisavana.com/hisavana/eventtracking/
+||cm-oss.hisavana.com/moviebox/mb_hssdk.js
+||telegraph.prd.api.hbomax.com/events
+||wondershare.com/ga360/
 ||weatherzone.*/*/scripts/hotjar.js
 ||weatherzone.*/*/scripts/gtmHead.js
 ||coolbe.*/api/*/events
@@ -128789,6 +128798,8 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||coloradoan.com^$cookie=gup_anonid
+||coloradoan.com^$cookie=gup_clientid
 ||bybit.$cookie=deviceId
 ||bybit.$cookie=/^sensorsdata/
 ||flaticon.com^$cookie=g_state
@@ -134725,6 +134736,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+coloradoan.com#%#//scriptlet('set-local-storage-item', 'user_insights', '$remove$')
 indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_did', '$remove$')
 indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_sid', '$remove$')
 letterboxd.com#%#//scriptlet('href-sanitizer', 'a[href^="https://click.justwatch.com/"]', '?r')
