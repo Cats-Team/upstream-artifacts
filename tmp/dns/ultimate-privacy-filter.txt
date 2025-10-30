@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510291500
+! Version: 202510292200
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 29 Oct 2025 15:00 UTC
+! Last modified: 29 Oct 2025 22:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -72265,6 +72265,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||iot.skywayplatform.com^
+||rcu.skywayplatform.com^
+||tad.tygem.com^
 ||touch.yesim.
 ||uac.heraldcorp.com^
 ||applytics.my1337jog.run^
@@ -123151,6 +123154,12 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||chatgpt.com/ces/statsc/
+||coupang.com/resources/*/np/js/modules/common/gnbWebLogger.js
+||coupang.com/resources/*/np/js/modules/search/searchWebLogSchemas.js
+||coupang.com/resources/*/np/js/modules/search/utils/weblogUtils-min.js
+||coupang.com/resources/*/np/js/modules/common/adsplatform/adsplatformLogger.js
+||tygem.com/js/tad/tadlog.min.js
 ||goya.rutube.ru^$~image
 ||shallspark.com/athena/tracking/
 ||aoneroom.com/sdk/athena-unify.js
