@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202510301200
+! Version: 202510301300
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 30 Oct 2025 12:00 UTC
+! Last modified: 30 Oct 2025 13:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -123154,6 +123154,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||ipleaks.io/public/google/gtag.js
 ||static-web.grammarly.com/web-heartbeat/
 ||chatgpt.com/ces/statsc/
 ||coupang.com/resources/*/np/js/modules/common/gnbWebLogger.js
@@ -130548,7 +130549,7 @@ mail.yandex.*#@%#//scriptlet('set-constant', 'navigator.getBattery', 'noopPromis
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=sncf-connect.com
 @@||f-tra.com^$script,domain=pokemoncenter-online.com
 @@||snowplow.swm.digital/com.snowplowanalytics.snowplow/$domain=7plus.com.au
-||85po.com/player/stats.php?event=$image,redirect=1x1-transparent.gif,domain=85po.com
+||85po.com/player/stats.php?event=$image,redirect=1x1-transparent.gif,domain=85po.com|85po.net|85xo.com|85xo.com
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||googletagmanager.com/gtm.js$domain=canadiantire.ca
@@ -134508,6 +134509,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||wildwoodavenue.com^
 ||wirecomic.com^
 ||wiredforcoffee.com^
+||wirenewsletter.com^
 ||wirypaste.com^
 ||wisedotcom.com^
 ||wispycity.com^
