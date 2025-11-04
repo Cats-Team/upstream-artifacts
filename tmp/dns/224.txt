@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: tnuCHLaNqFhXioSVLe69kA
-! Diff-Path: ../patches/224/224-s-1762186364-3600.patch
+! Checksum: MI4wVuSUOc3cQhSwzlqCpQ
+! Diff-Path: ../patches/224/224-s-1762226951-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.47.14
-! TimeUpdated: 2025-11-03T16:08:42+00:00
+! Version: 2.1.47.18
+! TimeUpdated: 2025-11-04T03:25:37+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5131,6 +5131,12 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||dkc63u5su8.com^
+||tb4gv2cp5z.com^
+||divergentld.com^
+||zdh11040lo.com^
+||ohvtrokyq.com^
+||3yx95kv3at.com^
 ||4totls9uh.com^
 ||c0zwsdryg.com^
 ||biconcave43.com^
@@ -13503,6 +13509,7 @@ nodeseek.com##.promotation-item
 gx.cn###html-box-AD
 twword.com##.gadBlock
 mydrivers.com##.jdong1div_double
+mydrivers.com##._bg
 mydrivers.com#?#li:-abp-has(>.titl+:-abp-contains(好  物))
 51.ca##.top-a-container
 51.ca##.a-list-carousel-d-box
@@ -13579,7 +13586,6 @@ yiche.com##.h-middle-gd-box
 yiche.com##.h-gd-box
 mydrivers.com###track-link
 mydrivers.com##.i1vbApifa5
-mydrivers.com##.HSsRgYjfNn
 szxx.com.cn###A1
 szxx.com.cn###A2
 yahoo.com###ACT_crazy
