@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: MI4wVuSUOc3cQhSwzlqCpQ
-! Diff-Path: ../patches/224/224-s-1762226951-3600.patch
+! Checksum: /T4Z83Bj3pMXRhgrXZUrMA
+! Diff-Path: ../patches/224/224-s-1762254678-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.47.18
-! TimeUpdated: 2025-11-04T03:25:37+00:00
+! Version: 2.1.47.23
+! TimeUpdated: 2025-11-04T11:07:50+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1077,6 +1077,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+||img.jin10.com/event/*_
 ||lpl.qq.com/*/data/LOL_MATCH2_NEWS_RECOMMEND_*_INFO.js
 .gif|$domain=18j.tv
 18j.tv##div[class="container"] > div[class="warp"]
@@ -5137,6 +5138,11 @@ newduba.cn###jq_youxi
 ||zdh11040lo.com^
 ||ohvtrokyq.com^
 ||3yx95kv3at.com^
+||9f0usaep8c.com^
+||zdh11041lo.com^
+||crandrad.com^
+||cbff1ao9.xyz^
+||fidruqwny.com^
 ||4totls9uh.com^
 ||c0zwsdryg.com^
 ||biconcave43.com^
@@ -21247,7 +21253,7 @@ wss://*.*.top/$third-party
 ||bachashuku.cc/scripts/ad/
 ||lzbao.net/mtvbox.
 ||4taoxs.com/api/accept/
-||biquge.ac/tongji/ad.
+/tongji/ad.js
 ||haogushi88.cc/static/simple/yue
 ||zztxt.net/Public/wapbiquge/js/static.js
 ||haishuxs.com/js/
