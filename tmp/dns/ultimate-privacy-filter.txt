@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511050600
+! Version: 202511051200
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 05 Nov 2025 06:00 UTC
+! Last modified: 05 Nov 2025 12:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -1658,6 +1658,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||growthrx.in^$third-party
 ||clickcease.com^$third-party
 ||logs.juspay.in
+||http-intake.logs.datadoghq.com^
 ||logs.browser-intake-datadoghq.eu^
 ||logs.datadoghq.eu^
 ||logs.datadoghq.com^$third-party
@@ -74186,6 +74187,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||collector.moderntv.eu^
 ||ipm.adblockplus.dev^
 ||log1.wanmei.com^
 ||log2.wanmei.com^
@@ -75823,6 +75825,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||applog.zaycev.net^
 ||appsanalytics.appideas.it^
 ||apptracker.gamedock.io^
+||service.minute.ly^
 ||apv-launcher.minute.ly^
 ||ariane.abtasty.com^
 ||astat.nikkei.co.jp^
@@ -130793,6 +130796,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||mon.capcutapi.us^
+||mssdk.capcutapi.us
+||mon16-normal-us-ttp.capcutapi.us^
+||log16-normal-us-ttp.capcutapi.us^
 ||jdlog.uu.cc^
 ||gid.tapapis.cn^
 ||dlog-config.uu.cc^
