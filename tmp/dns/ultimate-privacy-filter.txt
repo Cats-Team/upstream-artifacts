@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511051200
+! Version: 202511051500
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 05 Nov 2025 12:00 UTC
+! Last modified: 05 Nov 2025 15:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -123809,6 +123809,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/app/Eclog/js/cid.generate.js
 /home/new/v*/api/get-ip.php
 /home/new/v*/api/applogger.php
 /rum/events
@@ -124475,6 +124476,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||motogonki.ru/js/google_service.js
 ||pinterest.com/_/_/storage_report/
 ||a.anoncity.cc/api/track
 ||assets.coupangcdn.com/customjs/cou-log/
@@ -124492,7 +124494,6 @@ business.nikkei.com###pianoRecommendBottom
 ||holistic.news/3unw/
 ||sp-cdn.linux-magazin.de/wrapper/metrics/
 ||static.alphwidget.com/script/Common-Script/PRODUCTION/alphacore_alpha_data.js
-||joymadam.com/app/Eclog/
 ||static.alphwidget.com/script/Push-Script/PRODUCTION/alphapush_GA.js
 ||wivismall.com/ux/js/comGroobee.js
 ||ipleaks.io/public/google/gtag.js
@@ -125199,7 +125200,6 @@ elperiodico.com##._mo_recs_tpi
 ||content.kaspersky-labs.com/public/analytics-scripts/analytical_functions.js
 ||pcgames.de/webservices/edash/
 ||ca.cafe24data.com/analytics.js
-||comics-art.co.kr/app/Eclog/
 ||api.laftel.net/api/*/status/$xmlhttprequest,redirect=noopjs
 ||laftel.net/twitter-pixel.js
 ||capi.connatix.com/tr/$important
@@ -127685,7 +127685,6 @@ the-ans.jp##.side-reccomend
 ||at.cbsi.com/*/event?
 ||sprocket.bz/trackers/
 ||maillist-manage.com/wa/ActionLogger?
-/app/Eclog/js/cid.generate.js$domain=softland.co.kr|animegoods.co.kr|rabbits.kr|cafe24.com
 ||push.soft-com.biz/api/ui/metrics
 ||image.cauly.co.kr/script/caulytracker_async.js
 ||gate.upclick.com/btn/visitor.min.js
@@ -127697,7 +127696,6 @@ the-ans.jp##.side-reccomend
 ||img.sportsworldi.com/static/w_sportsworld/common/js/analytics.js
 ||crunchyroll.com/tracker
 ||sa.crunchyroll.com/analytics.js
-||laurenhi.com/app/Eclog/
 /lcslog*.js$domain=playentry.org
 ||ssl.pstatic.net/static.gn/js/clickcrD.js$domain=~search.naver.com
 ||paypal.com/xoplatform/logger/$domain=tapas.io
