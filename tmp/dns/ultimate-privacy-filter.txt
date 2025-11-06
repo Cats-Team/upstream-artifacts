@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511060500
+! Version: 202511061200
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 06 Nov 2025 05:00 UTC
+! Last modified: 06 Nov 2025 12:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||delog.nestads.com^
+||deapi.nestads.com^
+||event.marketap.io^
+||crm.marketap.io^
 ||conviva.com^$third-party
 ||gau.groobee.io^
 ||gre.groobee.io^
@@ -74192,6 +74196,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||bizlog-gateway.myrealtrip.com^
+||api-ktm.kkday.com^
+||riskpoc.trip.com^
+||chloro.trip.com^
+||ubt-sgp.trip.com^
 ||events.asurion.com^
 ||collector.moderntv.eu^
 ||ipm.adblockplus.dev^
@@ -124484,6 +124493,17 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||image.hanatour.com/ice/fx/lib/nestads.js
+||image.hanatour.com/ice/fx/lib/appsflyer.js
+||image.hanatour.com/ice/fx/lib/amplitude.js
+||kkday.com/api/_nuxt/recommend/user-action-record
+||trip.com/restapi/soa2/*/tripAds.json
+||static.tripcdn.com/packages/ubt/websdk/*/ubt.minh.js
+||trip.com/restapi/soa2/*/clog
+||store.maaltalk.com/admin/gd_share/script/visit/gd_visit.js
+||usimsa.com/_nuxt/naverAdsScript.
+||usimsa.com/_nuxt/kakaoPixel.
+||static.tp-link.com/assets/js/ga.js
 ||phoneclaim.com/api/*/logger/
 ||adyen.com/*/analytics/
 ||motogonki.ru/js/google_service.js
@@ -125488,7 +125508,7 @@ geinoukame.com##.ninja-recommend-block + hr
 ||wealthfront.com/track_next?p=
 ||gg.asuracomic.net/api/views/collect
 ||probance.jp/webtrax/public/probance_tracker.js
-/firebase-analytics.js$domain=furunavi.jp|mt.co.kr
+/firebase-analytics.js$domain=furunavi.jp|mt.co.kr|hanatour.com
 ||static.site24x7rum.jp/beacon/
 ||api.actagtracker.jp/tag|
 ||shop.post.japanpost.jp/js/analytics_cookie.js
@@ -130160,6 +130180,8 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+$cookie=/^UBT_/,domain=trip.com
+$cookie=/^ubtc_/,domain=trip.com
 $cookie=/^_hackle_/,domain=app.catchtable.co.kr
 ||coloradoan.com^$cookie=gup_anonid
 ||coloradoan.com^$cookie=gup_clientid
