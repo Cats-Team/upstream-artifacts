@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511061200
+! Version: 202511061700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 06 Nov 2025 12:00 UTC
+! Last modified: 06 Nov 2025 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -124493,6 +124493,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||script.wikia.nocookie.net/fandom-ae-assets/odyssey/prebid/production/main.js
+||sketchfab.com/a/ramen
+||revopoint3d.com/api/collect
+||ak-s-cw.tripcdn.com/modules/ibu/gtm-loader/
 ||image.hanatour.com/ice/fx/lib/nestads.js
 ||image.hanatour.com/ice/fx/lib/appsflyer.js
 ||image.hanatour.com/ice/fx/lib/amplitude.js
@@ -129335,7 +129339,9 @@ link.gmapp*.net$image
 ||rum-static.pingdom.net/*-*.js$script,redirect=noopjs,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
-/tf/o/$image
+mail.ferret-one.com/beacon$image
+mail.ferret-one.com%2Fbeacon$image
+/tf/o/*$image
 %2Ftf%2Fo%2F$image
 /via/o?h=
 %2Fvia%2Fo%3Fh%3D
