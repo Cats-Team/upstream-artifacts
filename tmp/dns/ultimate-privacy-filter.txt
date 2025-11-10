@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511091800
+! Version: 202511092100
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 09 Nov 2025 18:00 UTC
+! Last modified: 09 Nov 2025 21:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -124492,6 +124492,14 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||skyscanner.co.kr/slipstream/grp/*/custom/public/acorn/mbd-web/user_behaviour_data_domain.ElementImpression
+||skyscanner.co.kr/slipstream/grp/*/custom/public/*/funnel_events/
+||gamebounty.world/api/logVisit
+||cdn.haymarketmedia.asia/shared/tracking.html?tc=*&adunit=
+||accounts.haymarket.media/tracking/drip-event
+||apis.usonar.jp/alog/alog.php
+||static.alphwidget.com/script/Review-Script/PRODUCTION/alpha_au.js
+||static.alphwidget.com/script/Review-Script/PRODUCTION/alphareview_GA
 ||traveloka.com/api/v1/metrics
 ||traveloka.com/api/v1/tvlk/events
 ||script.wikia.nocookie.net/fandom-ae-assets/odyssey/prebid/production/main.js
@@ -125053,7 +125061,6 @@ sankei.com##div[id^="piano_special_Top_"]
 ||skyscanner.co.kr/g/aps/public/api/v1/pixel/
 ||wcs.naver.net/wcslog.js^
 ||player.javboys.cam/cdn-cgi/trace
-||skyscanner.co.kr/slipstream/grp/v1/custom/public/falcon/funnel_events/
 ||gateway.us.zip.co/analytics^
 ||wzzm13.com/taboola_
 ||restaurantguru.com/ajax/logAB
@@ -125513,7 +125520,7 @@ geinoukame.com##.ninja-recommend-block + hr
 ||wealthfront.com/track_next?p=
 ||gg.asuracomic.net/api/views/collect
 ||probance.jp/webtrax/public/probance_tracker.js
-/firebase-analytics.js$domain=furunavi.jp|mt.co.kr|hanatour.com
+/firebase-analytics.js$domain=furunavi.jp|mt.co.kr|hanatour.com|modetour.com
 ||static.site24x7rum.jp/beacon/
 ||api.actagtracker.jp/tag|
 ||shop.post.japanpost.jp/js/analytics_cookie.js
@@ -134317,6 +134324,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||coinsyouneed.com^
 ||coldbalance.com^
 ||coloradoserves.com^
+||colorfulpet.com^
 ||coloringisland.com^
 ||colossalclouds.com^
 ||colossalcoat.com^
@@ -135065,6 +135073,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||needyneedle.com^
 ||neighborlywatch.com^
 ||nervoussummer.com^
+||networklast.com^
 ||newarkdriving.com^
 ||newartreview.com^
 ||niftygraphs.com^
@@ -135632,6 +135641,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||stomachscience.com^
 ||stonechin.com^
 ||stopstomach.com^
+||stormyflower.com^
 ||straightnest.com^
 ||straindrinks.com^
 ||strangeclocks.com^
