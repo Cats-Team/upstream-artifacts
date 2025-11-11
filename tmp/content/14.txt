@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: HGzi8zTE9s4aYL18zRxKfw
-! Diff-Path: ../patches/14/14-s-1762812733-3600.patch
+! Checksum: a4CWc6+heBAipDptI/kkNg
+! Diff-Path: ../patches/14/14-s-1762821067-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.48.59
-! TimeUpdated: 2025-11-10T22:08:24+00:00
+! Version: 2.2.48.61
+! TimeUpdated: 2025-11-11T00:27:21+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2549,6 +2549,7 @@ raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-helden.de,naheland-apothe
 !
 ! NOTE: Regular rules
 !
+/app/cookie-consents/app.min.js$domain=evento.sklep.pl
 stylewe.com##.home-cookie-pop
 igv.com##.gdpr-cookie-popup
 funko.com#$#body { overflow: auto !important; padding-right: 0 !important; }
@@ -2562,6 +2563,7 @@ cdn.sirdata.eu#%#//scriptlet('trusted-replace-node-text', 'script', 'initSdVideo
 cdn.sirdata.eu#%#//scriptlet('trusted-replace-node-text', 'script', 'initSdVideoWall', 'var consent = consents["marketing"];', 'var consent=!0;')
 cdn.sirdata.eu#%#(()=>{if(location.href.includes("cdn.sirdata.eu/load_with_tcf.php?url=https")){const a=new URLSearchParams(location.search).get("url");a&&location.assign(a)}})();
 speedweek.com#%#//scriptlet('trusted-set-cookie', 'OptanonConsent', 'groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1%2CBG313%3A0%2CC0004%3A0', '', '/', 'speedweek.com')
+||ladies-forum.de/*/js/Cookie.js
 cos.com##.m-cookie-message
 stepstone.de#%#//scriptlet('trusted-set-local-storage-item', 'consent_level', '{"isEssential":true,"isFunctional":false}')
 stepstone.de#%#//scriptlet('trusted-set-local-storage-item', 'consent_storage', '[1]')
@@ -2595,8 +2597,8 @@ wolframalpha.com#%#//scriptlet('set-cookie', '__cookie_consent', '1')
 jobylon.com###jbl_cookie_consent
 darkflash.com##footer + div:has(> div > button)
 itnes.pl#%#//scriptlet('trusted-set-cookie', 'itnes_cookie_preferences', '%7B%22necessary%22%3Atrue%2C%22analytics%22%3Afalse%2C%22marketing%22%3Afalse%7D')
-bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'show_consent_modal', '1')
-bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'user_consents', 'emptyArr')
+mawcom-elektronarzedzia.pl,metalkas.com.pl,bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'show_consent_modal', '1')
+mawcom-elektronarzedzia.pl,metalkas.com.pl,bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'user_consents', 'emptyArr')
 ||cdnapp.websitepolicies.net/widgets/cookies/
 izmirimkart.com.tr#%#//scriptlet('set-local-storage-item', 'localConsent', 'true')
 aetv.com#%#//scriptlet('trusted-click-element', 'body > div[data-sentry-source-file="box.tsx"] > div[data-sentry-source-file="box.tsx"] > button:has(svg[xmlns="http://www.w3.org/2000/svg"] > path[d])')
@@ -5157,7 +5159,7 @@ smieszneprezenty.com.pl,futuregardens.pl,multirenowacja.pl,sekrecik.pl,tagred.pl
 pja.edu.pl##body > .popup:has(> .popup-inner .cookies-header)
 hesapkurdu.com###__next > .MuiGrid-root:has(> .MuiGrid-container > .MuiGrid-item > span > a[href="https://www.hesapkurdu.com/cerez-politikasi"])
 ||steelseries.com/static/css/eu-osano.
-camoshop.pl,muzyka.sklep.pl,excellent.com.pl,inbag.pl,dziergaczkowo.pl#%#//scriptlet('set-cookie-reload', 'AtomStore[COOKIES_ACCEPTED]', '1')
+byhealth.pl,camoshop.pl,muzyka.sklep.pl,excellent.com.pl,inbag.pl,dziergaczkowo.pl#%#//scriptlet('set-cookie-reload', 'AtomStore[COOKIES_ACCEPTED]', '1')
 cnet.com,zdnet.com##.c-siteTermsBanner
 pixelgun3d.com##.my_cookie_alert
 targikielce.pl#$##cookieInfoContainer { display: none !important; }
@@ -10621,7 +10623,7 @@ onleihe.de##.reveal-overlay
 extract.pics##footer + div.fixed.items-center
 beinsports.com.tr##div[class*="cookie_cookie__"]
 blisshq.com###cookie-opt-out
-sklep.portalgames.pl,ewozki.eu,metalkas.com.pl,ziolowyzakatek.sklep.pl,softmm.com.pl,gbs.pl,sendpol24.pl,icentrumsklep.pl,retio.pl,profitechnik.pl,prorowery.pl,niewiem.pl##.consents
+sklep.portalgames.pl,ewozki.eu,ziolowyzakatek.sklep.pl,softmm.com.pl,gbs.pl,sendpol24.pl,icentrumsklep.pl,retio.pl,profitechnik.pl,prorowery.pl,niewiem.pl##.consents
 kremer-pigmente.com###cclayer
 wuerzburg.de###klaro > div.klaro > div.cookie-notice
 rauch.cc##div[class*="js-cookie-note"]
@@ -17336,7 +17338,7 @@ vliegwinkel.nl#%#document.cookie="cookieConsentLevel=functional; path=/;";
 saarbruecker-zeitung.de#%#//scriptlet("abort-current-inline-script", "consentUrl", "OptanonConsent")
 vizita.si#%#document.cookie="cookies_accept=all; path=/;";
 th-luebeck.de#%#document.cookie="waconcookiemanagement=min; path=/;";
-stadt-ratingen.de,retailsolutions.ch,cec-zev.eu,b-tu.de,ludwigshafen.de,alanus.edu,thga.de#%#//scriptlet('trusted-set-cookie', 'CookieConsent', 'mandatory')
+cherypolska.pl,stadt-ratingen.de,retailsolutions.ch,cec-zev.eu,b-tu.de,ludwigshafen.de,alanus.edu,thga.de#%#//scriptlet('trusted-set-cookie', 'CookieConsent', 'mandatory')
 hwg-lu.de#%#//scriptlet('set-cookie', 'brain_cookie_optin_allow_tracking', 'false')
 app.scre.io#%#//scriptlet('set-local-storage-item', 'cookieConsent', '1')
 bilyoner.com#%#//scriptlet('set-local-storage-item', 'desktop/acceptAdvertisementCookies', 'false')
@@ -34397,6 +34399,8 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+time.com###explore-menu .justify-center.gap-6.bg-warm-grey-3.px-6.py-4
+store.dji.com#%#//scriptlet('set-local-storage-item', 'popupHasShowed', 'true')
 motorsport-magazin.com#?##footer > h2:contains(Newsletter)
 motorsport-magazin.com###footer-newsletter
 gazetaolsztynska.pl##.news__content-column > div.section:has(> div.section__button > a[href^="https://news.google.com/publications/"])
@@ -43026,6 +43030,9 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+callie.com#$#.vi-app { display: none !important; }
+callie.com#%#//scriptlet('remove-class', 'app-tips', '.wrapper > div[class]')
+store.dji.com#%#//scriptlet('trusted-set-local-storage-item', 'top-banner-mobile-custom-banner-app-29437', '$now$')
 m.made-in-china.com##.downapp
 m.made-in-china.com##a[href^="https://made-in-china.onelink.me/"]
 stylewe.com##.layout-header__download-app-tips
