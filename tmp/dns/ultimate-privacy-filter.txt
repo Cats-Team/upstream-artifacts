@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511102300
+! Version: 202511111200
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 10 Nov 2025 23:00 UTC
+! Last modified: 11 Nov 2025 12:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||cdnm.techpump.com^
 ||analytics.bomiv.com^
 ||track.bomiv.com^
 ||delog.nestads.com^
@@ -117910,6 +117911,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||micro.rubiconproject.com/prebid/dynamic/*.js$script,redirect=noopjs,domain=ole.com.ar
+||caesarsgames.com/dynamic/resources/common/js/functions/iframeTracker.js
+||caesarsgames.com/dynamic/resources/common/js/functions/tracking.js
 ||static.danawa.com/globaljs/static/bdl/dsas_client.min.js
 ||static.danawa.com/globaljs/com/danawa/common/uxlog/
 dominos.jp###_vis_opt_path_hides
@@ -123244,6 +123248,7 @@ $cookie=_sotmsid
 $cookie=_sotmpid
 $cookie=_scor_uid
 $cookie=_shopify_y
+$cookie=_shopify_analytics
 $cookie=uniqueCMGVisitor
 $cookie=bc.guid
 $cookie=aqusr
@@ -125248,6 +125253,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
+@@||caesarsgames.com/bundle/google-analytics.util.$domain=caesarsgames.com
 @@||googletagmanager.com/gtm.js$domain=cashier.dmm.co.jp|cashier.dmm.com
 @@||tags.stepstone.com/utag/de/prod/utag.js$domain=stepstone.de
 @@||static.vocstatic.com/voonto2/latest/voonto.js$domain=diariosur.es
@@ -128086,6 +128092,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||freezeassets.com^
 ||freezingbuilding.com^
 ||frequentflesh.com^
+||freshlyhuman.com^
 ||friedone.com^
 ||friendlycrayon.com^
 ||friendlyfold.com^
@@ -129593,6 +129600,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+prm.com#%#//scriptlet('set-local-storage-item', '/deviceId/', '$remove$')
 coloradoan.com#%#//scriptlet('set-local-storage-item', 'user_insights', '$remove$')
 indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_did', '$remove$')
 indianexpress.com#%#//scriptlet('set-local-storage-item', 'ev_sid', '$remove$')
