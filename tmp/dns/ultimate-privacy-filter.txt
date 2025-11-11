@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511111200
+! Version: 202511111700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 11 Nov 2025 12:00 UTC
+! Last modified: 11 Nov 2025 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||aditude.prebid-server.com^
+||cache.prebid-server.com^
 ||cdnm.techpump.com^
 ||analytics.bomiv.com^
 ||track.bomiv.com^
@@ -75388,6 +75390,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||tdum.alibaba.com^
 ||webpushstat-sgp.engagelab.com^
 ||analytics.simpler.so^
 ||bizlog-gateway.myrealtrip.com^
@@ -118677,8 +118680,15 @@ elperiodico.com##._mo_recs_tpi
 ||laftel.net/twitter-pixel.js
 ||capi.connatix.com/tr/$important
 ||g.alicdn.com/alilog/s/*/plugin/aplus_spmact.js
+||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/local-data.js
+||assets.aliexpress-media.com/g/AWSC/fireyejs/*/fireyejs.js
+||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/referral-insights.js
+||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/gep-sdk.js
+||assets.aliexpress-media.com/g/AWSC/WebUMID/*/um.js
 ||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/nano-ppc-media-tracking-YnuuQ.js
 ||assets.aliexpress-media.com/g/??alilog/aplus_plugin_aefront/index.js,alilog/mlog/aplus_int.js
+||assets.alicdn.com/g/lzd_sec/epssw/*/epssw.js
+||assets.alicdn.com/g/alilog/
 ||app.tag-plus.com/ja/api/v1/unison_planet/heat_map
 ||admin.microsoft.com/api/instrument/logclient
 ||xgp.pl/wp-content/themes/asona-child-theme/scripts/ga-script.js
