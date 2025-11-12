@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511112200
+! Version: 202511120500
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 11 Nov 2025 22:00 UTC
+! Last modified: 12 Nov 2025 05:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||api.statsigcdn.com^
 ||logz.io^$third-party
 ||beacon.coofis.com^
 ||aditude.prebid-server.com^
@@ -75392,6 +75393,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||tms.hft.everyplate.com^
 ||tdum.alibaba.com^
 ||webpushstat-sgp.engagelab.com^
 ||analytics.simpler.so^
@@ -117917,13 +117919,13 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||everyplate.com/gw/otlp/traces
 ||static.danawa.com/globaljs/static/Insight_WebAnalytics_
 /js/script.js$domain=codefa.st|datafa.st|fitymi.app|logofa.st|shipfa.st
 ||micro.rubiconproject.com/prebid/dynamic/*.js$script,redirect=noopjs,domain=ole.com.ar
 ||caesarsgames.com/dynamic/resources/common/js/functions/iframeTracker.js
 ||caesarsgames.com/dynamic/resources/common/js/functions/tracking.js
 ||static.danawa.com/globaljs/static/bdl/dsas_client.min.js
-||static.danawa.com/globaljs/com/danawa/common/uxlog/
 dominos.jp###_vis_opt_path_hides
 ||oracle.com/*assets/metrics/
 ||embed.acast.com/api/stats
@@ -128516,6 +128518,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||muteknife.com^
 ||mutemailbox.com^
 ||mutualhappy.com^
+||mysketchpad.com^
 ||mysticalagoon.com^
 ||naivestatement.com^
 ||nappyattack.com^
@@ -129631,7 +129634,7 @@ lessentiel.lu#%#//scriptlet('set-local-storage-item', 'clientId', '$remove$')
 novakid.*,novakidschool.com#%#//scriptlet('set-local-storage-item', 'ftr', '$remove$')
 inet.se#%#//scriptlet('set-local-storage-item', 'visitorInfo', '$remove$')
 inet.se#%#//scriptlet('set-local-storage-item', 'visitorId', '$remove$')
-nytimes.com,slideshare.net#%#//scriptlet('set-local-storage-item', '/^statsig/', '$remove$')
+everyplate.com,nytimes.com,slideshare.net#%#//scriptlet('set-local-storage-item', '/^statsig/', '$remove$')
 pelikan.*#%#//scriptlet('set-local-storage-item', 'PAPVisitorId', '$remove$')
 bloomberg.com#%#//scriptlet('set-local-storage-item', '/statsig|youboraDeviceUUID/', '$remove$')
 youskbe.com#%#//scriptlet('set-local-storage-item', '__adm_uid', '$remove$')
