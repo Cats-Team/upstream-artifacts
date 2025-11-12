@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 6gFH+8PCLjBAKk6uL5Ctnw
-! Diff-Path: ../patches/4/4-s-1762920794-3600.patch
+! Checksum: LWhZiMc1agHHvpWRhMViVg
+! Diff-Path: ../patches/4/4-s-1762942364-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.21.62
-! TimeUpdated: 2025-11-12T04:09:17+00:00
+! Version: 2.1.21.64
+! TimeUpdated: 2025-11-12T10:08:25+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,7 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+turkifsahub.com##article > section:has(> button > svg[data-icon="share-nodes"])
 news.blizzard.com#%#//scriptlet('hide-in-shadow-dom', 'blz-news-social-sharing')
 washingtontimes.com##.share-and-comments-wrap
 techedubyte.com##.gmr-content-share
@@ -3504,7 +3505,7 @@ cosmopolitan.fr##article .SocialNetwork
 kg-portal.ru##.news_box_menu
 24smi.org##.article-footer__soc
 yapokupayu.ru##.list-social-networks
-fselite.net##.brxe-post-sharing
+infodlapolaka.pl,fselite.net##.brxe-post-sharing
 thespike.gg##div[class^="news_share__"]
 discoverjapan-web.com##.dv-share
 thefa.com##.fa-social-share
