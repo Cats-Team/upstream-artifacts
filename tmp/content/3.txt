@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: gMJmzT4D5/846oHtsZ3vzA
-! Diff-Path: ../patches/3/3-s-1762902668-3600.patch
+! Checksum: bsWNsSoj8xvRgYNMMdPp6w
+! Diff-Path: ../patches/3/3-s-1762960381-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.94.63
-! TimeUpdated: 2025-11-11T23:06:57+00:00
+! Version: 2.0.94.69
+! TimeUpdated: 2025-11-12T15:08:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -545,6 +545,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! ||cdn.rollbar.com^$third-party
 ! ||api.instabug.com^
 ! ||launchdarkly.com^
+! ||cdn.trackjs.com^
 !
 !
 ! ||ensighten.com^$third-party - not a tracker
@@ -562,7 +563,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
-||logz.io^$third-party
+||data.pendo.io^
+||api.statsigcdn.com^
 ||beacon.coofis.com^
 ||aditude.prebid-server.com^
 ||cache.prebid-server.com^
@@ -4195,7 +4197,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||trackedweb.net^$third-party
 ||tracking202.com^$third-party
 ||trackinglabs.com^$third-party
-||trackjs.com^$third-party
 ||trackkas.com^$third-party
 ||trackmyweb.net^$third-party
 ||trackset.it^$third-party
@@ -76170,6 +76171,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||usage.trackjs.com^
+||coll.lovense.com^
+||bilog.lovense-api.com^
+||log.lovense-api.com^
+||tms.hft.everyplate.com^
 ||tdum.alibaba.com^
 ||webpushstat-sgp.engagelab.com^
 ||analytics.simpler.so^
@@ -118850,6 +118856,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||cdn.lovense.com/front/web-analytics-sdk/bundle.js
+||service.account.adobe.com/log|
+||sstats.adobe.com/ee/irl1/v1/interact?requestId=
+||sstats.adobe.com/ee/v2/interact?datastreamId=
+||everyplate.com/gw/otlp/traces
 ||static.danawa.com/globaljs/static/Insight_WebAnalytics_
 /js/script.js$domain=codefa.st|datafa.st|fitymi.app|logofa.st|shipfa.st
 ||micro.rubiconproject.com/prebid/dynamic/*.js$script,redirect=noopjs,domain=ole.com.ar
@@ -119034,7 +119045,7 @@ inet.se#%#//scriptlet('set-local-storage-item', 'visitorId', '$remove$')
 ||forms.zoho.com/js/zf_gclid.js
 ||api.sdk.letscooee.com/v*/event/
 ||rtings.com/js/script.manual.js
-nytimes.com,slideshare.net#%#//scriptlet('set-local-storage-item', '/^statsig/', '$remove$')
+everyplate.com,nytimes.com,slideshare.net#%#//scriptlet('set-local-storage-item', '/^statsig/', '$remove$')
 ||kt.com/js/json/*_logUse_html.js
 ||m.kt.com/js/ADOBE/
 ||m.kt.com/js/integrate/mkLogcode.js
@@ -125518,6 +125529,12 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! lovense.com
+||lovense.com^$cookie=_utm_os
+||lovense.com^$cookie=_utm_ref
+||lovense.com^$cookie=_utm_track_id
+||lovense.com^$cookie=Hytto-Referer-Detail
+||lovense.com^$cookie=USER-TRACK-ID
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217065
 $cookie=/^UBT_/,domain=trip.com
 $cookie=/^ubtc_/,domain=trip.com
@@ -126494,6 +126511,11 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||data.eu.pendo.io^
+||client-log.box.com^
+||pendo-data-prod.box.com^
+||blink.fra-01.braze.eu^
+||api.monedata.io^
 ||tnc16-normal-us-ttp.capcutapi.us^
 ||mcs16-normal-us-ttp.capcutapi.us^
 ||appcpi.net^
@@ -127585,6 +127607,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/217617
+||ct.pinterest.com^$subdocument,redirect=noopframe
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217599
 @@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217459
@@ -127643,7 +127667,6 @@ musinsa.com#%#//scriptlet('set-cookie', '_dd_s', '0', '/', 'musinsa.com')
 @@||huntress.com/assets/snowplow.tracker-*.js$domain=huntress.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/212990
 @@||criteo.com/delivery/retailmedia$domain=plazavea.com.pe
-! https://github.com/AdguardTeam/AdguardFilters/issues/212788
 ! https://github.com/AdguardTeam/AdguardFilters/issues/212411
 @@||s.ssl.qhres2.com/baomitu/jquery/*/jquery.min.js$domain=yasuo.360.cn
 ! https://github.com/AdguardTeam/AdguardFilters/issues/212337
@@ -129620,9 +129643,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 @@||googletagmanager.com/gtm.js$domain=kruidvat.nl
 ! fix wechat
 @@||data.mistat.xiaomi.com^$app=com.tencent.mm
-! https://github.com/AdguardTeam/AdguardFilters/issues/102126
-! https://github.com/AdguardTeam/AdguardFilters/issues/72365
-||cdn.trackjs.com/agent/v*/latest/t.js$script,redirect=noopjs,domain=adshnk.com|adshrink.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/72103
 ! https://forum.adguard.com/index.php?threads/41486/
 @@||dpm.zebestof.com/*/tag.js$domain=commentcamarche.net
@@ -129995,8 +130015,6 @@ demae-can.com#%#//scriptlet('remove-attr', 'data-trm-action|data-trm-category|da
 @@||tag.aticdn.net/*/smarttag.js$domain=rte.ie
 ! https://github.com/AdguardTeam/AdguardFilters/issues/48571
 @@||cdn.blueconic.net/salemmediagroup.js$domain=biblestudytools.com
-! https://forum.adguard.com/index.php?threads/adguard-tracking-protection-filter-is-blocking-captcha.37103
-@@||cdn.trackjs.com/releases/current/tracker.js$domain=express.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/47754
 @@||googletagmanager.com/gtm.js$domain=beterbed.nl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/48385
@@ -131305,7 +131323,6 @@ kizi.com#%#window.google_trackConversion = function() {};
 @@||track2.royalmail.com^
 @@||tracker.mattel.com/tracker.aspx?site=$script
 @@||tracker.mattel.com^$domain=barbie.com
-@@||trackjs.com^$~third-party
 @@||trc.taboolasyndication.com^$domain=bloomberg.com|breitbart.com|nme.com|slatev.com
 @@||turner.com/cnn/*/video/chartbeat.js$domain=cnn.com
 @@||ultimedia.com/js/common/jquery.gatracker.js

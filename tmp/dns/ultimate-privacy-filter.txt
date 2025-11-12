@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511121200
+! Version: 202511121700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Nov 2025 12:00 UTC
+! Last modified: 12 Nov 2025 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,8 +46,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||data.pendo.io^
 ||api.statsigcdn.com^
-||logz.io^$third-party
 ||beacon.coofis.com^
 ||aditude.prebid-server.com^
 ||cache.prebid-server.com^
@@ -3675,7 +3675,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||trackedweb.net^$third-party
 ||tracking202.com^$third-party
 ||trackinglabs.com^$third-party
-||trackjs.com^$third-party
 ||trackkas.com^$third-party
 ||trackmyweb.net^$third-party
 ||trackset.it^$third-party
@@ -75393,6 +75392,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||usage.trackjs.com^
+||coll.lovense.com^
+||bilog.lovense-api.com^
+||log.lovense-api.com^
 ||tms.hft.everyplate.com^
 ||tdum.alibaba.com^
 ||webpushstat-sgp.engagelab.com^
@@ -117919,6 +117922,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||cdn.lovense.com/front/web-analytics-sdk/bundle.js
 ||service.account.adobe.com/log|
 ||sstats.adobe.com/ee/irl1/v1/interact?requestId=
 ||sstats.adobe.com/ee/v2/interact?datastreamId=
@@ -123649,6 +123653,11 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||lovense.com^$cookie=_utm_os
+||lovense.com^$cookie=_utm_ref
+||lovense.com^$cookie=_utm_track_id
+||lovense.com^$cookie=Hytto-Referer-Detail
+||lovense.com^$cookie=USER-TRACK-ID
 $cookie=/^UBT_/,domain=trip.com
 $cookie=/^ubtc_/,domain=trip.com
 $cookie=/^_hackle_/,domain=app.catchtable.co.kr
@@ -124296,6 +124305,11 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||data.eu.pendo.io^
+||client-log.box.com^
+||pendo-data-prod.box.com^
+||blink.fra-01.braze.eu^
+||api.monedata.io^
 ||tnc16-normal-us-ttp.capcutapi.us^
 ||mcs16-normal-us-ttp.capcutapi.us^
 ||appcpi.net^
@@ -126259,7 +126273,6 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 @@||trc.taboola.com/ilmeteo-*/trc/$domain=ilmeteo.it
 @@||gapt.hit.gemius.pl/gplayer.js$domain=radiocomercial.iol.pt
 @@||googletagmanager.com/gtm.js$domain=kruidvat.nl
-||cdn.trackjs.com/agent/v*/latest/t.js$script,redirect=noopjs,domain=adshnk.com|adshrink.it
 @@||dpm.zebestof.com/*/tag.js$domain=commentcamarche.net
 ||dpm.zebestof.com/*/tag.js$script,redirect=noopjs,important,domain=commentcamarche.net
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics,important,domain=flyingv.cc
@@ -126455,7 +126468,6 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||tag.aticdn.net/*/smarttag.js$script,redirect=ati-smarttag,domain=rte.ie,important
 @@||tag.aticdn.net/*/smarttag.js$domain=rte.ie
 @@||cdn.blueconic.net/salemmediagroup.js$domain=biblestudytools.com
-@@||cdn.trackjs.com/releases/current/tracker.js$domain=express.com
 @@||googletagmanager.com/gtm.js$domain=beterbed.nl
 @@||dw.cbsi.com/anonc.js$domain=cbs.com
 @@||googletagmanager.com/gtag/js$domain=nbc.com
@@ -127287,7 +127299,6 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 @@||track2.royalmail.com^
 @@||tracker.mattel.com/tracker.aspx?site=$script
 @@||tracker.mattel.com^$domain=barbie.com
-@@||trackjs.com^$~third-party
 @@||trc.taboolasyndication.com^$domain=bloomberg.com|breitbart.com|nme.com|slatev.com
 @@||turner.com/cnn/*/video/chartbeat.js$domain=cnn.com
 @@||ultimedia.com/js/common/jquery.gatracker.js
