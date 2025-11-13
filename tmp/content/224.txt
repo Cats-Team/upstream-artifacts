@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: /fWt6wMGxFkTCommpRRExw
-! Diff-Path: ../patches/224/224-s-1762993828-3600.patch
+! Checksum: LaQo0FlD+5rM8i7Gbah0MQ
+! Diff-Path: ../patches/224/224-s-1763025161-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.47.79
-! TimeUpdated: 2025-11-13T00:26:55+00:00
+! Version: 2.1.47.83
+! TimeUpdated: 2025-11-13T09:08:56+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3399,6 +3399,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 /7755com-*00x*.gif
 /CC6F9ACB52D1582671AFEA808AFE10FE.gif
 ||subhd.*/kaiyad.
+/js/clickadu.js
 /mxstatic/image/aabbc/985b74dc077d491.
 .xyz/z/*/code.js$script,third-party
 -*-*-*-*.as^$script,third-party
@@ -3766,7 +3767,6 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 /ggtp/*
 /ggvip/*.js
 /gh/91porny/*
-/gigi/ad/*
 /gmu-download.oss-
 /guang/5liao.me.gif
 /guang/guang*.js
@@ -5143,6 +5143,12 @@ newduba.cn###jq_youxi
 ||rf10b9mq8.com^
 ||lls11130ko.com^
 ||airline49.top^
+||vkur.cn^
+||nzeikrar.com^
+||0bb8jytek.com^
+||lls11131ko.com^
+||68td4yete.com^
+||xxts11131zs.com^
 ||9r0v0go0el.com^
 ||f6jd4k4xgo.com^
 ||lls11120ko.com^
@@ -9810,7 +9816,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||92ghai.com/zz/
 ||92uq.com/Ads/
 ||933m.com/1.js
-||941novel.com/wp-content/uploads/*.gif
 ||94994.com*/js/plugin/shoppingMall/
 ||949949.com/2013/end/hot_news.js
 ||94itv.app/casino/
@@ -13582,6 +13587,8 @@ meijutt.*/js/pcjs/
 ||shipin188.com/66
 /\/[a-z]+$/$script,third-party,domain=gimy.com.tw
 zhihu.com##.Pc-word-new
+avbebe.com##.footer_column:nth-child(n+2)
+xchina.co##.block-overlay
 baozimh.org#?#.relative:-abp-has(>.bg-red-500)
 baozimh.org##a[href*="g-mh.com"]
 qq.com##.maillist_gg_bar
@@ -13669,9 +13676,9 @@ baidu.com##.tieba-pause-ad-container
 laozuo.org###focusslide
 laozuo.org##.container[style="margin-bottom: 3px;"]
 laozuo.org##.widget_ui_orbui
-rouman5.com,roum20.xyz##div[style^="display: flex;"]
-rouman5.com,roum20.xyz##ins
-rouman5.com,roum20.xyz###headlessui-portal-root
+rouman5.com##div[style^="display: flex;"]
+rouman5.com##ins
+rouman5.com###headlessui-portal-root
 sohu.com##.middle-insert-ad
 163.com##.hp_textlink1_ad
 163.com##.post_columnad_top
