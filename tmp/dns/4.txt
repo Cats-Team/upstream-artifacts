@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 8gnu+n6RlntNesmFGHercg
-! Diff-Path: ../patches/4/4-s-1762953662-3600.patch
+! Checksum: rp7xZgaZt30sE5RbNrCiGQ
+! Diff-Path: ../patches/4/4-s-1763010756-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.21.66
-! TimeUpdated: 2025-11-12T13:16:58+00:00
+! Version: 2.1.21.69
+! TimeUpdated: 2025-11-13T05:08:04+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,9 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+technopat.net##.widget_jnews_social
+chocolatecoveredkatie.com##.top-hat--has-socials
+thekrazycouponlady.com##.share-rail-container
 security.apple.com,locipo.jp,cybersport.ru##div[class^="share_"]
 turkifsahub.com##article > section:has(> button > svg[data-icon="share-nodes"])
 news.blizzard.com#%#//scriptlet('hide-in-shadow-dom', 'blz-news-social-sharing')
@@ -931,7 +934,6 @@ labmuffin.com##.inside-right-sidebar > .widget:has(> .wp-block-social-links)
 ali213.net##.fxz
 lvz.de##div[data-testid="share-toggle-button"]
 base.shop##div[data-parts="share-button"]
-studyfinds.org##.block-social-share
 bookwalker.jp##.t-c-detail-about-share
 kulturologia.ru##.fa-share-nodes
 gpuopen.com##.flex:has(> button[id^="share-"])
@@ -9950,7 +9952,7 @@ auto-swiat.pl##.whitelistPremium > #detail + div[data-run-module="autoswiat/main
 m.ua##.soc-buttons-glist
 jbbs.seesaa.net##.bookmark > .sns_box
 oricon.co.jp##.sns-share-area
-teleport2001.ru,vashvkus.ru,oricon.co.jp##.block-social-share
+chocolatecoveredkatie.com,studyfinds.org,teleport2001.ru,vashvkus.ru,oricon.co.jp##.block-social-share
 oricon.co.jp##.block-recommend-list.sns-box
 oricon.co.jp##.information > span[style] > a[onclick^="socialAct("]
 japan.zdnet.com##ul#social_bkm_wrap_top

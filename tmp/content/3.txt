@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: bsWNsSoj8xvRgYNMMdPp6w
-! Diff-Path: ../patches/3/3-s-1762960381-3600.patch
+! Checksum: 8qP9P7TYRshBR0BhBnPiHQ
+! Diff-Path: ../patches/3/3-s-1763007349-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.94.69
-! TimeUpdated: 2025-11-12T15:08:22+00:00
+! Version: 2.0.94.74
+! TimeUpdated: 2025-11-13T04:11:01+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -76171,6 +76171,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||analytics.thekrazycouponlady.com^
 ||usage.trackjs.com^
 ||coll.lovense.com^
 ||bilog.lovense-api.com^
@@ -118856,6 +118857,19 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||frysfood.com/assets/*/collect?
+||fredmeyer.com/static/*/collect?
+||ralphs.com/resources/*/collect?
+||smithsfoodanddrug.com/public/*/collect?
+/clickstream/*$domain=fredmeyer.com|frysfood.com|smithsfoodanddrug.com|ralphs.com
+/cdn/qualtrics.js$domain=fredmeyer.com|frysfood.com|smithsfoodanddrug.com|ralphs.com
+ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com#%#//scriptlet('set-local-storage-item', 'analytics-device', '$remove$')
+||embeds.beehiiv.com/attribution.js
+thekrazycouponlady.com#%#//scriptlet('set-local-storage-item', '/^ab\.storage\./', '$remove$')
+thekrazycouponlady.com#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
+||img.enuri.info/images/partner/dsac.min.js
+||enuri.com/*/js/logTailFunc.js
+||enuri.com/view/Loginsert_
 ||cdn.lovense.com/front/web-analytics-sdk/bundle.js
 ||service.account.adobe.com/log|
 ||sstats.adobe.com/ee/irl1/v1/interact?requestId=
@@ -123967,6 +123981,8 @@ mail.ferret-one.com%2Fbeacon$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
 !
+! https://github.com/easylist/easylist/issues/20669
+emailtracking.cashstar.com$image
 ! https://ridibooks.com/
 mailgun-tracking.ridi.com$image
 client-data.knak.io$image
@@ -125529,6 +125545,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! thekrazycouponlady.com
+||thekrazycouponlady.com^$cookie=/^ab\.storage\./
 ! lovense.com
 ||lovense.com^$cookie=_utm_os
 ||lovense.com^$cookie=_utm_ref
@@ -126511,6 +126529,8 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||xz.fbcdn.net^
+||xy.fbcdn.net^
 ||data.eu.pendo.io^
 ||client-log.box.com^
 ||pendo-data-prod.box.com^
@@ -131830,6 +131850,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||cleanhaircut.com^
 ||climbingright.com^
 ||cloisteredcurve.com^
+||cloudchickens.com^
 ||cloudguppy.com^
 ||cloudhustles.com^
 ||cloudjumbo.com^
@@ -132159,6 +132180,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||flutteringfireman.com^
 ||foambench.com^
 ||followborder.com^
+||foodczar.com^
 ||foodfunfestivals.com^
 ||forecasttiger.com^
 ||foretellfifth.com^
@@ -132171,6 +132193,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||framebanana.com^
 ||franksfloral.com^
 ||franticroof.com^
+||fraysystems.com^
 ||freedomgrail.com^
 ||freezeassets.com^
 ||freezingbuilding.com^
@@ -132948,6 +132971,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||scribblestring.com^
 ||scrollservice.com^
 ||scrubswim.com^
+||sealtravels.com^
 ||seatsmoke.com^
 ||secondhandfall.com^
 ||secretivesheep.com^
