@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: oLUQVMllfC9E+3meK4YBcQ
-! Diff-Path: ../patches/14/14-s-1763032284-3600.patch
+! Checksum: 5/ErRAPWiDl/GNfPahXMhA
+! Diff-Path: ../patches/14/14-s-1763053975-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.49.1
-! TimeUpdated: 2025-11-13T11:07:11+00:00
+! Version: 2.2.49.5
+! TimeUpdated: 2025-11-13T17:08:41+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2549,6 +2549,8 @@ raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-helden.de,naheland-apothe
 !
 ! NOTE: Regular rules
 !
+petsuppliesplus.com#%#//scriptlet('trusted-set-cookie', 'cookieStartDate', '2025-11-13')
+petsuppliesplus.com#%#//scriptlet('trusted-set-cookie', 'cookieEndDate', '2100-11-13')
 wehearfm.com##div[class^="CookiePC_cookie-container"]
 ||fides-cdn.ethyca.com/fides.js$domain=bit.ly
 medfile.pl##.ck
@@ -3153,7 +3155,7 @@ tvtoya.pl,betard.pl,101internet.ru##div[class^="Cookies_"]
 mir-telecom.ru###cookiesAgree
 scmp.com##div[data-qa="GDPRBanner-Container"]
 ||codicesconto.com/assets/js/cookie.min.js
-spk-bergkamen-boenen.de,taunussparkasse.de#%#//scriptlet('trusted-click-element', '.if6_eprivacy a[data-form=".eprivacy_optin_decline"]', '', '1000')
+rheinhessen-sparkasse.de,sparkasse-regensburg.de,spk-bergkamen-boenen.de,taunussparkasse.de#%#//scriptlet('trusted-click-element', '.if6_eprivacy a[data-form=".eprivacy_optin_decline"]', '', '1000')
 jornaldocomercio.com###modal-policy
 headliner.cz#%#//scriptlet('set-cookie', 'cookies', 'false')
 flysas.com#%#//scriptlet('trusted-click-element', '#deny-consent-button', '!cookie:_consent')
@@ -5510,7 +5512,7 @@ lublin.eu###polityka-ciastek
 metro.de,metro-cc.ru##.consent-disclaimer
 metro.at,metro.bg,metro-cc.hr,metro.fr,metro.it,metro-kz.com,metro.md,metro.pk,metro.ro,metro.rs,metro.sk,makro.es,metro-tr.com,metro.ua,makro.pt#$#.consent-disclaimer { display: none !important; }
 metro.at,metro.bg,metro-cc.hr,metro.fr,metro.it,metro-kz.com,metro.md,metro.pk,metro.ro,metro.rs,metro.sk,makro.es,metro-tr.com,metro.ua,makro.pt#$#body { overflow: auto !important; }
-isbank.com.tr,isbank.com.tr,turkcell.com.tr,lumberjack.com.tr,karaca.com,karaca-home.com,shiftdelete.net##body > efilli-layout-dynamic
+migros.com.tr,isbank.com.tr,isbank.com.tr,turkcell.com.tr,lumberjack.com.tr,karaca.com,karaca-home.com,shiftdelete.net##body > efilli-layout-dynamic
 atptour.com##.atp_cookie-message
 aterima-work.pl##.cm-popup-wrapper
 learnpick.in##.gdpr_holder
@@ -22963,7 +22965,6 @@ xvideos.com##body > div[style*="background: rgb"][style*="text-align: center"]
 bluesky-soft.com#%#//scriptlet('prevent-setTimeout', 'Please allow ads')
 bangkokpost.com###adblock-overlay
 simptown.su##.juice_ban
-asobicreate.net##div[class^="popup"][class$="wrap"]
 aram.zone#%#//scriptlet('prevent-element-src-loading', 'img', 'nitropay.com')
 aram.zone#%#//scriptlet('abort-on-stack-trace', 'CanvasRenderingContext2D.prototype.drawImage', '.onload')
 yuuki.me##div[id^="yuukips-ad-block-notification-banner"]
@@ -24378,7 +24379,7 @@ th.gl#%#//scriptlet('spoof-css', '.pointer-events-auto.shrink-0.border:has(> div
 th.gl#%#//scriptlet('spoof-css', '.pointer-events-auto.shrink-0.border:has(> div[class="block text-center text-xs p-0.5 group cursor-pointer"] > span), .pointer-events-auto.shrink-0.border:has(> div:is([id*=":floating-banner"], [id$=":video"], [id*="-wide-skyscraper-"])), .bg-card:has(> div.block > span.text-primary', 'width', '363')
 th.gl#%#//scriptlet('prevent-element-src-loading', 'script', 'nitropay.com')
 !+ NOT_PLATFORM(ext_ff)
-th.gl#%#(()=>{let t;const e={apply:(e,o,c)=>{try{const e=c[0],o=c[1];let r,i;try{r=t?.STATE_ERROR,i=t?.STATE_VALIDATION}catch{r=void 0,i=void 0}if(r&&i&&"object"==typeof e&&null!==e&&1===Object.keys(e).length&&Object.values(e)[0]===r&&"object"==typeof o&&null!==o&&(n=o,Object.values(n).some((t=>{if("function"==typeof t&&t.toString().includes("]:!0}"))return!0})))){const[t]=Object.keys(e);void 0!==t&&Reflect.set(e,t,i)}}catch(t){}var n;return Reflect.apply(e,o,c)}};window.Object.is=new Proxy(window.Object.is,e);const o={apply:(e,o,c)=>{try{const e=c[0],o=c[1];!t&&e&&o&&"object"==typeof e&&"Module"===e[Symbol.toStringTag]&&"string"==typeof o&&"NitroScript"===o&&(t=e)}catch(t){}return Reflect.apply(e,o,c)}};window.Object.defineProperty=new Proxy(window.Object.defineProperty,o)})();
+th.gl#%#(()=>{let t;const e={apply:(e,o,c)=>{try{const r=c[0],l=c[1];let y;try{y=t?.getNitroStateValue()}catch{return Reflect.apply(e,o,c)}if(y&&"object"==typeof r&&null!==r&&1===Object.keys(r).length&&"number"==typeof Object.values(r)[0]&&"object"==typeof l&&null!==l&&(n=l,Object.values(n).some((t=>{if("function"==typeof t&&t.toString().includes("]:!0}"))return!0})))){const[t]=Object.keys(r);void 0!==t&&Reflect.set(r,t,y+1)}}catch(t){}var n;return Reflect.apply(e,o,c)}};window.Object.is=new Proxy(window.Object.is,e);const o={apply:(e,o,c)=>{try{const e=c[0],o=c[1];!t&&e&&o&&"object"==typeof e&&"Module"===e[Symbol.toStringTag]&&"string"==typeof o&&"NitroScript"===o&&(t=e)}catch(t){}return Reflect.apply(e,o,c)}};window.Object.defineProperty=new Proxy(window.Object.defineProperty,o)})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204525
 ||cdn.btmessage.com^$domain=medicalnewstoday.com
 medicalnewstoday.com#%#//scriptlet('set-constant', '__bt_intrnl.aaDetectionResults.ab', 'false')
@@ -24412,6 +24413,8 @@ iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"]
 @@||t7z.cupid.iqiyi.com/show2?e$domain=m.iqiyi.com
 !#safari_cb_affinity
 !
+!+ NOT_OPTIMIZED
+asobicreate.net##div[class^="popup"][class$="wrap"]
 !+ NOT_OPTIMIZED
 yularihappysmile.com###adblock-modal
 !+ NOT_OPTIMIZED
@@ -28439,7 +28442,6 @@ zexybaby.zexy.net###fixed_btn
 hoken.zexy.net##.formbtn.reserve
 zexy.net##.campain-banner--fixed
 at-s.com##.bnr_popup01
-fx-rashinban.com##.bmMessageBln
 crunchyroll.com##.erc-js-auth-modal
 smartpress.by##.noty_layout
 dcard.tw#?#.__portal > div[class^="sc-"]:has(a[href^="https://www.dcard.tw/service/_auth/"] > button)
@@ -34439,6 +34441,9 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+interestingengineering.com##a[href^="https://www.google.com/preferences/source?q="]
+troyhunt.com###floating_subscribe
+troyhunt.com##.footer_subscription_block
 bitwarden.com##p:has(> a[href="/help/releasenotes/#release-announcements"])
 bitwarden.com##.flex:has(> div[class] > div.hubspot-form)
 semana.com##.mb-4:has(> a#google-discover)
@@ -43100,6 +43105,8 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+nbg.gr##app-slider-fancy-tabs
+news18.com##.opnapp
 bushikaku.net#%#//scriptlet('set-cookie', 'hide_fixed_bottom_app_banner', 'true')
 tour.bushikaku.net##.headerAppBanner
 m.yelp.com##div[class^="overlay-wrapper__"]:has(> a[aria-label="Download the Yelp app"] ~ div[data-testid="review-feed-pitch"])
@@ -46933,6 +46940,8 @@ instagram.com##._aagw:empty
 ! End: Instagram.com
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/217523
+france24.com#%#//scriptlet('trusted-suppress-native-method', 'DOMTokenList.prototype.add', '"u-pip-active"')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/216369
 ||geo.dailymotion.com/player/$domain=au.variety.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217003
@@ -50442,6 +50451,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+||hominis.media/shared/images/banner/side_ad_
 nexusmods.com###freeTrialBanner
 investing.com##div[data-test="contextual-subscription-hook"]
 m-zone.org##main > .min-h-screen > div.mt-12:has(button)

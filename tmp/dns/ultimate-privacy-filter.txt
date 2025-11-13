@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511131200
+! Version: 202511131800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 13 Nov 2025 12:00 UTC
+! Last modified: 13 Nov 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||nlog.instajob.ai^
 ||data.pendo.io^
 ||api.statsigcdn.com^
 ||beacon.coofis.com^
@@ -75392,6 +75393,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||darnuid.netflix.com^
 ||analytics.thekrazycouponlady.com^
 ||usage.trackjs.com^
 ||coll.lovense.com^
@@ -117923,6 +117925,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||grok.com/_data/v1/events
 ||frysfood.com/assets/*/collect?
 ||fredmeyer.com/static/*/collect?
 ||ralphs.com/resources/*/collect?
@@ -118618,7 +118621,6 @@ businessinsider.jp#?#div[class^="displayhandler"]:has(> div[class^="premiumRecom
 ||cbsivideo.com/cb-measurements/
 ||scv.band.us/jackpotlog/*/logs|$xmlhttprequest
 ||epicgames.com/id/api/analytics
-||app.launchdarkly.com/sdk/evalx/*/contexts/$domain=epicgames.com
 ||doppler.hulu.com/doppler/*/ingest?source=client-reporting-HTML
 ||terabox.app/sse/events?
 ||widget2.vreview.tv/js/amplitude.js
@@ -118647,7 +118649,6 @@ businessinsider.jp#?#div[class^="displayhandler"]:has(> div[class^="premiumRecom
 ://cnstrc.com/js/
 ||freyr.futurecdn.net/freyr.js
 ||meta.com/*/fl?*comet_req=*&__user=
-||clientstream.launchdarkly.com/eval/
 ||app.cybba.solutions/event/*/pageview?
 ||script.gmarket.co.kr/js/mobile/main/common/montelena.js
 ||hmr.mrgcdn.ru/assets/js/logger.min.js
@@ -120491,7 +120492,6 @@ weekly-economist.mainichi.jp##iframe[id^="cxWidget_"]
 ||s-cdn.phonearena.com/js/ops/taina.js
 ||static.narrativ.com/tags/narrativ-pub.
 ||widgets.entireweb.com/pixel-track/
-/access.html$domain=2jigiri.net
 ||apis.naver.com/livecloud/livecloud/quantum/p2p/*/client/stat
 ||redditmedia.com/gtm?id=
 ||search-api.joongna.com/v*/ga/log|
@@ -121037,7 +121037,7 @@ sports.goo.ne.jp###taboola-below-sokuho-thumbnails
 ||bilanx.dtto.com/*/configs
 ||bilanx.dtto.com/*/events
 ||mt-wzb.clarin.com/weizenbock/pixel.fingerprint.gif
-itmedia.co.jp,mag.osdn.jp##div[id^="logly-lift-"]
+itmedia.co.jp##div[id^="logly-lift-"]
 ||mangapedia.com/js/abb.
 ||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
 ||tv3play.skaties.lv/static/scripts/trackdb/events.gif$image,redirect=1x1-transparent.gif
@@ -122194,6 +122194,7 @@ westnews.com.ua##a[href="http://www.bigmir.net/"]
 ||fiylo.de/typo3conf/ext/of_design/Resources/Public/JavaScript/Libs/smarttag_LIVE.js
 ||steampowered.com/default/usabilitytracking
 ||report.23video.com/api/analytics/
+||report.23video.com/report-batch
 ||mb.mtvnservices.com/data/collect/
 ||imgsmail.ru/gstat?
 ||slideplayer.biz.tr/slide/getviewscount/
@@ -124320,6 +124321,12 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||fcm-collect-api.alyac.com^
+||service-api.flarelane.com^
+||mossturbo.com^
+||collect.wehearfm.com^
+||itracking.ikameglobal.com^
+||client-events-ingress.bookbub.com^
 ||sdk.fra-*.braze.eu^
 ||sdk.out.usbla.net^
 ||xz.fbcdn.net^
