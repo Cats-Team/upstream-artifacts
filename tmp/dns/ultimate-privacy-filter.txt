@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511141200
+! Version: 202511141800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 14 Nov 2025 12:00 UTC
+! Last modified: 14 Nov 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -117926,6 +117926,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||img1.wsimg.com/traffic-assets/js/tccl.min.js
 ||neuron.cbssports.cloud/client.js?platform=tracking-manager
 ||famil.ru/bitrix/templates/aspro_max/js/yandex_metrika_
 ||search-api.fie.futurecdn.net/js/*/master-*/analytics-library-entry-getCustomTrackingId.js
@@ -125320,6 +125321,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=expressvpn.com
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
+@@||siteintercept.qualtrics.com^$domain=idealo.*
 ||ct.pinterest.com^$subdocument,redirect=noopframe
 @@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 @@||caesarsgames.com/bundle/google-analytics.util.$domain=caesarsgames.com
