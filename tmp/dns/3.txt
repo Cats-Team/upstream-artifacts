@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: VGUzpMVzPCidqf5GACl32Q
-! Diff-Path: ../patches/3/3-s-1763040107-3600.patch
+! Checksum: O5iWw61gv6+/qoFEfSfV8A
+! Diff-Path: ../patches/3/3-s-1763068296-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.94.80
-! TimeUpdated: 2025-11-13T13:17:03+00:00
+! Version: 2.0.94.85
+! TimeUpdated: 2025-11-13T21:07:11+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -563,6 +563,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||nlog.instajob.ai^
 ||data.pendo.io^
 ||api.statsigcdn.com^
 ||beacon.coofis.com^
@@ -76171,6 +76172,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||sp.aviasales.ru^
 ||darnuid.netflix.com^
 ||analytics.thekrazycouponlady.com^
 ||usage.trackjs.com^
@@ -118858,6 +118860,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||search-api.fie.futurecdn.net/js/*/master-*/analytics-library-entry-getCustomTrackingId.js
 ||grok.com/_data/v1/events
 ||frysfood.com/assets/*/collect?
 ||fredmeyer.com/static/*/collect?
@@ -121531,7 +121534,6 @@ weekly-economist.mainichi.jp##iframe[id^="cxWidget_"]
 ||s-cdn.phonearena.com/js/ops/taina.js
 ||static.narrativ.com/tags/narrativ-pub.
 ||widgets.entireweb.com/pixel-track/
-/access.html$domain=2jigiri.net
 ||apis.naver.com/livecloud/livecloud/quantum/p2p/*/client/stat
 ||redditmedia.com/gtm?id=
 ||search-api.joongna.com/v*/ga/log|
@@ -122079,7 +122081,7 @@ sports.goo.ne.jp###taboola-below-sokuho-thumbnails
 ||bilanx.dtto.com/*/configs
 ||bilanx.dtto.com/*/events
 ||mt-wzb.clarin.com/weizenbock/pixel.fingerprint.gif
-itmedia.co.jp,mag.osdn.jp##div[id^="logly-lift-"]
+itmedia.co.jp##div[id^="logly-lift-"]
 ||mangapedia.com/js/abb.
 ||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
 ||tv3play.skaties.lv/static/scripts/trackdb/events.gif$image,redirect=1x1-transparent.gif
@@ -123237,6 +123239,7 @@ westnews.com.ua##a[href="http://www.bigmir.net/"]
 ||fiylo.de/typo3conf/ext/of_design/Resources/Public/JavaScript/Libs/smarttag_LIVE.js
 ||steampowered.com/default/usabilitytracking
 ||report.23video.com/api/analytics/
+||report.23video.com/report-batch
 ||mb.mtvnservices.com/data/collect/
 ||imgsmail.ru/gstat?
 ||slideplayer.biz.tr/slide/getviewscount/
@@ -125546,8 +125549,8 @@ $cookie=bf_visit
 !
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217766
+! ||epicgames.com^$cookie=EPIC_DEVICE - breaks login = https://github.com/AdguardTeam/AdguardFilters/issues/217793
 ||epicgames.com^$cookie=visitor-uuid
-||epicgames.com^$cookie=EPIC_DEVICE
 ! thekrazycouponlady.com
 ||thekrazycouponlady.com^$cookie=/^ab\.storage\./
 ! lovense.com
@@ -126532,6 +126535,8 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||fcm-collect-api.alyac.com^
+||service-api.flarelane.com^
 ||mossturbo.com^
 ||collect.wehearfm.com^
 ||itracking.ikameglobal.com^
@@ -132031,6 +132036,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||dogcollarfavourbluff.com^
 ||doggieshome.com^
 ||dollardelta.com^
+||dollarthrill.com^
 ||doubledefend.com^
 ||doubtdrawer.com^
 ||dq95d35.com^
