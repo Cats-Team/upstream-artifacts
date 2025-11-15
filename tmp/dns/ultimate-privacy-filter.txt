@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511141800
+! Version: 202511142200
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 14 Nov 2025 18:00 UTC
+! Last modified: 14 Nov 2025 22:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -1817,7 +1817,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||irxcm.com^$third-party
 ||unid.go.com^$third-party
 ||dataxpand.com^$third-party
-||connectif.cloud^$third-party
+||cdn.connectif.cloud^$third-party
 ||bandborder.com^$third-party
 ||lumitos.com^$third-party
 ||seedtag.com^$third-party
@@ -117926,6 +117926,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||connectif.cloud/integration-type/
 ||img1.wsimg.com/traffic-assets/js/tccl.min.js
 ||neuron.cbssports.cloud/client.js?platform=tracking-manager
 ||famil.ru/bitrix/templates/aspro_max/js/yandex_metrika_
@@ -124413,12 +124414,6 @@ dlsdk.appsflyer.com^
 ||qcloud-sg-datareceiver.kurogame.xyz^
 ||statistic-overseas.yunxinfw.com^
 ||perfsight.wetest.net^
-||gamedot.afafb.com^
-||tadata.afafb.com^
-||ecpm.afafb.com^
-||mediation-receiver.afafb.com^
-||df.afafb.com^
-||middle-defend.afafb.com^
 ||pangolin-sdk-toutiao.com^
 ||stat.tpns.sgp.tencent.com^
 ||guid.tpns.sgp.tencent.com^
