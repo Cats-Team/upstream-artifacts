@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511200600
+! Version: 202511201800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Nov 2025 06:00 UTC
+! Last modified: 20 Nov 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||data.thoughtmetric.io^
+||assets.9gtb.com^
+||cdn.logbase.io^
 ||lc.recopick.com^
 ||cv.aedi.ai^
 ||toup.net^$third-party
@@ -49635,6 +49638,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||conversionsapigateway.com^
 ||ebm.lfmall.co.kr^
 ||analytics.adjust.io^
 ||jitsu.ixbt.site^
@@ -74215,6 +74219,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||chickencoopcompany.com/api/collect
+||p.hentaiforce.net/api/event
 itmedia.co.jp###endlinkConnection
 ||aosom.*/track/do
 ||cdn.aosomcdn.com/upload/js/dataflux-rum.js
@@ -77743,7 +77749,7 @@ animespirit.*###CollapsiblePanel_Statistics
 setafi.com##.footer_bl-3
 ||gamejolt.com/tick/
 ||chaturbate.com/api/adblocker/
-||evgnet.com/beacon/
+||cdn.evgnet.com/beacon/homedepotofcainc/engage/scripts/evergage.min.js$script,redirect=noopjs
 ||51nongyao.net/js/analytics.js
 kanobu.ru##a[href^="https://www.liveinternet.ru/click"]
 ||a24.biz/pixel/
@@ -80638,6 +80644,11 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||datarangers-event.myrightone.com^
+||stats.*.ronghub.com^
+||stats.rong-edge.com^
+||config.toto.zipoapps.com^
+||tracking.ksztone.com^
 ||log.stickflow.xyz^
 ||stats.us-light-edge.com^
 ||log2.ihubgo.info^
