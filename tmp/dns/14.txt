@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: Uz7ld0QeQgk16JV790gtcw
-! Diff-Path: ../patches/14/14-s-1763565135-3600.patch
+! Checksum: uplyqrrxKGAcE7HsYSebtg
+! Diff-Path: ../patches/14/14-s-1763572319-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.49.65
-! TimeUpdated: 2025-11-19T15:08:31+00:00
+! Version: 2.2.49.67
+! TimeUpdated: 2025-11-19T17:07:58+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3015,7 +3015,7 @@ bandcamp.com##page-footer[is-legacy-cookie-control-automatic]
 insert.com.pl##.privacyAndCookiePolicy_wrapper
 patronite.pl#%#//scriptlet('trusted-set-local-storage-item', 'patronite-gdpr', '{"version":"1.1734707669510","providers":{"clarity":"block","google":"block","google_recaptcha":"allow","facebook":"block","oneSignal":"block","sentry":"block","wpPixel":"block","embedded":"allow"}}')
 transfernow.net##div[class^="custom_cmp_wrapper"]
-cbssports.com,cbs.com#%#//scriptlet('trusted-click-element', '#ketch-banner-button-secondary')
+southpark.*,southparkstudios.*,cbssports.com,cbs.com#%#//scriptlet('trusted-click-element', '#ketch-banner-button-secondary')
 mediathekviewweb.de#%#//scriptlet('trusted-click-element', 'dialog.w-full button', 'containsText:Ablehnen')
 komoot.com#%#//scriptlet('trusted-set-local-storage-item', 'komoot_gdpr_data', '{"requestDone":true,"analyticsAcceptedTrackers":[],"profilingAcceptedTrackers":[],"lastAcceptedVersion":1}')
 buero-bedarf-thueringen.de#%#//scriptlet('abort-on-property-write', 'openCookieConsentDialog')
@@ -8238,7 +8238,7 @@ encazip.com#?##__next > footer + div[class]:has(> div[class] > div[class] > div[
 bithub.pl,fanipogody.pl###cmpButton
 fanipogody.pl#$##cmp-iframe { display: none !important; }
 fanipogody.pl#$?#body { overflow: auto !important; }
-ringover.com##.bg-cookie
+recordmakers.com,ringover.com##.bg-cookie
 1cloudfile.com,koramaup.com,doodrive.com##.uk-position-bottom-right
 ||cmpv2.techadvisor.fr^
 linkedin.com##.accept-cookie-container
@@ -25685,6 +25685,7 @@ inews.co.uk,pinterest.com#%#//scriptlet('set-constant', 'google.accounts.id.prom
 !
 ! SECTION: Popups - Regular rules
 !
+ginjfo.com##.follow-us-post-section
 autopark.ua#%#//scriptlet('set-local-storage-item', 'auction_popup_shown', 'true')
 web.kuper.ru##.overlay-onboarding
 inverse.com##.SA1
@@ -60334,7 +60335,7 @@ samlab.ws##iframe[src^="https://yoomoney.ru/"]
 ||yoomoney.ru/quickpay/shop-widget$domain=ovgorskiy.ru|blog.themarfa.name
 ||funding.webmoney.ru/widgets/$domain=ovgorskiy.ru|demek.ru|скачатьофис.рф
 ! Google Revenue Manager
-||news.google.com/swg/js/v1/swg-basic.js$domain=wololo.net|premierguitar.com|svetandroida.cz|12punto.com.tr|game-maps.com|tv5.com.tr
+||news.google.com/swg/js/v1/swg-basic.js$domain=wololo.net|premierguitar.com|svetandroida.cz|12punto.com.tr|game-maps.com|tv5.com.tr|ginjfo.com
 ! The Moscow Times
 themoscowtimes.com##.preheader_advert
 themoscowtimes.com##.contribute-article
