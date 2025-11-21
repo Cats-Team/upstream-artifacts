@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: swDI/ymfLOB8J+1VUSQmSg
-! Diff-Path: ../patches/4/4-s-1763712806-3600.patch
+! Checksum: UtfZfCVzIbmEAmr9U2QWwA
+! Diff-Path: ../patches/4/4-s-1763737925-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.21.98
-! TimeUpdated: 2025-11-21T08:09:28+00:00
+! Version: 2.1.22.1
+! TimeUpdated: 2025-11-21T15:07:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,8 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+tech.eu##.share-m-title
+fleetnews.co.uk##a[aria-label="Share"]
 qiita.com##div[class^="style-"]:has(> button[class^="style-"][aria-label="Post"][title="Post"])
 city.nishitokyo.lg.jp###sns_btn_wp
 gizmodo.com##.mt-10:has(> ul > a[href^="https://www.facebook.com/sharer.php?"])
@@ -3251,7 +3253,7 @@ abc.net.au##button[class*="FixedHeader_shareBtn__"]
 idolmaster-official.jp##div[class^="style_detail__share__"]
 tulapressa.ru##.news_image_social
 onlinegibdd.ru##.article-news-scroll__share
-javvideoporn.com###show-sharing-buttons
+camcam.cc,myhentai.us,javvideoporn.com###show-sharing-buttons
 hiroba.dqx.jp###social_btn
 thurrott.com##div[data-thurrott-section-article-section="share"]
 tv-asahi.co.jp##.sns-share-list-box
@@ -5916,7 +5918,6 @@ swissinfo.ch##.si-page__utility-container
 data.wingarc.com##.new-entry-social
 gqjapan.jp##div[class^="NativeShareIconWrapper-"]
 gqjapan.jp##button[class^="BaseButton-"][data-event-click='{"pattern":"NativeShareButton"}']
-camcam.cc###show-sharing-buttons
 finders.me##.__post-share
 semnasem.org##.article__footer-column-social-share
 busan.com##.btns > li[onclick^="cosmosfarm_share_"][class]
