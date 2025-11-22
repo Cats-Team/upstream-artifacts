@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: gTAlEA85e+FFe0TRyJZB+A
-! Diff-Path: ../patches/3/3-s-1763788261-3600.patch
+! Checksum: LAl3zzQS5RFINN7ofvHKBg
+! Diff-Path: ../patches/3/3-s-1763809808-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.95.36
-! TimeUpdated: 2025-11-22T05:07:03+00:00
+! Version: 2.0.95.38
+! TimeUpdated: 2025-11-22T11:05:55+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -82871,6 +82871,8 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||statistic.live.126.net^
+||report.1-1.io^
 ||sensor.emolm.com^
 ||detaillog-global-dual.coolbcloud.com^
 ||wslog-global-dual.coolccloud.com^
@@ -84012,6 +84014,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/218361
+@@||googletagmanager.com/gtm.js$domain=gillette.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/218234
 ! https://github.com/AdguardTeam/AdguardFilters/issues/216829
 @@||canadiantire.tt.omtrdc.net/rest/$domain=canadiantire.ca
