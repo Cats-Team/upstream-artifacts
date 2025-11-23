@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: Mk1YxXnf71X9TRzU48mAgw
-! Diff-Path: ../patches/224/224-s-1763784683-3600.patch
+! Checksum: 7oBDauVpDDRnY+J2OdO6xQ
+! Diff-Path: ../patches/224/224-s-1763809807-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.48.41
-! TimeUpdated: 2025-11-22T04:07:57+00:00
+! Version: 2.1.48.44
+! TimeUpdated: 2025-11-22T11:06:30+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5169,6 +5169,11 @@ newduba.cn###jq_youxi
 ||ahfaihethh.com^
 ||hidzrf.icu^
 ||c0nmelm3y2.com^
+||ueqy.cn^
+||nwbuhr.icu^
+||xjx11221ts.com^
+||dbzolzzy7s.com^
+##a[href*=".jmtybc.com"]
 ||ygg1e0gmc.com^
 ||kqgx3eyz7.com^
 ||xjx11210ts.com^
@@ -10475,7 +10480,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||beijing-air.com/images/a/j
 ||beijingbang.top/scholar/xljsci
 ||beiwo888.com/Runtime/js/
-||bejson.com/static/ydxyt/
+||bejson.com/static/la.
 ||bendibao.com*/tuangou.gif
 ||bendibao.com/mo/adm_iframe.htm?
 ||besc.baidustatic.com^
@@ -13830,7 +13835,7 @@ appinn.com##a[href*=".houdeyun.cn"]
 fitacg.com##a[href*="ifift.com"]
 cnys.tv###player_pause
 twkan.com##.txtcenter
-element-plus.org##.doc-content-zosdsoycx
+element-plus.org##aside > div[class^="doc-content-"]
 hcbbs.com##.wp > div:not([id]):not([class]) > a > img[src*=".imgdb.cn"]
 sehuatang.net##DIV[class^="show-text"]
 ghxi.com##.widget_html_ad + div[style]
@@ -18422,7 +18427,7 @@ chinacsbs.com##a[href^="/plus/view.php?aid="]
 96weixin.com##a[href^="/show/ads/"]
 fx112.com##a[href^="/union."]
 jr35.xyz##a[href^="ad."]
-131400.best,vikacg.com,vikacg.icu,vikacg.xyz##a[href^="http"] > img[src*="/assets/next/"]
+131400.best,vikacg.com,vikacg.icu,vikacg.xyz##a[href^="http"] > img[src*="/assets/moonlight/"]
 boniu123.cc##a[href^="http"] > img[src*="/bn_"]
 yigujin.cn##a[href^="http"]:not([href$=".html"]) > img[src*="/tp/"]
 55188.com##a[href^="http"]:not([href*=".55188."]) > img[src*="/portal/"]
@@ -18502,7 +18507,7 @@ house365.com##a[style*="1200px;"]
 hdzone.org##a[style*="fixed"]
 huaren.tv##a[style*="height:"]
 36dm.club,36dm.com,acgsou.com##a[style="color:red;"][href*="show-"]
-supercloudsms.com##a[style="display: block;"]
+supercloudsms.com##a[href^="/redirect?"]
 wandhi.com##a[style="display: inline-block;position: relative"]
 hanjutv2020.com##a[style="width: 1120px;height: 70px;overflow: hidden;display: block;"]
 houdao.com##a[style^="background:url"]
