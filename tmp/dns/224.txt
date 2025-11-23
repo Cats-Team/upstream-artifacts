@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: gh4kqyOZjSFNv7LZ2tV1GA
-! Diff-Path: ../patches/224/224-s-1763858020-3600.patch
+! Checksum: EQ+Twc/CAl7S6wRlfItnQw
+! Diff-Path: ../patches/224/224-s-1763866136-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.48.47
-! TimeUpdated: 2025-11-23T00:30:17+00:00
+! Version: 2.1.48.49
+! TimeUpdated: 2025-11-23T02:45:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5168,6 +5168,8 @@ newduba.cn###jq_youxi
 ||nyzrbx.icu^
 ||quudraidfg.com^
 ||nfvp.cn^
+||l9qxrmda6.com^
+||t1thmtn5.xyz^
 ||3k2frl8r79.com^
 ||h4htfgrei0.com^
 ||xjx11220ts.com^
@@ -13728,6 +13730,8 @@ meijutt.*/js/pcjs/
 ||shipin188.com/66
 /\/[a-z]+$/$script,third-party,domain=gimy.com.tw
 ||mysteel.com/ads/
+||wujinyuzhou.top/ny/*00x
+||wujinyuzhou.top/ny/ny852x116.
 zhihu.com##.Pc-word-new
 hcbbs.com##.plc > .pct + :last-child
 mysteel.com###float-adv
