@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 5UIMwEtDL8dW07dMZttplQ
-! Diff-Path: ../patches/4/4-s-1763961173-3600.patch
+! Checksum: 6Licyjvgfnf1tdTmSBJ1ZA
+! Diff-Path: ../patches/4/4-s-1763982678-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.22.4
-! TimeUpdated: 2025-11-24T05:08:42+00:00
+! Version: 2.1.22.7
+! TimeUpdated: 2025-11-24T11:06:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,10 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+pikuco.ru##.sharing-wrap
+pikuco.ru#?#h3:has(> span:contains(Поделиться:))
+aniworld.to##iframe[src^="https://platform.twitter.com/widgets/tweet_button.html"]
+ilacy.jp##.lastBoxSnsTtl
 qiita.com##[class^="style-"] > [class^="style-"] > div[class^="style-"]:has(> button[aria-label][title][aria-describedby] + p[id][role="tooltip"])
 tech.eu##.share-m-title
 fleetnews.co.uk##a[aria-label="Share"]
@@ -10200,7 +10204,7 @@ inn.co.il##.Top > span > a[class^="icon-"][href]
 vogue.com.cn,forms.yandex.*,victoriassecret.com.tr,foodnavigator.com,abcnews.go.com,inn.co.il##.Share
 procomputer.su##.tm-sidebar-b > div[class="uk-panel uk-panel-box uk-hidden-medium uk-hidden-small"]:last-child
 procomputer.su##.likes-block_right
-elespanol.com##.singlePostShare
+sp-mapple.jp,elespanol.com##.singlePostShare
 rundschau-online.de,rheinische-anzeigenblaetter.de,berliner-kurier.de,express.de,ksta.de,mopo.de,berliner-zeitung.de##.teaser_social_block_trigger
 moskvichmag.ru,ubisoft.com##.ArticleShare
 a2tv.com.tr##.site-social-parent .site-social
