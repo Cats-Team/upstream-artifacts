@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 6Licyjvgfnf1tdTmSBJ1ZA
-! Diff-Path: ../patches/4/4-s-1763982678-3600.patch
+! Checksum: yAp8sYENLP3pwxM6jHEJlw
+! Diff-Path: ../patches/4/4-s-1764000701-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.22.7
-! TimeUpdated: 2025-11-24T11:06:52+00:00
+! Version: 2.1.22.10
+! TimeUpdated: 2025-11-24T16:07:26+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,9 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+outlookmoney.com,outlookbusiness.com,outlookindia.com##.rm-social-share
+outlookindia.com,outlookmoney.com##.social-mobile
+globalfreedomofexpression.columbia.edu##.socials-b
 pikuco.ru##.sharing-wrap
 pikuco.ru#?#h3:has(> span:contains(Поделиться:))
 aniworld.to##iframe[src^="https://platform.twitter.com/widgets/tweet_button.html"]
@@ -14954,6 +14957,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ||mailget.net^$third-party
 ||my.hellobar.com^$third-party
 !
+aether.mom#%#//scriptlet('set-local-storage-item', 'modal-promotional-dismissed', 'true')
 xiaomiupdate.com###elementor-popup-modal-5336
 tmovie.tv##button[aria-label="Share"]
 anime4up.rest###tme-alert
