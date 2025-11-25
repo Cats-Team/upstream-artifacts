@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: 5sczf+g7O8Hryc+PdS0F+Q
-! Diff-Path: ../patches/3/3-s-1764018662-3600.patch
+! Checksum: yNDSe8hX4sFUdFPT57GZ6A
+! Diff-Path: ../patches/3/3-s-1764044124-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.95.53
-! TimeUpdated: 2025-11-24T21:07:01+00:00
+! Version: 2.0.95.55
+! TimeUpdated: 2025-11-25T04:11:21+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -565,6 +565,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||hackle.io^$third-party
 ||track.aimroas.com^
 ||upsellit.com^$third-party
 ||assetsconfigcdn.org^
@@ -71155,6 +71156,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||pravilamag.ru/_stat/
+||signals.turkcell.com.tr/r|
 ||musically.com/wp-content/plugins/jetpack/jetpack_vendor/automattic/woocommerce-analytics
 ||webapi.depop.com/api/v1/performance/collect/
 ||troypoint.com/wp-admin/admin-ajax.php?action=geoip_detect
@@ -77890,6 +77893,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! spooncast.net
+||spooncast.net^$cookie=/^_hackle_/
 ! emart.ssg.com
 ||emart.ssg.com^$cookie=PCID
 ||emart.ssg.com^$cookie=/^RC_/
