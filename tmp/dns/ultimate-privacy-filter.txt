@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511260000
+! Version: 202511260500
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 26 Nov 2025 00:00 UTC
+! Last modified: 26 Nov 2025 05:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||yext.com^$third-party
 ||hackle.io^$third-party
 ||track.aimroas.com^
 ||upsellit.com^$third-party
@@ -49274,6 +49275,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||mgs.instacart.com^
+||c.ypcdn.com^
 ||ac2.tnaflix.com^
 ||web.analytics.metrobyt-mobile.com^
 ||conversionsapigateway.com^
@@ -70219,6 +70222,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||emma-matratze.de/metrics/
+||ypcdn.com/ypu/js/compiled/srp_adsense.js
+||ypcdn.com/ypu/vendor/VisitorAPI.js
+||yellowpages.com/*/impression
 ||pravilamag.ru/_stat/
 ||signals.turkcell.com.tr/r|
 ||musically.com/wp-content/plugins/jetpack/jetpack_vendor/automattic/woocommerce-analytics
@@ -75999,6 +76006,7 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||yellowpages.com^$cookie=vrid
 ||spooncast.net^$cookie=/^_hackle_/
 ||emart.ssg.com^$cookie=PCID
 ||emart.ssg.com^$cookie=/^RC_/
