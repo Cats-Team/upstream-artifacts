@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511271100
+! Version: 202511271800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 27 Nov 2025 11:00 UTC
+! Last modified: 27 Nov 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -70230,6 +70230,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||xplay.gg/api/server/analytics/mixpanel
 ||app-de-na1.niceincontact.com/logger-public
 /webruntime/log/*$domain=help.disneyplus.com|help.hulu.com
 ||storage.googleapis.com/shufoo-prod-imp-gif/
@@ -71753,7 +71754,6 @@ wanchan.jp##.recommend_header + div[style^="aspect-ratio:"]
 ||clarin.com/js/meter*.js
 ||st-wzb.clarin.com/weizenbock/amazon/min.js
 ||cdn.thinkindot.com/tracker/tracker-*.min.js
-||olympics.com/ddna-event-router/ddna-analytics.js
 ||k.p-n.io/event-stream
 ||rebuyengine.com/api/*/analytics/event/
 ||gstatic.com/devrel-devsite/*/js/devsite_*analytics*.js
@@ -82100,6 +82100,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+kf.qq.com#%#//scriptlet('set-constant', 'Aegis', 'noopFunc')
 food4less.com#%#//scriptlet('set-local-storage-item', 'analytics-device', '$remove$')
 ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com#%#//scriptlet('set-local-storage-item', 'analytics-device', '$remove$')
 thekrazycouponlady.com#%#//scriptlet('set-local-storage-item', '/^ab\.storage\./', '$remove$')
