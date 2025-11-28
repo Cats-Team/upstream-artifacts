@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511280900
+! Version: 202511281700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 28 Nov 2025 09:00 UTC
+! Last modified: 28 Nov 2025 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -77720,6 +77720,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
 @@||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt,domain=cava.tw
 @@||integrations.fitanalytics.com/shop/modivo/pdp.js$domain=modivo.*
 @@||widget.fitanalytics.com/widget_pdp.js$domain=modivo.*
@@ -81921,6 +81922,7 @@ spletnik.ru#%#//scriptlet('set-local-storage-item', 'adrcid', '$remove$')
 southpark.*,southparkstudios.*#%#//scriptlet('set-constant', 'vtg', 'emptyObj')
 onet.pl#%#//scriptlet('prevent-element-src-loading', 'script', 'lib.onet.pl/static/pixel/')
 coupang.com#%#//scriptlet('json-prune-xhr-response', 'tracking', 'feeds', 'n-api/recommend/feeds')
+aceee.org#%#//scriptlet('prevent-canvas', '2d')
 delta.com#%#//scriptlet('set-constant', 'TrackJS', 'emptyObj')
 delta.com#%#//scriptlet('set-constant', 'TrackJS.install', 'noopFunc')
 hoy.tv#%#(()=>{const i=function(){};window.__uid2=window.__uid2||{},window.__uid2.init=i,window.__uid2.setIdentityFromEmail=i,window.__uid2.callbacks=window.__uid2.callbacks||[],window.__uid2.callbacks.push=function(i){"function"==typeof i&&i("InitCompleted",{identity:null})}})();
@@ -82053,7 +82055,7 @@ app.tirelocator.ca#%#//scriptlet("set-constant", "googleAnalyticsEnhancedTrackPa
 mirrormedia.mg#%#//scriptlet("set-constant", "dataLayer", "emptyArr")
 edeka.de#%#//scriptlet('prevent-addEventListener', 'bugfix', 'fix')
 edeka.de#%#(()=>{window.tC={event:{track(){}}}})();
-edeka.de#%#//scriptlet('prevent-element-src-loading', 'script','tc_DigitalesMarketing')
+edeka.de#%#//scriptlet('prevent-element-src-loading', 'script', 'tc_DigitalesMarketing')
 bulletin.sntba.com#%#//scriptlet("set-constant", "returnCitySN", "emptyObj")
 ta.alamo.com#%#(()=>{window.CQ_Analytics={SegmentMgr:{loadSegments(){}},ClientContextUtils:{init(){}}}})();
 nine.com.au#%#(()=>{window.tracking={setConfig(){},trackPage(){},trackVideoAutoFail(){}}})();
