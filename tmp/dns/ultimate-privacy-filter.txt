@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511280500
+! Version: 202511280900
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 28 Nov 2025 05:00 UTC
+! Last modified: 28 Nov 2025 09:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -49279,6 +49279,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||valencia-beacons.xumo.com^
+||sync.getpublica.com^
 ||events-tracker.deliveroo.net^
 ||analytics-prod.readtheory.org^
 ||y194.asics.com^
@@ -70517,7 +70519,6 @@ bunshun.jp#?#.recommend-articles:has(> div[class^="taboola"])
 ||jsdelivr.net/npm/search-insights$domain=qobuz.com
 ||thermaltake.com/bannerslider/index/impress/
 ||spotifycdn.com/cdn/js/gtm.
-||tworld.co.kr/web/service/xtractor.service.js
 ||cfm.kt.com/js/common/global/oms.js
 ||static.gala.games/gal/fp/loader_v*.js
 ||luckyduckgames.com/global/index.php?controller=statistics
@@ -76691,6 +76692,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||logrcv.adseyeservice.com^
 ||stats.cn.ronghub.com^
 ||statistic.live.126.net^
 ||report.1-1.io^
@@ -80169,6 +80171,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||captivatingillusion.com^
 ||captivatingpanorama.com^
 ||captivatingperformance.com^
+||carbongarden.net^
 ||cardmethod.com^
 ||carefuldolls.com^
 ||caringcast.com^
