@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202511300300
+! Version: 202511301700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 30 Nov 2025 03:00 UTC
+! Last modified: 30 Nov 2025 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -51903,7 +51903,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||stat.dealtime.com^
 ||stat.download.xunlei.com^
 ||stat.eagleplatform.com^
-||stat.i3.dmm.com^
 ||stat.kbs.co.kr^
 ||stat.kununu.cz^
 ||stat.mydaddy.cc^
@@ -70233,6 +70232,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||crosset.onward.co.jp/ajax/getExternalServiceWebTrackingTags
+||insight-x.tech/trackerlog-publisher-service/tracker-logs
 ||postmates.com/_events$redirect=nooptext
 ||postmates.com/_p/api/setRobotEvents
 ||wishabi.com/track.gif
@@ -77722,6 +77723,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
 @@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
 @@||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt,domain=cava.tw
 @@||integrations.fitanalytics.com/shop/modivo/pdp.js$domain=modivo.*
