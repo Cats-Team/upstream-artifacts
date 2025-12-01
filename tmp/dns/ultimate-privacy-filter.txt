@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512010500
+! Version: 202512011000
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 01 Dec 2025 05:00 UTC
+! Last modified: 01 Dec 2025 10:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -49279,6 +49279,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||htm*.hepsiburada.com^
 ||valencia-beacons.xumo.com^
 ||sync.getpublica.com^
 ||events-tracker.deliveroo.net^
@@ -70232,7 +70233,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
-||htm*.hepsiburada.com^
+/wp-content/plugins/pmc-plugins/pmc-harmony-companion/build/ga.js$domain=wwd.com|sportico.com
+||zhihu.com/sc-profiler
+||zhihu.com/zbst/events/
+||datahub.zhihu.com/collector/
+||zxid-api.mobileservice.cn/sdk/base/report
 ||crosset.onward.co.jp/ajax/getExternalServiceWebTrackingTags
 ||insight-x.tech/trackerlog-publisher-service/tracker-logs
 ||postmates.com/_events$redirect=nooptext
@@ -70911,7 +70916,7 @@ sankei.com##div[id^="piano_special_Top_"]
 ||ig-store.ru/site/record-modal-event
 ||cdn.jsdelivr.net/npm/@snowplow/
 ||anizmplayer.com/gMetrics/
-/metrics^|$script,domain=anizle.com|anizm.net|puffytr.com
+/metrics^|$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 ||free.ranklet4.com/impression?
 ||joymaxtr.net/jc/gtm.js
 ||capi.elements.video/tr/
