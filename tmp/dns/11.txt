@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: OjLORIsnSDKyBUR2vwcBCA
-! Diff-Path: ../patches/11/11-s-1764422130-3600.patch
+! Checksum: PkdMb5NhXt7DsqlDVKv1+Q
+! Diff-Path: ../patches/11/11-s-1764646523-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.65.87
-! TimeUpdated: 2025-11-29T13:12:48+00:00
+! Version: 2.0.65.89
+! TimeUpdated: 2025-12-02T03:32:05+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2594,6 +2594,12 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+football-tribe.com##.c-single_post_inline_ad_box
+footballchannel.jp###article_btm_ad
+footballchannel.jp###single_under_ttl_ad
+times.abema.tv##.l-main > div[style^="min-height:"]:not([class]):has(> div[id^="div-gpt-ad"])
+plus.luremaga.jp##.photo-ad__fv
+tsurisoku.com##.sp_article_feature
 finance.yahoo.co.jp##section[class^="ServiceInformation_"] > div[class*="InfiniteNews__publicRelationInformationCard_"] > a:not([href*="yahoo.co.jp"])
 calciomercato.com##div[class^="mobile-sticky_"]
 jauns.lv##div[class*="min-h-[300px]"]
@@ -5421,7 +5427,7 @@ woman.mynavi.jp##div[style="margin:20px auto 0;text-align: center;"]
 sirogohan.com##.sp-banner
 eromanga-yasan.com###spwrapper
 yomiuri.co.jp##.home-2021-ad-head-sp
-yomiuri.co.jp,lurenewsr.com##.sp_ad_banner
+tsurisoku.com,yomiuri.co.jp,lurenewsr.com##.sp_ad_banner
 ero-comic-hunter.net,eromanga-castle.com,nukerumannga.com,ero-mangasokuhou.com,eromanga-cafe.com,doujincafe.com##.archive > div[style="margin:0 auto;"]:not([class])
 augsburger-allgemeine.de##.aa-ad-frame
 mobile.baidu.com##.detail-banner
