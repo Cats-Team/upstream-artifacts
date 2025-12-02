@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: vkSqQ2sIVdCjVJP6xr+1lw
-! Diff-Path: ../patches/3/3-s-1764663236-3600.patch
+! Checksum: 7JFD8CtJn8GW3+5LHHIDtA
+! Diff-Path: ../patches/3/3-s-1764695587-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.95.95
-! TimeUpdated: 2025-12-02T08:10:04+00:00
+! Version: 2.0.96.0
+! TimeUpdated: 2025-12-02T17:09:29+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -566,6 +566,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||tags.mlytics.com^
 ||tncid.app^
 ||rampanel.com^$third-party
 ||l5id.com^
@@ -50473,6 +50474,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||advancedanalytics-websocket-pri-001.hexaglobe.net^
 ||htm*.hepsiburada.com^
 ||valencia-beacons.xumo.com^
 ||sync.getpublica.com^
@@ -50845,7 +50847,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||tracking.ringieraxelspringer.tech^
 ||event.*.shoplive.cloud^
 ||aidsvc.netflix.com^
-||sensor.grubhub.com^
 ||kloggyr-service.kyruus.com^
 ||geo.justwatch.com^
 ||sspnm.emol.com^
@@ -71772,6 +71773,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||kolesa.kz/ms/rum/v1/send
+||kcdn.online/empty.gif?r=
+lastminute.com.au/api/uisprime/track
 ||audiocircuit.dk/koko-analytics-collect.php
 /wp-content/plugins/pmc-plugins/pmc-harmony-companion/build/ga.js$domain=wwd.com|sportico.com
 ||zhihu.com/sc-profiler
@@ -76975,6 +76979,9 @@ mail.ferret-one.com%2Fbeacon$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
 !
+! PayPal
+://t.paypal.com/ts?v=$image
+%3A%2F%2Ft.paypal.com%2Fts%3Fv%3D$image
 ! https://github.com/easylist/easylist/issues/20669
 emailtracking.cashstar.com$image
 ! https://ridibooks.com/
@@ -77381,6 +77388,8 @@ esputnik.com/repository/applications/commons/hidden.png
 ! SmartrMail
 email.mail2.smartrmail.co$image
 ! Klaviyo
+email.*.com/o/$image
+email.*.com%2Fo%2F$image
 trk.*.com/o/$image
 trk.*.com%2Fo%2F$image
 ctrk.klclick*.com/o/$image
@@ -79535,6 +79544,7 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||tc.vbnmhjlp.com^
 ||logrcv.adseyeservice.com^
 ||stats.cn.ronghub.com^
 ||statistic.live.126.net^
@@ -80671,6 +80681,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/219275
+||tms.post.ch/*gtm.js|$script,redirect=google-analytics
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219095
 @@||cdn.clerk.io/clerk.js$domain=smnovella.com
 ! fix login
