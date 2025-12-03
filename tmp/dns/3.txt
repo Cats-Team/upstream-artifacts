@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: 7JFD8CtJn8GW3+5LHHIDtA
-! Diff-Path: ../patches/3/3-s-1764695587-3600.patch
+! Checksum: IcD6PNpCg80lTI1A0GoO3Q
+! Diff-Path: ../patches/3/3-s-1764768131-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.96.0
-! TimeUpdated: 2025-12-02T17:09:29+00:00
+! Version: 2.0.96.4
+! TimeUpdated: 2025-12-03T13:18:39+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -572,7 +572,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||l5id.com^
 ||evorra.net^
 ||yext.com^$third-party
-||hackle.io^$third-party
 ||track.aimroas.com^
 ||upsellit.com^$third-party
 ||assetsconfigcdn.org^
@@ -50474,6 +50473,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||tagbridge.vlp.cz^
 ||advancedanalytics-websocket-pri-001.hexaglobe.net^
 ||htm*.hepsiburada.com^
 ||valencia-beacons.xumo.com^
@@ -71773,6 +71773,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||sexyrealsexdolls.com/api/collect
+||wheelify-front.carecart.io/postimpression
 ||kolesa.kz/ms/rum/v1/send
 ||kcdn.online/empty.gif?r=
 lastminute.com.au/api/uisprime/track
@@ -84879,6 +84881,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||canvasandsocks.com^
 ||capablecup.com^
 ||capriciouscorn.com^
+||captainstick.com^
 ||captivatingcanyon.com^
 ||captivatingillusion.com^
 ||captivatingpanorama.com^
@@ -85369,6 +85372,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||gorgeousedge.com^
 ||gorillapage.com^
 ||gossamerwing.com^
+||gotlunched.com^
 ||gracefulmilk.com^
 ||grainmass.com^
 ||grandfatherguitar.com^
