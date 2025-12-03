@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 4SaFx9NfVJOyriGP/ngUTg
-! Diff-Path: ../patches/4/4-s-1764699228-3600.patch
+! Checksum: A5iTSniGfR4k+tOCe+Y/Fw
+! Diff-Path: ../patches/4/4-s-1764732854-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.22.52
-! TimeUpdated: 2025-12-02T18:10:27+00:00
+! Version: 2.1.22.54
+! TimeUpdated: 2025-12-03T03:30:51+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,11 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+nissin.com##.ShareSNS
+nestle.co.jp###block-da-vinci-code-social-bottom
+kobayashi.co.jp##.NewsDetailSns
+unicharm.co.jp##.corp-wrap-sns
+corp.shiseido.com##.share-linkedIn
 seeklogo.com##.containerSocialShare
 arigus.tv##.e-share
 shonanjin.com##.p-post-detail__sns
@@ -5900,7 +5905,7 @@ cookien.com###middle_share_ttl
 lexpress.fr##div[data-trigger="share"]
 shop.driveplaza.com###plg_social_area
 app.famitsu.com##.aside-sns
-tabirai.net,kinyobi.co.jp,keibalab.jp,store.natalie.mu,tabikobo.com,baby-calendar.jp,nikkeibp.co.jp##.snsBtn
+okamura.co.jp,tabirai.net,kinyobi.co.jp,keibalab.jp,store.natalie.mu,tabikobo.com,baby-calendar.jp,nikkeibp.co.jp##.snsBtn
 baby-calendar.jp##.article-sns-buttons
 baby-calendar.jp##.recipe-share-area
 shindanmaker.com###btn-modal-shareShindan
@@ -7868,7 +7873,7 @@ mistore.jp##.article-section-share
 stuff.co.nz##.sics-component__sharebar
 thelocal.at,thelocal.it,thelocal.se,thelocal.ch##div[class^="entry-meta-share"]
 turizmtatilseyahat.com##.jeg_share_count
-online.ua,times.abema.tv##.c-article-share
+elecom.co.jp,online.ua,times.abema.tv##.c-article-share
 zikua.news##.soc-buttons-sticky
 theverge.com##.c-social-buttons__more
 linustechtips.com##.lmgComment_shareLink
