@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: AdDrYA1wyIx/GIdjb7v8sg
-! Diff-Path: ../patches/3/3-s-1764846647-3600.patch
+! Checksum: c+9X/gtpzqttq+m6U99WBQ
+! Diff-Path: ../patches/3/3-s-1764819399-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.96.10
-! TimeUpdated: 2025-12-04T11:07:14+00:00
+! Version: 2.0.96.8
+! TimeUpdated: 2025-12-04T03:32:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -50474,7 +50474,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
-||analytics.claudelog.com^
 ||i.go.sohu.com^
 ||tagbridge.vlp.cz^
 ||advancedanalytics-websocket-pri-001.hexaglobe.net^
@@ -71776,12 +71775,6 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
-virgule.lu##section[id^="recirculationAside-ArticleGroup-Recommandé-pour-vous-"]
-||kaufland.de/api/uts/events
-||kaufland.de/_/perf/
-||eum.instana.rewe-group.com/eum
-||rewe.de/api/xrd/web-vitals
-||rewe.de/api/xrd/performance
 ||sexyrealsexdolls.com/api/collect
 ||wheelify-front.carecart.io/postimpression
 ||kolesa.kz/ms/rum/v1/send
