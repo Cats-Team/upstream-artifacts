@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512031500
+! Version: 202512032300
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 03 Dec 2025 15:00 UTC
+! Last modified: 03 Dec 2025 23:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tracker.zmaticoo.com^
 ||tags.mlytics.com^
 ||tncid.app^
 ||rampanel.com^$third-party
@@ -75796,6 +75797,8 @@ link.gmapp*.net$image
 ||rum-static.pingdom.net/*-*.js$script,redirect=noopjs,important,domain=leboncoin.fr
 ||ya.ru/clck/
 ||bing.com/fd/ls/
+%2Famsweb.php%3F
+/amsweb.php?$image
 mail.ferret-one.com/beacon$image
 mail.ferret-one.com%2Fbeacon$image
 /tf/o/*$image
@@ -81022,6 +81025,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||dinnerquartz.com^
 ||direfuldesk.com^
 ||disagreeabledrop.com^
+||discopond.com^
 ||discreetfield.com^
 ||discreetquarter.com^
 ||distributionpocket.com^
@@ -81179,6 +81183,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||fixedfold.com^
 ||flakyfeast.com^
 ||flameuncle.com^
+||flashtexting.com^
 ||fleetbegin.com^
 ||flimsycircle.com^
 ||flimsythought.com^
@@ -81611,6 +81616,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||modularmental.com^
 ||momentfilter.com^
 ||monacobeatles.com^
+||monkeyapes.com^
 ||monkeystyping.com^
 ||monstermemes.com^
 ||monthlyhat.com^
