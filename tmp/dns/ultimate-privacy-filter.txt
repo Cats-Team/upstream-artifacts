@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512061400
+! Version: 202512071800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 06 Dec 2025 14:00 UTC
+! Last modified: 07 Dec 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -649,7 +649,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||leady.com^$third-party
 ||hscollectedforms.net^
 ||log.dance^
-||adx.promo^
 ||trk.decido.io^
 ||tracker.oval.id^
 ||event.lib.visumo.io^
@@ -70849,6 +70848,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+entapark.jp##div[id$="-pickup"][style^="height"]
 virgule.lu##section[id^="recirculationAside-ArticleGroup-Recommandé-pour-vous-"]
 ||kaufland.de/api/uts/events
 ||kaufland.de/_/perf/
@@ -75851,6 +75851,8 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+onelink.soundcloud.com/v1/emailopen$image
+onelink.soundcloud.com%2Fv1%2Femailopen$image
 %3A%2F%2Fline.karte.io%2FCI0%2F$image
 ://line.karte.io/CI0/$image
 ://t.paypal.com/ts?v=$image

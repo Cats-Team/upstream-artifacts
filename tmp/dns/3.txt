@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: AS03ymZciMcL2nYU7eGYWw
-! Diff-Path: ../patches/3/3-s-1765023269-3600.patch
+! Checksum: K8bvyGFpCCqdu7i2ksjIcw
+! Diff-Path: ../patches/3/3-s-1765123855-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.96.19
-! TimeUpdated: 2025-12-06T12:10:41+00:00
+! Version: 2.0.96.22
+! TimeUpdated: 2025-12-07T16:07:24+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1169,7 +1169,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||leady.com^$third-party
 ||hscollectedforms.net^
 ||log.dance^
-||adx.promo^
 ||trk.decido.io^
 ||tracker.oval.id^
 ||event.lib.visumo.io^
@@ -71787,6 +71786,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+entapark.jp##div[id$="-pickup"][style^="height"]
 virgule.lu##section[id^="recirculationAside-ArticleGroup-Recommandé-pour-vous-"]
 ||kaufland.de/api/uts/events
 ||kaufland.de/_/perf/
@@ -77009,6 +77009,9 @@ mail.ferret-one.com%2Fbeacon$image
 !
 ! NOTE: Specific rules
 !
+! https://github.com/easylist/easylist/issues/22715
+onelink.soundcloud.com/v1/emailopen$image
+onelink.soundcloud.com%2Fv1%2Femailopen$image
 ! https://github.com/easylist/easylist/issues/22594
 %3A%2F%2Fline.karte.io%2FCI0%2F$image
 ://line.karte.io/CI0/$image
