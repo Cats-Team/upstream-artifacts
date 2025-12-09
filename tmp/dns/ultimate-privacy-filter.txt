@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512091100
+! Version: 202512091800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 09 Dec 2025 11:00 UTC
+! Last modified: 09 Dec 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -49743,6 +49743,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||counter.tldw.me^
 ||analytics.blender.org^
 ||d.nordprotect.com^
 ||async-px-eu.dynamicyield.com^
@@ -69809,6 +69810,11 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+nikkei.com###pianoRecommendBottom
+itmedia.co.jp##.is-recommend:empty
+itmedia.co.jp#?#.format--subheading:has(+ .is-recommend:empty)
+||vortexgaming.io/ga_script.js
+||p-api.vortexgaming.io/api/log/
 ||usconcealedcarry.com/scripts/bundles/deltaAnalytics/
 ||usconcealedcarry.com/api/events?
 usatoday.com##.gnt_tb
@@ -69967,7 +69973,6 @@ dominos.jp###_vis_opt_path_hides
 ||static.danawa.com/globaljs/static/targetPush/targetPushTracking.js
 ||static.danawa.com/globaljs/static/bdl/dsac.min.js
 ||americantourister.co.kr/on/demandware.static/Sites-AmericanTouristerKR-Site/*/internal/jscript/dwac-*.js
-business.nikkei.com###pianoRecommendBottom
 ||leboncoin.fr/piano-analytics/
 ||softonic.jp/web-stats
 ||chatgpt.com/ces/v1/i^
@@ -77337,6 +77342,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||experience.ninetailed.co/v2/organizations/*/environments/main/profiles/$xmlhttprequest,domain=dkb.de
+||googletagmanager.com/ns.html$subdocument,redirect=noopframe,domain=dkb.de
 @@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.js$domain=pluto.tv
 @@||st-eu.dynamicyield.com/st?sec=$domain=manor.ch
 @@||tags.tiqcdn.com/utag/bofa/ml/prod/utag.js$domain=ml.com
