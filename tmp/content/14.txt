@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: j6Ld6pkK66NX8Q11dm9tew
-! Diff-Path: ../patches/14/14-s-1765231844-3600.patch
+! Checksum: +Xn+1EjA3O3VVaMuAYnceA
+! Diff-Path: ../patches/14/14-s-1765257221-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.51.66
-! TimeUpdated: 2025-12-08T22:07:57+00:00
+! Version: 2.2.51.70
+! TimeUpdated: 2025-12-09T05:10:33+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2555,6 +2555,7 @@ raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-helden.de,naheland-apothe
 !
 ! NOTE: Regular rules
 !
+youtrack.jetbrains.com##div[data-test="alert-container"][class^="ring-ui-manager-alertContainer"]
 dom.ria.com#%#//scriptlet('set-cookie-reload', 'gdpr', '1')
 ancestry.de#%#//scriptlet('trusted-click-element', 'div[id^="Banner_cookie_"] #rejectAllBtn')
 untold.ae#%#//scriptlet('trusted-set-cookie', 'cookies', 'declined')
@@ -25883,6 +25884,7 @@ inews.co.uk,pinterest.com#%#//scriptlet('set-constant', 'google.accounts.id.prom
 !
 ! SECTION: Popups - Regular rules
 !
+time.com###scale-agent-overlay-container[aria-label="chat with time ai"]
 tvfoco.uai.com.br###modalPushArticle
 tvfoco.uai.com.br###modalPushArticleAmp
 ||platform-api.tver.jp/v2/api/platform_users/questionnaire?
@@ -34784,6 +34786,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+usconcealedcarry.com##body > delta-modals
 zaranikas.gr##.bottom-slider-section
 protagon.gr##p[style]:has(> strong > a[href^="https://news.google.com/publications/"])
 telecinco.es##aside[class*="_whatsapp-cta-"]
@@ -41975,7 +41978,7 @@ livemint.com###lastAd
 sudinfo.be###gr-footer-newsletter
 m-timesofindia-com.cdn.ampproject.org##.newsletter_hook_content
 businessinsider.com,1kr.ua##.right-subscribe
-1kr.ua##.telegram-chat
+x-fetish.tube,1kr.ua##.telegram-chat
 mercola.com##.top-subscription
 securitylab.ru###subscribe-section
 usvinternet.ru###text-54
@@ -43580,6 +43583,10 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+newt.net##article > a[class$="__appBanner"]
+newt.net##aside div[class$="__areaOrAppBanner"]
+newt.net##aside > section[class^="AppDownload"]
+newt.net##div[class^="FixedAppBannerForPc"]
 marcoderhy.medium.com##.cp.bi.gq.gr.gs.gt > .ul.um.sx.sy.sz.m:has(a[href^="https://rsci.app.link/?"])
 producthunt.com##.theme-mirror:has(> .fixed > .flex > a[href^="https://producthunt.app.link"])
 crimeradar.us##a[href^="https://app.adjust.com/1q711p7o"]
@@ -50965,6 +50972,13 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+newt.net##body > div[class$="__banner"]
+newt.net##body > div[class$="__bannerContainer"]
+newt.net##aside div[class$="__campaignBanner"]
+newt.net##article iframe[class$="__card--hotel"]
+newt.net##article section[class$="__tourLinkArea"]
+newt.net##article div[class$="__normalBody"] > p[style^="text-align: center"]:has(> strong + br)
+||frame.newt.net/hotelCardFromMag/
 bileter.ru##.event-grid-right
 bileter.ru##.slider-bottom
 billboard.com##.pmc-not-a-paywall a[href^="https://ubpass.co/billboard"] > img

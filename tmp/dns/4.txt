@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: fCCyM9WBfdYjuPDAbU1gOg
-! Diff-Path: ../patches/4/4-s-1765210343-3600.patch
+! Checksum: k9S7AQWvXjImymmtxJkYpQ
+! Diff-Path: ../patches/4/4-s-1765257223-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.22.73
-! TimeUpdated: 2025-12-08T16:08:47+00:00
+! Version: 2.1.22.75
+! TimeUpdated: 2025-12-09T05:08:23+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,9 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+iko-yo.net##a.p-art-sns_btn
+newt.net##div[class$="__share"]
+time.com##button[aria-label="Share this story"]
 protagon.gr##.stopHere
 telecinco.es##astro-island[opts*="ShareBar"]
 blog.swc.rs##.post-floating-bar > div[class] > button[aria-label="Share this article"]
