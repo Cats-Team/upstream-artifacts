@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: ZGzh6evbqMFCWiVQtDGhmg
-! Diff-Path: ../patches/4/4-s-1765300346-3600.patch
+! Checksum: V8OLluUVFAEFkgc18iAaGQ
+! Diff-Path: ../patches/4/4-s-1765365042-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.22.79
-! TimeUpdated: 2025-12-09T17:08:41+00:00
+! Version: 2.1.22.81
+! TimeUpdated: 2025-12-10T11:07:04+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,8 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+sponsr.ru##button[class*="projectHeader_shareBtn__"]
+sponsr.ru##button[data-testid="content-share-button"]
 cian.ru##button:has(> svg > path[d^="M11.5"])
 vortexgaming.io##div[class^="postdetail_right_box__"] > div[class^="PostReact_post_button_wrap__"]:has(use[href$="#ico-share-hover"])
 vxxx.com##.open-share-button
@@ -7657,7 +7659,7 @@ navbharattimes.indiatimes.com##.wdt_social_share > ._icon:not(.comments)
 navbharattimes.indiatimes.com##.wdt_social_share > .social-cell:not(.comments)
 edh.tw##.line-friend
 edh.tw##.linefriend_article
-telehit.com,pod.link,deezer.com,dhakapost.com,lasestrellas.tv,tudn.com,play.google.com,linktr.ee,tunecore.co.jp,trybotics.com##button[aria-label="Share"]
+univision.com,televisa.com,telehit.com,pod.link,deezer.com,dhakapost.com,lasestrellas.tv,tudn.com,play.google.com,linktr.ee,tunecore.co.jp,trybotics.com##button[aria-label="Share"]
 maersk.com##.p-section__article__meta__share
 bt.com,tebernuskirecci.com.tr##.share-tags
 10web.io##.blog_share_bottom
