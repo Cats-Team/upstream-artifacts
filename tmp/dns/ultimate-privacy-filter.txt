@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512100600
+! Version: 202512101400
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 10 Dec 2025 06:00 UTC
+! Last modified: 10 Dec 2025 14:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -49743,6 +49743,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||fls-na.amazon.com^
+||tag.poomang.com^
 ||counter.tldw.me^
 ||analytics.blender.org^
 ||d.nordprotect.com^
@@ -69795,7 +69797,7 @@ _tracking.php?b=
 $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 ||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=~olx.*|~banki.ru|~bigc.co.th|~sonos.com|~hepsiburada.com
 ||google-analytics.com/ga.js$script,redirect=google-analytics-ga,domain=~daj.jp
-||googletagmanager.com/gtm.js$third-party,script,redirect=google-analytics,domain=~corsair.com|~olx.*|~simon.com|~bethesda.net|~paddle.com
+||googletagmanager.com/gtm.js$third-party,script,redirect=google-analytics,domain=~corsair.com|~olx.*|~simon.com|~bethesda.net|~paddle.com|~linodellefateresort.com
 ||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk.com|~heycar.co.uk|~gizmodo.jp
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,important,domain=turbo.pt
@@ -69811,6 +69813,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||a0.awsstatic.com/eb-csr/*/orchestrate.js
+||a0.awsstatic.com/libra/*/vendor/require-marketo-munchkin.js
+||a0.awsstatic.com/libra/*/vendor/web-vitals.attribution.iife.js
 nikkei.com###pianoRecommendBottom
 itmedia.co.jp##.is-recommend:empty
 itmedia.co.jp#?#.format--subheading:has(+ .is-recommend:empty)
@@ -75656,6 +75661,10 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||amazon.com^$cookie=aws-target-data
+||amazon.com^$cookie=aws-target-session-id
+||amazon.com^$cookie=aws-target-visitor-id
+||amazon.com^$cookie=aws-vid
 ||yellowpages.com^$cookie=vrid
 ||spooncast.net^$cookie=/^_hackle_/
 ||emart.ssg.com^$cookie=PCID
@@ -79096,7 +79105,6 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 @@||google-analytics.com^$domain=daemon-tools.cc
 @@||omtrdc.net^$domain=abbyy.ru
 @@||omtrdc.net^*/mbox/standard?$script,domain=ancestry.com|ancestry.com.au|blogtalkradio.com
-@@||omtrdc.net^$domain=amazon.co.uk|amazon.com|amazon.de
 @@||svtrd.com^$domain=moneyou.de|ns.nl
 @@||mxpnl.com^$domain=dailysteals.com
 @@.2o7.net/$domain=today.com
