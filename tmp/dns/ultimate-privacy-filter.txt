@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512091800
+! Version: 202512100600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 09 Dec 2025 18:00 UTC
+! Last modified: 10 Dec 2025 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -69136,6 +69136,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/web-vitals-tracker.js
 /.rum/@adobe/helix-
 ://sp.*/sp/h|$xmlhttprequest
 /srpc.js?ssss
