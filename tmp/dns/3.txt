@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: PVJa8UFQtvGXlnPVJdwdug
-! Diff-Path: ../patches/3/3-s-1765451403-3600.patch
+! Checksum: IODu76AcMZBTQK+Gcp/EFg
+! Diff-Path: ../patches/3/3-s-1765469663-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.96.42
-! TimeUpdated: 2025-12-11T11:07:13+00:00
+! Version: 2.0.96.47
+! TimeUpdated: 2025-12-11T16:10:40+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -54,9 +54,6 @@ coupang.com#%#//scriptlet('json-prune-xhr-response', 'tracking', 'feeds', 'n-api
 ! For some reason filters compiler converts it to '""'
 ! https://github.com/AdguardTeam/FiltersRegistry/commit/8324eca5002de69940c919e52f2c8b275f206f77#diff-320cdcaedbead8abe58ffbad0a822baa2b4d5942481e5456da88f5dfaf98cb4cR35-R36
 aceee.org#%#//scriptlet('prevent-canvas', '2d')
-! https://github.com/AdguardTeam/AdguardFilters/issues/212788
-delta.com#%#//scriptlet('set-constant', 'TrackJS', 'emptyObj')
-delta.com#%#//scriptlet('set-constant', 'TrackJS.install', 'noopFunc')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/207145
 hoy.tv#%#(()=>{const i=function(){};window.__uid2=window.__uid2||{},window.__uid2.init=i,window.__uid2.setIdentityFromEmail=i,window.__uid2.callbacks=window.__uid2.callbacks||[],window.__uid2.callbacks.push=function(i){"function"==typeof i&&i("InitCompleted",{identity:null})}})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/205925
@@ -70748,7 +70745,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
-||viewer-api.kankokeizai.com/epaper/Baitai.json
+||temu.com/*/conversion/*beacon$ping
+||t.me/v/?views=
 ||cdn.melhorplano.net/scripts/tracker/
 ||zdnet.co.kr/js/wl6.js
 ||a0.awsstatic.com/eb-csr/*/orchestrate.js
@@ -78563,6 +78561,7 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||events-api.lyrebirdstudio.net^
 ||log.pdfbookeditor.live^
 ||mob2.cactus-bp.com^
 ||log.cleansweepplu.com^

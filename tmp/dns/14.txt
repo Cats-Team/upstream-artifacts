@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: rMnvbjFz6F4YrNZaObLPZQ
-! Diff-Path: ../patches/14/14-s-1765451401-3600.patch
+! Checksum: zmlInmWsP6VgVj4tVnZX7g
+! Diff-Path: ../patches/14/14-s-1765469660-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.51.97
-! TimeUpdated: 2025-12-11T11:07:31+00:00
+! Version: 2.2.52.1
+! TimeUpdated: 2025-12-11T16:11:08+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2555,6 +2555,7 @@ raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-helden.de,naheland-apothe
 !
 ! NOTE: Regular rules
 !
+cdek.ru##.right-4.fixed
 uoa.gr##div[aria-label="cookieconsent-dialog"]
 pergamos.lib.uoa.gr##.slide-up
 etwinning.indire.it###bannerContent
@@ -5630,7 +5631,6 @@ midea.com,sony.ua###__tealiumDNS_banner
 hocomo.pl#%#//scriptlet('trusted-set-cookie', 'cookie-consent', '%7B%22marketing%22%3Afalse%2C%22advertisement%22%3Afalse%7D')
 cam4.com##div[data-name="CookieConsent"]
 benzinpreis.de##div[id^="cmp"]
-024.by##.lwpcngNotice
 icegames.store##.acceptanceAgreement
 r7.com##footer + .-base-bottom-full:has(> .base-flex-col > p > a:is([href="https://www.r7.com/termos-e-condicoes"], [href$="/termos/privacidade"]))
 deutschesarztportal.de###staticBackdropCookieError
@@ -6233,7 +6233,7 @@ auo.com##.gdpr-mask
 wink.ru#?#header ~ footer + div[class]:has(> div[data-test="cookie"])
 fotomega.pl,octagonshop.pl,angela.pl,berdsen.pl,hard-pc.pl###kqs-box-tlo
 fotomega.pl,octagonshop.pl,angela.pl,berdsen.pl,hard-pc.pl###kqs-tlo
-jgl.eu###ng-cc
+jgl.hr,jgl.eu###ng-cc
 samolet.ru##div[data-selector="cookie"]
 sinerji.gen.tr###CookieConcent
 fi.google.com##fi-cookie-consent
@@ -14927,7 +14927,7 @@ vorname.com##.layer.banner.slidein-up
 outdoorchannel.com,thesportsmanchannel.com##.lity[role="dialog"]
 auchan.fr##.loi_hamon.open
 ivi.tv,ivi.ru##.lowest-teaser
-xn--90aqok.xn--p1ai,linux-gaming.ru,walletsrates.com,zatuschok.com,cpd.by,ustaliy.ru,aurora.ua,androidsfaq.com,prizyvanet.ru,rucore.net,vesti.uz,nalivay-ka.ru,perstni.com##.lwpcngNotice
+x-livecams.com,024.by,xn--90aqok.xn--p1ai,linux-gaming.ru,walletsrates.com,zatuschok.com,cpd.by,ustaliy.ru,aurora.ua,androidsfaq.com,prizyvanet.ru,rucore.net,vesti.uz,nalivay-ka.ru,perstni.com##.lwpcngNotice
 kaufland.de,kaufland.pl##.m-cookie-notification
 insideevs.uol.com.br,motor1.uol.com.br,motor1.com##.m1-footer-messages
 polityka.pl##.md-cookie-warning
@@ -25892,6 +25892,8 @@ inews.co.uk,pinterest.com#%#//scriptlet('set-constant', 'google.accounts.id.prom
 !
 ! SECTION: Popups - Regular rules
 !
+estadao.com.br##.active-miniplayer
+||api.mindbox.ru/scripts/*/tracker.js$domain=cdek.ru
 cian.ru#%#//scriptlet('set-cookie', 'frontend-offer-card.newbuilding_broker_onboarding_shown', '1')
 alfastrah.ru##.SmartCaptcha-Shield
 abema.tv#%#//scriptlet('trusted-click-element', '.com-onboarding-OnboardingWelcomeModal__button-wrapper > button.com-a-Button--dark')
@@ -34794,6 +34796,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+barchart.com##div[class^="reveal-modal"]
 hltv.org##.hubspot-embed
 usconcealedcarry.com##body > delta-modals
 zaranikas.gr##.bottom-slider-section
@@ -50978,6 +50981,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+kankokeizai.com##.section-banner
 bijutsutecho.com#%#(()=>{let t,e=!0;document.addEventListener("click",(i=>{if(i.target.matches("button.button-login"))return e=!1,void(t&&(t.style.visibility="visible"));i.target.matches("button.close")&&document.querySelector("dialog.PartLoginModal").contains(i.target)&&(e=!0)}),!0),document.addEventListener("toggle",(i=>{i.target.matches("dialog.PartLoginModal")&&"open"===i.newState&&e&&(t=i.target,t.style.visibility="hidden",t.querySelector("button.close").click())}),!0)})();
 newt.net##body > div[class$="__banner"]
 newt.net##body > div[class$="__bannerContainer"]
