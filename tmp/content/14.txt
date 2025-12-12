@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: Pv2Uex/I0HYOqwlguQP7tg
-! Diff-Path: ../patches/14/14-s-1765483909-3600.patch
+! Checksum: 5Nlw0CcR1nOvxbe66VLQPg
+! Diff-Path: ../patches/14/14-s-1765510693-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.52.3
-! TimeUpdated: 2025-12-11T20:08:43+00:00
+! Version: 2.2.52.5
+! TimeUpdated: 2025-12-12T03:35:00+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2555,6 +2555,10 @@ raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-helden.de,naheland-apothe
 !
 ! NOTE: Regular rules
 !
+auth.discoveryplus.com#$##layer-root-modal:has(> .dialog-transition-enter-done > div[data-testid="Legal_Terms_and_Privacy_dialog"]) { display: none !important; }
+auth.discoveryplus.com#$#body.noscroll { overflow: auto !important; }
+born2be.*#$##consent-modal { display: none !important; }
+born2be.*#$#.modal-open { overflow: auto !important; }
 bahnbilder.de###cookieaccepter
 cdek.ru##.right-4.fixed
 uoa.gr##div[aria-label="cookieconsent-dialog"]
@@ -13725,7 +13729,7 @@ frankfurt-airport.com##.fra_cookie_policy
 sw-delitzsch.de###ifab-cookie-banner
 ao.de##.gdprCookieWrapper
 iamroadsmart.com,rgfstaffing.com,spie.de##body #tracking-consent-dialog
-tunemymusic.com,4kdownload.com,a101.ru,dappcdn.com,yf.com.tr,scworld.com,tickmill.com,msspalert.com,xn--80aaig9ahr.xn--c1avg,easyprint.com,kupujemprodajem.com,scmagazine.com,certik.com,bungie.net,footshop.ua,zalando-lounge.be,zalando-lounge.de##div[class^="CookieConsent_"]
+julia.comune.roma.it,tunemymusic.com,4kdownload.com,a101.ru,dappcdn.com,yf.com.tr,scworld.com,tickmill.com,msspalert.com,xn--80aaig9ahr.xn--c1avg,easyprint.com,kupujemprodajem.com,scmagazine.com,certik.com,bungie.net,footshop.ua,zalando-lounge.be,zalando-lounge.de##div[class^="CookieConsent_"]
 jobboerse.arbeitsagentur.de###datenschutzcontainer
 medimax.de#$#body { overflow: visible !important; }
 medimax.de#$#.cookies-overlay-widget { display: none !important; }
@@ -18039,6 +18043,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/219876
+@@||cdn.cookielaw.org/consent/*.json$domain=20min.ch
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219752
 ecologie.gouv.fr#@#.fr-consent-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219680
@@ -34797,6 +34803,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+4dayweek.io##.modal.exit-popup
 lapresse.ca##.contentCardWithNewsletterFallback
 barchart.com##div[class^="reveal-modal"]
 hltv.org##.hubspot-embed
@@ -42103,7 +42110,7 @@ m9.news,propublica.org,well.pl,tpizza.pl,canalrural.com.br,developer.mozilla.org
 xataka.com#?#.aside-box:has(> form.newsletter-form)
 moneylo.fr#?#main > section:has(> div[class^="Section__Content-"] > div[class^="Subscribe__FormContainer-"])
 judgehype.com,abril.com.br,conjur.com.br,60millions-mag.com,imore.com,computerhoy.com,windowscentral.com,androidcentral.com##.block-newsletter
-pharma.by,lisa.ru,budzma.org##.subscriber
+4dayweek.io,pharma.by,lisa.ru,budzma.org##.subscriber
 chefkoch.de#?#.ds-container > aside.ds-box:has(> h2.hp-headline:contains(Newsletter))
 newsherald.com#?#div[class] > form[class]:has(> input[name="email"])
 newsthump.com,westernstandardonline.com##.widget_mailchimpsf_widget
@@ -50983,6 +50990,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+fitbook.de##a[rel="sponsored nofollow noreferrer noopener"]
 kankokeizai.com##.section-banner
 bijutsutecho.com#%#(()=>{let t,e=!0;document.addEventListener("click",(i=>{if(i.target.matches("button.button-login"))return e=!1,void(t&&(t.style.visibility="visible"));i.target.matches("button.close")&&document.querySelector("dialog.PartLoginModal").contains(i.target)&&(e=!0)}),!0),document.addEventListener("toggle",(i=>{i.target.matches("dialog.PartLoginModal")&&"open"===i.newState&&e&&(t=i.target,t.style.visibility="hidden",t.querySelector("button.close").click())}),!0)})();
 newt.net##body > div[class$="__banner"]
@@ -51544,8 +51552,10 @@ bristol.ru##.corporative-banner
 koreatimes.co.kr##div[class^="MyTimesBanner_wrap"]
 koreatimes.co.kr##section[class^="MyTimes_my-times"]
 koreatimes.co.kr##div[class^="BannerArea"]
-flaticon.com###banner-craft
-flaticon.com##.detail__download-confirmation
+flaticon.com#$##banner-craft { display: none !important; }
+flaticon.com#$#.detail__download-confirmation { display: none !important; }
+flaticon.com#$#body.overflow-hidden { overflow: auto !important; }
+flaticon.com#$#body.overflow-hidden #viewport { filter: none !important; -webkit-filter: none !important; }
 123pan.com#%#//scriptlet('remove-attr', 'style', '.appdiv > div.webbody[style^="background-image:"]')
 123pan.com#%#//scriptlet('remove-class', 'svip-body', '.appdiv > div.webbody')
 123pan.com##.cent-not-login > div

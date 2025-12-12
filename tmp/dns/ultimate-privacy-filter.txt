@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512111700
+! Version: 202512120600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 11 Dec 2025 17:00 UTC
+! Last modified: 12 Dec 2025 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||decentriq.com^$third-party
+||oneid.live^
 ||aim.loc.kr^
 ||sp.pcid.ca^
 ||tracker.zmaticoo.com^
@@ -69814,6 +69816,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||api.20min.ch/kaia/v*/persist
 ||temu.com/*/conversion/*beacon$ping
 ||t.me/v/?views=
 ||cdn.melhorplano.net/scripts/tracker/
@@ -70060,7 +70063,6 @@ bunshun.jp#?#.recommend-articles:has(> div[class^="taboola"])
 ||static.comdirect.de/*Logger.js
 ||cognito-identity.*.amazonaws.com^$domain=qr.finedinemenu.com
 ||api.lessentiel.lu/kaia/v*/persist
-||ats.20min.ch/__global/att/prod/latest/ats-tm.js
 ||school.novakidschool.com/api/*/metrics
 ||dbrand.com/cvg/log?
 ||dbrand.com/cvg/track?
@@ -79912,6 +79914,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||comfortablecheese.com^
 ||commonalmanac.com^
 ||comparereaction.com^
+||compilework.com^
 ||complexpixel.com^
 ||concretetom.com^
 ||condemnedcomb.com^
@@ -80040,6 +80043,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||detourgame.com^
 ||devilishdinner.com^
 ||dewdroplagoon.com^
+||dicecandies.com^
 ||dicemoments.com^
 ||difficultfog.com^
 ||digestiondrawer.com^
@@ -81781,6 +81785,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+20min.ch#%#//scriptlet('set-local-storage-item', 'clientId', '$remove$')
 kf.qq.com#%#//scriptlet('set-constant', 'Aegis', 'noopFunc')
 food4less.com#%#//scriptlet('set-local-storage-item', 'analytics-device', '$remove$')
 ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com#%#//scriptlet('set-local-storage-item', 'analytics-device', '$remove$')
