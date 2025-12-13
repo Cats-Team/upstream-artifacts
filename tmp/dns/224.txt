@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/224.txt
-! Checksum: MN5vRH5RCLqL2bf9YHHZ7w
-! Diff-Path: ../patches/224/224-s-1765593688-3600.patch
+! Checksum: W+6wB2aTnWTeHv8MG4vKPQ
+! Diff-Path: ../patches/224/224-s-1765635016-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.49.70
-! TimeUpdated: 2025-12-13T02:38:41+00:00
+! Version: 2.1.49.74
+! TimeUpdated: 2025-12-13T14:07:26+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5213,6 +5213,10 @@ newduba.cn###jq_youxi
 ||insurance55.top^
 ||yarcokme.com^
 ||fsmnmorgb.com^
+||9soefyenw.com^
+||tkll12131nb.com^
+||ephothuwi.com^
+||bnqektutom.com^
 ||3nopvvhju5.com^
 ||veuf2obzc8.com^
 ||travel44.top^
@@ -13768,6 +13772,7 @@ meijutt.*/js/pcjs/
 ||ping0.cc/static/images/ad/
 ||workers.dev^$domain=axiang.cc
 zhihu.com##.Pc-word-new
+youku.com##div[class*="adDrawer"]
 6park.com##td[style="line-height:30px;text-align:center;color:red;background-color:white;"]
 6park.com##.main_news_list > a[href^="http"]:not([href*="6park.com"])
 hkcards.com#?#div[style*="min-height"]:has(.my-1)
