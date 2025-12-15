@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 2SCyzS04Tnm3zrn0EQsDSQ
-! Diff-Path: ../patches/4/4-s-1765739419-3600.patch
+! Checksum: Se1LW8iXhc4xEVFcveEQkA
+! Diff-Path: ../patches/4/4-s-1765790142-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.22.91
-! TimeUpdated: 2025-12-14T19:06:11+00:00
+! Version: 2.1.22.94
+! TimeUpdated: 2025-12-15T09:12:15+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,8 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+goodnovel.com##.sc_share
+zexy.net##.shareOn
 mr-7.ru###article-body div:not([class]) > div[class]:has(span[class] > img[alt="share"])
 yazargazetesi.com##.enews-entry-share
 anamall.ana.co.jp##.block-goods-share-btn
@@ -3280,7 +3282,7 @@ ak.sv##.sub_socialMedia
 cgmagonline.com##i[id$="-share"]
 doradvokat.com.ua###jp-relatedposts + h3
 ||39.benesse.ne.jp/blog/image/housekeep/blog/social/
-flb.ru,srsly.ru,support.mozilla.org,oita-press.co.jp,uteka.ru##.share-link
+sexadultcomics.com,flb.ru,srsly.ru,support.mozilla.org,oita-press.co.jp,uteka.ru##.share-link
 haber24.com##.social-buttons > .dropdown
 haber24.com##.social-buttons > a[onclick*="share"]
 ensonhaber.com##.social > ul > li.comment-shortcut + li
@@ -6208,7 +6210,7 @@ girlstyle.com,thecatcity.com,urbanlifehk.com##.desktop-sidebar__block--fb
 dlsite.com##.link_share
 mixdrop.*##.s-wrapper
 asahi.com##.following-sns
-tass.ru,shot-news.ru,klerk.ru,wink.ru##button[aria-label="Поделиться"]
+2gis.ru,tass.ru,shot-news.ru,klerk.ru,wink.ru##button[aria-label="Поделиться"]
 livejapan.com##.--color-sociel
 cosmo.ru##.test-result__share
 internet-technologies.ru##.field-id-share
@@ -9991,7 +9993,7 @@ coop-land.ru##.share-info
 lostfilm.info##.news-container > div.left+div.right
 dogrulukpayi.com##.social.share.column
 volkskrant.nl##.article-footer__sharing
-morinaga.co.jp##.social-network
+archi.ru,morinaga.co.jp##.social-network
 m.bursadabugun.com##.newsShareIcons
 publickey1.jp,teltarif.de##.sbm
 ngnovoros.ru##div[data-tip="Репост в соцсети"]
@@ -11142,7 +11144,7 @@ welt.de##.c-article-sharer__social-container > .c-article-sharer__icon-wrapper:n
 mobil.stern.de##.social-icon-table > .social-icon:not(.social-icon-email)
 ekabu.ru,66.ru##.t-social-buttons
 gamebusiness.jp,gramota.ru,rusvesna.su,stavka.tv,thefreedictionary.com##body .share-block
-baseballking.jp,used.sofmap.com,pocketgamer.biz,wanhaber.com,habervakti.com,waseda.jp,fanatik.com.tr,maeda-design-room.net,ukrhealth.net,cecile.co.jp,dhits.docomo.ne.jp,ryutsuu.biz,megabayt.com,sosyaltv.com.tr,gazeteyaziyor.com.tr,itojisan.xyz,foreignlang.ecc.co.jp,nsp.ru,nissin.com,zhidao.baidu.com,gratis.com##body .share-area
+goodnovel.com,baseballking.jp,used.sofmap.com,pocketgamer.biz,wanhaber.com,habervakti.com,waseda.jp,fanatik.com.tr,maeda-design-room.net,ukrhealth.net,cecile.co.jp,dhits.docomo.ne.jp,ryutsuu.biz,megabayt.com,sosyaltv.com.tr,gazeteyaziyor.com.tr,itojisan.xyz,foreignlang.ecc.co.jp,nsp.ru,nissin.com,zhidao.baidu.com,gratis.com##body .share-area
 azpolitika.info##.lrshare_interfacehorizontal > lr > lrc > [class]:not(.lrshare_email):not(.lrshare_print)
 cnet.com##.sharebarContainer > .share-button:not(.emailWrapper):not(.comment-count-redesign)
 deskmodder.de##.handschriftzeile > .arteilen_ > .arteilen
@@ -13558,7 +13560,7 @@ wwmt.com,wutv29.com,wtwc40.com,wset.com,wpgh53.com,wgme.com,wfgxtv.com,weartv.co
 ||espncdn.com/players/web-player-bundle/*/espn-web-player-bundle.css$replace=/(\.vjs-share-control.*\})/\$1.vjs-share-control{display:none!important;}/
 !
 ! Progorod
-gorodkirov.ru,navigator-kirov.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru##div[class^="article-social_"]
+pgn21.ru,orodkirov.ru,navigator-kirov.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru##div[class^="article-social_"]
 !
 ! cuty.io
 cuttlinks.com,cuttty.com,cuttyy.com,cutynow.com,exnion.com,cutyion.com,jixo.online,exe-urls.com,evernia.site,ijvam.com,mrgec.com,emxaw.com,cety.app,cutnet.net##.share-icons-container
