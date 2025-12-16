@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512152100
+! Version: 202512160500
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 15 Dec 2025 21:00 UTC
+! Last modified: 16 Dec 2025 05:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -66621,6 +66621,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||full-count.jp/ssc.min.js
+||d.line-scdn.net/n/line_tag/$domain=full-count.jp
 /_api/tag-manager/api/*/tags/sites/*$xmlhttprequest,domain=boraware.kr
 ||yastatic.net/partner-code-bundles/*.js$domain=russia-tv.online
 ||bookoff.co.jp/assets/js/ac/tag-analyze.js
@@ -77206,6 +77208,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||harborcub.com^
 ||harmonywing.com^
 ||hatefulrequest.com^
+||hayweb.net^
 ||hazmatworkshop.com^
 ||headydegree.com^
 ||headyhook.com^
@@ -77223,6 +77226,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||hfc195b.com^
 ||highfalutinbox.com^
 ||highfalutinhoney.com^
+||highnoongear.com^
 ||hikingbars.com^
 ||hilariouszinc.com^
 ||historicalbeam.com^
@@ -78621,6 +78625,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+arte.tv#%#//scriptlet('set-local-storage-item', '/^oidc\./', '$remove$')
 goodnovel.com#%#//scriptlet('set-local-storage-item', 'UUID', '$remove$')
 20min.ch#%#//scriptlet('set-local-storage-item', 'clientId', '$remove$')
 kf.qq.com#%#//scriptlet('set-constant', 'Aegis', 'noopFunc')
