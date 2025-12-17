@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512161600
+! Version: 202512170500
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 16 Dec 2025 16:00 UTC
+! Last modified: 17 Dec 2025 05:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -65946,6 +65946,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-
 /web-vitals-tracker.js
 /.rum/@adobe/helix-
 ://sp.*/sp/h|$xmlhttprequest
@@ -66622,6 +66623,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||contents.kyobobook.co.kr/resources/lib/kbb-js/kbb.stats.js
 ||full-count.jp/ssc.min.js
 ||d.line-scdn.net/n/line_tag/$domain=full-count.jp
 /_api/tag-manager/api/*/tags/sites/*$xmlhttprequest,domain=boraware.kr
@@ -69935,7 +69937,6 @@ semprotyuk.com##div[style^="margin-bottom:150px;"][style*="padding-right:2em;"]
 ||nature.com/platform/track/
 ||static.hankyung.com/js/ga/googleTagManager.js
 ||hankyung.com/resource/js/w/view.gtmet.js
-||discord.com/api/v*/science
 ||fensi.plus/*/tracking/
 ||tvid.in/log/
 ||intersc.igaming-service.io/hltv.org.js
@@ -76460,6 +76461,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||alikeaddition.com^
 ||aliveachiever.com^
 ||alloutdubstep.com^
+||allsunflowers.com^
 ||alltypo.com^
 ||alluringbucket.com^
 ||almondbuns.com^
@@ -76576,6 +76578,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||blissfullagoon.com^
 ||blitzcampaigns.com^
 ||blockdial.com^
+||bloomsend.com^
 ||blueeyedblow.com^
 ||bluenest.net^
 ||bluevinebooks.com^
@@ -78733,6 +78736,7 @@ techcrunch.com#%#//scriptlet('set-local-storage-item', 'criteo_fast_bid', '$remo
 2gis.*#%#//scriptlet('set-local-storage-item', '/_ym/', '$remove$')
 zoiper.com#%#//scriptlet('remove-class', 'track-click', 'a')
 joinrs.com#%#//scriptlet('set-local-storage-item', 'TRACKING_EVENTS', '$remove$')
+discord.com#%#//scriptlet('prevent-fetch', '/discord\.com\/api\/v[0-9]+\/science/')
 kt.com#%#//scriptlet('set-constant', 'KT_trackClicks', 'noopFunc')
 mediamarkt.de#%#//scriptlet('abort-on-property-write', 'ftr__startScriptLoad')
 dzen.ru#%#//scriptlet('json-prune', 'ssrData.exportResponse.feedData.adPixelsLink')
