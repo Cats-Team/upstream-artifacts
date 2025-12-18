@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: RF4f45Zn9oF9S+xJ3QvU6g
-! Diff-Path: ../patches/11/11-s-1766038471-3600.patch
+! Checksum: ZU3URQ1CtyalBzZ/kEH/HQ
+! Diff-Path: ../patches/11/11-s-1766070721-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.66.29
-! TimeUpdated: 2025-12-18T06:11:11+00:00
+! Version: 2.0.66.31
+! TimeUpdated: 2025-12-18T15:08:40+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -120,6 +120,7 @@
 ! For DNS filtering
 /^(a|c)\.[0-9a-f]{56}\.com$/
 !
+||sdkc.vervegroupinc.net^
 ||static.terratraf.com^
 ||cdn-rtb.sape.ru^
 ||aatkit.com^
@@ -2607,6 +2608,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+teluguone.com##.rgtLinks
 wareable.com##.block-mobile-ad
 news.denfaminicogamer.jp##aside[id^="heartopia_"]
 trilltrill.jp##.RecruitmentBox
