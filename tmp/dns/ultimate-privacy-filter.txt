@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512191200
+! Version: 202512191700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Dec 2025 12:00 UTC
+! Last modified: 19 Dec 2025 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||collector-*.px-cloud.net^
+||collector-*.pxchk.net^
 ||adfenix.com^$third-party
 ||boldmetrics.io^
 ||cdn.trakkr.ai^
@@ -528,7 +530,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||fndrsp.net^
 ||positional.ai^
 ||positional-bucket.com^
-||collector-pxebumdlwe.px-cloud.net^
 ||collector-pxebumdlwe.px-cdn.net^
 ||s2s.adjust.com^
 ||view.adjust.com^
@@ -46348,6 +46349,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||stats.urban-vpn.com^
+||analytics.urban-vpn.com^
+||analytics.heistotron.uk^
+||metrics-config.icloud.com^
+||fingerprint.incodesmile.com^
 ||fluffy-analytics.vercel.app^
 ||stats.renet.io^
 ||metrics-ingress-web.svc.vinted.com^
@@ -46503,7 +46509,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||analytics.shutterstock.com^
 ||plw6buurmlxhrlkm6wy3uk7cia0mprkq.lambda-url.ap-south-1.on.aws^
 ||collector-pxdojv695v.protechts.net^
-||collector-pxdojv695v.px-cloud.net^
 ||collector1.sooplive.co.kr^
 ||exlogcollector.sooplive.co.kr^
 ||snowflake.qq.com^
@@ -73186,6 +73191,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||onegg.site^
+||log.smartclearpro.com^
+||analytics.artworkout.net^
+||event.mwm-bs.com^
 ||events.backtrace.io^
 ||kbox-analytics-prod.s*.amazonaws.com^
 ||logs.classdojo.com^
