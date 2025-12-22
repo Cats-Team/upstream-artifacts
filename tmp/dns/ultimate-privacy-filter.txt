@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512211800
+! Version: 202512220500
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 21 Dec 2025 18:00 UTC
+! Last modified: 22 Dec 2025 05:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||rapid-cdn.yottaa.com^$third-party
+||rum-ingress-coralogix.com^
 ||elitebidder.com^
 ||adstk.io^
 ||collector-*.px-cloud.net^
@@ -66648,6 +66650,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||affirm.com/api/*/touch_track
 ||data.joongna.com/log/
 ||api.cmp.inmobi.com/?log=
 ||techlore.tech/public/ghost-stats.min.js
@@ -77129,6 +77132,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||flourishingendeavor.com^
 ||flourishinginnovation.com^
 ||flourishingpartnership.com^
+||flowersonthebay.com^
 ||flowersornament.com^
 ||flowerstreatment.com^
 ||flowerycreature.com^
@@ -77139,6 +77143,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||flutteringfireman.com^
 ||flystranger.com^
 ||foambench.com^
+||folderplan.com^
 ||followborder.com^
 ||fontserif.com^
 ||foodczar.com^
