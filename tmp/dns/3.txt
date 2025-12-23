@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: ACMWmkQqVVHjk5DmmfY0xA
-! Diff-Path: ../patches/3/3-s-1766423430-3600.patch
+! Checksum: MKVeyKjLsVsxps4W3dRjeQ
+! Diff-Path: ../patches/3/3-s-1766441471-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.97.10
-! TimeUpdated: 2025-12-22T17:07:20+00:00
+! Version: 2.0.97.14
+! TimeUpdated: 2025-12-22T22:07:35+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -47011,6 +47011,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||a.tampermonkey.net^
 ||event.kr.karrotmarket.com^
 ||log-bridge-mobile.kr.karrotmarket.com^
 ||android-tv-beacons.xumo.com^
@@ -72711,8 +72712,8 @@ t.gutefrage.net%2Fop%2F$image
 ae.mmstat.com/ae.edm.edm_open?$image
 ae.mmstat.com%2Fae.edm.edm_open%3F$image
 ! Eloqua
-/e3t/Cto/RK$image
-%2Fe3t%2FCto%2FRK$image
+/e3t/Cto/*$image
+%2Fe3t%2FCto%2F$image
 ! infomaniak.com
 click.official.infomaniak.com%2Fo%2F
 click.official.infomaniak.com/o/$image
@@ -75119,6 +75120,8 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||unisdk.proxima.nie.easebar.com^
+||ingest.m2catalyst.com^
 ||tnc-v2-boot.capcutapi.com^
 ||onegg.site^
 ||log.smartclearpro.com^
@@ -80935,6 +80938,8 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||forevergears.com^
 ||forgetfulsnail.com^
 ||fortunatemark.com^
+||forwardslashetc.com^
+||fossilzero.com^
 ||fourpawsahead.com^
 ||foxtrotdata.com^
 ||frailfruit.com^

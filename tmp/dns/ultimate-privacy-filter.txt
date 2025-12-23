@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512221800
+! Version: 202512222300
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 22 Dec 2025 18:00 UTC
+! Last modified: 22 Dec 2025 23:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46234,6 +46234,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||a.tampermonkey.net^
 ||event.kr.karrotmarket.com^
 ||log-bridge-mobile.kr.karrotmarket.com^
 ||android-tv-beacons.xumo.com^
@@ -71491,8 +71492,8 @@ t.gutefrage.net/op/$image
 t.gutefrage.net%2Fop%2F$image
 ae.mmstat.com/ae.edm.edm_open?$image
 ae.mmstat.com%2Fae.edm.edm_open%3F$image
-/e3t/Cto/RK$image
-%2Fe3t%2FCto%2FRK$image
+/e3t/Cto/*$image
+%2Fe3t%2FCto%2F$image
 click.official.infomaniak.com%2Fo%2F
 click.official.infomaniak.com/o/$image
 .everestengagement.com/ea/$image
@@ -72873,6 +72874,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||unisdk.proxima.nie.easebar.com^
+||ingest.m2catalyst.com^
 ||tnc-v2-boot.capcutapi.com^
 ||onegg.site^
 ||log.smartclearpro.com^
@@ -76820,6 +76823,8 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||forevergears.com^
 ||forgetfulsnail.com^
 ||fortunatemark.com^
+||forwardslashetc.com^
+||fossilzero.com^
 ||fourpawsahead.com^
 ||foxtrotdata.com^
 ||frailfruit.com^
