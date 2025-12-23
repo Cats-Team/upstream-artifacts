@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: YnCfO+M18g585pO0N0C1PA
-! Diff-Path: ../patches/4/4-s-1766488253-3600.patch
+! Checksum: SXgg4uBPe/h0i7hMoJ4kDg
+! Diff-Path: ../patches/4/4-s-1766502697-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.23.23
-! TimeUpdated: 2025-12-23T11:07:11+00:00
+! Version: 2.1.23.26
+! TimeUpdated: 2025-12-23T15:07:57+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,9 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+bookvoed.ru##.product__info-share
+chitai-gorod.ru##.app-share-social
+gameshub.com##.sticky-feature__button:has(> div#share-button)
 olx.com.br##button[aria-label^="Compartilhar"]
 docsquiffy.com##.penci-social-counter
 newsdigitales.com##.col-12 > div.row:has(> div.tac > div.sharethis-inline-share-buttons)
@@ -5360,7 +5363,7 @@ gameranbu.jp##.m-head-sns
 hotokami.jp##.spots__share
 hotokami.jp##.article-sns-box__wrapper
 kunststoffweb.de##article .socialmedia-list
-elaoffcial.com,rockmods.net##.feed-share
+gsmgotech.com,elaoffcial.com,rockmods.net##.feed-share
 ukcolumn.org###block-socialshareblock
 wccftech.com##.story-share-sm
 euronews.com##.c-social--share
