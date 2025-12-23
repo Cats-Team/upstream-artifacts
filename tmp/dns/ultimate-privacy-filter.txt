@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512222300
+! Version: 202512231200
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 22 Dec 2025 23:00 UTC
+! Last modified: 23 Dec 2025 12:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||moengage.com^$third-party
 ||rapid-cdn.yottaa.com^$third-party
 ||rum-ingress-coralogix.com^
 ||elitebidder.com^
@@ -71326,7 +71327,7 @@ link.gmapp*.net$image
 /a360/public/statistic/*$image
 %2Fa360%2Fpublic%2Fstatistic%2F$image
 %2Ft%*%2Fa^$image
-/t/*/a^$image
+/t/*/a^$image,domain=~permies.com
 /pix.gif?$image
 %2Fpix.gif%3F$image
 /oo/*/e.gif$image
@@ -72384,6 +72385,9 @@ $cookie=DEVICEFP_SEED_TIME,domain=mihoyo.com|hoyoverse.com
 $cookie=_HFID,domain=womenshealthmag.com|bicycling.com|bestproducts.com|caranddriver.com|cosmopolitan.com|countryliving.com|delish.com|elledecor.com|elle.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|oprahdaily.com|prevention.com|redbookmag.com|roadandtrack.com|runnersworld.com|seventeen.com|townandcountrymag.com|veranda.com|womansday.com|autoweek.com|thepioneerwoman.com|popularmechanics.com
 $cookie=_perhip,domain=womenshealthmag.com|bicycling.com|bestproducts.com|caranddriver.com|cosmopolitan.com|countryliving.com|delish.com|elledecor.com|elle.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|oprahdaily.com|prevention.com|redbookmag.com|roadandtrack.com|runnersworld.com|seventeen.com|townandcountrymag.com|veranda.com|womansday.com|autoweek.com|thepioneerwoman.com|popularmechanics.com
 $cookie=mosb,domain=womenshealthmag.com|bicycling.com|bestproducts.com|caranddriver.com|cosmopolitan.com|countryliving.com|delish.com|elledecor.com|elle.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|oprahdaily.com|prevention.com|redbookmag.com|roadandtrack.com|runnersworld.com|seventeen.com|townandcountrymag.com|veranda.com|womansday.com|autoweek.com|thepioneerwoman.com|popularmechanics.com
+||businessinsider.com^$cookie=universal_id
+||businessinsider.com^$cookie=anonymous_id
+||businessinsider.com^$cookie=fenrir_anonymous_id
 ||businessinsider.jp^$cookie=mgppid
 ||businessinsider.jp^$cookie=ppid
 ||roblox.com^$cookie=RBXSessionTracker
@@ -72874,6 +72878,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||collector-*.perimeterx.net^
 ||unisdk.proxima.nie.easebar.com^
 ||ingest.m2catalyst.com^
 ||tnc-v2-boot.capcutapi.com^
@@ -73927,6 +73932,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||collector-*.px-cloud.net^$xmlhttprequest,domain=ifood.com.br
 @@||static.vocstatic.com/voonto2/latest/voonto.js$script,domain=lagacetadesalamanca.es
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=heise.de
 @@||cdn.shopify.com/oxygen-v2/*/assets/Clarity-$domain=thegoodguys.com.au
@@ -78379,6 +78385,9 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+businessinsider.com#%#//scriptlet('set-local-storage-item', 'fenrir_anonymous_id', '$remove$')
+businessinsider.com#%#//scriptlet('set-local-storage-item', 'anonymous_id', '$remove$')
+businessinsider.com#%#//scriptlet('set-local-storage-item', 'universal_id', '$remove$')
 arte.tv#%#//scriptlet('set-local-storage-item', '/^oidc\./', '$remove$')
 goodnovel.com#%#//scriptlet('set-local-storage-item', 'UUID', '$remove$')
 20min.ch#%#//scriptlet('set-local-storage-item', 'clientId', '$remove$')
