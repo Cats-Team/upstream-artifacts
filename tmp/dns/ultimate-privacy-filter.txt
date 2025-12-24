@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512241200
+! Version: 202512241800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 24 Dec 2025 12:00 UTC
+! Last modified: 24 Dec 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46242,6 +46242,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||raw.vidyard.com^
+||pushd-android-logs.s3.amazonaws.com^
+||unif-id.ssp.inmobi.com^
+||telemetry.sdk.inmobi.com^
+||external-api.impression-neo.naver.com^
 ||uxlog-api.danawa.com^
 ||matomo-prod.cgorod.pw^
 ||a.tampermonkey.net^
@@ -66326,6 +66331,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||lemrock.com/v1/publishers/tracking/
+||play.vidyard.com/api/metrics
 ||reports.adguard.com/-/metrics/
 ||tvchosun.com/dhitlog/
 ||skat.com.ua/api/collect
@@ -67237,6 +67244,8 @@ elperiodico.com##._mo_recs_tpi
 ||assets.aliexpress-media.com/g/AWSC/WebUMID/*/um.js
 ||assets.aliexpress-media.com/g/ae-fe/cosmos/*/pc/nano-ppc-media-tracking-YnuuQ.js
 ||assets.aliexpress-media.com/g/??alilog/aplus_plugin_aefront/index.js,alilog/mlog/aplus_int.js
+||assets.aliexpress-media.com/g/lzd_sec/epssw/*/epssw.js
+||assets.aliexpress-media.com/g/AWSC/uab/*/collina.js
 ||assets.alicdn.com/g/lzd_sec/epssw/*/epssw.js
 ||assets.alicdn.com/g/alilog/
 ||app.tag-plus.com/ja/api/v1/unison_planet/heat_map
@@ -71378,6 +71387,8 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+mail01.monex.co.jp/bin/checker?$image
+mail01.monex.co.jp%2Fbin%2Fchecker%3F$image
 deepl.qualtrics.com/subscription/watermark.gif?
 deepl.qualtrics.com%2Fsubscription%2Fwatermark.gif%3F
 onelink.soundcloud.com/v1/emailopen$image
@@ -72891,6 +72902,12 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||vsn-analytics.aparentmedia.com^
+||track-*.hungrypanda.co^
+||trace-*.hungrypanda.co^
+||ihmonitor.luckincoffee.us^
+||use-trk.monetune.com^
+||telemetry.sdk.inmobi.com^
 ||collector-*.perimeterx.net^
 ||unisdk.proxima.nie.easebar.com^
 ||ingest.m2catalyst.com^
