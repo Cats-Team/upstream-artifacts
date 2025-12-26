@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: ExCmL5DcKhIXccerrHj15A
-! Diff-Path: ../patches/14/14-s-1766686382-3600.patch
+! Checksum: sQ35AMZyP6LD2vRhFPBSVw
+! Diff-Path: ../patches/14/14-s-1766747467-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.53.57
-! TimeUpdated: 2025-12-25T18:09:56+00:00
+! Version: 2.2.53.60
+! TimeUpdated: 2025-12-26T11:07:40+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2558,6 +2558,7 @@ raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-helden.de,naheland-apothe
 !
 ! NOTE: Regular rules
 !
+stepik.org###ember705
 britishairways.com###cookieToast
 ||code.etracker.com/*/consent-banners/
 cloud.ru##div[class^="styles_cookie_policy"]
@@ -47114,7 +47115,7 @@ m.imgur.com##.PostContainer-postGetApp
 sport-express.ru##.addmenu li.advertwww
 webtekno.com##.android-dropdown.dropdown-container
 mcdart.de##.app-download-wrap
-russian.rt.com##.app-panel
+apkvision.org,russian.rt.com##.app-panel
 mywot.com##.app-stripe
 goobike.com,boylove.cc,music.line.me,miui.com##.app_download
 oilprice.com,m.qidian.com##.app_download_ad
@@ -51884,7 +51885,7 @@ crxsoso.com##.right > div.hover-animate
 mir24.tv##div[class^="SidebarWidgets_"] > div[class^="Banner_"]:has(> a[href="/about/advertising"])
 ||mirtvpc.cdnvideo.ru/mirtv/%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0%20%20%20.mp4
 gaming.amazon.com##div[data-a-target="prime-main"] div[data-a-target="MarketingPromotionBannerSectionRoot"]
-leaddev.com,ilsole24ore.com###zephr-zone-footer
+bbcgoodfood.com,leaddev.com,ilsole24ore.com###zephr-zone-footer
 ||membernotifications.aol.com/offers/aolHomepage/stickyFooter
 brave.com###persistent-cta:has(> div > a.download[data-event-action="Persistent Download Button"])
 leakshaven.com##.container > div[style] > .w-full[style] > .text-card-foreground:has(> .p-6 > .flex > .flex > a[href="/plans"])
@@ -60848,6 +60849,7 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 !   Really annoying only
 !
 gazzettinodelchianti.it##.wpb_wrapper > div.vc_row_inner:has(> div.vc_column_inner form[action="https://www.paypal.com/cgi-bin/webscr"])
+recyclemap.ru##.donation-section
 recyclemap.ru##rc-donation-banner
 pypi.org,python.org###fundraiser-banner-host
 kyivindependent.com###article-banner-slot
