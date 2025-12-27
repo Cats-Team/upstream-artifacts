@@ -5843,8 +5843,8 @@ cloudvideotv.*##+js(aopr, localStorage)
 cloudvideo.tv##+js(aopr, mm)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4646
-bdsmporn.cc,cocoporn.net,dirtyporn.cc,faperplace.com,freeadultvideos.cc,freepornstream.cc,generalpornmovies.com,kinkyporn.cc,moviesxxx.cc,movstube.net,onlinefetishporn.cc,peetube.cc,pornonline.cc,porntube18.cc,streamextreme.cc,streamporn.cc,videoxxx.cc,watchporn.cc,x24.video,xxxonline.cc,xxxonlinefree.com,xxxopenload.com##+js(acs, decodeURI, decodeURIComponent)
-bdsmporn.cc,cocoporn.net,dirtyporn.cc,faperplace.com,freeadultvideos.cc,freepornstream.cc,generalpornmovies.com,kinkyporn.cc,moviesxxx.cc,movstube.net,onlinefetishporn.cc,peetube.cc,pornonline.cc,porntube18.cc,streamextreme.cc,streamporn.cc,videoxxx.cc,watchporn.cc,x24.video,xxx24.vip,xxxonline.cc,xxxonlinefree.com,xxxopenload.com##+js(aopr, exoJsPop101)
+bdsmporn.cc,cocoporn.net,dirtyporn.cc,faperplace.com,freeadultvideos.cc,freepornstream.cc,generalpornmovies.com,kinkyporn.cc,moviesxxx.cc,movstube.net,onlinefetishporn.cc,peetube.cc,pornonline.cc,porntube18.cc,streamextreme.cc,streamporn.cc,videoxxx.cc,watchporn.cc,x24.video,xxxonline.cc,xxxonlinefree.com##+js(acs, decodeURI, decodeURIComponent)
+bdsmporn.cc,cocoporn.net,dirtyporn.cc,faperplace.com,freeadultvideos.cc,freepornstream.cc,generalpornmovies.com,kinkyporn.cc,moviesxxx.cc,movstube.net,onlinefetishporn.cc,peetube.cc,pornonline.cc,porntube18.cc,streamextreme.cc,streamporn.cc,videoxxx.cc,watchporn.cc,x24.video,xxx24.vip,xxxonline.cc,xxxonlinefree.com##+js(aopr, exoJsPop101)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/agpu7r/
 startseite.to##+js(nowebrtc)
@@ -7073,11 +7073,6 @@ pastepvp.org##.content > center
 ! https://github.com/uBlockOrigin/uAssets/issues/5500
 @@||online-courses.club^$ghide
 
-! https://github.com/NanoMeow/QuickReports/issues/1130
-turbogvideos.com##+js(aopr, open)
-@@||turbogvideos.com^$ghide
-@@||syndication.exosrv.com/instream-tag.php$script,domain=turbogvideos.com
-
 ! https://github.com/NanoMeow/QuickReports/issues/1131
 megapornfreehd.com##+js(aopr, V4ss)
 
@@ -7246,13 +7241,6 @@ beautypageants.indiatimes.com##+js(aeld, scroll, _0x)
 ! https://github.com/NanoMeow/QuickReports/issues/1235
 @@||googletagmanager.com/gtm.js$script,domain=raiplayradio.it
 
-! https://github.com/AdguardTeam/AdguardFilters/issues/51758
-freebcc.org##+js(aopr, app_vars.force_disable_adblock)
-freebcc.org##+js(aopr, adBlockDetected)
-@@||freebcc.org^$ghide
-freebcc.org##.mb-0.mt-3.text-center.text-small
-freebcc.org###Layer_1
-
 ! https://forums.lanik.us/viewtopic.php?f=62&t=43033
 cda.pl##.pb-video-click
 cda.pl##.pb-ad-video-player
@@ -7347,14 +7335,6 @@ variety.com##+js(aopr, pmc_admanager.show_interrupt_ads)
 
 ! anti adb http://arembed .com/live.php?ch=Bein_Sports1
 @@||janjua.*^$ghide
-
-! https://github.com/uBlockOrigin/uAssets/issues/5651
-xopenload.me##+js(set, jsUnda, noopFunc)
-xopenload.me##+js(aopw, open)
-xopenload.me##+js(aopr, ExoLoader.serve)
-xopenload.me##.btn-lg.btn-block.btn
-*$script,3p,denyallow=bigwarp.io|bootstrapcdn.com|cloudflare.net|fontawesome.com|gstatic.com|jsdelivr.net|fastly.net,from=bgwp.cc
-*$script,3p,denyallow=c0.wp.com,domain=xopenload.me
 
 ! https://github.com/NanoAdblocker/NanoFilters/issues/338
 @@||jbzdy.com.pl^$ghide
