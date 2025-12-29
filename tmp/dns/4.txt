@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: aR7UIsUOuxyUHi83iOtT1g
-! Diff-Path: ../patches/4/4-s-1766779847-3600.patch
+! Checksum: UhV7H2hXDjnfScRHHeoDag
+! Diff-Path: ../patches/4/4-s-1766979732-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.23.41
-! TimeUpdated: 2025-12-26T20:07:29+00:00
+! Version: 2.1.23.43
+! TimeUpdated: 2025-12-29T03:38:27+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,6 +672,7 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+fnc.ebc.net.tw###pageshare
 ngnovoros.ru##div[class^="article-social"]
 hispanidad.com##.article-social
 supertaste.tvbs.com.tw##div[class^="community_box"]
@@ -7360,7 +7361,7 @@ muztorg.ru##.socials_title
 scoopwhoop.com##.share-control > button[class^="sw-share-"]:not(.sw-share-link)
 larepublica.pe##.SocialContainer
 vpnranks.com##.ss-plugin
-cloud-ace.jp,dogatch.jp,tver.jp##.snsbtn
+qlife.jp,cloud-ace.jp,dogatch.jp,tver.jp##.snsbtn
 eva-info.jp##.snsbtn_single
 tele-sport.ru##.-social-with-counter
 eurotransport.de##.v-A_-article__socialmedia
