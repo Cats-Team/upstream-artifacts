@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512300500
+! Version: 202512301800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 30 Dec 2025 05:00 UTC
+! Last modified: 30 Dec 2025 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -74036,6 +74036,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||log.eufylife.com^
+||dts-log.anker.com^
+||perf.bblmw.com^
+||event.bblmw.com^
 ||vsn-analytics.aparentmedia.com^
 ||track-*.hungrypanda.co^
 ||trace-*.hungrypanda.co^
@@ -79568,7 +79572,6 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'fenrir_anonymous_id', '$remove$')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'anonymous_id', '$remove$')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'universal_id', '$remove$')
-arte.tv#%#//scriptlet('set-local-storage-item', '/^oidc\./', '$remove$')
 goodnovel.com#%#//scriptlet('set-local-storage-item', 'UUID', '$remove$')
 20min.ch#%#//scriptlet('set-local-storage-item', 'clientId', '$remove$')
 kf.qq.com#%#//scriptlet('set-constant', 'Aegis', 'noopFunc')
