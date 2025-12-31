@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202512302300
+! Version: 202512310600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 30 Dec 2025 23:00 UTC
+! Last modified: 31 Dec 2025 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -47017,6 +47017,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.inquirernetwork.net^
 ||analytics-webhook.doximity.com^
 ||crs.pa.br.de^
 ||app-analysislog.sto.cn^
@@ -66773,6 +66774,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/apps/ssw/events-collector-lambda/events/*
 /sfp/universal_analytics.min.
 /ajax/whereami$ping
 /wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-
@@ -67452,6 +67454,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||omtrdc.net/rest/$ping
+||hotpepper.jp/DEV/DEV_OPEN/CSP/log/
+||uts-front.line-apps.com/event-web
 ||creator-spring.com/ngjj/
 ||br.reco.ebu.io/v3/collect?s=
 ||br24.pa.br.de/event?s=
@@ -75100,6 +75105,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||e.cquotient.com/recs/blqj-smart/$domain=store.smart.com.ph
+@@||cdn.cquotient.com/js/*/gretel.min.js$domain=store.smart.com.ph
 @@||st-marks-yoga.recess.tv/_app/immutable/chunks/pixelTracker
 @@||cdn.tagcommander.com/*/tc_ENEDIS_*.js$domain=frontend-mes-prms-part-cloud.enedis.fr
 @@||collector-*.px-cloud.net^$xmlhttprequest,domain=ifood.com.br
