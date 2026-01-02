@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601012300
+! Version: 202601021100
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 01 Jan 2026 23:00 UTC
+! Last modified: 02 Jan 2026 11:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||data.deep-content.io^
 ||pingpong.us^
 ||protected-api.branch.io^
 ||pixel.visitiq.io^
@@ -47017,6 +47018,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||a.streamed.pk^
+||corfu.blogvault.net^
 ||analytics.inquirernetwork.net^
 ||analytics-webhook.doximity.com^
 ||crs.pa.br.de^
@@ -67454,6 +67457,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||app.airlift.net/assets/affpix.js
+||static.speisekarte.de/build/ub-tracker.js
 ||omtrdc.net/rest/$ping
 ||hotpepper.jp/DEV/DEV_OPEN/CSP/log/
 ||uts-front.line-apps.com/event-web
@@ -79583,6 +79588,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+airlift.net#%#//scriptlet('abort-on-property-read', 'posthog')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'fenrir_anonymous_id', '$remove$')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'anonymous_id', '$remove$')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'universal_id', '$remove$')
