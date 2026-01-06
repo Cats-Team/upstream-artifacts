@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601060700
+! Version: 202601061800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 06 Jan 2026 07:00 UTC
+! Last modified: 06 Jan 2026 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||gm.mmstat.com^
+||yazio-analytics.com^
+||hightouch-events.com^
 ||rtbuniverse.com^
 ||imp_track.zmaticoo.com^
 ||gw-usa-tracker.zmaticoo.com^
@@ -2824,7 +2827,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||gvisit.com^$third-party
 ||halldata.com^$third-party
 ||haveamint.com^$third-party
-||heapanalytics.com^$third-party
+||heapanalytics.com^
 ||heatmap.it^$third-party
 ||hellosherpa.com^$third-party
 ||hentaicounter.com^$third-party
@@ -47585,6 +47588,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||pulsar.ebay.com^
+||pixel-conversion.apps.seabroadnet.com^
+||analytics.apps.seabroadnet.com^
+||etx.indiatimes.com^
 ||tracing.yelp.com^
 ||conversions-config.reddit.com^
 ||dns-clientinfo.vtg.paramount.tech^
@@ -67998,6 +68005,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||ir.ebaystatic.com/cr/ebay-rum/
+||svcs.ebay.com/ufeservice/*/metrics
+||ir.ebaystatic.com/rs/c/9527tracking/
+||higgsfield.ai/_next/static/chunks/amplitude
 ||api.s.mindbox.ru/scripts/v*/tracker.js
 ||searchbooster.net/scripts/tracker/
 ||cdn.tokyo-city.ru/js/metrica.js
@@ -74595,6 +74606,8 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||bstream.kzhi.tech^
+||lklfwu-inapps.appsflyersdk.com^
 ||mob2.welltastic-app.com^
 ||amplitude.thepure.app^
 ||amplilab.thepure.app^
