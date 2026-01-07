@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601061800
+! Version: 202601062100
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 06 Jan 2026 18:00 UTC
+! Last modified: 06 Jan 2026 21:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -47588,6 +47588,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||eventcom.api.np.km.playstation.net^
 ||pulsar.ebay.com^
 ||pixel-conversion.apps.seabroadnet.com^
 ||analytics.apps.seabroadnet.com^
@@ -68005,6 +68006,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||telemetry-web.api.playstation.com^$redirect=nooptext
+||smetrics.aem.playstation.com^$redirect=nooptext
 ||ir.ebaystatic.com/cr/ebay-rum/
 ||svcs.ebay.com/ufeservice/*/metrics
 ||ir.ebaystatic.com/rs/c/9527tracking/
@@ -72195,7 +72198,7 @@ msn.com##.tbla
 ||pcrl.co/js/jstracker.min.js
 ||emag.ru/counter/counter.php?url=
 ||rt.chip.de/collect
-||eventcom.api.np.km.playstation.net/event^
+||sbahn-publish.api.playstation.com/*/publish/gct_events^
 ||kocaeligazetesi.com.tr/stats/
 ||gazetevatan.com/d/generic-counter.asp^
 ||gazetevatan.com/d/j/analytics.min.js
@@ -79103,6 +79106,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||oldfashionedoffer.com^
 ||oldportcoffee.com^
 ||omgthink.com^
+||onecrow.net^
 ||onedropocean.com^
 ||onlinestarten.net^
 ||onlywoofs.com^
@@ -79127,6 +79131,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||owlreporter.com^
 ||owlsr.us^
 ||owlstwo.com^
+||owltin.com^
 ||oxygenfuse.com^
 ||pailcrime.com^
 ||pailpatch.com^
