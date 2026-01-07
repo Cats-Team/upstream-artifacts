@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601062100
+! Version: 202601070600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 06 Jan 2026 21:00 UTC
+! Last modified: 07 Jan 2026 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -47588,6 +47588,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||tk.jtbc.co.kr^
 ||eventcom.api.np.km.playstation.net^
 ||pulsar.ebay.com^
 ||pixel-conversion.apps.seabroadnet.com^
@@ -68006,6 +68007,10 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||cast-imp.jtbc.co.kr/trac?event=
+||bsp-proxy.wetransfer.net/pico/v*/web-events
+||wetransfer.com/api/web-metrics
+||tokbox.com/prod/logging/
 ||telemetry-web.api.playstation.com^$redirect=nooptext
 ||smetrics.aem.playstation.com^$redirect=nooptext
 ||ir.ebaystatic.com/cr/ebay-rum/
@@ -75683,6 +75688,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||a.klaviyo.com/client/subscriptions/$xmlhttprequest,domain=ahead-nutrition.com
+@@||googletagmanager.com/gtm.js$domain=agrieuro.com
 @@||e.cquotient.com/recs/blqj-smart/$domain=store.smart.com.ph
 @@||cdn.cquotient.com/js/*/gretel.min.js$domain=store.smart.com.ph
 @@||st-marks-yoga.recess.tv/_app/immutable/chunks/pixelTracker
