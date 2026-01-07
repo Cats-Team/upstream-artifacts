@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601070700
+! Version: 202601071800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 07 Jan 2026 07:00 UTC
+! Last modified: 07 Jan 2026 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||api.eventbus.me^
+||rumt-sg.com^
 ||gm.mmstat.com^
 ||yazio-analytics.com^
 ||hightouch-events.com^
@@ -47588,6 +47590,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||prd-collect-llm.xverse.cn^
+||securemetrics.apple.com^
+||graffiti-tags.apple.com^
+||fem.gprod.postmedia.digital^
 ||t.hentaivox.com^
 ||tk.jtbc.co.kr^
 ||eventcom.api.np.km.playstation.net^
@@ -68273,7 +68279,6 @@ dominos.jp###_vis_opt_path_hides
 ||drive2.ru/_api/special/*/view|
 ||teknolojituru.com/api/tracking
 ||cloudfront.net/ecmtr-*.js
-||lib.onet.pl/static/pixel/*.js$script,redirect=noopjs
 ||interest.co.nz/core/modules/statistics/statistics.php
 ||media.flaticon.com/dist/js/ads.*.js
 ||kio.ac/analytics/
@@ -71298,7 +71303,6 @@ techmaniachd.pl###sidebar-right-1 > #HTML6
 ||k-crm.jp/web.tracking.js
 ||smg.com/Etrack/
 ||cdn.gamedock.io/gamedock-web-tracker/
-||walmart.com/px/
 ||cyberpedia.su/count.php
 ||msgsndr.com/funnel/event
 ||con.arbeitsagentur.de/prod/matomo/
@@ -73533,6 +73537,9 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 @@||dkb.de^$cookie=dtCookie
 @@||centrum24.pl^$cookie=dtCookie
+$cookie=_iiq_fdata
+$cookie=_iiq_ab_map
+$cookie=_iiq_ip
 $cookie=universal_analytics_cid
 $cookie=GL_UI4
 $cookie=GL_GI10
@@ -74615,6 +74622,12 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||sensorsdata-datasink.stardust-tv.com^
+||event-api-cs.stardust-tv.com^
+||logreport-global-dual.cool*cloud.com^
+||wslog-global-dual.cool*cloud.com^
+||weblogger-wss.cool*cloud.com^
+||mebed.dm-event.net^
 ||bstream.kzhi.tech^
 ||lklfwu-inapps.appsflyersdk.com^
 ||mob2.welltastic-app.com^
@@ -75871,7 +75884,6 @@ elahmad.com##body > div[id^="ads"]
 @@||googletagmanager.com/gtm.js$domain=online.ysroad.co.jp
 @@||karte.io^$domain=online.ysroad.co.jp
 @@||cdn.kaizenplatform.net^$script,domain=navi.onamae.com
-@@||walmart.com/px/*/captcha
 @@||biv.gazeta.pl/resources/emailLoginPage__front/$domain=oauth.gazeta.pl
 ||sgtm.ipekyol.com.tr/gtm.js$script,redirect=google-analytics
 @@||segmentify.com^$script,stylesheet,xmlhttprequest,domain=puma.com
@@ -79983,7 +79995,6 @@ traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlea
 spletnik.ru#%#//scriptlet('set-local-storage-item', '/^_ym/', '$remove$')
 spletnik.ru#%#//scriptlet('set-local-storage-item', 'adrcid', '$remove$')
 southpark.*,southparkstudios.*#%#//scriptlet('set-constant', 'vtg', 'emptyObj')
-onet.pl#%#//scriptlet('prevent-element-src-loading', 'script', 'lib.onet.pl/static/pixel/')
 coupang.com#%#//scriptlet('json-prune-xhr-response', 'tracking', 'feeds', 'n-api/recommend/feeds')
 aceee.org#%#//scriptlet('prevent-canvas', '2d')
 hoy.tv#%#(()=>{const i=function(){};window.__uid2=window.__uid2||{},window.__uid2.init=i,window.__uid2.setIdentityFromEmail=i,window.__uid2.callbacks=window.__uid2.callbacks||[],window.__uid2.callbacks.push=function(i){"function"==typeof i&&i("InitCompleted",{identity:null})}})();
