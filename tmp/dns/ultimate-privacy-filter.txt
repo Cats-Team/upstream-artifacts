@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601081400
+! Version: 202601091200
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 08 Jan 2026 14:00 UTC
+! Last modified: 09 Jan 2026 12:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||cse.rakanto.com^
+||repo.rakanto.com^
+||aim-tag.hcn.health^
 ||wstats.ageverif.com^
 ||api.eventbus.me^
 ||rumt-sg.com^
@@ -47591,6 +47594,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||me9ddf.moebelix.
+||hw-t.hypers.com.cn^
 ||prd-collect-llm.xverse.cn^
 ||securemetrics.apple.com^
 ||graffiti-tags.apple.com^
@@ -67992,7 +67997,7 @@ _social_tracking.js^
 _tracking.php?b=
 /aegis-sdk/*$script
 /tnc.js?h=
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au
 ||mc.yandex.ru/metrika/tag.js$script,redirect=metrika-yandex-tag,domain=~id.x5.ru|~aiondb.ru
 ||mc.yandex.ru/metrika/watch.js$script,redirect=metrika-yandex-watch
@@ -68015,6 +68020,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||scriber.webflix.ai/beacon
+||rawpixel.com/external/gtag.js
+||appmifile.com/i18n/ga*/
 ||cast-imp.jtbc.co.kr/trac?event=
 ||bsp-proxy.wetransfer.net/pico/v*/web-events
 ||wetransfer.com/api/web-metrics
@@ -75704,6 +75712,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
+@@||pi.ai/ingest/$domain=pi.ai
 @@||log.go.com/log$xmlhttprequest,domain=disneyvacationclub.disney.go.com
 @@||a.klaviyo.com/client/subscriptions/$xmlhttprequest,domain=ahead-nutrition.com
 @@||googletagmanager.com/gtm.js$domain=agrieuro.com
@@ -79190,6 +79200,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||physicstees.com^
 ||pickmicro.com^
 ||pietexture.com^
+||pigeonkit.com^
 ||pigeonsetc.com^
 ||pigmentpaper.com^
 ||pinchsquirrel.com^
@@ -79288,6 +79299,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||questionate.com^
 ||quicklyedit.com^
 ||quicksandear.com^
+||quicktrick.net^
 ||quietknowledge.com^
 ||quillkick.com^
 ||quiltquick.com^
@@ -80193,6 +80205,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+moebelix.*#%#//scriptlet('set-local-storage-item', 'coveo_cid', '$remove$')
 airlift.net#%#//scriptlet('abort-on-property-read', 'posthog')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'fenrir_anonymous_id', '$remove$')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'anonymous_id', '$remove$')
