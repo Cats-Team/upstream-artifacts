@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601120500
+! Version: 202601121700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Jan 2026 05:00 UTC
+! Last modified: 12 Jan 2026 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -48255,7 +48255,7 @@ prd.api.bleacherreport.com^
 ||stats.bunkr.ru^
 ||logs.netflix.com^
 ||mst.rnd.de^
-||cza.crazygames.com^
+||cza*.crazygames.com^
 ||event-dot-procolor-backend.appspot.com^
 ||prod.event.mwm-asset-manager.mwmwebapis.com^
 ||api.amplitudeexperiment.com^
@@ -48512,7 +48512,6 @@ prd.api.bleacherreport.com^
 ||femetrics.grammarly.io^
 ||realtimeanalytics.yext.com^
 ||stats.indianpornempire.com^
-||lp.spac.me^
 ||analytics.verfacto.com^
 ||log.dzen.ru^
 ||flask.us.nextdoor.com^
@@ -69541,7 +69540,6 @@ pcmag.com##img[src^="https://t.myvisualiq.net/"]
 ||dataplane.rum.*.amazonaws.com/appmonitors
 ||suumo.jp/jj/jjcommon/sc/s_code.js
 ||bablic.com/api/engine/pling
-||spcs.*/api/common/beacon/
 ||unification.useinsider.com/api/event/
 ||rou.video/js/yd.js
 ||elle.com.hk/assets/js/ur.js
@@ -73707,7 +73705,6 @@ $cookie=__igaw__adid
 $cookie=_wctrck
 $cookie=flocktory-uuid
 $cookie=/^wisepops/
-$cookie=/dwanonymous_/,domain=~nintendo.com|~hoka.com
 $cookie=cqcid,domain=~nintendo.com
 $cookie=/dwac_/,domain=~nintendo.com
 $cookie=rsci_vid
@@ -74636,6 +74633,10 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||track.applicaster.com^
+||hb-mob2.optiword.com^
+||tracking.geo.*.amazonaws.com^
+||telemetry.doxo.com^
 ||sensorsdata-datasink.stardust-tv.com^
 ||event-api-cs.stardust-tv.com^
 ||logreport-global-dual.cool*cloud.com^
@@ -75716,6 +75717,8 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||a.klaviyo.com/client/subscriptions/
+@@||st.dynamicyield.com/st?$domain=noelleeming.co.nz
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
 @@||pi.ai/ingest/$domain=pi.ai
 @@||log.go.com/log$xmlhttprequest,domain=disneyvacationclub.disney.go.com
@@ -80334,6 +80337,7 @@ mediamarkt.de#%#//scriptlet('abort-on-property-write', 'ftr__startScriptLoad')
 dzen.ru#%#//scriptlet('json-prune', 'ssrData.exportResponse.feedData.adPixelsLink')
 dzen.ru#%#//scriptlet('json-prune', 'ssrData.exportResponse.feedData.adPixelsData')
 gmarket.co.kr#%#//scriptlet('fingerprintjs2')
+investor-web.hdfcfund.com#%#//scriptlet('set-constant', 'smartech', 'noopFunc')
 enedis.fr#%#//scriptlet('set-constant', 'window.tc_vars', 'emptyObj')
 telex.hu#%#//scriptlet('set-constant', 'pp_gemius_hit', 'noopFunc')
 musinsa.com#%#//scriptlet('trusted-suppress-native-method', 'CookieStore.prototype.set', '_dd_s', 'prevent', 'datadog')
