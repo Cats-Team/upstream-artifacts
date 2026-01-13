@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: /xm9SNQanyhGSO1GOgmssg
-! Diff-Path: ../patches/11/11-s-1768302661-3600.patch
+! Checksum: 1h0QbEZv9IvDi7TkKmb1Zw
+! Diff-Path: ../patches/11/11-s-1768317204-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.66.95
-! TimeUpdated: 2026-01-13T11:07:48+00:00
+! Version: 2.0.66.97
+! TimeUpdated: 2026-01-13T15:09:53+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -164,6 +164,7 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||axon.ai^
 ||up.ousabq.tech^
 ||ogads-pa.clients6.google.com^
 ||ad.mojisead.co.kr^
@@ -776,7 +777,7 @@
 ||appclick.net^
 ||applifier.com^
 ||applift.com^$redirect=nooptext
-||applovin.com^$third-party
+||applovin.com^
 ||appnext-a.akamaihd.net^
 ||appsdt.com^
 ||appserver-ap.com^
@@ -8484,10 +8485,6 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ! Google ads (be careful)
 ||googleads.g.doubleclick.net^$app=world.cup|com.ludo.king|com.dubox.drive
 !
-! Blocking specific apps tracking
-! Booking app
-||tags.tiqcdn.com^$app=com.booking
-||graph.facebook.com^$app=com.booking
 !
 ! Blocking Facebook mobile ads
 ||graph.facebook.com^$app=com.winter.breaker
