@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601122300
+! Version: 202601130500
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 12 Jan 2026 23:00 UTC
+! Last modified: 13 Jan 2026 05:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -68023,6 +68023,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||openway.deepseeksvc.com/v*/write/rum
 ||l.search.naver.com/n/responsive/*&no_qc=*&p=
 ||eadaily.com/tools/calc_news_stat.php
 ||scriber.webflix.ai/beacon
@@ -73551,6 +73552,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 @@||dkb.de^$cookie=dtCookie
 @@||centrum24.pl^$cookie=dtCookie
+$cookie=wikia_beacon_id
 $cookie=_iiq_fdata
 $cookie=_iiq_ab_map
 $cookie=_iiq_ip
@@ -80224,6 +80226,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+gamespot.com#%#//scriptlet('set-local-storage-item', 'ppid', '$remove$')
 moebelix.*#%#//scriptlet('set-local-storage-item', 'coveo_cid', '$remove$')
 airlift.net#%#//scriptlet('abort-on-property-read', 'posthog')
 businessinsider.com#%#//scriptlet('set-local-storage-item', 'fenrir_anonymous_id', '$remove$')
