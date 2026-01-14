@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601132200
+! Version: 202601140600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 13 Jan 2026 22:00 UTC
+! Last modified: 14 Jan 2026 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -47597,6 +47597,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||trafficmanager.anyclip.com^
 ||r.anime-go.cc^
 ||logs.collector.*.cloud.solarwinds.com^
 ||doppler.hulu.com^
@@ -68026,6 +68027,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||marketplace.anyclip.com/v*/lre-events
+/log/client/messages$domain=momondo.com|kayak.com
+/s/vestigo/measure$domain=momondo.com|kayak.com
 ||ir.ebaystatic.com/*/s_1x2.gif
 ||openway.deepseeksvc.com/v*/write/rum
 ||l.search.naver.com/n/responsive/*&no_qc=*&p=
@@ -73555,6 +73559,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 @@||dkb.de^$cookie=dtCookie
 @@||centrum24.pl^$cookie=dtCookie
+$cookie=ac_user_id
 $cookie=wikia_beacon_id
 $cookie=_iiq_fdata
 $cookie=_iiq_ab_map
@@ -73969,6 +73974,8 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||kayak.com^$cookie=kmkid
+||momondo.com^$cookie=kmkid
 ||agoda.com^$cookie=agoda.analytics
 ||agoda.com^$cookie=agoda.firstclicks
 ||agoda.com^$cookie=agoda.lastclicks
