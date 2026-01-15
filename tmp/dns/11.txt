@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: GgPTxV2sR05jS0cG72f8Sg
-! Diff-Path: ../patches/11/11-s-1768454123-3600.patch
+! Checksum: HSVnKDqll/XAhFaAKRBxFQ
+! Diff-Path: ../patches/11/11-s-1768493838-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.66.99
-! TimeUpdated: 2026-01-15T05:11:53+00:00
+! Version: 2.0.67.1
+! TimeUpdated: 2026-01-15T16:13:58+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2627,6 +2627,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+reptileforums.co.uk##.p-pageWrapper > div[class^="img_"]
+reptileforums.co.uk##.feedItem-list-container > div[class^="img_"]
 zarina.ru##.fixed.bottom-16
 uranai.d-square.co.jp##.AdvMain
 uranai.d-square.co.jp##.AdvHeader
@@ -8483,6 +8485,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 !
 !
 ! Blocking Facebook mobile ads
+||graph.facebook.com^$app=com.loomgames.pixelflow
 ||graph.facebook.com^$app=com.winter.breaker
 ||graph.facebook.com^$app=com.apkpure.aegon
 ||graph.facebook.com^|$app=com.UCMobile.intl
@@ -8808,7 +8811,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ! aglint-disable-next-line no-invalid-modifiers
 ||graph.facebook.com^$app=com.vitastudio.*
 !
-||app.adjust.com^$app=com.easybrain.nonogram|ru.pikabu.android|com.maroieqrwlk.unpin|com.touchtao.soccerkinggoogle|com.mobirix.zumaking2|com.mobirix.swipebrick2|com.mobirix.mahjongking2|com.mobirix.hit7.casino.slots|com.mobirix.gmm|com.mobirix.fishingchampionship|com.mobirix.airhockey|com.mobirix.abmon|com.mobirix.MultiplyWar|com.UCMobile.intl|kz.kolesa|uz.avtoelon|kz.krisha
+||app.adjust.com^$app=com.easybrain.nonogram|ru.pikabu.android|com.maroieqrwlk.unpin|com.touchtao.soccerkinggoogle|com.mobirix.zumaking2|com.mobirix.swipebrick2|com.mobirix.mahjongking2|com.mobirix.hit7.casino.slots|com.mobirix.gmm|com.mobirix.fishingchampionship|com.mobirix.airhockey|com.mobirix.abmon|com.mobirix.MultiplyWar|com.UCMobile.intl|kz.kolesa|uz.avtoelon|kz.krisha|com.loomgames.pixelflow
 !
 ! NOTE: Yandex ads in mobile apps
 ! Be careful when applying `$network` rules to Yandex apps - check if nothing is broken (see @@ rules)
@@ -8822,8 +8825,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ! Solving problems: problematic apps must be excluded by adding `~package_name` to these rules.
 !                   The most of excluded apps - browsers. They should not be matched.
 !
-! Mail.Ru app
-||m.mradx.net^$app=ru.mail.mailapp
+! Mail.Ru ads in apps
+||m.mradx.net^$app=ru.mail.mailapp|ru.vk.store|com.avito.android|com.allgoritm.youla|ru.sports|com.popularapp.periodcalendar
 ! https://github.com/AdguardTeam/AdguardFilters/issues/220432
 ||adsdk.yandex.ru^$app=rtb.mobile.android
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217628
@@ -8865,8 +8868,6 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ||ikame-ads.begamob.com^$app=com.officedocument.word.docx.document.viewer
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187116
 ||media-amazon.com^$app=com.offerup
-! https://github.com/AdguardTeam/AdguardFilters/issues/185996
-||m.mradx.net^$app=ru.vk.store
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183979
 ||sdkapi-ga.biggogo.com^$app=com.cs.cinemain
 ! https://github.com/AdguardTeam/AdguardFilters/issues/161152
@@ -8883,8 +8884,6 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ||vfiles.gtimg.cn^$app=com.apkpure.aegon
 ! https://github.com/AdguardTeam/AdguardFilters/issues/155542
 ||mradx.net^$app=org.aastudio.games.longnards
-! https://github.com/AdguardTeam/AdguardFilters/issues/155650
-||m.mradx.net^$app=com.avito.android
 ! https://github.com/AdguardTeam/AdguardFilters/issues/154955
 ||yastatic.net^$app=com.drive2
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153135
@@ -8920,10 +8919,6 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 ||avatars.mds.yandex.net^$app=com.swiftsoft.anixartd
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121406
 ||mradx.net^$app=limehd.ru.ctv
-! https://github.com/AdguardTeam/AdguardFilters/issues/119448
-||m.mradx.net^$app=com.allgoritm.youla
-! https://github.com/AdguardTeam/AdguardFilters/issues/119419
-||m.mradx.net^$app=ru.sports
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117751
 ||xpig-dev.directservices.it^$app=com.make.it.fly|com.slingshot.basketball|com.slingshot.biker|com.slingshot.car|com.slingshot.train
 ||xpig.cdn.boombit.cloud^$app=com.make.it.fly|com.slingshot.basketball|com.slingshot.biker|com.slingshot.car|com.slingshot.train

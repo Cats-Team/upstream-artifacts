@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601150500
+! Version: 202601151800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 15 Jan 2026 05:00 UTC
+! Last modified: 15 Jan 2026 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -47603,6 +47603,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||analytics.launcherleaks.net^
+||ingest.webcol.sdp.peacocktv.com^
 ||t.collectiveaudience.co^
 ||st.freedom24.com^
 ||rum.api.intuit.com^
@@ -67357,6 +67359,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /.well-known/private-click-measurement
+/js/exponea.min.js
 /js/pixel.js|
 /apps/ssw/events-collector-lambda/events/*
 /sfp/universal_analytics.min.
@@ -68037,6 +68040,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||app.birdsend.co/forms/*/display-stats-pixel
 ||marketplace.anyclip.com/v*/lre-events
 /log/client/messages$domain=momondo.com|kayak.com
 /s/vestigo/measure$domain=momondo.com|kayak.com
@@ -69003,7 +69007,6 @@ elperiodico.com##._mo_recs_tpi
 /tracking-pixel$domain=get-to.link
 ||s.yimg.com/ss/analytics3.js
 ||asadcdn.com/flairfire/
-||api.*.exponea.com^$domain=bogsfootwear.com|urbanstems.com
 ||slack.com/clog/track/
 ||vault.gostatera.com/collect/rap
 ||sooplive.co.kr/js/google.analytics.js
@@ -69165,7 +69168,6 @@ themirror.com##reach-topbox
 ||apm.infoldgames.com/v1/log/sendtlog
 ||payments.google.com/gp/w/*/PaymentsPortals/web-reports?
 ||payments.google.com/payments/jslogs?
-||api-bloomreach.comfy.ua/js/exponea.min.js
 ||titanprod.narvar.com/*/track|
 ||adultswim-vodlive.cdn.turner.com/csm/analytics
 ||homemate.co.jp/common/js/beacon/real_estate_detail.js
@@ -73133,6 +73135,10 @@ mail.ferret-one.com%2Fbeacon$image
 %2FCI0%2F0$image
 /ss/o/*/ho.gif$image
 %2Fss%2Fo%2F*%2Fho.gif$image
+healio.com/medialibrary/pixel.png?tp=
+healio.com%2Fmedialibrary%2Fpixel.png%3Ftp%3D
+e.healio.com/*.php?ID=$image
+e.healio.com%2F*.php%3FID%3D$image
 it-recht-kanzlei.de/logo/Copyright-Logo.png?i=
 it-recht-kanzlei.de%2Flogo%2FCopyright-Logo.png%3Fi%3D
 mail01.monex.co.jp/bin/checker?$image
@@ -74659,6 +74665,7 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||app.siteperformancetest.net^
 ||events-stream-svc.cordial.io^
 ||events.gonative.io^
 ||matomo.podslink.net^
