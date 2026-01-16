@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601161200
+! Version: 202601161700
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 16 Jan 2026 12:00 UTC
+! Last modified: 16 Jan 2026 17:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||heap-api.com^
 ||analytics.vinovo.si^
 ||cs.media.net^
 ||bidder.doceree.com^
@@ -47603,6 +47604,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||sp.pluto.tv^
+||service-ad-image-ga-weighted.prd.pluto.tv^
+||tracking.carfax.com^
+||analytics.carvana.io^
+||analytics.ticketmaster.com^
 ||track.opentable.com^
 ||mixpanel.tigocloud.net^
 ||analytics.launcherleaks.net^
@@ -48187,7 +48193,6 @@ prd.api.bleacherreport.com^
 ||pixels.argusplatform.com^
 ||egg.afisha.ru^
 ||tracking-app.diginetica.net^
-||c.us.heap-api.com^
 ||logging.g.sst.secureserver.net^
 ||metricreceiver.cellrebel.com^
 ||events.app-performance.music.amazon.dev^
@@ -68042,6 +68047,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||cdn1.adoberesources.net/alloy/$domain=pluto.tv
+||autotrader.com/pixall/
+||partner.awscconsumerinfo.autotrader.com/*/beacon/
 ||question.searchiq.co/static/js/analytics.js
 ||app.birdsend.co/forms/*/display-stats-pixel
 ||marketplace.anyclip.com/v*/lre-events
@@ -74668,6 +74676,9 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||ir-sdk.guardease.com^
+||verifysession.uxcam.com^
+||analytics.wachanga.app^
 ||usage.digitalconcerthall.com^
 ||report.starshort.online^
 ||clarity.ms^|
@@ -75767,6 +75778,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||mi.tigo.com.co/plugins/cordova-plugin-fingerprint-aio/www/Fingerprint.js
 @@||cdn.cxense.com/cx.cce.js$domain=elle.com
 @@||cdn.cxense.com/cx.js$domain=elle.com
 @@||api.cxense.com/public/widget/data?json=$domain=elle.com
