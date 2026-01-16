@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601160000
+! Version: 202601160600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 16 Jan 2026 00:00 UTC
+! Last modified: 16 Jan 2026 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -47603,6 +47603,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||mixpanel.tigocloud.net^
 ||analytics.launcherleaks.net^
 ||ingest.webcol.sdp.peacocktv.com^
 ||t.collectiveaudience.co^
@@ -74665,6 +74666,9 @@ dlsdk.appsflyer.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||clarity.ms^|
+||engagelab.cc^
+||global-sis.engagelab.com^
 ||app.siteperformancetest.net^
 ||events-stream-svc.cordial.io^
 ||events.gonative.io^
@@ -75759,6 +75763,9 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=saturn.de
 @@||metrics.us.playstation.com/b/ss/
 @@||st-*.dynamicyield.com/st*&inHead=true&id=*&jsession=*scriptVersion=*&noConsent=
+@@||cdn.cxense.com/cx.cce.js$domain=elle.com
+@@||cdn.cxense.com/cx.js$domain=elle.com
+@@||api.cxense.com/public/widget/data?json=$domain=elle.com
 @@||live.mrf.io/statics/marfeel/gardac-sync.js$domain=muylinux.com
 @@||a.klaviyo.com/client/subscriptions/
 @@||st.dynamicyield.com/st?$domain=noelleeming.co.nz
