@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601182300
+! Version: 202601190600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 18 Jan 2026 23:00 UTC
+! Last modified: 19 Jan 2026 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -47604,6 +47604,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||event-storage.netmonet.co^
+||neviju.netmonet.co^
+||jaeger.netmonet.co^
+||wap.wovn.io^
+||falcon.useinsider.com^
 ||sp.pluto.tv^
 ||service-ad-image-ga-weighted.prd.pluto.tv^
 ||tracking.carfax.com^
@@ -68047,6 +68052,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||ff.netmonet.co/api/frontend/client/metrics
+||ee.wovn.io/report_values/
+||datacore-write.securitytrfx.com/blob/em_cmp_lib_tracking/
 ||cdn1.adoberesources.net/alloy/$domain=pluto.tv
 ||autotrader.com/pixall/
 ||partner.awscconsumerinfo.autotrader.com/*/beacon/
@@ -73407,7 +73415,8 @@ clicks.mlsend2.com$image
 email.send.aliyana.in$image
 links.kahoot.com$image
 track.team.kahoot.com$image
-signup.com$image
+signup.com/imp?$image
+signup.com%2Fimp%3F$image
 email.cloud2.secureclick.net$image
 nyb.soundestlink.com*track$image
 link.thirdlove.com$image
@@ -73586,6 +73595,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 @@||dkb.de^$cookie=dtCookie
 @@||centrum24.pl^$cookie=dtCookie
+$cookie=wovn_uuid
 $cookie=ac_user_id
 $cookie=wikia_beacon_id
 $cookie=_iiq_fdata
@@ -74001,6 +74011,10 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
+||netmonet.co^$removeparam=id
+||netmonet.co^$removeparam=wpid
+||netmonet.co^$removeparam=visitId
+||netmonet.co^$removeparam=operation
 ||usnews.com^$cookie=usn_visitor_id
 ||kayak.com^$cookie=kmkid
 ||momondo.com^$cookie=kmkid

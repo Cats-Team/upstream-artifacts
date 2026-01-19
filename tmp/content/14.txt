@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: 21QQb+PNJYakDoJiGQuB+g
-! Diff-Path: ../patches/14/14-s-1768759959-3600.patch
+! Checksum: A5Rr5WeiMll4oyXcHReKJw
+! Diff-Path: ../patches/14/14-s-1768799980-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.55.78
-! TimeUpdated: 2026-01-18T18:09:21+00:00
+! Version: 2.2.55.82
+! TimeUpdated: 2026-01-19T05:16:17+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2572,6 +2572,10 @@ lockbarber-supplies.de,raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-he
 !
 ! NOTE: Regular rules
 !
+sf-international.com##.cookie-terms
+ide.go.jp##.use_cookie_footer
+shop.taneya.co.jp#%#//scriptlet('trusted-click-element', '#consent-tracking button.decline', '', '', 'reloadAfterClick')
+kyohaku.go.jp###js-consentCookie
 mylife.com##.eula-terms
 ||cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js$script,domain=hitsuji-zzz.com
 hitsuji-zzz.com##.tc-cookie-popup
@@ -3073,7 +3077,7 @@ gunfinder.de#%#//scriptlet('set-local-storage-item', 'gunfinderCookies', 'true')
 ekp.spb.ru##.v-application__wrap > div[style="bottom: 0px; z-index: 100;"]
 hokify.*#%#//scriptlet('trusted-set-local-storage-item', 'accept-cookies', '["essential"]')
 peterburggaz.ru##.pg-cookie
-hashimoto-g.co.jp##.p-cookie
+agnesb.co.jp,hashimoto-g.co.jp##.p-cookie
 imoova.com#%#//scriptlet('set-local-storage-item', 'cookie_consent', 'no')
 partner.acolad.com#%#//scriptlet('trusted-set-local-storage-item', 'pp-cookie-consent', '"accepted"')
 fremdgehen69.com##.legal-cookiebar
@@ -6471,7 +6475,7 @@ huurland.be#$##cookie-notice-overlay { display: none !important; }
 remanga.org###__next > div[class^="CookieConsent_consentContainer"]
 kaliningrad.welltex.ru#%#//scriptlet('set-local-storage-item', 'welltex-shop-responsibility-accepted', 'true')
 psbank.ru#%#//scriptlet('set-local-storage-item', 'cookie-consent', 'true')
-realt.by###gdpr-portal-root
+singaporeair.com,realt.by###gdpr-portal-root
 giphy.com#%#//scriptlet('trusted-set-local-storage-item', 'has-seen-tos-modal', 'true')
 npo.nl##ccm-notification
 cnyes.com#?##content div[class^="_"]:has(> div[class^="_"] > img[alt="cookies"])
@@ -14308,7 +14312,7 @@ aminoapps.com###gdpr-cookie-consent
 football.ua,korrespondent.net###gdpr-disclaimer
 timeslive.co.za,sowetanlive.co.za###gdpr-overlay
 zegarkowygigant.pl,birdcams.live,narita-airport.jp,aspenchamber.org,myeducation.de,baxov.net###gdpr-popup
-aloyoga.com,ipv6onlyhosting.com###gdprBanner
+tokaikisen.co.jp,aloyoga.com,ipv6onlyhosting.com###gdprBanner
 webrazzi.com,mouser.it###gdprBar
 videoder.com,youglish.com###gdprModal
 tapatalk.com###gdpr_b
@@ -23922,6 +23926,11 @@ adventuretime.ru#?##oframeplayerJS pjsdiv:has(> pjsdiv[style^="position: absolut
 playai.nu##.ab-alert
 javopen.co###text-14
 thatsmybis.com##.ml-3.mr-3.p-3.bg-light.rounded
+sekai-kabuka.com##td[width="160"] > div[class] > div > div[id][style="height: 240px; top: 200px; left: 60px; background: rgb(0, 0, 17); color: rgb(255, 255, 255); position: absolute; font-size: 16px; writing-mode: vertical-rl;"] > div:last-child:not([style])
+sekai-kabuka.com##table[width="762px"] > tbody > tr > td[class] > div[id][class] > div[style="width: 259px;"]
+realtime-chart.info##div[id] > div[style="top:1442px"] > div[class][style="z-index:-1"]
+realtime-chart.info##td[style="vertical-align: top"] > div[id] > div[id] > div[id] > div[style="top:1550px"] > div[style="z-index: -1;"]
+realtime-chart.info##.amazoom1 > div > div[class][id][style="color: rgb(255, 255, 255);"]
 hitfm.ru,montecarlo.ru,maximum.ru,rusradio.ru,dfm.ru##.ad-blocked-message
 ||allrefs.net/js/cur.js
 18comic.vip#?#.modal-footer > div[style]:contains(ADBLOCK)
@@ -47388,7 +47397,7 @@ video.az##.sidebar-right > .text-center > a[href*="/app"] > img
 autoblog.com###toaster_autoblog-app
 wallstreet-online.de##.app-advertising
 besplatka.ua##.footer_bottom > div#applications
-trainman.in,klook.com,newchic.com,m.zaful.com,c.mi.com,m.vseinstrumenti.ru##.app-download
+prioritypass.com,trainman.in,klook.com,newchic.com,m.zaful.com,c.mi.com,m.vseinstrumenti.ru##.app-download
 ozon.ru##.bMobileAppBanner
 sport.de##a.hs-app
 ||klavyer.com/android/klavyer-android-uygulamamiz.jpg
@@ -47467,7 +47476,7 @@ m.imgur.com##.PostContainer-postGetApp
 sport-express.ru##.addmenu li.advertwww
 webtekno.com##.android-dropdown.dropdown-container
 mcdart.de##.app-download-wrap
-an1.com,apkvision.org,russian.rt.com##.app-panel
+apkvision.org,russian.rt.com##.app-panel
 mywot.com##.app-stripe
 goobike.com,boylove.cc,music.line.me,miui.com##.app_download
 oilprice.com,m.qidian.com##.app_download_ad
@@ -53893,6 +53902,9 @@ joongang.co.kr##.house_banner:not(.goto-app-btn)
 world-tt.com,joongang.co.kr##.banner_plus
 joongang.co.kr###joongang_plus_card_area
 eurogamer.net##.merch_component
+sekai-kabuka.com#$?#td[width="160"] > div[style] > div[id][style]:has(> div[class]:contains(定期的に配置が)) { font-size: 0 !important; }
+sekai-kabuka.com##ins.adsbygoogle[style="display:inline-block;width:160px;height:600px;position:relative;"]
+sekai-kabuka.com##td[align="center"][class] > table > tbody > tr > td > div[style]:has(> ins.adsbygoogle)
 login.account.rakuten.com###omni-container div.s.e > div.hc.cx.s.r.wf.cl.ccy.max-width-760
 lookmovie.pn,lookmovie2.la,lookmovie2.to,startup.outlookindia.com##.ad-container
 kaspersky.ru##.kasbanner-banner
