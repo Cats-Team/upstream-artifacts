@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601191200
+! Version: 202601191600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Jan 2026 12:00 UTC
+! Last modified: 19 Jan 2026 16:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||console.data4.net^
+||agencysignals.com^
 ||heap-api.com^
 ||analytics.vinovo.si^
 ||cs.media.net^
@@ -97303,6 +97305,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||aproapi.benchmarkemail.com/api/v1/trackers/
 ||ff.netmonet.co/api/frontend/client/metrics
 ||ee.wovn.io/report_values/
 ||datacore-write.securitytrfx.com/blob/em_cmp_lib_tracking/
@@ -102540,6 +102543,8 @@ t.gutefrage.net/op/$image
 t.gutefrage.net%2Fop%2F$image
 ae.mmstat.com/ae.edm.edm_open?$image
 ae.mmstat.com%2Fae.edm.edm_open%3F$image
+/e/FooterImages/*$image
+%2Fe%2FFooterImages%2F$image
 /e3t/Cto/*$image
 %2Fe3t%2FCto%2F$image
 click.official.infomaniak.com%2Fo%2F
@@ -107318,6 +107323,7 @@ jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 ||adventurousamount.com^
 ||aerialapps.com^
 ||afraidlanguage.com^
+||agencysignals.com^
 ||agileformer.com^
 ||agonyshark.com^
 ||agreeablearch.com^
