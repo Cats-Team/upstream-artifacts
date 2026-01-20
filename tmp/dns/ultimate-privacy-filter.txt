@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601192200
+! Version: 202601200600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 19 Jan 2026 22:00 UTC
+! Last modified: 20 Jan 2026 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -97305,6 +97305,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||olympics.com/ddna-event-router/
+||cycling74.com/web/matomo/
 ||segment.psg.nexstardigital.net/adobeanalytics.js
 ||aproapi.benchmarkemail.com/api/v1/trackers/
 ||ff.netmonet.co/api/frontend/client/metrics
@@ -103268,10 +103270,6 @@ $cookie=_pubcid
 $cookie=pbjs-unifiedid
 $cookie=bf_lead
 $cookie=bf_visit
-||netmonet.co^$removeparam=id
-||netmonet.co^$removeparam=wpid
-||netmonet.co^$removeparam=visitId
-||netmonet.co^$removeparam=operation
 ||usnews.com^$cookie=usn_visitor_id
 ||kayak.com^$cookie=kmkid
 ||momondo.com^$cookie=kmkid
