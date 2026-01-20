@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601200800
+! Version: 202601201800
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Jan 2026 08:00 UTC
+! Last modified: 20 Jan 2026 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -46,6 +46,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||js.pulseinsights.com^
 ||console.data4.net^
 ||heap-api.com^
 ||analytics.vinovo.si^
@@ -59899,6 +59900,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||events-sandbox.data.msn.com^
 ||event-storage.netmonet.co^
 ||neviju.netmonet.co^
 ||jaeger.netmonet.co^
@@ -97304,6 +97306,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+fashiontechnews.zozo.com#?#div[class^="style-module--contentAreaInne"] > div[class^="style-module--bottomContainer--"]:has(> div[class^="style-module--footer"] > div[class^="style-module--reactions"])
 ||olympics.com/ddna-event-router/
 ||cycling74.com/web/matomo/
 ||segment.psg.nexstardigital.net/adobeanalytics.js
@@ -103781,10 +103784,8 @@ $cookie=wuuid,domain=duolingo.com|duolingo.cn
 ||realsrv.com^$cookie
 ||kayak.co.kr^$cookie=kmkid
 ||kayak.co.kr^$cookie=csid
-||kayak.co.kr^$cookie=kayak.mc
 ||kayak.com^$cookie=kmkid
 ||kayak.com^$cookie=csid
-||kayak.com^$cookie=kayak.mc
 $cookie=/^_gd/,domain=leichtathletik.de
 $cookie=tint-anonymous-uid,domain=leichtathletik.de
 ||thirdweb.com^$cookie=/^ph_phc_/
