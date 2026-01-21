@@ -1,8 +1,8 @@
 ! url: https://filters.adavoid.org/ultimate-privacy-filter.txt
 ! Title: Ultimate Privacy Filter
-! Version: 202601202200
+! Version: 202601210600
 ! Descripton: AdBlocker Ultimate Privacy Filter is a comprehensive privacy filter that blocks all known tracking technologies and provides you with a more private and secure browsing.
-! Last modified: 20 Jan 2026 22:00 UTC
+! Last modified: 21 Jan 2026 06:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://adblockultimate.net/
 ! About: https://adblockultimate.net/filters
@@ -59900,6 +59900,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward() { remove: true; }
 ||ct.pinterest.com^
 ||tags.news.com.au^$~script
 |piwik.
+||trackinglibrary.prodperfect.com^
+||stats.sirdata.eu^
 ||events-sandbox.data.msn.com^
 ||event-storage.netmonet.co^
 ||neviju.netmonet.co^
@@ -97306,6 +97308,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 /prod/dfm/t8y9347t.min.js$redirect=nooptext,important,domain=dailycamera.com
 ||google-analytics.com^$object,redirect=noopjs
 ||googletagmanager.com/gtag/$third-party,object,redirect=noopjs
+||ridgemerino.com/api/collect
+||static.klaviyo.com/onsite/js/event_adapter.
 fashiontechnews.zozo.com#?#div[class^="style-module--contentAreaInne"] > div[class^="style-module--bottomContainer--"]:has(> div[class^="style-module--footer"] > div[class^="style-module--reactions"])
 ||olympics.com/ddna-event-router/
 ||cycling74.com/web/matomo/
@@ -109574,6 +109578,7 @@ accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback
 #%#//scriptlet('no-topics')
 #%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
 #%#//scriptlet('no-protected-audience')
+ridgemerino.com#%#//scriptlet('set-local-storage-item', 'kl-uid', '$remove$')
 gamespot.com#%#//scriptlet('set-local-storage-item', 'ppid', '$remove$')
 moebelix.*#%#//scriptlet('set-local-storage-item', 'coveo_cid', '$remove$')
 airlift.net#%#//scriptlet('abort-on-property-read', 'posthog')
