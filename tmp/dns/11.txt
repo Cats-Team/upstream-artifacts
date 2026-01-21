@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: zqU6m6bl9mzcrs4z9tlCQA
-! Diff-Path: ../patches/11/11-s-1768966829-3600.patch
+! Checksum: zj7gqKnXtpKCsn8c3cPAnA
+! Diff-Path: ../patches/11/11-s-1768986965-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.67.19
-! TimeUpdated: 2026-01-21T03:37:09+00:00
+! Version: 2.0.67.22
+! TimeUpdated: 2026-01-21T09:12:30+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -23,6 +23,8 @@
 !
 ! ||mobileapptracking.com^ - don't block this domain with all subdomains. https://forum.adguard.com/index.php?threads/23917/
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/222820
+||banner.bet365partners.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221816
 ||playwire.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221563
@@ -2628,6 +2630,11 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+atomtickets.com##.mobile-leaderboard-container
+news.bloomberglaw.com##div[class^="HeaderAdSpot_height_"]
+as.com##.ad-tp
+as.com##.w-prod
+rottentomatoes.com##aside[id^="medrec_"]
 empireonline.com##div[class^="advert_"]
 rtvi.com##.container-ads-header
 monomax.jp#$#div[class^="adBlock"] { min-height: 0 !important; }

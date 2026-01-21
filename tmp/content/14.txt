@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: lJFivc5lk9pqnTY2sTCUtg
-! Diff-Path: ../patches/14/14-s-1768972624-3600.patch
+! Checksum: Cp1Dko27qXR5LhMbQElBSw
+! Diff-Path: ../patches/14/14-s-1768990411-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.56.13
-! TimeUpdated: 2026-01-21T05:13:32+00:00
+! Version: 2.2.56.18
+! TimeUpdated: 2026-01-21T10:10:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -13980,7 +13980,7 @@ win2day.at#$#.disable-scroll { overflow: visible !important; }
 win2day.at#$#.disable-scroll body { overflow: visible !important; }
 win2day.at#$#.cookie-notification:not(body) { display: none !important; }
 foxnews.com##.notification-banner[data-banner-type="ccpa"]
-sazka.cz,ultimaker.com##.consent-bar
+allwyn.cz,sazka.cz,ultimaker.com##.consent-bar
 escapefromtarkov.com###legalLightBlock
 zeit.de###data-protection-overlay
 strava.com###stravaCookieBanner
@@ -35165,6 +35165,10 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+m.koreaherald.com##body > section.bnn:has(> div#hbanner_78)
+news.bloomberglaw.com##div[class^="TheContent_signupButtonContainer_"]
+helentech.jp###custom_html-16
+forbes.com##.newsletter-inline-footer
 rexdlbox.com##body > p[style^="text-align"]
 budgetbytes.com##.block-email-subscribe
 totalprosports.com##.wp-block-group[data-content-name="Google News Follow Us"]
@@ -44187,6 +44191,10 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+trip.com##.m-flightlist__chromepop
+rottentomatoes.com#$##main > overlay-base { display: none !important; }
+rottentomatoes.com#$#.scroll-lock { overflow: auto !important; }
+samsclub.com##.bottom-0.fixed
 theoutnet.com##div[class^="adjust-sb_wrapper__"]
 tinyhouselistings.com#%#//scriptlet('set-local-storage-item', 'mobile-app-promotion', 'true')
 avtodor-tr.ru##.ios-smart-banner
@@ -45946,6 +45954,7 @@ blog.terabox.com##.download-wap
 deepl.com##aside[aria-labelledby="app-ad-banner-heading"]
 recotripp.com###is-app
 rent.com,a101.com.tr##.mobile-app-banner-wrapper
+apartmentguide.com###mobile-app-banner-wrapper
 givemesport.com##.gms-message
 24health.by##.min-news + div.new
 walmart.com#?#div[data-automation-id="sb-div-bottom-module"]:has(> button[data-automation-id="sb-btn-get-the-app"])
@@ -46588,7 +46597,7 @@ times.abema.tv##.c-footer__app
 smotrim.ru#$#.google-app { display: none !important; }
 delishkitchen.tv##.delish-recipe-app-launch-button
 delishkitchen.tv#$#aside[class^="footer-app-banner-wrap"] { margin: 1em 0 0 !important; visibility: hidden !important; height: 0 !important; }
-bulten.mserdark.com,latent.space,ciw.news,infranken.de,babelli.de,kidsna.com,live.leisu.com,rausgegangen.de,flowwow.com,theolognion.com,recipe-blog.jp,retty.me,haber.doviz.com,nuum.ru,vinmec.com,coinmarketcap.com,pass.auone.jp,makuake.com,low-ya.com,ticketjam.jp,douglas.de,substack.com,mapion.co.jp,amebaownd.com,prospektangebote.de,montecarlo.ru,autoscout24.de,stackoverflow.com,77onlineshop.de,nicovideo.jp,inpost.pl,vivre.eu,thequestion.ru,mysterycircus.jp,globo.com,delishkitchen.tv##.app-banner
+atomtickets.com,bulten.mserdark.com,latent.space,ciw.news,infranken.de,babelli.de,kidsna.com,live.leisu.com,rausgegangen.de,flowwow.com,theolognion.com,recipe-blog.jp,retty.me,haber.doviz.com,nuum.ru,vinmec.com,coinmarketcap.com,pass.auone.jp,makuake.com,low-ya.com,ticketjam.jp,douglas.de,substack.com,mapion.co.jp,amebaownd.com,prospektangebote.de,montecarlo.ru,autoscout24.de,stackoverflow.com,77onlineshop.de,nicovideo.jp,inpost.pl,vivre.eu,thequestion.ru,mysterycircus.jp,globo.com,delishkitchen.tv##.app-banner
 nana-music.com##.app_sec
 nana-music.com##.base-top
 imdb.com,nana-music.com##.footer__app
@@ -48141,6 +48150,10 @@ instagram.com##._aagw:empty
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/222973
+iceout.org#%#//scriptlet('set-local-storage-item', 'tos_accepted', 'true')
+! https://github.com/AdguardTeam/AdguardFilters/issues/223195
+ufret.jp###carouselExampleIndicators
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222996
 rexdlbox.com##ul.dl-list > ul.dl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221747
@@ -51670,6 +51683,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+||smart-bdash.com^
 observer.co.uk,jutarnji.hr###piano_inline > .tp-container-inner
 wear.jp##.bg-white > div[class="xl:hidden"]:has(> div > button[style="background-color:#39B8B2"] img[width="32"])
 wear.jp##.bg-white > div[class*="xl:"]:has(> ul button > img[alt^="ZOZOTOWN"])
