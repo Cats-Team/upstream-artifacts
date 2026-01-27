@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: f51fMtSZ42bG6W7xwjpa+w
-! Diff-Path: ../patches/4/4-s-1769491010-3600.patch
+! Checksum: 1UCJiw6tXb6BP84+PAZYbw
+! Diff-Path: ../patches/4/4-s-1769530487-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.24.45
-! TimeUpdated: 2026-01-27T05:13:08+00:00
+! Version: 2.1.24.48
+! TimeUpdated: 2026-01-27T16:10:53+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -672,7 +672,11 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
-eatingonadime.com##.wprm-pinterest-cta
+uakinogo.online##.shareUs
+businessnovinite.bg##.articleDetail_socials
+businessnovinite.bg##.articleDetail_main > p:has(> strong > a[href^="https://"]:not([class]))
+13dl.me##.share-icon:not(.follow, .report)
+dessertsonadime.com,eatingonadime.com##.wprm-pinterest-cta
 tasteofhome.com###pch-social-icons
 nikkan-gendai.com##.share_material-symbols
 nikkan-gendai.com##.articles_share_box
@@ -15657,6 +15661,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/223608
+13dl.me#@#.share-icon
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217567
 notebooklm.google.com#@#.share-button
 ! https://x.com/ab_c_san/status/1982093679629357570
