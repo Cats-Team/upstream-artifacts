@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: Df8CFr8rTmDG4Eqq3Q0UqQ
-! Diff-Path: ../patches/11/11-s-1769474031-3600.patch
+! Checksum: 4zmgXW4oOiw/r/8aN3F1Wg
+! Diff-Path: ../patches/11/11-s-1769512400-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.67.30
-! TimeUpdated: 2026-01-27T00:30:31+00:00
+! Version: 2.0.67.33
+! TimeUpdated: 2026-01-27T11:09:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2632,6 +2632,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+amazon.*###softlines-mobile-btf-discovery-zone-T3_feature_div
+accuradio.com##div[class^="MobileBottomAd"]
+accuradio.com##div[class^="MobileSquareAd"]
 newegg.com#%#//scriptlet('json-prune-fetch-response', ' RecommendItems.RecommendInfo.[-].DataSource.[=].spsr SimilarItems.RecommendInfo.[-].DataSource.[=].spsr', '', 'm/product/ajax/productPersonalization')
 newegg.com##span[data-nosnippet="true"] > .sponsored-brands-items
 fok.nl#$#@media (max-width: 1023px) { #pageWrapper { top: 5px !important; } }
@@ -2859,7 +2862,7 @@ leslez.com##.opt
 talk.jp##.comments > div[class^="display_container"]:not(.comment)
 tass.ru##div[class^="MobileLayout_top_ad_"]
 thetab.com##div[id^="ad-inarticle"]
-iceporn.tv##.HeaderBanner
+porner.tv,iceporn.tv##.HeaderBanner
 ladybanana.co.uk##.infinite-item > ul > li:has(> div[id^="t"]:empty)
 ladybanana.co.uk##.infinite-item > ul > li:has(> ins[data-zoneid])
 jdpower.com##.jdpAd-placeholder-advertisement-floater
