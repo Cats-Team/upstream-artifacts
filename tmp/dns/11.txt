@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: NysQe7HkXa9vZUECs8m6Ew
-! Diff-Path: ../patches/11/11-s-1769523453-3600.patch
+! Checksum: R9MVLxYTzgKxPVOtqm8s6w
+! Diff-Path: ../patches/11/11-s-1769544738-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.67.35
-! TimeUpdated: 2026-01-27T14:14:11+00:00
+! Version: 2.0.67.38
+! TimeUpdated: 2026-01-27T20:09:06+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -170,6 +170,8 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||x3m.biz^
+||d1tru86qrby720.cloudfront.net^
 ||ads.phonepe.com^
 ||ads-static.phonepe.com^
 ||bstream.channelcom.tech^
@@ -2636,6 +2638,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+mydealz.de##div[class]:has(> .ad--bg:only-child)
+amazon.*###softlines-btf-substitute-zone-container-3_feature_div
 amazon.*###softlines-mobile-btf-discovery-zone-T3_feature_div
 accuradio.com##div[class^="MobileBottomAd"]
 accuradio.com##div[class^="MobileSquareAd"]
