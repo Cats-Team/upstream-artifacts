@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: F8LHBA7iqJ5uf+44JVvAAw
-! Diff-Path: ../patches/14/14-s-1769642021-3600.patch
+! Checksum: a/m8AExvBjpm5D5p+k4tfA
+! Diff-Path: ../patches/14/14-s-1769661621-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.57.13
-! TimeUpdated: 2026-01-28T23:10:27+00:00
+! Version: 2.2.57.16
+! TimeUpdated: 2026-01-29T04:37:14+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -15327,7 +15327,7 @@ leclercdrive.fr##div[class^="div"][class$="_BandeauCookies"]
 via.tt.se##div[class^="footer__notification styledBarNotification__BarNotificationOverlay-sc-"]
 square-enix.com,square-enix-games.com##div[class^="notice_Notices_"]
 tidal.com##div[class^="notificationWrapper--"] > div[class^="notification--"][data-test="GDPRNotification"]
-ohmirevista.com,ohmymag.de##div[class^="sp_message_frame"]
+ohmymag.de##div[class^="sp_message_frame"]
 macpaw.com##div[data-banner="cookies"]
 friday.ru##div[data-block-closer-storage="cookie"]
 avans.pl##div[data-component="cookieContent"]
@@ -16099,7 +16099,6 @@ pixelpeeper.com,bequiet.com,my5.tv,hearthhead.com,kabeleins.de,prosieben.de,pros
 crowdfox.com##.cookie-banner-info
 visitmons.be##.cookie-compliance-message
 988lifeline.org,cv.ee,cv.lv,cvonline.lt,thomasmeyerhoefer.com,kaffeebraun.com,bessey.de,europe.nflshop.com,neuronation.com,conjuga-me.net,proz.com,htc.com,vice.com##.cookie-consent-container
-theinquirer.net##.cookie-consent-content
 deloitte.com##.cookie-container
 aorus.com,dzrt.com,velomarket.pl,avantree.com,singlife.com.ph,ok.co.uk##.cookie-div
 strato.nl##.cookie-guidline-style
@@ -51844,6 +51843,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+giantbomb.com##.pt-8.container
 ||fashionsnap.com/api/algolia/product/
 lasisa.net##.recommend-container
 hide.cx##.ContainerAreaLeftVertical
