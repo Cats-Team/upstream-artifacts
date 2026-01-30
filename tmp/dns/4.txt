@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: rh2eUeWeI9C4Qt8xymZ5AA
-! Diff-Path: ../patches/4/4-s-1769717644-3600.patch
+! Checksum: BCXddUHfclMI8tTvFm1RIA
+! Diff-Path: ../patches/4/4-s-1769750936-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.24.61
-! TimeUpdated: 2026-01-29T20:10:39+00:00
+! Version: 2.1.24.65
+! TimeUpdated: 2026-01-30T05:25:20+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,9 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+tupi.fm##.mvp-share-info
+radiko.jp##button.css-ffo1di
+news.web.nhk##.p-snsbtn__wrapper
 tunefind.com##.items-baseline.justify-between > button.\[\&\>svg\]\:inline.\[\&\>svg\]\:align-middle
 media1.hu##.elementor-widget-heading:has(> div.elementor-widget-container a[href="https://www.facebook.com/media1hu"])
 media1.hu#?#.elementor-widget-wrap > div.elementor-widget-heading:has(> div > h4:contains(Kövessen minket!))
@@ -6892,7 +6895,7 @@ banker.ua,canyoublockit.com##body .heateor_sss_sharing_container
 nazya.com###fav-container > span.rght
 censor.net##.news-social-wrapp
 profile.ru##.swiper-social-links
-oltest.ru##.m_share
+election.go2senkyo.com,oltest.ru##.m_share
 oltest.ru##.m_vk_like
 heros-ultraman.com##.st-Header_Share
 vazzrock-anime.com,tsukipro-anime.com,d4dj-pj.com,tonikawa.com,tenseikenja.com,diy-anime.com,bang-dream.bushimo.jp,revuestarlight.bushimo.jp,digicharat-reiwa.com,anime.bang-dream.com,milky-holmes.com,maidragon-game.com,heros-ultraman.com##.st-Footer_Share
