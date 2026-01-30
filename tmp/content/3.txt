@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: 1iDLkoUnucnpCSrwAKxdgA
-! Diff-Path: ../patches/3/3-s-1769771873-3600.patch
+! Checksum: TdAY3g8yrgxPGmp6ImNMhg
+! Diff-Path: ../patches/3/3-s-1769793611-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.99.39
-! TimeUpdated: 2026-01-30T11:13:58+00:00
+! Version: 2.0.99.41
+! TimeUpdated: 2026-01-30T17:16:39+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -124192,6 +124192,9 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||event-gateway.data.karrotmarket.com^
+||h-adashx4id.ut.taobao.com^
+||gjtrack.ucweb.com^
 ||ip.xindong.com^
 ||openlog.tapapis.com^
 ||logc-sg.tsd.xindong.com^
