@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: WjEjw2u5yF17fdTLUNHK8w
-! Diff-Path: ../patches/14/14-s-1769944326-3600.patch
+! Checksum: IDmBUIF+z7wnTfP+T+wDgw
+! Diff-Path: ../patches/14/14-s-1769958727-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.57.41
-! TimeUpdated: 2026-02-01T11:08:50+00:00
+! Version: 2.2.57.44
+! TimeUpdated: 2026-02-01T15:08:59+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2575,6 +2575,7 @@ lockbarber-supplies.de,raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-he
 !
 ! NOTE: Regular rules
 !
+app.privacy.com###app > div.banner.flex-column
 solscan.io##div.dark\:shadow-mDark:has(> div[class] > svg.lucide-cookie)
 gamer365.hu##div[is="cookie-consent"]
 spusu.it#$#body { overflow: auto !important; }
@@ -14885,7 +14886,7 @@ vitalsource.com###dismiss-cookie-message
 housebrand.com###display_cookie_message
 newser.com###divCM
 evanscycles.com,sportsdirect.com,lillywhites.com###divCookieAcceptance
-blockscan.com,celoscan.io,moonscan.io,gnosisscan.io,lineascan.build,plasmascan.to,basescan.org,arbiscan.io,polygonscan.com,etherscan.com,bscscan.com,ocsworldwide.co.uk,etherscan.io###divcookie
+bttcscan.com,blockscan.com,celoscan.io,moonscan.io,gnosisscan.io,lineascan.build,plasmascan.to,basescan.org,arbiscan.io,polygonscan.com,etherscan.com,bscscan.com,ocsworldwide.co.uk,etherscan.io###divcookie
 deluxe-marketing.com###dsgvo-cookie-container
 schuh-armbruster.de###egg-cookie-bar
 ephe.fr###elytics
@@ -23523,6 +23524,8 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! The rules for content blockers only:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#content_blockers
 !
+strumyk.icu#$##adblock-overlay { display: none !important; }
+strumyk.icu#$#body.ab-locked { overflow: auto !important; }
 ||cdn.ziffstatic.com/jst/zdconsent.js$domain=maxroll.gg
 maxroll.gg#%#//scriptlet('set-constant', 'adblock', 'false')
 maxroll.gg#%#//scriptlet('prevent-addEventListener', 'adblock', '(!0)')
@@ -26155,6 +26158,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 /cmp/cmp.*.js
 /cmp/cmp.js
 !
+||controlpush.com^$third-party
 ||js.flashyapp.com^$third-party
 ||static.groobee.io^
 ||sdk.postscript.io^$third-party
