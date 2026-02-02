@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
 [Adblock Plus 1.1]
-! Checksum: ULpnXEx8pB9qm+BKL6YC5Q
-! Version: 202602020011
+! Checksum: tZGvxe9SRJXuFIht4JXdLg
+! Version: 202602020611
 ! Title: EasyPrivacy
-! Last modified: 02 Feb 2026 00:11 UTC
+! Last modified: 02 Feb 2026 06:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1801,6 +1801,7 @@
 /pixelcounter.$domain=~pixelcounter.co.uk|~pixelcounter.com|~pixelcounter.dev|~pixelcounter.org|~pixelcounters.co.uk|~pixelcounters.uk
 /pixeljs/*
 /pixelNew.js
+/PixelPageView?
 /pixelpropagate.js
 /pixels.jsp?
 /pixels/track?
@@ -8002,7 +8003,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||api.bit.ly/*/clicks?$third-party
 ||api.blink.net/a/
 ||api.collarity.com/cws/*http
+||api.config-security.com/first
 ||api.country.is^$third-party
+||api.croct.io^
 ||api.gleap.io/sessions/ping
 ||api.ipgeolocation.io/getip
 ||api.iris.tv/update
