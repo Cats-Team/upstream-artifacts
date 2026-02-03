@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 0SEAvZ4x+1qyl/bBD3zCiA
-! Diff-Path: ../patches/4/4-s-1770082934-3600.patch
+! Checksum: 9ZfPY1TfUEykS3RhYDD2aw
+! Diff-Path: ../patches/4/4-s-1770106774-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.24.76
-! TimeUpdated: 2026-02-03T01:38:43+00:00
+! Version: 2.1.24.79
+! TimeUpdated: 2026-02-03T08:16:07+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,8 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+radiko.jp##button[class^="css-"]:has(> svg[width="32"][height="32"] > path[d^="M12.938 13.875h"])
+fucker.com##.panel_link[onclick="$('#share').toggle();"]
 shugiin.go2senkyo.com,sangiin.go2senkyo.com##.m_sharePage
 sportsdaily.ru##div[class^="articleContentContainer_contentContainerSocial_"] [class*="shareButtons_shareButtons"]
 nlab.itmedia.co.jp##.group[href^="https://twitter.com/search?q="]
@@ -2525,7 +2527,6 @@ jpost.com#%#//scriptlet('remove-in-shadow-dom', 'span[class^="Menu__menuButtonCo
 jpost.com#%#//scriptlet('remove-in-shadow-dom', 'div[class*="VoteButtons"] + span[class$="index__dot"]')
 timesofindia.indiatimes.com##.text-center:has(> i[data-plugin="washare"])
 petitlyrics.com,mag.minkabu.jp##.sns_buttons
-onlinevideoconverter.pro##.pb-50-g
 uniladtech.com##div[class^="article-header_shareLink"]
 portal.productboard.com###portal-card-detail div:has(> span > div > svg.pb-icon)
 song.link##button[aria-label="Share this page"]
