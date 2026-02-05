@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: mWyEF4Y5R13AqD20EYq3kg
-! Diff-Path: ../patches/14/14-s-1770236182-3600.patch
+! Checksum: bpzsKmFNHLUsc/+65XpEjg
+! Diff-Path: ../patches/14/14-s-1770260894-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.57.89
-! TimeUpdated: 2026-02-04T20:12:55+00:00
+! Version: 2.2.57.91
+! TimeUpdated: 2026-02-05T03:04:56+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2577,6 +2577,7 @@ lockbarber-supplies.de,raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-he
 !
 ! NOTE: Regular rules
 !
+||cytriocpmprod.blob.core.windows.net/cytrio-public/cookiescript/*/script.js$domain=brandonsanderson.com
 velrix.net#%#//scriptlet('trusted-set-local-storage-item', 'velrix_cookie_consent', '{"decided":true,"timestamp":1770206291082,"categories":{"necessary":true,"analytics":false}}')
 kupibilet.ru##div[class^="CookiesAgreement_alertWrapper"]
 neftvodka.com##div.--framer-cookie-banner-container
@@ -3885,7 +3886,7 @@ rmf.fm#%#//scriptlet('didomi-loader')
 ups.com##.implicit-consent-message
 rule34.xxx#%#//scriptlet('set-cookie', 'gdpr', '1')
 rule34.xxx#%#//scriptlet('set-cookie', 'gdpr-consent', '1')
-mirf.ru##.popup-accept-policy
+hobbyworld.group,mirf.ru##.popup-accept-policy
 developers.google.com#$?#devsite-cookie-notification-bar { remove: true; }
 philips.pl#%#//scriptlet('set-constant', 'philips.tracking.consent.isAllowedFunctional', 'trueFunc')
 kamera-express.de##.cookie-modal-outer-container
@@ -35296,6 +35297,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+acmespb.ru##.sideb-vk
 eattravellife.com##.ml-form-embedWrapper
 thepopinsider.com##.wds-block-newsletter
 journal.sovcombank.ru##div[data-track-placement="right_sidebar"] > div.sticky:has(a[aria-label="Telegram"])
