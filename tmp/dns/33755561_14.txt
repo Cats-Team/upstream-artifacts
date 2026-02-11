@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: fnQ2eyDhN4Uh9xfGaNxG/g
-! Diff-Path: ../patches/14/14-s-1770785542-3600.patch
+! Checksum: okvrh0L4GW4GIJDetBuBzw
+! Diff-Path: ../patches/14/14-s-1770809115-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.58.59
-! TimeUpdated: 2026-02-11T04:49:03+00:00
+! Version: 2.2.58.63
+! TimeUpdated: 2026-02-11T11:22:02+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2578,6 +2578,9 @@ lockbarber-supplies.de,raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-he
 !
 ! NOTE: Regular rules
 !
+||webronza.asahi.com/static/js/jquery.cookie.js
+||webronza.asahi.com/static/smartphone/js/jquery.cookie.js
+dolphinradar.com#%#//scriptlet('set-cookie', 'myInsCookieConsent', 'true')
 hotline.finance#$#.accept-cookies-module__VtKOfq__modal { display: none !important; }
 drum-tec.de##.iwv-cookie-overlay
 fullcompass.com###ccpaContainer
@@ -2867,7 +2870,7 @@ saksfifthavenue.com##.footer-email-signup
 bookvoed.ru##.cookie-suggest
 chitai-gorod.ru##.agreement-notice
 nibc.*#%#//scriptlet('trusted-set-cookie', 'dbh-cookie-consent', 'Essential=1')
-myoreflextherapie-heidelberg.de##.con-kit-component-cookie-banner
+krmr.it,myoreflextherapie-heidelberg.de##.con-kit-component-cookie-banner
 mijn.host#%#//scriptlet('trusted-click-element', '.cky-consent-container .cky-btn-customize, #ckyPreferenceCenter button[data-cky-tag="detail-save-button"]', '!cookie:cookieyes-consent')
 mainz.de##sp-consent-banner
 postnl.nl#%#//scriptlet('trusted-click-element', 'pnl-cookie-wall-widget >>> pnl-cookie-widget-overview .pci-button.pci-button--secondary', '', '1500')
@@ -3392,7 +3395,7 @@ wimetoznakowanie.pl,fragrant.pl,dropply.pl,bike-rs.pl,mozz.com.pl,cyrulicy.pl,sr
 wimetoznakowanie.pl,fragrant.pl,dropply.pl,bike-rs.pl,mozz.com.pl,cyrulicy.pl,srodki-czystosci.eu,softmm.com.pl,roboczebhp.pl,retio.*,retio-displays.de,retio-displays.cz,electro24.pl#%#//scriptlet('set-local-storage-item', 'show_consent_modal', '1')
 gdp.de#%#//scriptlet('set-local-storage-item', 'gdpr_null', '')
 alohabrowser.app,alohabrowser.com##.cookies-open-modal
-lmarena.ai#%#//scriptlet('trusted-set-cookie-reload', 'cookie-preferences', '{"functionality":true,"advertising":false,"analytics":false,"socialMedia":true,"lastUpdated":"99999999999999"}')
+arena.ai#%#//scriptlet('trusted-set-cookie-reload', 'cookie-preferences', '{"functionality":true,"advertising":false,"analytics":false,"socialMedia":true,"lastUpdated":"99999999999999"}')
 ||cookie-consent-tracking-app.codeblocks.sk^
 coinbase.com#%#//scriptlet('trusted-set-cookie', 'cb_consent_preferences', '{%22strictlyNecessary%22:true%2C%22performance%22:false%2C%22functional%22:true%2C%22targeting%22:false}', '', '/', 'coinbase.com')
 coinbase.com#%#//scriptlet('trusted-set-cookie', 'cm_default_preferences', '{%22consent%22:[%22necessary%22%2C%22functional%22]%2C%22region%22:%22DEFAULT%22}', '', '/', 'coinbase.com')
@@ -18369,6 +18372,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/224687
+webronza.asahi.com#%#//scriptlet('remove-class', 'no_scroll', 'body.no_scroll')
 ! ipmarket.io
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224369
 @@||cdn.cookielaw.org/consent/$domain=nbcolympics.com
@@ -18449,8 +18454,9 @@ ecofamily.hu#@#body:not(.scroll-lock) .cookie-alert
 loadoutbuilder.gg#@#.cookie-content
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219898
 @@||bitrefill.com/assets/CookieConsent-$script
+! https://github.com/AdguardTeam/AdguardFilters/issues/224690
 ! https://github.com/AdguardTeam/AdguardFilters/issues/220837
-@@||onecdn.io/b/client/*/cookie-banner.$domain=myoreflextherapie-heidelberg.de
+@@||onecdn.io/b/client/*/cookie-banner.$domain=myoreflextherapie-heidelberg.de|krmr.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/220012
 mijn.host#@#.cky-consent-bar
 @@||cdn-cookieyes.com/client_data/*.js$domain=mijn.host
@@ -26357,6 +26363,7 @@ inews.co.uk,pinterest.com#%#//scriptlet('set-constant', 'google.accounts.id.prom
 !
 ! SECTION: Popups - Regular rules
 !
+webronza.asahi.com###modalArchive
 ecoledelutherie.com###upi-overlay
 ecoledelutherie.com###usb-sticky-bar
 tozlu.com##.kas-modal-ov
@@ -44495,6 +44502,7 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+piraeusbank.gr##app-banner-tabs
 polis.ua##section[class^="AppsModule_contentWrapper"]
 megapteka.ru##ma-grid-list-item > ma-card-qr-code
 gate.com###downloadAppSpecial
@@ -61357,6 +61365,7 @@ daddyhd.com##.sidebar__inner
 ||static.zdassets.com/web_widget/messenger/$domain=op.gg|p2pb2b.com|revouninstaller.com
 litres.ru###call_support
 !
+piraeusbank.gr##app-chat-bot
 ||sdk.ycloud.com/growth-tool/install.js
 yesstyle.com##body > div[class*="floatingActionBar"]:has(> button[title="Message Us"])
 ||vk.com/reforged_widget.php$important
