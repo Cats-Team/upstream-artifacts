@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: zzeDhuQs8Q35RrAA3lRtgA
-! Diff-Path: ../patches/14/14-s-1770827472-3600.patch
+! Checksum: dsDTftw/jNa3gUnBC8Jo8A
+! Diff-Path: ../patches/14/14-s-1770848098-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.58.68
-! TimeUpdated: 2026-02-11T16:28:06+00:00
+! Version: 2.2.58.70
+! TimeUpdated: 2026-02-11T22:11:55+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -44676,7 +44676,7 @@ levelup.gitconnected.com#?#a[href^="https://itunes.apple.com/app/medium-everyone
 insider-gaming.com###ig-app-cta
 vkusnoitochka.ru##.app-banner-main
 maksavit.ru##.header-banner-wrapper
-unraid.net###ipsPwaInstall
+invisioncommunity.com,unraid.net###ipsPwaInstall
 textnow.com##.js-overlay
 textnow.com##.global-banner
 textnow.com##.js-globalPopup[data-max-dismiss-count]
@@ -52078,6 +52078,7 @@ xo.gr##.promotion-area
 xo.gr##.navigation__premium-block
 meteoblue.com##.ad1-disable
 gemini.google.com##.advanced-upsell-bg
+chatgpt.com###page-header > div.pointer-events-none:has(button.button-glimmer-cta)
 chatgpt.com##.button-glimmer-cta
 lazada.com.ph##.pc-banner-slider-container
 lazada.com.ph##a[data-tracking="sky-line-banner"]
