@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: QF50pIIavf1KIyGioR4Q3Q
-! Diff-Path: ../patches/4/4-s-1771928734-3600.patch
+! Checksum: QESQx6uqcqvx8WHNmnZpPQ
+! Diff-Path: ../patches/4/4-s-1771946919-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.25.34
-! TimeUpdated: 2026-02-24T10:21:53+00:00
+! Version: 2.1.25.36
+! TimeUpdated: 2026-02-24T15:24:57+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+liberal.gr##.article__share-wrapper
 mainichi.jp##.sns > li.btn-sns.hb
 hdfilmcixx.com##.dropit-trigger
 vistazo.com##.autor-social-footer > div.footer-right > div.social-icons
@@ -15209,6 +15210,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ||mailget.net^$third-party
 ||my.hellobar.com^$third-party
 !
+lmusic.kz##.c-subscribe-alert__wrapper
 yeniavaz.com#%#//scriptlet('prevent-setTimeout', '#divModalPageLike')
 poupatempo.sp.gov.br##.float-icon-whatsapp
 aether.mom#%#//scriptlet('set-local-storage-item', 'modal-promotional-dismissed', 'true')
@@ -15720,6 +15722,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/225334
+dtf.ru#@#.content-share
 ! https://github.com/AdguardTeam/AdguardFilters/issues/225314
 racefans.net#@##social-media
 ! https://github.com/AdguardTeam/AdguardFilters/issues/223608
