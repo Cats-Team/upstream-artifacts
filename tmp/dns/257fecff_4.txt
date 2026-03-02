@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: pxqWwtQTof2Sul7/CA77CA
-! Diff-Path: ../patches/4/4-s-1772426568-3600.patch
+! Checksum: Ln0wsdQCWEr5T4NCdDxS7g
+! Diff-Path: ../patches/4/4-s-1772443628-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.25.47
-! TimeUpdated: 2026-03-02T04:39:09+00:00
+! Version: 2.1.25.50
+! TimeUpdated: 2026-03-02T09:22:49+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,9 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+mktravelclub.ru##.page__asside-link-list > div.flex:has(> div.flex > a.page__asside-social)
+premier.twitcasting.tv##.tw-popup-menu-invoker
+premier.twitcasting.tv##.tw-shop-social-button
 voice.charity##.snsbtniti2
 wikiwiki.jp###share-button-root
 twentyonepilots.film##button[aria-label="Open popout to view options for sharing the site"]
@@ -8274,7 +8277,7 @@ newscientist.com##.article-body .social__button-container
 einthusan.tv###social-wrapper
 thumbnails.porncore.net##a[href^="//share.naver.com/"]
 mhealth.ru##.test-result-share
-webopedia.com,hetmanrecovery.com,pokatim.ru##._share
+craj.jp,webopedia.com,hetmanrecovery.com,pokatim.ru##._share
 pianetamilan.it,corriere.it##.bck-social-nav
 om1.ru##.socialnetworks-posting
 parasut.com##.button-share-linkedin
