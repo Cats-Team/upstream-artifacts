@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: srWO60Zzq1OubxSbvcUxVQ
-! Diff-Path: ../patches/4/4-s-1772562240-3600.patch
+! Checksum: 3yV7Npn3jRXRVLSuL+Jl5Q
+! Diff-Path: ../patches/4/4-s-1772605504-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.25.61
-! TimeUpdated: 2026-03-03T18:20:15+00:00
+! Version: 2.1.25.64
+! TimeUpdated: 2026-03-04T06:20:45+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,8 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+coingape.com##.flexxrpsocial
+sankei.com##.sns-multi-box
 imdb.com##.sharemenu-iconbutton
 iranintl.com##div[class^="URLShareDialog-"]
 korea.net##.others-function
@@ -4452,7 +4454,7 @@ oniyomediary.com###single-footer-sns
 value-press.com###spSocialWrap
 developernation.net##img[alt="share-icon"]
 ||airportinfo.live/socialshare/jquery-social-share-bar.js
-colombia.com##.articulo-redes
+bolivia.com,colombia.com##.articulo-redes
 elcolombiano.com##.see-compartir
 yenisafak.com##button[name="share-button"]
 thecompleteuniversityguide.co.uk##.athrsoc
@@ -4665,8 +4667,7 @@ tattoodo.com##button[aria-label="Share tattoo"]
 arcamax.com##.comic-share
 pressdigital.es##.share > li:not(.comentarios)
 bola.okezone.com##ul[class$="share"]
-eleconomista.es##.Article__socialShareContent > a[data-action="share/whatsapp/share"] ~ *
-eleconomista.es##.newsBottom_components div.Article__socialShareContent
+eleconomista.es##.Article__socialShareContent
 catalog.onliner.by##.offers-description > .offers-social
 thekisscartoon.com,vikingi.live##.sbox
 ua.tribuna.com##div[class^="ContentCard_about__interaction-block_"]
