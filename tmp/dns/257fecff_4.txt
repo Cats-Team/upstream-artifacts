@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 9v2zcAwotgljsJ1uAq3/bg
-! Diff-Path: ../patches/4/4-s-1772695536-3600.patch
+! Checksum: IToy2s44nfAdCgiFrdnpCg
+! Diff-Path: ../patches/4/4-s-1772709671-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.25.71
-! TimeUpdated: 2026-03-05T07:22:10+00:00
+! Version: 2.1.25.74
+! TimeUpdated: 2026-03-05T11:17:15+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,8 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+biobiochile.cl##.post-social-container
+mybroadband.co.za##.sticky-top
 metype.com##.share-component-wrapper
 censor.net##a[href^="https://twitter.com/intent/tweet/"]
 censor.net##a[href^="https://facebook.com/sharer/sharer.php"]
@@ -6789,7 +6791,7 @@ cp.glico.jp##.sec-shares-all
 woman.excite.co.jp##.socialModule
 baraou-anime.com##.ft_sns
 fate-strange-fake.com,jitsuhaoresaikyo-anime.com,nierautomata-anime.com,onepunchman-anime.net,tomo-chan.jp,bokuyaba-anime.com,shingeki.tv,kaguya.love,madoka-magica.com,umamusume.cystore.com,bishonen-tanteidan.com,akebi-chan.jp##.l-footer__share
-youramateurporn.com,orient-anime.jp##.-share
+yasui-archi.co.jp,youramateurporn.com,orient-anime.jp##.-share
 akuyakureijou.af-original.com##.sharaListsWrap
 dospara.co.jp##.sns_btn_wrap
 vergleich.org##.share [data-type="facebook"]

@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: gkc9pqwRAoq7v+tp4jsRYw
-! Diff-Path: ../patches/11/11-s-1772691972-3600.patch
+! Checksum: tY4/Zm6P34Vm5ctnuVMCQA
+! Diff-Path: ../patches/11/11-s-1772709668-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.68.3
-! TimeUpdated: 2026-03-05T06:22:51+00:00
+! Version: 2.0.68.6
+! TimeUpdated: 2026-03-05T11:17:30+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2651,6 +2651,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+ascii.jp###amaznav
+fullvideosporn.com#?#.video-header:contains(Advertisement)
+justporn.com##a[href^="https://theporndude.com/"]
+justporn.com##.fade.fp-logo
 watchmygf.me##.tablet-b
 elobservador.com.uy###topZocalo
 eleconomista.es##div[data-ad-unit-id]
@@ -8379,6 +8383,7 @@ yandex.ru#?#body[class*="news_phone"] div.news-container > span > div > div.unit
 ! Afisha
 afisha.yandex.*##div[data-test-id="layout.root"] > div[class]:has(> div.adfox)
 ! Dzen
+dzen.ru##div[class^="dzen-mobile"][class*="bannerWrapper"]
 dzen.ru##div[class^="dzen-mobile__widgetContainer-"] ~ div[class*=" dzen-mobile__"]  div[style^="padding-top:"]
 dzen.ru##div[class*="topContent"][class*="mobile__hasBanner"]
 dzen.ru##.article-render-mobile__embed_embed-type_yandex-direct
