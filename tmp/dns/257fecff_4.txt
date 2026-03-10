@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: E5a3ADIH5xwKdrDy+nSafw
-! Diff-Path: ../patches/4/4-s-1773141582-3600.patch
+! Checksum: pAWeZJwNn2MexAFS1lAvJA
+! Diff-Path: ../patches/4/4-s-1773163509-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.25.95
-! TimeUpdated: 2026-03-10T11:16:04+00:00
+! Version: 2.1.25.99
+! TimeUpdated: 2026-03-10T17:21:00+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,10 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+mayaksbor.ru##.d-news-comments-share
+arenda.yandex.ru##.CzGS7
+livgolf.com##header ~ div:has(> div > button + button)
+cian.ru##iframe[data-name="VKWidget"]
 trial-net.co.jp##.l-main > .fixedbn:has(> a[href^="https://page.line.me/"])
 siyahdergi.com##div > span.jl_sh_t
 jalam.ne.jp##ul[class^="share"]
@@ -15780,6 +15784,8 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/226624
+@@||platform.twitter.com/widgets.js$domain=livejupiter2.blog.jp|nanjpride.blog.jp|j-seiji.blog.jp|akb48matomemory.com|femimatsu.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/225334
 dtf.ru#@#.content-share
 ! https://github.com/AdguardTeam/AdguardFilters/issues/225314
