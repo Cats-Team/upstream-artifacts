@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: 7Hmo/DzWneTj+pyUZJW88w
-! Diff-Path: ../patches/14/14-s-1773314421-3600.patch
+! Checksum: PXstQdHiaSWOn9u44oLOFg
+! Diff-Path: ../patches/14/14-s-1773329242-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.61.78
-! TimeUpdated: 2026-03-12T11:16:55+00:00
+! Version: 2.2.61.81
+! TimeUpdated: 2026-03-12T15:24:17+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7280,7 +7280,7 @@ tsn.ua##.c-alert__box
 plus-plus.tv#%#//scriptlet('remove-class', 'show-cookies', 'body#page-plusplus')
 smartthingsfind.samsung.com##footer + div.fixed.bottom-0
 archive.org##app-footer
-premium.mts.ru#%#//scriptlet('set-local-storage-item', 'cookiesAllowed', 'true')
+premium.mts.ru###__next > div[class^="styles_wrapper__"] > div[class^="styles_wrapper__"][style^="transition:"]:has(button)
 dolasu.pl,kenayeurope.de,sklepnumatic.pl,lamaxshop.pl,eltrox.pl,modregohogar.com,drukarniafortuny.pl###cookiesplus-overlay
 dolasu.pl,kenayeurope.de,sklepnumatic.pl,lamaxshop.pl,eltrox.pl,modregohogar.com,drukarniafortuny.pl###cookiesplus-modal
 zumub.com###bottom_cookie
@@ -26635,6 +26635,7 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+avporner.com##.sticky-container_sticky > div.video-player
 alice.yandex.ru##.TgBotFooterPromo
 dizipod.com##.dp-install-bar
 rbc.ru##a[class*="styles_onboarding-static"]
@@ -34354,6 +34355,7 @@ labs.google.com#@##google-hats-survey
 .name/?pus=$script,third-party
 .site/?pus=$script,third-party
 !
+||wstpush-mobile.terra.com^
 ||martabackrock.com^
 ||pushkite.com^$third-party
 ||smbtnupsh.com^$third-party
@@ -35697,6 +35699,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+downdetector.com##.grid > div[data-testid="card"]:has(> div.flex > div[class] > div[class] > a[aria-label="Facebook"])
 shop.mashable.com#$#.preloaded_lightbox[aria-label="Modal Overlay Box"] ~ .fb_lightbox-overlay { display: none !important; }
 shop.mashable.com#$#.preloaded_lightbox[aria-label="Modal Overlay Box"] { display: none !important; }
 shop.mashable.com#$#.box_active_disable_scrolling { touch-action: auto !important; overflow: auto !important; overscroll-behavior: auto !important; }
@@ -45015,6 +45018,7 @@ rxgo.com,alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepe
 !
 !
 !
+downdetector.com##.grid > div[data-testid="card"]:has(> div.flex > div[class] > div[class] > a[aria-label="Facebook"])
 hurriyet.com.tr##.deeplink-banner-container
 instreet.com.tr##.mm-page > div[role="dialog"]:has(> div.fancybox-inner div.redirect-app)
 wear.jp#%#//scriptlet('set-session-storage-item', 'showed_app_redirect_half_modal_on_item_detail', 'true')
@@ -60001,7 +60005,7 @@ tokyo-sports.co.jp,news.dwango.jp#%#//scriptlet("remove-attr", "oncontextmenu", 
 mhwg.org,biyografi.info,seiya-saiga.com#%#//scriptlet("remove-attr", "oncontextmenu|onselectstart", "body")
 !
 !+ NOT_PLATFORM(ext_ff)
-otakuhg.site,megaplay.buzz,cloudnestra.com,rapid-cloud.co,ico3c.com,luluvdoo.com,sterham.net,omuzaani.me,animeshouse.net,animeunity.it,themeslide.com,orangespotlight.com,magdyman.com,topflix.*,poisonous-raspberry-fields.blogspot.com,redirdx.in,tmofans.com,thememazing.com,baan-series.com,baixarfilmetorrent.net,yourupload.com,wikitechy.com,windes.com.es,freecourser.com,audioreview.m1001.coreserver.jp,portalwrc.pl,themeslide.com#%#window.addEventListener("contextmenu",function(a){a.stopPropagation()},!0);
+mangaplus.shueisha.co.jp,otakuhg.site,megaplay.buzz,cloudnestra.com,rapid-cloud.co,ico3c.com,luluvdoo.com,sterham.net,omuzaani.me,animeshouse.net,animeunity.it,themeslide.com,orangespotlight.com,magdyman.com,topflix.*,poisonous-raspberry-fields.blogspot.com,redirdx.in,tmofans.com,thememazing.com,baan-series.com,baixarfilmetorrent.net,yourupload.com,wikitechy.com,windes.com.es,freecourser.com,audioreview.m1001.coreserver.jp,portalwrc.pl,themeslide.com#%#window.addEventListener("contextmenu",function(a){a.stopPropagation()},!0);
 !--- HTML ----
 ! NOTE: Context menu - HTML
 ||luluvdoo.com/player/jw8/jwplayer.js$replace=/else [a-z]\.el\.oncontextmenu=function\([a-z]\){return [a-z]\([a-z]\,[a-z]\,[a-z]\)\,\!1\}//
