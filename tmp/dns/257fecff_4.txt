@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 3y24jO1LB17CWih0+n8JWQ
-! Diff-Path: ../patches/4/4-s-1773743201-3600.patch
+! Checksum: 6aVe2e2OopuGv822Q0g1FA
+! Diff-Path: ../patches/4/4-s-1773768736-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.26.27
-! TimeUpdated: 2026-03-17T10:22:59+00:00
+! Version: 2.1.26.31
+! TimeUpdated: 2026-03-17T17:28:39+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -301,7 +301,7 @@ check-host.net#%#//scriptlet('remove-node-text', 'span', '/Поделиться|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/157369
 faroutmagazine.co.uk#%#//scriptlet('hide-in-shadow-dom', '.single-article-sharing')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153296
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 huanqiu.com#%#//scriptlet('inject-css-in-shadow-dom', '.share > .item:not(.item-comment) { display: none !important; }')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/149113
 soundiiz.com#%#//scriptlet('set-cookie', 'socialDisplayed', 'true')
@@ -359,7 +359,7 @@ educationtimes.com#?#span:contains(Share):upward(button)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/180146
 bleepingcomputer.com#$#.cz-full-bio-wrapp { border-top: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/179840
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 gamedeveloper.com#?#.ArticleBase-SocialShare
 ! https://github.com/AdguardTeam/AdguardFilters/issues/178951
 ! https://github.com/AdguardTeam/AdguardFilters/issues/175631
@@ -670,6 +670,10 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+interestingengineering.com##div[aria-label="Share options"]
+iimg.su##.meta-bottom > div.pt-1:has(> div.ya-share2)
+netnaija.film##.flex-1 > div.fixed:has(> div.grid > button > svg > path[d^="M24 12.07"])
+sflix.film##section > div.flex:has(> div[title^="share to"])
 2short.club##label[aria-label="Share"]
 shazoo.ru##section > div.mt-4:has(> div.vue-target > div.flex > a > svg > use)
 world.kbs.co.kr##.right_youtube_banners
@@ -8288,7 +8292,7 @@ e-kitap.site,ekitap.site##.shareb
 ||player.daznservices.com/player/releases/v*/unfilled/share.chunk.js$domain=goal.com
 the-ans.jp##.side-sns
 lsm.lv##.share-caption
-nekoray.org,erothots.co,news.cornell.edu,clashforwindows.org,military.com,diabetes.org,cyclowired.jp,harvardmagazine.com,datacenterdynamics.com,kienyke.com,learnmetrics.com,nepisirsem.com,voguehk.com,sadhguru.org,pagamentidigitali.it##.a2a_kit
+popville.com,nekoray.org,erothots.co,news.cornell.edu,clashforwindows.org,military.com,diabetes.org,cyclowired.jp,harvardmagazine.com,datacenterdynamics.com,kienyke.com,learnmetrics.com,nepisirsem.com,voguehk.com,sadhguru.org,pagamentidigitali.it##.a2a_kit
 wellsfargo.com##.sideUtility
 tv-vybor.ru##.soc-block-article > *
 nytimes.com##div[data-testid="share-tools"] li:not([class^="css-"])
@@ -13811,7 +13815,7 @@ wwmt.com,wutv29.com,wtwc40.com,wset.com,wpgh53.com,wgme.com,wfgxtv.com,weartv.co
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/205448
 ! https://github.com/AdguardTeam/CoreLibs/issues/1370
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 ||espncdn.com/players/web-player-bundle/*/espn-web-player-bundle.css$replace=/(\.vjs-share-control.*\})/\$1.vjs-share-control{display:none!important;}/
 !
 ! Progorod
@@ -14010,7 +14014,7 @@ jbbs.seesaa.net#?#.bookmark > .sns_box
 strani.cz##iframe[src^="https://www.facebook.com/plugins/"]
 ||facebook.com/plugins/$subdocument,redirect=noopframe,domain=strani.cz
 ! https://github.com/AdguardTeam/AdguardFilters/issues/179384
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 darkreading.com#?#.ArticleBase-Body .SocialShare
 ! Not visible on desktop - so should be NOT_OPTIMIZED
 !+ NOT_OPTIMIZED
@@ -15715,12 +15719,11 @@ com-magazin.de##w-div[role$="dialog"]
 ! NOTE[id=sharingcaring]: 'Sharing is caring' popup
 ! LINK: AnnoyancesFilter/Popups/sections/popups_specific.txt#sharingcaring
 ! Sync with the rules in Annoyances filter
-! new one - 03.12.2025
-justanime.to##.share-popup-overlay
-!
 movieshdwatch.to,watchseries.pe,watch32.sx,tinyzonetv.cc,moviesjoytv.to,solarmovies.win,moviesjoyz.lol,arc018.to,fmovieszz.lol,myflixtor.tv,vipstream.tv,fboxtv.com,attackertv.so,lookmovie.tube,flixhq.to,actvid.rs,zoechip.gg,seriesonline.sx,hurawatchz.to,cineb.gg,sflix2.to,cataz.to,yuppow.com,musichq.cc,hdtodayz.to,myflixer.is,theflixertv.to,putlocker.pe,moviesjoyhd.to,123movieshd.top,myflixerz.to,zoechip.cc,showboxmovies.net,gomovies.*,himovies.sx,putlocker.gy,zoechip.com,pressplay.top,flixhd.cc,123moviestv.net,123-movies.vc,musichq.net,swatchseries.*,fmoviesto.*,cineb.rs,hdtoday.*,yesmovies.mn,divicast.com,freemoviesfull.com,dopebox.to,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,myflixertv.to,f2movies.*,moviesjoy.*,soap2day.*,sflix.*,hurawatch.cc#$#body { overflow: auto !important; padding-right: 0 !important; }
 movieshdwatch.to,watchseries.pe,watch32.sx,tinyzonetv.cc,moviesjoytv.to,solarmovies.win,moviesjoyz.lol,arc018.to,fmovieszz.lol,myflixtor.tv,vipstream.tv,fboxtv.com,attackertv.so,lookmovie.tube,flixhq.to,actvid.rs,zoechip.gg,seriesonline.sx,hurawatchz.to,cineb.gg,sflix2.to,cataz.to,yuppow.com,musichq.cc,hdtodayz.to,myflixer.is,theflixertv.to,putlocker.pe,moviesjoyhd.to,123movieshd.top,myflixerz.to,zoechip.cc,showboxmovies.net,gomovies.*,himovies.sx,putlocker.gy,zoechip.com,pressplay.top,flixhd.cc,123moviestv.net,123-movies.vc,musichq.net,swatchseries.*,fmoviesto.*,cineb.rs,hdtoday.*,yesmovies.mn,divicast.com,freemoviesfull.com,dopebox.to,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,myflixertv.to,f2movies.*,moviesjoy.*,soap2day.*,sflix.*,hurawatch.cc#$#.modal-backdrop { display: none !important; }
 movieshdwatch.to,watchseries.pe,watch32.sx,tinyzonetv.cc,moviesjoytv.to,solarmovies.win,moviesjoyz.lol,arc018.to,fmovieszz.lol,myflixtor.tv,vipstream.tv,fboxtv.com,attackertv.so,lookmovie.tube,flixhq.to,actvid.rs,zoechip.gg,seriesonline.sx,hurawatchz.to,cineb.gg,sflix2.to,cataz.to,yuppow.com,musichq.cc,hdtodayz.to,myflixer.is,theflixertv.to,putlocker.pe,moviesjoyhd.to,123movieshd.top,myflixerz.to,zoechip.cc,showboxmovies.net,gomovies.*,himovies.sx,putlocker.gy,zoechip.com,pressplay.top,flixhd.cc,123moviestv.net,123-movies.vc,musichq.net,swatchseries.*,fmoviesto.*,cineb.rs,hdtoday.*,yesmovies.mn,divicast.com,freemoviesfull.com,dopebox.to,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,myflixertv.to,f2movies.*,moviesjoy.*,soap2day.*,sflix.*,hurawatch.cc#$##modalshare { display: none !important; }
+vidbox.cc##.fixed.inset-0
+justanime.to##.share-popup-overlay
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/60788
 !+ NOT_OPTIMIZED
