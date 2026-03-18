@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 [Adblock Plus 3.1]
-! Checksum: UeFHURo94WHA5RxROcT+MQ
-! Version: 202603181242
+! Checksum: dBwHx+3RtfpUHQ9lzUy2nw
+! Version: 202603181842
 ! Title: ABP filters
-! Last modified: 18 Mar 2026 12:42 UTC
+! Last modified: 18 Mar 2026 18:42 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv
 !
@@ -955,7 +955,7 @@ mult34.com#$#abort-current-inline-script decodeURI; abort-on-property-read decod
 hdvid.*#$#abort-on-property-read Fingerprint2; abort-on-property-read atob
 actvid.com,cineb.*,hdtoday.*,hdtodayz.*,solarmovie.*,upload4earn.org,uploadbyte.com,vidbem.com,watchseries.*,yts-official.*,yts.*,zoechip.*#$#abort-on-property-read localStorage
 dood.*,doods.*,doodstream.*,dooodster.*,dooood.*,streamsb.net#$#abort-on-property-read DoodPop; abort-on-property-write adb; override-property-read cRAds trueFunc; abort-on-property-write xRds; abort-on-property-write xPoPAdS
-1377x.*,1flix.*,cucuflix.*,doood.*,dooodster.*,igetintopc.com,jasminetesttry.com,l1afav.*,moviesapi.*,myflixerzz.*,primewire.*,seaporn.org,sfile.mobi,usersdrive.com,vid2faf.*,vidfast.*,vidlink.*,vidsrc.*,watchflix.*#$#abort-on-property-read window.open
+1377x.*,1flix.*,cucuflix.*,doood.*,dooodster.*,igetintopc.com,jasminetesttry.com,l1afav.*,miraculous.to,moviesapi.*,myflixerzz.*,primewire.*,seaporn.org,sfile.mobi,usersdrive.com,vid2faf.*,vidfast.*,vidlink.*,vidsrc.*,watchflix.*#$#abort-on-property-read window.open
 vudeo.co,vudeo.io,vudeo.net,youdbox.com#$#abort-current-inline-script String.fromCharCode XMLHttpRequest
 filecrypt.*,yifysubtitles.*#$#override-property-read isAdblock false; abort-current-inline-script EventTarget.prototype.addEventListener /key/; abort-on-property-read aclib; abort-on-property-read Adcash; override-property-read isAdblock2 false;
 hclips.com,upornia.com#$#abort-on-property-read adver
@@ -1354,6 +1354,7 @@ hltv.org#$#hide-if-matches-xpath '//img[contains(@class,"day-only") or contains(
 asnwish.com,movielair.cc#$#abort-current-inline-script document.createElement __directlink; abort-current-inline-script document.createElement /blocked\.html/
 streamingcommunityz.*#$#abort-on-property-read document.head.append
 myflixerz.*#$#hide-if-matches-xpath './/div[(@style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;") or (@class and starts-with(@style, "pointer-events: none; position: absolute; top: 0px; left: 0px; width:"))]';
+miraculous.to#$#prevent-listener hashchange; prevent-listener popstate
 ! Video ads
 ||content.sinpartycdn.com/*pre-roll-ads/*$media,rewrite=abp-resource:blank-mp4,domain=sinparty.com
 ||content.sinpartycdn.com/videos-ads/*$media,rewrite=abp-resource:blank-mp4,domain=sinparty.com
@@ -2571,6 +2572,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||elihucyprus.com^
 ||emeerunoily.com^
 ||endleafroaches.com^
+||energyborazon.com^
 ||engridfanlike.com^
 ||enolasepunily.com^
 ||enstatehelibus.com^
@@ -2651,6 +2653,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||indexconcretehavendynamics.com^
 ||indriwhats.com^
 ||indusacta.com^
+||infox.sg^
 ||instarooliths.com^
 ||iodolruddock.com^
 ||iridialachkan.com^
@@ -2670,6 +2673,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||kiackhaulmy.com^
 ||kialeesewster.com^
 ||kindlestorsion.com^
+||knitsaphakia.cyou^
 ||kolhozclarain.com^
 ||kosseanmudpack.com^
 ||kueunpick.com^
@@ -2712,6 +2716,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||mournerslath.com^
 ||mudejartitoism.com^
 ||muragetunnel.com^
+||musesooreyn.cfd^
 ||myricylhoihere.com^
 ||mythosupflow.com^
 ||nainepidia.com^
@@ -2766,6 +2771,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||pneumahameil.com^
 ||poculalienly.com^
 ||potentymoa.com^
+||premiermylodei.com^
 ||preyfultarried.com^
 ||primary808.net^
 ||publicretia.com^
@@ -2792,6 +2798,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||runtime8000.com^
 ||samhainbewend.com^
 ||sansaradivulse.com^
+||santosunflat.com^
 ||scalarsmartfoundationindustries.com^
 ||scandiakenyan.com^
 ||scarcehepatitis.com^
@@ -2823,6 +2830,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||stibilpirra.com^
 ||stimespatroon.com^
 ||stoodhiplike.com^
+||stuckenthimber.qpon^
 ||stuffedclipse.com^
 ||stulmunshent.com^
 ||stummelbeelbow.com^
@@ -2869,6 +2877,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||towerloftier.com^
 ||trippetforhow.com^
 ||tripsisvellums.com^
+||trustedpromise.com^
 ||trypsinneutral.com^
 ||tuckedshowing.com^
 ||turbodeter.com^
