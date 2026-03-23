@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: cv7rbUEqX2ZRwO0CBRrTdg
-! Diff-Path: ../patches/4/4-s-1774241626-3600.patch
+! Checksum: GV+hfi1XybVJEvCvIXZ0aw
+! Diff-Path: ../patches/4/4-s-1774265098-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.26.41
-! TimeUpdated: 2026-03-23T04:49:36+00:00
+! Version: 2.1.26.44
+! TimeUpdated: 2026-03-23T11:21:18+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,8 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+courrier.jp##.fixed_sns_area
+elpais.com.co##div.sticky:has(> div.inline-flex > button.react-share__ShareButton)
 theonion.com##.wp-block-outermost-social-sharing
 thisisgame.com###post-content button[type="button"]:has(> svg[class] > path[d^="M352 224c53 0 96-43"][d$="224z"])
 quke.ru##.mob-navbar_v2 > div.mob-navbar_v2__link:has(> div.ya-share2)
@@ -14376,7 +14378,7 @@ jp##.box-sns
 ~hatena.ne.jp##a[onclick^="window.open('http://b.hatena.ne.jp/add?"]
 ~hatena.ne.jp##a[href*="//b.hatena.ne.jp/add?"]
 ~hatena.ne.jp##a[href*="//b.hatena.ne.jp/append?"]
-~hatena.ne.jp,~hatelabo.jp##a[href*="//b.hatena.ne.jp/entry/"]:not(.http-bookmark)
+~hatena.ne.jp,~hatelabo.jp##a[href*="//b.hatena.ne.jp/entry/"]:not(.http-bookmark):not([data-track-component="bookmark_count_image"])
 ##.shareBtn
 ##.redes-sociales
 ~github.com,~feedly.com##a[href^="http://feedly.com/i/subscription/"]
@@ -15821,8 +15823,7 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 !
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227472
-hatenablog-parts.com#@#a[href*="//b.hatena.ne.jp/entry/"]:not(.http-bookmark)
-cero-t.hatenadiary.jp#@#a[href*="//b.hatena.ne.jp/entry/"]:not(.http-bookmark)
+hatenablog-parts.com#@#a[href*="//b.hatena.ne.jp/entry/"]:not(.http-bookmark):not([data-track-component="bookmark_count_image"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226624
 @@||platform.twitter.com/widgets.js$domain=livejupiter2.blog.jp|nanjpride.blog.jp|j-seiji.blog.jp|akb48matomemory.com|femimatsu.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/225334
