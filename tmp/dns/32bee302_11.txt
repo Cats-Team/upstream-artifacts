@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: UcGcYgfA1lMV9eteguFl2A
-! Diff-Path: ../patches/11/11-s-1774258284-3600.patch
+! Checksum: WACdZuvjOzTA4d/UcymlUg
+! Diff-Path: ../patches/11/11-s-1774327498-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.68.38
-! TimeUpdated: 2026-03-23T09:27:53+00:00
+! Version: 2.0.68.40
+! TimeUpdated: 2026-03-24T04:41:38+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -161,10 +161,10 @@
 ||plugin.mobopay.baidu.com^
 ||mo.freeindoapp.com^
 ! AfreecaTV
-||vod-mplayer.sooplive.co.kr^
-||reqde.sooplive.co.kr^
-||adballoon.sooplive.co.kr^
-||deapi.sooplive.co.kr^
+||vod-mplayer.sooplive.com^
+||reqde.sooplive.com^
+||adballoon.sooplive.com^
+||deapi.sooplive.com^
 ! Yandex ads in apps
 ||startup.mobile.yandex.net^
 ||startup.mobile.webvisor.com^
@@ -2081,7 +2081,7 @@ motherless.com$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 ! https://github.com/AdguardTeam/AdguardFilters/issues/62745
 @@||hit.gemius.pl^$app=pl.allegro
 ! https://github.com/AdguardTeam/AdguardFilters/issues/61569
-||sooplive.co.kr/data/af_app_ad_mobile.js
+||sooplive.com/data/af_app_ad_mobile.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/59674
 @@||cdp.cloud.unity3d.com^$app=com.rovio.baba
 @@||config.uca.cloud.unity3d.com^$app=com.rovio.baba
@@ -2649,6 +2649,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+liteapks.com###ad-unit-1
 aydindenge.com.tr##.mad
 ole.com.ar#$#.bannerTopHeader ~ section[class^="sc-"]:has(> div[class^="sc-"] div.right) { top: 0 !important; }
 ole.com.ar#$##__next > header { padding-top: 50px !important; }
