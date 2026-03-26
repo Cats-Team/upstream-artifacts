@@ -3375,7 +3375,7 @@ mediafax.ro##+js(aeld, copy)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/69447
 ! https://github.com/uBlockOrigin/uAssets/issues/20632
 @@||online2pdf.com^$ghide
-online2pdf.com##div[id][class][style^="position:"] > div:last-child > div:last-child > ins.adsbygoogle:upward(3)
+online2pdf.com##.ad_box_outer_container
 online2pdf.com##div[class="container_box content_box"] > div:only-child > div:last-child > div:last-child > ins.adsbygoogle:upward(4)
 online2pdf.com##div[class="container_box content_box"] > div[id][class] > div:last-child > div:last-child > ins.adsbygoogle:upward(3)
 
@@ -8007,3 +8007,7 @@ duolingo.com##[data-test*="challenge"]:style(-webkit-touch-callout: default !imp
 ! https://github.com/uBlockOrigin/uAssets/issues/32264
 willow.arlen.icu##+js(nosiif, e, 1000)
 willow.arlen.icu##+js(aopr, document.onkeydown)
+
+! https://github.com/uBlockOrigin/uAssets/issues/32289#issuecomment-4135525372
+googleapis.com.de##+js(aeld, /contextmenu|keydown/)
+googleapis.com.de##+js(rmnt, script, /oncontextmenu|onselectstart/)
