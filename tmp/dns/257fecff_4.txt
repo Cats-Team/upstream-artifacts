@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: D8QH/ae42TViSvsRbSucLQ
-! Diff-Path: ../patches/4/4-s-1774427058-3600.patch
+! Checksum: /TlS/BGRbf7FqQqfkAc5xg
+! Diff-Path: ../patches/4/4-s-1774494827-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.26.51
-! TimeUpdated: 2026-03-25T08:20:33+00:00
+! Version: 2.1.26.53
+! TimeUpdated: 2026-03-26T03:09:47+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+quiz-maker.site#?#p.heading_message:contains(結果をシェア!!)
 youtube.com###bottom-sheet-wrapper ytm-share-target-renderer:not(:has(> a[href^="mailto:?"]))
 cadenaser.com##.bt-share
 zoff.co.jp##.zm__article__header__sns
@@ -3633,7 +3634,7 @@ lifematome.blog##.sb_copy
 polygamia.pl##div[data-content="Udostępnij"]
 polygamia.pl##button[aria-label="Udostępnij"]
 pudelek.pl,dobreprogramy.pl##button[aria-label="UDOSTĘPNIJ"]
-genic-web.com,toriizaka46.jp##.sns-share-list
+genic-web.com##.sns-share-list
 siliconangle.com##.m_social-icon-container
 divernet.com##.saboxplugin-socials
 nandemoiiyoch.com##div[id^="sns-"]
