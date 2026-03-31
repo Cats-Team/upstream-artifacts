@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: rp2yfUw9lgBHxi8A+8g/+w
-! Diff-Path: ../patches/11/11-s-1774933072-3600.patch
+! Checksum: kxCkqNjv/t4lCgt5IW2T/g
+! Diff-Path: ../patches/11/11-s-1774952979-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.68.54
-! TimeUpdated: 2026-03-31T04:53:57+00:00
+! Version: 2.0.68.56
+! TimeUpdated: 2026-03-31T10:26:39+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -170,6 +170,8 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||multiww.com^
+||geegad.com^
 ||ad.bestools.group^
 ||ad.zankhana.ltd^
 ||afs.googlesyndication.com^
@@ -2754,7 +2756,6 @@ baseballchannel.jp###sp_all_header
 ||cdn.sinparty.com^$subdocument,domain=imgbox.com
 imgbox.com##a[href^="https://sinparty.com/"]
 imgbox.com##._ln-floater
-abtranny.com##.under-header-slider
 abtranny.com##.header_mobile:has(> div.ad__title)
 abtranny.com##.video__wrapper > div.wrapper:has(> section div.ad__title)
 abtranny.com#$#.video-page__info > div.headline { margin-top: 0 !important; }
