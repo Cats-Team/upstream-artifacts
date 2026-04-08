@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: FHOOYyaGNTMLWtZop7ZVgg
-! Diff-Path: ../patches/11/11-s-1775618017-3600.patch
+! Checksum: oWI+Q3/5jHzlmDIfDbKPMg
+! Diff-Path: ../patches/11/11-s-1775640888-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.68.75
-! TimeUpdated: 2026-04-08T03:10:12+00:00
+! Version: 2.0.68.77
+! TimeUpdated: 2026-04-08T09:31:06+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2665,6 +2665,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+pimpbunny.com##ul[class^="includes-header-"] > li:has(> a[href="https://livehdcams.net/"])
 exporntoons.net##.container > div[style]:has(> ins)
 kbook8.com##.box > div[id]:has(> div > img[src^="https://pebfvv.icu/"])
 solscan.io#?#.flex.flex-wrap:has(div.not-italic:contains(Sponsored))
@@ -8396,8 +8397,8 @@ hanime1.me#$#iframe[src^="//a.magsrv.com/"] { height: 100px !important; width: 0
 ! noodlemagazine.com
 noodlemagazine.com##.container > noindex
 noodlemagazine.com##div[style^="height:110px;max-width:450px;"]
-noodlemagazine.com##.container > div[style*="height:100px"]
-noodlemagazine.com##.container > div[style*="height:250px"]
+mat6tube.com,noodlemagazine.com##.container > div[style*="height:100px"]
+mat6tube.com,noodlemagazine.com##.container > div[style*="height:250px"]
 noodlemagazine.com##.main > div.container > div[style^="max-width:450px;margin:0 auto;padding:15px"]
 noodlemagazine.com#?#div[style^="background-color:"]:has(> iframe[data-src^="//go."])
 ! op.gg
