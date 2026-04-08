@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: oWI+Q3/5jHzlmDIfDbKPMg
-! Diff-Path: ../patches/11/11-s-1775640888-3600.patch
+! Checksum: sa611MTp+14bDYMsU5EHgA
+! Diff-Path: ../patches/11/11-s-1775666112-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.68.77
-! TimeUpdated: 2026-04-08T09:31:06+00:00
+! Version: 2.0.68.80
+! TimeUpdated: 2026-04-08T16:31:51+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2665,6 +2665,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+thothub.ch##iframe[src^="https://engine.zerodayromance.com/"]
+championat.com##div[data-banner-place-id]
 pimpbunny.com##ul[class^="includes-header-"] > li:has(> a[href="https://livehdcams.net/"])
 exporntoons.net##.container > div[style]:has(> ins)
 kbook8.com##.box > div[id]:has(> div > img[src^="https://pebfvv.icu/"])
@@ -5435,13 +5437,14 @@ theporndude.vip,theporndude.com##.pdc-casting
 soccerdigestweb.com##div[class^="bnr_w3"]
 teleprogramma.pro##.header-bottom-wrapper
 nukemanga.com##.widget-text
-m.viptube.icu,m.viptube.com,m.viptube.*##.player_premium_bar
-m.viptube.icu,m.viptube.com,m.viptube.*##.partner_text_link
-m.viptube.icu,m.viptube.com,m.viptube.*##.livecams_main
-m.viptube.icu,m.viptube.com,m.viptube.*##.lcb
-m.viptube.icu,m.viptube.com,m.viptube.*###mobile-header-1
-m.viptube.icu,m.viptube.com,m.viptube.*###mobile-middle-1
-m.viptube.icu,m.viptube.com,m.viptube.*###mobile-footer-1
+m.viptube.*#%#//scriptlet('set-cookie', 'adv_show', '3')
+m.viptube.*##.player_premium_bar
+m.viptube.*##.partner_text_link
+m.viptube.*##.livecams_main
+m.viptube.*##.lcb
+m.viptube.*###mobile-header-1
+m.viptube.*###mobile-middle-1
+m.viptube.*###mobile-footer-1
 olive-hitomawashi.com###main > .bl_articles > h3[style="margin-bottom:0;"]
 olive-hitomawashi.com##h3[style="margin-bottom:0;"] + div[style^="padding-bottom: 50px; text-align: -webkit-center"]
 bisweb.jp###sp_all_header_1st
