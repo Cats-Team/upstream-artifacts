@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: v5cQRoxv8Z6CXkhESkl0Lg
-! Diff-Path: ../patches/14/14-s-1776063360-3600.patch
+! Checksum: 1v2l+JbAi6RErVMTUGEggA
+! Diff-Path: ../patches/14/14-s-1776080181-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.65.0
-! TimeUpdated: 2026-04-13T06:52:39+00:00
+! Version: 2.2.65.5
+! TimeUpdated: 2026-04-13T11:32:56+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2585,6 +2585,8 @@ ra-hoernschemeyer.de,tuhlteim-pedia.de,entwickler.de,lockbarber-supplies.de,raz-
 !
 ! NOTE: Regular rules
 !
+ydns.io##.cookie-notice-outer
+doa.gov.tr#%#//scriptlet('trusted-set-cookie', 'cookie-preferences', '{%22necessary%22:true%2C%22functional%22:true%2C%22performance%22:false%2C%22targeting%22:false}')
 corsi.unibo.it#%#//scriptlet('trusted-click-element', '#cc-banner .chefcookie__button--decline')
 v0.app#%#//scriptlet('trusted-click-element', '#fides-banner-container .fides-reject-all-button', '!cookie:fides_consent', '', 'reloadAfterClick:200')
 careers.rsmuk.com##.ph-cookie-popup-v2-view2-default
@@ -26856,6 +26858,9 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+nebula.tv#%#//scriptlet('trusted-click-element', 'main div[data-theater-mode] button[type="submit"]', '', '2000')
+nebula.tv##.css-1csnssi
+telex.hu##.snackbar--tax
 doutorfinancas.pt##.sticky-bottom
 katfile.ws#$##kModal { display: none !important; }
 katfile.ws#$#.modal-backdrop { display: none !important; }
@@ -34986,6 +34991,7 @@ macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFu
 !
 ! SECTION: Push notifications - Regular rules
 !
+telex.hu##.communication-box--push
 ||main-echo.de/_fWS/jsoninplainout/javascript/fcmsUser_WebPush
 ||vgtimes.*/minified/jvgt_notifications-
 ||vgtimes.*/minified/jvgt_push_ask-
@@ -35976,6 +35982,8 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+telex.hu##.article-html-content div.framed-content:has(> p > a[href*="/subscribe-to-our-newsletters"])
+iex.nl##.blocksub
 ura.news##div[class^="detail_news-publication-detail__report-news"]
 sporked.com##.klaviyo-signup
 sporked.com##.beehiiv-container
@@ -45402,6 +45410,10 @@ rxgo.com,alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepe
 !
 !
 !
+sofascore.com##a[href="https://app.sofascore.com/"]
+sofascore.com#$#.modalRecipe__overlay { display: none !important; }
+sofascore.com#$#body { overflow: auto !important; }
+tokyo-city.ru##.LoginModal__qr
 job.rikunabi.com###bannerDLApp
 next.rikunabi.com##aside[class^="styles_headerBanner__"]
 next.rikunabi.com##div[class^="styles_modalWrapper__"]:has(img[src^="/_next/static/media/app_store."])
@@ -53109,6 +53121,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+telex.hu##.telex-links
 techspot.com##.subDriveRevBot
 crn.com###right-ad-fragment-container
 kuper.ru##.body > section:has(> div[class^="Section_content"] > div > div[class*="ShowJsPlacement_categoryBanner"])
@@ -63078,6 +63091,8 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 !   NOTE: Donation widgets
 !   Really annoying only
 !
+telex.hu##.telex-donate
+telex.hu##.support-box
 vsquare.org##.content > div.module-item:has(> div.give-embed-form-wrapper)
 volcanodiscovery.com###supportPopup
 cutter.yt#$##popup { display: none !important; }
