@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: 5W8ukr7h4ut4w0rjOUXHmg
-! Diff-Path: ../patches/14/14-s-1776300559-3600.patch
+! Checksum: 0fTr7frSp+ZyrhXa89ML8A
+! Diff-Path: ../patches/14/14-s-1776316233-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.65.36
-! TimeUpdated: 2026-04-16T00:46:10+00:00
+! Version: 2.2.65.38
+! TimeUpdated: 2026-04-16T05:06:46+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2587,6 +2587,7 @@ bayreuth-region.de,ra-hoernschemeyer.de,tuhlteim-pedia.de,entwickler.de,lockbarb
 !
 ! NOTE: Regular rules
 !
+absolutbank.ru##section.agreement
 pornhub.com###globalCookieBanner
 mixcloud.com#?#div[class][style^="--x-backgroundColor"] > div[class]:has(> div[class] > p[class]:contains(Cookies))
 burger-king.by#%#//scriptlet('trusted-set-cookie', 'burgerKing', '%7B%22advertising%22%3Afalse%2C%22functionality%22%3Afalse%2C%22analytics%22%3Afalse%2C%22personalization%22%3Afalse%7D')
@@ -18062,7 +18063,7 @@ depop.com#%#//scriptlet("set-cookie", "gdpr__google__analytics", "false")
 depop.com#%#//scriptlet("set-cookie", "gdpr__facebook__social", "false")
 everyeye.it,youmath.it#%#//scriptlet('trusted-click-element', '#pt-accept-all')
 qwic.nl,qwic.eu,qwic.de#%#//scriptlet('set-cookie', 'cookie_consent', '0')
-turkusowawieza.pl,coder.com#%#//scriptlet('set-local-storage-item', 'cookie', 'true')
+rshb.ru,turkusowawieza.pl,coder.com#%#//scriptlet('set-local-storage-item', 'cookie', 'true')
 cleanvoice.ai,minefort.com,diariodaregiao.com.br,sticpay.com#%#//scriptlet('set-local-storage-item', 'cookie-consent', 'true')
 mantel.com#%#//scriptlet('set-cookie', 'tracking_cookie', '0')
 amd-moebel.de#%#//scriptlet('set-cookie', 'cookies_mandatory', 'true')
@@ -18745,6 +18746,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/229239
+@@||searoute.info/js/cookieControl.js$domain=searoute.info
 ! de.ergo.app - error code on startup
 @@||mobile-data.onetrust.io^$app=de.ergo.app
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229172
@@ -36337,9 +36340,9 @@ meteomedia.com##div[aria-labelledby="notification-prompt-title"]
 capterra.com##iframe[id^="faas-modal-form-"]
 e-forologia.gr##.linkbox--newsletter
 hipertextual.com###block-158
-techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com###clubPopup
-techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com###utility-bar__google-button
-techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com###utilitybar__button--newsletter
+gardeningknowhow.com,techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com###clubPopup
+gardeningknowhow.com,techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com###utility-bar__google-button
+gardeningknowhow.com,techradar.com,gamesradar.com,livescience.com,windowscentral.com,pcgamer.com,tomshardware.com###utilitybar__button--newsletter
 cloudykitchen.com##.email-highlight
 newspicks.com##div[data-testid="premiumBanner"]
 zeenews.india.com###googleCTA
@@ -53163,6 +53166,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+ip8.com###ip8-banner
 lance.com.br##section > div[class*="-news:col-span-"] > .font-krub:has(> .font-krub + a[href*="/socio-lance?utm_source="])
 ||navitime.co.jp/*/nats/commuting-simulation-big.webp
 lastpass.com##div[data-component-name="Popup Promo Modal"]
@@ -59360,7 +59364,7 @@ babup.com#%#//scriptlet('adjust-setInterval', 'timer', '*', '0.001')
 file-upload.com#%#//scriptlet('adjust-setTimeout', 'tick', '', '0.02')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176403
 ! https://github.com/AdguardTeam/AdguardFilters/issues/163755
-lelmak.com,elbadr.xyz,abda3.xyz,wisw.online,stelux.online,gooltok.com,loiz.store,jolk.online,businessnews-nigeria.com,day4news.com,net4you.xyz,mamahawa.com,10short.pro#%#//scriptlet('adjust-setInterval', '/proceed|timer|count/', '*', '0.001')
+lelmak.com,elbadr.xyz,abda3.xyz,wisw.online,stelux.online,gooltok.com,loiz.store,businessnews-nigeria.com,day4news.com,net4you.xyz,mamahawa.com,10short.pro#%#//scriptlet('adjust-setInterval', '/proceed|timer|count/', '*', '0.001')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/163470
 terbit21.app,lk21static.*#%#//scriptlet('adjust-setInterval', 'time', '*', '0.02')
 ! https://present.rssing.com/transit.php?url=http%3A%2F%2Fggs7.c.blog.so-net.ne.jp%2F_images%2Fblog%2F_c18%2Fggs7%2FE7A8B2E5B79DE4BC9AE7A0B4E99680E78AB6.jpg%3Fc%3Da1
