@@ -7278,7 +7278,11 @@ pornhub.*###relatedVideosCenter > .wrapVideoBlock
 pornhub.*##+js(set, abp1, 1)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5804
+! https://github.com/uBlockOrigin/uAssets/issues/32565
 ranker.com##+js(aopr, __eiPb)
+ranker.com##+js(nostif, /!/, 50)
+ranker.com##+js(set, Object.prototype.adBlockerPop, undefined)
+ranker.com##+js(set, admiral, undefined)
 
 ! https://github.com/NanoMeow/QuickReports/issues/1368
 @@||stltoday.com^$ghide
@@ -8988,6 +8992,8 @@ golem.de##+js(no-xhr-if, damoh)
 cinema.de##+js(no-xhr-if, svonm)
 ||computer-bild.de/_static-assets/homad/homad.js
 ||auto-bild.de/_static-assets/homad/homad.js
+pcgames.de##.cms-teaser:has([href][target="_blank"])
+pcgames.de##.innerArticleModule
 ! web.de and gmx.net
 ||uicdn.com/uimag/*/assets/_sn_/vendor/homad.min.js
 giga.de,kino.de,spieletipps.de,desired.de##+js(rpnt, script, /\"homad\"\,/)
