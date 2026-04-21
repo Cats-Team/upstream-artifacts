@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: bvjj9+9ZOBhfF1t+OVy5lg
-! Diff-Path: ../patches/14/14-s-1776771224-3600.patch
+! Checksum: B1W1BrSl9Cj45LWZRdyJXw
+! Diff-Path: ../patches/14/14-s-1776785887-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.65.94
-! TimeUpdated: 2026-04-21T11:30:33+00:00
+! Version: 2.2.65.98
+! TimeUpdated: 2026-04-21T15:34:55+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2587,6 +2587,8 @@ bayreuth-region.de,ra-hoernschemeyer.de,tuhlteim-pedia.de,entwickler.de,lockbarb
 !
 ! NOTE: Regular rules
 !
+goodinfo.tw##footer > div[style]:has(> div > input[onclick^="setCookie"])
+ofiii.com##.cookie_consent_section
 touchmywife.com,mypervyfamily.com#%#//scriptlet('trusted-set-cookie', 'cookieConsent', 'eyJjIjp7IjEiOjEsIjExIjowLCIyMSI6MCwiMzEiOjB9LCJ2IjoiMTAifQ==')
 support.mypervyfamily.com#%#//scriptlet('trusted-set-cookie', 'acceptedCookies', '%7B%22essential%22%3Atrue%2C%22functional%22%3Afalse%2C%22')
 bus.hava.ist#%#//scriptlet('trusted-set-local-storage-item', 'havaist_cookie_prefs', '{"essential":true,"analytics":false,"marketing":false,"social":false}')
@@ -36085,6 +36087,9 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+musicradar.com##button[aria-label="Newsletter"]
+syracuse.com##.module__promo--news
+fedpress.ru##.col-xs-12 > div[style]:has(> p > noindex > a[href="https://t.me/federalpress"])
 techblog.gr##.post-inner > div.nl-cta-card:has(> div.nl-cta-card__inner > form.nl-cta-card__form)
 pcmag.com##article > p > div[role="dialog"][id^="lightbox-"]
 dailymail.com##div[data-newsletter]
@@ -36379,7 +36384,6 @@ rockcult.ru##.telegram_promo
 kotaku.com##div[data-mrf-recirculation="home-newsletter"]
 gazeta.ru##.b_header-service > a._icon-tg
 mashable.com##section[x-data="window.smsSignup()"]
-sotweturkifsa8.blog##a[href="https://t.me/turkifsalifevip"]
 lifewire.com##div[id^="mntl-taxonomysc-newsletter_"]
 thepioneerwoman.com##journey-full-width-newsletter
 justonecookbook.com###body > .bodysection:has(> .container > .subscribebar)
@@ -45874,7 +45878,6 @@ pacificparadiseindian.com.au##div[data-class="app_download_banner"]
 dazeddigital.com##.article-main-content > .grid:has(a[href^="https://play.google.com/store/apps/details"])
 dazeddigital.com##.club-promo-strip
 bietigheimerzeitung.de##div[data-b-title="BHZ-R ePaper"]
-hepsiburada.com##details[class^="sf-smart-banner-"]
 e-shop.gr##.sidebar-apps
 ozdilekteyim.com##ozd-mobile-app-download
 moviebox.*##.pc-guide-mask
@@ -49689,6 +49692,8 @@ instagram.com##._aagw:empty
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/229142
+musicradar.com##aside[data-mrf-recirculation="Trending Bar"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229386
 thecode.media##.main-social-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228524
@@ -53275,6 +53280,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+new.donatepay.ru##.Multiplier__banner
 cv-library.co.uk##.featured-jobs
 ecoaliza.com.br##div.g:has(> div.g-dyn > span.ad-description)
 fogplay.mts.ru##div.card--version-8
@@ -53331,8 +53337,9 @@ media.moneyforward.com##.articles-ad-title-link
 media.moneyforward.com##.aside-promoted-articles
 thespruce.com##.mntl-notification-banner
 levelblue.com##.req-demo-mob
-faphouse.com###modal-container
-faphouse.com###modal-root
+faphouse.com#$##modal-container { display: none !important; }
+faphouse.com#$##modal-root { display: none !important; }
+faphouse.com#$#body { overflow: auto !important; }
 xtusubs.com##.pierem
 pornoenspanish.es##.grid-container > article.grid-item:has(> a.grid-item-link.marco-premium-activo)
 pornoenspanish.es###boton-descarga
@@ -63270,6 +63277,7 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 !   NOTE: Donation widgets
 !   Really annoying only
 !
+phys.org##.article-main__support
 20minut.ua##.thx-block
 telex.hu##.telex-donate
 telex.hu##.support-box
