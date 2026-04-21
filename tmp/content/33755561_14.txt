@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: HfLFolQaEkPlem2FUHzcOw
-! Diff-Path: ../patches/14/14-s-1776748080-3600.patch
+! Checksum: bvjj9+9ZOBhfF1t+OVy5lg
+! Diff-Path: ../patches/14/14-s-1776771224-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.65.89
-! TimeUpdated: 2026-04-21T05:04:38+00:00
+! Version: 2.2.65.94
+! TimeUpdated: 2026-04-21T11:30:33+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2587,6 +2587,8 @@ bayreuth-region.de,ra-hoernschemeyer.de,tuhlteim-pedia.de,entwickler.de,lockbarb
 !
 ! NOTE: Regular rules
 !
+touchmywife.com,mypervyfamily.com#%#//scriptlet('trusted-set-cookie', 'cookieConsent', 'eyJjIjp7IjEiOjEsIjExIjowLCIyMSI6MCwiMzEiOjB9LCJ2IjoiMTAifQ==')
+support.mypervyfamily.com#%#//scriptlet('trusted-set-cookie', 'acceptedCookies', '%7B%22essential%22%3Atrue%2C%22functional%22%3Afalse%2C%22')
 bus.hava.ist#%#//scriptlet('trusted-set-local-storage-item', 'havaist_cookie_prefs', '{"essential":true,"analytics":false,"marketing":false,"social":false}')
 bus.hava.ist#%#//scriptlet('set-local-storage-item', 'havaist_cookie_consent', 'true')
 bsa.org###block-cookiepolicy
@@ -16966,6 +16968,9 @@ forum.gamer.com.tr#?#.p-body-inner > .notices > .notice:has(> .notice-content > 
 bethesda.net#?#visor-alert > div > div > div:last-child:has(> a[href$="/cookie-policy"])
 maximum.com.tr#?#.sticky_cookie_warning:has(> a[href^="/TR/gizlilik-politikamiz/Sayfalar/gizlilik-politikamiz.aspx"])
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/229631
+! https://github.com/AdguardTeam/AdguardFilters/issues/229633
+!
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228794
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227779
@@ -23747,7 +23752,11 @@ shedevrum.ai###app > div.z-\[12\].bg-white
 !
 !
 ! mtproto.xyz
-mtpro.xyz#%#//scriptlet('trusted-replace-argument', 'document.querySelector', '0', 'body', 'a[href^="tg://resolve?domain=durevpnbot"]')
+mtpro.xyz#%#//scriptlet('trusted-replace-argument', 'document.getElementById', '0', 'modal-1-content', 'detect-')
+mtpro.xyz#$#figure > div:has(> a[href="tg://resolve?domain=durevpnbot"]) { display: none !important; }
+mtpro.xyz#$#a[class~="wp-block-button__link"][target="_blank"]:not([href*="mtpro"]) { display: none !important; }
+mtpro.xyz#$#figure[class] > div:has(> a[href="https://px6.me/"]) { display: none !important; }
+mtpro.xyz#$#.wp-block-navigation__submenu-container > li[class]:has(> a[href="https://mod.ovh/proxy"]) { display: none !important; }
 !
 ! otzovik
 otzovik.com##td[colspan] > div[style^="background-color: #ffd2ca;"]
@@ -25814,7 +25823,7 @@ mothergrid.de,overclock3d.net,boingboing.net#@#.ad_unit
 @@||kickasssubtitles.com/js/fuckadblock.js
 @@||fussballtransfers.com/lib/prebid*.js
 @@||fussballtransfers.com/build/js/adManager.*.js
-morgenpost.de#@#.AdSense
+gazzetta.it,morgenpost.de#@#.AdSense
 @@||morgenpost.de/static/*/admanager.js
 @@||wochenblitz.com/js/advertisment/
 @@||zertalious.xyz/admitad.js
@@ -36076,6 +36085,9 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+techblog.gr##.post-inner > div.nl-cta-card:has(> div.nl-cta-card__inner > form.nl-cta-card__form)
+pcmag.com##article > p > div[role="dialog"][id^="lightbox-"]
+dailymail.com##div[data-newsletter]
 ecoaliza.com.br#$##elementor-popup-modal-15633 { display: none !important; }
 ecoaliza.com.br#$#.dialog-prevent-scroll { overflow: visible !important; }
 affpaying.com##.w-full > div.flex-col:has(> span.text-sm.block)
@@ -44552,7 +44564,7 @@ alternet.org,theviewfromgreatisland.com,it-boltwise.de,doctorhead.ru,officelife.
 24tv.ua##.subscribe-revolver-wrap
 ricksdailytips.com##.tag-newsletter
 naviny.by##a[href="https://t.me/naviny_by"]
-ast.ru,freshauto.ru,blog.jetbrains.com,sunmag.me,poder360.com.br,becloud.by,propublica.org,lifan-car.ru,2x2tv.ru,thecode.media##.form-subscribe
+techxplore.com,ast.ru,freshauto.ru,blog.jetbrains.com,sunmag.me,poder360.com.br,becloud.by,propublica.org,lifan-car.ru,2x2tv.ru,thecode.media##.form-subscribe
 dailycaller.com##.spot-im-conversation-header
 tproger.ru##.yikes-mailchimp-container
 gsmfirmware.net,noobslab.com###FollowByEmail1
@@ -62163,6 +62175,7 @@ blog.livedoor.jp##div[id^="shitarss_title_"]
 !
 !   SECTION: Widgets - Marketing (third-party services)
 !
+||cdn.helvia.io^$third-party
 ||lemrock.com^$third-party
 ||tariffuxx.de^$third-party
 ||web-client.moveo.ai^$third-party

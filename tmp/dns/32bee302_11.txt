@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: RbwgMTyIsmjhVhwD6U6ZWw
-! Diff-Path: ../patches/11/11-s-1776748080-3600.patch
+! Checksum: 2twr3O9f8l7a7he7aHq0IA
+! Diff-Path: ../patches/11/11-s-1776771224-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.20
-! TimeUpdated: 2026-04-21T05:04:29+00:00
+! Version: 2.0.69.24
+! TimeUpdated: 2026-04-21T11:30:25+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -170,6 +170,7 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||prismriotads.com^
 ||bidder.a11.vega.aurion11.io^
 ||adapi*.boomplaymusic.com^
 ||ad-api.revoaidapp.com^
@@ -2671,6 +2672,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+techblog.gr##div[class^="single-mobile-billboard"]
+smartapps.baidu.com##.mount-fc-promo-wrapper
 ||staff.livedoor.blog/slot-fallback.js
 livedoor.blog,softon.blog.jp,mona-news.com##.slot-insert
 vocus.cc##.editor-content-block > div[style]:has(> #vocus_m_reading_parallax_middle)
@@ -8640,6 +8643,8 @@ livejournal.com##div[id^="billboard_mobile_"]
 ! END: Livejournal.com
 !
 !
+!+ NOT_OPTIMIZED
+techxplore.com##.ads-container
 !+ NOT_OPTIMIZED
 furaffinity.net###c-videoAd--outer
 !+ NOT_OPTIMIZED
