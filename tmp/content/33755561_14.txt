@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: dKkacd5gKkzH4y4SBYQRlQ
-! Diff-Path: ../patches/14/14-s-1777290094-3600.patch
+! Checksum: 3XPMmDzl+HSPMjB/Cgjq7w
+! Diff-Path: ../patches/14/14-s-1777311537-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.66.61
-! TimeUpdated: 2026-04-27T11:38:20+00:00
+! Version: 2.2.66.66
+! TimeUpdated: 2026-04-27T17:35:25+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4546,7 +4546,7 @@ verkstedutstyr.no##.fixed.w-full:has(> .consent-container)
 wearmedicine.com##body > div[class^="NewModal_"]:has(> div > div[class*="CookiesConsentPopUp_"])
 mega.lol#?##alertBackground:contains(cookies)
 mega.lol#%#//scriptlet('set-local-storage-item', 'cookies', 'consent')
-deno.com,console.anthropic.com##.fixed.bottom-2
+shotapp.ru,deno.com,console.anthropic.com##.fixed.bottom-2
 m.banggood.com##.gdpr-entry
 sberbank.com,sberbank.ru##.cookies-nova
 telegraf.news##.ancr-group
@@ -26986,6 +26986,8 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+cinevibe.asia#$#.inset-0.fixed { display: none !important; }
+cinevibe.asia#$#body { overflow: auto !important; }
 ofuse.me#%#//scriptlet('set-local-storage-item', 'hasAboutFanLetterOpened', 'true')
 cinema.bz###root > div.min-h-screen > div.relative > div.fixed.max-w-sm:has(.lucide-bookmark)
 frankmedia.ru##.floating-panel
@@ -35124,7 +35126,7 @@ labs.google.com#@##google-hats-survey
 ! SECTION: Push notifications - Popular rules
 !
 /firebase.js$domain=tmailor.com|super.ru|gazeta.uz|thevoicemag.ru|novayagazeta.eu|zab.ru|nike.com.br|novayagazeta.ru|comments.ua|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co|detik.com|sunmag.me|epoznan.pl|fotor.com|ridus.ru|sport-express.ru|easeus.com|russiatoday.ru
-/firebase-messaging.js$domain=euautodily.cz|euautoteile.de|euautoteile.at|euautoteile.ch|euautopezzi.it|euautopieces.fr|euautoczesci.pl|euantallaktika.gr|euautorecambios.es|euautopecas.pt|euautoonderdelen.be|euautodele.dk|eualkatresz.hu|euvaraosat.fi|euspares.co.uk|euavtodeli.si|euroautodiely.sk|euavtochasti.bg|euautodalys.lt|euautopiese.ro|euautoonderdelen.nl|euautodeler.co.no|euautodalas.lv|euautoosad.ee|eurobildelar.se|worldstar.com|tv1.nontondrama.click|tmailor.com|super.ru|gazeta.uz|thevoicemag.ru|novayagazeta.eu|zab.ru|nike.com.br|webursa.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|cnnamador.com|giallozafferano.it|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|belsat.eu|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ohmymag.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de|home.kingsoft.jp|sputnik.kg|sportskeeda.com|notizie.it|diarioregistrado.com|colombia.com|penangpropertytalk.com|m24.ru|yenisafak.com|mirf.ru|sozcu.com.tr|hindustantimes.com|elcordillerano.com.ar|sport-express.ru|mentoday.ru|es.memedroid.com|lublin112.pl|iguides.ru|lk21official.mom|news.tvbs.com.tw|lsm.lv|paraphraser.io|mynet.com|surabaya.tribunnews.com|birgun.net|gunes.com|b92.net|eldestapeweb.com|puma.com|vatanbilgisayar.com
+/firebase-messaging.js$domain=euautodily.cz|euautoteile.de|euautoteile.at|euautoteile.ch|euautopezzi.it|euautopieces.fr|euautoczesci.pl|euantallaktika.gr|euautorecambios.es|euautopecas.pt|euautoonderdelen.be|euautodele.dk|eualkatresz.hu|euvaraosat.fi|euspares.co.uk|euavtodeli.si|euroautodiely.sk|euavtochasti.bg|euautodalys.lt|euautopiese.ro|euautoonderdelen.nl|euautodeler.co.no|euautodalas.lv|euautoosad.ee|eurobildelar.se|worldstar.com|tv1.nontondrama.click|tmailor.com|super.ru|gazeta.uz|thevoicemag.ru|novayagazeta.eu|zab.ru|nike.com.br|webursa.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|cnnamador.com|giallozafferano.it|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|belsat.eu|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ohmymag.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de|home.kingsoft.jp|sputnik.kg|sportskeeda.com|notizie.it|diarioregistrado.com|colombia.com|penangpropertytalk.com|m24.ru|yenisafak.com|mirf.ru|sozcu.com.tr|hindustantimes.com|elcordillerano.com.ar|sport-express.ru|mentoday.ru|es.memedroid.com|lublin112.pl|iguides.ru|lk21official.mom|news.tvbs.com.tw|lsm.lv|paraphraser.io|mynet.com|surabaya.tribunnews.com|birgun.net|gunes.com|b92.net|eldestapeweb.com|puma.com|vatanbilgisayar.com|bianet.org
 /firebase-messageing.bundle.js$domain=tenorshare.jp
 /firebase-messaging-compat.js$domain=hellobacsi.com
 /firebase-messaging-init.js$domain=ziare.com|business24.ro
@@ -36136,6 +36138,8 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+bavarianfootballworks.com##form:has(> div.duet--cta--newsletter)
+techorange.com##aside > div.elementor-widget-template:has(div[data-widget_type="form.default"])
 revistamercado.do##.content  > p:has(> strong > a[href="https://revistamercado.do/mercado-newsletter"])
 cian.ru##div[class*="--sidebar"] > div.design-theme--light:has(> div[class*="--wrapper"] > div > div[class*="unsubscribed-wrapper"])
 goldderby.com##div[data-column] > div[data-component="newsletter"]
@@ -53354,6 +53358,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+wildberries.ru##.media-placement
 alfabank.ru##div[data-test-id="light-action-steps"]
 alfabank.ru##div[data-test-id="grid"] > div[style$="flex-shrink: 0;"] div[style*="border-image: initial;"]:has(a[href="https://alfabank.ru/alfa-investor/open-acc/"])
 any.run##.post-footer-banner
@@ -60496,6 +60501,7 @@ t24.com.tr#%#//scriptlet('set-constant', 'Object.prototype.autoplay', '0')
 /wp-content/plugins/disable-right-click/*
 /wp-content/plugins/right-click-disable-orignal/*
 !
+||cdn.jsdelivr.net/npm/disable-devtool$script,domain=cinevibe.asia
 1flex.org,1shows.org#%#//scriptlet('prevent-navigation', 'youtube.com')
 ||mastiraja.com/wp-content/plugins/disabled-source-disabled-right-click-and-content-protection/
 ||nepu.to/requirements/bap.js
