@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: 9b8mEUlRzg02AlG6TK1mRw
-! Diff-Path: ../patches/14/14-s-1777408655-3600.patch
+! Checksum: AsEqaWZXRZVXmCzvlSHg+g
+! Diff-Path: ../patches/14/14-s-1777446031-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.66.82
-! TimeUpdated: 2026-04-28T20:34:20+00:00
+! Version: 2.2.66.86
+! TimeUpdated: 2026-04-29T06:57:25+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2449,7 +2449,7 @@ well.pl,octopusenergy.de,morgenpost.de,wp.de,bad-gmbh.de,weser-kurier.de,engelho
 ! wp.de#$?#div[id^="cmpbox"] { display: none !important; }
 ! In case videos are not working
 ! #%#//scriptlet('trusted-click-element', '.cmptxt_btn_yes')
-thueringer-allgemeine.de,waz.de,braunschweiger-zeitung.de,nrz.de,vkmag.com,abendblatt.de,wp.de,morgenpost.de,nordbayern.de#%#//scriptlet('trusted-click-element', '.cmptxt_btn_yes')
+werstreamt.es,thueringer-allgemeine.de,waz.de,braunschweiger-zeitung.de,nrz.de,vkmag.com,abendblatt.de,wp.de,morgenpost.de,nordbayern.de#%#//scriptlet('trusted-click-element', '.cmptxt_btn_yes')
 !
 ! #$##cookie-law-info-bar/#$#.cli-modal-backdrop
 groentenenfruitwebshop.be,tarczynskiarenawroclaw.pl,motofocus.pl,najlepsibukmacherzy.pl,spb.eu,efrei.fr,linshare.org,radio357.pl,theticketingbusiness.com,weidenzaunshop.de,naturgeflechte24.de,beskidzka24.pl,keravanenergia.fi,frag-machiavelli.de,kinderleicht.berlin,drei-franken-info.de,autohaus-pauli.de,technik-hauptstadt.de,terminaloil.ee,johner-institut.de,hoyenapple.com,west-games.com,boerse-aktuell.de,orion.fm,widerspruch.org,pruefungsratgeber.de,marmaray.gov.tr,atnews.gr,teslawissen.ch,yashodahospitals.com,kinetikwellbeing.com,pctipps.de,citrinsolar.de,lewento.de,bauplan-bauanleitung.de#$##cookie-law-info-bar { display: none !important; }
@@ -2591,6 +2591,10 @@ authentisch-maennlich.de,beamten-infoportal.de,bayreuth-region.de,ra-hoernscheme
 !
 ! NOTE: Regular rules
 !
+unileoben.ac.at##.tx-cookieoptin
+discoveryplus.com#%#//scriptlet('trusted-click-element', '#modal-test-id-consent-modal button.btn--privacy-primary')
+theletter.jp#$##subscription-gate-modal { display: none !important; }
+theletter.jp#$#body { overflow: auto !important; }
 play.aetv.com###tou-container
 aetv.com##body > div[data-sentry-element="Component"] > div:has(> div p > a[href^="http://www.aegm.com/consumer-privacy-policy"])
 ethicasigorta.com.tr##.cookie-sub-alert
@@ -3101,7 +3105,7 @@ kolesa.ru#%#//scriptlet('set-cookie', '_kcp', '1')
 mui.com##div[aria-labelledby^="cookie-consent-dialog-"]
 wildberries.*###cookiePolicyRoot
 dellin.ru##div[data-qa="cookies_notification"]
-careers.lilly.com,careers.manulife.com##section[ph-module="gdpr"]
+careers.miami.edu,careers.lilly.com,careers.manulife.com##section[ph-module="gdpr"]
 zarplata.ru##div[data-qa="cookies-policy-informer"]
 zarplata.ru###bottom-cookies-policy-informer
 thedailyjagran.com#%#//scriptlet('set-cookie', 'hide', 'true')
@@ -4920,7 +4924,7 @@ atozmath.com#%#//scriptlet('set-cookie', 'cookiesconsent', 'ok')
 sentione.com##.cookie-policy-bar
 nytimes.com#%#//scriptlet('trusted-click-element', '#complianceOverlay button[data-tpl-type="Button"]', '', '3000')
 nytimes.com#%#//scriptlet('remove-class', 'fides-no-scroll', 'body')
-/wp-content/plugins/webtoffee-cookie-consent/*$domain=igeeksblog.com|fr.eitca.org|parchment.com|mitsubishi-fuso.com|culted.com
+/wp-content/plugins/webtoffee-cookie-consent/*$domain=igeeksblog.com|fr.eitca.org|parchment.com|mitsubishi-fuso.com|culted.com|gibsondunn.com
 academyofathens.gr##footer ~ div[class^="_Modal_"]:has(> p > a[href*="/prosopika-dedomena"])
 desport.ru##div[class^="Cookies_cookie__"]
 utkonos.ru,lenta.com##lu-cookie-agree
@@ -36597,7 +36601,7 @@ sankei.com###piano_mailmag_ArticlePC
 cozycravings.com#%#//scriptlet('trusted-set-cookie', 'mailerlite:webform:shown:5852655', '$now$')
 europapress.es###btnSeguirGoogle
 thepancakeprincess.com##.home-signup
-dancearoundthekitchen.com##.pmd-save-article
+dessertnowdinnerlater.com,dancearoundthekitchen.com##.pmd-save-article
 newslab.ru##.js-mediator-article > p:has(> b > a[href="https://t.me/newslablive"])
 ru.themoscowtimes.com#$#.contribute-modal__wrapper { display: none !important; }
 ru.themoscowtimes.com#$#.contribute-modal { display: none !important; }
@@ -53404,6 +53408,8 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+abc.net.au##div[class^="Home_marketingBannerMain"]
+werstreamt.es##.wse-sport
 chessbase.com###cbadsmaindiv
 play.chessbase.com##div[class^="banner-"]
 schach.de,learn.chessbase.com##div[id^="banner-"]
