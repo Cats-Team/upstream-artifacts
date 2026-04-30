@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: Ey/bglLnuzpPAVGhttoFNA
-! Diff-Path: ../patches/14/14-s-1777532583-3600.patch
+! Checksum: CPe8SXJe5bMb5cmHqS+IhA
+! Diff-Path: ../patches/14/14-s-1777545831-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.66.92
-! TimeUpdated: 2026-04-30T06:59:59+00:00
+! Version: 2.2.66.96
+! TimeUpdated: 2026-04-30T10:40:22+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2591,6 +2591,8 @@ authentisch-maennlich.de,beamten-infoportal.de,bayreuth-region.de,ra-hoernscheme
 !
 ! NOTE: Regular rules
 !
+classification.gov.au##.view-content > div.views-row:has(> div[style] > div.container a[href="https://www.communications.gov.au/privacy-policy#cookie"])
+job.wb.ru##wb-landing-feature-shell > div.modal-content:has(> div.wb-body > a[href^="https://legal.wildberries.ru/"])
 ||l8.nu/cookie/load.js
 unileoben.ac.at##.tx-cookieoptin
 discoveryplus.com#%#//scriptlet('trusted-click-element', '#modal-test-id-consent-modal button.btn--privacy-primary')
@@ -4037,7 +4039,7 @@ nouvelair.com###__next > div[style]:has(> .cookies-consent-container)
 gazeta.ru###_id_accept_cookies
 ||didomi.eldo.lu/*/loader.js?target_type=notice&
 alrosa.aero#%#//scriptlet('remove-class', 'cookie_on', 'body.cookie_on')
-rossiya-airlines.ru##.cookies-wrap
+krasnodarmedia.su,rossiya-airlines.ru##.cookies-wrap
 lolz.live##.mainContent > div.FloatingContainer:has(> div.DismissParent div.noticeCookiesContent)
 playerok.com###__next > div[class^="MuiBox-root"] > div[class^="MuiBox-root"] > div[class^="MuiBox-root"]:has(> p > a[href="/privacy"])
 fundednext.com#%#//scriptlet('set-local-storage-item', 'cookieClose', 'true')
@@ -27010,6 +27012,7 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+bcs-express.ru#%#//scriptlet('trusted-set-local-storage-item', 'Express.popup_poll.MB-226566', '9999999999999')
 skroutz.gr##.onsite-notification-toast
 thedailycatch.org###meter-message
 hgtv.com###welcome-banner
@@ -36166,6 +36169,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+krasnodarmedia.su###soc_invites_block
 sheba.com###block-marsalertbannerblock-3
 muyinteresante.okdiario.com##.suscrip-sticky-bottom-suscripciones-zinet
 ||davidc1092.sg-host.com/tests/suscripciones_2026/suscripciones_modal.js$domain=muyinteresante.okdiario.com
@@ -36220,7 +36224,7 @@ ecoaliza.com.br#$#.dialog-prevent-scroll { overflow: visible !important; }
 affpaying.com##.w-full > div.flex-col:has(> span.text-sm.block)
 parade.com##.smart-slot-bottom-drawer-widget
 parade.com##.smart-slot-newsletters
-calgarysun.com,windsorstar.com,tj.news,financialpost.com##.newsletter-widget__new-story-page
+ottawacitizen.com,calgarysun.com,windsorstar.com,tj.news,financialpost.com##.newsletter-widget__new-story-page
 ||snopes.com/ajax/get_nl_promo_config.php
 vocus.cc##.items-center.fixed.lg\:flex.hidden
 mediaguru.cz##form[data-controller="newsletter"]
@@ -45671,6 +45675,7 @@ rxgo.com,alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepe
 !
 !
 !
+wallpics.app##body > div.fixed:has(> div.w-full a[href^="https://play.google.com/store/apps/"])
 m.soundcloud.com##div[class^="Header_RightContainer"] > button:not([data-testid="sign-in-button"])
 m.soundcloud.com##div[class^="FooterStoreSection"]
 quicksigorta.com##body > header > div.MuiBox-root:has(> div > div > img[src^="https://quicksigorta.com/img/logos"])
@@ -49416,6 +49421,9 @@ ya.ru,yandex.*##.serp-list__page > div.serp-item:has(a[noredirecturl^="https://p
 !
 ! Yandex.Disk
 disk.360.yandex.*##div[class^="download-mobile-qr-"]
+!
+! Yandex.Dostavka
+dostavka.yandex.ru##.RumObservableRoot div[class]:has(> a[href^="https://8jxm.adj.st/route?"][href*="&adj_deep_link=yandextaxi"])
 !
 ! Yandex.Messenger
 yandex.*##.yamb-chat-not-selected__download-app-section > a.yamb-desktop-app-link ~ *
@@ -53420,6 +53428,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+bcs-express.ru##div[data-component="content"]:has(> div[class] > div[class] > a[href="/investidei"])
 mynet.com##div[data-fmymani-kredi-widget]
 abc.net.au##div[class^="Home_marketingBannerMain"]
 werstreamt.es##.wse-sport
@@ -62500,6 +62509,7 @@ blog.livedoor.jp##div[id^="shitarss_title_"]
 !
 !   SECTION: Widgets - Marketing (specific)
 !
+marks.com###kampyleButtonContainer
 ||ipbd.ru/34122*.js
 ||assets.bouyguestelecom.fr/Palpatine_Omnikit/omnikit@1/widget.init.js
 karrierewelt.golem.de###widget-chat-container
