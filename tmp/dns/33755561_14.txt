@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: 7zFsOJ5M9OEAV9zEK0jAlw
-! Diff-Path: ../patches/14/14-s-1777923633-3600.patch
+! Checksum: xRGfqmMv8com3RsKM2fPRQ
+! Diff-Path: ../patches/14/14-s-1777964259-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.67.22
-! TimeUpdated: 2026-05-04T19:37:28+00:00
+! Version: 2.2.67.24
+! TimeUpdated: 2026-05-05T06:54:14+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1726,6 +1726,7 @@
 !
 ! SECTION: Cookies - General URL
 !
+||cookies.prod.tekla.com^
 ||ucookie.com.tr^
 ||wix.consentik.com^
 ||cjs.ltwebstatic.com/unpkg/privacy-sdk@*/dist/privacy-sdk.umd.js
@@ -2591,6 +2592,7 @@ devowl.io,authentisch-maennlich.de,beamten-infoportal.de,bayreuth-region.de,ra-h
 !
 ! NOTE: Regular rules
 !
+notariat.ru###notaryCookie
 adultswim.com#%#//scriptlet('trusted-click-element', '.wbd-ltp-btn')
 videoload.de#%#//scriptlet('trusted-click-element', '#OVERLAY-REJECT', '', '500')
 ||news.devon-cornwall.police.uk/assets/js/cookieManager.js
@@ -36194,6 +36196,9 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+yomiuri.co.jp##.p-article-google-news
+yomiuri.co.jp##.layout-contents__sidebar > div[style="height:52px;text-align:center; margin-bottom: 16px;"]:has(> .p-subscription-info-link_A2)
+yomiuri.co.jp###p-emergency-news-obit:has(> .p-header-notice__item a[href^="https://www.google.com/preferences/source?q="])
 espncricinfo.com##a[title="Get latest cricket updates on WhatsApp"]
 bengo4.com###js-google-news-banner
 bengo4.com##.p-topics-about-google-news-banner
@@ -53474,6 +53479,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+ishiguro-gr.com###block-ishiguro-content > p:has(> a[href] img)
 xvideos.com,xnxx.*,xv-ru.com,xnxx-ru.com##.premium-results-line
 xnxx-ru.com###video-content > div[class^="ntv"]
 xnxx.*,xnxx-ru.com###header + div[style^="display"]:not(#content)
