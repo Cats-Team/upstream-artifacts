@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 [Adblock Plus 3.1]
-! Checksum: ZFpMTEpy+GamYr5PU+I8Ww
-! Version: 202605071342
+! Checksum: NSdQLjiyAQr88XD1htUg7g
+! Version: 202605071912
 ! Title: ABP filters
-! Last modified: 07 May 2026 13:42 UTC
+! Last modified: 07 May 2026 19:12 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv
 !
@@ -1166,6 +1166,7 @@ updown.*#$#prevent-listener mousedown /shown_at/; prevent-element-src-loading sc
 multiup.io#$#abort-current-inline-script decodeURI decodeURIComponent; abort-current-inline-script navigator FingerprintJS
 m1xdrop.*#$#abort-current-inline-script document.createElement; abort-on-property-read window.open;
 flixcdn.*,moviesapi.*#$#abort-on-property-write cache_loader.init; abort-on-property-read window.open
+vidora.*#$#override-property-read cRAds false
 ! MISC
 airsoftmilsimnews.com#$#abort-on-property-read td_ad_background_click_target
 bagas31.info#$#abort-on-property-write atob
@@ -1442,6 +1443,7 @@ pastpapers.papacambridge.com#$#hide-if-matches-xpath './/a//following-sibling::i
 dailyworld.com##div[class][style^="height"], div[class="secondary"] {remove:true;}
 animetsu.net#$#hide-if-matches-xpath './/iframe[@sandbox][@srcdoc]/parent::div[@style]/ancestor::div[@dir="ltr"][style]'
 vixsrc.*#$#abort-on-property-read dispatchEvent; hide-if-matches-xpath './/div[(@style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;") or (@class and starts-with(@style, "pointer-events: none; position: absolute; top: 0px; left: 0px; width:"))]'; abort-on-property-read window.open; abort-current-inline-script String.fromCharCode 2147483647;
+vsembed.ru#$#override-property-read sb_test true
 ! Video ads
 ||content.sinpartycdn.com/*pre-roll-ads/*$media,rewrite=abp-resource:blank-mp4,domain=sinparty.com
 ||content.sinpartycdn.com/videos-ads/*$media,rewrite=abp-resource:blank-mp4,domain=sinparty.com
@@ -2593,6 +2595,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||777beta.net^
 ||8080inbroadband.com^
 ||890broadwave.com^
+||8ubizi41e1ryjuno.rest^
 ||94summary.net^
 ||99gt8.com^
 ||abamawristed.shop^
@@ -2634,6 +2637,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||baeriapiacula.com^
 ||balanicextreat.com^
 ||ballasshwebo.com^
+||baptrzinsjbso.site^
 ||bariesnaw.com^
 ||beardsfeline.com^
 ||beateechafed.com^
@@ -2881,6 +2885,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||kolhozclarain.com^
 ||kosseanmudpack.com^
 ||kueunpick.com^
+||kueiretailsfenite.cyou^
 ||lakeletbothria.com^
 ||lanceyatigan.com^
 ||languestweezed.com^
@@ -2995,6 +3000,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||query50.com^
 ||quinzehoddins.com^
 ||quohogssopping.com^
+||qybrsqzj.com^
 ||radarcatalystmomentumindustries.com^
 ||rancorsmiserly.com^
 ||randanspartan.com^
@@ -3009,6 +3015,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||resolveflashdigitalunlimited.com^
 ||rethephrased.com^
 ||retinaspealer.com^
+||rfkyx92tr9togeknexcvnc7l28cn1ey6w23.cfd^
 ||ribwortjulep.com^
 ||richardghain.com^
 ||rilletsshivoo.com^
@@ -3086,6 +3093,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||templatein13.net^
 ||thiazinamus.com^
 ||thimpardas.com^
+||tholoslobed.com^
 ||thummingnats.com^
 ||tibiaescourer.com^
 ||tiepinshazings.com^
