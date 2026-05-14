@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: NTuMAX4gS8SK+RNJZuHI2Q
-! Diff-Path: ../patches/14/14-s-1778691435-3600.patch
+! Checksum: vEtCjoTATSbZN4MJZ4xWqQ
+! Diff-Path: ../patches/14/14-s-1778742742-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.68.4
-! TimeUpdated: 2026-05-13T16:53:28+00:00
+! Version: 2.2.68.7
+! TimeUpdated: 2026-05-14T07:09:09+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2605,6 +2605,7 @@ cornhub.army#%#//scriptlet('trusted-click-element', 'dialog a[role="button"][dat
 !
 ! NOTE: Regular rules
 !
+service.justiz.de##section[data-testid="cookie-banner"]
 btsearch.pl###root > div[role="dialog"]:is([aria-label="Używamy plików cookie"], [aria-label="We use cookies"])
 kerama-marazzi.com##.js-cookie-template
 theridgefieldpress.com,thetelegraph.com,beaumontenterprise.com,bigrapidsnews.com,chron.com,ctinsider.com,ctpost.com,darientimes.com,seattlepi.com,expressnews.com,fuelfix.com,greenwichtime.com,houstonchronicle.com,lakecountystar.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,milfordmirror.com,mrt.com,myjournalcourier.com,myplainview.com,mysanantonio.com,ncadvertiser.com,newstimes.com,nhregister.com,ourmidland.com,recordpatriot.com,registercitizen.com,seattlepi.com,sfchronicle.com,sfgate.com,sheltonherald.com,smallbusiness.chron.com,stamfordadvocate.com,theheraldreview.com,thehour.com,theintelligencer.com,timesunion.com,trumbulltimes.com,weekand.com,wiltonbulletin.com,work.chron.com,yourconroenews.com###__next > div.bottom.fix:has(a[href="/privacy/"])
@@ -7516,7 +7517,7 @@ tuya.com###_th-trust
 polki.pl###tcf277-modal
 vegetology.com##div[data-name="comp-banner"]
 yclients.com##.gdpr-policy
-gebank.ru,pularys.com,onurmarket.com,frostopt.ru,famil.ru,sushistory.com,orthomol.life,babelnet.org,krka.biz,7news.com.au##div[class^="cookie-"]
+brutalx.com,gebank.ru,pularys.com,onurmarket.com,frostopt.ru,famil.ru,sushistory.com,orthomol.life,babelnet.org,krka.biz,7news.com.au##div[class^="cookie-"]
 wisdom.nec.com###func-cookie
 onlinegibdd.ru###gritter-notice-wrapper
 aftonbladet.se#%#//scriptlet('trusted-click-element', '.message-component > button[title^="Godkänn"]')
@@ -11284,7 +11285,7 @@ yubico.com##.cookie-notice-big
 rasmussen.edu###cookies-tracking
 hoper.pl,teroplan.*,e-podroznik.pl##.ep-cookies-info-wrapper
 eurotherm.com##.site-cookie-pref
-helix.ru,new.artforintrovert.ru,loyalfans.com,ripe.net##app-cookie-consent
+quackr.io,helix.ru,new.artforintrovert.ru,loyalfans.com,ripe.net##app-cookie-consent
 esenlik.com.tr##.kisiselveri-popup
 afisha.ru#?#div[id="content"] > div[class]:has(> div[class] > div[class] a[href^="https://help.rambler.ru/legal/"])
 swatch.com#$#div[data-widget="explicitCookieModal"] { display: none!important; }
@@ -18902,6 +18903,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/231198
+@@||cdn.cookielaw.org/consent/*.json$domain=purexbox.com
 ! taboolanews.com
 @@||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$domain=atlas.taboolanews.com
 @@||cdn.privacy-mgmt.com/mms/$domain=atlas.taboolanews.com
@@ -26962,7 +26965,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 /wp-content/plugins/mailchimp/*
 /wp-content/plugins/modesco-zen-subscribe/*
 /wp-content/plugins/newspack-popups/*
-/wp-content/plugins/popup-maker/*$~stylesheet
+/wp-content/plugins/popup-maker/*$~stylesheet,domain=~schornsteinfeger-liv-bayern.de
 /wp-content/plugins/thrive-leads/*
 /wp-content/themes/Newspaper-child/*$~stylesheet,domain=~dyvys.info|~capital.de|~inside-digital.de|~expressvpn.com|~botanichka.ru|~misionesonline.net|~probasket.pl
 ! AppNexus CMP popups
@@ -36279,6 +36282,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+france24.com##div[data-article-content] > div.t-content__body:has(> p > a[href="https://whatsapp.com/channel/0029VaoOiJc0gcfEHFjq5V2e"])
 birminghammail.co.uk##div[data-testid^="non-commercial-"]
 birminghammail.co.uk,liverpoolecho.co.uk,manchestereveningnews.co.uk##a[data-testid="premium-button"][href="/subscribe"]
 birminghammail.co.uk,mirror.co.uk,liverpoolecho.co.uk,manchestereveningnews.co.uk##section[class^="GooglePreferredSource_wrapper__"]
@@ -37055,8 +37059,9 @@ wearesolomon.com##.site-extras > p
 blog.swc.rs#%#//scriptlet('trusted-set-local-storage-item', 'seen-sign-up-modal', '{"value":"true"}')
 blog.swc.rs##.my-10:has(> div.flex > input[aria-label="Enter your email address"])
 teenvogue.com##div[class^="ContentFooterNewsletterContentWrapper-"]
+nytimes.com#$#body { overflow: auto !important; }
 nytimes.com#$#div[data-testid="onsite-messaging-unit-gateway"] { display: none !important; }
-nytimes.com#$#.vi-gateway-container { overflow: auto !important; }
+nytimes.com#$#.vi-gateway-container { overflow: auto !important; position: static !important; }
 yama.minato-yamaguchi.co.jp##div[style].connection_flex > .nl_box
 nara-np.co.jp##.newsletter-box
 bild.de##article:has(> a:only-child > figure > img[alt*="Newsletter"])
