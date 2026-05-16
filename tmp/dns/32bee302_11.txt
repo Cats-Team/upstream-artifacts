@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: W5m+yI7zLRlMlHJBKpmNyw
-! Diff-Path: ../patches/11/11-s-1778917466-3600.patch
+! Checksum: //tjiZ4ZIrAphlEloSFs1Q
+! Diff-Path: ../patches/11/11-s-1778956135-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.68
-! TimeUpdated: 2026-05-16T07:41:00+00:00
+! Version: 2.0.69.70
+! TimeUpdated: 2026-05-16T18:25:20+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2692,6 +2692,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+appagg.com##.ftblad ~ div[class][style*="box-shadow:none"]:has(> div[class] ins.adsbygoogle)
+appagg.com##.hbody > .si_list > .si_li:has(> div[class] ins.adsbygoogle)
 atlas.taboolanews.com##section[aria-label="Advertisement"]
 porntourist.com##.header__bar > div.bar > a[href][target="_blank"][rel="nofollow"]
 2ch.logpo.jp##.AmazonItems
@@ -2890,7 +2892,6 @@ pornbaker.com###before-list-boxes-mobile-singl
 pornbaker.com###inside-video-boxes-mobile2_2
 pornbaker.com###inside-video-boxes-mobile2
 baseballchannel.jp###sp_all_header
-itc.ua##.image-100
 walica.jp##footer + div.fixed.bottom-0.left-0.right-0.z-50.sm\:hidden
 thetoc.gr##.bannerparent
 thetoc.gr##.mg_underhero
@@ -8697,6 +8698,8 @@ livejournal.com##div[id^="billboard_mobile_"]
 ! END: Livejournal.com
 !
 !
+!+ NOT_OPTIMIZED
+itc.ua##.image-100
 !+ NOT_OPTIMIZED
 techxplore.com##.ads-container
 !+ NOT_OPTIMIZED
