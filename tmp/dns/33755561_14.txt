@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: UEA59TSW9yV0XwJiM9B9Jw
-! Diff-Path: ../patches/14/14-s-1779282271-3600.patch
+! Checksum: jJnGg7Aylb2RrCa1HFHCwg
+! Diff-Path: ../patches/14/14-s-1779303476-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.68.58
-! TimeUpdated: 2026-05-20T13:01:01+00:00
+! Version: 2.2.68.62
+! TimeUpdated: 2026-05-20T18:54:48+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2496,7 +2496,7 @@ ntv.com.tr,foromtb.com#%#//scriptlet('prevent-setTimeout', 'f.parentNode.removeC
 ! For apps
 ||fundingchoicesmessages.google.com^$app=com.accordion.pro.camera|ru.photostrana.mobile|com.photo.android.camera|com.finallevel.radiobox
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176118
-ot.gr,tvi.iol.pt,cnnturk.com,news.bg,lifestyle.bg,topsport.bg,hurriyet.com.tr#%#//scriptlet('trusted-click-element', '.fc-consent-root .fc-footer-buttons-container > .fc-footer-buttons > .fc-cta-consent.fc-primary-button')
+windowsforum.kr,ot.gr,tvi.iol.pt,cnnturk.com,news.bg,lifestyle.bg,topsport.bg,hurriyet.com.tr#%#//scriptlet('trusted-click-element', '.fc-consent-root .fc-footer-buttons-container > .fc-footer-buttons > .fc-cta-consent.fc-primary-button')
 !
 ! ###sliding-popup
 polymtl.ca,oxfam.org,efka.gov.gr,c-budejovice.cz,veolia.de,iyihisset.com,amerika21.de,museicapitolini.org,developer.nvidia.com,zillya.com,inrim.it,jneurosci.org,medrxiv.org,novartis.com.tr,royal.uk,transcom.com,netcologne.de,belltower.news,bigfm.de,click.ro,demokrata.hu,emma.de,gysev.hu,humanite.fr,ikgastarten.nl,la7.it,london.gov.uk,mavcsoport.hu,mcdonalds.at,mcdonalds.it,mises.org,mnm.hu,musescore.com,nbcsports.com,pnas.org###sliding-popup
@@ -2611,6 +2611,8 @@ sabancivakfi.org###ez-banner[role="banner"]
 !
 ! NOTE: Regular rules
 !
+jeuxmaths.fr#%#//scriptlet('trusted-click-element', '.fc-cta-do-not-consent')
+mosoblgaz.ru##.cookie-modal-wrapper
 mini.com.tr#%#//scriptlet('trusted-click-element', 'epaas-fallback-page-shell >>> div.buttonContainer > button.accept-button')
 ||koc.com.tr/api/api/v1/Consent/CookieText/
 bezmialem.com.tr#%#//scriptlet('set-cookie', 'bezmialemCookieConsent_tr', 'rejected')
@@ -16487,7 +16489,7 @@ ariva.de###bottomWarnings
 newpharma.be###box_cookie_acceptance
 mercedes-benz.com###cLayer.notice
 mercedes-benz.com###cPageOverlay
-ariteknokent.com.tr,regione.emilia-romagna.it,coupons.de,msn.com###cc-banner
+lenovopress.lenovo.com,ariteknokent.com.tr,regione.emilia-romagna.it,coupons.de,msn.com###cc-banner
 deutsche-handwerks-zeitung.de###cc-box
 fiber.nl###ccm-banner-wrap
 worlddata.info,laenderdaten.info,rund-ums-baby.de###cconsent
@@ -36344,6 +36346,9 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+fanatical.com##.EmailSignUpBanner__content
+substack.com##.container-jsOc9L
+birgun.net##.gsource:has(> div > a[href^="https://google.com/preferences/source"])
 univerlist.com##.m-width-370.modal:has(img[src="/static/site/images/bite/mail.png"])
 platinonline.com##.col-md-12 > .margin-bottom-md:has(a[href*=".google.com/"])
 denofgeek.com##.newsletter-cta__form
@@ -45959,6 +45964,8 @@ rxgo.com,alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepe
 !
 !
 !
+meduza.io##.GeneralMaterial-module-article > p[class^="SimpleBlock"]:has(> a[href^="https://onelink.to/"] + a[href="https://bit.ly/meduzamirror"])
+meduza.io##.GeneralMaterial-module-article > hr
 dpu.edu.tr#%#//scriptlet('trusted-click-element', '.mobile_app_info_x > a')
 sushico.com.tr###singular-banner
 hayatpay.com.tr##a[href^="https://hayatpay.go.link/"]
@@ -50148,6 +50155,9 @@ instagram.com##._aagw:empty
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/231685
+meduza.io##.GeneralMaterial-module-article > p[class^="SimpleBlock"]:has(> a[href^="https://onelink.to/"] + a[href="https://bit.ly/meduzamirror"])
+meduza.io##.GeneralMaterial-module-article > hr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231252
 webtekno.com##.related-tag-posts-widget
 webtekno.com##.others-news
