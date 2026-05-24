@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: jzlfFJQaL29G8LliJecLWQ
-! Diff-Path: ../patches/14/14-s-1779550377-3600.patch
+! Checksum: 8dXxR5feXfJzDVcCWQC3zA
+! Diff-Path: ../patches/14/14-s-1779619279-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.68.80
-! TimeUpdated: 2026-05-23T15:29:36+00:00
+! Version: 2.2.68.82
+! TimeUpdated: 2026-05-24T10:38:10+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2611,6 +2611,8 @@ sabancivakfi.org###ez-banner[role="banner"]
 !
 ! NOTE: Regular rules
 !
+fightmode.tv#%#//scriptlet('trusted-set-local-storage-item', 'cookie_consent', 'declined')
+||neboa.pl/wp-content/plugins/gdpr-cookie-compliance/
 gptzero.me##body > div.fixed:has(> div.CookieConsent)
 instar-informatika.hr###vsccookieConsent
 evidenz.asfinag.at,shop.asfinag.at#%#//scriptlet('set-cookie-reload', 'NonEssentialCookiesAccepted', 'no')
@@ -18945,6 +18947,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/231876
+fightmode.tv#@#.ck-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231719
 @@||cdn.vhx.tv/assets/vite/CookieBanner.*.js$domain=watch.dropout.tv
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231343
