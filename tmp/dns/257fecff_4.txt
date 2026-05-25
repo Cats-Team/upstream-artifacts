@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: CX70vRoTi6aXbe+4zt6iDg
-! Diff-Path: ../patches/4/4-s-1779679206-3600.patch
+! Checksum: vNTcedmLesaPbDcn+L8ifA
+! Diff-Path: ../patches/4/4-s-1779695270-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.28.41
-! TimeUpdated: 2026-05-25T03:16:28+00:00
+! Version: 2.1.28.43
+! TimeUpdated: 2026-05-25T07:43:46+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9914,7 +9914,7 @@ tlt.ru,yesiltopuklar.com##.single-social-share
 applesfera.com##.section-instagram-container
 oggito.com##body .facebookBtn
 mywebtimes.com###sharewrapper
-flankesports.com##.nd-share
+ensonhaber.com,flankesports.com##.nd-share
 m.timesofindia.com##div[data-ga*="share-whatsapp"]
 m.timesofindia.com##div[data-ga*="share-facebook"]
 m.timesofindia.com##div[data-ga*="share-twitter"]
@@ -15470,6 +15470,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ||mailget.net^$third-party
 ||my.hellobar.com^$third-party
 !
+10haber.net##.sospaylas
 genbank.ru##div[data-popup="socials"]
 lmusic.kz##.c-subscribe-alert__wrapper
 yeniavaz.com#%#//scriptlet('prevent-setTimeout', '#divModalPageLike')
