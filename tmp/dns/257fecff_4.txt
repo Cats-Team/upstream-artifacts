@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: uLrbp932eG3LDiPmT8RRJA
-! Diff-Path: ../patches/4/4-s-1780033042-3600.patch
+! Checksum: 57Y65mrnHg2zaCmWFq2H/A
+! Diff-Path: ../patches/4/4-s-1780060724-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.28.66
-! TimeUpdated: 2026-05-29T05:33:17+00:00
+! Version: 2.1.28.69
+! TimeUpdated: 2026-05-29T13:14:44+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,9 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+promokodus.com##.coupon-share-but
+mequrimequru.jp##.c-shareParts
+mequrimequru.jp##.c-followShareBox
 serbestiyet.com##.single-post-share-btn
 etnowpolymers.com,femina.in,filmfare.com,goodhomes.co.in,grazia.co.in,themachinist.in##.social_detail
 fintechmagazine.com##div[class^="StickyArticleShare_"]
@@ -2164,7 +2167,7 @@ microsoft.com##div[data-bi-an="social-share"]
 meetup.com##.flex:has(> ul > li > button > div#share-facebook-in-GroupHome)
 discogs.com##.side__gnpk > .wrapper_Ixres
 akomnews.com##.quick_menu > li:not(:has(> div > i.font_icon))
-androidpolice.com,makeuseof.com,collider.com,cbr.com,howtogeek.com,thegamer.com,hardcoregamer.com,gamerant.com,screenrant.com###sharingButtonPopup
+pocket-lint.com,androidpolice.com,makeuseof.com,collider.com,cbr.com,howtogeek.com,thegamer.com,hardcoregamer.com,gamerant.com,screenrant.com###sharingButtonPopup
 dota2.ru##a[href^="//t.me/share/"]
 championat.com,comments.rambler.ru##button[data-comments$="share_popup"]
 alive.com##.PostShare
