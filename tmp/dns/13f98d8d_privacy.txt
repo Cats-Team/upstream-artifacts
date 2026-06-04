@@ -1136,6 +1136,7 @@ www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d
 ! https://github.com/uBlockOrigin/uAssets/issues/33157
 ||zoom.us/*/app-telemetry.
 ||zoom.us/*/fingerprintjs-
+||zoom.us/user/anonymous/telemetry
 ! petametrics
 ||petametrics.com^$~script
 !#endif
@@ -1426,6 +1427,7 @@ $removeparam=fbadid
 $removeparam=ymclid
 $removeparam=ysclid
 $removeparam=yclid
+$removeparam=ym_tracking_id
 ! https://help.ads.microsoft.com/apex/index/3/en/60000
 $removeparam=msclkid
 ! Wicked Reports click tracking
