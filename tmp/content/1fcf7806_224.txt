@@ -1,11 +1,11 @@
 ! url: https://filters.adtidy.org/extension/ublock/filters/224.txt
 ![Adblock Plus 2.0]
-! Checksum: RQv/4TGJJEZHiWMqGKt5AA
-! Diff-Path: ../patches/224/224-s-1780616097-3600.patch
+! Checksum: 29SDlTFZVkdaQ642+Qlreg
+! Diff-Path: ../patches/224/224-s-1780645297-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.0
-! TimeUpdated: 2026-06-04T23:32:16+00:00
+! Version: 2.1.60.2
+! TimeUpdated: 2026-06-05T07:38:50+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1120,6 +1120,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+aramgg.com##.bg-red-950
+aramgg.com##a[rel^="sponsored"]
 x6g.com##.news-article_container > ul > li[class]:has(> a[href^="/ad.php?aHR0c"])
 ||zudns.cn/uploads/*.gif$image,domain=tcptest.cn
 tcptest.cn##div.min-w-0 > .relative
@@ -5350,6 +5352,11 @@ newduba.cn###jq_youxi
 ||lodipq3zb.com^
 ||wwavo59q3.com^
 ||blackthorn88.com^
+||nahdlvqwqkzxby.com^
+||tt144jrfu.com^
+||ndpfxnu.com^
+||4xr7sy3gu.com^
+||yn68b5vn9.com^
 ||branch20.top^
 ||m3v8x28jut.com^
 ||dd81bp3qbj.com^
@@ -14891,8 +14898,8 @@ iplark.com##div[style="position: relative;"]
 cngold.org##.w310:has(>.swiper-company)
 cngold.org##.headCompanys
 cngold.org##.mainRight > .border_top:first-child
-ping0.cc##.xzeles
-ping0.cc###adbright
+ping0.cc##.xaeles
+ping0.cc###adfright
 cngold.org##.foot_megagame
 cngold.org##.fixed_jt
 hanime1.me##div[style*="text-align:"]:has(>div[style*="color: white"])
