@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: eOXN1wcGcm8XXTTGCmmvZA
-! Diff-Path: ../patches/4/4-s-1780948252-3600.patch
+! Checksum: IaGKkB3GdCuyujxJ5PL53Q
+! Diff-Path: ../patches/4/4-s-1780990001-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.29.2
-! TimeUpdated: 2026-06-08T19:47:26+00:00
+! Version: 2.1.29.4
+! TimeUpdated: 2026-06-09T07:22:55+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+gentosha.co.jp##.p-book-share__sns
 slovoidilo.ua##.compare-banner:has(> a[href^="http://t.me/"])
 osvita.ua##a[href="https://t.me/osvitatopnews"]
 osvita.ua##div.banner-telegram
@@ -718,7 +719,7 @@ mequrimequru.jp##.c-shareParts
 mequrimequru.jp##.c-followShareBox
 serbestiyet.com##.single-post-share-btn
 etnowpolymers.com,femina.in,filmfare.com,goodhomes.co.in,grazia.co.in,themachinist.in##.social_detail
-fintechmagazine.com##div[class^="StickyArticleShare_"]
+technologymagazine.com,fintechmagazine.com##div[class^="StickyArticleShare_"]
 pockettactics.com,pcgamesn.com,wargamer.com##.sidebar-social-widget
 pockettactics.com,pcgamesn.com,wargamer.com##span[data-title^="Join the "][data-title$=" community"]
 defence-ua.com#?#.sidebar > .section-title:contains(Ми у соцмережах)
