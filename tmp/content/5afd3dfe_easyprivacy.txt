@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
 [Adblock Plus 1.1]
-! Checksum: 53KKPGL8DFFU+W0tUParhg
-! Version: 202606091422
+! Checksum: oyWOf/BHdBsSwNtee4tQrw
+! Version: 202606091952
 ! Title: EasyPrivacy
-! Last modified: 09 Jun 2026 14:22 UTC
+! Last modified: 09 Jun 2026 19:52 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3078,7 +3078,6 @@ _WebVitalsReporter_
 &sst.sw_exp=
 .js?id=GTM-
 /*JmVu.js?sp=
-/*JmVu.js?tg=
 /.netlify/scripts/rum
 /.rum/@adobe/helix-
 /ns.html?id=GTM-
@@ -3089,6 +3088,8 @@ _WebVitalsReporter_
 ://sgtm.*.js?
 ://tagging.*.js?aw=
 ://tagging.*/settings.js
+! Taggrs.io
+.js?tg=$~third-party
 ! Stape
 =aWQ9R1RNL*apiKey=$script,~third-party
 =aWQ9R1RNL*page=$script,~third-party
@@ -5552,7 +5553,7 @@ omni.soundestlink.com$image
 ||perljs.com^$third-party
 ||permutive.com^$third-party
 ||personyze.com^$third-party
-||petametrics.com^$third-party,domain=~telegraph.co.uk|~thestreet.com
+||petametrics.com^$third-party,domain=~meidasnews.com|~telegraph.co.uk|~thestreet.com
 ||pghub.io^$third-party
 ||pgs.io^$third-party,domain=~publicgood.com
 ||phonalytics.com^$third-party
