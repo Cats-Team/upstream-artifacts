@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: l8THWjI4kJyBNK41QEiOiA
-! Diff-Path: ../patches/11/11-s-1780989997-3600.patch
+! Checksum: 6VDB9SYAXpiB4ZP4U7Mrrg
+! Diff-Path: ../patches/11/11-s-1781003540-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.17
-! TimeUpdated: 2026-06-09T07:23:09+00:00
+! Version: 2.0.70.19
+! TimeUpdated: 2026-06-09T11:08:41+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2701,6 +2701,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+eurosport.com.tr##div[data-testid="marketing-hbo-max-block"]
+watch.impress.co.jp##.gStickyAd
 operationsports.com#$#header { --mobile-header-ad--height: 0 !important; }
 operationsports.com##.pushdown-placeholder
 ||yxshufang.com/public/060819.js
@@ -2715,7 +2717,6 @@ gbnews.com##.ad-sticky-footer-mobile
 hochi.news##.sub__head:has(+ .job-list-wrap)
 hochi.news##div[style="min-width:320px;min-height:160px;text-align:center;margin:20px 0 0 0;"]
 onedio.co##.playvid-container
-onedio.co##.bg-white.u-center
 techtimes.com##.page-top-mobile-video
 motortrend.com##header[data-ids="GlobalHeader"] ~ div.align-center:has(> div.items-center > div[data-testid="article_top_ad-mobile"])
 motortrend.com##section[data-testid="chapter"] > div[class*="TextElement"] > div:has(> div.items-center > div[data-ad])
