@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: rReLqXMDRUB3vNZGgFdB0A
-! Diff-Path: ../patches/14/14-s-1781164466-3600.patch
+! Checksum: kVXiIYsViZ12zqkaemAkaw
+! Diff-Path: ../patches/14/14-s-1781184696-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.70.16
-! TimeUpdated: 2026-06-11T07:50:53+00:00
+! Version: 2.2.70.19
+! TimeUpdated: 2026-06-11T13:28:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4909,7 +4909,6 @@ allegutschein.de,rabattecode.de##.privacy-policy-moudle
 kupkolo.cz#$#div[data-modal-endpoint="cookiebar"] { display: none !important; }
 kupkolo.cz#$#body { overflow: auto !important; }
 ggmax.com.br##.component--page-cookies-consent
-x.com#%#//scriptlet('trusted-set-cookie', 'd_prefs', 'MToxLGNvbnNlbnRfdmVyc2lvbjoyLHRleHRfdmVyc2lvbjoxMDAw')
 tablesgenerator.com##.consent-dialog
 gamesnacks.com##body > div[jsowner]:has(> div > div[role="dialog"] a[href^="https://policies.google.com/privacy"])
 istikbal.com.tr##df-cookie-element
@@ -6759,7 +6758,6 @@ sigaantenado.com.br###bar-lgpd
 archnet.org,solana.com##div[class*="CookieConsent_"]
 ||assets.investisdigital.com/cookiemanager/
 ||bettercollective.com/*/cookies.js
-x.com,twitter.com#%#//scriptlet('set-cookie', 'twtr_pixel_opt_in', 'N')
 myniacin.com##.nx-popup
 lebiscuit.com.br##div[class*="modalcookie"]
 budni.de#$##tc-privacy-wrapper { display: none !important; }
@@ -7800,8 +7798,9 @@ theprotocol.it#?#div[class*="ContainerElement_"] > div[class*="GridElement_"] > 
 theprotocol.it#?#div[class^="ContainerElement_"] > div:not([class]) > div[class^="Container_"]:has(> aside[data-test="section-cookieModal"])
 allenai.org,solanamobile.com,merlin.foyer.work##.rhc-banner
 teztour.ee##.dialog-window
-x.com,communitynotes.twitter.com#?##main > div[class^="wrapper__"]:has(> div[aria-labelledby^="notice"])
-x.com,communitynotes.twitter.com#?##main > div[class^="sc-"] > div[class^="src__InlineCalloutElement"]
+x.com##body > .flex > div[role="region"][aria-label]:has(> .flex-col.gap-2 > button.text-body.bg-white.border-transparent + button.text-body.bg-white.border-transparent)
+x.com,communitynotes.twitter.com###main > div[class^="wrapper__"]:has(> div[aria-labelledby^="notice"])
+x.com,communitynotes.twitter.com###main > div[class^="sc-"] > div[class^="src__InlineCalloutElement"]
 razpisanie.bdz.bg#$#body #cookieWarning { display: none !important; }
 razpisanie.bdz.bg#$#body { overflow: auto !important; padding-right: 0 !important; }
 razpisanie.bdz.bg#$#.modal-backdrop:not(.modal-backdrop + .modal-backdrop) { display: none !important; }
@@ -8475,7 +8474,7 @@ vyos.io##section[class^="Cookies_cookies__"]
 moemax.ch#?##root > div[class*=" "]:has(> div[class] > div#jentis_consent)
 uxcel.com##.cookie-banner-wrap
 psychologies.ru##.cookies-popup-wrapper
-maruichikokan.co.jp,doctorpiter.ru,woman.ru,theday.ru,starhit.ru,parents.ru,maximonline.ru,thegirl.ru,mydecor.ru,vokrugsveta.ru,marieclaire.ru,octopus.com.hk##.cookiesPopup
+mcmaison.ru,maruichikokan.co.jp,doctorpiter.ru,woman.ru,theday.ru,starhit.ru,parents.ru,maximonline.ru,thegirl.ru,mydecor.ru,vokrugsveta.ru,marieclaire.ru,octopus.com.hk##.cookiesPopup
 hornirakousko.cz,gorna-austria.pl,hornerakusko.sk,upperaustria.com,oberoesterreich.nl,oberoesterreich.at#$#body { overflow: auto !important; }
 hornirakousko.cz,gorna-austria.pl,hornerakusko.sk,upperaustria.com,oberoesterreich.nl,oberoesterreich.at#$#body #cookie-modal { display: none !important; }
 hornirakousko.cz,gorna-austria.pl,hornerakusko.sk,upperaustria.com,oberoesterreich.nl,oberoesterreich.at#$#.cc-window-backdrop { display: none !important; }
@@ -13280,7 +13279,7 @@ ship24.com,sbt.com.br##app-accept-cookie
 gainward.com,palit.com###cookieok
 automation.siemens.com###cm-banner
 bikester.be##.cookieHeader
-forklog.com##.terms_popup
+forklog.com.ua,forklog.com##.terms_popup
 idi.it##.pure-cookies-notice-container
 audials.com##.pure-cookies-notice-wrapper
 teamaretuza.com#$##consentModal { display: none !important; }
@@ -18791,7 +18790,6 @@ nacongaming.com#%#//scriptlet("set-constant", "tarteaucitron.cookie", "undefined
 intersport.nl,intersport.hu,intersport.nl,intersport.es,intersport.at#%#//scriptlet("abort-on-property-read", "window.Urls.cookiePopup")
 warsteiner.de##section:has(> div[class] > svg + div[class] > div > span > p > a[href="/datenschutz"])
 warsteiner-gruppe.de#%#//scriptlet('trusted-click-element', '#gdpr-preface__opt-in')
-x.com,twitter.com#%#document.cookie="eu_cn=1; path=/;";
 empik.com#%#//scriptlet('set-cookie', 'cp', '1')
 empik.com#%#//scriptlet('set-cookie', 'cc', '2')
 empik.com#%#//scriptlet('set-cookie', 'cva', '1')
@@ -19019,6 +19017,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/233373
+@@||abs.twimg.com/x-web/*/cookie-banner-*.js$domain=x.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233170
 webtic.it#@#.cookie-banner:not(body):not(html)
 ! theweekjunior.com - broken age verification
@@ -27267,6 +27267,8 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+threads.com#%#//scriptlet('set-session-storage-item', 'barcelona_mobile_upsell_state', '1')
+radio.yandex.ru#%#//scriptlet('trusted-click-element', 'div[class^="LoginPromptContent_"] > button')
 shkolkovo.online##div[class*="ModalVideoStyles_showWithCookies"]
 movilzona.es##.np-card--with-banner[data-mrf-recirculation^="news-promotion-card-"]
 theeburgerdude.com##.fd-is-open
@@ -35518,6 +35520,7 @@ macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFu
 !
 ! SECTION: Push notifications - Regular rules
 !
+promiflash.de##body > .background > .shadow-lg:has(> .flex.gap-base > button.rounded-xl + button.rounded-xl)
 ||tycsports.com/cwvitals/v-1.7.0/js/webPushChunk
 tycsports.com###vanPushPermissionPromptRoot
 comments.ua###push_info
@@ -36491,7 +36494,7 @@ ianos.gr,geox.com,365daysofbakingandmore.com,lejournaldelamaison.fr,newsbomb.gr,
 ! ##.cta-component-full-width
 eveningtimes.co.uk,greenocktelegraph.co.uk,heraldscotland.com,swindonadvertiser.co.uk,wiltshiretimes.co.uk##.cta-component-full-width
 ! ##.subscribe
-izhlife.ru,nbaanalysis.net,finansingundemi.com,healthyseasonalrecipes.com,borsaningundemi.com,thestraight.com.au,recipetineats.com,emilybites.com,tidymom.net,hoff.ru,androeed.ru,hummingbirdhigh.com,the-steppe.com,detector404.ru,nngroup.com,inbusiness.kz,rtl.hr,adindex.ru,downdetector.su,nashe.ru,windscribe.com,retail.ru,panini.com.br,mydecor.ru,retailer.ru,blog.samaltman.com,defenseone.com,relish.com,obozrevatel.com,immigrantinvest.com,borsagundem.com.tr,404media.co,promokodi.coupons,motociclismo.es,mind.ua,occrp.org,shopify.engineering,boardingarea.com,defense.gov,bitsofco.de,vogue.ua,cuprum.media,re-russia.net,kinobusiness.com,seroundtable.com,naukatv.ru,avtovzglyad.ru,glavred.net,glavred.info,stopcor.org,bcs-express.ru,mpr-shop.ru,varianty.lviv.ua,gotovim.ru,livelib.ru,daily.afisha.ru,cnnturk.com,ko.ru,torontovka.com,mrpl.city,mydeliciousmeals.com,marieclaire.ru,kp.ua,trendymen.ru,plus-aliance.ru,instyle.ru,twilio.com,novostivl.ru,exkavator.ru,logincasino.com.ua,liveposts.ru,320volt.com,versia.ru,neft.by,shopify.com,zoutons.com,myfreesoft.ru,maximonline.ru,woman.ru,parents.ru,vokrugsveta.ru,psychologies.ru,ellegirl.ru,wday.ru,marieclaire.ru,indiatimes.com,shopify.in,vz.ru,vokrugsveta.ru,censor.net,fizzicseducation.com.au,fparf.ru,revouninstaller.com,officelife.media,kod.ru,masterinvest.info,bessarabia.ua,football.kulichki.net,jeotermalhaberler.com,glavcom.ua,hindustantimes.com,hightech.fm,culture.ru,blog.eva.ua,officiel-online.com,wccftech.com,ideanomics.ru,goldsilver.com,kp.ru,infobus.eu,atorus.ru,castorama.ru,marieclaire.ua,mvs.gov.ua,oneplus.com,tickets.ua,europaplus.ru,krossovki.com,belretail.by,femmie.ru,mauijim.com,netpeak.net,wday.ru,buhgalteria.ru,ellegirl.ru,gameslog.ru,gizmag.com,healthhacks.ru,klerk.ru,menshealth.com,rbc.ru,snce.ru,turizm.ru,wegame.com.ua##.subscribe
+mcmaison.ru,izhlife.ru,nbaanalysis.net,finansingundemi.com,healthyseasonalrecipes.com,borsaningundemi.com,thestraight.com.au,recipetineats.com,emilybites.com,tidymom.net,hoff.ru,androeed.ru,hummingbirdhigh.com,the-steppe.com,detector404.ru,nngroup.com,inbusiness.kz,rtl.hr,adindex.ru,downdetector.su,nashe.ru,windscribe.com,retail.ru,panini.com.br,mydecor.ru,retailer.ru,blog.samaltman.com,defenseone.com,relish.com,obozrevatel.com,immigrantinvest.com,borsagundem.com.tr,404media.co,promokodi.coupons,motociclismo.es,mind.ua,occrp.org,shopify.engineering,boardingarea.com,defense.gov,bitsofco.de,vogue.ua,cuprum.media,re-russia.net,kinobusiness.com,seroundtable.com,naukatv.ru,avtovzglyad.ru,glavred.net,glavred.info,stopcor.org,bcs-express.ru,mpr-shop.ru,varianty.lviv.ua,gotovim.ru,livelib.ru,daily.afisha.ru,cnnturk.com,ko.ru,torontovka.com,mrpl.city,mydeliciousmeals.com,marieclaire.ru,kp.ua,trendymen.ru,plus-aliance.ru,instyle.ru,twilio.com,novostivl.ru,exkavator.ru,logincasino.com.ua,liveposts.ru,320volt.com,versia.ru,neft.by,shopify.com,zoutons.com,myfreesoft.ru,maximonline.ru,woman.ru,parents.ru,vokrugsveta.ru,psychologies.ru,ellegirl.ru,wday.ru,marieclaire.ru,indiatimes.com,shopify.in,vz.ru,vokrugsveta.ru,censor.net,fizzicseducation.com.au,fparf.ru,revouninstaller.com,officelife.media,kod.ru,masterinvest.info,bessarabia.ua,football.kulichki.net,jeotermalhaberler.com,glavcom.ua,hindustantimes.com,hightech.fm,culture.ru,blog.eva.ua,officiel-online.com,wccftech.com,ideanomics.ru,goldsilver.com,kp.ru,infobus.eu,atorus.ru,castorama.ru,marieclaire.ua,mvs.gov.ua,oneplus.com,tickets.ua,europaplus.ru,krossovki.com,belretail.by,femmie.ru,mauijim.com,netpeak.net,wday.ru,buhgalteria.ru,ellegirl.ru,gameslog.ru,gizmag.com,healthhacks.ru,klerk.ru,menshealth.com,rbc.ru,snce.ru,turizm.ru,wegame.com.ua##.subscribe
 ! ##.subscription
 quickanddirtytips.com,telesputnik.ru,whiteflowerfarm.com,nur.kz,kontur.ru,fnvolga.ru,news.bg,lifestyle.bg,topsport.bg,m-strana.ru,thebellmirror.com,gadgets360.com,cityam.com,world.hey.com,mvs.gov.ua,kontur-extern.ru,okocrm.com,lifestyleasia.com,cars.av.by,business-standard.com,holiday.by,hcdinamo.by,ural56.ru,slidstvo.info,cozumpark.com,x-team.com,m.vz.ru,shoppinglive.ru,starhit.ru,gamemag.ru,careeraddict.com,glasswire.com,starhit.ru,busfor.ua,brighteon.com,championat.com,goodhouse.ru,ichip.ru,irk.ru,thepostmillennial.com,skidochnik.com.ua##.subscription
 ! ##body > div[id][style*="top: 0px; width: 100%; z-index: 99999999;"]
@@ -36527,6 +36530,9 @@ movilzona.es,isinolsa.com,gendai.media,clutchpoints.com,newstime.joyn.de,hisse.n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+promiflash.de##header > div[class] > h1 + .flex > .flex:has(> a[href^="https://www.google.com/preferences/source?q="])
+usnews.com##button[data-tracking-id="google_preferredsources"]
+incrypted.com##.inc-avanced-banner:has(a[href="https://t.me/Incrypted_bot?start=ZGw6MzE3MTc3"])
 tochka.net##.print-and-share + p > strong:has(> a[href="https://www.facebook.com/tochka.net"])
 heavy.com###custom_html-27
 dailylviv.com##.description > p:has(> a[href="https://t.me/dailylviv"])
@@ -46359,6 +46365,13 @@ rxgo.com,alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepe
 !
 !
 !
+radio.yandex.ru##div[class^="DownloadAppBanner_"]
+tabletki.ua##.home-app-load
+tabletki.ua##.petition-preview
+telefonnyjdovidnyk.com.ua###ci-play-container
+telefonnyjdovidnyk.com.ua###news-line
+telefonnyjdovidnyk.com.ua##.android-wrapper
+telefonnyjdovidnyk.com.ua#?##sidebar > h2[style]:contains(Новинка – мобільний додаток для Android)
 ussoccer.com#?#main > div.w-screen:has(> div[class^="HeroHeader"] h2:contains(Soccer App))
 vbr.ru#?#article > div[class*="Paper_root"]:has(> div[class^="news-custom-banner_info"] > div[class^="news-custom-banner_subtitle"] > span:contains(Скачать приложение))
 rugbypass.com##.camp-spot
@@ -54222,6 +54235,10 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+soonersports.com##.s-top__ads
+incrypted.com##.inc-avanced-banner:has(a[href^="https://incrypted.com/"])
+mcmaison.ru##div[data-creative-container="hb-low-main"]
+dot.asahi.com##.m-trend
 ebay.*#$?#.x-vi-evo-main-container__top-panel div.x-pda-placements { visibility: hidden !important; margin-bottom: -24px !important; }
 shiksha.com##.recoWidgetSection
 shingakunet.com##.sectionCpModal

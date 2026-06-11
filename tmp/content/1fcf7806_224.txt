@@ -1,11 +1,11 @@
 ! url: https://filters.adtidy.org/extension/ublock/filters/224.txt
 ![Adblock Plus 2.0]
-! Checksum: YQRh9OvvMY0kA7VCAp4kQA
-! Diff-Path: ../patches/224/224-s-1781164450-3600.patch
+! Checksum: gq8e3G78H1/bAUttSZtRyQ
+! Diff-Path: ../patches/224/224-s-1781184684-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.29
-! TimeUpdated: 2026-06-11T07:51:13+00:00
+! Version: 2.1.60.31
+! TimeUpdated: 2026-06-11T13:28:42+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -849,6 +849,8 @@ msn.cn##+js(json-prune, configs.*.properties.slideshowWCSettings.interstitialNat
 ! Removes ad placeholders in sliders
 ! Current path is "properties.componentConfigs.slideshowConfigs.slideshowSettings.interstitialNativeAds"
 ! Other rules probably can be removed, but keep them just in case for some time
+! https://github.com/AdguardTeam/AdguardFilters/issues/233247
+! TODO: use "trusted-json-set" once it will be available for all platforms
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198422
 ! Rule below is required in case if DNS filtering is enabled.
 ! To play video website requires "cna" cookie (antiadblock/VPN message is displayed without this cookie)
@@ -5377,6 +5379,9 @@ newduba.cn###jq_youxi
 ||8h6oiw0uo.com^
 ||m4dynuge4.com^
 ||8h7j79qxm.com^
+||g8nwdolod.com^
+||pv7ezc6as.com^
+||9mdg9cu59.com^
 ||whkhct2lnf.com^
 ||5ipifco2tf.com^
 ||4uitrrt700.com^
