@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: ER6NqlJCac9Z5utoGw+Pjw
-! Diff-Path: ../patches/14/14-s-1781250565-3600.patch
+! Checksum: J8fk9NeeBps69lbj9LAxog
+! Diff-Path: ../patches/14/14-s-1781270476-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.70.26
-! TimeUpdated: 2026-06-12T07:46:17+00:00
+! Version: 2.2.70.29
+! TimeUpdated: 2026-06-12T13:18:07+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2615,6 +2615,7 @@ sabancivakfi.org###ez-banner[role="banner"]
 !
 ! NOTE: Regular rules
 !
+||deepsystems.com/wp-content/plugins/wp-terms-popup/
 anime.uniquestream.net##.mp-cookie
 scaleway.com#%#//scriptlet('trusted-click-element', 'div[class^="_cookieBanner"] > div[class^="_container"] button', 'containsText:Reject all', '2000')
 businessnetwork.jp##.pageCookie
@@ -27279,6 +27280,7 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+thestar.com.my#%#//scriptlet('set-local-storage-item', 'nx_onboarding_seen_v1', '1')
 matchtv.ru##div[id^="webcaster_player"] > a[href^="https://matchtv.ru/subscriptions?"]
 threads.com#%#//scriptlet('set-session-storage-item', 'barcelona_mobile_upsell_state', '1')
 radio.yandex.ru#%#//scriptlet('trusted-click-element', 'div[class^="LoginPromptContent_"] > button')
@@ -36544,6 +36546,7 @@ movilzona.es,isinolsa.com,gendai.media,clutchpoints.com,newstime.joyn.de,hisse.n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+pplware.sapo.pt##.sidebar-content > .widget:has(a[href="https://pplware.sapo.pt/newsletterpplware/"])
 sportnews.24tv.ua##.whatsapp-subscribe-widget
 sportnews.24tv.ua##.google-subscribe-widget
 ||gameinformer.com/async-load/block?block_id=announcementsubscription
@@ -54291,6 +54294,8 @@ ispazio.net##.isp-widget--spot
 ||gitflic.ru/static/image/sidebar/banner-pro.png
 gitflic.ru##.sidebar-single-banner
 onedio.co##.kesfet_promotion
+just-auto.com##.rhs-ic-banner
+just-auto.com##.gdm-orange-banner
 just-auto.com###home-trusted-banner
 just-auto.com##.in-article-premium-insights
 chibanippo.co.jp##.block-views-blockteikimono-views-block-1
@@ -64101,6 +64106,7 @@ posta.com.tr##.compatibility-widget
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229681
 ||power-technology.com/wp-content/plugins/sgpolls/
 ||survey.alchemer.eu^$subdocument,third-party
+just-auto.com##iframe[src^="https://survey.alchemer.eu/"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229092
 sn-jp.com##.br-vote-widget
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228367

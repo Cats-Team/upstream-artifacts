@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: vDATjWXPa2z9XYjYeTvucQ
-! Diff-Path: ../patches/11/11-s-1781250565-3600.patch
+! Checksum: 4DKmF1Y1kmtt90LZbEsmvA
+! Diff-Path: ../patches/11/11-s-1781263547-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.24
-! TimeUpdated: 2026-06-12T07:46:09+00:00
+! Version: 2.0.70.26
+! TimeUpdated: 2026-06-12T11:22:13+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2702,6 +2702,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+sondakika.com##.MSK_VIDEO
 televisiononline.gratis##div.adsense_bajomenu
 digitalspy.com##section div[class^="css-"]:not([data-theme-key], [data-vars-cta]):has(> .ad-container)
 worldsoccer.com##.post-content-ad
@@ -6390,7 +6391,7 @@ majikichi.com###article_bottom_v2 + aside#lite_link
 majikichi.com##.content > aside#lite_link
 pingpongmap.net###mobilefooter
 yoyaku-top10.jp##.p-floating_banner_box
-vipsister23.com,news4wide.net,chomagireko.blog.jp###lite_link
+genshin-soku.com,vipsister23.com,news4wide.net,chomagireko.blog.jp###lite_link
 rakyatku.com,jateng.inews.id##.ads_mobile_wrap
 jateng.inews.id###fragmentx
 dic.nicovideo.jp###ad01
