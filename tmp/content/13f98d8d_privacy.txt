@@ -3089,6 +3089,7 @@ lnk.to,smarturl.it##+js(set, linkfire.tracking, {})
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32604
 ||fileditchfiles.me/api/plausible
+fileditchfiles.me##+js(no-fetch-if, method:POST body:/pageview|engagement/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21372#issuecomment-4275264452
 ||pik.opendesktop.org/pik.js
@@ -3136,6 +3137,9 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33336
 ||awin1.com/cread.php?awinmid=*&awinaffid=*&ued=$urlskip=?ued -blocked
+
+! https://doujin.koe-koe.com/voice/rj01295635
+||dlsite.com/maniax/dlaf/=/aid/*/url/$urlskip=/\/url\/(http.+)/ -uricomponent
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
