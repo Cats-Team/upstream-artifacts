@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 9sONjzVO/0ApTxxzbSFnTA
-! Diff-Path: ../patches/4/4-s-1782150022-3600.patch
+! Checksum: /ShC7v4qPrxH2VTEKJJYOA
+! Diff-Path: ../patches/4/4-s-1782199627-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.29.53
-! TimeUpdated: 2026-06-22T17:36:37+00:00
+! Version: 2.1.29.56
+! TimeUpdated: 2026-06-23T07:23:23+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,8 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+techcabal.com##.is-content-justification-right .wp-block-group:has(> .block-social-sharing)
+ricardocuisine.com##.c-sharing-button-wrapper
 farmaciasdesimilares.com##div[class*="shareContainer"]
 redmas.com.co###button-google-profile
 zamin.uz##.tg-cta
@@ -6241,7 +6243,7 @@ lidea.today##.aa-share
 president.jp##.article-header__bottom:has(> .js-sns-wrap)
 president.jp##.js-sns-wrap
 iz.ru##.get_yandex_subscription_links
-fintechmagazine.com,aripaev.ee##div[class^="ArticleShare_"]
+telcomagazine.com,fintechmagazine.com,aripaev.ee##div[class^="ArticleShare_"]
 almasryalyoum.com##.share_buttons_container
 1000.menu###soc_share_bt
 opindia.com##.tdb-author-box + div.td_block_separator
@@ -7000,7 +7002,7 @@ house.goo.ne.jp,gdm.or.jp##.detailSns
 railfile.jp,damtomomatsuri.com###sns_block
 koi-kiseichu.jp###share-inner
 tama-kyu.com##.footer-share-header
-xn--pckua2a7gp15o89zb.com,bosai-nippon.com,zeromeat.jp,anime.granbluefantasy.jp##.p-sns
+nissui.co.jp,xn--pckua2a7gp15o89zb.com,bosai-nippon.com,zeromeat.jp,anime.granbluefantasy.jp##.p-sns
 monarkgame.com##.foot--detail__main__links--share
 anime.d4dj-pj.com##.icon_list
 anime.shadowverse.jp##.l-snsShare
