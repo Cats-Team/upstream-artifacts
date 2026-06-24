@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: mtdjGkTS4OfMo1GEXq36Bg
-! Diff-Path: ../patches/14/14-s-1782243892-3600.patch
+! Checksum: 8jNQlicrIXB5g3tJD+V8/g
+! Diff-Path: ../patches/14/14-s-1782285783-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.71.5
-! TimeUpdated: 2026-06-23T19:41:36+00:00
+! Version: 2.2.71.7
+! TimeUpdated: 2026-06-24T07:20:20+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2616,6 +2616,7 @@ sabancivakfi.org###ez-banner[role="banner"]
 !
 ! NOTE: Regular rules
 !
+degussa.com###cookieMainPage
 fashiola.de#%#//scriptlet('trusted-click-element', '#reject-cookies-button', '', '2000')
 livesex.com##.overlay-gdpr-consent-content
 livesex.com##.overlay-gdpr-consent
@@ -13502,7 +13503,7 @@ hellobank.fr###nextoutils_gestionCookies
 hellobank.fr###nextoutils_gestionCookies ~ div.popin-cache
 jack-wolfskin.se,jack-wolfskin.si,jack-wolfskin.pt,jack-wolfskin.pl,jack-wolfskin.nl,jack-wolfskin.lu,jack-wolfskin.lt,jack-wolfskin.lv,jack-wolfskin.fr,jack-wolfskin.it,jack-wolfskin.ie,jack-wolfskin.hu,jack-wolfskin.gr,jack-wolfskin.fi,jack-wolfskin.ee,jack-wolfskin.dk,jack-wolfskin.eu,jack-wolfskin.hr,jack-wolfskin.bg,jack-wolfskin.be,jack-wolfskin.co.uk,jack-wolfskin.ch,jack-wolfskin.at,jack-wolfskin.de,jack-wolfskin.com,jack-wolfskin.cz###jwsdw-cookieHint-container
 cabify.com###cmcb-informationLayer
-thesaltysoldier.com,magesy.blog###moove_gdpr_cookie_info_bar
+anime-odcinki.pl,thesaltysoldier.com,magesy.blog###moove_gdpr_cookie_info_bar
 httpstatus.io##.snackbar.is-bottom-right
 tvzvezda.ru##.cookie_messege
 speedof.me##.cc-consent-toast
@@ -36749,8 +36750,9 @@ estrelaseouricos.sapo.pt##.pum-container
 foradeserie.sapo.pt##.smartmag-widget-codes > .block
 foreveryoung.sapo.pt##.footer-6-delta.brxe-div
 pplware.sapo.pt##.sidebar-content > .widget:has(a[href="https://pplware.sapo.pt/newsletterpplware/"])
-sportnews.24tv.ua##.whatsapp-subscribe-widget
-sportnews.24tv.ua##.google-subscribe-widget
+24tv.ua##.application-subscribe-widget
+24tv.ua##.whatsapp-subscribe-widget
+24tv.ua##.google-subscribe-widget
 ||gameinformer.com/async-load/block?block_id=announcementsubscription
 uainfo.org##.publication-text-full > p:has(> a[href^="https://www.facebook.com/NewsUAinfo.org/"])
 ok.co.uk##section[class^="GooglePreferredSource_wrapper"]
