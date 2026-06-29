@@ -1111,6 +1111,9 @@ dogdrip.net##+js(href-sanitizer, body a[href^="/link.php?url=http"], ?url)
 ! https://forum.donanimhaber.com/hepsiburada-ve-firsatlari-ana-konu--150987015-1787#161998768
 ||donanimhaber.com/ExternalLinkRedirect?*^url=http$doc,urlskip=?url
 donanimhaber.com##+js(href-sanitizer, body a[href^="/ExternalLinkRedirect?"][href*="url=http"], ?url)
+! https://www.f6s.com/company/zomato
+f6s.com##+js(aeld, , redirect)
+||f6s.com/redirect?url=http*$doc,urlskip=?url
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24675 - click tracking
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
@@ -3170,5 +3173,7 @@ webex.com##+js(no-xhr-if, svc.webex.com/metrics)
 ! https://github.com/uBlockOrigin/uAssets/issues/26362
 ||curiosity.sheepesports.com^
 
+! https://github.com/AdguardTeam/AdguardFilters/issues/234519
+mashable.com##+js(href-sanitizer, a[href^="https://zdcs.link/"], ?u)
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
