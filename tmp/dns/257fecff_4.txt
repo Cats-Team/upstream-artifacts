@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: A1YmV3cK1o2qmVqCxz67fw
-! Diff-Path: ../patches/4/4-s-1783408910-3600.patch
+! Checksum: u2CZqlqAxMGEVA4nwqd9FA
+! Diff-Path: ../patches/4/4-s-1783429150-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.29.95
-! TimeUpdated: 2026-07-07T07:18:01+00:00
+! Version: 2.1.29.97
+! TimeUpdated: 2026-07-07T12:55:13+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,12 +668,16 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+bartamanpatrika.com##.web-share-btn
+wiki3.jp#?#.uk-container > p:contains(シェアしよう！)
+football.london##div[class^="Article_inner-wrapper"] > section[class^="SocialFollowBar_wrapper"]
 goonernews.com##.c-feat-post__social
 pornoxo.com##li:has(> a[title="Share"])
 fanpage.it##.bnr
 flixeo.tv##.fixed.right-4
 sexplex.com##div[data-tooltip="Share"]
 anime-loads.org##.social-btn-group
+kisskh.*##.mat-divider + div:has(> div.mt-3 > div.text-center > button.sb-facebook)
 sportiva.shueisha.co.jp##.share-button-b
 gdebenz.ru##.rss-share
 aleagues.com.au##.keepup-sharing
