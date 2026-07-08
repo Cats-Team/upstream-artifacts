@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: uIw8ld1zXrkkLRGsBkCNhQ
-! Diff-Path: ../patches/14/14-s-1783514669-3600.patch
+! Checksum: X25QdSC3Zg74Ia/LRscHEQ
+! Diff-Path: ../patches/14/14-s-1783532264-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.72.11
-! TimeUpdated: 2026-07-08T12:40:45+00:00
+! Version: 2.2.72.15
+! TimeUpdated: 2026-07-08T17:34:37+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2620,6 +2620,8 @@ sabancivakfi.org###ez-banner[role="banner"]
 !
 ! NOTE: Regular rules
 !
+arlamow.pl##div[data-el="cookie-monster"]
+faphouse.com###cookie-wall-short
 lksgepard.pl#%#//scriptlet('trusted-click-element', '#lksCookieBanner #lksCookieCustomize, #lksCookieBanner label[for="lks-cookie-functional"], #lksCookieBanner #lksCookieSaveCustom', '!cookie:lks_consent_choices_v1', '1500')
 ixbt.games###consent-ru-banner
 santelab.pl#%#//scriptlet('trusted-click-element', '.items-end.justify-center.lg\:items-center .focus-visible\:outline-2.focus-visible\:outline-offset-2', 'containsText:Odmowa', '1500')
@@ -3022,8 +3024,8 @@ ruplaymarket.ru,ruplay.market#%#//scriptlet('set-local-storage-item', 'policyAcc
 online.globus.ru#%#//scriptlet('trusted-set-local-storage-item', 'notifications-ls', '{"state":{"isCookieNotified":true},"version":0}')
 taketaketake.com#%#//scriptlet('set-local-storage-item', 'takex3.cookie-consent', 'accepted')
 update.kia.com,aa.com.tr##.fixed.inset-0
-nibelungen-wohnbau.de,creator.fronius.com#%#//scriptlet('trusted-click-element', '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection', '', '500')
-nibelungen-wohnbau.de,creator.fronius.com#%#//scriptlet('trusted-click-element', '#CybotCookiebotDialogBodyLevelButtonMarketing')
+compo.de,nibelungen-wohnbau.de,creator.fronius.com#%#//scriptlet('trusted-click-element', '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection', '', '500')
+compo.de,nibelungen-wohnbau.de,creator.fronius.com#%#//scriptlet('trusted-click-element', '#CybotCookiebotDialogBodyLevelButtonMarketing')
 helse-sorost.no##div[class^="_cookieconsent-banner"]
 nikonlenswear.com##.popup-cookie-consent
 sexualhealthoxfordshire.nhs.uk##section[aria-label="privacy-consent"]
@@ -4870,7 +4872,7 @@ bankmillennium.pl#%#//scriptlet('set-cookie', 'Analytics_consent', '2')
 bankmillennium.pl#%#//scriptlet('set-cookie', 'Marketing_consent', '2')
 bankmillennium.pl#%#//scriptlet('set-cookie', 'Necessary_consent', '1')
 rd.nl#%#//scriptlet('trusted-click-element', '.cookie-preferences-buttons > button.minimal')
-ubereats.com,uber.com###privacy-cookie-banners-root
+uberhealth.com,ubereats.com,uber.com###privacy-cookie-banners-root
 bbc.com#%#//scriptlet('trusted-click-element', 'div[data-testid="consentBanner"] button', '', '500')
 interestingsomething.com##body > div.cl-cb
 smallpdf.com#%#//scriptlet('trusted-set-cookie', '_s.cookie_consent', 'marketing=0:analytics=0:version=2021-07-01')
@@ -17292,6 +17294,9 @@ forum.gamer.com.tr#?#.p-body-inner > .notices > .notice:has(> .notice-content > 
 bethesda.net#?#visor-alert > div > div > div:last-child:has(> a[href$="/cookie-policy"])
 maximum.com.tr#?#.sticky_cookie_warning:has(> a[href^="/TR/gizlilik-politikamiz/Sayfalar/gizlilik-politikamiz.aspx"])
 !
+! Hearst Television Inc
+4029tv.com,98online.com,abc-7.com,hearst.com,kcci.com,kcra.com,ketv.com,kmbc.com,koat.com,koco.com,ksbw.com,mor-tv.com,mynbc5.com,nbc-2.com,wapt.com,wbal.com,wbaltv.com,wcvb.com,wdsu.com,wesh.com,wgal.com,wisn.com,wjcl.com,wlky.com,wlwt.com,wmtw.com,wmur.com,wpbf.com,wptz.com,wtae.com,wvtm13.com,wxii12.com,wyff4.com##div[data-ketch-backdrop]
+!
 ! shkulev media holding
 116.ru,14.ru,161.ru,164.ru,173.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##.notify-messages-popups
 !
@@ -19150,6 +19155,9 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/235267
+@@||consent.cookiebot.com/uc.js$domain=compo.de
+@@||consentcdn.cookiebot.com^$domain=compo.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235224
 lksgepard.pl#@#.cookie-banner:not(body):not(html)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235170
@@ -27489,6 +27497,10 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+patronlig16.cfd##.footer-powered-by
+mangabuddy1.co.uk###xp-popup-container
+mangabuddy1.co.uk###xp-popup-backdrop
+finance.mail.ru##div[data-qa="Overlay"] + div[role="tooltip"]
 cinezo.net##.fixed.right-6
 sportsbull.jp##div[class^="CampaignPopup-module"]
 roliascan.com###welcome-modal
@@ -46880,6 +46892,8 @@ rxgo.com,alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepe
 !
 !
 !
+orbitz.com#$#.has-uitk-sheet { overflow: auto !important; }
+orbitz.com#$#.CustomerNotificationsWrapper { display: none !important; }
 wlwt.com##div.two-cols > div[class^="css-"]:has(> a[href="/apps"])
 wlwt.com,wisn.com,wjcl.com##div[aria-label=" App Promo"] > div[class^="css-"] > div[class^="css-"]:has(a[href="/apps"])
 meduza.io##.GeneralMaterial-module-article > p:has(> a[href^="https://onelink.to/appication"])
@@ -54822,6 +54836,8 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+compo.de#$#div[class^="Pe102Popup__Pe102BackdropPopupStyled"] { display: none !important; }
+compo.de#$#body { overflow: auto !important; }
 xbato.co.uk###xp-feature-popup
 filespayouts.com###premium_pro
 filespayouts.com###Prem_traffic
