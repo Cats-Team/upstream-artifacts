@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 [Adblock Plus 3.1]
-! Checksum: 34ytQocqxkGYNfmxVgrz2Q
-! Version: 202607140741
+! Checksum: hUi7ff9TBDubiy0IRamP8w
+! Version: 202607141311
 ! Title: ABP filters
-! Last modified: 14 Jul 2026 07:41 UTC
+! Last modified: 14 Jul 2026 13:11 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv
 !
@@ -1078,6 +1078,8 @@ puckpedia.com$csp=script-src-attr 'none'
 puckpedia.com#$#override-property-read xanwv22ooiwm true
 puckpedia.com#$#override-property-read isAdShieldTurn false
 puckpedia.com#$#abort-current-inline-script eval /xanwv22ooiwm/
+puckpedia.com#$#prevent-element-src-loading script /html-load\.com|content-loader\.com|gadzooksrudely\.com/
+||helpers.publisherdesk.com/main.js^$script,domain=puckpedia.com
 ! #CV-4780
 theisleofthanetnews.com#$#hide-if-matches-xpath './/a[contains(@href,"communityjournalism") or contains(@href,"academyfmthanet") or contains(@href,"impress.press") or contains(@href,"cookeandco") or contains(@href,"rsp.co.uk") or contains(@href,"ekctraining.ac.uk") or contains(@href,"com.cab.despatch") or contains(@href,"thepalacecinema.co") or contains(@href,"javessecurity.com") or contains(@href,"medixishealthcare.co") or contains(@href,"foodanddrinkshop") or contains(@href,"unionchurchmargate.org/food-for-thought") or contains(@href,"hbthanet.com") or contains(@href,"johnston-marketing.co") or contains(@href,"thanet.domestics")]/img[@data-ll-status]/ancestor::div[2]'
 ! #CV-1935
@@ -2456,8 +2458,8 @@ metruyenchu.com#$#abort-on-property-write window.onclick
 ##[href^="//mage98rquewz.com/"]
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#$#abort-current-inline-script document.createElement optad; abort-on-property-read pushOnPageGala
 sex.javnong.cc#$#abort-on-property-read Math.round
-buomtv.life,phimsexlondep.net,animehay08.site,cliphot69.shop,phimsexsuong3x.net,damconuong.shop,demo.14412882.com,doctruyen3qhub3.com,dualeotruyenhn.com,hentaivkl.pro,hhtq5.vip,qmanga.art,javtiful.com,luottruyen12.com,lxmanga.space,misskon.com,mupsexphim.com,phim18hd.site,phimlongtieng.net,vipphimsexhay.com,quatvn.mom,sayhentai.cx,sex.xinh3x.me,sexdiary.club,sexviet88.org.uk,streamvl.top,truyenqqko.com,truyenvn.sbs,umetruyenz.org,vevocloud.com,viet69.be,viet69vn.at,xvideos.xemvl.xxx,sexviet88.org.uk,www.sieutamphim.pro,yurineko.*#$#abort-current-inline-script WebAssembly instantiate
-javgiga.wordpress.com,www.1phim11.com#$#abort-on-property-read localStorage
+buomtv.baby,phimsexlondep.net,animehay08.site,cliphot69.shop,phimsexsuong3x.net,damconuong.shop,demo.14412882.com,doctruyen3qhub3.com,dualeotruyenhn.com,hentaivkl.pro,hhtq5.vip,qmanga.art,javtiful.com,luottruyen12.com,lxmanga.space,misskon.com,mupsexphim.com,phim18hd.site,phimlongtieng.net,vipphimsexhay.com,quatvn.mom,sayhentai.cx,xinh3x.it.com,sexdiary.club,sexviet88.org.uk,streamvl.top,truyenqqko.com,truyenvn.sbs,umetruyenz.org,vevocloud.com,viet69.be,viet69vn.at,xvideos.xemvl.xxx,sexviet88.org.uk,www.sieutamphim.pro,yurineko.*#$#abort-current-inline-script WebAssembly instantiate
+javgiga.wordpress.com,www.1phim12.com#$#abort-on-property-read localStorage
 xnhau.xxx#$#prevent-listener click /acquirecardedsullen|POPUNDER_INTERVAL|lastPopunderTime/; abort-current-inline-script document.addEventListener lastPopunderTime;
 animevietsub.meme,animevietsub.meme,tram3d.my#$#abort-current-inline-script eval $._Eu
 phimlongtieng.net#$#abort-current-inline-script document.createElement script
@@ -2495,7 +2497,7 @@ checkscam.vn#$#abort-current-inline-script document.addEventListener open
 haysexvn.shop#$#abort-current-inline-script document.addEventListener adx
 clipphot.vip#$#abort-current-inline-script document.addEventListener POP
 audiotruyenfull.com#$#abort-current-inline-script document.addEventListener ai_run
-audiotruyenfull.com,teamlanhlungday.store,trumtruyen.xyz,www.1phim11.com#$#abort-current-inline-script setTimeout Aff
+audiotruyenfull.com,teamlanhlungday.store,trumtruyen.xyz,www.1phim12.com#$#abort-current-inline-script setTimeout Aff
 pheclip.fit,phim18vip.site,sieudam.fit,subnhanh.plus#$#abort-current-inline-script $ pop
 quykhu.com#$#abort-current-inline-script document.addEventListener atob
 thiendia3.com#$#abort-current-inline-script document.addEventListener adState
@@ -2999,6 +3001,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||acararithetic.com^
 ||accostdubbeh.com^
 ||acorusdawdler.com^
+||acoupfoughty.com^
 ||acrosemeconin.com^
 ||adeptspiritual.com^
 ||advancementpains.com^
@@ -3101,7 +3104,6 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||bytefrom2010.com^
 ||cabalsoftish.com^
 ||cainginpenicil.com^
-||caligoatabals.com^
 ||calmlydagesh.com^
 ||calyxesdefames.com^
 ||camarongabertduftry.cyou^
@@ -3183,6 +3185,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||depurgeholour.com^
 ||dernergazeful.com^
 ||detinetcallant.com^
+||devestseiren.com^
 ||deviletcolog.com^
 ||dhunchifidia.com^
 ||diagnosedecorationvideotape.com^
@@ -3278,6 +3281,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||fuhrerstanking.com^
 ||fumeuseaudibly.com^
 ||funny-tooth.com^
+||fushtbordels.com^
 ||fustianwaked.com^
 ||fuzeszoeal.com^
 ||gainedtelephone.com^
@@ -3322,7 +3326,6 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||gustierstrond.com^
 ||gweedtavy.com^
 ||gyrocarkluck.com^
-||halmfrisii.com^
 ||hardyforges.com^
 ||haydntaal.com^
 ||hdwetwindle.com^
@@ -3363,6 +3366,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||infamous-growth.pro^
 ||infantileclass.pro^
 ||infox.sg^
+||iniquegearbox.com^
 ||injusticebakery.com^
 ||innaterakija.com^
 ||innovations260.net^
@@ -3404,7 +3408,6 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||kialeesewster.com^
 ||kiki18.com^
 ||killdeesolaria.com^
-||kindlestorsion.com^
 ||kolhozclarain.com^
 ||koosinbrisker.com^
 ||kosseanmudpack.com^
@@ -3438,6 +3441,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||maltobrolly.com^
 ||malwaaliquot.com^
 ||mambasscious.com^
+||mamerstonto.com^
 ||mappersavarish.com^
 ||maraywreath.com^
 ||marginoboles.com^
@@ -3516,8 +3520,8 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||pamphiltre.com^
 ||papaneecorche.com^
 ||paralyzedhelmetnell.com^
-||parrbetire.com^
 ||parodostaunter.qpon^
+||parrbetire.com^
 ||pastel-help.com^
 ||patchstoopedconceited.com^
 ||pavanesbedizen.com^
@@ -3533,7 +3537,9 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||plumbicwooler.com^
 ||plungescreeve.com^
 ||poculalienly.com^
+||poilusqrt.com^
 ||potentymoa.com^
+||preservedsober.com^
 ||preyfultarried.com^
 ||pricklyassociation.com^
 ||primary808.net^
@@ -3574,7 +3580,7 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||richardghain.com^
 ||rilletsshivoo.com^
 ||rodlikemortal.com^
-||ropsumemu.com^
+||rolledipocras.com^
 ||ruddytoph.com^
 ||runtime8000.com^
 ||russismvarsha.com^
@@ -3669,7 +3675,6 @@ m.youtube.com#$#simulate-mouse-event 'yt-formatted-string.line-text.style-scope.
 ||tattvaballute.com^
 ||taujubarb.com^
 ||tauliabridler.com^
-||tchekamechant.com^
 ||teenerdormer.com^
 ||teetymitring.com^
 ||templatein13.net^
