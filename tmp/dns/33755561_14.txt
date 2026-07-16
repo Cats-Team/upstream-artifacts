@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: RXuti7C3hZyG25hO2N9+/w
-! Diff-Path: ../patches/14/14-s-1784133542-3600.patch
+! Checksum: hL/C4mO/etq2HHqcDguc1A
+! Diff-Path: ../patches/14/14-s-1784144069-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.72.84
-! TimeUpdated: 2026-07-15T16:35:44+00:00
+! Version: 2.2.72.86
+! TimeUpdated: 2026-07-15T19:31:53+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2620,6 +2620,7 @@ sabancivakfi.org###ez-banner[role="banner"]
 !
 ! NOTE: Regular rules
 !
+arlt.com###cookieNotificationReloaded
 kupibilet.ru##div[class^="CookiesAgreement"]
 ||llycw.com/public/global-cookie-management.
 rg.org##body > div[class^="_"]:has(> div > a[href^="/en-ca/privacy-policy"])
@@ -3390,7 +3391,6 @@ cse.ru##.cookie-disclaimer-container
 bloknot.ru##body > div[style^="position: fixed; bottom: 10px; left: 10px;"][style*="padding: 15px; z-index: 1000; width: 250px;"]
 lbtube.com##div[data-attr="modal-cookie"]
 dolphinradar.com#%#//scriptlet('set-cookie', 'myInsCookieConsent', 'true')
-hotline.finance#$#.accept-cookies-module__VtKOfq__modal { display: none !important; }
 drum-tec.de##.iwv-cookie-overlay
 fullcompass.com###ccpaContainer
 thomann.co.uk,thomann.at,thomann.se,thomann.nl,thomann.it,thomann.pt,thomann.es,thomann.dk,thomann.fr,thomann.pl,thomannmusic.com,thomann.de##.spicy-consent-wrapper
@@ -17803,6 +17803,10 @@ befestigungsfuchs.de,jawoll.de,cafe-royal.com,campingplus.de,bikebox-shop.de,mli
 ! Misc rules, removed during optimization. If some rules are in groups, no need to move them here
 !
 !
+!+ NOT_OPTIMIZED
+hotline.finance#$#.accept-cookies-module__VtKOfq__modal { display: none !important; }
+!+ NOT_OPTIMIZED
+hotline.finance#$#.ReactModal__Body--open { overflow: auto !important; }
 !+ NOT_OPTIMIZED
 facenews.ua###pblock
 !+ NOT_OPTIMIZED
