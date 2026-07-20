@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: Ln0USeaMqDW4RenhXRtVCg
-! Diff-Path: ../patches/4/4-s-1784485594-3600.patch
+! Checksum: D/RWUEhvI0LPnYwuT8zjqw
+! Diff-Path: ../patches/4/4-s-1784545715-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.30.33
-! TimeUpdated: 2026-07-19T18:22:42+00:00
+! Version: 2.1.30.35
+! TimeUpdated: 2026-07-20T11:04:38+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+socialxup.com##button[aria-label="Xでシェア"]
 schwaebische.de##.article-share-x
 schwaebische.de##.article-share-mail
 schwaebische.de##.article-share-facebook
@@ -4739,7 +4740,7 @@ xn--pckua2a7gp15o89zb.com##.c-articleShare
 ysklog.net##article .yarpp-related-website
 m.timesofindia.com##.floatingwhatsapp
 instamod.net##.gmr-share
-[$domain=/yavasgir\d+\.com/]##button[data-tab-id="video-share"]
+[$domain=/yavasgir\d+\.(com|live)/]##button[data-tab-id="video-share"]
 fullxcinema1.com##button[data-tab-id="video-share"]
 windows101tricks.com##.elementor-widget-uael-social-share
 st-andrews.ac.uk##.article-header__meta-share
@@ -14825,7 +14826,7 @@ href^="https://facebook.com/sharer?u=
 ##.st_facebook_custom
 ##.st_sharethis_custom
 ##.st_pinterest_custom
-~xmind.app,~redgifs.com,~gfycat.com,~tvtime.com,~dropbox.com,~ge.tt,~recite.com,~act.hoyolab.com##.share-page
+~kimi.com,~xmind.app,~redgifs.com,~gfycat.com,~tvtime.com,~dropbox.com,~ge.tt,~recite.com,~act.hoyolab.com##.share-page
 ##.addthis_button_google_plusone_share
 ##.addthis_button_pinterest_share
 ##.social-links-block
