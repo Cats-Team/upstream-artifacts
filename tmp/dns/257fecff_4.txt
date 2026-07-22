@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: G2aZsa5JDrsP+ZmRT7/AjA
-! Diff-Path: ../patches/4/4-s-1784697097-3600.patch
+! Checksum: XUYtPi0TOiK3O0GoyysK0w
+! Diff-Path: ../patches/4/4-s-1784734751-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.30.43
-! TimeUpdated: 2026-07-22T05:08:22+00:00
+! Version: 2.1.30.45
+! TimeUpdated: 2026-07-22T15:35:10+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,8 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+dreamerscast.com###player_control_icon_share
+foreks.com##.share-cover
 gazetadopovo.com.br##li[class$="postMidiasShareItem"]:has(> button[title="Compartilhar matéria"])
 mechacomic.jp##a[href^="//x.com/intent/post"]
 gazeta.ua##div.pull-right:has(> div#w-i-socials-small)
@@ -4497,7 +4499,7 @@ sportsseoul.com##.btn-share-open
 joynews24.com##nav.view > button[aria-label]
 cult.honeypot.io##ul[class^="footer-module--social-media"]
 vecernji.hr##.block--article-toolbar
-animego.online##.telega__full
+animego.online##.animego-online-telega__full
 apply.lufthansagroup.careers##.js-share-jobad
 video.sibnet.ru##.block1
 media.mts.ru##.article-block__share
@@ -4748,6 +4750,7 @@ ysklog.net##article .yarpp-related-website
 m.timesofindia.com##.floatingwhatsapp
 instamod.net##.gmr-share
 [$domain=/yavasgir\d+\.(com|live)/]##button[data-tab-id="video-share"]
+[$domain=/cimcime\d+\.(com|live)/]##button[data-tab-id="video-share"]
 fullxcinema1.com##button[data-tab-id="video-share"]
 windows101tricks.com##.elementor-widget-uael-social-share
 st-andrews.ac.uk##.article-header__meta-share
@@ -9014,7 +9017,7 @@ film.org.pl##.widget-post-share
 wpexplorer.com###fixed-social-share
 goodhouse.ru##.widget-test-sharing
 internalpointers.com##.ip-post__social-tools
-themoviebox.org,nvidianews.nvidia.com,koreaboo.com,vue.gov.ua,esports.net,voguegirl.jp,blog.logitech.com,kurashiru.com,getpocket.com##div[class$="-share"]
+moviebox.ph,movieboxapp.in,themoviebox.org,moviebox.pk,movieboxapp.in,123movienow.cc,nvidianews.nvidia.com,koreaboo.com,vue.gov.ua,esports.net,voguegirl.jp,blog.logitech.com,kurashiru.com,getpocket.com##div[class$="-share"]
 peoplesworld.org##.sub-header .social_icon
 steampowered.com##.discussionwidget_ShareBtn_22m-G > img[class^="partnereventshared_Button_"]
 portalimprensa.com.br##.clsTabsModTwitterFacebook
