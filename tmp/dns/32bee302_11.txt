@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: hFvv2gfy4XVf0o/KM65DsA
-! Diff-Path: ../patches/11/11-s-1785769725-3600.patch
+! Checksum: k3NX6HGi11A4DUj/g+SDIg
+! Diff-Path: ../patches/11/11-s-1785847679-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.24
-! TimeUpdated: 2026-08-03T15:05:21+00:00
+! Version: 2.0.71.26
+! TimeUpdated: 2026-08-04T12:44:21+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2713,6 +2713,12 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+blog.livedoor.jp##header.section-box > #ad
+||farsroid.com/wp-content/uploads/farsroid-ads-
+farsroid.com##a[href^="https://www.farsroid.com/ads/"]
+farsroid.com#$##site_header { top: 0 !important; }
+farsroid.com##.site-middle-banners
+farsroid.com###ma_top_alert
 zaikai.jp##div.ad_inner_post
 reddit-matome.com##.rss-iframe
 kinmaweb.jp###sp_top_pickup
