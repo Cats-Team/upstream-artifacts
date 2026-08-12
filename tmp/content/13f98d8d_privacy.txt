@@ -1008,6 +1008,9 @@ lit.link##+js(href-sanitizer, a[href^="/redirects/link-ad?redirectUrl=aHR0c"], ?
 ||c.pc.qq.com^$urlskip=?url
 ||c.pc.qq.com^$urlskip=?pfurl
 
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-17978685
+/^https:\/\/link\.theverge\.com\/click\/[0-9]+\.[0-9]+\/aHR0c/$doc,urlskip=/(aHR0c[a-zA-Z0-9%_-]+)/ -base64
+
 ! Click Trackers
 ! https://reddit.com/r/uBlockOrigin/comments/14t3y1d/
 html.duckduckgo.com,lite.duckduckgo.com##+js(href-sanitizer, a[href^="//duckduckgo.com/l/?uddg="], ?uddg)
@@ -1138,6 +1141,8 @@ touchgal.ink##+js(href-sanitizer, body a[href^="/redirect?url=http"], ?url)
 ! https://github.com/uBlockOrigin/uAssets/pull/34060
 ||sspai.com/link?target=http$doc,urlskip=?target
 sspai.com##+js(href-sanitizer, body a[href^="https://sspai.com/link?target=http"], ?target)
+! https://github.com/uBlockOrigin/uAssets/pull/34090
+||link.csdn.net^$urlskip=?target
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24675 - click tracking
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
