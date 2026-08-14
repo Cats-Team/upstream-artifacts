@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: NioSg1PPvX8aa8f2ZWtp9g
-! Diff-Path: ../patches/14/14-s-1786706540-3600.patch
+! Checksum: nH3dYbN3iDUsD6FFfkr6Pg
+! Diff-Path: ../patches/14/14-s-1786721024-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.75.78
-! TimeUpdated: 2026-08-14T11:19:00+00:00
+! Version: 2.2.75.82
+! TimeUpdated: 2026-08-14T15:20:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2637,6 +2637,7 @@ sabancivakfi.org###ez-banner[role="banner"]
 !
 ! NOTE: Regular rules
 !
+makeship.com##.fixed.bottom-0:has(> div > p > a[href="/policies/cookies-policy"])
 marketkiyas.com.tr##div[aria-label="Çerez tercihi"]
 afyonpostasi.com.tr##.cookie-consent-body
 ||vercel.fides-cdn.ethyca.com/fides.js
@@ -19214,7 +19215,7 @@ wplatform.media,staszownews.pl,zdrowienews.pl,kurierostrowiecki.pl,ostrowiec24.i
 ! https://github.com/AdguardTeam/AdguardFilters/issues/173053
 ! TODO: remove the hints, JS rule when the issue is fixed - https://github.com/AdguardTeam/Scriptlets/issues/407
 !+ PLATFORM(windows, mac, android, cli, ios, ext_safari)
-journaldunet.com,linternaute.com,lachainemeteo.com,journaldesfemmes.fr,lefigaro.fr#%#(()=>{document.addEventListener('DOMContentLoaded',()=>{if("undefined"!=typeof localStorage)try{if(!localStorage.getItem("_pubcid")){var b=new MutationObserver(function(){var a=document.querySelector("#appconsent > iframe");a&&a.contentDocument&&(a=a.contentDocument.querySelector(".button__acceptAll"))&&(b.disconnect(),a.click())});b.observe(document,{childList:!0,subtree:!0,attributes:!0});setTimeout(function(){b.disconnect()},1E4)}}catch(a){}})})();
+akinator.com,journaldunet.com,linternaute.com,lachainemeteo.com,journaldesfemmes.fr,lefigaro.fr#%#(()=>{document.addEventListener('DOMContentLoaded',()=>{if("undefined"!=typeof localStorage)try{if(!localStorage.getItem("_pubcid")){var b=new MutationObserver(function(){var a=document.querySelector("#appconsent > iframe");a&&a.contentDocument&&(a=a.contentDocument.querySelector(".button__acceptAll"))&&(b.disconnect(),a.click())});b.observe(document,{childList:!0,subtree:!0,attributes:!0});setTimeout(function(){b.disconnect()},1E4)}}catch(a){}})})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/170168
 ! TODO: use trusted-click-element scriptlet when issues below are fixed
 ! Fix 'trusted-click-element' — Cloudflare captcha is broken when >>> combinator is used - https://github.com/AdguardTeam/Scriptlets/issues/491
@@ -37271,6 +37272,8 @@ urfanatik.com,stadt-bremerhaven.de,ekonomim.com,omgubuntu.co.uk,winfuture.de,mov
 !
 ! SECTION: Subscriptions - Regular rules
 !
+jisaka.com##.article-body-more > figure:has(> a[href^="https://google.com/preferences/source?q="])
+makeship.com##.flex > div.lg\:flex-1 > div.border-t-4:has(input[id="email-address"])
 liteapks.com##a.items-center[href="https://telegram.me/liteapks"]
 tbs.co.jp###appbanner_pc_right_column_top
 takvim.com.tr##.google-add
@@ -55491,6 +55494,7 @@ ya.ru,yandex.*##.AliceFabPromo
 ! Yandex.Afisha
 !
 ! Yandex.Disk
+disk.yandex.*##div[class^="icloud-transfer-promo"]
 disk.yandex.*##.root__wrapper > div[class^="RightSideSheet_"]
 disk.yandex.*##div[data-promo-name]
 disk.yandex.*##.top-banner_stretch
