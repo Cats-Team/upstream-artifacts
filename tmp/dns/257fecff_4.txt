@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: aZMlgfN/i+LTN+D3Qy5BsA
-! Diff-Path: ../patches/4/4-s-1786679595-3600.patch
+! Checksum: AG9fj97isQzlC+Q7HaZZEg
+! Diff-Path: ../patches/4/4-s-1786706542-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.31.8
-! TimeUpdated: 2026-08-14T03:49:29+00:00
+! Version: 2.1.31.11
+! TimeUpdated: 2026-08-14T11:18:42+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+rakko.tools##button[data-testid="tool-page-share-button"]
 security.snyk.io##.share-dropdown-wrapper
 aspor.com.tr##.tmd-articleShare
 telegramgruplari.io##div[data-td-block-uid="tdi_30"]
@@ -2734,7 +2735,7 @@ j-wave.co.jp###gigyaShare
 matomecup.com##.cm-tw
 fastcompany.com##main > ul:has(> li > a[href^="https://www.facebook.com/sharer.php"])
 openlibrary.org##.share-modal-link
-quotidianodipuglia.it##.share_bar_wrapper
+corriereadriatico.it,quotidianodipuglia.it##.share_bar_wrapper
 prmira.ru##.flex-col.top-\[70px\]
 belsat.eu##.article__icons
 salon.mainichi-kotoba.jp##.c-footer-bar__item--share
@@ -3709,7 +3710,7 @@ pcgames.de##.jsShare
 pcgames.de##.shareWidgetBt[rel="nofollow"]:not([onclick])
 pcgames.de##.artSocialLinks
 community.oneplus.com#?#.action-bar > div.action-bar-item:has(> svg.icon-share)
-lobehub.com,wallpics.app,volumo.com,funda.nl,jpost.com,teletype.in##button[title="Share"]
+xullys.xyz,lobehub.com,wallpics.app,volumo.com,funda.nl,jpost.com,teletype.in##button[title="Share"]
 defenceconnect.com.au#?#.b-article__footer__top__wrapper:has(> #footer-share-title + .b-article__footer__left > .b-article__footer__left__social-buttons)
 perfectcorp.com##.blog-post-body__sharing
 tvblog.it##.partial-share
