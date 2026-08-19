@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: cCqg0MIlZwH5K2XjpUFfIQ
-! Diff-Path: ../patches/3/3-s-1787091059-3600.patch
+! Checksum: p3mmbfLVEWsWIcUy97TBhg
+! Diff-Path: ../patches/3/3-s-1787116586-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.9.44
-! TimeUpdated: 2026-08-18T22:07:12+00:00
+! Version: 2.1.9.48
+! TimeUpdated: 2026-08-19T05:12:28+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -563,6 +563,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||cdn.mgln.ai^
 ||whoas.xyz^$third-party
 ||api.firwinds.site^
 ||geniuslinkcdn.com^
@@ -100542,6 +100543,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||beacon.errorception.com^
+||analytics.byub.org^
+||analytics-api.byub.org^
 ||analytics.netronline.dev^
 ||analytics.7reels.cc^
 ||analytics.streamvaultsrc.click^
@@ -314695,6 +314699,9 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||d3rsy74zmigk0i.cloudfront.net/linkExtractorKineticHarbor.js
+||trees.com/a|
+||trees.com/rtb
 ||ar-cdn.net/api/v1/events/view
 ||cine.su/api/telemetry|
 ||instyle.com/static/*/static/modules/js/AssertiveYield/
@@ -329038,6 +329045,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||fishersfinds.com^
 ||fishingtoolsbox.com^
 ||fishspies.com^
+||fitgreatest.com^
 ||fitnessmapper.com^
 ||fitwithalpine.com^
 ||fivesidedsquare.com^
