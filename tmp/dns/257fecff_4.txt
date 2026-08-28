@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 2nveNwMey3bNjtCl6Ri0UA
-! Diff-Path: ../patches/4/4-s-1787754197-3600.patch
+! Checksum: pKBVbs+xrVwybTYGyEYTGg
+! Diff-Path: ../patches/4/4-s-1787856126-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.31.56
-! TimeUpdated: 2026-08-26T14:18:55+00:00
+! Version: 2.1.31.59
+! TimeUpdated: 2026-08-27T18:37:33+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -668,6 +668,12 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+tob.news##.spc-social-follow-inline
+tob.news##.post-share-float
+tob.news##.post-share-bot
+translate.yandex.ru##button:has(> svg > path[d^="M17.75"])
+novayagazeta.eu##main > div.flex > div[class]:has(> div[class] > a[href^="https://t.me/share/"])
+tokyo-np.co.jp##.container > .wrp:has(> .js-sns)
 weathernews.jp##div[data-component="a-share"]
 seriesflixhd.win,seriesflixhd.*##.ShareList
 doshinsports.com##.sidebar__social-box
@@ -7355,7 +7361,7 @@ dospara.co.jp##.sns_btn_wrap
 vergleich.org##.share [data-type="facebook"]
 vergleich.org##.share [data-type="twitter"]
 suzume-tojimari-movie.jp,cnnbrasil.com.br##.top__share
-twiflix.jp,hozonv.com,jp.yna.co.kr,jvcmusic.co.jp,promax.co.jp##.sns-link
+deview.co.jp,twiflix.jp,hozonv.com,jp.yna.co.kr,jvcmusic.co.jp,promax.co.jp##.sns-link
 nishinippon.co.jp,mymo-ibank.com##.c-snsActions
 mag.japaaan.com###bottom_share
 kingcorso.com##.woodmart-instagram
@@ -7770,7 +7776,7 @@ udemy.com##.ud-component--course-landing-page-udlite--social-share-button
 zr.ru##.info__share
 square-enix-games.com##div[class^="socialSharing_NewsHeader"]
 channel.fancl.jp###follow_area
-xgp.pl,diariobasta.com,technofaq.org###custom_html-3
+tob.news,xgp.pl,diariobasta.com,technofaq.org###custom_html-3
 freechequewriter.com##plugin[name="fbar"] > div.fbar
 freechequewriter.com###itp-fshare
 japanese.engadget.com###post-bottom-social-share
