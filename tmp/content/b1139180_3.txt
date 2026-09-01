@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: fJxWmmWOpxUu0ND+G2HDpQ
-! Diff-Path: ../patches/3/3-s-1788272437-3600.patch
+! Checksum: aB5Q2Jzl/oh7W2W5f/mJ9A
+! Diff-Path: ../patches/3/3-s-1788286993-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.10.45
-! TimeUpdated: 2026-09-01T14:15:52+00:00
+! Version: 2.1.10.47
+! TimeUpdated: 2026-09-01T18:18:23+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -563,6 +563,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||kameleoon.io^
 ||cdnet.nasmob.com^
 ||trackhaven.com^$third-party
 ||rtbscale.com^
@@ -100558,6 +100559,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||emergency.zeta-ai.io^
+||carmen2.golem.de^
 ||ue.a-bly.com^
 ||pixel-frontend.avito.ru^
 ||pausible.flaq.ai^
@@ -314723,6 +314726,7 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||golem.de/assets/scripts/golem-snw.js
 ||api.mercadolibre.com/melidata/tracks
 ||o11y-proxy-otel-frontend.meli.com^
 wildberries.ru#%#//scriptlet('trusted-set-local-storage-item', 'wbAnalitic', '$now$')
@@ -329973,6 +329977,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||puffypaste.com^
 ||puffypull.com^
 ||puffypurpose.com^
+||pugspress.com^
 ||pulsaredit.com^
 ||pulsatingmeadow.com^
 ||pumpedpancake.com^
@@ -330040,6 +330045,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||receiptcent.com^
 ||receptivereaction.com^
 ||recessrain.com^
+||recipepile.net^
 ||recipepin.com^
 ||reconditeprison.com^
 ||reconditerespect.com^
