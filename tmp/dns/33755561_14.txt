@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/14.txt
-! Checksum: yH/OqFDcQFi8IEoWe2a6pw
-! Diff-Path: ../patches/14/14-s-1788877181-3600.patch
+! Checksum: lh3ghK5Nk6txRQfmalC+gA
+! Diff-Path: ../patches/14/14-s-1788894938-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.78.44
-! TimeUpdated: 2026-09-08T14:16:45+00:00
+! Version: 2.2.78.47
+! TimeUpdated: 2026-09-08T19:12:46+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2703,6 +2703,7 @@ top.kion.ru##kion-top-alert
 discovery.com###ltp-dialog
 eurotoptech.com##section[aria-label="Cookie consent"]
 showaround.com##div[class^="_GdprLine_"]
+studienteilnehmergesucht.de,studienteilnehmergesucht.at,proefpersoongezocht.nl,poszukiwani-uczestnicy-badan.pl,clinicaltrials4you.co.uk#%#//scriptlet('trusted-set-cookie', 'cookieConsent', '{"cookie_necessary_enabled":true,"cookie_functional_enabled":true,"cookie_analytics_enabled":false,"cookie_marketing_enabled":false}')
 infraveil.com#%#//scriptlet('set-cookie', 'infraveil_privacy_choice_v1', 'denied')
 tech-iq.ru###policy-cookie-note
 autoland.de#%#//scriptlet('trusted-click-element', 'div.cookiePermissions .cookie-permission--accept-button', '', '1000')
@@ -28292,9 +28293,7 @@ amateurphotographer.com#$#html.hustle-no-scroll:not(#style_important) { overflow
 flixeo.tv##.fixed.right-4
 sportsbite.org,sportsbite.*##.fixed.inset-0.transition-opacity
 sportsbite.org,sportsbite.*#%#//scriptlet('trusted-set-local-storage-item', 'discord_popup_v2', '{"lastShownAt":99999999999999}')
-gdebenz.ru###share-ask
-gdebenz.ru###sg-banner
-gdebenz.ru###safe-note
+gdebenz.ru,gdebenz.org###share-ask
 footballia.net#%#//scriptlet('trusted-set-local-storage-item', 'donateModal', '{"seenAt":99999999999999}')
 breitbart.com###ISCTO_overlay
 breitbart.com###ISCTO_div
@@ -37640,6 +37639,10 @@ meteoweb.eu,businessinsider.jp,enikos.gr,ostdeutscheallgemeine.com,falstaff.com,
 !
 ! SECTION: Subscriptions - Regular rules
 !
+zeit.de##aside.zps-widget
+stuttgarter-zeitung.de##.u-article-newsletter
+proefpersoongezocht.nl,poszukiwani-uczestnicy-badan.pl,clinicaltrials4you.co.uk##section.rounded-3xl:has(a[href="/newsletter"])
+karapaia.com##.g-alert
 9to5google.com##.post-content > p.wp-block-paragraph:has(> a[href="https://9to5google.beehiiv.com/subscribe"])
 china-gadgets.de##.tmx-ssw-newsletter
 goldenglobes.com##div[class="c-newsletter"]
@@ -37673,6 +37676,8 @@ theamas.com###overlayContent
 theamas.com##.ion-md-close
 elgroup-market.ru#%#//scriptlet('set-session-storage-item', 'elg_lp_seen_call', '1')
 elgroup-market.ru#%#//scriptlet('set-cookie', 'elg_lp_seen_promo', '1')
+studienteilnehmergesucht.de,studienteilnehmergesucht.at,proefpersoongezocht.nl,poszukiwani-uczestnicy-badan.pl,clinicaltrials4you.co.uk##section > div.max-w-screen-xl:has(form#newsletterForm)
+proefpersoongezocht.nl,poszukiwani-uczestnicy-badan.pl,clinicaltrials4you.co.uk##section.rounded-3xl:has(a[href="/newsletter"])
 selcukhdyayin.com##a[href="https://t.me/ardaspor"]
 primeirapagina.com.br##.open-channel
 primeirapagina.com.br##.invite-whatsapp
@@ -38062,7 +38067,8 @@ news.tv-asahi.co.jp##.parts-notification-frame
 sportiva.shueisha.co.jp##a[href="/preferred_sources/"]
 misterrunning.com###site-message
 wbal.com##.elementor-element > .elementor-widget-container:has(> p > a[href^="https://7e98357a-f946-40a2-b1af-43f1ce85e524.us01.ldpgs.com/"])
-gdebenz.ru###upd-banner
+gdebenz.ru,gdebenz.org###max-banner
+gdebenz.ru,gdebenz.org###upd-banner
 remanga.org#%#//scriptlet('trusted-set-local-storage-item', 'mc:event-ad:hidden-until', '9999999999999')
 aleagues.com.au##.entry-footer--subscribe
 breitbart.com###bn-premium-header-subscribe-bar
@@ -50455,7 +50461,7 @@ wallstreetcn.com##.open-in-app
 wallstreetcn.com##.oia
 pharmaguideline.com#?#h2:contains(GET APP FOR NEWS UPDATES)
 sketch.pixiv.net###MobilePromote
-gdebenz.ru,gooworld.jp,goo-net.com,goobike.com###appbnr
+gdebenz.ru,gdebenz.org,gooworld.jp,goo-net.com,goobike.com###appbnr
 palcy.jp##.dl-area
 sportsbull.jp#$##post-content-container.noevent a { pointer-events: auto !important; }
 sportsbull.jp#$#.single-more-container { display: none !important; }
