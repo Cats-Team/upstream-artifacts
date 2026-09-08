@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 2v1P31zfZDBztWhWfN9S+w
-! Diff-Path: ../patches/4/4-s-1788794325-3600.patch
+! Checksum: Mr7WfIiVQRcsBFnUP8VzjA
+! Diff-Path: ../patches/4/4-s-1788859228-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.32.10
-! TimeUpdated: 2026-09-07T15:14:42+00:00
+! Version: 2.1.32.12
+! TimeUpdated: 2026-09-08T09:16:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -667,6 +667,9 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+ananweb.jp##div.mt-\[38px\] > section[class]:has(> ul > li > a[href^="https://twitter.com/intent/tweet?"])
+enikonomia.gr##.addtoany-area
+enikonomia.gr##.addtoany-vertical
 t24.com.tr##.canliyayin
 autoweek.nl##.article-meta-social
 saby.ru##span[data-qa="sbisRu-OFDCheck-share-button"]
@@ -1109,6 +1112,7 @@ vozpopuli.com##.post-info > .authors-container + .items-center > .flex:has(> .fa
 foodnavigator.com##.share-bar-buttons
 igroray.ru##.product-controls__button--shared
 youtube.com##.icon-share_arrow
+youtube.com##player-fullscreen-controls .ytmSlimMetadataButtonRendererHost:has(> .icon-share_arrow:only-child)
 arcticwolf.com##.elementor-widget-heading[data-widget_type="heading.default"]:has(+ .elementor-widget-share-buttons)
 espncricinfo.com##.ds-flex > div.ds-flex:has(> div.ds-popper-wrapper > div.ds-flex > i.icon-share-outlined)
 gamingonlinux.com##.article_list_social_media
@@ -8783,7 +8787,7 @@ ansa.it##.new-toolbar-menu > em
 ansa.it##.bt-news-flip
 ansa.it##.social-menu li.button-wrap
 slovoidilo.ua##.wrap_addthis_inline_bottom
-bykvu.com##.article-share-box
+enikos.gr,bykvu.com##.article-share-box
 abplive.com##.mt-4 > a[href^="https://www.youtube.com/"]
 sports.ru##.result__shares
 turkru.tv##.promo-wrap
