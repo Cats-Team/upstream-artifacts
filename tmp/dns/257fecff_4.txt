@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: bltiWzJbeUkMJmBC6+au1A
-! Diff-Path: ../patches/4/4-s-1788887937-3600.patch
+! Checksum: ZkbAaS1nDNO1pD7MF+uDjw
+! Diff-Path: ../patches/4/4-s-1788945623-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.32.16
-! TimeUpdated: 2026-09-08T17:14:30+00:00
+! Version: 2.1.32.19
+! TimeUpdated: 2026-09-09T09:16:35+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -667,6 +667,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+ogo1.ru##.b-event-share
 travel.yandex.ru##button:has(svg > path[d^="M20 12"])
 karapaia.com##.attachment__share
 mardinlife.com##.social-profile > span[class]:not(:has(> a[href^="https://news.google.com/publications/"]))
@@ -744,7 +745,7 @@ bz-berlin.de##section[data-block-id="B.Z. folgen"]
 marketingturkiye.com.tr###thb_social_links_widget-4
 marketingturkiye.com.tr##.ci-ad
 drom.ru##div[data-app-root="review-single-body"] > div > div:has(> div > a[href^="https://vk.com/share.php"])
-cricwatch.io,cricwatch.*,tennisonline.im,tennisonline.*,dartsstreams.me,worldsports.st,worldsports.*,rugbybox.me,rugbybox.*,nflbox.sx,nflbox.*,f1live.me,f1live.*,mlbbox.me,mlbbox.*,mmabox.me,mmabox.*,nbabox.*,nbabox.co,soccerbox.me,soccerbox.*##.cat-soc-share
+motogpstream.me,cricwatch.io,cricwatch.*,tennisonline.im,tennisonline.*,dartsstreams.me,worldsports.st,worldsports.*,rugbybox.me,rugbybox.*,nflbox.sx,nflbox.*,f1live.me,f1live.*,mlbbox.me,mlbbox.*,mmabox.me,mmabox.*,nbabox.*,nbabox.co,soccerbox.me,soccerbox.*##.cat-soc-share
 thehealthy.com###pch-social-share-container
 fp1-siken.com,fp2-siken.com,fp3-siken.com,ap-siken.com,db-siken.com,fe-siken.com,itpassportsiken.com,nw-siken.com,pm-siken.com,sc-siken.com,sg-siken.com##.social-btn-list_mini
 webook.com##[id^="webook_social_"]
@@ -10918,7 +10919,7 @@ resemom.jp,s.response.jp##.header-toolbar > .toolbar
 cnn.co.jp##div[class^="story-sns"]
 cnn.co.jp##li[id^="snsbtn_"]
 cbssports.com##.ShareBar-wrapper
-j-cast.com##.entry-share-btns
+bg-mania.jp,j-cast.com##.entry-share-btns
 posfie.com,togetter.com,eropasture.com##.social_box
 artstation.com##ul.s-bar
 withnews.jp##.sns_menu_bottom
