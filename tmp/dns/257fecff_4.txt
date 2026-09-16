@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 7i/KsRwDMiKi0TcKLdccxA
-! Diff-Path: ../patches/4/4-s-1789503513-3600.patch
+! Checksum: tLDot6Glro9EDNMw/pzepw
+! Diff-Path: ../patches/4/4-s-1789550436-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.32.60
-! TimeUpdated: 2026-09-15T20:14:26+00:00
+! Version: 2.1.32.62
+! TimeUpdated: 2026-09-16T09:16:19+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -604,7 +604,7 @@ caliber.az,dll-files.com,life.viet-jo.com,homes.co.jp,m.segye.com,weekly.chosun.
 ! ##.twitter
 transkarpatia.net,homes.co.jp,m.segye.com,weekly.chosun.com,topclass.chosun.com,otonari-anime.com,ncsoft.jp,inuhiro-anime.com,seireigensouki.com,gigafree.net,promo.kadokawa.co.jp,teyvatsokuho.com,cashless.pl,dramacool.so,driving.ca,okezone.com,businessinsider.com,digitaltrends.com,elle.com.tr,gazetemanset.com,kickstarter.com,sabah.com.tr##.twitter
 ! ##.socialarea
-notebookcheck-hu.com,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.biz,notebookcheck.com,notebookcheck.info,notebookcheck.it,notebookcheck.net,notebookcheck.nl,notebookcheck.org,notebookcheck.se##.socialarea
+notebookcheck.pl,notebookcheck-hu.com,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.biz,notebookcheck.com,notebookcheck.info,notebookcheck.it,notebookcheck.net,notebookcheck.nl,notebookcheck.org,notebookcheck.se##.socialarea
 ! ##.socialbar
 cinematoday.jp,9monate.de,rtl.lu,amp.focus.de,meduniwien.ac.at,areamobile.de,bildderfrau.de,derstandard.at,chosunonline.com,godmode-trader.de,futurezone.de,thebody.com,mobil.news.at,bild.de,www-pcgameshardware-de.cdn.ampproject.org,www-pcgames-de.cdn.ampproject.org,m-bild-de.cdn.ampproject.org,gamingcfg.com,m.bild.de,morgenpost.de,cs.ingame.de,derwesten.de##.socialbar
 ! ###social-share
@@ -667,6 +667,8 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+rsvplive.ie,lancs.live##div[class^="ShareBar_"]
+naszemiasto.pl##.atomsArticleHead__mediaTool
 t-online.de##button[aria-label="Artikel teilen"]
 nix.ru##.chat-share
 nix.ru###good-share
@@ -904,7 +906,7 @@ girlsvip-matome.com##.follow_btn
 zielonagospodarka.pl##.article_social_icons
 bartamanpatrika.com##.web-share-btn
 wiki3.jp#?#.uk-container > p:contains(シェアしよう！)
-football.london##div[class^="Article_inner-wrapper"] > section[class^="SocialFollowBar_wrapper"]
+cheshire-live.co.uk,football.london##div[class^="Article_inner-wrapper"] > section[class^="SocialFollowBar_wrapper"]
 goonernews.com##.c-feat-post__social
 pornoxo.com##li:has(> a[title="Share"])
 fanpage.it##.bnr
