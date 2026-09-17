@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 [Adblock Plus 3.1]
-! Checksum: /B6DLQCcYdfK0Q6cR5uFbg
-! Version: 202609162032
+! Checksum: ygHsVqyVolAmEvhpWc1dFA
+! Version: 202609170241
 ! Title: ABP filters
-! Last modified: 16 Sep 2026 20:32 UTC
+! Last modified: 17 Sep 2026 02:41 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv
 !
@@ -3366,6 +3366,9 @@ mail.ru#@#.tgb-wrapper
 mail.ru#@#[href^="https://dzen.ru"]
 @@://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 mail.ru#@#[href*="https://dzen.ru"]
+! pinterest on hover issue
+pinterest.com#@#div[data-grid-item]:has(a[rel="nofollow"][href^="http"])
+pinterest.com#@#div[data-grid-item]:has(div[data-test-id="pinrep-video"]):has(a[rel="nofollow"][href^="http"])
 ! *** abp-filters-anti-cv:distribution/abp-filters-partners.txt ***
 ! Filters to be used by distribution partners
 ! #CV-782
