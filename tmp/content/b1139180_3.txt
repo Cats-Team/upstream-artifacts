@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: 0CwOqnWg1xAWzwNLpzRGOw
-! Diff-Path: ../patches/3/3-s-1791227466-3600.patch
+! Checksum: lI6AP2xLskEatCkR/0ttbA
+! Diff-Path: ../patches/3/3-s-1791281413-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.12.87
-! TimeUpdated: 2026-10-05T19:07:48+00:00
+! Version: 2.1.12.90
+! TimeUpdated: 2026-10-06T10:05:53+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -563,6 +563,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||buballmighty.com^
 ||heatmap-tracking-do-to-s3-worker-prod.flipdesk.workers.dev^
 ||ymzu9eeo1y.ru^
 ||a3kvau184uea.com^
@@ -619,7 +620,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||api.firwinds.site^
 ||geniuslinkcdn.com^
 ||opendatastats.net^$third-party
-||assets.onedollarstats.com^
+||onedollarstats.com^$third-party
+||lilstts.com^
 ||u.lessbutbetter.studio^
 ||analytics.autoodb.com^
 ||cdn.seline.com^
@@ -100577,6 +100579,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||one01.stright.bizris.com^
+||analytics.infomaniak.com^
+||biprx.n12.co.il^
 ||apm.volccdn.com^
 ||apmplus.volces.com^
 ||evs.segwww.incident.io^
@@ -314788,6 +314793,7 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+v-1.co.il#%#//scriptlet('set-local-storage-item', 'v1_device_id', '$remove$')
 ||api.cdnlivetv.tv/p2p-stats
 ||media.flixcar.com/log/
 ||independentaustralia.net/_js/realtrack.js
@@ -315141,7 +315147,7 @@ mego.travel#%#//scriptlet('set-local-storage-item', '/^snowplowOutQueue_/', '$re
 ||ledevoir.com/js/analytics/
 ||ledevoir.com/js/pianoAnalyticsTags.js
 ||naturallieplantbased.com/?*&ver=$script,~third-party
-||caf.fr/*/stormcaster.js
+/stormcaster.js$domain=caf.fr|v-1.co.il
 ||caf.fr/sites/default/files/smarttag/
 ||google.com/rmkt/collect/
 ||google.com/pagead/
@@ -321855,6 +321861,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! v-1.co.il
+||v-1.co.il^$cookie=visit_id
 ! yanolja.com
 ||yanolja.com^$cookie=nol_device_id
 ! OpenAI
@@ -324299,6 +324307,9 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/243470
+@@||power.mhi.com/modules/contrib/google_tag/js/gtm.js$domain=power.mhi.com
+@@||googletagmanager.com/gtm.js$domain=power.mhi.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243386
 @@||cmp.optimizely.com/assets/$image,domain=roadscholar.org
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243436
@@ -324307,6 +324318,7 @@ d4?appid*type*
 @@||googletagmanager.com/gtm.js$domain=mizuhobank.co.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243416
 @@||googletagmanager.com/gtm.js$domain=unicef.or.jp
+@@||googletagmanager.com/gtag/js$domain=unicef.or.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/242943
 @@||priem.menu^$cookie=_ga
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241876
