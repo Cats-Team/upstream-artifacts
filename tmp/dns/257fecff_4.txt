@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: FTsR1f+yQ6OHKfW7yih2Tw
-! Diff-Path: ../patches/4/4-s-1791281415-3600.patch
+! Checksum: E+tcMv0jpUnK/W0YA1/REQ
+! Diff-Path: ../patches/4/4-s-1791313809-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.33.51
-! TimeUpdated: 2026-10-06T10:05:56+00:00
+! Version: 2.1.33.54
+! TimeUpdated: 2026-10-06T19:05:33+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -667,6 +667,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+dailymail.com##button[id^="mol-fe-social-bar-share-"]
 clovis.com.br##button[title="Compartilhar produto"]
 earth.jp##.product2-action--share
 v-1.co.il##div[class^="_sharebuttonsContent_"]
@@ -7781,7 +7782,7 @@ sweethentai.com##a[data-target="#modalSocial"]
 newsweekjapan.jp###socialTool
 tdk.gov.tr,bayreuther-tagblatt.de##.av-social-sharing-box
 abc13.com,6abc.com##.StickyContainer
-ekattor.tv,dhakatribune.com,banglatribune.com##.social_share_holder
+ittefaq.com.bd,ekattor.tv,dhakatribune.com,banglatribune.com##.social_share_holder
 ||u.xgoo.jp/img/sns/button/
 indiatoday.in##.social-share-new
 sagligabiradim.com,ivona.ua##.widget-social
@@ -10536,7 +10537,7 @@ psm7.com##.soc_line
 tsn.ua##.js-share-extra
 tsn.ua##.c-share-extra
 staticmv.mediavitrina.ru##.eump-control-share-social
-turkuvazradyolar.com##.newsShare
+obozrevatel.com,turkuvazradyolar.com##.newsShare
 appledaily.com###RHSfacebook
 lisa.ru,proglaza.ru##.vk-widget
 kondicionery.od.ua##.footerbottom2
