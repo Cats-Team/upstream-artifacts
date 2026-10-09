@@ -2382,6 +2382,9 @@ hymnary.org##div#blockbanner
 ! https://github.com/uBlockOrigin/uAssets/issues/5112#issuecomment-5981295582
 tarnkappe.info###article .entry-content section[data-nosnippet][class$="-only"]
 
+! https://github.com/uBlockOrigin/uAssets/issues/34187
+igorslab.de##.ilab-adblocker-notice
+
 ! ================================================== END: Anti-adblock ==================================================================================
 
 ! https://github.com/uBlockOrigin/uAssets/issues/933
@@ -8272,3 +8275,6 @@ dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now
 
 ! flixnetwork.is/streamsource.ws bot check
 flickzone.org,sflix.gd##+js(trusted-click-element, button#b, '', 750)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34786
+alensat.com##+js(aeld, contextmenu, preventDefault)
