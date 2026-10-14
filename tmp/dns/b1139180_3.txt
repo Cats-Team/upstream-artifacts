@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: xNzP88SbiZXBMBX/8AkRIg
-! Diff-Path: ../patches/3/3-s-1791889895-3600.patch
+! Checksum: 31wz5UCVX/yCMZEjyDZLsQ
+! Diff-Path: ../patches/3/3-s-1791911351-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.13.44
-! TimeUpdated: 2026-10-13T11:06:48+00:00
+! Version: 2.1.13.46
+! TimeUpdated: 2026-10-13T17:05:38+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -336953,6 +336953,7 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||vdrama.fans/js/vd-analytics.js
 ||turizmguncel.com/api/track|
 ||pixhost.to/m7v2q9/
 ||d.linker-network.me/viewable|
@@ -351274,6 +351275,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||combcompetition.com^
 ||cometquote.com^
 ||comfortablecheese.com^
+||commitlogs.com^
 ||comparereaction.com^
 ||compilework.com^
 ||condemnedcomb.com^
@@ -351488,6 +351490,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||drydrum.com^
 ||dryerwasher.com^
 ||dualping.com^
+||duetcode.com^
 ||dusthorses.com^
 ||dustydime.com^
 ||dustyhammer.com^
