@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: IgogykUIPiErkMzk85s/9Q
-! Diff-Path: ../patches/3/3-s-1792343505-3600.patch
+! Checksum: q/QIDAgWTvU45yzWUV7Myg
+! Diff-Path: ../patches/3/3-s-1792404944-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.13.72
-! TimeUpdated: 2026-10-18T17:08:41+00:00
+! Version: 2.1.13.75
+! TimeUpdated: 2026-10-19T10:11:52+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -104050,6 +104050,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||bigdata-scfx-push.kucoin.plus^
 ||config.trackingplan.com^
 ||eu-tracks.trackingplan.com^
 ||tracks.trackingplan.com^
@@ -337251,6 +337252,8 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||kucoin.com/_api/polar/frontend/web_events/
+||fenixplay.xyz/api/stats/
 ||bookbear.kr/js/site_log.js
 ||yimg.com/*/ymanalytics-core.js
 ||faz.net/api/fpid/
@@ -344366,6 +344369,9 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! ggmax.com.br
+||ggmax.com.br^$cookie=gg-ads-session
+||ggmax.com.br^$cookie=device
 ! ixbt.com
 ||ixbt.com^$cookie=__eventn_id
 ! rtvi.com
