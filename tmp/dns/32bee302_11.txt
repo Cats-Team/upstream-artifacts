@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/11.txt
-! Checksum: l+sg1GTtOxgSU+iDLXfk4Q
-! Diff-Path: ../patches/11/11-s-1792660646-3600.patch
+! Checksum: eIVfyJXby1Ei2tfhSx9sQA
+! Diff-Path: ../patches/11/11-s-1792678580-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.90
-! TimeUpdated: 2026-10-22T09:12:59+00:00
+! Version: 2.0.72.93
+! TimeUpdated: 2026-10-22T14:12:04+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -167,6 +167,7 @@
 !
 !NOTE: Regular rules
 !
+||da.flvcdn.net^
 ||rtb.nefta.app^
 ||ads-proxy-aka.prod.bo.canal.canalplustech.pro^
 ||acdn.newshuntads.com^
@@ -2721,9 +2722,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+respublika.lt###onnetwork_container
+otakuma.net###otkm-anchor
 yahoo.com###mid-center-ad-1
 ksta.de##.fixed.bottom-0
-polandball.jp##div[class^="myadd"]
 kako-mon.com###ad-under-header
 psicoactiva.com##aside[style="position:sticky; position:-webkit-sticky; top:0px; min-height:250px;"]
 .ixbt.com/banner/

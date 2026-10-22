@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: 1ib1S4qYp7vRhVuUCbFIow
-! Diff-Path: ../patches/3/3-s-1792660650-3600.patch
+! Checksum: 9iIkcLTlZi6B6D4LhA+Rbg
+! Diff-Path: ../patches/3/3-s-1792696494-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.13.95
-! TimeUpdated: 2026-10-22T09:12:40+00:00
+! Version: 2.1.14.1
+! TimeUpdated: 2026-10-22T19:09:54+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -566,6 +566,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 ! NOTE: Specific rules
 !
+||stats.curd.io^
 ||jisao12.cyou^
 ||ptrack.xyz^
 ||atlas.atsptp.com^
@@ -106186,6 +106187,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 ! NOTE: Specific rules
 !
+||data.vzhh.de^
 ||applytics.zwyr157wwiu6eior.com^
 ||zwjvbnvhnzme.heise.de^
 ||b.allegrocdp.com^
@@ -355812,6 +355814,12 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||api.atmosvere.eu/api/*/traffic/*/collect-update
+||query.reachit.network/*?l=
+||cdn.brita.net/.resources/scripts/gtmEventTracking-*.js
+||ftbucket.info/*/track.php
+||wayfair.com/api/observability/v*/log|
+||wayfair.com/*/wf_auth/authentication/log_frontend_event_data|
 ||sinoptik.*/stats/
 ||pla.fwdcdn.com/api/event|
 ||verbraucherzentrale.de/plugins/HeatmapSessionRecording/
@@ -371045,6 +371053,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||maliciousmusic.com^
 ||manamoment.com^
 ||manateemotors.com^
+||manawell.net^
 ||manydiamonds.com^
 ||manyfishes.com^
 ||mapbasin.com^
@@ -371881,6 +371890,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||spuriousair.com^
 ||spurioussquirrel.com^
 ||spuriousstranger.com^
+||spyrep.com^
 ||spysubstance.com^
 ||squadtee.net^
 ||squalidscrew.com^
@@ -372284,6 +372294,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||webspa.net^
 ||webspires.net^
 ||weeklycurrents.com^
+||wellbeingforce.com^
 ||wellgroomedapparel.com^
 ||wellgroomedhydrant.com^
 ||westsideglobe.com^
@@ -372323,6 +372334,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||wistfulwaste.com^
 ||withsharks.com^
 ||withsounds.com^
+||wittyfamous.com^
 ||wittypopcorn.com^
 ||wittyshack.com^
 ||wizardbuck.com^
