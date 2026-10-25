@@ -2384,8 +2384,8 @@ civitai.com,civitai.red##div.relative.flex[style="min-height:90px"]:has(> button
 civitai.com,civitai.red##+js(trusted-replace-argument, String.prototype.endsWith, 0, , condition, /edit)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/29426#issuecomment-5078806861
-jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_first_detected_at, $now$)
-jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_soft_dismissed_at, $now$)
+jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_v2_first_detected_at, $now$)
+jelonka.com##+js(trusted-set-local-storage-item, jelonka_news_ad_access_gate_v2_soft_dismissed_at, $now$)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1vcb1va/metacritic_adblock_nag/
 metacritic.com##+js(trusted-set-session-storage-item, BT_AM_SOFTWALL_DISMISSED, {"element":"continue-to-site"})
@@ -8231,10 +8231,10 @@ fontsquirrel.com###bottom_banner_ad_container
 docs.paloaltonetworks.com##+js(nostif, ad-block)
 
 ! https://everythingmoe.com/post/anikotodomains.html
-anikaitv.to,anikototv.to##+js(set, console.log, trueFunc)
-anikaitv.to,anikototv.to##+js(set, console.clear, trueFunc)
+anikoto.*,anikaitv.to,anikototv.to##+js(set, console.log, trueFunc)
+anikoto.*,anikaitv.to,anikototv.to##+js(set, console.clear, trueFunc)
 megaplay.buzz,vidtube.site##+js(set, devtoolsDetector.launch, noopFunc)
-||vidwish.live/lib/devtools-detector
+/lib/devtools-detector
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1545
 elektroda.pl##+js(nostif, typeof loadElement)
@@ -8302,8 +8302,8 @@ snowcrows.com##+js(rmnt, script, .onerror)
 dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now$)
 
 ! flixnetwork.is/streamsource.ws bot check
-flickzone.org,sflix.gd##+js(trusted-click-element, button#b, '', 750)
-sflix.gd##+js(rmnt, script, location.pathname, includes, hv=)
+streamdumpling.cyou,flixdrop.cyou##+js(trusted-click-element, button#b, '', 750)
+flixdrop.cyou##+js(rmnt, script, location.pathname, includes, hv=)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34786
 alensat.com##+js(aeld, contextmenu, preventDefault)
