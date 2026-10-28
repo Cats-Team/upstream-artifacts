@@ -2256,7 +2256,8 @@ vidara.*,gasobni.com,vidmoly.*,bysezejataos.com,n1mwq.org,firestream.*##+js(aeld
 vidara.*,gasobni.com,vidmoly.*,bysezejataos.com,n1mwq.org,firestream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/35023
-b98.tv,supercartoons.net,funniermoments.net,toontales.net##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
+! https://github.com/uBlockOrigin/uAssets/pull/35057
+b98.tv,supercartoons.net,funniermoments.net,toontales.net,megacartoons.net##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
 
 ! ================================================ END: Anti copy, right-click, devtools, text select etc. ==========================================================================
 
@@ -2308,7 +2309,8 @@ abcya.com##body:style(overflow: auto !important)
 abcya.com##.a-adhesion
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/173013
-||2game.info/ad/failed_ad_view.js
+! https://github.com/AdguardTeam/AdguardFilters/issues/245242
+2game.info##div[id][style^="position: fixed; left: 0px; right: 0px; bottom: 0px; z-index: 2147483646;"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/28629
 studydrive.net##.w-full.flex:has(> div[id^="billboard_btf"])
@@ -2424,6 +2426,10 @@ addictinggames.com,ev.io,fantasyfootballscout.co.uk,gameknot.com,icy-veins.com,p
 
 ! https://may2.ftbucket.info
 ftbucket.info###adblock-banner
+
+! https://github.com/uBlockOrigin/uAssets/issues/35049
+tftacademy.com##div[class="relative"][style="width: 160px; height: 600px;"]
+tftacademy.com##div.relative.flex.w-full.font-semibold[style^="height:"]:has(> div.relative[style^="width:"][style*="height:"])
 
 ! ================================================== END: Anti-adblock ==================================================================================
 
@@ -8326,3 +8332,6 @@ firestream.site##+js(set, console.clear, trueFunc)
 firestream.site##+js(set, console.log, trueFunc)
 firestream.site##+js(set, console.table, trueFunc)
 firestream.site##+js(aeld, keydown, ||_0x)
+
+! https://github.com/uBlockOrigin/uAssets/issues/35067
+||thehindu.com/assets/deferred.min.js
