@@ -1695,6 +1695,8 @@ $removeparam=s,to=twitter.com|x.com
 ! https://github.com/uBlockOrigin/uAssets/issues/20941
 ! https://github.com/uBlockOrigin/uAssets/issues/30129
 ||com/*/status/$removeparam=t,to=twitter.com|x.com
+! "copy link" tracking parameters
+||x.com/*/status/$doc,removeparam=a
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-8955444
 ! https://github.com/brave/adblock-lists/pull/1455
 ! eBay tracking parameters
@@ -3267,10 +3269,10 @@ vaughn.live##+js(no-fetch-if, method:POST body:zaraz)
 ||vaughn.live/vsz/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33072#issuecomment-4937969164
-x.com##+js(prevent-xhr, /i/api/1.1/flow/viewer.json)
-x.com##+js(prevent-xhr, /i/api/1.1/flow/timeline.json)
+x.com##+js(prevent-xhr, /api/1.1/flow/viewer.json)
+x.com##+js(prevent-xhr, /api/1.1/flow/timeline.json)
 x.com##+js(proxy-apply-config, {"skipToString":true})
-x.com##+js(prevent-xhr, /i/api/1.1/graphql/viewer_context.json)
+x.com##+js(prevent-xhr, /api/1.1/graphql/viewer_context.json)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/12635#issuecomment-4982050273
 telegraph.co.uk##.onward-journey
