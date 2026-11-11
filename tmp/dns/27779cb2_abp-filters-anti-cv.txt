@@ -1,9 +1,9 @@
 ! url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 [Adblock Plus 3.1]
-! Checksum: 9GmDdEJWd7WR9elHF1h1og
-! Version: 202611110402
+! Checksum: fzSf2okCLbJZeZ2CeMDmkw
+! Version: 202611111315
 ! Title: ABP filters
-! Last modified: 11 Nov 2026 04:02 UTC
+! Last modified: 11 Nov 2026 13:15 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv
 !
@@ -2978,7 +2978,7 @@ winfuture.de#$#hide-if-matches-xpath './/span[.="ANZEIGE"]/ancestor::div[contain
 celleheute.de#$#hide-if-matches-xpath '//*[@data-image-info]/img[contains(@style,"440")]/ancestor::div[@id][@class][1]//parent::div[@data-hook]/parent::div[@id and @class]'; hide-if-matches-xpath './/a[@data-testid]/*[@data-image-info]/img[contains(@style,"300")]/ancestor::a[@target]/parent::div[@id][@class][1]'; hide-if-contains-visible-text /Anzeige/ 'p>span[class][style]';
 freenet.de#$#hide-if-matches-xpath '//div[@class]/img[@referrerpolicy]/ancestor::div[@class][1]'
 xnxx-sexfilme.com#$#hide-if-matches-xpath './/span[contains(text(),"Advertisement")]/parent::div[@class][1]'; hide-if-matches-xpath './/div[contains(@class,"logo")]/ancestor::div[@data-ga_action="join"]/ancestor::aside[@id][1]';
-onvista.de#$#hide-if-contains /^Werbung$/ div.rounded-2xl 'div.rounded-2xl span ^^sh^^ span'
+onvista.de#$#hide-if-contains /^Werbung$/ div.rounded-2xl 'div.rounded-2xl span ^^sh^^ span'; hide-if-contains /^Werbung$/ .ov-carousel__item '.ov-carousel__item span ^^sh^^ span'
 ||xnxx-sexfilme.com/*==/^$domain=xnxx-sexfilme.com
 ||xnxx-sexfilme.com/*froload.js?v=2^$domain=xnxx-sexfilme.com
 ||pushpad.xyz^$third-party,domain=xnxx-sexfilme.com
@@ -4376,6 +4376,7 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||chairsgliosis.com^
 ||chalkedwhiningromance.com^
 ||chambulwacs.com^
+||charkshiite.qpon^
 ||cheefulfrary.com^
 ||chelaology.com^
 ||cheriesjaunt.com^
@@ -4400,7 +4401,6 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||cobalt-river-cdn-55.workers.dev^
 ||cobolgammed.com^
 ||coccihoverly.com^
-||coelarwhosome.com^
 ||coesitecubbing.com^
 ||cogwayskerb.com^
 ||cokeymythos.com^
@@ -4429,6 +4429,7 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||corylussunroof.com^
 ||couloirmatrass.com^
 ||couponbright.com^
+||coutersraying.com^
 ||cowergawsie.com^
 ||cowpencinclis.com^
 ||cowtownpeppy.com^
@@ -4474,7 +4475,6 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||densenbl.com^
 ||deployskind.com^
 ||deposedassuage.com^
-||depurgearomas.com^
 ||depurgeholour.com^
 ||dernergazeful.com^
 ||detergesateens.com^
@@ -4496,6 +4496,7 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||discussiondaub.com^
 ||dishoneststyle.com^
 ||dismastlemosi.com^
+||disnestazorian.com^
 ||distaltenths.com^
 ||distinguishanatotal.com^
 ||dittoforgive.com^
@@ -4747,6 +4748,7 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||indexconcretehavendynamics.com^
 ||indiumaspalax.com^
 ||indriwhats.com^
+||indurecarone.com^
 ||indusacta.com^
 ||infamouscomer.com^
 ||infox.sg^
@@ -4928,7 +4930,6 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||nosefelt.com^
 ||nosydorymen.com^
 ||novaleelds.com^
-||nozzleslaxate.com^
 ||nplaf.com^
 ||nubbycoolly.com^
 ||nucleonfashing.com^
@@ -4977,7 +4978,6 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||pamphiltre.com^
 ||papaneecorche.com^
 ||paralyzedhelmetnell.com^
-||parergygrates.com^
 ||parodostaunter.qpon^
 ||parrbetire.com^
 ||pastel-help.com^
@@ -5228,6 +5228,7 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||tackerhelosis.com^
 ||taffykhirka.com^
 ||tagalodrome.com^
+||taigasginep.com^
 ||talionunoiled.com^
 ||talipesspirts.com^
 ||talliedpurring.com^
@@ -5332,7 +5333,6 @@ open.spotify.com#$#replace-fetch-response /https:\\/\\/[a-zA-Z0-9\\-]+\\.?(?:spo
 ||uttergleeks.com^
 ||vaisyabam.com^
 ||valesbraises.com^
-||vangloeducat.com^
 ||vd.7vid.net^
 ||vector26060.com^
 ||verdedagon.com^
