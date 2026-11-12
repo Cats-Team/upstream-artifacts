@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: Qt/Tu6d/0/8J8Rp/HkX8hA
-! Diff-Path: ../patches/3/3-s-1794399270-3600.patch
+! Checksum: N31mhvOUKGFtVzJHim4YYA
+! Diff-Path: ../patches/3/3-s-1794427976-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.15.30
-! TimeUpdated: 2026-11-11T12:11:07+00:00
+! Version: 2.1.15.33
+! TimeUpdated: 2026-11-11T20:08:11+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -566,6 +566,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 ! NOTE: Regular rules
 !
+||stats.raiansar.com^
 ||actone.app^
 ||anakhoki168.com^
 ||bbzyk.lol^
@@ -442840,6 +442841,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||lowkeypalmtree.com^
 ||lowlatencydata.com^
 ||lowvolumes.com^
+||loyaltymatrix.com^
 ||luckyshelf.com^
 ||luckysportsgear.com^
 ||ludicrousarch.com^
@@ -442887,6 +442889,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||marriedmailbox.com^
 ||marriedvalue.com^
 ||marsnextdoor.com^
+||maskedadmin.com^
 ||masseurexpress.com^
 ||massivemark.com^
 ||masterenter.com^
@@ -443622,6 +443625,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||sizzlingoven.com^
 ||sizzlingsmoke.com^
 ||sketchpals.com^
+||sketchpodcast.com^
 ||skilledview.com^
 ||skillfuldrop.com^
 ||skillfullyfrugal.com^
