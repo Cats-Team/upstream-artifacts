@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/3.txt
-! Checksum: BIWmPuqjdQO62i/+gvAS6A
-! Diff-Path: ../patches/3/3-s-1794788660-3600.patch
+! Checksum: GxakgME1nxeRSG+iSWajMw
+! Diff-Path: ../patches/3/3-s-1794827645-3600.patch
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.1.15.62
-! TimeUpdated: 2026-11-16T00:21:05+00:00
+! Version: 2.1.15.66
+! TimeUpdated: 2026-11-16T11:08:55+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -111666,6 +111666,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 ! NOTE: Regular rules
 !
+||stats.proxypurity.com^
 ||beacon.viafoura.io^
 ||events.plus.yandex.net^
 ||20251117mix.zgstongji.vip^
@@ -427504,6 +427505,11 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+thairath.co.th##body > div[class^="css-"]:not([aria-label]):has(> div[class^="css-"] > div[id^="taboola-"])
+||electricbikes.com/api/ad-stats
+||electricbikes.com/api/ad-impressions
+||welect.de/api/*/mtrcs
+||91cg1.com/view-stat.php^
 ||ubt-sgp.travix.com/bee/collect
 ||das-cdn.idealo.com/pixel/
 ||api.plus.kinopoisk.ru/graphql?operationName=registerSimpleActionWithPixel
@@ -444046,6 +444052,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||treatoceans.com^
 ||tremendousplastic.com^
 ||tremendoustime.com^
+||trendcone.com^
 ||trialowl.com^
 ||trickfile.com^
 ||triplelarge.com^

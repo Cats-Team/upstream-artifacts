@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: 3buutbsh28jlzR5HIs/Zcw
-! Diff-Path: ../patches/4/4-s-1794741034-3600.patch
+! Checksum: kMqLpKRs0/MrxZbUchFfLw
+! Diff-Path: ../patches/4/4-s-1794831459-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.35.21
-! TimeUpdated: 2026-11-15T11:07:05+00:00
+! Version: 2.1.35.26
+! TimeUpdated: 2026-11-16T12:14:25+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -667,6 +667,11 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+gamespot.com##.social-post-share
+treccani.it##button[aria-label="Condividi"]
+rtl.de##div[class^="share_socialButtons"]
+91cg1.com##.post-quick-action[data-action="share"]
+91cg1.com#?#.flash:contains(点击分享给色友)
 pregatips.com##.critSocialHorizontal
 businesstimes.com.sg##div[data-testid="article-social-sharing-component"]
 businesstimes.com.sg##button[data-testid="share-button-component"]
@@ -6632,7 +6637,7 @@ advice.co.th##.chat_shop
 kdnuggets.com##.addthis_native_toolbox
 g-witch.net##.footer__sub__share
 lepoint.fr##.NavbarShareLinks
-3710920.com,blog.hamayanhamayan.com,in.gr,himajin-block30.com,hatenastaff.com,megamouth.info,digimobil.it,qafqazinfo.az,konoe.studio,tomatazos.com,ural-meridian.ru,opencritic.com,mundodaeletrica.com.br,levelup.com,hateblo.jp,hatena.ne.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,open.online,androidiani.com,leomolenaar.nl,habervakti.com,obzorposudy.ru,onewatch.by,mitanyan98.hatenablog.com,goope.jp,rai.it,homesha.co.jp,mblx.ru,newspicks.com,otdelka-remont.ru,zan.kz,kanalmaras.com,lanacion.com.co,cars.com,gaitame.com,lr21.com.uy,edehaber.com.tr,pervasiz.com.tr,gazeteyenigun.com.tr,number.bunshun.jp,tv5.com.tr,miuirom.org,conterfrag.ru,pay-day.ru,altarena.ru,pocket.shonenmagazine.com,haberts.com,cookpad.com,finans7.com,aforismo.ru,studyhacker.net,portableapps.com,click-or-die.ru,graniru.org,maxedtech.com,rockpapershotgun.com,souspark.ru,nakamorikzs.net,kitanoiwashi.com,blog.electricsea.io,zigsow.jp##.social-buttons
+bioerrorlog.work,3710920.com,blog.hamayanhamayan.com,in.gr,himajin-block30.com,hatenastaff.com,megamouth.info,digimobil.it,qafqazinfo.az,konoe.studio,tomatazos.com,ural-meridian.ru,opencritic.com,mundodaeletrica.com.br,levelup.com,hateblo.jp,hatena.ne.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,open.online,androidiani.com,leomolenaar.nl,habervakti.com,obzorposudy.ru,onewatch.by,mitanyan98.hatenablog.com,goope.jp,rai.it,homesha.co.jp,mblx.ru,newspicks.com,otdelka-remont.ru,zan.kz,kanalmaras.com,lanacion.com.co,cars.com,gaitame.com,lr21.com.uy,edehaber.com.tr,pervasiz.com.tr,gazeteyenigun.com.tr,number.bunshun.jp,tv5.com.tr,miuirom.org,conterfrag.ru,pay-day.ru,altarena.ru,pocket.shonenmagazine.com,haberts.com,cookpad.com,finans7.com,aforismo.ru,studyhacker.net,portableapps.com,click-or-die.ru,graniru.org,maxedtech.com,rockpapershotgun.com,souspark.ru,nakamorikzs.net,kitanoiwashi.com,blog.electricsea.io,zigsow.jp##.social-buttons
 abff.by##.news_single-meta-share
 tv.bluelock-pr.com,ragnarok-official.com##.foot--share
 koko.by##.ak-post-share
@@ -7901,7 +7906,7 @@ liveagent.com##.BlogPost__share
 gadgets360.com##.reddit-icon
 dallasnews.com##div[class^="app_share-bar_shareBar"]
 3dzip.org,animekayo.com,sketchup.cgtips.org##.widget_bs-likebox
-miraimedia.asahi.com##.p-single-share
+m-78.jp,miraimedia.asahi.com##.p-single-share
 freepng.ru##.pdt-share
 andreadekker.com##.social-rocket-evernote
 andreadekker.com##.social-rocket-facebook
@@ -16628,6 +16633,9 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/247311
+audacy.com#@#.share-facebook
+audacy.com#@#.share-twitter
 ! https://github.com/AdguardTeam/AdguardFilters/issues/246859
 paste1c.ru#@#.share-panel
 paste1c.ru#@#.share-tools
