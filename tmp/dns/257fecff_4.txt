@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: wyhSFOSEOmpf4YsYAqSXYw
-! Diff-Path: ../patches/4/4-s-1794841927-3600.patch
+! Checksum: szhyyDYadQ124n+WeDGW0Q
+! Diff-Path: ../patches/4/4-s-1794924767-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.35.28
-! TimeUpdated: 2026-11-16T15:08:11+00:00
+! Version: 2.1.35.32
+! TimeUpdated: 2026-11-17T14:09:10+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -667,6 +667,13 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+80.lv##div[data-share-button]
+worldsoccertalk.com##button[aria-label="Share"]
+thehockeynews.com##div[data-testid="share-button-container"]
+thehockeynews.com##.relative > .transition.cursor-pointer:has(> svg[aria-label="icon-share"])
+kayseriolay.com##.relative > div.items-center:has(> a[href^="https://www.youtube.com/channel/"])
+kayseriolay.com##.w-full > div.items-center:has(> ul > li > a[title*="Paylaş"])
+sportbusiness.com##div[class^="sb-article-info__social"]
 thestandard.com.hk##.article-detail__share-icons
 tricitiesdispatch.com##.social-icons:has(> a[href^="https://www.facebook.com/sharer/"])
 foxsports.com###article-content > div.flex-col-left:has(> div.story-social-group)
@@ -6762,7 +6769,6 @@ opindia.com##.tdb-author-box + div.td_block_separator
 boredpanda.com##.bottom-bar-share-button
 livejournal.com##.aentry-socials__holder--sharing
 monomax.jp##.frameArea01 > p.mt20.center > strong
-unian.info,unian.ua,unian.net##.article__share-btn
 ookla.com##.article-sidebar-panel-social
 myspace.com##.facebookBtn
 myspace.com##.twitterBtn
@@ -7285,7 +7291,7 @@ vlast.kz##.form-subscribe
 ||yimg.jp/images/news-web/all/images/sns_$domain=news.yahoo.co.jp
 girlstyle.com,thecatcity.com,urbanlifehk.com##.desktop-sidebar__block--fb
 dlsite.com##.link_share
-m1xdrop.*,mdy48tn97.com,mixdrop.*##.s-wrapper
+mxdrop.*,m1xdrop.*,mdy48tn97.com,mixdrop.*##.s-wrapper
 asahi.com##.following-sns
 video.sports.ru,2gis.ru,tass.ru,shot-news.ru,klerk.ru,wink.ru##button[aria-label="Поделиться"]
 livejapan.com##.--color-sociel
@@ -14714,6 +14720,8 @@ auto.ru#?#.Review__footer-col:has(> div.ReviewShare)
 !
 ! Rambler
 !
+!+ NOT_OPTIMIZED
+unian.info,unian.ua,unian.net##.article__share-btn
 !+ NOT_OPTIMIZED
 iamgujarat.com,indiatimes.com,vijaykarnataka.com,maharashtratimes.com,samayam.com##.share_whatsapp
 !+ NOT_OPTIMIZED
