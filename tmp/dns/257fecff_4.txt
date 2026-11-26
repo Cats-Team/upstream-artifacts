@@ -1,10 +1,10 @@
 ! url: https://filters.adtidy.org/windows/filters/4.txt
-! Checksum: yBX0JDv0PV8sb2VfgVtJaQ
-! Diff-Path: ../patches/4/4-s-1795615973-3600.patch
+! Checksum: aeR7PanE1CAKjZ19kg3rpQ
+! Diff-Path: ../patches/4/4-s-1795626714-3600.patch
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.1.35.70
-! TimeUpdated: 2026-11-25T14:09:11+00:00
+! Version: 2.1.35.72
+! TimeUpdated: 2026-11-25T17:07:55+00:00
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -670,6 +670,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+hondamobility-minamikanto.co.jp##.CMS-blog-share
 weszlo.com##.post-buttons > a[href^="mailto:?"]
 iowapublicradio.org##.gtm_share
 sportsnet.ca##a[class^="micro_share"]
@@ -8948,7 +8949,7 @@ radiozet.pl,meloradio.pl,antyradio.pl##.icon-icn_share
 tiscali.it##.tsIcoSocial
 freepik.com##.button--pinterest
 freepik.com##.popover--share
-freepik.com##.button--share
+wp.pl,freepik.com##.button--share
 tozlumagazin.net##.twitter_waller
 tozlumagazin.net##.facebook_waller
 margreiter-shop.de##.details-product-share
